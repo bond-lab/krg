@@ -1,0 +1,11 @@
+;;;
+;;; Basic repp file, partially customized according
+;;; to your choices file.
+;;;
+;;; 
+;; note that we include a fullwidthspace here
+;;
+:[ \t　]
+!^(.+)$								 \1 
+!\t								 
+!  +								 

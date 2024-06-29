@@ -1,0 +1,2 @@
+# krg
+Korean Resource Grammar

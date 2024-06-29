@@ -1,0 +1,418 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+
+
+;;************************************************************
+;;head-only rule
+
+;; word (without arguments) to phrase (det->detp)
+;head-only-rule := hd-only-ph & 
+; [ SYN.HEAD.FORM nocomp_form,
+;   ARGS < [ SYN.VAL [ SUBJ <>, COMPS <>, SPR <> ] ] > ].
+
+;head-only-comp-rule := hd-only-ph & 
+; [ SYN.HEAD.FORM comp_form,
+;   ARGS < [ SYN.VAL [ COMPS <>, SPR <> ] ] > ].
+
+;;if vn (even though in nocomp_form)
+;head-only-vn-rule := basic-extracted-arg-phrase.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH) 
+; Obligatory Honorification
+;; ??소희가 예쁘시다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+;;************************************************************
+;;subj-head rule
+
+;tmp := subj-test.
+
+subj-head := subj-head-phrase.
+
+subj-head-robust-rs := subj-head-phrase-robust-rs.
+subj-head-robust-sr := subj-head-phrase-robust-sr.
+; ;; ??소희가 예쁘시다
+; subj-head-robust-1 := basic-subj-head-phrase &
+;  [ STYLE robust,
+;    NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.HON -,
+;    HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.HON + ].
+
+; ;; ??할머니께서 오다
+; subj-head-robust-2 := basic-subj-head-phrase &
+;  [ STYLE robust,
+;    NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.HON +,
+;    HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.HON - ].
+
+subj-head-vnp := basic-subj-head-phrase-vn.
+subj-head-vp := basic-subj-head-phrase-vp.
+subj-head-s := basic-subj-head-phrase-s.
+
+;;************************************************************
+;;comp-1st-head rule
+
+;;빵이 먹고 싶다.
+
+comp-1st-head-noagt := comp-1st-head-phrase &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom,
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT - ].
+
+comp-1st-head-agt := comp-1st-head-phrase &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc,
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH) 
+;; 격조가 생략은 unproductive
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; 빵 좋다
+comp-1st-head-noagt-robust-1 := basic-comp-1st-head-phrase &
+  [ STYLE robust,
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD [ POS noun,
+										 CASE [ GCASE no_gcase,
+												SCASE no_scase ] ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT - ].
+
+;빵 먹다
+comp-1st-head-agt-robust-1 := basic-comp-1st-head-phrase &
+  [ STYLE robust,
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD [ POS noun,
+										 CASE [ GCASE no_gcase,
+												SCASE no_scase ] ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+;여름이 좋소이다
+comp-1st-head-noagt-robust-2 := comp-1st-head-phrase-robust-sr &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom,
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT - ].
+;여름을 기다리옵니다
+comp-1st-head-agt-robust-2 := comp-1st-head-phrase-robust-sr &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc,
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+;;여름들이 좋지?
+; comp-1st-head-noagt-robust-3 := comp-1st-head-phrase-robust-rs &
+;   [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom,
+; 	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT - ].
+;여름들을 보다
+; comp-1st-head-agt-robust-3 := comp-1st-head-phrase-robust-rs &
+;   [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc,
+; 	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+
+comp-1st-nogcase := comp-1st-head-phrase &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+											  SCASE ye_scase ] ].
+;학교 가다
+comp-1st-nogcase-robust-1 := comp-1st-head-phrase-robust-rs &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+											  SCASE ye_scase ] ].
+;학교에 가나이다
+comp-1st-nogcase-robust-2 := comp-1st-head-phrase-robust-sr &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+											  SCASE ye_scase ] ].
+
+
+; comp-1st-head-v-rule := comp-1st-head-v.
+
+comp-1st-head-noagt-vnp := comp-1st-head-phrase-vnp &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom,
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT - ].
+
+comp-1st-head-agt-vnp := comp-1st-head-phrase-vnp &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc,
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+comp-1st-nogcase-vnp := comp-1st-head-phrase-vnp &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+											  SCASE ye_scase ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT - ].
+
+
+comp-bn := comp-1st-head-phrase-bn.
+comp-bn-robust-rs := comp-1st-head-phrase-bn-robust-rs.
+comp-bn-robust-sr := comp-1st-head-phrase-bn-robust-sr.
+
+;;************************************************************
+;;comp-2nd-head rule
+
+
+; comp-2nd-head := comp-2nd-head-phrase &
+;   [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc,
+;  	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+;책을 나한테를 줘 봐
+comp-2nd-head-robust-1 := comp-2nd-head-phrase-robust-rs &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc,
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+comp-2nd-nogcase := comp-2nd-head-phrase &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+											  SCASE ye_scase ] ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-06-01 / SSH) 
+;;공부하기를 충고하다
+;; 위에서 GCASE 제약은 제외 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+comp-2nd-vp := comp-2nd-head-phrase-v &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD [ POS verb,
+										 CASE [ SCASE no_scase ] ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HC-LIGHT - ].
+
+comp-2nd-vn :=  comp-2nd-head-phrase-v &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD [ POS noun,
+										 VERBAL +,
+										 CASE [ GCASE acc ] ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HC-LIGHT - ].
+
+;;자동차를 일본에 수출
+comp-2nd-nogcase-vnp-1 := comp-2nd-head-phrase-vnp &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+											  SCASE ye_scase ] ].
+;;자동차를 일본 수출
+comp-2nd-nogcase-vnp-2 := comp-2nd-head-phrase-vnp &
+  [	NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+											  SCASE no_scase ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+
+;책에게 물어 보았다 
+; comp-2nd-nogcase-robust-2 := basic-comp-2nd-head-phrase &
+;   [ STYLE robust,
+; 	NON-HEAD-DTR [ STYLE robust, SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+; 															  SCASE ye_scase ] ],
+; 	HEAD-DTR.STYLE strict ].
+
+;;************************************************************
+;; head-lex expressions
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH) 
+;;   SYNSEM.LOCAL.CONT.HOOK.INDEX.E.PASS -,
+;; 위 제약이 필요할까???
+;; 피동의 정보를 책임지는 것은 조동사 혹은 경동사이다.
+;;   see Chae (2003) and Song (2007) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;능동형 보조동사 구문 
+head-lex-arg-rule-1 := hd-lex-ex & 
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.PASS -,
+				   CAT.VAL [ SUBJ #subj, COMPS #comps, SPR #spr ] ],
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT.VAL [ SUBJ #subj, COMPS #comps, SPR #spr ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.AUX +,
+								VAL.SUBJ #subj ] ]. 
+
+head-lex-arg-rule-1-rs := hd-lex-ex-rs & 
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.PASS -,
+				   CAT.VAL [ SUBJ #subj, COMPS #comps, SPR #spr ] ],
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT.VAL [ SUBJ #subj, COMPS #comps, SPR #spr ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.AUX +,
+								VAL.SUBJ #subj ] ]. 
+head-lex-arg-rule-1-sr := hd-lex-ex-sr & 
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.PASS -,
+				   CAT.VAL [ SUBJ #subj, COMPS #comps, SPR #spr ] ],
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT.VAL [ SUBJ #subj, COMPS #comps, SPR #spr ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.AUX +,
+								VAL.SUBJ #subj ] ]. 
+
+;;능동형 경동사 구문
+;; 공부하다 
+head-lex-arg-rule-2 := hd-lex-light & 
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.PASS -,
+				   CAT.VAL [ SUBJ #subj, COMPS #comps, SPR #spr ] ],
+	NON-HEAD-DTR n-del-lex & [SYNSEM.LOCAL.CAT [ HEAD [ POS noun, VERBAL + ],
+												 VAL [ SUBJ #subj, 
+													   COMPS #comps,
+													   SPR #spr ] ] ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT [ HC-LIGHT +,
+								VAL.SUBJ #subj ] ]. 
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-11 / SSH) 
+;; 피동문에서 agent 는 논항이 아닌 것으로 간주한다.
+;; 왜냐 하면
+;; (1) Keenan(1985)에 따르면 피동문의 basic form은
+;;    agent 가 나타나지 않는 것이 유형론적으로 우세함
+;; (2) 남승호(2007)에 따른 판별
+;;    A : 철수가 잡혀 갔데.
+;;    B : 누구한데?
+;;    A : 경찰한테 잡혀 갔데.
+;;    ??B : 누가?
+;; (3) 김형희(2003)에 따른 판별
+;;    a. 경찰한테 잡힌 것은 철수이다.
+;;    b. ??철수가 잡힌 것은 경찰이다.
+;; (4) 송상헌 (2007) : 피동문이 다양한 기능을 지니는데, (middle, spantaneous event)
+;;     이 때 agent는 implicated 되거나 원래 없어야 한다.
+;;    a. ?? 이 차가 점원에 의해서 잘 팔린다. (middlem, implicate agent)
+;;    b. # 문이 철수에 의해서 저절로 닫힌다. (anti-causative, no agent)
+;;     이러한 일관성을 유지하려면 논항으로 인정하지 않는 것이 바람직하다.
+;; 따라서 피동문에서 agent 는 부가어로 가운데 
+;; 논항의 성격이 강한 것으로 간주한다. 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;피동형 보조동사 구문 
+;;연구 되다 / 연구가 되다 
+head-lex-pass-noagt-rule := head-lex-pass-noagt.
+;;존경 받기 / 체포 당하다 
+head-lex-pass-agt-rule := head-lex-pass-agt.
+
+
+head-lex-vcp-rule := head-lex-vcp.
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-13 / SSH) 
+;; 항상 철수가 빵을 먹는다
+;; 이것이 이 구조로 분석이 되는 것을 막기 위해
+;; 임시로 POS 도입
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+head-spec := head-spec-phrase.
+head-spec-2 := head-spec-phrase-2.
+
+num-cl := num-cl-phrase.
+
+bare-np := bare-np-phrase.
+bare-vnp := bare-vnp-phrase.
+
+
+
+;bare-vn := bare-vn-phrase.
+
+; Rule instances for head-modifier structures. Corresponding types
+; are defined in matrix.tdl.  The matrix customization script did
+; not need to add any further constraints, so no corresponding tyes
+; appear in korean.tdl
+
+;;************************************************************
+;;head-modifier rule: 
+
+
+;head-adj-int := head-adj-int-phrase.
+;head-adj-scop := head-adj-scop-phrase.
+;adj-head-scop := adj-head-scop-phrase.
+
+
+;;modifier to head: 
+head-mod-adverbial-rule := hd-mod-adverbial-ph.
+; head-mod-rule-adverbial-rs := hd-mod-adverbial-ph-robust-rs.
+; head-mod-rule-adverbial-sr := hd-mod-adverbial-ph-robust-sr.
+
+head-mod-adv-rule := hd-mod-adv-ph.
+head-mod-rule-adv-rs := hd-mod-adv-ph-robust-rs.
+head-mod-rule-adv-sr := hd-mod-adv-ph-robust-sr.
+
+
+
+head-mod-gen-cl-rule := hd-mod-gen-cl-ph.
+head-mod-gen-noncl-rule := hd-mod-gen-noncl-ph.
+
+hd-mod-noncl-int-nominal-rule := hd-mod-noncl-int-nominal-ph.
+; hd-mod-noncl-int-nominal-rs := hd-mod-noncl-int-nominal-ph-rs.
+; hd-mod-noncl-int-nominal-sr := hd-mod-noncl-int-nominal-ph-sr.
+
+hd-mod-noncl-int-adv-rule := hd-mod-noncl-int-adv-ph.
+; hd-mod-noncl-int-adv-rs := hd-mod-noncl-int-adv-ph-rs.
+; hd-mod-noncl-int-adv-sr := hd-mod-noncl-int-adv-ph-sr.
+
+
+;adj-head-int := hd-mod-noncl-int-ph.
+
+;head-mod-nom-cl-rule := hd-mod-nom-cl-ph.
+;head-mod-acc-cl-rule := hd-mod-acc-cl-ph.
+;head-mod-other-cl-rule := hd-mod-other-cl-ph.
+
+;;pseudo RC rule (생선이 타는 냄새)
+; head-mod-prel-rule := hd-mod-prel-ph &
+;  [ SYN.VAL [ SUBJ #subj, COMPS #comps, SPR #spr ],
+;    ARGS < phrase & [ SYN [ HEAD.POS verb,
+;                            VAL [ SUBJ <>, COMPS <> ] ] ],
+;           syn-st & [ SYN [ HEAD.POS noun,
+;                            VAL [ SUBJ #subj, COMPS #comps, SPR #spr ] ] ] > ].
+
+
+
+
+;;************************************************************
+;;relative clause rule: 
+
+;;modifier to noun: relative clause
+head-mod-rel-rule := hd-mod-rel-ph.
+head-mod-app-rule := hd-mod-app-ph.
+
+np1-top-coord := np1-top-coord-rule.
+
+; np1-mid-coord := np1-mid-coord-rule.
+
+np1-bottom-coord := np1-bottom-coord-rule.
+
+vp1-top-coord := vp1-top-coord-rule.
+
+vp1-mid-coord := vp1-mid-coord-rule.
+
+vp1-bottom-coord := vp1-bottom-coord-rule.
+
+s1-top-coord := s1-top-coord-rule.
+
+s1-mid-coord := s1-mid-coord-rule.
+
+s1-bottom-coord := s1-bottom-coord-rule.
+
+n2-top-coord := n2-top-coord-rule.
+
+
+; n2-mid-coord := n2-mid-coord-rule.
+;n2-bottom-coord := n2-bottom-coord-rule.
+n2-bottom-coord-1 := n2-bottom-coord-rule-1.
+n2-bottom-coord-2 := n2-bottom-coord-rule-2.
+n2-bottom-coord-3 := n2-bottom-coord-rule-3.
+
+; n3-top-coord := n3-top-coord-rule.
+
+; n3-bottom-coord := n3-bottom-coord-rule.
+
+; n4-top-coord := n4-top-coord-rule.
+
+; n4-mid-coord := n4-mid-coord-rule.
+
+; n4-bottom-coord := n4-bottom-coord-rule.
+
+; n4-left-coord := n4-left-coord-rule.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-09-03 / SSH) 
+;; ??철수가 영희가 오았다
+;; 위와 같은 극히 비생산적인 구문을 처리하기 위해
+;; 전체 효율성이 너무 낮아짐
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;np5-top-coord := np5-top-coord-rule &
+;  [ STYLE strict,
+;    LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD [ CASE #case ],
+;    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD [ CASE #case ] ].
+np5-top-coord := np5-top-coord-rule &
+  [ STYLE strict,
+    LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD [ CASE #case & [ GCASE no_gcase ]  ],
+    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD [ CASE #case ] ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-25 / SSH) 
+;;?철수가 소희가 가다 
+;;??철수가 영희 가다
+;;*철수의 영희의 책
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; np5-top-coord-robust := np5-top-coord-rule & 
+;   [ STYLE robust,
+;     LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD [ CASE.GCASE vcase & #case ],
+;     RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD [ CASE.GCASE #case ] ].
+
+
+np5-bottom-coord := np5-bottom-coord-rule &
+ [ ARGS < [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE no_scase  ] > ].

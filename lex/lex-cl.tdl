@@ -1,0 +1,257 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;; This file includes lexicons related to numeral expression.
+;; e.g. classifiers, numbers, integers, and so forth.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 17, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;; CLASIFIERS
+
+명 := n-cl &
+  [ STEM < "명" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_명_cl_rel" ].
+
+가지-12 := n-cl &
+[ STEM < "가지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가지_cl_rel" ].
+
+개-2 := n-cl &
+ [ STEM < "개" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_개_cl_rel" ].
+
+갤런 := n-cl &
+ [ STEM < "갤런" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_갤런_cl_1_rel" ].
+
+걸음 := n-cl &
+ [ STEM < "걸음" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_걸음_cl_rel" ].
+
+군데 := n-cl &
+ [ STEM < "군데" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_군데_cl_1_rel" ].
+
+날-1 := n-cl &
+ [ STEM < "날" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_날_cl_rel" ].
+
+년-1 := n-cl &
+ [ STEM < "년" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_년_cl_rel" ].
+
+노트-1 := n-cl &
+ [ STEM < "노트" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_노트_cl_rel" ].
+
+달-2 := n-cl &
+[ STEM < "달" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_달_cl_rel" ].
+
+달러 := n-cl &
+[ STEM < "달러" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_달러_cl_rel" ].
+
+매-1 := n-cl &
+[ STEM < "매" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_매_cl_rel" ].
+
+미터 := n-cl &
+[ STEM < "미터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_미터_cl_rel" ].
+
+밀리미터 := n-cl &
+[ STEM < "밀리미터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_밀리미터_cl_rel" ].
+
+본-2 := n-cl &
+[ STEM < "본" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_본_cl_rel" ].
+
+분-3 := n-cl &
+[ STEM < "분" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_분_cl_rel" ].
+
+세대-3 := n-cl &
+[ STEM < "세대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_세대_cl_rel" ].
+
+시-2 := n-cl &
+[ STEM < "시" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시_cl_rel" ].
+
+엔 := n-cl &
+ [ STEM < "엔" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_Yen_cl_rel" ].
+
+월-1 := n-cl &
+ [ STEM < "월" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_월_cl__rel" ].
+
+일-2 := n-cl &
+ [ STEM < "일" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_일_cl_rel" ].
+
+장-1 := n-cl &
+[ STEM < "장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장_cl_rel" ].
+
+짜리 := n-cl &
+ [ STEM < "짜리" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_짜리_cl_rel" ].
+
+채-1 := n-cl &
+ [ STEM < "채" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_채_cl_rel" ].
+
+층-2 := n-cl &
+ [ STEM < "층" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_층_cl_rel" ].
+
+킬로그램 := n-cl &
+ [ STEM < "킬로그램" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_킬로그램_cl_rel" ].
+
+킬로미터 := n-cl &
+ [ STEM < "킬로미터" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_킬로미터_cl_rel" ].
+
+패-1 := n-cl &
+[ STEM < "패" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_패_cl_rel" ].
+
+권 := n-cl &
+ [ STEM < "권" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_권_cl_rel" ].
+
+마리 := n-cl &
+ [ STEM < "마리" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_마리_cl_rel" ].
+
+잔  := n-cl &
+ [ STEM < "잔" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_잔_cl_rel" ].
+
+캐럿  := n-cl &
+ [ STEM < "캐럿" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_캐럿_cl_rel" ].
+
+
+
+;;; NUMERAL ADNOMINAL 
+
+한-1 := adn-num &
+[ STEM < "한" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "1" ].
+
+
+두-1 := adn-num &
+[ STEM < "두" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "2" ].
+
+
+세-1 := adn-num &
+[ STEM < "세" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "3" ].
+
+
+
+
+
+
+;;; NUMBERS
+
+
+
+
+100_n := n-num &
+[ STEM < "100" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "100" ].
+
+10_n := n-num &
+[ STEM < "10" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "10" ].
+
+1_n := n-num &
+[ STEM < "1" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "1" ].
+
+12_n := n-num &
+[ STEM < "12" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "12" ].
+
+1987_n := n-num &
+[ STEM < "1987" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "1987" ].
+
+200_n := n-num &
+[ STEM < "200" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "200" ].
+
+2_n := n-num &
+[ STEM < "2" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "2" ].
+
+30_n := n-num &
+[ STEM < "30" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "30" ].
+
+3_n := n-num &
+[ STEM < "3" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "3" ].
+
+4_n := n-num &
+[ STEM < "4" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "4" ].
+
+480_n := n-num &
+[ STEM < "480" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "480" ].
+
+500_n := n-num &
+[ STEM < "500" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "500" ].
+
+50_n := n-num &
+[ STEM < "50" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "50" ].
+
+5_n := n-num &
+[ STEM < "5" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "5" ].
+
+5만_n := n-num &
+[ STEM < "5만" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "50000" ].
+
+6_n := n-num &
+[ STEM < "6" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "6" ].
+
+7_n := n-num &
+[ STEM < "7" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "7" ].
+
+8_n := n-num &
+[ STEM < "8" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "8" ].
+
+9_n := n-num &
+[ STEM < "9" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "9" ].
+
+억-1 := n-num &
+ [ STEM < "억" >,
+   SYNSEM.LKEYS.ALTKEYREL.CARG "100,000,000" ].
+
+오십 := n-num &
+[ STEM < "오십" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "50" ].
+
+육 := n-num &
+[ STEM < "육" >,
+  SYNSEM.LKEYS.ALTKEYREL.CARG "6" ].
+
+

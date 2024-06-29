@@ -1,0 +1,54 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	This file aims to clarify the problem of the current version.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: July. 6, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; This version cannnot handle the below phenomena
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-06 / SSH) 
+;; (1) serial verb constructions
+;; (2) multiple nominative constructions
+;; (3) appositive relative constructions
+;; (4) comparative constructions
+;; (5) cleft sentence
+;; (6) floating quantifiers
+;; (7) adnominal modification
+;; (8) deletion (argument or verbal items)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; This version has a bug with what follows
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-06 / SSH)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (1) generation with spoken forms
+;;  e.g. 철수가 오더다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; This version has not yet settled in terms of the belows
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-06 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (1) predicate names of passive forms
+;; (2) pronoun
+;; (3) coordination
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; This version does not fully 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-06 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (1) represent MRS for quantifiers
+;; (2) handle spoken forms
+;; (3) parse derived lexicons
+;; (4) process binding theory
+;; (5) represent interrogative sentences
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+

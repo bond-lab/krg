@@ -1,0 +1,63 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	This file is for test with small number of lexicons
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Nouns
+
+개 := n-non-human-cn &
+  [ STEM < "개" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개_n_1_rel" ].
+
+빵 := n-obj-cn &
+  [ STEM < "빵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빵_n_1_rel" ].
+
+철수 := n-3rd-prop &
+  [ STEM < "철수" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_철수_n_rel" ].
+
+고려대학교 := n-loc-prop &
+  [ STEM < "고려대학교" >, 
+    SYNSEM.LKEYS.KEYREL.CARG "_고려대학교_n_rel" ].
+
+;;; Verbs
+
+짖 := v-anisubj-intr &
+  [ STEM < "짖" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON -,
+    SYNSEM.LKEYS.KEYREL.PRED "_짖_v_1_rel" ].
+
+가 := v-intr &
+  [ STEM < "가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가_v_1_rel" ].
+
+먹 := v-anisubj-acc-tr &
+  [ STEM < "먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_먹_v_1_rel" ].
+
+사 := v-anisubj-acc-tr &
+  [ STEM < "사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사_v_1_rel" ].
+
+
+;;; Auxiliaries
+
+싶-aux-1 := aux-ko2 &
+  [ STEM < "싶" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싶_aux_1_rel" ].
+
+
+;;; etc.
+이 := det-ind &
+  [ STEM < "이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이_q_rel" ].
+
+그리고 := conj-lex &
+  [ STEM < "그리고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "1" ].
+
+고맙어요-90 := idiom &
+  [ STEM < "고맙어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고맙어요_i_rel" ].

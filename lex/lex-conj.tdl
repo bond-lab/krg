@@ -1,0 +1,29 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 17, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Conjunction Words
+
+그리고 := conj-lex &
+  [ STEM < "그리고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "1" ].
+
+또는 := conj-lex &
+  [ STEM < "또는" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_or_coord_rel",
+    CFORM "1" ].
+
+혹은 := conj-lex &
+  [ STEM < "혹은" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_or_coord_rel",
+    CFORM "1" ].
+
+그러나 := conj-lex &
+  [ STEM < "그러나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_but_coord_rel",
+    CFORM "1" ].
+

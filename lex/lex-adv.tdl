@@ -1,0 +1,750 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 17, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;DISCOURSE MARKER
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-06-15 / SSH) 
+;; 담화 표지는 우선 부사의 하나로 한다.
+;; 이후에 고쳐야 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+
+글쎄 := ph-adv &
+ [ STEM < "글쎄" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_글쎄_adv_rel" ].
+
+
+;;; Adverbs
+
+어제 := ph-adv &
+  [ STEM < "어제" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어제_n_1_rel" ].
+
+항상 := ph-adv &
+  [ STEM < "항상" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_항상_adv_1_rel" ].
+
+완전히 := ph-adv &
+  [ STEM < "완전히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_완전히_adv_rel" ].
+
+가일층 := ph-adv &
+ [ STEM < "가일층" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_가일층_adv_rel" ].
+
+가장 := ph-adv &
+[ STEM < "가장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가장_adv_rel" ].
+
+갑자기 := ph-adv &
+[ STEM < "갑자기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_갑자기_n_rel" ].
+
+
+강경하게 := ph-adv &
+[ STEM < "강경하게" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_강경하게_adv_rel" ].
+
+
+결국 := ph-adv &
+[ STEM < "결국" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_결국_adv_rel" ].
+
+고맙게 := ph-adv &
+ [ STEM < "고맙게" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_고맙게_adv_rel" ].
+
+곧 := ph-adv &
+ [ STEM < "곧" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_곧_adv_rel" ].
+
+곧장 := ph-adv &
+ [ STEM < "곧장" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_곧장_adv_rel" ].
+
+공동으로 := ph-adv &
+[ STEM < "공동으로" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공동으로_adv_rel" ].
+
+
+굳게 := ph-adv &
+ [ STEM < "굳게" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_굳게_adv_rel" ].
+
+
+
+그다지 := ph-adv &
+[ STEM < "그다지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_그다지_adv_rel" ].
+
+그대로 := ph-adv &
+ [ STEM < "그대로" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_그대로_adv_rel" ].
+
+예상대로 := ph-adv &
+ [ STEM < "예상대로" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_예상대로_adv_rel" ].
+
+
+
+그렇게 := ph-adv &
+[ STEM < "그렇게" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_그렇게_adv_rel" ].
+
+
+금방 := ph-adv &
+ [ STEM < "금방" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_금방_adv_rel" ].
+
+깊이-1 := ph-adv &
+[ STEM < "깊이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_깊이_adv_rel" ].
+
+
+꼭 := ph-adv &
+[ STEM < "꼭" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_꼭_adv_rel" ].
+
+널리 := ph-adv &
+[ STEM < "널리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_널리_adv_rel" ].
+
+다시 := ph-adv &
+[ STEM < "다시" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_다시_adv_rel" ].
+
+다행스럽게 := ph-adv &
+[ STEM < "다행스럽게" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_다행스럽게_adv_rel" ].
+
+단단히 := ph-adv &
+ [ STEM < "단단히" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_단단히_adv_rel" ].
+
+단순히 := ph-adv &
+ [ STEM < "단순히" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_단순히_adv_rel" ].
+
+달리-3 := ph-adv &
+ [ STEM < "달리" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_달리_adv_rel" ].
+
+대거 := ph-adv &
+ [ STEM < "대거" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_대거_adv_rel" ].
+
+더욱 := ph-adv &
+ [ STEM < "더욱" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_더욱_adv_rel" ].
+
+둘이서 := ph-adv &
+[ STEM < "둘이서" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_둘이서_n_rel" ].
+
+마침내 := ph-adv &
+[ STEM < "마침내" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마침내_adv_rel" ].
+
+많이 := ph-adv &
+[ STEM < "많이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_많이_adv_rel" ].
+
+
+멀리 := ph-adv &
+[ STEM < "멀리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_멀리_adv_rel" ].
+
+멀리서 := ph-adv &
+[ STEM < "멀리서" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_멀리서_adv_rel" ].
+
+
+먼저 := ph-adv &
+[ STEM < "먼저" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_먼저_adv_rel" ].
+
+멍하니 := ph-adv &
+[ STEM < "멍하니" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_멍하니_adv_rel" ].
+
+
+모두-2 := ph-adv &
+[ STEM < "모두" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모두_adv_2_rel" ].
+
+
+
+문득 := ph-adv &
+[ STEM < "문득" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_문득_adv_rel" ].
+
+바보같이 := ph-adv &
+[ STEM < "바보같이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바보같이_adv_rel" ].
+
+보다 := ph-adv &
+[ STEM < "보다" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_보다_adv_rel" ].
+
+보통 := ph-adv &
+[ STEM < "보통" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_보통_adv_rel" ].
+
+부쩍 := ph-adv &
+[ STEM < "부쩍" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부쩍_adv_rel" ].
+
+분명히 := ph-adv &
+[ STEM < "분명히" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_분명히_adv_rel" ].
+
+빨리 := ph-adv &
+[ STEM < "빨리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_빨리_adv_rel" ].
+
+삼삼오오 := ph-adv &
+[ STEM < "삼삼오오" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_삼삼오오_adv_rel" ].
+
+상당히 := ph-adv &
+ [ STEM < "상당히" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_상당히_adv_rel" ].
+
+신나게 := ph-adv &
+[ STEM < "신나게" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신나게_adv_rel" ].
+
+심하게 := ph-adv &
+[ STEM < "심하게" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_심하게_adv_rel" ].
+
+아무리 := ph-adv  &
+[ STEM < "아무리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아무리_adv_rel" ].
+
+아직 := ph-adv &
+[ STEM < "아직" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아직_adv_rel" ].
+
+아침일찍 := ph-adv &
+[ STEM < "아침일찍" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아침일찍_adv_rel" ].
+
+앞으로 := ph-adv &
+[ STEM < "앞으로" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_앞으로_adv_rel" ].
+
+역시 := ph-adv &
+[ STEM < "역시" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_역시_adv_rel" ].
+
+
+열심히 := ph-adv &
+[ STEM < "열심히" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_열심히_adv_rel" ].
+
+왜 := ph-adv &
+[ STEM < "왜" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_왜_adv_rel" ].
+
+요즘 := ph-adv &
+[ STEM < "요즘" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_요즘_adv_rel" ].
+
+요사이 := ph-adv &
+[ STEM < "요사이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_요사이_adv_rel" ].
+
+
+우선 := ph-adv &
+[ STEM < "우선" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_우선_adv_rel" ].
+
+
+우연히 := ph-adv &
+ [ STEM < "우연히" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_우연히_adv_rel" ].
+
+
+
+이렇게 := ph-adv &
+[ STEM < "이렇게" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이렇게_adv_rel" ].
+
+
+이미 := ph-adv &
+[ STEM < "이미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이미_adv_rel" ].
+
+
+
+
+이상하게 := ph-adv &
+ [ STEM < "이상하게" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_이상하게_adv_rel" ].
+
+
+
+이제 := ph-adv &
+[ STEM < "이제" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이제_adv_rel" ].
+
+
+
+이후-2 := ph-adv &
+[ STEM < "이후" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이후_adv_rel" ].
+
+
+일찍 := ph-adv &
+[ STEM < "일찍" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_일찍_adv_rel" ].
+
+
+자주 := ph-adv &
+ [ STEM < "자주" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_자주_adv_rel" ].
+
+
+저절로 := ph-adv &
+[ STEM < "저절로" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_저절로_adv_rel" ].
+
+
+점차 := ph-adv &
+[ STEM < "점차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_점차_adv_rel" ].
+
+
+정말 := ph-adv &
+[ STEM < "정말" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정말_adv_rel" ].
+
+
+제일 := ph-adv &
+[ STEM < "제일" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_제일_adv_rel" ].
+
+
+조금 := ph-adv &
+ [ STEM < "조금" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_조금_adv_rel" ].
+
+
+조심스럽게 := ph-adv &
+[ STEM < "조심스럽게" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_조심스럽게_adv_rel" ].
+
+좀-1 := ph-adv &
+[ STEM < "좀" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_좀_adv_rel" ].
+
+
+지금 := ph-adv &
+[ STEM < "지금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지금_adv_rel" ].
+
+
+
+천천히 := ph-adv &
+[ STEM < "천천히" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_천천히_adv_rel" ].
+
+
+철저히 := ph-adv &
+[ STEM < "철저히" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_철저히_adv_rel" ].
+
+
+최근에 := ph-adv &
+[ STEM < "최근에" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_최근에_adv_rel" ].
+
+
+충분히 := ph-adv &
+[ STEM < "충분히" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_충분히_adv_rel" ].
+
+
+크게 := ph-adv &
+ [ STEM < "크게" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_크게_adv_rel" ].
+
+킬로그램당 := ph-adv &
+ [ STEM < "킬로그램당" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_킬로그램당_adv_rel" ].
+
+특히 := ph-adv &
+[ STEM < "특히" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_특히_adv_rel" ].
+
+
+틀림없이 := ph-adv &
+[ STEM < "틀림없이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_틀림없이_adv_rel" ].
+
+
+함께 := ph-adv &
+[ STEM < "함께" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_함께_adv_rel" ].
+
+
+혼자서 := ph-adv &
+[ STEM < "혼자서" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_혼자서_adv_rel" ].
+
+
+흔쾌히 := ph-adv &
+[ STEM < "흔쾌히" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_흔쾌히_adv_rel" ].
+
+따라서 := ph-adv & 
+[ STEM < "따라서" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_따라서_adv_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-21 / SSH) 
+;; MRS generation을 대화형 시스템(dialogue system)에 적용하기 위한 테스트 
+;; 자세한 것은 Rebecca의 석사 논문 참조
+;; 예컨대, SKT의 일미리와 같은 대화형 시스템에서
+;; 사용자가 아래와 같은 문장을 입력했을 경우에도
+;;   소희가 오나전 예쁘당 (통신체 ; online 스타일)
+;; 이 문장의 MRS를 올바르게 분석한 뒤
+;; 이를 MRS로 옮겨 대응하는 문장를 생성할 수 있어야 한다
+;;    예, 저도 소희가 참 예쁘다고 생각합니다
+;; 실제 일미리 코퍼스를 보면 학교 문법에 맞는 문장 보다
+;; 그렇지 않은 문장이 더 많다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+오나전 := ph-adv-online &
+  [	STEM < "오나전" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_완전히_adv_rel" ].
+
+
+잘 := int-adv &
+  [ STEM < "잘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잘_adv_rel" ].
+
+
+
+겨우 := int-adv &
+ [ STEM < "겨우" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_겨우_adv_rel" ].
+
+
+내려다 := int-adv &
+[ STEM < "내려다" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_내려다_adv_rel" ].
+
+
+너무 := int-adv &
+[ STEM < "너무" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_너무_adv_rel" ].
+
+너무나 := int-adv &
+[ STEM < "너무나" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_너무나_adv_rel" ].
+
+
+다-1 := int-adv &
+[ STEM < "다" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_다_adv_rel" ].
+
+
+더 := int-adv &
+[ STEM < "더" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_더_adv_rel" ].
+
+
+매우 := int-adv &
+[ STEM < "매우" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_매우_adv_rel" ].
+
+몹시 := int-adv &
+ [ STEM < "몹시" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_몸시_adv_rel" ].
+
+바로 := int-adv &
+[ STEM < "바로" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바로_adv_rel" ].
+
+방금 := int-adv &
+[ STEM < "방금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_방금_adv_rel" ].
+
+
+서로 := int-adv &
+ [ STEM < "서로" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_서로_adv_rel" ].
+
+스스로-1 := int-adv &
+ [ STEM < "스스로" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_스스로_adv_rel" ].
+
+
+이른바 := int-adv &
+ [ STEM < "이른바" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_이른바_adv_rel" ].
+
+확 := int-adv &
+ [ STEM < "확" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_확_adv_rel" ].
+
+
+;;; negative adverbs
+
+안 := neg-adv &
+  [ STEM < "안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_neg_r_rel" ].
+
+못 := neg-adv &
+  [ STEM < "못" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_neg_r_rel" ].
+
+
+;;; adverbs which modify only other adverbs
+
+아주 := advmod-adv &
+  [ STEM < "아주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아주_adv_rel" ].
+
+
+이야말로 := advmod-adv &
+[ STEM < "이야말로" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이야말로_adv_rel" ].
+
+
+
+;;; n-advl
+;; which modifies verbals, no arguements
+
+통채 := n-advl &
+ [ STEM < "통채" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_통채_n_rel" ].
+
+봄 := n-advl &
+[ STEM < "봄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_봄_n_rel" ].
+
+여름 := n-advl &
+ [ STEM < "여름" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_여름_n_rel" ].
+
+가을 := n-advl &
+ [ STEM < "가을" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_가을_n_rel" ].
+
+겨울 := n-advl &
+[ STEM < "겨울" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_겨울_n_rel" ].
+
+봄철 := n-advl &
+[ STEM < "봄철" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_봄철_n_rel" ].
+
+여름철 := n-advl &
+ [ STEM < "여름철" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_여름철_n_rel" ].
+
+가을철 := n-advl &
+ [ STEM < "가을철" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_가을철_n_rel" ].
+
+겨울철 := n-advl &
+[ STEM < "겨울철" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_겨울철_n_rel" ].
+
+
+내년 := n-advl &
+[ STEM < "내년" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_내년_n_rel" ].
+
+내주 := n-advl &
+[ STEM < "내주" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_내주_n_rel" ].
+
+오늘 := n-advl &
+[ STEM < "오늘" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_오늘_n_rel" ].
+
+내일 := n-advl &
+[ STEM < "내일" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_내일_n_rel" ].
+
+당시 := n-advl &
+[ STEM < "당시" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_당시_n_rel" ].
+
+
+새벽 := n-advl &
+[ STEM < "새벽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_새벽_n_rel" ].
+
+밤-1 := n-advl &
+[ STEM < "밤" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_밤_n_1_rel" ].
+
+
+
+불과 := n-advl &
+[ STEM < "불과" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_불과_n_rel" ].
+
+
+저녁-2 := n-advl &
+[ STEM < "저녁" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_저녁_n_2_rel" ].
+
+
+주말 := n-advl &
+[ STEM < "주말" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주말_n_rel" ].
+
+
+지난밤 := n-advl &
+[ STEM < "지난밤" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지난밤_n_rel" ].
+
+십년째 := n-advl & 
+[ STEM < "십년째" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_십년째_n_rel" ].
+
+;;; n-adv
+;; which modifies verbals, and has arguement(s)
+시간-1  := n-adv &
+ [ STEM < "시간" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_시간_n_1_rel" ].
+
+대신-1  := n-adv &
+ [ STEM < "대신" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_대신_n_1_rel" ].
+
+
+그때 := n-adv &
+[ STEM < "그때" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_그때_n_rel" ].
+
+계속 := n-adv &
+[ STEM < "계속" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_계속_n_rel" ].
+
+동안-1  := n-adv &
+ [ STEM < "동안" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_동안_n_1_rel" ].
+
+매년 := n-adv &
+ [ STEM < "매년" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_매년_n_rel" ].
+
+매월 := n-adv &
+ [ STEM < "매월" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_매월_n_rel" ].
+
+매일 := n-adv &
+ [ STEM < "매일" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_매일_n_rel" ].
+
+번 := n-adv &
+[ STEM < "번" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_번_n_rel" ].
+
+
+온종일 := n-adv &
+[ STEM < "온종일" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_온종일_n_rel" ].
+
+올해 := n-adv &
+[ STEM < "올해" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_올해_n_rel" ].
+
+
+작년 := n-adv &
+[ STEM < "작년" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_작년_n_rel" ].
+
+원래 := n-adv &
+[ STEM < "원래" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_원래_n_rel" ].
+
+
+
+이상-1 := n-adv &
+ [ STEM < "이상" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_이상_n_1_rel" ].
+
+
+종래 := n-adv &
+[ STEM < "종래" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_종래_n_rel" ].
+
+
+최근 := n-adv &
+ [ STEM < "최근" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_최근_n_rel" ].
+
+일년 := n-adv & 
+ [ STEM < "일년" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_일년_n_rel" ].
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-28 / SSH) 
+;;  정보기반 한국어 문법 (장석진 1995)에서 가져온 어휘
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+가만히 := ph-adv &
+  [ STEM < "가만히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가만히_adv_rel" ].
+
+같이 := int-adv &
+  [ STEM < "같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_같이_adv_rel" ].
+
+그만 := int-adv &
+  [ STEM < "그만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그만_adv_rel" ].
+
+길이-2 := ph-adv &
+  [ STEM < "길이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_길이_adv_rel" ].
+
+마땅히 := ph-adv &
+  [ STEM < "마땅히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마땅히_adv_rel" ].
+
+벌써 := ph-adv &
+  [ STEM < "벌써" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌써_adv_rel" ].
+
+솔직히 := ph-adv &
+  [ STEM < "솔직히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_솔직히_adv_rel" ].
+
+실은 := ph-adv &
+  [ STEM < "실은" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실은_adv_rel" ].
+
+온통 := ph-adv &
+  [ STEM < "온통" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_온통_adv_rel" ].
+
+이리-2 := ph-adv-robust &
+  [ STEM < "이리" >,
+	STYLE dialect,
+    SYNSEM.LKEYS.KEYREL.PRED "_이리_adv_rel" ].
+
+직접 := ph-adv &
+  [ STEM < "직접" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_직접_adv_rel" ].
+
+헐레벌떡 := ph-adv &
+  [ STEM < "헐레벌떡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헐레벌떡_adv_rel" ].
+
+

@@ -1,0 +1,164 @@
+;;; -*- Mode: TDL; Package: LKB -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 17, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Determiners
+
+이 := det-ind &
+  [ STEM < "이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이_q_rel" ].
+
+그 := det-ind &
+[ STEM < "그" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_그_q_rel" ].
+
+
+그런 := det-ind &
+[ STEM < "그런" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_그런_q_rel" ].
+
+; 그이 := det-ind &
+; [ STEM < "그이" >, 
+;   SYNSEM.LKEYS.KEYREL.PRED "_그이_q_rel" ].
+
+내-3 := det-ind &
+[ STEM < "내" >, 
+  SYNSEM.LKEYS.KEYREL.PRED "_내_q_rel" ].
+
+
+본 := det-ind &
+[ STEM < "본" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_본_q_rel" ].
+
+약 := det-ind &
+[ STEM < "약" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_약_q_rel" ].
+
+
+올-1 := det-ind &
+[ STEM < "올" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_올_q_rel" ].
+
+
+이런 := det-ind &
+[ STEM < "이런" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이런_q_rel" ].
+
+
+
+이번 := det-ind &
+[ STEM < "이번" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이번_q_rel" ].
+
+
+자기-1 := det-ind &
+[ STEM < "자기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_자기_q_rel" ].
+
+저-2 := det-ind &
+[ STEM < "저" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_저_q_rel" ].
+
+몇몇 := det-qnt &
+  [ STEM < "몇몇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몇몇_q_rel" ].
+
+모든1 := det-qnt &
+  [ STEM < "모든" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모든_q_rel" ].
+
+
+어떤-1 := det-qnt &
+[ STEM < "어떤" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_어떤_q_rel" ].
+
+
+제-2 := det-qnt &
+[ STEM < "제" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_제_q_rel" ].
+
+
+첫 := det-qnt &
+[ STEM < "첫" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_첫_q_rel" ].
+
+
+어느 := adn-int &
+  [ STEM < "어느" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어느_nq_rel" ].
+
+
+무슨 := adn-int &
+[ STEM < "무슨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_무슨_nq_rel" ].
+
+
+
+새2 := adn-char &
+  [ STEM < "새" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새_nq_rel" ].
+
+;;모던 보이
+모던 := adn-char &
+[ STEM < "모던" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_modern_nq_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-14 / SSH) 
+;; 이 단어는 관형사로 처리한다.
+;; Penn Korean Treebank 가이드라인 참조
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+다른 := adn-char &
+  [ STEM < "다른" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다른_nq_rel" ].
+
+
+딴 := adn-char &
+  [ STEM < "딴" >,
+	STYLE dialect,
+    SYNSEM.LKEYS.KEYREL.PRED "_딴_nq_rel" ].
+
+옛 := adn-char &
+[ STEM < "옛" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_옛_nq_rel" ].
+
+
+전-1 := adn-char &
+[ STEM < "전" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전_nq_rel" ].
+
+
+
+
+진정한 := adn-char &
+[ STEM < "진정한" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_진정한_nq_rel" ].
+
+
+
+헌 := adn-char &
+[ STEM < "헌" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_헌_nq_rel" ].
+
+모든2 := adn-qnt &
+  [ STEM < "모든" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모든_nq_rel" ].
+
+몇 := adn-qnt &
+[ STEM < "몇" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_몇_nq_rel" ].
+
+
+
+배-4 := adn-qnt &
+[ STEM < "배" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_배_nq_rel" ].
+
+
+어떤-2 := adn-qnt &
+[ STEM < "어떤" >,
+  SYNSEM.LKEYS.KEYREL.PRED "어떤_nq_rel" ].

@@ -1,0 +1,576 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Classifiers and Bound Nouns obtained from corpora
+;;	 These lexicons are taken from the Sejong corpus and the BTEC corpus
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: June. 3, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+미리-70 := n-cl &
+[ STEM < "미리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_미리_cl_70_rel" ].
+
+cm-70 := n-cl &
+  [ STEM < "cm" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cm_n_70_rel" ].
+
+간-70 := n-cl &
+  [ STEM < "간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간_n_70_rel" ].
+
+개국-70 := n-cl &
+  [ STEM < "개국" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개국_n_70_rel" ].
+
+개년-70 := n-cl &
+  [ STEM < "개년" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개년_n_70_rel" ].
+
+개소-70 := n-cl &
+  [ STEM < "개소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개소_n_70_rel" ].
+
+개월-70 := n-cl &
+  [ STEM < "개월" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개월_n_70_rel" ].
+
+건-70 := n-cl &
+  [ STEM < "건" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_건_n_70_rel" ].
+
+겨를-70 := bn-nonlex &
+  [ STEM < "겨를" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겨를_n_70_rel" ].
+
+격-70 := bn-nonlex &
+  [ STEM < "격" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_격_n_70_rel" ].
+
+겸-70 := bn-nonlex &
+  [ STEM < "겸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겸_n_70_rel" ].
+
+광년-70 := n-cl &
+  [ STEM < "광년" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_광년_n_70_rel" ].
+
+교시-70 := n-cl &
+  [ STEM < "교시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_교시_n_70_rel" ].
+
+구-70 := n-cl &
+  [ STEM < "구" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구_n_70_rel" ].
+
+군데-70 := n-cl &
+  [ STEM < "군데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_군데_n_70_rel" ].
+
+그램-70 := n-cl &
+  [ STEM < "그램" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그램_n_70_rel" ].
+
+그루-70 := n-cl &
+  [ STEM < "그루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그루_n_70_rel" ].
+
+근-70 := n-cl &
+  [ STEM < "근" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근_n_70_rel" ].
+
+기-70 := n-cl &
+  [ STEM < "기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기_n_70_rel" ].
+
+길-70 := n-cl &
+  [ STEM < "길" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_길_n_70_rel" ].
+
+김-70 := bn-nonlex &
+  [ STEM < "김" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_김_n_70_rel" ].
+
+꺼-70 := bn-nonlex &
+  [ STEM < "꺼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꺼_n_70_rel" ].
+
+나름-70 := bn-nonlex &
+  [ STEM < "나름" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나름_n_70_rel" ].
+
+나위-70 := bn-nonlex &
+  [ STEM < "나위" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나위_n_70_rel" ].
+
+나절-70 := n-cl &
+  [ STEM < "나절" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나절_n_70_rel" ].
+
+남짓-70 := bn-nonlex &
+  [ STEM < "남짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남짓_n_70_rel" ].
+
+냥-70 := n-cl &
+  [ STEM < "냥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_냥_n_70_rel" ].
+
+녀석-70 := n-cl &
+  [ STEM < "녀석" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_녀석_n_70_rel" ].
+
+년대-70 := n-cl &
+  [ STEM < "년대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_년대_n_70_rel" ].
+
+년도-70 := n-cl &
+  [ STEM < "년도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_년도_n_70_rel" ].
+
+녘-70 := bn-nonlex &
+  [ STEM < "녘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_녘_n_70_rel" ].
+
+놈-70 := n-cl &
+  [ STEM < "놈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_놈_n_70_rel" ].
+
+눔-70 := n-cl &
+  [ STEM < "눔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눔_n_70_rel" ].
+
+닢-70 := n-cl &
+  [ STEM < "닢" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_닢_n_70_rel" ].
+
+단-70 := n-cl &
+  [ STEM < "단" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단_n_70_rel" ].
+
+대로-70 := bn-nonlex &
+  [ STEM < "대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대로_n_70_rel" ].
+
+대루-70 := bn-nonlex &
+  [ STEM < "대루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대루_n_70_rel" ].
+
+도-70 := n-cl &
+  [ STEM < "도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도_n_70_rel" ].
+
+동-70 := n-cl &
+  [ STEM < "동" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_동_n_70_rel" ].
+
+되-70 := n-cl &
+  [ STEM < "되" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되_n_70_rel" ].
+
+둥-70 := bn-nonlex &
+  [ STEM < "둥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둥_n_70_rel" ].
+
+등-70 := bn-nonlex &
+  [ STEM < "등" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_등_n_70_rel" ].
+
+등등-70 := bn-nonlex &
+  [ STEM < "등등" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_등등_n_70_rel" ].
+
+등속-70 := n-obj-cn &
+  [ STEM < "등속" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_등속_n_70_rel" ].
+
+등지-70 := n-obj-cn &
+  [ STEM < "등지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_등지_n_70_rel" ].
+
+따름-70 := n-cl &
+  [ STEM < "따름" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따름_n_70_rel" ].
+
+따위-70 := n-cl &
+  [ STEM < "따위" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따위_n_70_rel" ].
+
+량-70 := n-cl &
+  [ STEM < "량" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_량_n_70_rel" ].
+
+리터-70 := n-cl &
+  [ STEM < "리터" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_리터_n_70_rel" ].
+
+마당-70 := n-cl &
+  [ STEM < "마당" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마당_n_70_rel" ].
+
+마련-70 := bn-nonlex &
+  [ STEM < "마련" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마련_n_70_rel" ].
+
+마르크-70 := n-cl &
+  [ STEM < "마르크" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마르크_n_70_rel" ].
+
+마일-70 := n-cl &
+  [ STEM < "마일" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마일_n_70_rel" ].
+
+마지기-70 := n-cl &
+  [ STEM < "마지기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마지기_n_70_rel" ].
+
+막-70 := n-cl &
+  [ STEM < "막" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_막_n_70_rel" ].
+
+만큼-70 := bn-nonlex &
+  [ STEM < "만큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만큼_n_70_rel" ].
+
+말-70 := n-cl &
+  [ STEM < "말" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말_n_70_rel" ].
+
+망정-70 := bn-nonlex &
+  [ STEM < "망정" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_망정_n_70_rel" ].
+
+모금-70 := n-cl &
+  [ STEM < "모금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모금_n_70_rel" ].
+
+모양-70 := bn-nonlex &
+  [ STEM < "모양" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모양_n_70_rel" ].
+
+무렵-70 := bn-nonlex &
+  [ STEM < "무렵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무렵_n_70_rel" ].
+
+문-70 := n-cl &
+  [ STEM < "문" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문_n_70_rel" ].
+
+밀리-70 := n-cl &
+  [ STEM < "밀리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밀리_n_70_rel" ].
+
+바-70 := bn-nonlex &
+  [ STEM < "바" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바_n_70_rel" ].
+
+바람-70 := bn-nonlex &
+  [ STEM < "바람" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바람_n_70_rel" ].
+
+바퀴-70 := n-cl &
+  [ STEM < "바퀴" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바퀴_n_70_rel" ].
+
+발-70 := n-cl &
+  [ STEM < "발" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발_n_70_rel" ].
+
+발짝-70 := n-cl &
+  [ STEM < "발짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발짝_n_70_rel" ].
+
+배-70 := n-cl &
+  [ STEM < "배" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배_n_70_rel" ].
+
+배럴-70 := n-cl &
+  [ STEM < "배럴" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배럴_n_70_rel" ].
+
+번-70 := n-cl &
+  [ STEM < "번" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번_n_70_rel" ].
+
+벌-70 := n-cl &
+  [ STEM < "벌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌_n_70_rel" ].
+
+볼트-70 := n-cl &
+  [ STEM < "볼트" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_볼트_n_70_rel" ].
+
+비트-70 := n-cl &
+  [ STEM < "비트" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비트_n_70_rel" ].
+
+뻔-70 := bn-nonlex &
+  [ STEM < "뻔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뻔_n_70_rel" ].
+
+뼘-70 := n-cl &
+  [ STEM < "뼘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뼘_n_70_rel" ].
+
+뿐-70 := bn-nonlex &
+  [ STEM < "뿐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿐_n_70_rel" ].
+
+새-70 := bn-nonlex &
+  [ STEM < "새" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새_n_70_rel" ].
+
+석-70 := n-cl &
+  [ STEM < "석" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_석_n_70_rel" ].
+
+섬-70 := n-cl &
+  [ STEM < "섬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_섬_n_70_rel" ].
+
+센트-70 := n-cl &
+  [ STEM < "센트" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_센트_n_70_rel" ].
+
+센티-70 := n-cl &
+  [ STEM < "센티" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_센티_n_70_rel" ].
+
+센티미터-70 := n-cl &
+  [ STEM < "센티미터" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_센티미터_n_70_rel" ].
+
+셈-70 := bn-nonlex &
+  [ STEM < "셈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_셈_n_70_rel" ].
+
+술-70 := n-cl &
+  [ STEM < "술" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술_n_70_rel" ].
+
+승-70 := n-cl &
+  [ STEM < "승" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_승_n_70_rel" ].
+
+실-70 := n-cl &
+  [ STEM < "실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실_n_70_rel" ].
+
+아름-70 := n-cl &
+  [ STEM < "아름" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아름_n_70_rel" ].
+
+양-70 := bn-nonlex &
+  [ STEM < "양" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_양_n_70_rel" ].
+
+여지-70 := bn-nonlex &
+  [ STEM < "여지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여지_n_70_rel" ].
+
+온스-70 := n-cl &
+  [ STEM < "온스" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_온스_n_70_rel" ].
+
+움큼-70 := n-cl &
+  [ STEM < "움큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움큼_n_70_rel" ].
+
+원-70 := n-cl &
+  [ STEM < "원" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_원_n_70_rel" ].
+
+위-70 := n-cl &
+  [ STEM < "위" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_위_n_70_rel" ].
+
+위안-70 := n-cl &
+  [ STEM < "위안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_위안_n_70_rel" ].
+
+유로-70 := n-cl &
+  [ STEM < "유로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유로_n_70_rel" ].
+
+이-70 := bn-nonlex &
+  [ STEM < "이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이_n_70_rel" ].
+
+인치-70 := n-cl &
+  [ STEM < "인치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_인치_n_70_rel" ].
+
+자-70 := n-cl &
+  [ STEM < "자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자_n_70_rel" ].
+
+자루-70 := n-cl &
+  [ STEM < "자루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자루_n_70_rel" ].
+
+점-70 := n-cl &
+  [ STEM < "점" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_점_n_70_rel" ].
+
+정-70 := n-cl &
+  [ STEM < "정" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정_n_70_rel" ].
+
+조-70 := n-cl &
+  [ STEM < "조" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조_n_70_rel" ].
+
+족족-70 := bn-nonlex &
+  [ STEM < "족족" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_족족_n_70_rel" ].
+
+주기-70 := n-cl &
+  [ STEM < "주기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주기_n_70_rel" ].
+
+주년-70 := n-cl &
+  [ STEM < "주년" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주년_n_70_rel" ].
+
+주일-70 := n-cl &
+  [ STEM < "주일" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주일_n_70_rel" ].
+
+즈음-70 := bn-nonlex &
+  [ STEM < "즈음" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_즈음_n_70_rel" ].
+
+지경-70 := bn-nonlex &
+  [ STEM < "지경" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지경_n_70_rel" ].
+
+집-70 := n-cl &
+  [ STEM < "집" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집_n_70_rel" ].
+
+짝-70 := n-cl &
+  [ STEM < "짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짝_n_70_rel" ].
+
+쪽-70 := n-cl &
+  [ STEM < "쪽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쪽_n_70_rel" ].
+
+쯤-70 := bn-nonlex &
+  [ STEM < "쯤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쯤_n_70_rel" ].
+
+차-70 := bn-nonlex &
+  [ STEM < "차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차_n_70_rel" ].
+
+첩-70 := n-cl &
+  [ STEM < "첩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_첩_n_70_rel" ].
+
+촉-70 := n-cl &
+  [ STEM < "촉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_촉_n_70_rel" ].
+
+촌-70 := n-cl &
+  [ STEM < "촌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_촌_n_70_rel" ].
+
+켤레-70 := n-cl &
+  [ STEM < "켤레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_켤레_n_70_rel" ].
+
+킬로-70 := n-cl &
+  [ STEM < "킬로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_킬로_n_70_rel" ].
+
+킬로와트-70 := n-cl &
+  [ STEM < "킬로와트" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_킬로와트_n_70_rel" ].
+
+터-70 := bn-nonlex &
+  [ STEM < "터" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_터_n_70_rel" ].
+
+톤-70 := n-cl &
+  [ STEM < "톤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_톤_n_70_rel" ].
+
+통-70 := n-cl &
+  [ STEM < "통" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_통_n_70_rel" ].
+
+파운드-70 := n-cl &
+  [ STEM < "파운드" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파운드_n_70_rel" ].
+
+판-70 := n-cl &
+  [ STEM < "판" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_판_n_70_rel" ].
+
+퍼센트-70 := n-cl &
+  [ STEM < "퍼센트" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퍼센트_n_70_rel" ].
+
+편-70 := n-cl &
+  [ STEM < "편" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_편_n_70_rel" ].
+
+평-70 := n-cl &
+  [ STEM < "평" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_평_n_70_rel" ].
+
+폭-70 := n-cl &
+  [ STEM < "폭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_폭_n_70_rel" ].
+
+푼-70 := n-cl &
+  [ STEM < "푼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푼_n_70_rel" ].
+
+프랑-70 := n-cl &
+  [ STEM < "프랑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_프랑_n_70_rel" ].
+
+피트-70 := n-cl &
+  [ STEM < "피트" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피트_n_70_rel" ].
+
+필-70 := n-cl &
+  [ STEM < "필" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_필_n_70_rel" ].
+
+필지-70 := n-cl &
+  [ STEM < "필지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_필지_n_70_rel" ].
+
+할-70 := n-cl &
+  [ STEM < "할" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_할_n_70_rel" ].
+
+해-70 := n-cl &
+  [ STEM < "해" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_해_n_70_rel" ].
+
+해리-70 := n-cl &
+  [ STEM < "해리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_해리_n_70_rel" ].
+
+호-70 := n-cl &
+  [ STEM < "호" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호_n_70_rel" ].
+
+홉-70 := n-cl &
+  [ STEM < "홉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홉_n_70_rel" ].
+
+환-70 := n-cl &
+  [ STEM < "환" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_환_n_70_rel" ].
+
+회-70 := n-cl &
+  [ STEM < "회" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_회_n_70_rel" ].
+
+회전-70 := n-cl &
+  [ STEM < "회전" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_회전_n_70_rel" ].
+

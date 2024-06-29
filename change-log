@@ -1,0 +1,32 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	This file aims to follow up the changing process of KRG after July. 2009
+;;	If you alter the structure of KRG, add some featuers the previous version,
+;;	or do ant other work on KRG, 
+;;	please specify your working note as well as the brief reason on this file.  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: July. 6, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-09-03 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+철수가 읽은 책
+	위 구조를 처리하기 위해서, v-default를 도입하고 v-final-lex의 DTR를 세분화함
+
+관련되는 부분
+(1)철수가 책을 읽고 싶었다
+	위에서 읽고의 시제는 present가 아니라 unspecified가 되어야 맞다
+(2) 빵을 먹기
+    	마찬가지로 현재시제가 아니라 시제정보가 명세되지 않은 것이다.
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-09-03 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+철수가 영희가 오다
+	위 문장을 비문으로 하기로 함
+  	위 문장까지 올바르게 처리하기 위해 다른 문법 모듈이 겪는 손실이 너무 큼
+	이전에는 NP5-COORD로 되어 있었음
+
+

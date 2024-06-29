@@ -1,0 +1,121 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;; This file includes bound nouns and related lexicons
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: May. 21, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Bound Nouns
+
+
+것-1 := bn-rc &
+  [ STEM < "것" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_것_bn_rel" ].
+
+걸-5 := bn-rc &
+  [ STEM < "걸" >,
+	STYLE dialect,
+    SYNSEM.LKEYS.KEYREL.PRED "_것_bn_rel" ].
+
+것-3 := bn-nonlex &
+  [ STEM < "것" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_것_bn_rel",
+	SYNSEM.LOCAL.CAT.HEAD.NFORM kes ].
+
+수1 := bn-nonlex &
+  [ STEM < "수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수_bn_rel",
+	SYNSEM.LOCAL.CAT.HEAD.NFORM swu ].
+
+
+데 := bn-nonlex &
+[ STEM < "데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_데_bn_rel",
+	SYNSEM.LOCAL.CAT.HEAD.NFORM bn-form ].
+
+
+때문 := bn-nonlex &
+[ STEM < "때문" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_때문_bn_rel" ].
+
+
+만-1 := bn-nonlex &
+[ STEM < "만" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_만_bn_rel" ].
+
+
+
+적-2 := bn-nonlex &
+[ STEM < "적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_적_bn_rel" ].
+
+줄-3 := bn-nonlex &
+[ STEM < "줄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_줄_bn_rel" ].
+
+
+중-1 := bn-nonlex &
+[ STEM < "중" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_중_bn_rel" ].
+
+
+후-1 := n-bn &
+[ STEM < "후" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_후_bn_rel" ].
+
+
+대-3 := n-bn &
+[ STEM < "대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대_bn_rel" ].
+
+
+
+
+척-1 := bn-nonlex &
+[ STEM < "척" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_척_bn_rel" ].
+
+체-2 := bn-nonlex &
+[ STEM < "체" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_체_bn_rel" ].
+
+듯-1 := bn-nonlex &
+[ STEM < "듯">,
+  SYNSEM.LKEYS.KEYREL.PRED "_듯_bn_rel" ].
+
+턱 := bn-nonlex & 
+[ STEM < "턱">,
+  SYNSEM.LKEYS.KEYREL.PRED "_턱_bn_rel" ].
+
+법 := bn-nonlex & 
+[ STEM < "법">,
+  SYNSEM.LKEYS.KEYREL.PRED "_법_bn_rel" ].
+
+리 := bn-nonlex & 
+[ STEM < "리 ">,
+  SYNSEM.LKEYS.KEYREL.PRED "_리_bn_rel" ].
+
+
+;;; Verbs that require bound nouns as their complement
+있-3 := v-intr-bn &
+  [ STEM < "있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_있_v_4_rel" ].
+
+없-3 := v-intr-bn &
+  [ STEM < "없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_없_v_2_rel" ].
+
+하-8 := v-intr-bn &
+  [ STEM < "하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하v_8_rel" ].
+
+;;  SEM.KEY.PRED "not_exist" ].
+
+같-3 := v-intr-bn &
+  [ STEM < "같" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_같_v_3_rel" ].
+
+
+
+

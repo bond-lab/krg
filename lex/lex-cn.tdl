@@ -1,0 +1,5708 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;'';;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 17, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Common Nouns
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH) 
+;; 한자어 계열 동음이의어의 경우
+;; 한자로 기술하는 것이 Word Sense Disambiguation에
+;; 효율적이라는 의견을 받아들여 그렇게 PRED를 기술하도록 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; human nouns [PNG.PER 3rd]
+;; [HUMAN +, ANIMACY +]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+학생 := n-human-cn &
+  [ STEM < "학생" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_학생_n_rel" ].
+
+선생 := n-human-cn &
+  [ STEM < "선생" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선생_n_rel" ].
+
+악녀 := n-human-cn &
+  [ STEM < "악녀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_악녀_n_rel" ].
+
+미아-1 := n-human-cn &
+  [ STEM < "미아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미아_n_1_rel" ].
+
+
+가해자 := n-human-cn &
+[ STEM < "가해자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가해자_n_rel" ].
+
+
+
+
+
+강도 := n-human-cn &
+[ STEM < "강도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_강도_n_rel" ].
+
+감독 := n-human-cn &
+[ STEM < "감독" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_감독_n_rel" ].
+
+
+
+개인-1 := n-human-cn &
+[ STEM < "개인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_개인_n_rel" ].
+
+
+
+게으름뱅이 := n-human-cn &
+[ STEM < "게으름뱅이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_게으름뱅이_n_rel" ].
+
+결혼상대 := n-human-cn &
+[ STEM < "결혼상대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_결혼상대_n_rel" ].
+
+경비-1 := n-human-cn &
+[ STEM < "경비" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_경비_n_1_rel" ].
+
+경찰 := n-human-cn &
+[ STEM < "경찰" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_경찰_n_rel" ].
+
+관객 := n-human-cn &
+[ STEM < "관객" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_관객_n_rel" ].
+
+교수 := n-human-cn &
+[ STEM < "교수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_교수_n_rel" ].
+
+
+귀신 := n-human-cn &
+[ STEM < "귀신" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_귀신_n_rel" ].
+
+
+남자 := n-human-cn &
+[ STEM < "남자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_남자_n_rel" ].
+
+노동자 := n-human-cn &
+[ STEM < "노동자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_노동자_n_rel" ].
+
+노인 := n-human-cn &
+[ STEM < "노인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_노인_n_rel" ].
+
+누나 := n-human-cn &
+[ STEM < "누나" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_누나_n_rel" ].
+
+
+담당자 := n-human-cn &
+[ STEM < "담당자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_담당자_n_rel" ].
+
+대통령 := n-human-cn &
+[ STEM < "대통령" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대통령_n_rel" ].
+
+
+도둑 := n-human-cn &
+[ STEM < "도둑" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도둑_n_rel" ].
+
+
+
+동생 := n-human-cn &
+[ STEM < "동생" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_동생_n_rel" ].
+
+
+딸 := n-human-cn &
+[ STEM < "딸" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_딸_n_rel" ].
+
+
+라이벌 := n-human-cn &
+[ STEM < "라이벌" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_라이벌_n_rel" ].
+
+
+목수 := n-human-cn &
+[ STEM < "목수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_목수_n_rel" ].
+
+
+
+
+무사 := n-human-cn &
+[ STEM < "무사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_무사_n_rel" ]. 
+
+바보 := n-human-cn &
+[ STEM < "바보" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바보_n_rel" ].
+
+
+벌거숭이 := n-human-cn &
+[ STEM < "벌거숭이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_벌거숭이_n_rel" ].
+
+
+
+보스 := n-human-cn &
+[ STEM < "보스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_보스_n_rel" ].
+
+
+
+부모 := n-human-cn &
+[ STEM < "부모" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부모_n_rel" ].
+
+
+부부 := n-human-cn &
+[ STEM < "부부" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부부_n_rel" ].
+
+부하 := n-human-cn &
+[ STEM < "부하" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부하_n_rel" ].
+
+부형 := n-human-cn &
+[ STEM < "부형" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부형_n_rel" ].
+
+비서 := n-human-cn &
+[ STEM < "비서" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_비서_n_rel" ].
+
+
+비행사 := n-human-cn &
+[ STEM < "비행사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_비행사_n_rel" ].
+
+
+
+사공 := n-human-cn &
+[ STEM < "사공" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사공_n_rel" ].
+
+
+사람 := n-human-cn &
+[ STEM < "사람" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사람_n_rel" ].
+
+사람새끼 := n-human-cn &
+[ STYLE dialect,
+  STEM < "사람새끼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사람_n_rel" ].
+
+
+
+사장-1 := n-human-cn &
+[ STEM < "사장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사장_n_1_rel" ].
+
+
+상대방 := n-human-cn &
+[ STEM < "상대방" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상대방_n_rel" ].
+
+
+상사-1 := n-human-cn &
+[ STEM < "상사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상사_n_1_rel" ].
+
+
+상인 := n-human-cn &
+[ STEM < "상인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상인_n_rel" ].
+
+서민 := n-human-cn &
+[ STEM < "서민" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_서민_n_rel" ].
+
+석수장이 := n-human-cn &
+[ STEM < "석수장이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_석수장이_n_rel" ].
+
+
+
+선수-1 := n-human-cn &
+[ STEM < "선수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_선수_n_rel" ].
+
+
+
+선조-1 := n-human-cn &
+[ STEM < "선조" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_선조_n_1_rel" ].
+
+
+소녀 := n-human-cn &
+[ STEM < "소녀" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소녀_n_rel" ].
+
+소년 := n-human-cn &
+[ STEM < "소년" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소년_n_rel" ].
+
+
+소비자 := n-human-cn &
+[ STEM < "소비자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소비자_n_rel" ].
+
+
+
+손님 := n-human-cn &
+[ STEM < "손님" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_손님_n_rel" ].
+
+
+수상-1 := n-human-cn &
+[ STEM < "수상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수상_n_1_rel" ].
+
+
+
+시민 := n-human-cn &
+[ STEM < "시민" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시민_n_rel" ].
+
+
+
+신-1 := n-human-cn &
+[ STEM < "신" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신_n_rel" ].
+
+
+신사-1 := n-human-cn &
+[ STEM < "신사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신사_n_1_rel" ].
+
+
+
+씨름선수 := n-human-cn &
+[ STEM < "씨름선수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_씨름선수_n_rel" ].
+
+
+
+아기 := n-human-cn &
+[ STEM < "아기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아기_n_rel" ].
+
+아내 := n-human-cn &
+[ STEM < "아내" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아내_n_rel" ].
+
+아들 := n-human-cn &
+[ STEM < "아들" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아들_n_rel" ].
+
+
+
+아버지 := n-human-cn &
+[ STEM < "아버지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아버지_n_rel" ].
+
+
+
+
+아이 := n-human-cn &
+[ STEM < "아이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아이_n_rel" ].
+
+아저씨 := n-human-cn &
+[ STEM < "아저씨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아저씨_n_rel" ].
+
+
+어른-1 := n-human-cn &
+[ STEM < "어른" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_어른_n_1_rel" ].
+
+
+어린이 := n-human-cn &
+[ STEM < "어린이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_어린이_n_rel" ].
+
+
+어머니 := n-human-cn &
+[ STEM < "어머니" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_어머니_n_rel" ].
+
+언니 := n-human-cn &
+[ STEM < "언니" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_언니_n_rel" ].
+
+
+
+언어학자 := n-human-cn &
+[ STEM < "언어학자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_언어학자_n_rel" ].
+
+
+
+여성 := n-human-cn &
+[ STEM < "여성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_여성_n_rel" ].
+
+여자 := n-human-cn &
+[ STEM < "여자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_여자_n_rel" ].
+
+
+
+
+여행객 := n-human-cn &
+[ STEM < "여행객" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_여행객_n_rel" ].
+
+
+연인 := n-human-cn &
+[ STEM < "연인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_연인_n_rel" ].
+
+
+영주-1 := n-human-cn &
+[ STEM < "영주" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_영주_n_1_rel" ].
+
+
+오빠 := n-human-cn &
+[ STEM < "오빠" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_오빠_n_rel" ].
+
+
+
+외국인 := n-human-cn &
+[ STEM < "외국인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_외국인_n_rel" ].
+
+
+
+
+원리주의자 := n-human-cn &
+[ STEM < "원리주의자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_원리주의자_n_rel" ].
+
+
+유지-1 := n-human-cn &
+[ STEM < "유지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_유지_n_1_rel" ].
+
+
+응모자 := n-human-cn &
+[ STEM < "응모자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_응모자_n_rel" ].
+
+
+의사-1 := n-human-cn &
+[ STEM < "의사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_의사_n_1_rel" ].
+
+
+인간 := n-human-cn &
+[ STEM < "인간" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_인간_n_rel" ].
+
+
+일본인 := n-human-cn &
+[ STEM < "일본인" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_일본인_n_rel" ].
+
+
+
+임산부 := n-human-cn &
+[ STEM < "임산부" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_임산부_n_rel" ].
+
+임신부 := n-human-cn &
+[ STEM < "임신부" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_임산부_n_rel" ].
+
+
+자손 := n-human-cn &
+[ STEM < "자손" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_자손_n_rel" ].
+
+
+자식 := n-human-cn &
+[ STEM < "자식" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_자식_n_rel" ].
+
+작가 := n-human-cn &
+[ STEM < "작가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_작가_n_rel" ].
+
+
+
+적-1 := n-human-cn &
+[ STEM < "적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_적_n_1_rel" ].
+
+
+젊은이 := n-human-cn &
+[ STEM < "젊은이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_젊은이_n_rel" ].
+
+
+정원사:= n-human-cn &
+[ STEM < "정원사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정원사_n_rel" ].
+
+
+조부 := n-human-cn &
+[ STEM < "조부" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_조부_n_rel" ].
+
+조종사 := n-human-cn &
+[ STEM < "조종사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_조종사_n_rel" ].
+
+
+주민 := n-human-cn &
+[ STEM < "주민" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주민_n_rel" ].
+
+
+죽마고우 := n-human-cn &
+[ STEM < "죽마고우" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_죽마고우_n_rel" ].
+
+증인 := n-human-cn &
+[ STEM < "증인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_증인_n_rel" ].
+
+
+직원 := n-human-cn &
+[ STEM < "직원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_직원_n_rel" ].
+
+
+
+천재 := n-human-cn &
+[ STEM < "천재" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_천재_n_rel" ].
+
+
+청중 := n-human-cn &
+[ STEM < "청중" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_청중_n_rel" ].
+
+
+
+청취자 := n-human-cn &
+[ STEM < "청취자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_청취자_n_rel" ].
+
+
+
+초심자 := n-human-cn &
+[ STEM < "초심자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_초심자_n_rel" ].
+
+
+친구 := n-human-cn &
+[ STEM < "친구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_친구_n_rel" ].
+
+
+파이로트 := n-human-cn &
+[ STEM < "파이로트" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_조종사_n_rel" ].
+
+판매원 := n-human-cn &
+[ STEM < "판매원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_판매원_n_rel" ].
+
+
+피고 := n-human-cn &
+[ STEM < "피고" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_피고_n_rel" ].
+
+
+피아니스트 := n-human-cn &
+[ STEM < "피아니스트" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_피아니스트_n_rel" ].
+
+
+학자 := n-human-cn &
+[ STEM < "학자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_학자_n_rel" ].
+
+
+할아버지 := n-human-cn &
+[ STEM < "할아버지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_할아버지_n_rel" ].
+
+
+형-1 := n-human-cn &
+[ STEM < "형" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_형_n_1_rel" ].
+
+
+형제 := n-human-cn &
+[ STEM < "형제" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_형제_n_rel" ].
+
+
+화가 := n-human-cn &
+[ STEM < "화가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_화가_n_rel" ].
+
+
+환자 := n-human-cn &
+[ STEM < "환자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_환자_n_rel" ].
+
+
+회원 := n-human-cn &
+[ STEM < "회원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_회원_n_rel" ].
+
+
+후처 := n-human-cn &
+[ STEM < "후처" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_후처_n_rel" ].
+
+대표 := n-human-cn & 
+[ STEM < "대표" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대표_n_rel" ].
+
+업자 := n-human-cn & 
+[ STEM < "업자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_업자_n_rel" ].
+
+우리편 := n-human-cn & 
+[ STEM < "우리편" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_우리편_n_rel" ].
+
+한국사람 := n-human-cn & 
+[ STEM < "한국사람" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_한국사람_n_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH) 
+;; 집합 명사
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+가족 := n-human-np-cn &
+[ STEM < "가족" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가족_n_rel" ].
+
+
+국민 := n-human-np-cn &
+[ STEM < "국민" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_국민_n_rel" ].
+
+군중 := n-human-np-cn &
+[ STEM < "군중" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_군중_n_rel" ].
+
+
+
+때-1 := n-human-np-cn &
+[ STEM < "떼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_때_n_1_rel" ].
+
+
+무리-1 := n-human-np-cn &
+[ STEM < "무리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_무리_n_1_rel" ].
+
+
+
+반대파 := n-human-np-cn &
+[ STEM < "반대파" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_반대파_n_rel" ].
+
+반란군 := n-human-np-cn &
+[ STEM < "반란군" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_반란군_n_rel" ].
+
+상대팀 := n-human-np-cn &
+[ STEM < "상대팀" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상대방_n_rel" ].
+
+선수단 := n-human-np-cn &
+[ STEM < "선수단" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_선수단_n_rel" ].
+
+
+씨-1 := n-human-np-cn &
+[ STEM < "씨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_씨_n_1_rel" ].
+
+
+외무대신 := n-human-np-cn &
+[ STEM < "외무대신" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_외무대신_n_rel" ].
+
+
+
+인파 := n-human-np-cn &
+[ STEM < "인파" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_인파_n_rel" ].
+
+
+총리 := n-human-np-cn &
+[ STEM < "총리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_총리_n_rel" ].
+
+
+폭주족 := n-human-np-cn &
+[ STEM < "폭주족" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_폭주족_n_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; animante nouns [PNG.PER non-human]
+;; [HUMAN -, ANIMACY +]
+;; 그 학생 개 물렸다.
+;;    그 학생이 개한테 물렸다.
+;;    #개가 그 학생한테 물렸다.
+;; 나 호랑이 무섭다.
+;;    내가 호랑이를 무서워 한다.
+;;    #나를 호랑이 가 무서워 한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+개-1 := n-non-human-cn &
+  [ STEM < "개" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개_n_1_rel" ].
+
+고양이 := n-non-human-cn &
+[ STEM < "고양이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_고양이_n_rel" ].
+
+새-1 := n-non-human-cn &
+  [ STEM < "새" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새_n_1_rel" ].
+
+호랑이 := n-non-human-cn &
+  [ STEM < "호랑이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호랑이_n_1_rel" ].
+
+
+고래 := n-non-human-cn &
+[ STEM < "고래" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_고래_n_rel" ].
+
+닭 := n-non-human-cn &
+[ STEM < "닭" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_닭_n_rel" ].
+
+
+동물 := n-non-human-cn &
+[ STEM < "동물" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_동물_n_rel" ].
+
+돼지 := n-non-human-cn &
+[ STEM < "돼지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_돼지_n_rel" ].
+
+
+말-2 := n-non-human-cn &
+[ STEM < "말" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_말_n_rel" ].
+
+매-2 := n-non-human-cn &
+[ STEM < "매" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_매_n_2_rel" ].
+
+문어-1 := n-non-human-cn &
+[ STEM < "문어" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_문어_n_1_rel" ].
+
+물고기 := n-non-human-cn &
+[ STEM < "물고기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_물고기_n_rel" ].
+
+민물고기 := n-non-human-cn &
+[ STEM < "민물고기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_민물고기_n_rel" ].
+
+병아리 := n-non-human-cn &
+[ STEM < "병아리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_병아리_n_rel" ].
+
+사슴 := n-non-human-cn &
+[ STEM < "사슴" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사슴_n_rel" ].
+
+상어 := n-non-human-cn &
+[ STEM < "상어" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상어_n_rel" ].
+
+소-1 := n-non-human-cn &
+[ STEM < "소" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소_n_1_rel" ].
+
+양-1 := n-non-human-cn &
+[ STEM < "양" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_양_n_1_rel" ].
+
+여우 := n-non-human-cn &
+[ STEM < "여우" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_여우_n_rel" ].
+
+오리-1 := n-non-human-cn & 
+[ STEM < "오리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_오리_n_rel" ].
+
+원숭이 := n-non-human-cn &
+[ STEM < "원숭이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_원숭이_n_rel" ].
+
+이리-1 := n-non-human-cn &
+[ STEM < "이리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이리_n_1_rel" ].
+
+코끼리 := n-non-human-cn &
+[ STEM < "코끼리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_코끼리_n_rel" ].
+
+
+타조 := n-non-human-cn &
+[ STEM < "타조" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_타조_n_rel" ].
+
+
+토끼 := n-non-human-cn &
+[ STEM < "토끼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_토끼_n_rel" ].
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; obj nouns [PNG.PER obj]
+;; [HUMAN -, ANIMACY -]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+비 := n-obj-cn &
+[ STEM < "비" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_비_n_1_rel" ].
+
+
+자동차 := n-obj-cn &
+  [ STEM < "자동차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자동차_n_1_rel" ].
+
+책 := n-obj-cn &
+  [ STEM < "책" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_책_n_1_rel" ].
+
+문 := n-obj-cn &
+  [ STEM < "문" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문_n_rel" ].
+
+그림 := n-obj-cn &
+  [ STEM < "그림" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그림_n_rel" ].
+
+가방 := n-obj-cn &
+[ STEM < "가방" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가방_n_rel" ].
+
+가위 := n-obj-cn &
+[ STEM < "가위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가위_n_rel" ].
+
+감나무 := n-obj-cn &
+[ STEM < "감나무" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_감나무_n_rel" ].
+
+
+;;ship
+배-1 := n-obj-cn &
+[ STEM < "배" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_배_n_1_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-24 / SSH) 
+;; edible 자질이 필요한가?
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+사과 := n-obj-cn &
+  [ STEM < "사과" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사과_n_rel" ].
+
+가지-2 := n-obj-cn &
+[ STEM < "가지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가지_n_2_rel" ].
+
+
+;;persimmon
+감-1 := n-obj-cn &
+[ STEM < "감" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_감_n_1_rel" ].
+
+
+밤-2 := n-obj-cn &
+[ STEM < "밤" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_밤_n_2_rel" ].
+
+;;peer
+배-2 := n-obj-cn &
+[ STEM < "배" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_배_n_2_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH) 
+;; 한국어에서 '빵'은 물질명사라고 볼 수 없음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+빵 := n-obj-cn &
+  [ STEM < "빵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빵_n_1_rel" ].
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH) 
+;; 추상명사를 구분할 필요가 있는지는 나중에 다시 생각해 보자.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+시-1 := n-obj-cn &
+  [ STEM < "시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시_n_1_rel" ].
+
+이야기 := n-obj-cn &
+  [ STEM < "이야기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이야기_n_rel" ].
+
+가짜 := n-obj-cn &
+[ STEM < "가짜" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가짜_n_rel" ].
+
+꼴 := n-obj-cn &
+[ STEM < "꼴" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_꼴_n_rel" ].
+
+
+
+
+
+가능성 := n-obj-np-cn &
+[ STEM < "가능성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가능성_n_rel" ].
+
+
+가사-1 := n-obj-np-cn &
+[ STEM < "가사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가사_n_1_rel" ].
+
+
+가사상태 := n-obj-np-cn &
+[ STEM < "가사상태" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가사상태_n_rel" ].
+
+감사-1 := n-obj-np-cn &
+[ STEM < "감사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_감사_n_1_rel" ].
+
+
+
+태양 := n-obj-np-cn &
+[ STEM < "태양" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_태양_n_rel" ].
+
+
+해-2 := n-obj-np-cn &
+[ STEM < "해" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_태양_n__rel" ].
+
+하늘 := n-obj-np-cn &
+[ STEM < "하늘" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_하늘_n_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH) 
+;; 질병
+;; ---에 걸리다 와 같은 숙어 구문이
+;; 과잉 생성되지 않도록 한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+감기 := n-obj-cn &
+[ STEM < "감기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_감기_n_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH) 
+;; 개체 > 장소
+;; WordNet에 따른 구분이 필요한가?
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH)
+;; 장소를 나타냄
+;; 복수가 가능하며, classifier도 가능
+;; honorification은 되지 않는다
+;; 환유법으로 사용되는 경우가 빈번함
+;;    학교가 신입생을 맞았다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+가게 := n-obj-cn &
+ [ STEM < "가게" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_가게_n_rel" ].
+
+학교 := n-obj-cn &
+ [ STEM < "학교" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_학교_n_rel" ].
+
+
+다리-2 := n-obj-cn &
+[ STEM < "다리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_다리_n_2_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH) 
+;; 유일무이한 것
+;; 복수가 되지 않음
+;; 물질 명사외는 다르게 classifier도 취할 수 없음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+바다 := n-obj-np-cn &
+  [ STEM < "바다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바다_n_rel" ].
+
+
+달-1 := n-obj-np-cn &
+[ STEM < "달" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_달_n_1_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; part of body [PNG.PER obj]
+;; 관련되는 현상
+;; (1)ADVERSITY PASSIVE
+;;    소희가 발을(acc) 밟혔다
+;; (2)의미 분화
+;;    존은 손이 크다
+;;    a. John's hand is big.
+;;    b. John is generous / John has an open hand.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+얼굴 := n-part_of_body-cn &
+  [ STEM < "얼굴" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼굴_n_rel" ].
+
+다리-1 := n-part_of_body-cn &
+  [ STEM < "다리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다리_n_1_rel" ].
+
+발-1 := n-part_of_body-cn &
+  [ STEM < "발" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발_n_1_rel" ].
+
+손-1 := n-part_of_body-cn &
+  [ STEM < "손" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_손_n_1_rel" ].
+
+귀 := n-part_of_body-cn &
+[ STEM < "귀" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_귀_n_rel" ].
+
+꼬리 := n-part_of_body-cn &
+[ STEM < "꼬리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_꼬리_n_rel" ].
+
+눈-1 := n-part_of_body-cn &
+[ STEM < "눈" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_눈_n_1_rel" ].
+
+등-1 := n-part_of_body-cn &
+[ STEM < "등" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_등_n_1_rel" ].
+
+머리 := n-part_of_body-cn &
+[ STEM < "머리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_머리_n_rel" ].
+
+몸 := n-part_of_body-cn &
+[ STEM < "몸" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_몸_n_rel" ].
+
+무릎 := n-part_of_body-cn &
+[ STEM < "무릎" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_무릎_n_rel" ].
+
+;;stomach
+배-3 := n-part_of_body-cn &
+[ STEM < "배" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_배_n_3_rel" ].
+
+볼-1 := n-part_of_body-cn &
+[ STEM < "볼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_볼_n_1_rel" ].
+
+
+살-4 := n-part_of_body-cn &
+[ STEM < "살" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_살_n_4_rel" ].
+
+
+손바닥 := n-part_of_body-cn &
+[ STEM < "손바닥" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_손바닥_n_rel" ].
+
+
+심장 := n-part_of_body-cn &
+[ STEM < "심장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_heart_n_rel" ].
+
+
+
+어깨 := n-part_of_body-cn &
+[ STEM < "어깨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_어깨_n_rel" ].
+
+
+
+
+
+이마 := n-part_of_body-cn &
+[ STEM < "이마" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이마_n_rel" ].
+
+
+입-2 := n-part_of_body-cn &
+[ STEM < "입" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_입_n_rel" ].
+
+
+코 := n-part_of_body-cn &
+[ STEM < "코" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_코_n_rel" ].
+
+
+
+콧구멍 := n-part_of_body-cn &
+[ STEM < "콧구멍" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_콧구멍_n_rel" ].
+
+
+팔-1 := n-part_of_body-cn &
+[ STEM < "팔" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_팔_n_1_rel" ].
+
+
+허리 := n-part_of_body-cn &
+[ STEM < "허리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_허리_n_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; mass nouns 
+;;    [PER obj, NUM non-pl, HON -]
+;; 철수[subj] 물[comps] 마시다
+;; *물들
+;; *물님
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+물-1 := n-mass-cn &
+  [ STEM < "물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물_n_1_rel" ].
+
+
+금-2 := n-mass-cn &
+  [ STEM < "금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_금_n_2_rel" ].
+
+;;담배 두 보루
+;;담배 열 개피
+담배 := n-mass-cn &
+[ STEM < "담배" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_담배_n_rel" ].
+
+맥주 := n-mass-cn &
+[ STEM < "맥주" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_맥주_n_rel" ].
+
+모래-10 := n-mass-cn &
+[ STEM < "모래" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모래_n_rel" ].
+
+;;밀가루 한 포대
+밀가루 := n-mass-cn &
+[ STEM < "밀가루" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_밀가루_n_rel" ].
+
+보리 := n-mass-cn &
+[ STEM < "보리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_보리_n_rel" ].
+
+
+설탕 := n-mass-cn &
+[ STEM < "설탕" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_설탕_n_rel" ].
+
+술-1 := n-mass-cn &
+[ STEM < "술" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_술_n_1_rel" ].
+
+
+와인 := n-mass-cn &
+[ STEM < "와인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_와인_n_rel" ].
+
+종이 := n-mass-cn &
+[ STEM < "종이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_종이_n_rel" ].
+
+
+참깨 := n-mass-cn &
+[ STEM < "참깨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_참깨_n_rel" ].
+
+
+커피 := n-mass-cn &
+[ STEM < "커피" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_커피_n_rel" ].
+
+
+홍차 := n-mass-cn &
+[ STEM < "홍차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_홍차_n_rel" ].
+
+
+황금 := n-mass-cn &
+[ STEM < "황금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_황금_n_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-20 / SSH) 
+;; 동격절 명사 (appositive noun)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+사실 := n-appos &
+  [ STEM < "사실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사실_n_rel" ].
+
+
+
+;;철수가 돌아온다는 가정 하에
+가정-1 := n-appos &
+[ STEM < "가정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가정_n_1_rel" ].
+
+;;의장을 선출하자는 결론을 내리다
+결론 := n-appos &
+[ STEM < "결론" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_결론_n_rel" ].
+
+결정 := n-appos &
+[ STEM < "결정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_결정_n_rel" ].
+
+;;철수가 돌아오는 경우 
+경우 := n-appos &
+[ STEM < "경우" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_경우_n_rel" ].
+
+;;철수가 떠난 곳
+곳 := n-appos &
+[ STEM < "곳" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_곳_n_rel" ].
+
+;;언어학적 면에서 보자면
+;;철수가 결혼하는 면에서 보자면
+면-1 := n-appos &
+[ STEM < "면" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_면_n_1_rel" ].
+
+소문-1 := n-appos &
+[ STEM < "소문" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소문_n_1_rel" ].
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-27 / SSH) 
+;; 이전 버젼의 KRG에서 가져온 일반명사군
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+감씨 := n-obj-cn &
+[ STEM < "감씨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_감씨_n_rel" ].
+
+값-1 := n-obj-cn &
+[ STEM < "값" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_값_n_rel" ].
+
+강 := n-obj-cn &
+[ STEM < "강" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_강_n_rel" ].
+
+가운데-1 := n-obj-cn &
+[ STEM < "가운데" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가운데_n_1_rel" ].
+
+가을바람 := n-obj-cn &
+[ STEM < "가을바람" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가을바람_n_rel" ].
+
+가지-1 := n-obj-cn &
+[ STEM < "가지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_가지_n_1_rel" ].
+
+간격-1 := n-obj-cn &
+[ STEM < "간격" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_간격_n_1_rel" ].
+
+간격수 := n-obj-cn &
+[ STEM < "간격수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_간격수_n_rel" ].
+
+갯수 := n-obj-cn &
+[ STEM < "갯수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_갯수_n_rel" ].
+
+것-4 := n-obj-cn &
+[ STEM < "것" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_것_n_4_rel" ].
+
+강바닥-1 := n-obj-cn &
+[ STEM < "강바닥" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_강바닥_n_1_rel" ].
+
+강의실 := n-obj-cn &
+[ STEM < "강의실" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_강의실_n_rel" ].
+
+강철 := n-obj-cn &
+[ STEM < "강철" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_강철_n_rel" ].
+
+거리-1 := n-obj-cn &
+[ STEM < "거리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_거리_n_1_rel" ].
+
+거미줄-1 := n-obj-cn &
+[ STEM < "거미줄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_거미줄_n_1_rel" ].
+
+거짓말 := n-obj-cn &
+[ STEM < "거짓말" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_거짓말_n_rel" ].
+
+건구 := n-obj-cn &
+[ STEM < "건구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_건구_n_rel" ].
+
+건너편 := n-obj-cn &
+[ STEM < "건너편" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_건너편_n_rel" ].
+
+건물 := n-obj-cn &
+[ STEM < "건물" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_건물_n_rel" ].
+
+견본 := n-obj-cn &
+[ STEM < "견본" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_견본_n_rel" ].
+
+결과-1 := n-obj-cn &
+[ STEM < "결과" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_결과_n_1_rel" ].
+
+결심 := n-obj-cn &
+[ STEM < "결심" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_결심_n_rel" ].
+
+경기-1 := n-obj-cn &
+[ STEM < "경기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_경기_n_1_rel" ].
+
+경보-1 := n-obj-cn &
+[ STEM < "경보" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_경보_n_1_rel" ].
+
+경제 := n-obj-cn &
+[ STEM < "경제" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_경제_n_rel" ].
+
+경험 := n-obj-cn &
+[ STEM < "경험" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_경험_n_rel" ].
+
+계곡 := n-obj-cn &
+[ STEM < "계곡" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_계곡_n_rel" ].
+
+계산기 := n-obj-cn &
+[ STEM < "계산기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_계산기_n_rel" ].
+
+계산언어학이론 := n-obj-cn &
+[ STEM < "계산언어학이론" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_계산언어학이론_n_rel" ].
+
+계획 := n-obj-cn &
+[ STEM < "계획" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_계획_n_rel" ].
+
+고기 := n-obj-cn &
+[ STEM < "고기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_고기_n_rel" ].
+
+고민거리 := n-obj-cn &
+[ STEM < "고민거리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_고민거리_n_rel" ].
+
+고비 := n-obj-cn &
+[ STEM < "고비" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_고비_n_rel" ].
+
+고장검출 := n-obj-cn &
+[ STEM < "고장검출" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_고장검출_n_rel" ].
+
+고향 := n-obj-cn &
+[ STEM < "고향" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_고향_n_rel" ].
+
+골수 := n-obj-cn &
+[ STEM < "골수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_골수_n_rel" ].
+
+골짜기-1 := n-obj-cn &
+[ STEM < "골짜기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_골짜기_n_1_rel" ].
+
+골치-1 := n-obj-cn &
+[ STEM < "골치" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_골치_n_1_rel" ].
+
+골프 := n-obj-cn &
+[ STEM < "골프" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_골프_n_rel" ].
+
+골프장 := n-obj-cn &
+[ STEM < "골프장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_골프장_n_rel" ].
+
+공-1 := n-obj-cn &
+[ STEM < "공" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공_n_1_rel" ].
+
+공기 := n-obj-cn &
+[ STEM < "공기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공기_n_rel" ].
+
+공동-1 := n-obj-cn &
+[ STEM < "공동" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공동_n_1_rel" ].
+
+공업 := n-obj-cn &
+[ STEM < "공업" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공업_n_rel" ].
+
+공업지대 := n-obj-cn &
+[ STEM < "공업지대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공업지대_n_rel" ].
+
+공원 := n-obj-cn &
+[ STEM < "공원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공원_n_rel" ].
+
+공원내 := n-obj-cn &
+[ STEM < "공원내" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공원내_n_rel" ].
+
+공책 := n-obj-cn &
+[ STEM < "공책" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_공책_n_rel" ].
+
+과거 := n-obj-cn &
+[ STEM < "과거" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_과거_n_rel" ].
+
+과세 := n-obj-cn &
+[ STEM < "과세" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_과세_n_rel" ].
+
+과자 := n-obj-cn &
+[ STEM < "과자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_과자_n_rel" ].
+
+과장 := n-obj-cn &
+[ STEM < "과장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_과장_n_rel" ].
+
+광차 := n-obj-cn &
+[ STEM < "광차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_광차_n_rel" ].
+
+교대 := n-obj-cn &
+[ STEM < "교대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_교대_n_rel" ].
+
+교류-1 := n-obj-cn &
+[ STEM < "교류" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_교류_n_1_rel" ].
+
+교실 := n-obj-cn &
+[ STEM < "교실" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_교실_n_rel" ].
+
+교육용 := n-obj-cn &
+[ STEM < "교육용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_교육용_n_rel" ].
+
+구-1 := n-obj-cn &
+[ STEM < "구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_구_n_1_rel" ].
+
+구급차 := n-obj-cn &
+[ STEM < "구급차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_구급차_n_rel" ].
+
+구두-1 := n-obj-cn &
+[ STEM < "구두" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_구두_n_1_rel" ].
+
+국적 := n-obj-cn &
+[ STEM < "국적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_국적_n_rel" ].
+
+국회 := n-obj-cn &
+[ STEM < "국회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_국회_n_rel" ].
+
+군국주의 := n-obj-cn &
+[ STEM < "군국주의" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_군국주의_n_rel" ].
+
+군집체 := n-obj-cn &
+[ STEM < "군집체" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_군집체_n_rel" ].
+
+귀걸이 := n-obj-cn &
+[ STEM < "귀걸이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_귀걸이_n_rel" ].
+
+귀족파-1 := n-obj-cn &
+[ STEM < "귀족파" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_귀족파_n_1_rel" ].
+
+규정 := n-obj-cn &
+[ STEM < "규정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_규정_n_rel" ].
+
+그림자-1 := n-obj-cn &
+[ STEM < "그림자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_그림자_n_1_rel" ].
+
+극성 := n-obj-cn &
+[ STEM < "극성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_극성_n_rel" ].
+
+근육-1 := n-obj-cn &
+[ STEM < "근육" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_근육_n_1_rel" ].
+
+글 := n-obj-cn &
+[ STEM < "글" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_글_n_rel" ].
+
+글씨 := n-obj-cn &
+[ STEM < "글씨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_글씨_n_rel" ].
+
+금 := n-obj-cn &
+[ STEM < "금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_금_n_rel" ].
+
+기계 := n-obj-cn &
+[ STEM < "기계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기계_n_rel" ].
+
+기계번역 := n-obj-cn &
+[ STEM < "기계번역" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기계번역_n_rel" ].
+
+기관-1 := n-obj-cn &
+[ STEM < "기관" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기관_n_1_rel" ].
+
+기근 := n-obj-cn &
+[ STEM < "기근" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기근_n_rel" ].
+
+기능 := n-obj-cn &
+[ STEM < "기능" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기능_n_rel" ].
+
+기분-1 := n-obj-cn &
+[ STEM < "기분" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기분_n_1_rel" ].
+
+기쁨 := n-obj-cn &
+[ STEM < "기쁨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기쁨_n_rel" ].
+
+기술 := n-obj-cn &
+[ STEM < "기술" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기술_n_rel" ].
+
+기억력 := n-obj-cn &
+[ STEM < "기억력" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기억력_n_rel" ].
+
+기적 := n-obj-cn &
+[ STEM < "기적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기적_n_rel" ].
+
+기차-1 := n-obj-cn &
+[ STEM < "기차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기차_n_1_rel" ].
+
+기회 := n-obj-cn &
+[ STEM < "기회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_기회_n_rel" ].
+
+긴팔-1 := n-obj-cn &
+[ STEM < "긴팔" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_긴팔_n_1_rel" ].
+
+길-2 := n-obj-cn &
+[ STEM < "길" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_길_n_rel" ].
+
+길가 := n-obj-cn &
+[ STEM < "길가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_길가_n_rel" ].
+
+길이-1 := n-obj-cn &
+[ STEM < "길이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_길이_n_1_rel" ].
+
+껍질-1 := n-obj-cn &
+[ STEM < "껍질" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_껍질_n_1_rel" ].
+
+꽃 := n-obj-cn &
+[ STEM < "꽃" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_꽃_n_rel" ].
+
+꿈 := n-obj-cn &
+[ STEM < "꿈" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_꿈_n_rel" ].
+
+끝-1 := n-obj-cn &
+[ STEM < "끝" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_끝_n_1_rel" ].
+
+나라-1 := n-obj-cn &
+[ STEM < "나라" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_나라_n_1_rel" ].
+
+나무-1 := n-obj-cn &
+[ STEM < "나무" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_나무_n_1_rel" ].
+
+나무책상-1 := n-obj-cn &
+[ STEM < "나무책상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_나무책상_n_1_rel" ].
+
+나뭇가지-1 := n-obj-cn &
+[ STEM < "나뭇가지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_나뭇가지_n_1_rel" ].
+
+나이-1 := n-obj-cn &
+[ STEM < "나이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_나이_n_1_rel" ].
+
+낙엽 := n-obj-cn &
+[ STEM < "낙엽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_낙엽_n_rel" ].
+
+난방-1 := n-obj-cn &
+[ STEM < "난방" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_난방_n_1_rel" ].
+
+날-2 := n-obj-cn &
+[ STEM < "날" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_날_n_2_rel" ].
+
+날씨 := n-obj-cn &
+[ STEM < "날씨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_날씨_n_rel" ].
+
+낫 := n-obj-cn &
+[ STEM < "낫" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_낫_n_rel" ].
+
+내-12 := n-obj-cn &
+[ STEM < "내" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_내_n_12_rel" ].
+
+내용-1 := n-obj-cn &
+[ STEM < "내용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_내용_n_1_rel" ].
+
+냄새 := n-appos &
+[ STEM < "냄새" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_냄새_n_rel" ].
+
+냉장고-1 := n-obj-cn &
+[ STEM < "냉장고" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_냉장고_n_1_rel" ].
+
+냉전구조-1 := n-obj-cn &
+[ STEM < "냉전구조" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_냉전구조_n_1_rel" ].
+
+노래 := n-obj-cn &
+[ STEM < "노래" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_노래_n_rel" ].
+
+노력-1 := n-obj-cn &
+[ STEM < "노력" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_노력_n_1_rel" ].
+
+노하우-1 := n-obj-cn &
+[ STEM < "노하우" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_노하우_n_1_rel" ].
+
+녹차 := n-obj-cn &
+[ STEM < "녹차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_녹차_n_rel" ].
+
+논문 := n-obj-cn &
+[ STEM < "논문" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_논문_n_rel" ].
+
+농약 := n-obj-cn &
+[ STEM < "농약" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_농약_n_rel" ].
+
+높이-1 := n-obj-cn &
+[ STEM < "높이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_높이_n_1_rel" ].
+
+눈-11 := n-obj-cn &
+[ STEM < "눈" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_눈_n_11_rel" ].
+
+눈길-1 := n-obj-cn &
+[ STEM < "눈길" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_눈길_n_1_rel" ].
+
+눈물 := n-obj-cn &
+[ STEM < "눈물" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_눈물_n_rel" ].
+
+뉴스-1 := n-obj-cn &
+[ STEM < "뉴스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_뉴스_n_1_rel" ].
+
+늑대 := n-obj-cn &
+[ STEM < "늑대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_늑대_n_rel" ].
+
+니스-1 := n-obj-cn &
+[ STEM < "니스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_니스_n_1_rel" ].
+
+다음-1 := n-obj-cn &
+[ STEM < "다음" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_다음_n_1_rel" ].
+
+다행 := n-obj-cn &
+[ STEM < "다행" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_다행_n_rel" ].
+
+단가-1 := n-obj-cn &
+[ STEM < "단가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_단가_n_1_rel" ].
+
+단말기-1 := n-obj-cn &
+[ STEM < "단말기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_단말기_n_1_rel" ].
+
+단상-1 := n-obj-cn &
+[ STEM < "단상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_단상_n_1_rel" ].
+
+단신-1 := n-obj-cn &
+[ STEM < "단신" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_단신_n_1_rel" ].
+
+단추-1 := n-obj-cn &
+[ STEM < "단추" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_단추_n_1_rel" ].
+
+달걀-1 := n-obj-cn &
+[ STEM < "달걀" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_달걀_n_1_rel" ].
+
+닭고기-1 := n-obj-cn &
+[ STEM < "닭고기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_닭고기_n_1_rel" ].
+
+답-1 := n-obj-cn &
+[ STEM < "답" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_답_n_1_rel" ].
+
+답신-1 := n-obj-cn &
+[ STEM < "답신" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_답신_n_1_rel" ].
+
+답안-1 := n-obj-cn &
+[ STEM < "답안" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_답안_n_1_rel" ].
+
+당국-1 := n-obj-cn &
+[ STEM < "당국" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_당국_n_1_rel" ].
+
+대번식 := n-obj-cn &
+[ STEM < "대번식" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대번식_n_rel" ].
+
+대부분-1 := n-obj-cn &
+[ STEM < "대부분" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대부분_n_1_rel" ].
+
+대수-1 := n-obj-cn &
+[ STEM < "대수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대수_n_1_rel" ].
+
+대학-1 := n-obj-cn &
+[ STEM < "대학" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대학_n_1_rel" ].
+
+대형냉장고-1 := n-obj-cn &
+[ STEM < "대형냉장고" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대형냉장고_n_1_rel" ].
+
+대형컴퓨터-1 := n-obj-cn &
+[ STEM < "대형컴퓨터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대형컴퓨터_n_1_rel" ].
+
+대회 := n-obj-cn &
+[ STEM < "대회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_대회_n_rel" ].
+
+덫-1 := n-obj-cn &
+[ STEM < "덫" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_덫_n_1_rel" ].
+
+데모-1 := n-obj-cn &
+[ STEM < "데모" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_데모_n_1_rel" ].
+
+데이터-1 := n-obj-cn &
+[ STEM < "데이터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_데이터_n_1_rel" ].
+
+데이터베이스-1 := n-obj-cn &
+[ STEM < "데이터베이스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_데이터베이스_n_1_rel" ].
+
+도 := n-obj-cn &
+[ STEM < "도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도_n_rel" ].
+
+도구 := n-obj-cn &
+[ STEM < "도구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도구_n_rel" ].
+
+도금-1 := n-obj-cn &
+[ STEM < "도금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도금_n_1_rel" ].
+
+도덕 := n-obj-cn &
+[ STEM < "도덕" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도덕_n_rel" ].
+
+도로-1 := n-obj-cn &
+[ STEM < "도로" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도로_n_1_rel" ].
+
+도리-1 := n-obj-cn &
+[ STEM < "도리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도리_n_1_rel" ].
+
+도리-2 := n-obj-cn &
+[ STEM < "도리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도리_n_2_rel" ].
+
+도망 := n-obj-cn &
+[ STEM < "도망" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도망_n_rel" ].
+
+도모 := n-obj-cn &
+[ STEM < "도모" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도모_n_rel" ].
+
+도박-1 := n-obj-cn &
+[ STEM < "도박" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도박_n_1_rel" ].
+
+도서관 := n-obj-cn &
+[ STEM < "도서관" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도서관_n_rel" ].
+
+도시 := n-obj-cn &
+[ STEM < "도시" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도시_n_rel" ].
+
+도움-1 := n-obj-cn &
+[ STEM < "도움" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도움_n_1_rel" ].
+
+도자기 := n-obj-cn &
+[ STEM < "도자기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도자기_n_rel" ].
+
+도중 := n-obj-cn &
+[ STEM < "도중" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_도중_n_rel" ].
+
+돈 := n-obj-cn &
+[ STEM < "돈" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_돈_n_rel" ].
+
+돌 := n-obj-cn &
+[ STEM < "돌" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_돌_n_rel" ].
+
+동네 := n-obj-cn &
+[ STEM < "동네" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_동네_n_rel" ].
+
+동선-1 := n-obj-cn &
+[ STEM < "동선" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_동선_n_1_rel" ].
+
+동쪽 := n-obj-cn &
+[ STEM < "동쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_동쪽_n_rel" ].
+
+둥지-1 := n-obj-cn &
+[ STEM < "둥지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_둥지_n_1_rel" ].
+
+뒤-1 := n-obj-cn &
+[ STEM < "뒤" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_뒤_n_1_rel" ].
+
+뒷면 := n-obj-cn &
+[ STEM < "뒷면" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_뒷면_n_rel" ].
+
+뒷쪽-1 := n-obj-cn &
+[ STEM < "뒷쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_뒷쪽_n_1_rel" ].
+
+드레스-1 := n-obj-cn &
+[ STEM < "드레스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_드레스_n_1_rel" ].
+
+등-11 := n-obj-cn &
+[ STEM < "등" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_등_n_11_rel" ].
+
+땀-1 := n-obj-cn &
+[ STEM < "땀" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_땀_n_1_rel" ].
+
+때 := n-obj-cn &
+[ STEM < "때" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_때_n_rel" ].
+
+램프-1 := n-obj-cn &
+[ STEM < "램프" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_램프_n_1_rel" ].
+
+레이스 := n-obj-cn &
+[ STEM < "레이스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_레이스_n_rel" ].
+
+레일 := n-obj-cn &
+[ STEM < "레일" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_레일_n_rel" ].
+
+레코드 := n-obj-cn &
+[ STEM < "레코드" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_레코드_n_rel" ].
+
+로켓-1 := n-obj-cn &
+[ STEM < "로켓" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_로켓_n_1_rel" ].
+
+리본-1 := n-obj-cn &
+[ STEM < "리본" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_리본_n_1_rel" ].
+
+마라톤 := n-obj-cn &
+[ STEM < "마라톤" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마라톤_n_rel" ].
+
+마련 := n-obj-cn &
+[ STEM < "마련" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마련_n_rel" ].
+
+마루턱 := n-obj-cn &
+[ STEM < "마루턱" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마루턱_n_rel" ].
+
+마술 := n-obj-cn &
+[ STEM < "마술" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마술_n_rel" ].
+
+마을 := n-obj-cn &
+[ STEM < "마을" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마을_n_rel" ].
+
+마음-1 := n-obj-cn &
+[ STEM < "마음" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마음_n_1_rel" ].
+
+마중 := n-obj-cn &
+[ STEM < "마중" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마중_n_rel" ].
+
+마지막-1 := n-obj-cn &
+[ STEM < "마지막" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_마지막_n_1_rel" ].
+
+막 := n-obj-cn &
+[ STEM < "막" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_막_n_rel" ].
+
+만남 := n-obj-cn &
+[ STEM < "만남" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_만남_n_rel" ].
+
+만년필 := n-obj-cn &
+[ STEM < "만년필" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_만년필_n_rel" ].
+
+만월 := n-obj-cn &
+[ STEM < "만월" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_만월_n_rel" ].
+
+말-1 := n-obj-cn &
+[ STEM < "말" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_말_n_1_rel" ].
+
+맛 := n-obj-cn &
+[ STEM < "맛" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_맛_n_rel" ].
+
+망치-2 := n-obj-cn &
+[ STEM < "망치" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_망치_n_2_rel" ].
+
+매뉴얼-1 := n-obj-cn &
+[ STEM < "매뉴얼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_매뉴얼_n_1_rel" ].
+
+매수-1 := n-obj-cn &
+[ STEM < "매수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_매수_n_1_rel" ].
+
+매화꽃-1 := n-obj-cn &
+[ STEM < "매화꽃" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_매화꽃_n_1_rel" ].
+
+메뚜기-1 := n-obj-cn &
+[ STEM < "메뚜기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_메뚜기_n_1_rel" ].
+
+메밀국수 := n-obj-cn &
+[ STEM < "메밀국수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_메밀국수_n_rel" ].
+
+메시지 := n-obj-cn &
+[ STEM < "메시지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_메시지_n_rel" ].
+
+명가-1 := n-obj-cn &
+[ STEM < "명가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_명가_n_1_rel" ].
+
+명함 := n-obj-cn &
+[ STEM < "명함" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_명함_n_rel" ].
+
+모나카-1 := n-obj-cn &
+[ STEM < "모나카" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모나카_n_1_rel" ].
+
+모두 := n-obj-cn &
+[ STEM < "모두" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모두_n_rel" ].
+
+모습 := n-obj-cn &
+[ STEM < "모습" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모습_n_rel" ].
+
+모양 := n-obj-cn &
+[ STEM < "모양" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모양_n_rel" ].
+
+모임 := n-obj-cn &
+[ STEM < "모임" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모임_n_rel" ].
+
+모자 := n-obj-cn &
+[ STEM < "모자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모자_n_rel" ].
+
+모터-1 := n-obj-cn &
+[ STEM < "모터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모터_n_1_rel" ].
+
+모퉁이-1 := n-obj-cn &
+[ STEM < "모퉁이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_모퉁이_n_1_rel" ].
+
+목도리-1 := n-obj-cn &
+[ STEM < "목도리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_목도리_n_1_rel" ].
+
+목소리-1 := n-obj-cn &
+[ STEM < "목소리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_목소리_n_1_rel" ].
+
+목장-1 := n-obj-cn &
+[ STEM < "목장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_목장_n_1_rel" ].
+
+목적 := n-obj-cn &
+[ STEM < "목적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_목적_n_rel" ].
+
+목표 := n-obj-cn &
+[ STEM < "목표" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_목표_n_rel" ].
+
+몸무게 := n-obj-cn &
+[ STEM < "몸무게" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_몸무게_n_rel" ].
+
+몽둥이 := n-obj-cn &
+[ STEM < "몽둥이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_몽둥이_n_rel" ].
+
+무기 := n-obj-cn &
+[ STEM < "무기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_무기_n_rel" ].
+
+무대 := n-obj-cn &
+[ STEM < "무대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_무대_n_rel" ].
+
+무력행사-1 := n-obj-cn &
+[ STEM < "무력행사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_무력행사_n_1_rel" ].
+
+문서 := n-obj-cn &
+[ STEM < "문서" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_문서_n_rel" ].
+
+문장-1 := n-obj-cn &
+[ STEM < "문장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_문장_n_1_rel" ].
+
+문제 := n-obj-cn &
+[ STEM < "문제" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_문제_n_rel" ].
+
+문필업-1 := n-obj-cn &
+[ STEM < "문필업" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_문필업_n_1_rel" ].
+
+물건 := n-obj-cn &
+[ STEM < "물건" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_물건_n_rel" ].
+
+물리학 := n-obj-cn &
+[ STEM < "물리학" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_물리학_n_rel" ].
+
+물보라-1 := n-obj-cn &
+[ STEM < "물보라" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_물보라_n_1_rel" ].
+
+물살-1 := n-obj-cn &
+[ STEM < "물살" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_물살_n_1_rel" ].
+
+미국제 := n-obj-cn &
+[ STEM < "미국제" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_미국제_n_rel" ].
+
+미래 := n-obj-cn &
+[ STEM < "미래" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_미래_n_rel" ].
+
+미일관계 := n-obj-cn &
+[ STEM < "미일관계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_미일관계_n_rel" ].
+
+민속 := n-obj-cn &
+[ STEM < "민속" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_민속_n_rel" ].
+
+민족 := n-obj-cn &
+[ STEM < "민족" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_민족_n_rel" ].
+
+민주주의 := n-obj-cn &
+[ STEM < "민주주의" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_민주주의_n_rel" ].
+
+밀감-1 := n-obj-cn &
+[ STEM < "밀감" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_밀감_n_1_rel" ].
+
+바깥-1 := n-obj-cn &
+[ STEM < "바깥" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바깥_n_1_rel" ].
+
+바나나 := n-obj-cn &
+[ STEM < "바나나" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바나나_n_rel" ].
+
+바늘-1 := n-obj-cn &
+[ STEM < "바늘" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바늘_n_1_rel" ].
+
+바닥-1 := n-obj-cn &
+[ STEM < "바닥" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바닥_n_1_rel" ].
+
+바람 := n-obj-cn &
+[ STEM < "바람" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바람_n_rel" ].
+
+바보취급 := n-obj-cn &
+[ STEM < "바보취급" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바보취급_n_rel" ].
+
+바위 := n-obj-cn &
+[ STEM < "바위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_바위_n_rel" ].
+
+밖 := n-obj-cn &
+[ STEM < "밖" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_밖_n_rel" ].
+
+반-1 := n-obj-cn &
+[ STEM < "반" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_반_n_1_rel" ].
+
+발광시간-1 := n-obj-cn &
+[ STEM < "발광시간" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_발광시간_n_1_rel" ].
+
+발안 := n-obj-cn &
+[ STEM < "발안" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_발안_n_rel" ].
+
+발판-1 := n-obj-cn &
+[ STEM < "발판" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_발판_n_1_rel" ].
+
+발표 := n-obj-cn &
+[ STEM < "발표" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_발표_n_rel" ].
+
+밤길 := n-obj-cn &
+[ STEM < "밤길" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_밤길_n_rel" ].
+
+밥 := n-obj-cn &
+[ STEM < "밥" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_밥_n_rel" ].
+
+방 := n-obj-cn &
+[ STEM < "방" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_방_n_rel" ].
+
+방문 := n-obj-cn &
+[ STEM < "방문" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_방문_n_rel" ].
+
+방법 := n-obj-cn &
+[ STEM < "방법" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_방법_n_rel" ].
+
+방사능 := n-obj-cn &
+[ STEM < "방사능" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_방사능_n_rel" ].
+
+방송국-1 := n-obj-cn &
+[ STEM < "방송국" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_방송국_n_1_rel" ].
+
+방정식-1 := n-obj-cn &
+[ STEM < "방정식" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_방정식_n_1_rel" ].
+
+방책 := n-obj-cn &
+[ STEM < "방책" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_방책_n_rel" ].
+
+배나무 := n-obj-cn &
+[ STEM < "배나무" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_배나무_n_rel" ].
+
+뱀밥-1 := n-obj-cn &
+[ STEM < "뱀밥" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_뱀밥_n_1_rel" ].
+
+버섯-1 := n-obj-cn &
+[ STEM < "버섯" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_버섯_n_1_rel" ].
+
+버스 := n-obj-cn &
+[ STEM < "버스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_버스_n_rel" ].
+
+버튼 := n-obj-cn &
+[ STEM < "버튼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_버튼_n_rel" ].
+
+번역기능 := n-obj-cn &
+[ STEM < "번역기능" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_번역기능_n_rel" ].
+
+벌 := n-obj-cn &
+[ STEM < "벌" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_벌_n_rel" ].
+
+벌집-1 := n-obj-cn &
+[ STEM < "벌집" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_벌집_n_1_rel" ].
+
+범용기용 := n-obj-cn &
+[ STEM < "범용기용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_범용기용_n_rel" ].
+
+법안 := n-obj-cn &
+[ STEM < "법안" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_법안_n_rel" ].
+
+법정-1 := n-obj-cn &
+[ STEM < "법정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_법정_n_1_rel" ].
+
+벚꽃-1 := n-obj-cn &
+[ STEM < "벚꽃" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_벚꽃_n_1_rel" ].
+
+베이스-1 := n-obj-cn &
+[ STEM < "베이스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_베이스_n_1_rel" ].
+
+벼 := n-obj-cn &
+[ STEM < "벼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_벼_n_rel" ].
+
+벽 := n-obj-cn &
+[ STEM < "벽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_벽_n_rel" ].
+
+변화 := n-obj-cn &
+[ STEM < "변화" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_변화_n_rel" ].
+
+별 := n-obj-cn &
+[ STEM < "별" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_별_n_rel" ].
+
+병 := n-obj-cn &
+[ STEM < "병" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_병_n_rel" ].
+
+병원 := n-obj-cn &
+[ STEM < "병원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_병원_n_rel" ].
+
+보급 := n-obj-cn &
+[ STEM < "보급" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_보급_n_rel" ].
+
+보온병 := n-obj-cn &
+[ STEM < "보온병" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_보온병_n_rel" ].
+
+보자기-1 := n-obj-cn &
+[ STEM < "보자기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_보자기_n_1_rel" ].
+
+보험 := n-obj-cn &
+[ STEM < "보험" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_보험_n_rel" ].
+
+복도-1 := n-obj-cn &
+[ STEM < "복도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_복도_n_1_rel" ].
+
+복장-1 := n-obj-cn &
+[ STEM < "복장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_복장_n_1_rel" ].
+
+복통-1 := n-obj-cn &
+[ STEM < "복통" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_복통_n_1_rel" ].
+
+본국 := n-obj-cn &
+[ STEM < "본국" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_본국_n_rel" ].
+
+본전-1 := n-obj-cn &
+[ STEM < "본전" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_본전_n_1_rel" ].
+
+부담 := n-obj-cn &
+[ STEM < "부담" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부담_n_rel" ].
+
+부분 := n-obj-cn &
+[ STEM < "부분" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부분_n_rel" ].
+
+부수 := n-obj-cn &
+[ STEM < "부수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부수_n_rel" ].
+
+부엌-1 := n-obj-cn &
+[ STEM < "부엌" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부엌_n_1_rel" ].
+
+부주의 := n-obj-cn &
+[ STEM < "부주의" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_부주의_n_rel" ].
+
+북쪽 := n-obj-cn &
+[ STEM < "북쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_북쪽_n_rel" ].
+
+분 := n-obj-cn &
+[ STEM < "분" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_분_n_rel" ].
+
+분수 := n-obj-cn &
+[ STEM < "분수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_분수_n_rel" ].
+
+분위기-1 := n-obj-cn &
+[ STEM < "분위기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_분위기_n_1_rel" ].
+
+분화구-1 := n-obj-cn &
+[ STEM < "분화구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_분화구_n_1_rel" ].
+
+불 := n-obj-cn &
+[ STEM < "불" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_불_n_rel" ].
+
+불-1 := n-obj-cn &
+[ STEM < "불" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_불_n_1_rel" ].
+
+불만-1 := n-obj-cn &
+[ STEM < "불만" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_불만_n_1_rel" ].
+
+불상사-1 := n-obj-cn &
+[ STEM < "불상사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_불상사_n_1_rel" ].
+
+불통 := n-obj-cn &
+[ STEM < "불통" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_불통_n_rel" ].
+
+붓 := n-obj-cn &
+[ STEM < "붓" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_붓_n_rel" ].
+
+비디오 := n-obj-cn &
+[ STEM < "비디오" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_비디오_n_rel" ].
+
+비상시 := n-obj-cn &
+[ STEM < "비상시" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_비상시_n_rel" ].
+
+비용 := n-obj-cn &
+[ STEM < "비용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_비용_n_rel" ].
+
+비율 := n-obj-cn &
+[ STEM < "비율" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_비율_n_rel" ].
+
+비행기 := n-obj-cn &
+[ STEM < "비행기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_비행기_n_rel" ].
+
+빌딩-1 := n-obj-cn &
+[ STEM < "빌딩" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_빌딩_n_1_rel" ].
+
+뿔 := n-obj-cn &
+[ STEM < "뿔" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_뿔_n_rel" ].
+
+사건 := n-obj-cn &
+[ STEM < "사건" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사건_n_rel" ].
+
+사고-2 := n-obj-cn &
+[ STEM < "사고" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사고_n_2_rel" ].
+
+사다리-1 := n-obj-cn &
+[ STEM < "사다리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사다리_n_1_rel" ].
+
+사리 := n-obj-cn &
+[ STEM < "사리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사리_n_rel" ].
+
+사막 := n-obj-cn &
+[ STEM < "사막" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사막_n_rel" ].
+
+사상 := n-obj-cn &
+[ STEM < "사상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사상_n_rel" ].
+
+사업 := n-obj-cn &
+[ STEM < "사업" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사업_n_rel" ].
+
+사용-3 := n-obj-cn &
+[ STEM < "사용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사용_n_3_rel" ].
+
+사월 := n-obj-cn &
+[ STEM < "사월" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사월_n_rel" ].
+
+사이 := n-obj-cn &
+[ STEM < "사이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사이_n_rel" ].
+
+사이즈-1 := n-obj-cn &
+[ STEM < "사이즈" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사이즈_n_1_rel" ].
+
+사인-1 := n-obj-cn &
+[ STEM < "사인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사인_n_1_rel" ].
+
+사인회-1 := n-obj-cn &
+[ STEM < "사인회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사인회_n_1_rel" ].
+
+사전-1 := n-obj-cn &
+[ STEM < "사전" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사전_n_1_rel" ].
+
+사진 := n-obj-cn &
+[ STEM < "사진" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사진_n_rel" ].
+
+사태 := n-obj-cn &
+[ STEM < "사태" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사태_n_rel" ].
+
+사회-1 := n-obj-cn &
+[ STEM < "사회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_사회_n_1_rel" ].
+
+산-1 := n-obj-cn &
+[ STEM < "산" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_산_n_1_rel" ].
+
+산더미 := n-obj-cn &
+[ STEM < "산더미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_산더미_n_rel" ].
+
+산소 := n-obj-cn &
+[ STEM < "산소" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_산소_n_rel" ].
+
+산악사고-1 := n-obj-cn &
+[ STEM < "산악사고" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_산악사고_n_1_rel" ].
+
+산장-1 := n-obj-cn &
+[ STEM < "산장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_산장_n_1_rel" ].
+
+산책용 := n-obj-cn &
+[ STEM < "산책용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_산책용_n_rel" ].
+
+삼월 := n-obj-cn &
+[ STEM < "삼월" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_삼월_n_rel" ].
+
+상 := n-obj-cn &
+[ STEM < "상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상_n_rel" ].
+
+상금 := n-obj-cn &
+[ STEM < "상금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상금_n_rel" ].
+
+상류-1 := n-obj-cn &
+[ STEM < "상류" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상류_n_1_rel" ].
+
+상류사회-1 := n-obj-cn &
+[ STEM < "상류사회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상류사회_n_1_rel" ].
+
+상사-2 := n-obj-cn &
+[ STEM < "상사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상사_n_2_rel" ].
+
+상상 := n-obj-cn &
+[ STEM < "상상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상상_n_rel" ].
+
+상자 := n-obj-cn &
+[ STEM < "상자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상자_n_rel" ].
+
+상정 := n-obj-cn &
+[ STEM < "상정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상정_n_rel" ].
+
+상처-1 := n-obj-cn &
+[ STEM < "상처" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상처_n_1_rel" ].
+
+상태 := n-obj-cn &
+[ STEM < "상태" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상태_n_rel" ].
+
+상품 := n-obj-cn &
+[ STEM < "상품" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_상품_n_rel" ].
+
+새끼줄-1 := n-obj-cn &
+[ STEM < "새끼줄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_새끼줄_n_1_rel" ].
+
+색 := n-obj-cn &
+[ STEM < "색" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_색_n_rel" ].
+
+색상 := n-obj-cn &
+[ STEM < "색상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_색상_n_rel" ].
+
+생각-1 := n-obj-cn &
+[ STEM < "생각" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_생각_n_1_rel" ].
+
+생계-1 := n-obj-cn &
+[ STEM < "생계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_생계_n_1_rel" ].
+
+생산라인 := n-obj-cn &
+[ STEM < "생산라인" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_생산라인_n_rel" ].
+
+생산성 := n-obj-cn &
+[ STEM < "생산성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_생산성_n_rel" ].
+
+생선 := n-obj-cn &
+[ STEM < "생선" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_생선_n_rel" ].
+
+생육 := n-obj-cn &
+[ STEM < "생육" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_생육_n_rel" ].
+
+생활 := n-obj-cn &
+[ STEM < "생활" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_생활_n_rel" ].
+
+서류-1 := n-obj-cn &
+[ STEM < "서류" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_서류_n_1_rel" ].
+
+서점 := n-obj-cn &
+[ STEM < "서점" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_서점_n_rel" ].
+
+서쪽-1 := n-obj-cn &
+[ STEM < "서쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_서쪽_n_1_rel" ].
+
+선 := n-obj-cn &
+[ STEM < "선" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_선_n_rel" ].
+
+선로-1 := n-obj-cn &
+[ STEM < "선로" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_선로_n_1_rel" ].
+
+선물-1 := n-obj-cn &
+[ STEM < "선물" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_선물_n_1_rel" ].
+
+선반 := n-obj-cn &
+[ STEM < "선반" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_선반_n_rel" ].
+
+선반위 := n-obj-cn &
+[ STEM < "선반위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_선반위_n_rel" ].
+
+섬-1 := n-obj-cn &
+[ STEM < "섬" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_섬_n_1_rel" ].
+
+성-1 := n-obj-cn &
+[ STEM < "성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성_n_1_rel" ].
+
+성격-1 := n-obj-cn &
+[ STEM < "성격" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성격_n_1_rel" ].
+
+성공 := n-obj-cn &
+[ STEM < "성공" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성공_n_rel" ].
+
+성공적 := n-obj-cn &
+[ STEM < "성공적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성공적_n_rel" ].
+
+성과 := n-obj-cn &
+[ STEM < "성과" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성과_n_rel" ].
+
+성명 := n-obj-cn &
+[ STEM < "성명" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성명_n_rel" ].
+
+성미-1 := n-obj-cn &
+[ STEM < "성미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성미_n_1_rel" ].
+
+성전 := n-obj-cn &
+[ STEM < "성전" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성전_n_rel" ].
+
+성찬-1 := n-obj-cn &
+[ STEM < "성찬" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_성찬_n_1_rel" ].
+
+세계적 := n-obj-cn &
+[ STEM < "세계적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_세계적_n_rel" ].
+
+세상 := n-obj-cn &
+[ STEM < "세상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_세상_n_rel" ].
+
+세월-1 := n-obj-cn &
+[ STEM < "세월" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_세월_n_1_rel" ].
+
+소가죽-1 := n-obj-cn &
+[ STEM < "소가죽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소가죽_n_1_rel" ].
+
+소득은닉-1 := n-obj-cn &
+[ STEM < "소득은닉" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소득은닉_n_1_rel" ].
+
+소리 := n-appos &
+[ STEM < "소리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소리_n_rel" ].
+
+소비세-1 := n-obj-cn &
+[ STEM < "소비세" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소비세_n_1_rel" ].
+
+소설 := n-obj-cn &
+[ STEM < "소설" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소설_n_rel" ].
+
+소원-1 := n-obj-cn &
+[ STEM < "소원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소원_n_1_rel" ].
+
+소음-1 := n-obj-cn &
+[ STEM < "소음" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소음_n_1_rel" ].
+
+소풍 := n-obj-cn &
+[ STEM < "소풍" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소풍_n_rel" ].
+
+소프트-1 := n-obj-cn &
+[ STEM < "소프트" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소프트_n_1_rel" ].
+
+소프트웨어 := n-obj-cn &
+[ STEM < "소프트웨어" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소프트웨어_n_rel" ].
+
+소화훈련 := n-obj-cn &
+[ STEM < "소화훈련" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_소화훈련_n_rel" ].
+
+속도 := n-obj-cn &
+[ STEM < "속도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_속도_n_rel" ].
+
+속도벡토르 := n-obj-cn &
+[ STEM < "속도벡토르" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_속도벡토르_n_rel" ].
+
+속임수 := n-obj-cn &
+[ STEM < "속임수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_속임수_n_rel" ].
+
+손목시계 := n-obj-cn &
+[ STEM < "손목시계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_손목시계_n_rel" ].
+
+솜씨-1 := n-obj-cn &
+[ STEM < "솜씨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_솜씨_n_1_rel" ].
+
+쇠고기-1 := n-obj-cn &
+[ STEM < "쇠고기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_쇠고기_n_1_rel" ].
+
+수뇌회담-1 := n-obj-cn &
+[ STEM < "수뇌회담" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수뇌회담_n_1_rel" ].
+
+수당-1 := n-obj-cn &
+[ STEM < "수당" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수당_n_1_rel" ].
+
+수도-1 := n-obj-cn &
+[ STEM < "수도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수도_n_1_rel" ].
+
+수도원 := n-obj-cn &
+[ STEM < "수도원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수도원_n_rel" ].
+
+수면-1 := n-obj-cn &
+[ STEM < "수면" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수면_n_1_rel" ].
+
+수소 := n-obj-cn &
+[ STEM < "수소" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수소_n_rel" ].
+
+수술 := n-obj-cn &
+[ STEM < "수술" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수술_n_rel" ].
+
+수입-1 := n-obj-cn &
+[ STEM < "수입" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수입_n_1_rel" ].
+
+수준 := n-obj-cn &
+[ STEM < "수준" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수준_n_rel" ].
+
+수증기량 := n-obj-cn &
+[ STEM < "수증기량" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수증기량_n_rel" ].
+
+수학 := n-obj-cn &
+[ STEM < "수학" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_수학_n_rel" ].
+
+순간 := n-obj-cn &
+[ STEM < "순간" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_순간_n_rel" ].
+
+순서 := n-obj-cn &
+[ STEM < "순서" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_순서_n_rel" ].
+
+술병-1 := n-obj-cn &
+[ STEM < "술병" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_술병_n_1_rel" ].
+
+숨 := n-obj-cn &
+[ STEM < "숨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_숨_n_rel" ].
+
+숲 := n-obj-cn &
+[ STEM < "숲" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_숲_n_rel" ].
+
+스토브-1 := n-obj-cn &
+[ STEM < "스토브" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_스토브_n_1_rel" ].
+
+스트로브-1 := n-obj-cn &
+[ STEM < "스트로브" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_스트로브_n_1_rel" ].
+
+스포츠 := n-obj-cn &
+[ STEM < "스포츠" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_스포츠_n_rel" ].
+
+스프링 := n-obj-cn &
+[ STEM < "스프링" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_스프링_n_rel" ].
+
+스피드-1 := n-obj-cn &
+[ STEM < "스피드" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_스피드_n_1_rel" ].
+
+습관 := n-obj-cn &
+[ STEM < "습관" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_습관_n_rel" ].
+
+습구 := n-obj-cn &
+[ STEM < "습구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_습구_n_rel" ].
+
+습도 := n-obj-cn &
+[ STEM < "습도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_습도_n_rel" ].
+
+승 := n-obj-cn &
+[ STEM < "승" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_승_n_rel" ].
+
+시간-2 := n-obj-cn &
+[ STEM < "시간" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시간_n_2_rel" ].
+
+시계 := n-obj-cn &
+[ STEM < "시계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시계_n_rel" ].
+
+시골 := n-obj-cn &
+[ STEM < "시골" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시골_n_rel" ].
+
+시내-1 := n-obj-cn &
+[ STEM < "시내" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시내_n_1_rel" ].
+
+시대-1 := n-obj-cn &
+[ STEM < "시대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시대_n_1_rel" ].
+
+시립병원-1 := n-obj-cn &
+[ STEM < "시립병원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시립병원_n_1_rel" ].
+
+시세 := n-obj-cn &
+[ STEM < "시세" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시세_n_rel" ].
+
+시스템-1 := n-obj-cn &
+[ STEM < "시스템" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시스템_n_1_rel" ].
+
+시스템하우스-1 := n-obj-cn &
+[ STEM < "시스템하우스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시스템하우스_n_1_rel" ].
+
+시장 := n-obj-cn &
+[ STEM < "시장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시장_n_rel" ].
+
+시합-1 := n-obj-cn &
+[ STEM < "시합" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시합_n_1_rel" ].
+
+시험-1 := n-obj-cn &
+[ STEM < "시험" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_시험_n_1_rel" ].
+
+식당 := n-obj-cn &
+[ STEM < "식당" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_식당_n_rel" ].
+
+식물 := n-obj-cn &
+[ STEM < "식물" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_식물_n_rel" ].
+
+식민지통치 := n-obj-cn &
+[ STEM < "식민지통치" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_식민지통치_n_rel" ].
+
+식탁-1 := n-obj-cn &
+[ STEM < "식탁" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_식탁_n_1_rel" ].
+
+식탁보-1 := n-obj-cn &
+[ STEM < "식탁보" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_식탁보_n_1_rel" ].
+
+식량증산 := n-obj-cn &
+[ STEM < "식량증산" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_식량증산_n_rel" ].
+
+신간본-1 := n-obj-cn &
+[ STEM < "신간본" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신간본_n_1_rel" ].
+
+신고누락액-1 := n-obj-cn &
+[ STEM < "신고누락액" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신고누락액_n_1_rel" ].
+
+신기능 := n-obj-cn &
+[ STEM < "신기능" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신기능_n_rel" ].
+
+신문 := n-obj-cn &
+[ STEM < "신문" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신문_n_rel" ].
+
+신발 := n-obj-cn &
+[ STEM < "신발" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신발_n_rel" ].
+
+신상품 := n-obj-cn &
+[ STEM < "신상품" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신상품_n_rel" ].
+
+신용-1 := n-obj-cn &
+[ STEM < "신용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신용_n_1_rel" ].
+
+신임 := n-obj-cn &
+[ STEM < "신임" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신임_n_rel" ].
+
+신작-1 := n-obj-cn &
+[ STEM < "신작" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신작_n_1_rel" ].
+
+신청-1 := n-obj-cn &
+[ STEM < "신청" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신청_n_1_rel" ].
+
+신학기 := n-obj-cn &
+[ STEM < "신학기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신학기_n_rel" ].
+
+신혼여행 := n-obj-cn &
+[ STEM < "신혼여행" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_신혼여행_n_rel" ].
+
+실-1 := n-obj-cn &
+[ STEM < "실" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_실_n_1_rel" ].
+
+실권 := n-obj-cn &
+[ STEM < "실권" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_실권_n_rel" ].
+
+실력-1 := n-obj-cn &
+[ STEM < "실력" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_실력_n_1_rel" ].
+
+실매 := n-obj-cn &
+[ STEM < "실매" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_실매_n_rel" ].
+
+실패-2 := n-obj-cn &
+[ STEM < "실패" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_실패_n_2_rel" ].
+
+싸움-1 := n-obj-cn &
+[ STEM < "싸움" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_싸움_n_1_rel" ].
+
+쌀값-1 := n-obj-cn &
+[ STEM < "쌀값" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_쌀값_n_1_rel" ].
+
+쓰레기-1 := n-obj-cn &
+[ STEM < "쓰레기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_쓰레기_n_1_rel" ].
+
+씨-2 := n-obj-cn &
+[ STEM < "씨" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_씨_n_2_rel" ].
+
+아가미 := n-obj-cn &
+[ STEM < "아가미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아가미_n_rel" ].
+
+아래-1 := n-obj-cn &
+[ STEM < "아래" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아래_n_1_rel" ].
+
+아래층-1 := n-obj-cn &
+[ STEM < "아래층" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아래층_n_1_rel" ].
+
+아랫층-1 := n-obj-cn &
+[ STEM < "아랫층" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아랫층_n_1_rel" ].
+
+아지랭이-1 := n-obj-cn &
+[ STEM < "아지랭이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아지랭이_n_1_rel" ].
+
+아침 := n-obj-cn &
+[ STEM < "아침" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아침_n_rel" ].
+
+아파트-1 := n-obj-cn &
+[ STEM < "아파트" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아파트_n_1_rel" ].
+
+악성 := n-obj-cn &
+[ STEM < "악성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_악성_n_rel" ].
+
+안-1 := n-obj-cn &
+[ STEM < "안" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_안_n_1_rel" ].
+
+안-2 := n-obj-cn &
+[ STEM < "안" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_안_n_2_rel" ].
+
+안개 := n-obj-cn &
+[ STEM < "안개" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_안개_n_rel" ].
+
+안건-1 := n-obj-cn &
+[ STEM < "안건" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_안건_n_1_rel" ].
+
+안경 := n-obj-cn &
+[ STEM < "안경" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_안경_n_rel" ].
+
+안목-1 := n-obj-cn &
+[ STEM < "안목" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_안목_n_1_rel" ].
+
+알-1 := n-obj-cn &
+[ STEM < "알" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_알_n_1_rel" ].
+
+암 := n-obj-cn &
+[ STEM < "암" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_암_n_rel" ].
+
+암초-1 := n-obj-cn &
+[ STEM < "암초" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_암초_n_1_rel" ].
+
+앞-1 := n-obj-cn &
+[ STEM < "앞" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_앞_n_1_rel" ].
+
+앞쪽 := n-obj-cn &
+[ STEM < "앞쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_앞쪽_n_rel" ].
+
+야구 := n-obj-cn &
+[ STEM < "야구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_야구_n_rel" ].
+
+야채 := n-obj-cn &
+[ STEM < "야채" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_야채_n_rel" ].
+
+약-2 := n-obj-cn &
+[ STEM < "약" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_약_n_2_rel" ].
+
+약간 := n-obj-cn &
+[ STEM < "약간" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_약간_n_rel" ].
+
+약속-3 := n-obj-cn &
+[ STEM < "약속" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_약속_n_3_rel" ].
+
+약점-1 := n-obj-cn &
+[ STEM < "약점" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_약점_n_1_rel" ].
+
+양담배 := n-obj-cn &
+[ STEM < "양담배" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_양담배_n_rel" ].
+
+양사 := n-obj-cn &
+[ STEM < "양사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_양사_n_rel" ].
+
+양자 := n-obj-cn &
+[ STEM < "양자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_양자_n_rel" ].
+
+양해-1 := n-obj-cn &
+[ STEM < "양해" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_양해_n_1_rel" ].
+
+어선 := n-obj-cn &
+[ STEM < "어선" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_어선_n_rel" ].
+
+언덕길 := n-obj-cn &
+[ STEM < "언덕길" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_언덕길_n_rel" ].
+
+언어학 := n-obj-cn &
+[ STEM < "언어학" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_언어학_n_rel" ].
+
+업무-1 := n-obj-cn &
+[ STEM < "업무" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_업무_n_1_rel" ].
+
+엔진 := n-obj-cn &
+[ STEM < "엔진" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_엔진_n_rel" ].
+
+엘리베이터 := n-obj-cn &
+[ STEM < "엘리베이터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_엘리베이터_n_rel" ].
+
+여러가지 := n-obj-cn &
+[ STEM < "여러가지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_여러가지_n_rel" ].
+
+여행 := n-obj-cn &
+[ STEM < "여행" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_여행_n_rel" ].
+
+역 := n-obj-cn &
+[ STEM < "역" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_역_n_rel" ].
+
+역앞-1 := n-obj-cn &
+[ STEM < "역앞" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_역앞_n_1_rel" ].
+
+연구소-1 := n-obj-cn &
+[ STEM < "연구소" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_연구소_n_1_rel" ].
+
+연구회 := n-obj-cn &
+[ STEM < "연구회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_연구회_n_rel" ].
+
+연기-1 := n-obj-cn &
+[ STEM < "연기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_연기_n_1_rel" ].
+
+연안-1 := n-obj-cn &
+[ STEM < "연안" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_연안_n_1_rel" ].
+
+연예계-1 := n-obj-cn &
+[ STEM < "연예계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_연예계_n_1_rel" ].
+
+연필 := n-obj-cn &
+[ STEM < "연필" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_연필_n_rel" ].
+
+연회 := n-obj-cn &
+[ STEM < "연회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_연회_n_rel" ].
+
+열-1 := n-obj-cn &
+[ STEM < "열" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_열_n_1_rel" ].
+
+열매-1 := n-obj-cn &
+[ STEM < "열매" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_열매_n_1_rel" ].
+
+열심 := n-obj-cn &
+[ STEM < "열심" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_열심_n_rel" ].
+
+열차 := n-obj-cn &
+[ STEM < "열차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_열차_n_rel" ].
+
+영광 := n-obj-cn &
+[ STEM < "영광" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_영광_n_rel" ].
+
+영어 := n-obj-cn &
+[ STEM < "영어" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_영어_n_rel" ].
+
+영토 := n-obj-cn &
+[ STEM < "영토" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_영토_n_rel" ].
+
+영향 := n-obj-cn &
+[ STEM < "영향" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_영향_n_rel" ].
+
+영험-1 := n-obj-cn &
+[ STEM < "영험" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_영험_n_1_rel" ].
+
+영화-1 := n-obj-cn &
+[ STEM < "영화" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_영화_n_1_rel" ].
+
+영화관 := n-obj-cn &
+[ STEM < "영화관" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_영화관_n_rel" ].
+
+옆 := n-obj-cn &
+[ STEM < "옆" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_옆_n_rel" ].
+
+옆집-1 := n-obj-cn &
+[ STEM < "옆집" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_옆집_n_1_rel" ].
+
+예정-1 := n-obj-cn &
+[ STEM < "예정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_예정_n_1_rel" ].
+
+옛날 := n-obj-cn &
+[ STEM < "옛날" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_옛날_n_rel" ].
+
+오르간 := n-obj-cn &
+[ STEM < "오르간" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_오르간_n_rel" ].
+
+오르막길-1 := n-obj-cn &
+[ STEM < "오르막길" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_오르막길_n_1_rel" ].
+
+오른쪽 := n-obj-cn &
+[ STEM < "오른쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_오른쪽_n_rel" ].
+
+오차 := n-obj-cn &
+[ STEM < "오차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_오차_n_rel" ].
+
+온도 := n-obj-cn &
+[ STEM < "온도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_온도_n_rel" ].
+
+옷 := n-obj-cn &
+[ STEM < "옷" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_옷_n_rel" ].
+
+왕권 := n-obj-cn &
+[ STEM < "왕권" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_왕권_n_rel" ].
+
+외 := n-obj-cn &
+[ STEM < "외" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_외_n_rel" ].
+
+외국 := n-obj-cn &
+[ STEM < "외국" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_외국_n_rel" ].
+
+외제 := n-obj-cn &
+[ STEM < "외제">,
+  SYNSEM.LKEYS.KEYREL.PRED "_외제_n_rel" ].
+
+외제차 := n-obj-cn &
+[ STEM < "외제차">,
+  SYNSEM.LKEYS.KEYREL.PRED "_외제차_n_rel" ].
+
+외형-1 := n-obj-cn &
+[ STEM < "외형" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_외형_n_1_rel" ].
+
+왼쪽 := n-obj-cn &
+[ STEM < "왼쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_왼쪽_n_rel" ].
+
+요건 := n-obj-cn &
+[ STEM < "요건" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_요건_n_rel" ].
+
+요금 := n-obj-cn &
+[ STEM < "요금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_요금_n_rel" ].
+
+요리-1 := n-obj-cn &
+[ STEM < "요리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_요리_n_1_rel" ].
+
+요트 := n-obj-cn &
+[ STEM < "요트" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_요트_n_rel" ].
+
+용기-1 := n-obj-cn &
+[ STEM < "용기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_용기_n_1_rel" ].
+
+용무 := n-obj-cn &
+[ STEM < "용무" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_용무_n_rel" ].
+
+용의 := n-obj-cn &
+[ STEM < "용의" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_용의_n_rel" ].
+
+우동 := n-obj-cn &
+[ STEM < "우동" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_우동_n_rel" ].
+
+우리나라 := n-obj-cn &
+[ STEM < "우리나라" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_우리나라_n_rel" ].
+
+우리집 := n-obj-cn &
+[ STEM < "우리집" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_우리집_n_rel" ].
+
+우승-2 := n-obj-cn &
+[ STEM < "우승" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_우승_n_2_rel" ].
+
+우위-1 := n-obj-cn &
+[ STEM < "우위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_우위_n_1_rel" ].
+
+우정 := n-obj-cn &
+[ STEM < "우정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_우정_n_rel" ].
+
+운동장 := n-obj-cn &
+[ STEM < "운동장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_운동장_n_rel" ].
+
+운동회 := n-obj-cn &
+[ STEM < "운동회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_운동회_n_rel" ].
+
+운명-1 := n-obj-cn &
+[ STEM < "운명" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_운명_n_1_rel" ].
+
+웅덩이 := n-obj-cn &
+[ STEM < "웅덩이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_웅덩이_n_rel" ].
+
+워드프로세 := n-obj-cn &
+[ STEM < "워드프로세" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_워드프로세_n_rel" ].
+
+원료-1 := n-obj-cn &
+[ STEM < "원료" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_원료_n_1_rel" ].
+
+원자력-1 := n-obj-cn &
+[ STEM < "원자력" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_원자력_n_1_rel" ].
+
+원장 := n-obj-cn &
+[ STEM < "원장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_원장_n_rel" ].
+
+월간지 := n-obj-cn &
+[ STEM < "월간지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_월간지_n_rel" ].
+
+위-1 := n-obj-cn &
+[ STEM < "위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_위_n_1_rel" ].
+
+위성방송-1 := n-obj-cn &
+[ STEM < "위성방송" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_위성방송_n_1_rel" ].
+
+위원회-1 := n-obj-cn &
+[ STEM < "위원회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_위원회_n_1_rel" ].
+
+위치-1 := n-obj-cn &
+[ STEM < "위치" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_위치_n_1_rel" ].
+
+유감 := n-obj-cn &
+[ STEM < "유감" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_유감_n_rel" ].
+
+유전 := n-obj-cn &
+[ STEM < "유전" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_유전_n_rel" ].
+
+유파-1 := n-obj-cn &
+[ STEM < "유파" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_유파_n_1_rel" ].
+
+유행 := n-obj-cn &
+[ STEM < "유행" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_유행_n_rel" ].
+
+유혹 := n-obj-cn &
+[ STEM < "유혹" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_유혹_n_rel" ].
+
+육체적 := n-obj-cn &
+[ STEM < "육체적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_육체적_n_rel" ].
+
+은하-1 := n-obj-cn &
+[ STEM < "은하" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_은하_n_1_rel" ].
+
+은행 := n-obj-cn &
+[ STEM < "은행" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_은행_n_rel" ].
+
+은화-1 := n-obj-cn &
+[ STEM < "은화" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_은화_n_1_rel" ].
+
+음성 := n-obj-cn &
+[ STEM < "음성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_음성_n_rel" ].
+
+음식 := n-obj-cn &
+[ STEM < "음식" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_음식_n_rel" ].
+
+의견-1 := n-obj-cn &
+[ STEM < "의견" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_의견_n_1_rel" ].
+
+의미-2 := n-obj-cn &
+[ STEM < "의미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_의미_n_2_rel" ].
+
+의자 := n-obj-cn &
+[ STEM < "의자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_의자_n_rel" ].
+
+이름-1 := n-obj-cn &
+[ STEM < "이름" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이름_n_1_rel" ].
+
+이별 := n-obj-cn &
+[ STEM < "이별" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이별_n_rel" ].
+
+이불-1 := n-obj-cn &
+[ STEM < "이불" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이불_n_1_rel" ].
+
+이삭 := n-obj-cn &
+[ STEM < "이삭" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이삭_n_rel" ].
+
+이상-2 := n-obj-cn &
+[ STEM < "이상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이상_n_2_rel" ].
+
+이야깃거리 := n-obj-cn &
+[ STEM < "이야깃거리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이야깃거리_n_rel" ].
+
+이외 := n-obj-cn &
+[ STEM < "이외" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이외_n_rel" ].
+
+이웃 := n-obj-cn &
+[ STEM < "이웃" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이웃_n_rel" ].
+
+이유 := n-obj-cn &
+[ STEM < "이유" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이유_n_rel" ].
+
+이쪽 := n-obj-cn &
+[ STEM < "이쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이쪽_n_rel" ].
+
+이층 := n-obj-cn &
+[ STEM < "이층" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이층_n_rel" ].
+
+이하 := n-obj-cn &
+[ STEM < "이하" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이하_n_rel" ].
+
+이해 := n-obj-cn &
+[ STEM < "이해" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이해_n_rel" ].
+
+이후 := n-obj-cn &
+[ STEM < "이후" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이후_n_rel" ].
+
+인생-1 := n-obj-cn &
+[ STEM < "인생" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_인생_n_1_rel" ].
+
+인쇄 := n-obj-cn &
+[ STEM < "인쇄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_인쇄_n_rel" ].
+
+인터페이스 := n-obj-cn &
+[ STEM < "인터페이스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_인터페이스_n_rel" ].
+
+인형 := n-obj-cn &
+[ STEM < "인형" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_인형_n_rel" ].
+
+일 := n-obj-cn &
+[ STEM < "일" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_일_n_rel" ].
+
+일본차 := n-obj-cn &
+[ STEM < "일본차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_일본차_n_rel" ].
+
+일부 := n-obj-cn &
+[ STEM < "일부" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_일부_n_rel" ].
+
+일손-1 := n-obj-cn &
+[ STEM < "일손" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_일손_n_1_rel" ].
+
+일요일-1 := n-obj-cn &
+[ STEM < "일요일" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_일요일_n_1_rel" ].
+
+입구-1 := n-obj-cn &
+[ STEM < "입구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_입구_n_1_rel" ].
+
+입장-1 := n-obj-cn &
+[ STEM < "입장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_입장_n_1_rel" ].
+
+입학시험 := n-obj-cn &
+[ STEM < "입학시험" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_입학시험_n_rel" ].
+
+잉크-1 := n-obj-cn &
+[ STEM < "잉크" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_잉크_n_1_rel" ].
+
+자리-1 := n-obj-cn &
+[ STEM < "자리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_자리_n_1_rel" ].
+
+자세-1 := n-obj-cn &
+[ STEM < "자세" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_자세_n_1_rel" ].
+
+자신-2 := n-obj-cn &
+[ STEM < "자신" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_자신_n_2_rel" ].
+
+자율유통미 := n-obj-cn &
+[ STEM < "자율유통미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_자율유통미_n_rel" ].
+
+자전거 := n-obj-cn &
+[ STEM < "자전거" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_자전거_n_rel" ].
+
+작품-1 := n-obj-cn &
+[ STEM < "작품" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_작품_n_1_rel" ].
+
+잔돈 := n-obj-cn &
+[ STEM < "잔돈" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_잔돈_n_rel" ].
+
+잠 := n-obj-cn &
+[ STEM < "잠" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_잠_n_rel" ].
+
+잠자리-1 := n-obj-cn &
+[ STEM < "잠자리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_잠자리_n_1_rel" ].
+
+잡지 := n-obj-cn &
+[ STEM < "잡지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_잡지_n_rel" ].
+
+잡초 := n-obj-cn &
+[ STEM < "잡초" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_잡초_n_rel" ].
+
+장가 := n-obj-cn &
+[ STEM < "장가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장가_n_rel" ].
+
+장기채무-1 := n-obj-cn &
+[ STEM < "장기채무" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장기채무_n_1_rel" ].
+
+장난감-1 := n-obj-cn &
+[ STEM < "장난감" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장난감_n_1_rel" ].
+
+장단-1 := n-obj-cn &
+[ STEM < "장단" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장단_n_1_rel" ].
+
+장대-1 := n-obj-cn &
+[ STEM < "장대" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장대_n_1_rel" ].
+
+장래-1 := n-obj-cn &
+[ STEM < "장래" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장래_n_1_rel" ].
+
+장마 := n-obj-cn &
+[ STEM < "장마" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장마_n_rel" ].
+
+장면 := n-obj-cn &
+[ STEM < "장면" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장면_n_rel" ].
+
+장사 := n-obj-cn &
+[ STEM < "장사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장사_n_rel" ].
+
+장소 := n-obj-cn &
+[ STEM < "장소" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장소_n_rel" ].
+
+장치-1 := n-obj-cn &
+[ STEM < "장치" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_장치_n_1_rel" ].
+
+재능 := n-obj-cn &
+[ STEM < "재능" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_재능_n_rel" ].
+
+재미 := n-obj-cn &
+[ STEM < "재미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_재미_n_rel" ].
+
+재산-1 := n-obj-cn &
+[ STEM < "재산" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_재산_n_1_rel" ].
+
+재즈-1 := n-obj-cn &
+[ STEM < "재즈" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_재즈_n_1_rel" ].
+
+재판권-1 := n-obj-cn &
+[ STEM < "재판권" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_재판권_n_1_rel" ].
+
+재할인금리-1 := n-obj-cn &
+[ STEM < "재할인금리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_재할인금리_n_1_rel" ].
+
+쟁반 := n-obj-cn &
+[ STEM < "쟁반" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_쟁반_n_rel" ].
+
+저녁식사-1 := n-obj-cn &
+[ STEM < "저녁식사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_저녁식사_n_1_rel" ].
+
+저쪽 := n-obj-cn &
+[ STEM < "저쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_저쪽_n_rel" ].
+
+저축 := n-obj-cn &
+[ STEM < "저축" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_저축_n_rel" ].
+
+저항 := n-obj-cn &
+[ STEM < "저항" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_저항_n_rel" ].
+
+적설 := n-obj-cn &
+[ STEM < "적설" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_적설_n_rel" ].
+
+전국-1 := n-obj-cn &
+[ STEM < "전국" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전국_n_1_rel" ].
+
+전기-1 := n-obj-cn &
+[ STEM < "전기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전기_n_1_rel" ].
+
+전등-1 := n-obj-cn &
+[ STEM < "전등" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전등_n_1_rel" ].
+
+전람회-1 := n-obj-cn &
+[ STEM < "전람회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전람회_n_1_rel" ].
+
+전력-1 := n-obj-cn &
+[ STEM < "전력" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전력_n_1_rel" ].
+
+전세계-1 := n-obj-cn &
+[ STEM < "전세계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전세계_n_1_rel" ].
+
+전시작품 := n-obj-cn &
+[ STEM < "전시작품" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전시작품_n_rel" ].
+
+전자계산기 := n-obj-cn &
+[ STEM < "전자계산기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전자계산기_n_rel" ].
+
+전쟁-1 := n-obj-cn &
+[ STEM < "전쟁" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전쟁_n_1_rel" ].
+
+전쟁터 := n-obj-cn &
+[ STEM < "전쟁터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전쟁터_n_rel" ].
+
+전차 := n-obj-cn &
+[ STEM < "전차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전차_n_rel" ].
+
+전체 := n-obj-cn &
+[ STEM < "전체" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전체_n_rel" ].
+
+전파-1 := n-obj-cn &
+[ STEM < "전파" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전파_n_1_rel" ].
+
+전후-1 := n-obj-cn &
+[ STEM < "전후" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_전후_n_1_rel" ].
+
+절-1 := n-obj-cn &
+[ STEM < "절" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_절_n_1_rel" ].
+
+절벽-1 := n-obj-cn &
+[ STEM < "절벽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_절벽_n_1_rel" ].
+
+점-1 := n-obj-cn &
+[ STEM < "점" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_점_n_1_rel" ].
+
+점심밥-1 := n-obj-cn &
+[ STEM < "점심밥" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_점심밥_n_1_rel" ].
+
+접시-1 := n-obj-cn &
+[ STEM < "접시" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_접시_n_1_rel" ].
+
+정 := n-obj-cn &
+[ STEM < "정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정_n_rel" ].
+
+정규휴일-1 := n-obj-cn &
+[ STEM < "정규휴일" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정규휴일_n_1_rel" ].
+
+정답-1 := n-obj-cn &
+[ STEM < "정답" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정답_n_1_rel" ].
+
+정도 := n-obj-cn &
+[ STEM < "정도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정도_n_rel" ].
+
+정리단계-1 := n-obj-cn &
+[ STEM < "정리단계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정리단계_n_1_rel" ].
+
+정부 := n-obj-cn &
+[ STEM < "정부" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정부_n_rel" ].
+
+정상 := n-obj-cn &
+[ STEM < "정상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정상_n_rel" ].
+
+정성-1 := n-obj-cn &
+[ STEM < "정성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정성_n_1_rel" ].
+
+정신 := n-obj-cn &
+[ STEM < "정신" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정신_n_rel" ].
+
+정신적 := n-obj-cn &
+[ STEM < "정신적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정신적_n_rel" ].
+
+정원-1 := n-obj-cn &
+[ STEM < "정원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정원_n_1_rel" ].
+
+정직-2 := n-obj-cn &
+[ STEM < "정직" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_정직_n_2_rel" ].
+
+제2부 := n-obj-cn &
+[ STEM < "제2부" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_제2부_n_rel" ].
+
+제문제 := n-obj-cn &
+[ STEM < "제문제" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_제문제_n_rel" ].
+
+제품 := n-obj-cn &
+[ STEM < "제품" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_제품_n_rel" ].
+
+조건 := n-obj-cn &
+[ STEM < "조건" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_조건_n_rel" ].
+
+조사결과 := n-obj-cn &
+[ STEM < "조사결과" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_조사결과_n_rel" ].
+
+조약-1 := n-obj-cn &
+[ STEM < "조약" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_조약_n_1_rel" ].
+
+종 := n-obj-cn &
+[ STEM < "종" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_종_n_rel" ].
+
+죄 := n-obj-cn &
+[ STEM < "죄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_죄_n_rel" ].
+
+주변-1 := n-obj-cn &
+[ STEM < "주변" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주변_n_1_rel" ].
+
+주사위-1 := n-obj-cn &
+[ STEM < "주사위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주사위_n_1_rel" ].
+
+주식-1 := n-obj-cn &
+[ STEM < "주식" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주식_n_1_rel" ].
+
+주위-1 := n-obj-cn &
+[ STEM < "주위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주위_n_1_rel" ].
+
+주의 := n-obj-cn &
+[ STEM < "주의" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주의_n_rel" ].
+
+주일 := n-obj-cn &
+[ STEM < "주일" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주일_n_rel" ].
+
+주전자-1 := n-obj-cn &
+[ STEM < "주전자" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주전자_n_1_rel" ].
+
+주지 := n-obj-cn &
+[ STEM < "주지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_주지_n_rel" ].
+
+줄 := n-obj-cn &
+[ STEM < "줄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_줄_n_rel" ].
+
+줄-2 := n-obj-cn &
+[ STEM < "줄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_줄_n_2_rel" ].
+
+중동정세-1 := n-obj-cn &
+[ STEM < "중동정세" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_중동정세_n_1_rel" ].
+
+즙 := n-obj-cn &
+[ STEM < "즙" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_즙_n_rel" ].
+
+증가 := n-obj-cn &
+[ STEM < "증가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_증가_n_rel" ].
+
+지가 := n-obj-cn &
+[ STEM < "지가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지가_n_rel" ].
+
+지갑 := n-obj-cn &
+[ STEM < "지갑" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지갑_n_rel" ].
+
+지구-1 := n-obj-cn &
+[ STEM < "지구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지구_n_1_rel" ].
+
+지금-2 := n-obj-cn &
+[ STEM < "지금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지금_n_2_rel" ].
+
+지도 := n-obj-cn &
+[ STEM < "지도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지도_n_rel" ].
+
+지방 := n-obj-cn &
+[ STEM < "지방" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지방_n_rel" ].
+
+지역-1 := n-obj-cn &
+[ STEM < "지역" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지역_n_1_rel" ].
+
+지우개 := n-obj-cn &
+[ STEM < "지우개" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지우개_n_rel" ].
+
+지위-1 := n-obj-cn &
+[ STEM < "지위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지위_n_1_rel" ].
+
+지진 := n-obj-cn &
+[ STEM < "지진" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_지진_n_rel" ].
+
+직선-1 := n-obj-cn &
+[ STEM < "직선" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_직선_n_1_rel" ].
+
+진눈깨비-1 := n-obj-cn &
+[ STEM < "진눈깨비" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_진눈깨비_n_1_rel" ].
+
+진보 := n-obj-cn &
+[ STEM < "진보" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_진보_n_rel" ].
+
+진실 := n-obj-cn &
+[ STEM < "진실" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_진실_n_rel" ].
+
+질색 := n-obj-cn &
+[ STEM < "질색" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_질색_n_rel" ].
+
+집 := n-obj-cn &
+[ STEM < "집" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_집_n_rel" ].
+
+집세-1 := n-obj-cn &
+[ STEM < "집세" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_집세_n_1_rel" ].
+
+짬-1 := n-obj-cn &
+[ STEM < "짬" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_짬_n_1_rel" ].
+
+쪽-1 := n-obj-cn &
+[ STEM < "쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_쪽_n_1_rel" ].
+
+차 := n-obj-cn &
+[ STEM < "차" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_차_n_rel" ].
+
+차도구-1 := n-obj-cn &
+[ STEM < "차도구" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_차도구_n_1_rel" ].
+
+차이-1 := n-obj-cn &
+[ STEM < "차이" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_차이_n_1_rel" ].
+
+참 := n-obj-cn &
+[ STEM < "참" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_참_n_rel" ].
+
+참억새 := n-obj-cn &
+[ STEM < "참억새" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_참억새_n_rel" ].
+
+창문 := n-obj-cn &
+[ STEM < "창문" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_창문_n_rel" ].
+
+창찬 := n-obj-cn &
+[ STEM < "창찬" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_창찬_n_rel" ].
+
+채용 := n-obj-cn &
+[ STEM < "채용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_채용_n_rel" ].
+
+책상-1 := n-obj-cn &
+[ STEM < "책상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_책상_n_1_rel" ].
+
+책상다리-1 := n-obj-cn &
+[ STEM < "책상다리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_책상다리_n_1_rel" ].
+
+책상보-1 := n-obj-cn &
+[ STEM < "책상보" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_책상보_n_1_rel" ].
+
+책임 := n-obj-cn &
+[ STEM < "책임" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_책임_n_rel" ].
+
+처신 := n-obj-cn &
+[ STEM < "처신" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_처신_n_rel" ].
+
+처음 := n-obj-cn &
+[ STEM < "처음" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_처음_n_rel" ].
+
+천 := n-obj-cn &
+[ STEM < "천" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_천_n_rel" ].
+
+철사 := n-obj-cn &
+[ STEM < "철사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_철사_n_rel" ].
+
+철야-1 := n-obj-cn &
+[ STEM < "철야" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_철야_n_1_rel" ].
+
+철재 := n-obj-cn &
+[ STEM < "철재" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_철재_n_rel" ].
+
+청소 := n-obj-cn &
+[ STEM < "청소" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_청소_n_rel" ].
+
+체-1 := n-obj-cn &
+[ STEM < "체" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_체_n_1_rel" ].
+
+체면-1 := n-obj-cn &
+[ STEM < "체면" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_체면_n_1_rel" ].
+
+체적 := n-obj-cn &
+[ STEM < "체적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_체적_n_rel" ].
+
+초기-1 := n-obj-cn &
+[ STEM < "초기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_초기_n_1_rel" ].
+
+초원-1 := n-obj-cn &
+[ STEM < "초원" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_초원_n_1_rel" ].
+
+최고 := n-obj-cn &
+[ STEM < "최고" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_최고_n_rel" ].
+
+최면술-1 := n-obj-cn &
+[ STEM < "최면술" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_최면술_n_1_rel" ].
+
+최종 := n-obj-cn &
+[ STEM < "최종" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_최종_n_rel" ].
+
+추위 := n-obj-cn &
+[ STEM < "추위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_추위_n_rel" ].
+
+추징세액-1 := n-obj-cn &
+[ STEM < "추징세액" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_추징세액_n_1_rel" ].
+
+추천 := n-obj-cn &
+[ STEM < "추천" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_추천_n_rel" ].
+
+출국 := n-obj-cn &
+[ STEM < "출국" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_출국_n_rel" ].
+
+출장 := n-obj-cn &
+[ STEM < "출장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_출장_n_rel" ].
+
+출판사-1 := n-obj-cn &
+[ STEM < "출판사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_출판사_n_1_rel" ].
+
+출하 := n-obj-cn &
+[ STEM < "출하" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_출하_n_rel" ].
+
+춤 := n-obj-cn &
+[ STEM < "춤" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_춤_n_rel" ].
+
+취직 := n-obj-cn &
+[ STEM < "취직" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_취직_n_rel" ].
+
+층-1 := n-obj-cn &
+[ STEM < "층" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_층_n_1_rel" ].
+
+치과-1 := n-obj-cn &
+[ STEM < "치과" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_치과_n_1_rel" ].
+
+침체국면-1 := n-obj-cn &
+[ STEM < "침체국면" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_침체국면_n_1_rel" ].
+
+칼-1 := n-obj-cn &
+[ STEM < "칼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_칼_n_1_rel" ].
+
+칼라 := n-obj-cn &
+[ STEM < "칼라" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_칼라_n_rel" ].
+
+캐치볼 := n-obj-cn &
+[ STEM < "캐치볼" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_캐치볼_n_rel" ].
+
+캠퍼스-1 := n-obj-cn &
+[ STEM < "캠퍼스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_캠퍼스_n_1_rel" ].
+
+커피숍-1 := n-obj-cn &
+[ STEM < "커피숍" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_커피숍_n_1_rel" ].
+
+커피점-1 := n-obj-cn &
+[ STEM < "커피점" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_커피점_n_1_rel" ].
+
+컴퓨터 := n-obj-cn &
+[ STEM < "컴퓨터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_컴퓨터_n_rel" ].
+
+컵-1 := n-obj-cn &
+[ STEM < "컵" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_컵_n_1_rel" ].
+
+케이크-1 := n-obj-cn &
+[ STEM < "케이크" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_케이크_n_1_rel" ].
+
+클럽 := n-obj-cn &
+[ STEM < "클럽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_클럽_n_rel" ].
+
+키 := n-obj-cn &
+[ STEM < "키" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_키_n_rel" ].
+
+타협 := n-obj-cn &
+[ STEM < "타협" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_타협_n_rel" ].
+
+태도-1 := n-obj-cn &
+[ STEM < "태도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_태도_n_1_rel" ].
+
+태세-1 := n-obj-cn &
+[ STEM < "태세" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_태세_n_1_rel" ].
+
+태풍 := n-obj-cn &
+[ STEM < "태풍" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_태풍_n_rel" ].
+
+터 := n-obj-cn &
+[ STEM < "터" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_터_n_rel" ].
+
+테니스-1 := n-obj-cn &
+[ STEM < "테니스" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_테니스_n_1_rel" ].
+
+테이블-1 := n-obj-cn &
+[ STEM < "테이블" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_테이블_n_1_rel" ].
+
+텐트-1 := n-obj-cn &
+[ STEM < "텐트" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_텐트_n_1_rel" ].
+
+토지-1 := n-obj-cn &
+[ STEM < "토지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_토지_n_1_rel" ].
+
+투자대상-1 := n-obj-cn &
+[ STEM < "투자대상" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_투자대상_n_1_rel" ].
+
+튜너-1 := n-obj-cn &
+[ STEM < "튜너" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_튜너_n_1_rel" ].
+
+튤립꽃-1 := n-obj-cn &
+[ STEM < "튤립꽃" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_튤립꽃_n_1_rel" ].
+
+트럭 := n-obj-cn &
+[ STEM < "트럭" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_트럭_n_rel" ].
+
+특징 := n-obj-cn &
+[ STEM < "특징" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_특징_n_rel" ].
+
+틀니-1 := n-obj-cn &
+[ STEM < "틀니" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_틀니_n_1_rel" ].
+
+틈새바람-1 := n-obj-cn &
+[ STEM < "틈새바람" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_틈새바람_n_1_rel" ].
+
+팀 := n-obj-cn &
+[ STEM < "팀" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_팀_n_rel" ].
+
+파도-1 := n-obj-cn &
+[ STEM < "파도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_파도_n_1_rel" ].
+
+판단 := n-obj-cn &
+[ STEM < "판단" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_판단_n_rel" ].
+
+판매-2 := n-obj-cn &
+[ STEM < "판매" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_판매_n_2_rel" ].
+
+판매목표 := n-obj-cn &
+[ STEM < "판매목표" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_판매목표_n_rel" ].
+
+팔짱-1 := n-obj-cn &
+[ STEM < "팔짱" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_팔짱_n_1_rel" ].
+
+패닉-1 := n-obj-cn &
+[ STEM < "패닉" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_패닉_n_1_rel" ].
+
+팻말-1 := n-obj-cn &
+[ STEM < "팻말" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_팻말_n_1_rel" ].
+
+퍼스컴-1 := n-obj-cn &
+[ STEM < "퍼스컴" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_퍼스컴_n_1_rel" ].
+
+퍼스컴용 := n-obj-cn &
+[ STEM < "퍼스컴용" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_퍼스컴용_n_rel" ].
+
+페인트-1 := n-obj-cn &
+[ STEM < "페인트" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_페인트_n_1_rel" ].
+
+펜 := n-obj-cn &
+[ STEM < "펜" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_펜_n_rel" ].
+
+편지 := n-obj-cn &
+[ STEM < "편지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_편지_n_rel" ].
+
+평소 := n-obj-cn &
+[ STEM < "평소" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_평소_n_rel" ].
+
+폐-1 := n-obj-cn &
+[ STEM < "폐" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_폐_n_1_rel" ].
+
+폐가-1 := n-obj-cn &
+[ STEM < "폐가" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_폐가_n_1_rel" ].
+
+포도 := n-obj-cn &
+[ STEM < "포도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_포도_n_rel" ].
+
+포목-1 := n-obj-cn &
+[ STEM < "포목" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_포목_n_1_rel" ].
+
+포승 := n-obj-cn &
+[ STEM < "포승" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_포승_n_rel" ].
+
+포유류-1 := n-obj-cn &
+[ STEM < "포유류" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_포유류_n_1_rel" ].
+
+포화수증기량 := n-obj-cn &
+[ STEM < "포화수증기량" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_포화수증기량_n_rel" ].
+
+폭-1 := n-obj-cn &
+[ STEM < "폭" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_폭_n_1_rel" ].
+
+표 := n-obj-cn &
+[ STEM < "표" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_표_n_rel" ].
+
+표준가격미 := n-obj-cn &
+[ STEM < "표준가격미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_표준가격미_n_rel" ].
+
+푸딩-1 := n-obj-cn &
+[ STEM < "푸딩" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_푸딩_n_1_rel" ].
+
+풀-2 := n-obj-cn &
+[ STEM < "풀" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_풀_n_2_rel" ].
+
+프로그램 := n-obj-cn &
+[ STEM < "프로그램" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_프로그램_n_rel" ].
+
+피아노-1 := n-obj-cn &
+[ STEM < "피아노" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_피아노_n_1_rel" ].
+
+필요-2 := n-obj-cn &
+[ STEM < "필요" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_필요_n_2_rel" ].
+
+하기 := n-obj-cn &
+[ STEM < "하기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_하기_n_rel" ].
+
+하나 := n-obj-cn &
+[ STEM < "하나" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_하나_n_rel" ].
+
+학급신문 := n-obj-cn &
+[ STEM < "학급신문" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_학급신문_n_rel" ].
+
+학술대회 := n-obj-cn &
+[ STEM < "학술대회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_학술대회_n_rel" ].
+
+학회 := n-obj-cn &
+[ STEM < "학회" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_학회_n_rel" ].
+
+; 한-2 := n-obj-cn &
+; [ STEM < "한" >,
+;   SYNSEM.LKEYS.KEYREL.PRED "_한_n_2_rel" ].
+
+한국말 := n-obj-cn &
+[ STEM < "한국말" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_한국말_n_rel" ].
+
+한도 := n-obj-cn &
+[ STEM < "한도" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_한도_n_rel" ].
+
+한물 := n-obj-cn &
+[ STEM < "한물" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_한물_n_rel" ].
+
+한정 := n-obj-cn &
+[ STEM < "한정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_한정_n_rel" ].
+
+한쪽 := n-obj-cn &
+[ STEM < "한쪽" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_한쪽_n_rel" ].
+
+합계-1 := n-obj-cn &
+[ STEM < "합계" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_합계_n_1_rel" ].
+
+합의금-1 := n-obj-cn &
+[ STEM < "합의금" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_합의금_n_1_rel" ].
+
+항아리-1 := n-obj-cn &
+[ STEM < "항아리" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_항아리_n_1_rel" ].
+
+해안 := n-obj-cn &
+[ STEM < "해안" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_해안_n_rel" ].
+
+해외 := n-obj-cn &
+[ STEM < "해외" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_해외_n_rel" ].
+
+해외여행보험-1 := n-obj-cn &
+[ STEM < "해외여행보험" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_해외여행보험_n_1_rel" ].
+
+해일경보-1 := n-obj-cn &
+[ STEM < "해일경보" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_해일경보_n_1_rel" ].
+
+해저-1 := n-obj-cn &
+[ STEM < "해저" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_해저_n_1_rel" ].
+
+해체 := n-obj-cn &
+[ STEM < "해체" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_해체_n_rel" ].
+
+햄머-1 := n-obj-cn &
+[ STEM < "햄머" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_햄머_n_1_rel" ].
+
+행위 := n-obj-cn &
+[ STEM < "행위" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_행위_n_rel" ].
+
+행정 := n-obj-cn &
+[ STEM < "행정" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_행정_n_rel" ].
+
+행정부 := n-obj-cn &
+[ STEM < "행정부" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_행정부_n_rel" ].
+
+향기 := n-obj-cn &
+[ STEM < "향기" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_향기_n_rel" ].
+
+헤엄 := n-obj-cn &
+[ STEM < "헤엄" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_헤엄_n_rel" ].
+
+현관-1 := n-obj-cn &
+[ STEM < "현관" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_현관_n_1_rel" ].
+
+현재 := n-obj-cn &
+[ STEM < "현재" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_현재_n_rel" ].
+
+현지-1 := n-obj-cn &
+[ STEM < "현지" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_현지_n_1_rel" ].
+
+혐의-1 := n-obj-cn &
+[ STEM < "혐의" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_혐의_n_1_rel" ].
+
+형식 := n-obj-cn &
+[ STEM < "형식" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_형식_n_rel" ].
+
+혜성-1 := n-obj-cn &
+[ STEM < "혜성" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_혜성_n_1_rel" ].
+
+호감 := n-obj-cn &
+[ STEM < "호감" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_호감_n_rel" ].
+
+호수 := n-obj-cn &
+[ STEM < "호수" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_호수_n_rel" ].
+
+호조 := n-obj-cn &
+[ STEM < "호조" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_호조_n_rel" ].
+
+호통 := n-obj-cn &
+[ STEM < "호통" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_호통_n_rel" ].
+
+화 := n-obj-cn &
+[ STEM < "화" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_화_n_rel" ].
+
+화력 := n-obj-cn &
+[ STEM < "화력" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_화력_n_rel" ].
+
+화물 := n-obj-cn &
+[ STEM < "화물" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_화물_n_rel" ].
+
+화산 := n-obj-cn &
+[ STEM < "화산" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_화산_n_rel" ].
+
+화재-1 := n-obj-cn &
+[ STEM < "화재" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_화재_n_1_rel" ].
+
+화재-2 := n-obj-cn &
+[ STEM < "화재" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_화재_n_2_rel" ].
+
+화합물 := n-obj-cn &
+[ STEM < "화합물" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_화합물_n_rel" ].
+
+확력-1 := n-obj-cn &
+[ STEM < "확력" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_확력_n_1_rel" ].
+
+환경 := n-obj-cn &
+[ STEM < "환경" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_환경_n_rel" ].
+
+회사 := n-obj-cn &
+[ STEM < "회사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_회사_n_rel" ].
+
+회의-1 := n-obj-cn &
+[ STEM < "회의" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_회의_n_1_rel" ].
+
+회장-1 := n-obj-cn &
+[ STEM < "회장" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_회장_n_1_rel" ].
+
+효율화 := n-obj-cn &
+[ STEM < "효율화" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_효율화_n_rel" ].
+
+후각-1 := n-obj-cn &
+[ STEM < "후각" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_후각_n_1_rel" ].
+
+휴지통 := n-obj-cn &
+[ STEM < "휴지통" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_휴지통_n_rel" ].
+
+흥미-1 := n-obj-cn &
+[ STEM < "흥미" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_흥미_n_1_rel" ].
+
+희망-1 := n-obj-cn &
+[ STEM < "희망" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_희망_n_1_rel" ].
+
+흰색 := n-obj-cn &
+[ STEM < "흰색" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_흰색_n_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-28 / SSH) 
+;; 정보기반 한국어 문법 (장석진, 1995)에서 가져온 어휘 목록
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+아버님 := n-human-cn &
+  [ STEM < "아버님" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON +,
+    SYNSEM.LKEYS.KEYREL.PRED "_아버지_n_rel" ].
+
+어머님 := n-human-cn &
+  [ STEM < "어머님" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON +,
+    SYNSEM.LKEYS.KEYREL.PRED "_어머니_n_rel" ].
+
+연세 := n-cn &
+  [ STEM < "연세" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON +,
+    SYNSEM.LKEYS.KEYREL.PRED "_연세_n_rel" ].
+
+말씀-3 := n-cn &
+  [ STEM < "말씀" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON +,
+    SYNSEM.LKEYS.KEYREL.PRED "_말씀_n_rel" ].
+
+진지-1 := n-cn &
+  [ STEM < "진지" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON +,
+    SYNSEM.LKEYS.KEYREL.PRED "_진지_n_1_rel" ].
+
+생신-1 := n-cn &
+  [ STEM < "생신" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON +,
+    SYNSEM.LKEYS.KEYREL.PRED "_생신_n_rel" ].
+
+공장 := n-obj-cn &
+  [ STEM < "공장" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공장_n_rel" ].
+
+공항 := n-obj-cn &
+  [ STEM < "공항" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공항_n_rel" ].
+
+국가 := n-obj-cn &
+  [ STEM < "국가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_국가_n_rel" ].
+
+국수 := n-obj-cn &
+  [ STEM < "국수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_국수_n_rel" ].
+
+근무 := n-obj-cn &
+  [ STEM < "근무" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근무_n_rel" ].
+
+글자 := n-obj-cn &
+  [ STEM < "글자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글자_n_rel" ].
+
+기억-2 := n-obj-cn &
+  [ STEM < "기억" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기억_nrel" ].
+
+김 := n-obj-cn &
+  [ STEM < "김" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_김_n_rel" ].
+
+단언 := n-obj-cn &
+  [ STEM < "단언" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단언_n_rel" ].
+
+대문 := n-obj-cn &
+  [ STEM < "대문" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대문_n_rel" ].
+
+둘 := n-cn &
+  [ STEM < "둘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘_n_rel" ].
+
+떡 := n-obj-cn &
+  [ STEM < "떡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떡_n_rel" ].
+
+마루 := n-obj-cn &
+  [ STEM < "마루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마루_n_rel" ].
+
+만물 := n-obj-cn &
+  [ STEM < "만물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만물_n_rel" ].
+
+모기 :=  n-non-human-cn &
+  [ STEM < "모기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모기_n_rel" ].
+
+목 := n-part_of_body-cn &
+  [ STEM < "목" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_목_n_rel" ].
+
+물건값 := n-obj-cn &
+  [ STEM < "물건값" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물건값_n_rel" ].
+
+반장 := n-human-cn &
+  [ STEM < "반장" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반장_n_rel" ].
+
+법치 := n-obj-cn &
+  [ STEM < "법치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_법치_n_rel" ].
+
+병세 := n-obj-cn &
+  [ STEM < "병세" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_병세_n_rel" ].
+
+보도 := n-obj-cn &
+  [ STEM < "보도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보도_n_rel" ].
+
+붕어 := n-obj-cn &
+  [ STEM < "붕어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_붕어_n_rel" ].
+
+사나이 := n-human-cn &
+  [ STEM < "사나이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사나이_n_rel" ].
+
+샤쓰 := n-obj-cn &
+  [ STEM < "샤쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_샤쓰_n_rel" ].
+
+소식 := n-appos &
+  [ STEM < "소식" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소식_n_rel" ].
+
+수명 := n-obj-cn &
+  [ STEM < "수명" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수명_n_rel" ].
+
+시냇물 := n-obj-cn &
+  [ STEM < "시냇물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시냇물_n_rel" ].
+
+아빠 := n-human-cn &
+  [ STEM < "아빠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아빠_n_rel" ].
+
+애 := n-obj-cn &
+  [ STEM < "애" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애_n_rel" ].
+
+애비 := n-human-cn &
+  [ STEM < "애비" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애비_n_rel" ].
+
+양녀 := n-human-cn &
+  [ STEM < "양녀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_양녀_n_rel" ].
+
+얼음 := n-mass-cn &
+  [ STEM < "얼음" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼음_n_rel" ].
+
+엄마 := n-human-cn &
+  [ STEM < "엄마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄마_n_rel" ].
+
+연극 := n-obj-cn &
+  [ STEM < "연극" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_연극_n_rel" ].
+
+엽서 := n-obj-cn &
+  [ STEM < "엽서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엽서_n_rel" ].
+
+영장 := n-obj-cn &
+  [ STEM < "영장" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영장_n_rel" ].
+
+예 := n-obj-cn &
+  [ STEM < "예" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_예_n_rel" ].
+
+용 := n-non-human-cn &
+  [ STEM < "용" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_용_n_rel" ].
+
+유탄 := n-obj-cn &
+  [ STEM < "유탄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유탄_n_rel" ].
+
+의원 := n-human-cn &
+  [ STEM < "의원" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의원_n_rel" ].
+
+일본어 := n-obj-cn &
+  [ STEM < "일본어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일본어_n_rel" ].
+
+장미 := n-obj-cn &
+  [ STEM < "장미" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장미_n_rel" ].
+
+젖 := n-obj-cn &
+  [ STEM < "젖" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_젖_n_rel" ].
+
+중학교 := n-obj-cn &
+  [ STEM < "중학교" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_중학교_n_rel" ].
+
+쥐 := n-non-human-cn &
+  [ STEM < "쥐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쥐_n_rel" ].
+
+짐 := n-obj-cn &
+  [ STEM < "짐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짐_n_rel" ].
+
+집안 := n-obj-cn &
+  [ STEM < "집안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집안_n_rel" ].
+
+천사 := n-human-cn &
+  [ STEM < "천사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천사_n_rel" ].
+
+천하 := n-obj-cn &
+  [ STEM < "천하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천하_n_rel" ].
+
+철 := n-obj-cn &
+  [ STEM < "철" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철_n_rel" ].
+
+치마 := n-obj-cn &
+  [ STEM < "치마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치마_n_rel" ].
+
+카드 := n-obj-cn &
+  [ STEM < "카드" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_카드_n_rel" ].
+
+파티 := n-obj-cn &
+  [ STEM < "파티" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파티_n_rel" ].
+
+학점 := n-obj-cn &
+  [ STEM < "학점" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_학점_n_rel" ].
+
+한지 := n-obj-cn &
+  [ STEM < "한지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한지_n_rel" ].
+
+할머니 := n-human-cn &
+  [ STEM < "할머니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_할머니_n_rel" ].
+
+힘 := n-obj-cn &
+  [ STEM < "힘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힘_n_rel" ].
+
+
+
+골 := n-obj-cn &
+  [ STEM < "골" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_골_n_rel" ].
+
+뇌물 := n-obj-cn &
+  [ STEM < "뇌물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뇌물_n_rel" ].
+
+겁 := n-obj-cn &
+  [ STEM < "겁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겁_n_rel" ].
+
+그릇 := n-obj-cn &
+  [ STEM < "그릇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그릇_n_rel" ].
+
+푸념 := n-obj-cn &
+  [ STEM < "푸념" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸념_n_rel" ].
+
+양동이 := n-obj-cn &
+  [ STEM < "양동이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_양동이_n_rel" ].
+
+간지럼 := n-obj-cn &
+  [ STEM < "간지럼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간지럼_n_rel" ].
+
+단계 := n-obj-cn &
+  [ STEM < "단계" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단계_n_rel" ].
+
+징역 := n-obj-cn &
+  [ STEM < "징역" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_징역_n_rel" ].
+
+가야금 := n-obj-cn &
+  [ STEM < "가야금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가야금_n_rel" ].
+
+용돈 := n-obj-cn &
+  [ STEM < "용돈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_용돈_n_rel" ].
+
+박-3 := n-obj-cn &
+  [ STEM < "박-3" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_박_n_3_rel" ].
+
+정보화 := n-obj-cn &
+  [ STEM < "정보화" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정보화_n_rel" ].
+
+욕 := n-obj-cn &
+  [ STEM < "욕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_욕_n_rel" ].
+
+조치 := n-obj-cn &
+  [ STEM < "조치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조치_n_rel" ].
+
+삶 := n-obj-cn &
+  [ STEM < "삶" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삶_n_rel" ].
+
+짚신 := n-obj-cn &
+  [ STEM < "짚신" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짚신_n_rel" ].
+
+공기중 := n-obj-cn &
+  [ STEM < "공기중" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공기중_n_rel" ].
+
+법치국가 := n-obj-cn &
+  [ STEM < "법치국가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_법치국가_n_rel" ].
+
+영어공부 := n-obj-cn &
+  [ STEM < "영어공부" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영어공부_n_rel" ].
+
+감옥 := n-obj-cn &
+  [ STEM < "감옥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감옥_n_rel" ].
+
+가난 := n-obj-cn &
+  [ STEM < "가난" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가난_n_rel" ].
+
+아지랭이 := n-obj-cn &
+  [ STEM < "아지랭이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아지랭이_n_rel" ].
+
+해방 := n-obj-cn &
+  [ STEM < "해방" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_해방_n_rel" ].
+
+피해 := n-obj-cn &
+  [ STEM < "피해" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피해_n_rel" ].
+
+엿 := n-obj-cn &
+  [ STEM < "엿" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엿_n_rel" ].
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-31 / SSH) 
+;; 문법화 항목 추출과정에서 추가한 어휘들
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+두세-80 := n-cn &
+  [ STEM < "두세" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두세_num_80_rel" ].
+
+각국-80 := n-obj-cn &
+  [ STEM < "각국" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_각국_n_80_rel" ].
+
+그동안-80 := n-advl &
+  [ STEM < "그동안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그동안_n_80_rel" ].
+
+그전-80 := n-advl &
+  [ STEM < "그전" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그전_n_80_rel" ].
+
+새마을-80 := n-obj-cn &
+  [ STEM < "새마을" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새마을_n_80_rel" ].
+
+세배-80 := n-obj-cn &
+  [ STEM < "세배" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세배_n_80_rel" ].
+
+양사-80 := n-obj-cn &
+  [ STEM < "양사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_양사_n_80_rel" ].
+
+이달-80 := n-advl &
+  [ STEM < "이달" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이달_n_80_rel" ].
+
+이때-80 := n-advl &
+  [ STEM < "이때" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이때_n_80_rel" ].
+
+이점-80 := n-obj-cn &
+  [ STEM < "이점" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이점_n_80_rel" ].
+
+저편-80 := n-advl &
+  [ STEM < "저편" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저편_n_80_rel" ].
+
+전국민-80 := n-human-cn &
+  [ STEM < "전국민" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전국민_n_80_rel" ].
+
+전날-80 := n-advl &
+  [ STEM < "전날" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전날_n_80_rel" ].
+
+전사원-80 := n-human-cn &
+  [ STEM < "전사원" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전사원_n_80_rel" ].
+
+전세계-80 := n-obj-cn &
+  [ STEM < "전세계" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전세계_n_80_rel" ].
+
+전재산-80 := n-obj-cn &
+  [ STEM < "전재산" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전재산_n_80_rel" ].
+
+전지구-80 := n-obj-cn &
+  [ STEM < "전지구" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전지구_n_80_rel" ].
+
+주경기장-80 := n-obj-cn &
+  [ STEM < "주경기장" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주경기장_n_80_rel" ].
+
+첫날-80 := n-advl &
+  [ STEM < "첫날" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_첫날_n_80_rel" ].
+
+총생산-80 := n-obj-cn &
+  [ STEM < "총생산" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_총생산_n_80_rel" ].
+
+총선거-80 := n-obj-cn &
+  [ STEM < "총선거" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_총선거_n_80_rel" ].
+
+한구석-80 := n-advl &
+  [ STEM < "한구석" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한구석_n_80_rel" ].
+
+한때-80 := n-advl &
+  [ STEM < "한때" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한때_n_80_rel" ].
+
+한마당-80 := n-obj-cn &
+  [ STEM < "한마당" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한마당_n_80_rel" ].
+
+한마디-80 := n-obj-cn &
+  [ STEM < "한마디" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한마디_n_80_rel" ].
+
+한마음-80 := n-obj-cn &
+  [ STEM < "한마음" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한마음_n_80_rel" ].
+
+한발-80 := n-advl &
+  [ STEM < "한발" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한발_n_80_rel" ].
+
+한자-80 := n-obj-cn &
+  [ STEM < "한자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한자_n_80_rel" ].
+
+한해-80 := n-advl &
+  [ STEM < "한해" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한해_n_80_rel" ].
+
+헌옷-80 := n-obj-cn &
+  [ STEM < "헌옷" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헌옷_n_80_rel" ].
+
+현정부-80 := n-obj-cn &
+  [ STEM < "현정부" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_현정부_n_80_rel" ].
+
+현주소-80 := n-obj-cn &
+  [ STEM < "현주소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_현주소_n_80_rel" ].
+
+아날로그식-80 := n-obj-cn &
+  [ STEM < "아날로그식" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아날로그식_n_80_rel" ].
+
+디지털식-80 := n-obj-cn &
+  [ STEM < "디지털식" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_디지털식_n_80_rel" ].
+
+독자의견난-80 := n-obj-cn &
+  [ STEM < "독자의견난" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_독자의견난_n_80_rel" ].
+
+카세트테이프-80 := n-obj-cn &
+  [ STEM < "카세트테이프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_카세트테이프_n_80_rel" ].
+
+마이크로칩-80 := n-obj-cn &
+  [ STEM < "마이크로칩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마이크로칩_n_80_rel" ].
+
+재일교포-80 := n-human-cn &
+  [ STEM < "재일교포" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재일교포_n_80_rel" ].
+
+재미교포-80 := n-human-cn &
+  [ STEM < "재미교포" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재미교포_n_80_rel" ].
+
+구조원-80 := n-human-cn &
+  [ STEM < "구조원" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구조원_n_80_rel" ].
+
+보상액-80 := n-obj-cn &
+  [ STEM < "보상액" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보상액_n_80_rel" ].
+
+가스곤로-80 := n-obj-cn &
+  [ STEM < "가스곤로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가스곤로_n_80_rel" ].
+
+신혼부부-80 := n-human-cn &
+  [ STEM < "신혼부부" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신혼부부_n_80_rel" ].
+
+세련미-80 := n-obj-cn &
+  [ STEM < "세련미" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세련미_n_80_rel" ].
+
+핫초코-80 := n-obj-cn &
+  [ STEM < "핫초코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_핫초코_n_80_rel" ].
+
+전리품-80 := n-obj-cn &
+  [ STEM < "전리품" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전리품_n_80_rel" ].
+
+부차관보-80 := n-human-cn &
+  [ STEM < "부차관보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부차관보_n_80_rel" ].
+
+무감각증-80 := n-obj-cn &
+  [ STEM < "무감각증" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무감각증_n_80_rel" ].
+
+평화실현-80 := n-obj-cn &
+  [ STEM < "평화실현" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_평화실현_n_80_rel" ].
+
+이종-80 := n-obj-cn &
+  [ STEM < "이종" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이종_n_80_rel" ].
+
+시험대-80 := n-obj-cn &
+  [ STEM < "시험대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시험대_n_80_rel" ].
+
+다각화-80 := n-obj-cn &
+  [ STEM < "다각화" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다각화_n_80_rel" ].
+
+가정교육-80 := n-obj-cn &
+  [ STEM < "가정교육" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가정교육_n_80_rel" ].
+
+ROK-80 := n-obj-cn &
+  [ STEM < "ROK" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ROK_n_80_rel" ].
+
+수하물용-80 := n-obj-cn &
+  [ STEM < "수하물용" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수하물용_n_80_rel" ].
+
+술주정뱅이-80 := n-human-cn &
+  [ STEM < "술주정뱅이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술주정뱅이_n_80_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH) 
+;; 범주를 정확히 정의하기가 어려움
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+IBM제 := n-cn &
+[ STEM < "IBM제" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_made-by-IBM_n_rel" ].
+
+CATV-10 := n-cn &
+[ STEM < "CATV" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_CATV_n_rel" ].
+
+UFO-10 := n-cn &
+[ STEM < "UFO" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_UFO_n_rel" ].
+
+A사 := n-cn &
+[ STEM < "A사" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_A사_n_1_rel" ].
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 2009년 9월 이후 추가한 어휘; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+미역-80 := n-obj-cn &
+  [ STEM < "미역" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미역_n_80_rel" ].
+
+미역국-80 := n-obj-cn &
+  [ STEM < "미역국" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미역국_n_80_rel" ].
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2010-02-12 / SSH) 
+;; 비교구문 처리를 위해 어휘 추가
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+중환자-80 := n-human-cn &
+  [ STEM < "중환자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_중환자_n_80_rel" ].
+
+자린고비-80 := n-cn &
+  [ STEM < "자린고비" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자린고비_n_80_rel" ].
+
+앞이마-80 := n-part_of_body-cn &
+  [ STEM < "앞이마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앞이마_n_80_rel" ].
+
+현미밥-80 := n-obj-cn &
+  [ STEM < "현미밥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_현미밥_n_80_rel" ].
+
+준결승전-80 := n-obj-cn &
+  [ STEM < "준결승전" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_준결승전_n_80_rel" ].
+
+합성고무-80 := n-mass-cn &
+  [ STEM < "합성고무" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_합성고무_n_80_rel" ].
+
+천연고무-80 := n-mass-cn &
+  [ STEM < "천연고무" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천연고무_n_80_rel" ].
+
+나무조각-80 := n-mass-cn &
+  [ STEM < "나무조각" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나무조각_n_80_rel" ].
+
+지구력-80 := n-cn &
+  [ STEM < "지구력" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지구력_n_80_rel" ].
+
+수리능력-80 := n-cn &
+  [ STEM < "수리능력" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수리능력_n_80_rel" ].
+
+사람수-80 := n-cn &
+  [ STEM < "사람수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사람수_n_80_rel" ].
+
+부유물-80 := n-obj-cn &
+  [ STEM < "부유물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부유물_n_80_rel" ].
+
+어르신-80 := n-human-cn &
+  [ STEM < "어르신" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON +,
+    SYNSEM.LKEYS.KEYREL.PRED "_어르신_n_80_rel" ].
+
+손아랫사람-80 := n-human-cn &
+  [ STEM < "손아랫사람" >,
+	SYNSEM.LOCAL.CAT.HEAD.HON -,
+    SYNSEM.LKEYS.KEYREL.PRED "_손아랫사람_n_80_rel" ].
+
+정상운영-80 := n-cn &
+  [ STEM < "정상운영" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정상운영_n_80_rel" ].
+
+지원책-80 := n-cn &
+  [ STEM < "지원책" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지원책_n_80_rel" ].
+
+지적재산권-80 := n-cn &
+  [ STEM < "지적재산권" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지적재산권_n_80_rel" ].
+
+기술료-80 := n-cn &
+  [ STEM < "기술료" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기술료_n_80_rel" ].
+
+홍보수석-80 := n-human-cn &
+  [ STEM < "홍보수석" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홍보수석_n_80_rel" ].
+
+수제비-80 := n-human-cn &
+  [ STEM < "수제비" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수제비_n_80_rel" ].
+
+녹는점-80 := n-cn &
+  [ STEM < "녹는점" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_녹는점_n_80_rel" ].
+
+어는점-80 := n-cn &
+  [ STEM < "어는점" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어는점_n_80_rel" ].
+
+끓는점-80 := n-cn &
+  [ STEM < "끓는점" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끓는점_n_80_rel" ].
+
+자주권-80 := n-cn &
+  [ STEM < "자주권" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자주권_n_80_rel" ].
+
+불간섭-80 := n-cn &
+  [ STEM < "불간섭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불간섭_n_80_rel" ].
+
+납세율-80 := n-cn &
+  [ STEM < "납세율" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_납세율_n_80_rel" ].
+
+기상청-80 := n-cn &
+  [ STEM < "기상청" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기상청_n_80_rel" ].
+
+내무반-80 := n-cn &
+  [ STEM < "내무반" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내무반_n_80_rel" ].
+
+위반자-80 := n-human-cn &
+  [ STEM < "위반자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_위반자_n_80_rel" ].
+
+형평성-80 := n-cn &
+  [ STEM < "형평성" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_형평성_n_80_rel" ].
+
+충격요법-80 := n-cn &
+  [ STEM < "충격요법" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_충격요법_n_80_rel" ].
+
+동급생-80 := n-human-cn &
+  [ STEM < "동급생" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_동급생_n_80_rel" ].
+
+집값-80 := n-cn &
+  [ STEM < "집값" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집값_n_80_rel" ].
+
+금귀걸이-80 := n-obj-cn &
+  [ STEM < "금귀걸이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_금귀걸이_n_80_rel" ].
+
+근접전-80 := n-cn &
+  [ STEM < "근접전" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근접전_n_80_rel" ].
+
+큰언니-80 := n-human-cn &
+  [ STEM < "큰언니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_큰언니_n_80_rel" ].
+
+시립양로원-80 := n-cn &
+  [ STEM < "시립양로원" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시립양로원_n_80_rel" ].
+
+개인기-80 := n-cn &
+  [ STEM < "개인기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개인기_n_80_rel" ].
+
+재봉틀-80 := n-obj-cn &
+  [ STEM < "재봉틀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재봉틀_n_80_rel" ].
+
+우환-80 := n-cn &
+  [ STEM < "우환" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우환_n_80_rel" ].
+
+중립성-80 := n-cn &
+  [ STEM < "중립성" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_중립성_n_80_rel" ].
+
+국내전자산업-80 := n-cn &
+  [ STEM < "국내전자산업" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_국내전자산업_n_80_rel" ].
+
+기획실-80 := n-cn &
+  [ STEM < "기획실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기획실_n_80_rel" ].
+
+등산로-80 := n-cn &
+  [ STEM < "등산로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_등산로_n_80_rel" ].
+
+준중형차-80 := n-obj-cn &
+  [ STEM < "준중형차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_준중형차_n_80_rel" ].
+
+진주색-80 := n-cn &
+  [ STEM < "진주색" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진주색_n_80_rel" ].
+
+시민의식-80 := n-cn &
+  [ STEM < "시민의식" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시민의식_n_80_rel" ].
+
+신앙생활-80 := n-cn &
+  [ STEM < "신앙생활" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신앙생활_n_80_rel" ].
+
+세탁점-80 := n-cn &
+  [ STEM < "세탁점" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세탁점_n_80_rel" ].
+
+기초학문-80 := n-cn &
+  [ STEM < "기초학문" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기초학문_n_80_rel" ].
+
+빈부격차-80 := n-cn &
+  [ STEM < "빈부격차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빈부격차_n_80_rel" ].
+
+일반계-80 := n-cn &
+ [ STEM < "일반계" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_일반계_n_80_rel" ].
+
+다수계-80 := n-cn &
+ [ STEM < "다수계" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_다수계_n_80_rel" ].
+
+흡수량-80 := n-cn &
+ [ STEM < "흡수량" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_흡수량_n_80_rel" ].
+
+민족성-80 := n-cn &
+ [ STEM < "민족성" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_민족성_n_80_rel" ].
+
+가을하늘-80 := n-cn &
+ [ STEM < "가을하늘" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_가을하늘_n_80_rel" ].
+
+병장-80 := n-human-cn &
+ [ STEM < "병장" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_병장_n_80_rel" ].
+
+자선사업-80 := n-cn &
+ [ STEM < "자선사업" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_자선사업_n_80_rel" ].
+
+수확량-80 := n-cn &
+ [ STEM < "수확량" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_수확량_n_80_rel" ].
+
+피부세포-80 := n-cn &
+ [ STEM < "피부세포" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_피부세포_n_80_rel" ].
+
+건선-80 := n-cn &
+ [ STEM < "건선" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_건선_n_80_rel" ].
+
+구조자-80 := n-human-cn &
+ [ STEM < "구조자" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_구조자_n_80_rel" ].
+
+구매자-80 := n-human-cn &
+ [ STEM < "구매자" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_구매자_n_80_rel" ].
+
+유기농산물-80 := n-obj-cn &
+ [ STEM < "유기농산물" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_유기농산물_n_80_rel" ].
+
+평준화론-80 := n-cn &
+ [ STEM < "평준화론" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_평준화론_n_80_rel" ].
+
+요양급여기준-80 := n-cn &
+ [ STEM < "요양급여기준" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_요양급여기준_n_80_rel" ].
+
+의료기관-80 := n-cn &
+ [ STEM < "의료기관" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_의료기관_n_80_rel" ].
+
+윗도리-80 := n-cn &
+ [ STEM < "윗도리" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_윗도리_n_80_rel" ].
+
+섬마을-80 := n-cn &
+ [ STEM < "섬마을" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_섬마을_n_80_rel" ].
+
+법조항-80 := n-cn &
+ [ STEM < "법조항" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_법조항_n_80_rel" ].
+
+테잎-80 := n-cn &
+ [ STEM < "테잎" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_테잎_n_80_rel" ].
+
+하체-80 := n-part_of_body-cn &
+  [ STEM < "하체" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하체_n_80_rel" ].
+
+아낙네-80 := n-human-cn &
+ [ STEM < "아낙네" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_아낙네_n_80_rel" ].
+
+암기력-80 := n-cn &
+ [ STEM < "암기력" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_암기력_n_80_rel" ].
+
+개그맨-80 := n-human-cn &
+ [ STEM < "개그맨" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_개그맨_n_80_rel" ].
+
+웹디자인-80 := n-cn &
+ [ STEM < "웹디자인" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_웹디자인_n_80_rel" ].
+
+탐학-80 := n-cn &
+ [ STEM < "탐학" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_탐학_n_80_rel" ].
+
+아전-80 := n-human-cn &
+ [ STEM < "아전" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_아전_n_80_rel" ].
+
+해면-80 := n-cn &
+ [ STEM < "해면" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_해면_n_80_rel" ].
+
+신장면-80 := n-cn &
+ [ STEM < "신장면" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_신장면_n_80_rel" ].
+
+수학문제-80 := n-cn &
+ [ STEM < "수학문제" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_수학문제_n_80_rel" ].
+
+환경오염-80 := n-cn &
+ [ STEM < "환경오염" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_환경오염_n_80_rel" ].
+
+도시인-80 := n-human-cn &
+ [ STEM < "도시인" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_도시인_n_80_rel" ].
+
+남자애-80 := n-human-cn &
+ [ STEM < "남자애" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_남자애_n_80_rel" ].
+
+어릿광대-80 := n-human-cn &
+ [ STEM < "어릿광대" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_어릿광대_n_80_rel" ].
+
+페인트칠-80 := n-cn &
+ [ STEM < "페인트칠" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_페인트칠_n_80_rel" ].
+
+고소사건-80 := n-cn &
+ [ STEM < "고소사건" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_고소사건_n_80_rel" ].
+
+양대선거-80 := n-cn &
+ [ STEM < "양대선거" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_양대선거_n_80_rel" ].
+
+선인장-80 := n-obj-cn &
+ [ STEM < "양대선거" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_양대선거_n_80_rel" ].
+
+장아찌류-80 := n-cn &
+ [ STEM < "장아찌류" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_장아찌류_n_80_rel" ].
+
+백정-80 := n-human-cn &
+ [ STEM < "백정" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_백정_n_80_rel" ].
+
+물고구마-80 := n-obj-cn &
+ [ STEM < "물고구마" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_물고구마_n_80_rel" ].
+
+밤고구마-80 := n-obj-cn &
+ [ STEM < "밤고구마" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_밤고구마_n_80_rel" ].
+
+미숫가루-80 := n-mass-cn &
+ [ STEM < "미숫가루" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_미숫가루_n_80_rel" ].
+
+요람-80 := n-cn &
+ [ STEM < "요람" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_요람_n_80_rel" ].
+
+시골사람-80 := n-human-cn &
+ [ STEM < "시골사람" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_시골사람_n_80_rel" ].
+
+편의시설-80 := n-cn &
+ [ STEM < "편의시설" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_편의시설_n_80_rel" ].
+
+건립계획-80 := n-cn &
+ [ STEM < "건립계획" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_건립계획_n_80_rel" ].
+
+사회현상-80 := n-cn &
+ [ STEM < "사회현상" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_사회현상_n_80_rel" ].
+
+획일적-80 := n-cn &
+ [ STEM < "획일적" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_획일적_n_80_rel" ].
+
+신축적-80 := n-cn &
+ [ STEM < "신축적" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_신축적_n_80_rel" ].
+
+무차별적-80 := n-cn &
+ [ STEM < "무차별적" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_무차별적_n_80_rel" ].
+
+반제적-80 := n-cn &
+ [ STEM < "반제적" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_반제적_n_80_rel" ].
+
+반봉건적-80 := n-cn &
+ [ STEM < "반봉건적" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_반봉건적_n_80_rel" ].
+
+숲속-80 := n-cn &
+ [ STEM < "숲속" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_숲속_n_80_rel" ].
+

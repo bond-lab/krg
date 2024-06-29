@@ -1,0 +1,1421 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	IDIOMATIC EXPRESSION
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: June. 29, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+고맙습니다-90 := idiom &
+  [ STEM < "고맙습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고맙습니다_i_rel" ].
+
+고맙어요-90 := idiom &
+  [ STEM < "고맙어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고맙어요_i_rel" ].
+
+괜찮겠어-90 := idiom &
+  [ STEM < "괜찮겠어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮겠어_i_rel" ].
+
+괜찮겠어요-90 := idiom &
+  [ STEM < "괜찮겠어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮겠어요_i_rel" ].
+
+괜찮냐-90 := idiom &
+  [ STEM < "괜찮냐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮냐_i_rel" ].
+
+괜찮네요-90 := idiom &
+  [ STEM < "괜찮네요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮네요_i_rel" ].
+
+괜찮다-90 := idiom &
+  [ STEM < "괜찮다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮다_i_rel" ].
+
+괜찮던데요-90 := idiom &
+  [ STEM < "괜찮던데요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮던데요_i_rel" ].
+
+괜찮습니까-90 := idiom &
+  [ STEM < "괜찮습니까" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮습니까_i_rel" ].
+
+괜찮습니다-90 := idiom &
+  [ STEM < "괜찮습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮습니다_i_rel" ].
+
+괜찮아-90 := idiom &
+  [ STEM < "괜찮아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮아_i_rel" ].
+
+괜찮아요-90 := idiom &
+  [ STEM < "괜찮아요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮아요_i_rel" ].
+
+괜찮았으니까요-90 := idiom &
+  [ STEM < "괜찮았으니까요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮았으니까요_i_rel" ].
+
+괜찮으시겠습니까-90 := idiom &
+  [ STEM < "괜찮으시겠습니까" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮으시겠습니까_i_rel" ].
+
+괜찮으시겠어요-90 := idiom &
+  [ STEM < "괜찮으시겠어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮으시겠어요_i_rel" ].
+
+괜찮으시어요-90 := idiom &
+  [ STEM < "괜찮으시어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮으시어요_i_rel" ].
+
+괜찮은데-90 := idiom &
+  [ STEM < "괜찮은데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮은데_i_rel" ].
+
+괜찮을까-90 := idiom &
+  [ STEM < "괜찮을까" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜찮을까_i_rel" ].
+
+그래-90 := idiom &
+  [ STEM < "그래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그래_i_rel" ].
+
+그래요-90 := idiom &
+  [ STEM < "그래요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그래요_i_rel" ].
+
+그러시에요-90 := idiom &
+  [ STEM < "그러시에요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그러시에요_i_rel" ].
+
+그럼-90 := idiom &
+  [ STEM < "그럼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그럼_i_rel" ].
+
+그럼요-90 := idiom &
+  [ STEM < "그럼요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그럼요_i_rel" ].
+
+그럼이ㅂ죠-90 := idiom &
+  [ STEM < "그럼이ㅂ죠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그럼이ㅂ죠_i_rel" ].
+
+그렇ㄴ가-90 := idiom &
+  [ STEM < "그렇ㄴ가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇ㄴ가_i_rel" ].
+
+그렇ㄴ가요-90 := idiom &
+  [ STEM < "그렇ㄴ가요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇ㄴ가요_i_rel" ].
+
+그렇ㄴ데요-90 := idiom &
+  [ STEM < "그렇ㄴ데요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇ㄴ데요_i_rel" ].
+
+그렇ㄹ까-90 := idiom &
+  [ STEM < "그렇ㄹ까" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇ㄹ까_i_rel" ].
+
+그렇ㄹ까요-90 := idiom &
+  [ STEM < "그렇ㄹ까요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇ㄹ까요_i_rel" ].
+
+그렇ㄹ지도-90 := idiom &
+  [ STEM < "그렇ㄹ지도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇ㄹ지도_i_rel" ].
+
+그렇겠군-90 := idiom &
+  [ STEM < "그렇겠군" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇겠군_i_rel" ].
+
+그렇겠군요-90 := idiom &
+  [ STEM < "그렇겠군요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇겠군요_i_rel" ].
+
+그렇겠네요-90 := idiom &
+  [ STEM < "그렇겠네요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇겠네요_i_rel" ].
+
+그렇겠다-90 := idiom &
+  [ STEM < "그렇겠다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇겠다_i_rel" ].
+
+그렇겠죠-90 := idiom &
+  [ STEM < "그렇겠죠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇겠죠_i_rel" ].
+
+그렇겠지-90 := idiom &
+  [ STEM < "그렇겠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇겠지_i_rel" ].
+
+그렇겠지요-90 := idiom &
+  [ STEM < "그렇겠지요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇겠지요_i_rel" ].
+
+그렇고말고요-90 := idiom &
+  [ STEM < "그렇고말고요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇고말고요_i_rel" ].
+
+그렇구나-90 := idiom &
+  [ STEM < "그렇구나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇구나_i_rel" ].
+
+그렇구먼-90 := idiom &
+  [ STEM < "그렇구먼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇구먼_i_rel" ].
+
+그렇군-90 := idiom &
+  [ STEM < "그렇군" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇군_i_rel" ].
+
+그렇군요-90 := idiom &
+  [ STEM < "그렇군요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇군요_i_rel" ].
+
+그렇냐-90 := idiom &
+  [ STEM < "그렇냐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇냐_i_rel" ].
+
+그렇네요-90 := idiom &
+  [ STEM < "그렇네요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇네요_i_rel" ].
+
+그렇니-90 := idiom &
+  [ STEM < "그렇니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇니_i_rel" ].
+
+그렇다-90 := idiom &
+  [ STEM < "그렇다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇다_i_rel" ].
+
+그렇다니까-90 := idiom &
+  [ STEM < "그렇다니까" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇다니까_i_rel" ].
+
+그렇다니까요-90 := idiom &
+  [ STEM < "그렇다니까요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇다니까요_i_rel" ].
+
+그렇다데-90 := idiom &
+  [ STEM < "그렇다데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇다데_i_rel" ].
+
+그렇다며언-90 := idiom &
+  [ STEM < "그렇다며언" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇다며언_i_rel" ].
+
+그렇다면-90 := idiom &
+  [ STEM < "그렇다면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇다면_i_rel" ].
+
+그렇단다-90 := idiom &
+  [ STEM < "그렇단다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇단다_i_rel" ].
+
+그렇대-90 := idiom &
+  [ STEM < "그렇대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇대_i_rel" ].
+
+그렇세요-90 := idiom &
+  [ STEM < "그렇세요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇세요_i_rel" ].
+
+그렇소-90 := idiom &
+  [ STEM < "그렇소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇소_i_rel" ].
+
+그렇습니까-90 := idiom &
+  [ STEM < "그렇습니까" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇습니까_i_rel" ].
+
+그렇습니다-90 := idiom &
+  [ STEM < "그렇습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇습니다_i_rel" ].
+
+그렇습죠-90 := idiom &
+  [ STEM < "그렇습죠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇습죠_i_rel" ].
+
+그렇습지요-90 := idiom &
+  [ STEM < "그렇습지요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇습지요_i_rel" ].
+
+그렇어-90 := idiom &
+  [ STEM < "그렇어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇어_i_rel" ].
+
+그렇어서요-90 := idiom &
+  [ STEM < "그렇어서요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇어서요_i_rel" ].
+
+그렇어요-90 := idiom &
+  [ STEM < "그렇어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇어요_i_rel" ].
+
+그렇었구나-90 := idiom &
+  [ STEM < "그렇었구나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었구나_i_rel" ].
+
+그렇었군요-90 := idiom &
+  [ STEM < "그렇었군요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었군요_i_rel" ].
+
+그렇었나-90 := idiom &
+  [ STEM < "그렇었나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었나_i_rel" ].
+
+그렇었냐-90 := idiom &
+  [ STEM < "그렇었냐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었냐_i_rel" ].
+
+그렇었니-90 := idiom &
+  [ STEM < "그렇었니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었니_i_rel" ].
+
+그렇었다-90 := idiom &
+  [ STEM < "그렇었다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었다_i_rel" ].
+
+그렇었던가요-90 := idiom &
+  [ STEM < "그렇었던가요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었던가요_i_rel" ].
+
+그렇었습니다-90 := idiom &
+  [ STEM < "그렇었습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었습니다_i_rel" ].
+
+그렇었습니다요-90 := idiom &
+  [ STEM < "그렇었습니다요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었습니다요_i_rel" ].
+
+그렇었어-90 := idiom &
+  [ STEM < "그렇었어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었어_i_rel" ].
+
+그렇었어요-90 := idiom &
+  [ STEM < "그렇었어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었어요_i_rel" ].
+
+그렇었었구먼-90 := idiom &
+  [ STEM < "그렇었었구먼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었었구먼_i_rel" ].
+
+그렇었지않아-90 := idiom &
+  [ STEM < "그렇었지않아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇었지않아_i_rel" ].
+
+그렇죠-90 := idiom &
+  [ STEM < "그렇죠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇죠_i_rel" ].
+
+그렇지-90 := idiom &
+  [ STEM < "그렇지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇지_i_rel" ].
+
+그렇지요-90 := idiom &
+  [ STEM < "그렇지요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렇지요_i_rel" ].
+
+그려-90 := idiom &
+  [ STEM < "그려" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그려_i_rel" ].
+
+그만-90 := idiom &
+  [ STEM < "그만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그만_i_rel" ].
+
+글쎄-90 := idiom &
+  [ STEM < "글쎄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글쎄_i_rel" ].
+
+글쎄다-90 := idiom &
+  [ STEM < "글쎄다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글쎄다_i_rel" ].
+
+글쎄올습니다-90 := idiom &
+  [ STEM < "글쎄올습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글쎄올습니다_i_rel" ].
+
+글쎄올시다-90 := idiom &
+  [ STEM < "글쎄올시다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글쎄올시다_i_rel" ].
+
+글쎄요-90 := idiom &
+  [ STEM < "글쎄요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글쎄요_i_rel" ].
+
+글쎄이올시다-90 := idiom &
+  [ STEM < "글쎄이올시다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글쎄이올시다_i_rel" ].
+
+기다리어요-90 := idiom &
+  [ STEM < "기다리어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기다리어요_i_rel" ].
+
+네-90 := idiom &
+  [ STEM < "네" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_네_i_rel" ].
+
+뉘이시어요-90 := idiom &
+  [ STEM < "뉘이시어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뉘이시어요_i_rel" ].
+
+뉘이시오-90 := idiom &
+  [ STEM < "뉘이시오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뉘이시오_i_rel" ].
+
+만세-90 := idiom &
+  [ STEM < "만세" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만세_i_rel" ].
+
+맙소사-90 := idiom &
+  [ STEM < "맙소사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맙소사_i_rel" ].
+
+맞다니까요-90 := idiom &
+  [ STEM < "맞다니까요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞다니까요_i_rel" ].
+
+맞습니다-90 := idiom &
+  [ STEM < "맞습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞습니다_i_rel" ].
+
+맞아-90 := idiom &
+  [ STEM < "맞아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞아_i_rel" ].
+
+맞아요-90 := idiom &
+  [ STEM < "맞아요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞아요_i_rel" ].
+
+멍청이-90 := idiom &
+  [ STEM < "멍청이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멍청이_i_rel" ].
+
+모르ㅂ니다-90 := idiom &
+  [ STEM < "모르ㅂ니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르ㅂ니다_i_rel" ].
+
+모르겠네요-90 := idiom &
+  [ STEM < "모르겠네요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르겠네요_i_rel" ].
+
+모르겠는걸-90 := idiom &
+  [ STEM < "모르겠는걸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르겠는걸_i_rel" ].
+
+모르겠는데요-90 := idiom &
+  [ STEM < "모르겠는데요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르겠는데요_i_rel" ].
+
+모르겠다-90 := idiom &
+  [ STEM < "모르겠다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르겠다_i_rel" ].
+
+모르겠소-90 := idiom &
+  [ STEM < "모르겠소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르겠소_i_rel" ].
+
+모르겠습니다-90 := idiom &
+  [ STEM < "모르겠습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르겠습니다_i_rel" ].
+
+모르겠어-90 := idiom &
+  [ STEM < "모르겠어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르겠어_i_rel" ].
+
+모르겠어요-90 := idiom &
+  [ STEM < "모르겠어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르겠어요_i_rel" ].
+
+모르는데요-90 := idiom &
+  [ STEM < "모르는데요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르는데요_i_rel" ].
+
+모르다뇨-90 := idiom &
+  [ STEM < "모르다뇨" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르다뇨_i_rel" ].
+
+모르아-90 := idiom &
+  [ STEM < "모르아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르아_i_rel" ].
+
+모르아요-90 := idiom &
+  [ STEM < "모르아요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르아요_i_rel" ].
+
+모르오-90 := idiom &
+  [ STEM < "모르오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르오_i_rel" ].
+
+모르지-90 := idiom &
+  [ STEM < "모르지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르지_i_rel" ].
+
+모르지요-90 := idiom &
+  [ STEM < "모르지요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모르지요_i_rel" ].
+
+물론-90 := idiom &
+  [ STEM < "물론" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물론_i_rel" ].
+
+뭐-90 := idiom &
+  [ STEM < "뭐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐_i_rel" ].
+
+뭐가-90 := idiom &
+  [ STEM < "뭐가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐가_i_rel" ].
+
+뭐가요-90 := idiom &
+  [ STEM < "뭐가요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐가요_i_rel" ].
+
+뭐얏-90 := idiom &
+  [ STEM < "뭐얏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐얏_i_rel" ].
+
+뭐에-90 := idiom &
+  [ STEM < "뭐에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐에_i_rel" ].
+
+뭐요-90 := idiom &
+  [ STEM < "뭐요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐요_i_rel" ].
+
+뭐이라고-90 := idiom &
+  [ STEM < "뭐이라고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐이라고_i_rel" ].
+
+뭐이야-90 := idiom &
+  [ STEM < "뭐이야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐이야_i_rel" ].
+
+뭐하아-90 := idiom &
+  [ STEM < "뭐하아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐하아_i_rel" ].
+
+뭘-90 := idiom &
+  [ STEM < "뭘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭘_i_rel" ].
+
+뭣이라고요-90 := idiom &
+  [ STEM < "뭣이라고요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭣이라고요_i_rel" ].
+
+뭣이래-90 := idiom &
+  [ STEM < "뭣이래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭣이래_i_rel" ].
+
+뭣이여-90 := idiom &
+  [ STEM < "뭣이여" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭣이여_i_rel" ].
+
+뭣이지-90 := idiom &
+  [ STEM < "뭣이지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭣이지_i_rel" ].
+
+미안하ㅂ니다-90 := idiom &
+  [ STEM < "미안하ㅂ니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미안하ㅂ니다_i_rel" ].
+
+미안하니까-90 := idiom &
+  [ STEM < "미안하니까" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미안하니까_i_rel" ].
+
+미안하다-90 := idiom &
+  [ STEM < "미안하다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미안하다_i_rel" ].
+
+미안하아-90 := idiom &
+  [ STEM < "미안하아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미안하아_i_rel" ].
+
+미안하아요-90 := idiom &
+  [ STEM < "미안하아요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미안하아요_i_rel" ].
+
+미안하오-90 := idiom &
+  [ STEM < "미안하오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미안하오_i_rel" ].
+
+미친년-90 := idiom &
+  [ STEM < "미친년" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미친년_i_rel" ].
+
+미친놈-90 := idiom &
+  [ STEM < "미친놈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미친놈_i_rel" ].
+
+바보-90 := idiom &
+  [ STEM < "바보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바보_i_rel" ].
+
+반갑네요-90 := idiom &
+  [ STEM < "반갑네요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반갑네요_i_rel" ].
+
+반갑어요-90 := idiom &
+  [ STEM < "반갑어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반갑어요_i_rel" ].
+
+별말씀을요-90 := idiom &
+  [ STEM < "별말씀을요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별말씀을요_i_rel" ].
+
+보아서-90 := idiom &
+  [ STEM < "보아서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보아서_i_rel" ].
+
+부끄럽어요-90 := idiom &
+  [ STEM < "부끄럽어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부끄럽어요_i_rel" ].
+
+빌어먹을-90 := idiom &
+  [ STEM < "빌어먹을" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빌어먹을_i_rel" ].
+
+사랑하아-90 := idiom &
+  [ STEM < "사랑하아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사랑하아_i_rel" ].
+
+사랑하아요-90 := idiom &
+  [ STEM < "사랑하아요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사랑하아요_i_rel" ].
+
+사랑합니다-90 := idiom &
+  [ STEM < "사랑합니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사랑합니다_i_rel" ].
+
+상관없어-90 := idiom &
+  [ STEM < "상관없어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상관없어_i_rel" ].
+
+상관없어요-90 := idiom &
+  [ STEM < "상관없어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상관없어요_i_rel" ].
+
+세상에-90 := idiom &
+  [ STEM < "세상에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세상에_i_rel" ].
+
+수고-90 := idiom &
+  [ STEM < "수고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수고_i_rel" ].
+
+수고하시었습니다-90 := idiom &
+  [ STEM < "수고하시었습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수고하시었습니다_i_rel" ].
+
+수고하시었어요-90 := idiom &
+  [ STEM < "수고하시었어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수고하시었어요_i_rel" ].
+
+수고하았네-90 := idiom &
+  [ STEM < "수고하았네" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수고하았네_i_rel" ].
+
+쉬이-90 := idiom &
+  [ STEM < "쉬이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쉬이_i_rel" ].
+
+쉿-90 := idiom &
+  [ STEM < "쉿" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쉿_i_rel" ].
+
+실례하ㅂ니다-90 := idiom &
+  [ STEM < "실례하ㅂ니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실례하ㅂ니다_i_rel" ].
+
+실례하았소이다-90 := idiom &
+  [ STEM < "실례하았소이다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실례하았소이다_i_rel" ].
+
+실례하았습니다-90 := idiom &
+  [ STEM < "실례하았습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실례하았습니다_i_rel" ].
+
+싫습니다-90 := idiom &
+  [ STEM < "싫습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싫습니다_i_rel" ].
+
+싫어-90 := idiom &
+  [ STEM < "싫어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싫어_i_rel" ].
+
+싫어요-90 := idiom &
+  [ STEM < "싫어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싫어요_i_rel" ].
+
+씨이-90 := idiom &
+  [ STEM < "씨이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_씨이_i_rel" ].
+
+아-90 := idiom &
+  [ STEM < "아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아_i_rel" ].
+
+아냐-90 := idiom &
+  [ STEM < "아냐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아냐_i_rel" ].
+
+아뇨-90 := idiom &
+  [ STEM < "아뇨" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아뇨_i_rel" ].
+
+아니-90 := idiom &
+  [ STEM < "아니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니_i_rel" ].
+
+아니ㅂ니다-90 := idiom &
+  [ STEM < "아니ㅂ니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니ㅂ니다_i_rel" ].
+
+아니구요-90 := idiom &
+  [ STEM < "아니구요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니구요_i_rel" ].
+
+아니야-90 := idiom &
+  [ STEM < "아니야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니야_i_rel" ].
+
+아니에요-90 := idiom &
+  [ STEM < "아니에요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니에요_i_rel" ].
+
+아니여-90 := idiom &
+  [ STEM < "아니여" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니여_i_rel" ].
+
+아니오-90 := idiom &
+  [ STEM < "아니오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니오_i_rel" ].
+
+아니요-90 := idiom &
+  [ STEM < "아니요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니요_i_rel" ].
+
+아아-90 := idiom &
+  [ STEM < "아아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아아_i_rel" ].
+
+아아니-90 := idiom &
+  [ STEM < "아아니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아아니_i_rel" ].
+
+아아아-90 := idiom &
+  [ STEM < "아아아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아아아_i_rel" ].
+
+아아아아아악-90 := idiom &
+  [ STEM < "아아아아아악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아아아아아악_i_rel" ].
+
+아악-90 := idiom &
+  [ STEM < "아악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아악_i_rel" ].
+
+아암-90 := idiom &
+  [ STEM < "아암" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아암_i_rel" ].
+
+아앗-90 := idiom &
+  [ STEM < "아앗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아앗_i_rel" ].
+
+아앙-90 := idiom &
+  [ STEM < "아앙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아앙_i_rel" ].
+
+아야-90 := idiom &
+  [ STEM < "아야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아야_i_rel" ].
+
+아얏-90 := idiom &
+  [ STEM < "아얏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아얏_i_rel" ].
+
+아이참-90 := idiom &
+  [ STEM < "아이참" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아이참_i_rel" ].
+
+아이쿠-90 := idiom &
+  [ STEM < "아이쿠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아이쿠_i_rel" ].
+
+아차-90 := idiom &
+  [ STEM < "아차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아차_i_rel" ].
+
+알겠습니다-90 := idiom &
+  [ STEM < "알겠습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알겠습니다_i_rel" ].
+
+알겠어요-90 := idiom &
+  [ STEM < "알겠어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알겠어요_i_rel" ].
+
+알아-90 := idiom &
+  [ STEM < "알아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알아_i_rel" ].
+
+알아요-90 := idiom &
+  [ STEM < "알아요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알아요_i_rel" ].
+
+알았네-90 := idiom &
+  [ STEM < "알았네" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알았네_i_rel" ].
+
+알았다-90 := idiom &
+  [ STEM < "알았다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알았다_i_rel" ].
+
+알았습니다-90 := idiom &
+  [ STEM < "알았습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알았습니다_i_rel" ].
+
+알았어-90 := idiom &
+  [ STEM < "알았어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알았어_i_rel" ].
+
+알았어요-90 := idiom &
+  [ STEM < "알았어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알았어요_i_rel" ].
+
+앵-90 := idiom &
+  [ STEM < "앵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앵_i_rel" ].
+
+야-90 := idiom &
+  [ STEM < "야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야_i_rel" ].
+
+야아-90 := idiom &
+  [ STEM < "야아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야아_i_rel" ].
+
+야웅-90 := idiom &
+  [ STEM < "야웅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야웅_i_rel" ].
+
+어-90 := idiom &
+  [ STEM < "어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어_i_rel" ].
+
+어디-90 := idiom &
+  [ STEM < "어디" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어디_i_rel" ].
+
+어떡하ㄴ담-90 := idiom &
+  [ STEM < "어떡하ㄴ담" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어떡하ㄴ담_i_rel" ].
+
+어라-90 := idiom &
+  [ STEM < "어라" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어라_i_rel" ].
+
+어마-90 := idiom &
+  [ STEM < "어마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어마_i_rel" ].
+
+어머나-90 := idiom &
+  [ STEM < "어머나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어머나_i_rel" ].
+
+억-90 := idiom &
+  [ STEM < "억" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_억_i_rel" ].
+
+엄마-90 := idiom &
+  [ STEM < "엄마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄마_i_rel" ].
+
+에-90 := idiom &
+  [ STEM < "에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에_i_rel" ].
+
+에구머니-90 := idiom &
+  [ STEM < "에구머니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에구머니_i_rel" ].
+
+에그머니나-90 := idiom &
+  [ STEM < "에그머니나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에그머니나_i_rel" ].
+
+에비-90 := idiom &
+  [ STEM < "에비" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에비_i_rel" ].
+
+에엑-90 := idiom &
+  [ STEM < "에엑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에엑_i_rel" ].
+
+에엥-90 := idiom &
+  [ STEM < "에엥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에엥_i_rel" ].
+
+에이-90 := idiom &
+  [ STEM < "에이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에이_i_rel" ].
+
+에취-90 := idiom &
+  [ STEM < "에취" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에취_i_rel" ].
+
+에퉤퉤-90 := idiom &
+  [ STEM < "에퉤퉤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에퉤퉤_i_rel" ].
+
+에헴-90 := idiom &
+  [ STEM < "에헴" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에헴_i_rel" ].
+
+여기요-90 := idiom &
+  [ STEM < "여기요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여기요_i_rel" ].
+
+여보-90 := idiom &
+  [ STEM < "여보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여보_i_rel" ].
+
+여보게-90 := idiom &
+  [ STEM < "여보게" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여보게_i_rel" ].
+
+여보세요-90 := idiom &
+  [ STEM < "여보세요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여보세요_i_rel" ].
+
+예-90 := idiom &
+  [ STEM < "예" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_예_i_rel" ].
+
+예에-90 := idiom &
+  [ STEM < "예에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_예에_i_rel" ].
+
+오래간만이ㄹ세-90 := idiom &
+  [ STEM < "오래간만이ㄹ세" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오래간만이ㄹ세_i_rel" ].
+
+오랜만이ㄴ걸-90 := idiom &
+  [ STEM < "오랜만이ㄴ걸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랜만이ㄴ걸_i_rel" ].
+
+오랜만이군-90 := idiom &
+  [ STEM < "오랜만이군" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랜만이군_i_rel" ].
+
+오랜만이군요-90 := idiom &
+  [ STEM < "오랜만이군요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랜만이군요_i_rel" ].
+
+오랜만이네요-90 := idiom &
+  [ STEM < "오랜만이네요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랜만이네요_i_rel" ].
+
+오랜만이다-90 := idiom &
+  [ STEM < "오랜만이다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랜만이다_i_rel" ].
+
+오랜만이야-90 := idiom &
+  [ STEM < "오랜만이야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랜만이야_i_rel" ].
+
+오랜만이요-90 := idiom &
+  [ STEM < "오랜만이요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랜만이요_i_rel" ].
+
+오호-90 := idiom &
+  [ STEM < "오호" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오호_i_rel" ].
+
+옳거니-90 := idiom &
+  [ STEM < "옳거니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옳거니_i_rel" ].
+
+옳소-90 := idiom &
+  [ STEM < "옳소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옳소_i_rel" ].
+
+옳습니다-90 := idiom &
+  [ STEM < "옳습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옳습니다_i_rel" ].
+
+옳지-90 := idiom &
+  [ STEM < "옳지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옳지_i_rel" ].
+
+옹야-90 := idiom &
+  [ STEM < "옹야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옹야_i_rel" ].
+
+와-90 := idiom &
+  [ STEM < "와" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와_i_rel" ].
+
+와아-90 := idiom &
+  [ STEM < "와아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와아_i_rel" ].
+
+왜-90 := idiom &
+  [ STEM < "왜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왜_i_rel" ].
+
+왜요-90 := idiom &
+  [ STEM < "왜요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왜요_i_rel" ].
+
+왜이지요-90 := idiom &
+  [ STEM < "왜이지요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왜이지요_i_rel" ].
+
+우아-90 := idiom &
+  [ STEM < "우아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우아_i_rel" ].
+
+우얄꼬-90 := idiom &
+  [ STEM < "우얄꼬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우얄꼬_i_rel" ].
+
+우와-90 := idiom &
+  [ STEM < "우와" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우와_i_rel" ].
+
+우우-90 := idiom &
+  [ STEM < "우우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우우_i_rel" ].
+
+우웨엑-90 := idiom &
+  [ STEM < "우웨엑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우웨엑_i_rel" ].
+
+우하하하-90 := idiom &
+  [ STEM < "우하하하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우하하하_i_rel" ].
+
+으-90 := idiom &
+  [ STEM < "으" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으_i_rel" ].
+
+으아-90 := idiom &
+  [ STEM < "으아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으아_i_rel" ].
+
+으아아아악-90 := idiom &
+  [ STEM < "으아아아악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으아아아악_i_rel" ].
+
+으아아악-90 := idiom &
+  [ STEM < "으아아악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으아아악_i_rel" ].
+
+으아악-90 := idiom &
+  [ STEM < "으아악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으아악_i_rel" ].
+
+으악-90 := idiom &
+  [ STEM < "으악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으악_i_rel" ].
+
+으앙-90 := idiom &
+  [ STEM < "으앙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으앙_i_rel" ].
+
+으와-90 := idiom &
+  [ STEM < "으와" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으와_i_rel" ].
+
+으으-90 := idiom &
+  [ STEM < "으으" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으으_i_rel" ].
+
+으으으-90 := idiom &
+  [ STEM < "으으으" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으으으_i_rel" ].
+
+으음-90 := idiom &
+  [ STEM < "으음" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으음_i_rel" ].
+
+으응-90 := idiom &
+  [ STEM < "으응" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으응_i_rel" ].
+
+으카카카-90 := idiom &
+  [ STEM < "으카카카" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으카카카_i_rel" ].
+
+으하하-90 := idiom &
+  [ STEM < "으하하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으하하_i_rel" ].
+
+으흐으-90 := idiom &
+  [ STEM < "으흐으" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으흐으_i_rel" ].
+
+으흐흐-90 := idiom &
+  [ STEM < "으흐흐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으흐흐_i_rel" ].
+
+으흐흐흐-90 := idiom &
+  [ STEM < "으흐흐흐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으흐흐흐_i_rel" ].
+
+으흠-90 := idiom &
+  [ STEM < "으흠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으흠_i_rel" ].
+
+응-90 := idiom &
+  [ STEM < "응" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_응_i_rel" ].
+
+이거-90 := idiom &
+  [ STEM < "이거" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이거_i_rel" ].
+
+이봐-90 := idiom &
+  [ STEM < "이봐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이봐_i_rel" ].
+
+이봐요-90 := idiom &
+  [ STEM < "이봐요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이봐요_i_rel" ].
+
+이크-90 := idiom &
+  [ STEM < "이크" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이크_i_rel" ].
+
+익-90 := idiom &
+  [ STEM < "익" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_익_i_rel" ].
+
+자-90 := idiom &
+  [ STEM < "자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자_i_rel" ].
+
+잠깐-90 := idiom &
+  [ STEM < "잠깐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠깐_i_rel" ].
+
+잠깐만-90 := idiom &
+  [ STEM < "잠깐만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠깐만_i_rel" ].
+
+잠깐만요-90 := idiom &
+  [ STEM < "잠깐만요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠깐만요_i_rel" ].
+
+잠시만-90 := idiom &
+  [ STEM < "잠시만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠시만_i_rel" ].
+
+저-90 := idiom &
+  [ STEM < "저" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저_i_rel" ].
+
+저기-90 := idiom &
+  [ STEM < "저기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저기_i_rel" ].
+
+저런-90 := idiom &
+  [ STEM < "저런" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저런_i_rel" ].
+
+저어-90 := idiom &
+  [ STEM < "저어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저어_i_rel" ].
+
+정말-90 := idiom &
+  [ STEM < "정말" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정말_i_rel" ].
+
+제발-90 := idiom &
+  [ STEM < "제발" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제발_i_rel" ].
+
+좋겠네-90 := idiom &
+  [ STEM < "좋겠네" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋겠네_i_rel" ].
+
+좋고말고요-90 := idiom &
+  [ STEM < "좋고말고요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋고말고요_i_rel" ].
+
+좋다-90 := idiom &
+  [ STEM < "좋다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋다_i_rel" ].
+
+좋소-90 := idiom &
+  [ STEM < "좋소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋소_i_rel" ].
+
+좋습니다-90 := idiom &
+  [ STEM < "좋습니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋습니다_i_rel" ].
+
+좋아-90 := idiom &
+  [ STEM < "좋아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋아_i_rel" ].
+
+좋아라-90 := idiom &
+  [ STEM < "좋아라" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋아라_i_rel" ].
+
+좋아서-90 := idiom &
+  [ STEM < "좋아서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋아서_i_rel" ].
+
+좋아요-90 := idiom &
+  [ STEM < "좋아요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋아요_i_rel" ].
+
+좋았겠구나-90 := idiom &
+  [ STEM < "좋았겠구나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋았겠구나_i_rel" ].
+
+좋았어-90 := idiom &
+  [ STEM < "좋았어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋았어_i_rel" ].
+
+좋았어요-90 := idiom &
+  [ STEM < "좋았어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋았어요_i_rel" ].
+
+좋았지-90 := idiom &
+  [ STEM < "좋았지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋았지_i_rel" ].
+
+좋지-90 := idiom &
+  [ STEM < "좋지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좋지_i_rel" ].
+
+죄송하ㅂ니다-90 := idiom &
+  [ STEM < "죄송하ㅂ니다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄송하ㅂ니다_i_rel" ].
+
+죄송하ㅂ니다만-90 := idiom &
+  [ STEM < "죄송하ㅂ니다만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄송하ㅂ니다만_i_rel" ].
+
+죄송하아요-90 := idiom &
+  [ STEM < "죄송하아요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄송하아요_i_rel" ].
+
+죄송하여요-90 := idiom &
+  [ STEM < "죄송하여요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄송하여요_i_rel" ].
+
+주무시어요-90 := idiom &
+  [ STEM < "주무시어요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주무시어요_i_rel" ].
+
+지랄하네-90 := idiom &
+  [ STEM < "지랄하네" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지랄하네_i_rel" ].
+
+짹짹짹-90 := idiom &
+  [ STEM < "짹짹짹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짹짹짹_i_rel" ].
+
+쨍그랑-90 := idiom &
+  [ STEM < "쨍그랑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쨍그랑_i_rel" ].
+
+쩟-90 := idiom &
+  [ STEM < "쩟" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쩟_i_rel" ].
+
+찜-90 := idiom &
+  [ STEM < "찜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찜_i_rel" ].
+
+차렷-90 := idiom &
+  [ STEM < "차렷" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차렷_i_rel" ].
+
+참-90 := idiom &
+  [ STEM < "참" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_참_i_rel" ].
+
+철버덩-90 := idiom &
+  [ STEM < "철버덩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철버덩_i_rel" ].
+
+철썩-90 := idiom &
+  [ STEM < "철썩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철썩_i_rel" ].
+
+철커덕-90 := idiom &
+  [ STEM < "철커덕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철커덕_i_rel" ].
+
+쿵-90 := idiom &
+  [ STEM < "쿵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿵_i_rel" ].
+
+큐-90 := idiom &
+  [ STEM < "큐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_큐_i_rel" ].
+
+키스할까요-90 := idiom &
+  [ STEM < "키스할까요" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_키스할까요_i_rel" ].
+
+파이팅-90 := idiom &
+  [ STEM < "파이팅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파이팅_i_rel" ].
+
+펑-90 := idiom &
+  [ STEM < "펑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_펑_i_rel" ].
+
+푸-90 := idiom &
+  [ STEM < "푸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸_i_rel" ].
+
+푸스스-90 := idiom &
+  [ STEM < "푸스스" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸스스_i_rel" ].
+
+푸하하하-90 := idiom &
+  [ STEM < "푸하하하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸하하하_i_rel" ].
+
+푹-90 := idiom &
+  [ STEM < "푹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푹_i_rel" ].
+
+피-90 := idiom &
+  [ STEM < "피" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피_i_rel" ].
+
+피이-90 := idiom &
+  [ STEM < "피이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피이_i_rel" ].
+
+피익-90 := idiom &
+  [ STEM < "피익" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피익_i_rel" ].
+
+하지만-90 := idiom &
+  [ STEM < "하지만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하지만_i_rel" ].
+
+하하-90 := idiom &
+  [ STEM < "하하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하하_i_rel" ].
+
+하하하-90 := idiom &
+  [ STEM < "하하하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하하하_i_rel" ].
+
+하하하하-90 := idiom &
+  [ STEM < "하하하하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하하하하_i_rel" ].
+
+허-90 := idiom &
+  [ STEM < "허" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허_i_rel" ].
+
+허허-90 := idiom &
+  [ STEM < "허허" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허허_i_rel" ].
+
+허허허-90 := idiom &
+  [ STEM < "허허허" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허허허_i_rel" ].
+
+허허허허-90 := idiom &
+  [ STEM < "허허허허" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허허허허_i_rel" ].
+
+헉-90 := idiom &
+  [ STEM < "헉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헉_i_rel" ].
+
+헛-90 := idiom &
+  [ STEM < "헛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헛_i_rel" ].
+
+헤-90 := idiom &
+  [ STEM < "헤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헤_i_rel" ].
+
+호-90 := idiom &
+  [ STEM < "호" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호_i_rel" ].
+
+호오-90 := idiom &
+  [ STEM < "호오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호오_i_rel" ].
+
+호호호-90 := idiom &
+  [ STEM < "호호호" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호호호_i_rel" ].
+
+호호호호-90 := idiom &
+  [ STEM < "호호호호" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호호호호_i_rel" ].
+
+후-90 := idiom &
+  [ STEM < "후" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후_i_rel" ].
+
+후아아아아암-90 := idiom &
+  [ STEM < "후아아아아암" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후아아아아암_i_rel" ].
+
+후유-90 := idiom &
+  [ STEM < "후유" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후유_i_rel" ].
+
+흐음-90 := idiom &
+  [ STEM < "흐음" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흐음_i_rel" ].
+
+흠-90 := idiom &
+  [ STEM < "흠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흠_i_rel" ].
+
+흥-90 := idiom &
+  [ STEM < "흥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흥_i_rel" ].
+
+히잉-90 := idiom &
+  [ STEM < "히잉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히잉_i_rel" ].
+
+히히-90 := idiom &
+  [ STEM < "히히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히히_i_rel" ].
+
+히히히-90 := idiom &
+  [ STEM < "히히히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히히히_i_rel" ].
+
+히히히히-90 := idiom &
+  [ STEM < "히히히히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히히히히_i_rel" ].
+
+히히힛-90 := idiom &
+  [ STEM < "히히힛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히히힛_i_rel" ].
+
+히힛-90 := idiom &
+  [ STEM < "히힛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히힛_i_rel" ].
+
+개새끼-90 := idiom &
+  [ STEM < "개새끼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개새끼_i_rel" ].
+
+까짓것-90 := idiom &
+  [ STEM < "까짓것" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까짓것_i_rel" ].
+

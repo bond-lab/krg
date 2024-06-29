@@ -1,0 +1,102 @@
+3@1@4@3@HD-MOD-NONCL-INT-NOMINAL-RULE@존 || 그 소설 읽@0@4@6-jul-2009 19:05
+3@1@2@3@SUBJ-HEAD-ROBUST-RS@존 || 그 소설 읽@0@4@6-jul-2009 19:05
+3@1@4@3@SUBJ-HEAD-ROBUST-RS@그 || 소설 읽@1@4@6-jul-2009 19:05
+3@1@4@3@NP5-TOP-COORD@존 || 그@0@2@6-jul-2009 19:05
+3@1@1@3@HEAD-SPEC@그 || 소설@1@3@6-jul-2009 19:05
+3@1@4@3@COMP-1ST-HEAD-AGT@소설 || 읽@2@4@6-jul-2009 19:05
+3@1@4@3@N-PERSON_IRULE@존@0@1@6-jul-2009 19:05
+3@1@4@3@N-NON-DEL1_IRULE@존@0@1@6-jul-2009 19:05
+3@1@4@3@N-BARE_IRULE@그@1@2@6-jul-2009 19:05
+3@1@4@3@N-NON-P_IRULE@그@1@2@6-jul-2009 19:05
+3@1@4@3@NP5-BOTTOM-COORD@그@1@2@6-jul-2009 19:05
+3@1@4@2@n-pn-3rd@그@1@2@6-jul-2009 19:05
+3@1@4@3@BARE-NP@소설@2@3@6-jul-2009 19:05
+4@1@4@3@HD-MOD-NONCL-INT-NOMINAL-RULE@존 || 그 사과 먹@0@4@6-jul-2009 19:05
+4@1@2@3@SUBJ-HEAD-ROBUST-RS@존 || 그 사과 먹@0@4@6-jul-2009 19:05
+4@1@4@3@SUBJ-HEAD-ROBUST-RS@그 || 사과 먹@1@4@6-jul-2009 19:05
+4@1@4@3@NP5-TOP-COORD@존 || 그@0@2@6-jul-2009 19:05
+4@1@1@3@HEAD-SPEC@그 || 사과@1@3@6-jul-2009 19:05
+4@1@4@3@COMP-1ST-HEAD-AGT@사과 || 먹@2@4@6-jul-2009 19:05
+4@1@4@3@N-PERSON_IRULE@존@0@1@6-jul-2009 19:05
+4@1@4@3@N-NON-DEL1_IRULE@존@0@1@6-jul-2009 19:05
+4@1@4@3@N-BARE_IRULE@그@1@2@6-jul-2009 19:05
+4@1@4@3@N-NON-P_IRULE@그@1@2@6-jul-2009 19:05
+4@1@4@3@NP5-BOTTOM-COORD@그@1@2@6-jul-2009 19:05
+4@1@4@2@n-pn-3rd@그@1@2@6-jul-2009 19:05
+4@1@4@3@BARE-NP@사과@2@3@6-jul-2009 19:05
+5@1@2@3@SUBJ-HEAD-ROBUST-RS@존 || 메리 책 주@0@4@6-jul-2009 19:05
+5@1@4@3@N-PERSON_IRULE@존@0@1@6-jul-2009 19:05
+5@1@4@3@N-NON-DEL1_IRULE@존@0@1@6-jul-2009 19:05
+6@1@2@3@SUBJ-HEAD-ROBUST-RS@존 || 한국말 배우@0@3@6-jul-2009 19:05
+6@1@4@3@N-PERSON_IRULE@존@0@1@6-jul-2009 19:05
+6@1@4@3@N-NON-DEL1_IRULE@존@0@1@6-jul-2009 19:05
+6@1@2@2@v-src-tr@배우@2@3@6-jul-2009 19:05
+7@1@4@3@COMP-1ST-HEAD-AGT-ROBUST-2@존 || 메리 그 책 읽 생각@0@6@6-jul-2009 19:06
+7@1@4@3@COMP-1ST-HEAD-AGT@존 || 메리 그 책 읽 생각@0@6@6-jul-2009 19:06
+7@1@4@3@SUBJ-HEAD-VP@존 메리 그 책 읽 || 생각@0@6@6-jul-2009 19:06
+7@1@4@3@SUBJ-HEAD-S@존 메리 그 책 읽 || 생각@0@6@6-jul-2009 19:06
+7@1@4@3@HD-MOD-NONCL-INT-NOMINAL-RULE@존 || 메리 그 책 읽 생각@0@6@6-jul-2009 19:06
+7@1@4@3@HEAD-MOD-ADVERBIAL-RULE@존 || 메리 그 책 읽 생각@0@6@6-jul-2009 19:06
+7@1@4@3@HEAD-MOD-ADVERBIAL-RULE@존 || 메리 그 책 읽@0@5@6-jul-2009 19:06
+7@1@4@3@SUBJ-HEAD-ROBUST-SR@메리 || 그 책 읽 생각@1@6@6-jul-2009 19:06
+7@1@4@3@SUBJ-HEAD@메리 || 그 책 읽 생각@1@6@6-jul-2009 19:06
+7@1@4@3@COMP-2ND-HEAD-ROBUST-1@그 책 읽 || 생각@2@6@6-jul-2009 19:06
+7@1@4@3@COMP-2ND-VP@그 책 읽 || 생각@2@6@6-jul-2009 19:06
+7@1@4@3@COMP-1ST-HEAD-AGT@그 책 읽 || 생각@2@6@6-jul-2009 19:06
+7@1@4@3@N2-TOP-COORD@존 메리 || 그@0@3@6-jul-2009 19:06
+7@1@4@3@NP1-TOP-COORD@존 메리 || 그@0@3@6-jul-2009 19:06
+7@1@4@3@COMP-2ND-HEAD-ROBUST-1@그 책 || 읽@2@5@6-jul-2009 19:06
+7@1@4@3@SUBJ-HEAD@그 || 책 읽@2@5@6-jul-2009 19:06
+7@1@4@3@COMP-2ND-VP@책 읽 || 생각@3@6@6-jul-2009 19:06
+7@1@4@3@NP5-TOP-COORD@존 || 메리@0@2@6-jul-2009 19:06
+7@1@4@3@HEAD-MOD-GEN-NONCL-RULE@존 || 메리@0@2@6-jul-2009 19:06
+7@1@4@3@NP5-TOP-COORD@메리 || 그@1@3@6-jul-2009 19:06
+7@1@1@3@HEAD-SPEC@그 || 책@2@4@6-jul-2009 19:06
+7@1@4@3@COMP-1ST-HEAD-AGT@책 || 읽@3@5@6-jul-2009 19:06
+7@1@4@3@COMP-2ND-VP@읽 || 생각@4@6@6-jul-2009 19:06
+7@1@4@3@N-TOP2_IRULE@존@0@1@6-jul-2009 19:06
+7@1@4@3@N-FOC-CONTRA2_IRULE@존@0@1@6-jul-2009 19:06
+7@1@4@3@NP5-BOTTOM-COORD@메리@1@2@6-jul-2009 19:06
+7@1@4@3@N-NON-P_IRULE@그@2@3@6-jul-2009 19:06
+7@1@4@3@NP5-BOTTOM-COORD@그@2@3@6-jul-2009 19:06
+7@1@4@2@n-pn-3rd@그@2@3@6-jul-2009 19:06
+7@1@4@3@BARE-NP@책@3@4@6-jul-2009 19:06
+7@1@4@2@v-np-inst-ditr@읽@4@5@6-jul-2009 19:06
+7@1@4@2@vn-acc-vp-ditr@생각@5@6@6-jul-2009 19:06
+7@1@4@2@vn-nonst-intr@생각@5@6@6-jul-2009 19:06
+7@1@1@2@vn-s-ko4-tr@생각@5@6@6-jul-2009 19:06
+8@1@2@3@SUBJ-HEAD-ROBUST-RS@존 || 학생 영어 가르치@0@4@6-jul-2009 19:06
+8@1@4@3@N-PERSON_IRULE@존@0@1@6-jul-2009 19:06
+8@1@4@3@N-NON-DEL1_IRULE@존@0@1@6-jul-2009 19:06
+9@1@4@3@COMP-1ST-HEAD-AGT-ROBUST-1@존 || 사장 되@0@3@6-jul-2009 19:07
+9@1@4@3@COMP-1ST-HEAD-NOAGT@존 || 사장 되@0@3@6-jul-2009 19:07
+9@1@2@3@SUBJ-HEAD-ROBUST-RS@존 || 사장 되@0@3@6-jul-2009 19:07
+9@1@4@3@NP5-TOP-COORD@존 || 사장@0@2@6-jul-2009 19:07
+9@1@2@3@HEAD-MOD-GEN-NONCL-RULE@존 || 사장@0@2@6-jul-2009 19:07
+9@1@2@3@SUBJ-HEAD@사장 || 되@1@3@6-jul-2009 19:07
+9@1@2@3@HEAD-LEX-PASS-NOAGT-RULE@사장 || 되@1@3@6-jul-2009 19:07
+9@1@4@3@N-PERSON_IRULE@존@0@1@6-jul-2009 19:07
+9@1@4@3@N-NON-DEL1_IRULE@존@0@1@6-jul-2009 19:07
+9@1@2@3@NP5-BOTTOM-COORD@사장@1@2@6-jul-2009 19:06
+9@1@4@2@vn-acc-tr@사장@1@2@6-jul-2009 19:07
+9@1@4@2@v-acc-tr@되@2@3@6-jul-2009 19:07
+9@1@4@2@v-src-tr@되@2@3@6-jul-2009 19:07
+9@1@4@2@v-loc-tr@되@2@3@6-jul-2009 19:07
+9@1@4@2@v-dir-tr@되@2@3@6-jul-2009 19:07
+9@1@4@2@v-intr@되@2@3@6-jul-2009 19:07
+9@1@4@2@v-inst-tr@되@2@3@6-jul-2009 19:07
+9@1@1@2@v-nom-tr@되@2@3@6-jul-2009 19:07
+9@1@4@2@pass-light-noagt@되@2@3@6-jul-2009 19:07
+10@1@2@3@SUBJ-HEAD-ROBUST-RS@존 || 책 많@0@3@6-jul-2009 19:08
+10@1@4@3@COMP-1ST-HEAD-NOAGT@존 || 책 많@0@3@6-jul-2009 19:08
+10@1@4@3@NP5-TOP-COORD@존 || 책@0@2@6-jul-2009 19:08
+10@1@2@3@HEAD-MOD-GEN-NONCL-RULE@존 || 책@0@2@6-jul-2009 19:08
+10@1@1@3@COMP-1ST-HEAD-NOAGT@책 || 많@1@3@6-jul-2009 19:08
+10@1@4@3@SUBJ-HEAD@책 || 많@1@3@6-jul-2009 19:08
+10@1@4@3@N-PERSON_IRULE@존@0@1@6-jul-2009 19:08
+10@1@4@3@N-NON-DEL1_IRULE@존@0@1@6-jul-2009 19:08
+10@1@2@3@NP5-BOTTOM-COORD@책@1@2@6-jul-2009 19:07
+10@1@1@2@a-nom-tr@많@2@3@6-jul-2009 19:08
+10@1@4@2@a-loc-tr@많@2@3@6-jul-2009 19:08
+10@1@4@2@a-dat-tr@많@2@3@6-jul-2009 19:08
+10@1@4@2@a-intr@많@2@3@6-jul-2009 19:08

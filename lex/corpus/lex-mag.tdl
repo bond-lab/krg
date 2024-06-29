@@ -1,0 +1,7045 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; General Adverbs obtained from corpora
+;;	 These lexicons are taken from the Sejong corpus and the BTEC corpus
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: June. 3, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+찌르듯이-50 := ph-adv &
+  [ STEM < "찌르듯이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찌르듯이_adv_50_rel" ].
+
+가급적-50 := ph-adv &
+  [ STEM < "가급적" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가급적_adv_50_rel" ].
+
+가까스로-50 := ph-adv &
+  [ STEM < "가까스로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가까스로_adv_50_rel" ].
+
+가까이-50 := ph-adv &
+  [ STEM < "가까이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가까이_adv_50_rel" ].
+
+가끔-50 := ph-adv &
+  [ STEM < "가끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가끔_adv_50_rel" ].
+
+가득-50 := ph-adv &
+  [ STEM < "가득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가득_adv_50_rel" ].
+
+가득히-50 := ph-adv &
+  [ STEM < "가득히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가득히_adv_50_rel" ].
+
+가뜩이나-50 := ph-adv &
+  [ STEM < "가뜩이나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가뜩이나_adv_50_rel" ].
+
+가령-50 := ph-adv &
+  [ STEM < "가령" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가령_adv_50_rel" ].
+
+가로-50 := ph-adv &
+  [ STEM < "가로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가로_adv_50_rel" ].
+
+가만-50 := ph-adv &
+  [ STEM < "가만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가만_adv_50_rel" ].
+
+가만가만-50 := ph-adv &
+  [ STEM < "가만가만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가만가만_adv_50_rel" ].
+
+가물가물-50 := ph-adv &
+  [ STEM < "가물가물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가물가물_adv_50_rel" ].
+
+가벼이-50 := ph-adv &
+  [ STEM < "가벼이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가벼이_adv_50_rel" ].
+
+가위-50 := ph-adv &
+  [ STEM < "가위" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가위_adv_50_rel" ].
+
+가지런히-50 := ph-adv &
+  [ STEM < "가지런히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가지런히_adv_50_rel" ].
+
+가히-50 := ph-adv &
+  [ STEM < "가히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가히_adv_50_rel" ].
+
+각-50 := ph-adv &
+  [ STEM < "각" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_각_adv_50_rel" ].
+
+각각-50 := ph-adv &
+  [ STEM < "각각" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_각각_adv_50_rel" ].
+
+각기-50 := ph-adv &
+  [ STEM < "각기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_각기_adv_50_rel" ].
+
+각별히-50 := ph-adv &
+  [ STEM < "각별히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_각별히_adv_50_rel" ].
+
+각자-50 := ph-adv &
+  [ STEM < "각자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_각자_adv_50_rel" ].
+
+간간이-50 := ph-adv &
+  [ STEM < "간간이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간간이_adv_50_rel" ].
+
+간간히-50 := ph-adv &
+  [ STEM < "간간히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간간히_adv_50_rel" ].
+
+간곡히-50 := ph-adv &
+  [ STEM < "간곡히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간곡히_adv_50_rel" ].
+
+간단없이-50 := ph-adv &
+  [ STEM < "간단없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간단없이_adv_50_rel" ].
+
+간단히-50 := ph-adv &
+  [ STEM < "간단히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간단히_adv_50_rel" ].
+
+간략히-50 := ph-adv &
+  [ STEM < "간략히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간략히_adv_50_rel" ].
+
+간신히-50 := ph-adv &
+  [ STEM < "간신히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간신히_adv_50_rel" ].
+
+간절히-50 := ph-adv &
+  [ STEM < "간절히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간절히_adv_50_rel" ].
+
+간질간질-50 := ph-adv &
+  [ STEM < "간질간질" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간질간질_adv_50_rel" ].
+
+간혹-50 := ph-adv &
+  [ STEM < "간혹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간혹_adv_50_rel" ].
+
+갈가리-50 := ph-adv &
+  [ STEM < "갈가리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈가리_adv_50_rel" ].
+
+갈기갈기-50 := ph-adv &
+  [ STEM < "갈기갈기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈기갈기_adv_50_rel" ].
+
+갈수록-50 := ph-adv &
+  [ STEM < "갈수록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈수록_adv_50_rel" ].
+
+갈팡질팡-50 := ph-adv &
+  [ STEM < "갈팡질팡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈팡질팡_adv_50_rel" ].
+
+감감-50 := ph-adv &
+  [ STEM < "감감" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감감_adv_50_rel" ].
+
+감지덕지-50 := ph-adv &
+  [ STEM < "감지덕지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감지덕지_adv_50_rel" ].
+
+감쪽같이-50 := ph-adv &
+  [ STEM < "감쪽같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감쪽같이_adv_50_rel" ].
+
+감히-50 := ph-adv &
+  [ STEM < "감히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감히_adv_50_rel" ].
+
+갑작-50 := ph-adv &
+  [ STEM < "갑작" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갑작_adv_50_rel" ].
+
+갑작스레-50 := ph-adv &
+  [ STEM < "갑작스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갑작스레_adv_50_rel" ].
+
+갓-50 := ph-adv &
+  [ STEM < "갓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갓_adv_50_rel" ].
+
+강력히-50 := ph-adv &
+  [ STEM < "강력히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_강력히_adv_50_rel" ].
+
+개당-50 := ph-adv &
+  [ STEM < "개당" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개당_adv_50_rel" ].
+
+갸우뚱-50 := ph-adv &
+  [ STEM < "갸우뚱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갸우뚱_adv_50_rel" ].
+
+갸웃-50 := ph-adv &
+  [ STEM < "갸웃" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갸웃_adv_50_rel" ].
+
+갸웃이-50 := ph-adv &
+  [ STEM < "갸웃이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갸웃이_adv_50_rel" ].
+
+거기-50 := ph-adv &
+  [ STEM < "거기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거기_adv_50_rel" ].
+
+거꾸로-50 := ph-adv &
+  [ STEM < "거꾸로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거꾸로_adv_50_rel" ].
+
+거듭-50 := ph-adv &
+  [ STEM < "거듭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거듭_adv_50_rel" ].
+
+거듭거듭-50 := ph-adv &
+  [ STEM < "거듭거듭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거듭거듭_adv_50_rel" ].
+
+거뜬히-50 := ph-adv &
+  [ STEM < "거뜬히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거뜬히_adv_50_rel" ].
+
+거뭇거뭇-50 := ph-adv &
+  [ STEM < "거뭇거뭇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거뭇거뭇_adv_50_rel" ].
+
+거의-50 := ph-adv &
+  [ STEM < "거의" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거의_adv_50_rel" ].
+
+거저-50 := ph-adv &
+  [ STEM < "거저" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거저_adv_50_rel" ].
+
+거진-50 := ph-adv &
+  [ STEM < "거진" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거진_adv_50_rel" ].
+
+거침없이-50 := ph-adv &
+  [ STEM < "거침없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거침없이_adv_50_rel" ].
+
+거푸-50 := ph-adv &
+  [ STEM < "거푸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거푸_adv_50_rel" ].
+
+걱정스레-50 := ph-adv &
+  [ STEM < "걱정스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걱정스레_adv_50_rel" ].
+
+걱정없이-50 := ph-adv &
+  [ STEM < "걱정없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걱정없이_adv_50_rel" ].
+
+건데-50 := ph-adv &
+  [ STEM < "건데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_건데_adv_50_rel" ].
+
+걸핏하면-50 := ph-adv &
+  [ STEM < "걸핏하면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걸핏하면_adv_50_rel" ].
+
+겅중겅중-50 := ph-adv &
+  [ STEM < "겅중겅중" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겅중겅중_adv_50_rel" ].
+
+게다가-50 := ph-adv &
+  [ STEM < "게다가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_게다가_adv_50_rel" ].
+
+게슴츠레-50 := ph-adv &
+  [ STEM < "게슴츠레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_게슴츠레_adv_50_rel" ].
+
+게을리-50 := ph-adv &
+  [ STEM < "게을리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_게을리_adv_50_rel" ].
+
+겨우내-50 := ph-adv &
+  [ STEM < "겨우내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겨우내_adv_50_rel" ].
+
+격렬히-50 := ph-adv &
+  [ STEM < "격렬히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_격렬히_adv_50_rel" ].
+
+결단코-50 := ph-adv &
+  [ STEM < "결단코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_결단코_adv_50_rel" ].
+
+결연히-50 := ph-adv &
+  [ STEM < "결연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_결연히_adv_50_rel" ].
+
+결코-50 := ph-adv &
+  [ STEM < "결코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_결코_adv_50_rel" ].
+
+겸허히-50 := ph-adv &
+  [ STEM < "겸허히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겸허히_adv_50_rel" ].
+
+겹겹이-50 := ph-adv &
+  [ STEM < "겹겹이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겹겹이_adv_50_rel" ].
+
+고래고래-50 := ph-adv &
+  [ STEM < "고래고래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고래고래_adv_50_rel" ].
+
+고래로-50 := ph-adv &
+  [ STEM < "고래로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고래로_adv_50_rel" ].
+
+고로-50 := ph-adv &
+  [ STEM < "고로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고로_adv_50_rel" ].
+
+고루-50 := ph-adv &
+  [ STEM < "고루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고루_adv_50_rel" ].
+
+고루고루-50 := ph-adv &
+  [ STEM < "고루고루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고루고루_adv_50_rel" ].
+
+고만-50 := ph-adv &
+  [ STEM < "고만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고만_adv_50_rel" ].
+
+고분고분-50 := ph-adv &
+  [ STEM < "고분고분" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고분고분_adv_50_rel" ].
+
+고사하고-50 := ph-adv &
+  [ STEM < "고사하고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고사하고_adv_50_rel" ].
+
+고스란히-50 := ph-adv &
+  [ STEM < "고스란히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고스란히_adv_50_rel" ].
+
+고요히-50 := ph-adv &
+  [ STEM < "고요히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고요히_adv_50_rel" ].
+
+고이-50 := ph-adv &
+  [ STEM < "고이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고이_adv_50_rel" ].
+
+고작-50 := ph-adv &
+  [ STEM < "고작" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고작_adv_50_rel" ].
+
+곤드레만드레-50 := ph-adv &
+  [ STEM < "곤드레만드레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곤드레만드레_adv_50_rel" ].
+
+곤히-50 := ph-adv &
+  [ STEM < "곤히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곤히_adv_50_rel" ].
+
+곧바로-50 := ph-adv &
+  [ STEM < "곧바로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곧바로_adv_50_rel" ].
+
+곧이-50 := ph-adv &
+  [ STEM < "곧이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곧이_adv_50_rel" ].
+
+곧이곧대로-50 := ph-adv &
+  [ STEM < "곧이곧대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곧이곧대로_adv_50_rel" ].
+
+곧이어-50 := ph-adv &
+  [ STEM < "곧이어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곧이어_adv_50_rel" ].
+
+곧잘-50 := ph-adv &
+  [ STEM < "곧잘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곧잘_adv_50_rel" ].
+
+골고루-50 := ph-adv &
+  [ STEM < "골고루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_골고루_adv_50_rel" ].
+
+골골-50 := ph-adv &
+  [ STEM < "골골" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_골골_adv_50_rel" ].
+
+골똘히-50 := ph-adv &
+  [ STEM < "골똘히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_골똘히_adv_50_rel" ].
+
+곰곰-50 := ph-adv &
+  [ STEM < "곰곰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곰곰_adv_50_rel" ].
+
+곰곰이-50 := ph-adv &
+  [ STEM < "곰곰이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곰곰이_adv_50_rel" ].
+
+곰곰히-50 := ph-adv &
+  [ STEM < "곰곰히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곰곰히_adv_50_rel" ].
+
+곳곳이-50 := ph-adv &
+  [ STEM < "곳곳이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곳곳이_adv_50_rel" ].
+
+공고히-50 := ph-adv &
+  [ STEM < "공고히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공고히_adv_50_rel" ].
+
+공공연히-50 := ph-adv &
+  [ STEM < "공공연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공공연히_adv_50_rel" ].
+
+공손히-50 := ph-adv &
+  [ STEM < "공손히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공손히_adv_50_rel" ].
+
+공연히-50 := ph-adv &
+  [ STEM < "공연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공연히_adv_50_rel" ].
+
+공히-50 := ph-adv &
+  [ STEM < "공히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공히_adv_50_rel" ].
+
+과감히-50 := ph-adv &
+  [ STEM < "과감히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_과감히_adv_50_rel" ].
+
+과연-50 := ph-adv &
+  [ STEM < "과연" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_과연_adv_50_rel" ].
+
+과히-50 := ph-adv &
+  [ STEM < "과히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_과히_adv_50_rel" ].
+
+관계없이-50 := ph-adv &
+  [ STEM < "관계없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_관계없이_adv_50_rel" ].
+
+괜스레-50 := ph-adv &
+  [ STEM < "괜스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜스레_adv_50_rel" ].
+
+괜시리-50 := ph-adv &
+  [ STEM < "괜시리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜시리_adv_50_rel" ].
+
+괜히-50 := ph-adv &
+  [ STEM < "괜히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괜히_adv_50_rel" ].
+
+괴발개발-50 := ph-adv &
+  [ STEM < "괴발개발" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괴발개발_adv_50_rel" ].
+
+굉장히-50 := ph-adv &
+  [ STEM < "굉장히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굉장히_adv_50_rel" ].
+
+교묘히-50 := ph-adv &
+  [ STEM < "교묘히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_교묘히_adv_50_rel" ].
+
+구불구불-50 := ph-adv &
+  [ STEM < "구불구불" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구불구불_adv_50_rel" ].
+
+구시렁구시렁-50 := ph-adv &
+  [ STEM < "구시렁구시렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구시렁구시렁_adv_50_rel" ].
+
+구질구질-50 := ph-adv &
+  [ STEM < "구질구질" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구질구질_adv_50_rel" ].
+
+구태여-50 := ph-adv &
+  [ STEM < "구태여" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구태여_adv_50_rel" ].
+
+군데군데-50 := ph-adv &
+  [ STEM < "군데군데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_군데군데_adv_50_rel" ].
+
+굳건히-50 := ph-adv &
+  [ STEM < "굳건히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굳건히_adv_50_rel" ].
+
+굳이-50 := ph-adv &
+  [ STEM < "굳이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굳이_adv_50_rel" ].
+
+굽이굽이-50 := ph-adv &
+  [ STEM < "굽이굽이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굽이굽이_adv_50_rel" ].
+
+귀히-50 := ph-adv &
+  [ STEM < "귀히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_귀히_adv_50_rel" ].
+
+그간-50 := ph-adv &
+  [ STEM < "그간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그간_adv_50_rel" ].
+
+그나마-50 := ph-adv &
+  [ STEM < "그나마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그나마_adv_50_rel" ].
+
+그나저나-50 := ph-adv &
+  [ STEM < "그나저나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그나저나_adv_50_rel" ].
+
+그냥-50 := ph-adv &
+  [ STEM < "그냥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그냥_adv_50_rel" ].
+
+그냥저냥-50 := ph-adv &
+  [ STEM < "그냥저냥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그냥저냥_adv_50_rel" ].
+
+그닥-50 := ph-adv &
+  [ STEM < "그닥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그닥_adv_50_rel" ].
+
+그동안-50 := ph-adv &
+  [ STEM < "그동안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그동안_adv_50_rel" ].
+
+그득-50 := ph-adv &
+  [ STEM < "그득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그득_adv_50_rel" ].
+
+그때그때-50 := ph-adv &
+  [ STEM < "그때그때" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그때그때_adv_50_rel" ].
+
+그때껏-50 := ph-adv &
+  [ STEM < "그때껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그때껏_adv_50_rel" ].
+
+그래서-50 := ph-adv &
+  [ STEM < "그래서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그래서_adv_50_rel" ].
+
+그러나-50 := ph-adv &
+  [ STEM < "그러나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그러나_adv_50_rel" ].
+
+그러나저러나-50 := ph-adv &
+  [ STEM < "그러나저러나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그러나저러나_adv_50_rel" ].
+
+그럭저럭-50 := ph-adv &
+  [ STEM < "그럭저럭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그럭저럭_adv_50_rel" ].
+
+그런대로-50 := ph-adv &
+  [ STEM < "그런대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그런대로_adv_50_rel" ].
+
+그럼-50 := ph-adv &
+  [ STEM < "그럼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그럼_adv_50_rel" ].
+
+그렁게-50 := ph-adv &
+  [ STEM < "그렁게" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렁게_adv_50_rel" ].
+
+그렁그렁-50 := ph-adv &
+  [ STEM < "그렁그렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그렁그렁_adv_50_rel" ].
+
+그릇-50 := ph-adv &
+  [ STEM < "그릇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그릇_adv_50_rel" ].
+
+그리-50 := ph-adv &
+  [ STEM < "그리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그리_adv_50_rel" ].
+
+그리도-50 := ph-adv &
+  [ STEM < "그리도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그리도_adv_50_rel" ].
+
+그리로-50 := ph-adv &
+  [ STEM < "그리로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그리로_adv_50_rel" ].
+
+그만치-50 := ph-adv &
+  [ STEM < "그만치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그만치_adv_50_rel" ].
+
+그만큼-50 := ph-adv &
+  [ STEM < "그만큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그만큼_adv_50_rel" ].
+
+그야-50 := ph-adv &
+  [ STEM < "그야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그야_adv_50_rel" ].
+
+그야말로-50 := ph-adv &
+  [ STEM < "그야말로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그야말로_adv_50_rel" ].
+
+그예-50 := ph-adv &
+  [ STEM < "그예" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그예_adv_50_rel" ].
+
+그저-50 := ph-adv &
+  [ STEM < "그저" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그저_adv_50_rel" ].
+
+그제서야-50 := ph-adv &
+  [ STEM < "그제서야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그제서야_adv_50_rel" ].
+
+그제야-50 := ph-adv &
+  [ STEM < "그제야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그제야_adv_50_rel" ].
+
+그중-50 := ph-adv &
+  [ STEM < "그중" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그중_adv_50_rel" ].
+
+그지없이-50 := ph-adv &
+  [ STEM < "그지없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그지없이_adv_50_rel" ].
+
+그토록-50 := ph-adv &
+  [ STEM < "그토록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그토록_adv_50_rel" ].
+
+극구-50 := ph-adv &
+  [ STEM < "극구" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_극구_adv_50_rel" ].
+
+극진히-50 := ph-adv &
+  [ STEM < "극진히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_극진히_adv_50_rel" ].
+
+극히-50 := ph-adv &
+  [ STEM < "극히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_극히_adv_50_rel" ].
+
+근근이-50 := ph-adv &
+  [ STEM < "근근이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근근이_adv_50_rel" ].
+
+근근히-50 := ph-adv &
+  [ STEM < "근근히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근근히_adv_50_rel" ].
+
+근로-50 := ph-adv &
+  [ STEM < "근로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근로_adv_50_rel" ].
+
+근질근질-50 := ph-adv &
+  [ STEM < "근질근질" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근질근질_adv_50_rel" ].
+
+글썽-50 := ph-adv &
+  [ STEM < "글썽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글썽_adv_50_rel" ].
+
+금새-50 := ph-adv &
+  [ STEM < "금새" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_금새_adv_50_rel" ].
+
+금세-50 := ph-adv &
+  [ STEM < "금세" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_금세_adv_50_rel" ].
+
+급격히-50 := ph-adv &
+  [ STEM < "급격히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_급격히_adv_50_rel" ].
+
+급기야-50 := ph-adv &
+  [ STEM < "급기야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_급기야_adv_50_rel" ].
+
+급속히-50 := ph-adv &
+  [ STEM < "급속히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_급속히_adv_50_rel" ].
+
+급작스레-50 := ph-adv &
+  [ STEM < "급작스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_급작스레_adv_50_rel" ].
+
+급히-50 := ph-adv &
+  [ STEM < "급히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_급히_adv_50_rel" ].
+
+기계-50 := ph-adv &
+  [ STEM < "기계" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기계_adv_50_rel" ].
+
+기꺼이-50 := ph-adv &
+  [ STEM < "기꺼이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기꺼이_adv_50_rel" ].
+
+기껏-50 := ph-adv &
+  [ STEM < "기껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기껏_adv_50_rel" ].
+
+기껏해야-50 := ph-adv &
+  [ STEM < "기껏해야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기껏해야_adv_50_rel" ].
+
+기실-50 := ph-adv &
+  [ STEM < "기실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기실_adv_50_rel" ].
+
+기어이-50 := ph-adv &
+  [ STEM < "기어이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기어이_adv_50_rel" ].
+
+기어코-50 := ph-adv &
+  [ STEM < "기어코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기어코_adv_50_rel" ].
+
+기왕-50 := ph-adv &
+  [ STEM < "기왕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기왕_adv_50_rel" ].
+
+기왕에-50 := ph-adv &
+  [ STEM < "기왕에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기왕에_adv_50_rel" ].
+
+기왕이면-50 := ph-adv &
+  [ STEM < "기왕이면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기왕이면_adv_50_rel" ].
+
+기우뚱-50 := ph-adv &
+  [ STEM < "기우뚱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기우뚱_adv_50_rel" ].
+
+기웃-50 := ph-adv &
+  [ STEM < "기웃" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기웃_adv_50_rel" ].
+
+기웃기웃-50 := ph-adv &
+  [ STEM < "기웃기웃" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기웃기웃_adv_50_rel" ].
+
+기필코-50 := ph-adv &
+  [ STEM < "기필코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기필코_adv_50_rel" ].
+
+긴급히-50 := ph-adv &
+  [ STEM < "긴급히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_긴급히_adv_50_rel" ].
+
+긴밀히-50 := ph-adv &
+  [ STEM < "긴밀히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_긴밀히_adv_50_rel" ].
+
+긴히-50 := ph-adv &
+  [ STEM < "긴히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_긴히_adv_50_rel" ].
+
+길길이-50 := ph-adv &
+  [ STEM < "길길이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_길길이_adv_50_rel" ].
+
+길이길이-50 := ph-adv &
+  [ STEM < "길이길이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_길이길이_adv_50_rel" ].
+
+깊숙이-50 := ph-adv &
+  [ STEM < "깊숙이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깊숙이_adv_50_rel" ].
+
+깊숙히-50 := ph-adv &
+  [ STEM < "깊숙히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깊숙히_adv_50_rel" ].
+
+깊이깊이-50 := ph-adv &
+  [ STEM < "깊이깊이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깊이깊이_adv_50_rel" ].
+
+까딱-50 := ph-adv &
+  [ STEM < "까딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까딱_adv_50_rel" ].
+
+까르르-50 := ph-adv &
+  [ STEM < "까르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까르르_adv_50_rel" ].
+
+까마득히-50 := ph-adv &
+  [ STEM < "까마득히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까마득히_adv_50_rel" ].
+
+깍-50 := ph-adv &
+  [ STEM < "깍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깍_adv_50_rel" ].
+
+깍듯이-50 := ph-adv &
+  [ STEM < "깍듯이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깍듯이_adv_50_rel" ].
+
+깔깔-50 := ph-adv &
+  [ STEM < "깔깔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깔깔_adv_50_rel" ].
+
+깔깔깔-50 := ph-adv &
+  [ STEM < "깔깔깔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깔깔깔_adv_50_rel" ].
+
+깜깜-50 := ph-adv &
+  [ STEM < "깜깜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜깜_adv_50_rel" ].
+
+깜박-50 := ph-adv &
+  [ STEM < "깜박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜박_adv_50_rel" ].
+
+깜빡-50 := ph-adv &
+  [ STEM < "깜빡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜빡_adv_50_rel" ].
+
+깜작-50 := ph-adv &
+  [ STEM < "깜작" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜작_adv_50_rel" ].
+
+깜짝-50 := ph-adv &
+  [ STEM < "깜짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜짝_adv_50_rel" ].
+
+깜짝깜짝-50 := ph-adv &
+  [ STEM < "깜짝깜짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜짝깜짝_adv_50_rel" ].
+
+깡그리-50 := ph-adv &
+  [ STEM < "깡그리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깡그리_adv_50_rel" ].
+
+깡충깡충-50 := ph-adv &
+  [ STEM < "깡충깡충" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깡충깡충_adv_50_rel" ].
+
+깨끗이-50 := ph-adv &
+  [ STEM < "깨끗이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깨끗이_adv_50_rel" ].
+
+꺼끌꺼끌-50 := ph-adv &
+  [ STEM < "꺼끌꺼끌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꺼끌꺼끌_adv_50_rel" ].
+
+꺼칠꺼칠-50 := ph-adv &
+  [ STEM < "꺼칠꺼칠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꺼칠꺼칠_adv_50_rel" ].
+
+꺽-50 := ph-adv &
+  [ STEM < "꺽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꺽_adv_50_rel" ].
+
+꺽꺽-50 := ph-adv &
+  [ STEM < "꺽꺽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꺽꺽_adv_50_rel" ].
+
+껄껄-50 := ph-adv &
+  [ STEM < "껄껄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_껄껄_adv_50_rel" ].
+
+껑충-50 := ph-adv &
+  [ STEM < "껑충" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_껑충_adv_50_rel" ].
+
+껑충껑충-50 := ph-adv &
+  [ STEM < "껑충껑충" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_껑충껑충_adv_50_rel" ].
+
+꼬깃꼬깃-50 := ph-adv &
+  [ STEM < "꼬깃꼬깃" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬깃꼬깃_adv_50_rel" ].
+
+꼬끼오-50 := ph-adv &
+  [ STEM < "꼬끼오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬끼오_adv_50_rel" ].
+
+꼬박-50 := ph-adv &
+  [ STEM < "꼬박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬박_adv_50_rel" ].
+
+꼬박꼬박-50 := ph-adv &
+  [ STEM < "꼬박꼬박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬박꼬박_adv_50_rel" ].
+
+꼬불꼬불-50 := ph-adv &
+  [ STEM < "꼬불꼬불" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬불꼬불_adv_50_rel" ].
+
+꼬옥-50 := ph-adv &
+  [ STEM < "꼬옥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬옥_adv_50_rel" ].
+
+꼬질꼬질-50 := ph-adv &
+  [ STEM < "꼬질꼬질" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬질꼬질_adv_50_rel" ].
+
+꼬치꼬치-50 := ph-adv &
+  [ STEM < "꼬치꼬치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬치꼬치_adv_50_rel" ].
+
+꼭꼭-50 := ph-adv &
+  [ STEM < "꼭꼭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼭꼭_adv_50_rel" ].
+
+꼴깍-50 := ph-adv &
+  [ STEM < "꼴깍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼴깍_adv_50_rel" ].
+
+꼴딱-50 := ph-adv &
+  [ STEM < "꼴딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼴딱_adv_50_rel" ].
+
+꼼꼼-50 := ph-adv &
+  [ STEM < "꼼꼼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼼꼼_adv_50_rel" ].
+
+꼼꼼히-50 := ph-adv &
+  [ STEM < "꼼꼼히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼼꼼히_adv_50_rel" ].
+
+꼼짝-50 := ph-adv &
+  [ STEM < "꼼짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼼짝_adv_50_rel" ].
+
+꼼짝도-50 := ph-adv &
+  [ STEM < "꼼짝도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼼짝도_adv_50_rel" ].
+
+꼼짝없이-50 := ph-adv &
+  [ STEM < "꼼짝없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼼짝없이_adv_50_rel" ].
+
+꼿꼿이-50 := ph-adv &
+  [ STEM < "꼿꼿이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼿꼿이_adv_50_rel" ].
+
+꽁꽁-50 := ph-adv &
+  [ STEM < "꽁꽁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽁꽁_adv_50_rel" ].
+
+꽉-50 := ph-adv &
+  [ STEM < "꽉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽉_adv_50_rel" ].
+
+꽉꽉-50 := ph-adv &
+  [ STEM < "꽉꽉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽉꽉_adv_50_rel" ].
+
+꽝-50 := ph-adv &
+  [ STEM < "꽝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽝_adv_50_rel" ].
+
+꽤-50 := ph-adv &
+  [ STEM < "꽤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽤_adv_50_rel" ].
+
+꽤나-50 := ph-adv &
+  [ STEM < "꽤나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽤나_adv_50_rel" ].
+
+꽥-50 := ph-adv &
+  [ STEM < "꽥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽥_adv_50_rel" ].
+
+꽥꽥-50 := ph-adv &
+  [ STEM < "꽥꽥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽥꽥_adv_50_rel" ].
+
+꾸물꾸물-50 := ph-adv &
+  [ STEM < "꾸물꾸물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸물꾸물_adv_50_rel" ].
+
+꾸밈없이-50 := ph-adv &
+  [ STEM < "꾸밈없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸밈없이_adv_50_rel" ].
+
+꾸벅-50 := ph-adv &
+  [ STEM < "꾸벅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸벅_adv_50_rel" ].
+
+꾸벅꾸벅-50 := ph-adv &
+  [ STEM < "꾸벅꾸벅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸벅꾸벅_adv_50_rel" ].
+
+꾸불꾸불-50 := ph-adv &
+  [ STEM < "꾸불꾸불" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸불꾸불_adv_50_rel" ].
+
+꾸역꾸역-50 := ph-adv &
+  [ STEM < "꾸역꾸역" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸역꾸역_adv_50_rel" ].
+
+꾸준히-50 := ph-adv &
+  [ STEM < "꾸준히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸준히_adv_50_rel" ].
+
+꾹-50 := ph-adv &
+  [ STEM < "꾹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾹_adv_50_rel" ].
+
+꾹꾹-50 := ph-adv &
+  [ STEM < "꾹꾹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾹꾹_adv_50_rel" ].
+
+꿀꺽-50 := ph-adv &
+  [ STEM < "꿀꺽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿀꺽_adv_50_rel" ].
+
+꿀꺽꿀꺽-50 := ph-adv &
+  [ STEM < "꿀꺽꿀꺽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿀꺽꿀꺽_adv_50_rel" ].
+
+꿀떡-50 := ph-adv &
+  [ STEM < "꿀떡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿀떡_adv_50_rel" ].
+
+꿈쩍-50 := ph-adv &
+  [ STEM < "꿈쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿈쩍_adv_50_rel" ].
+
+꿈쩍도-50 := ph-adv &
+  [ STEM < "꿈쩍도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿈쩍도_adv_50_rel" ].
+
+꿈틀-50 := ph-adv &
+  [ STEM < "꿈틀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿈틀_adv_50_rel" ].
+
+꿈틀꿈틀-50 := ph-adv &
+  [ STEM < "꿈틀꿈틀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿈틀꿈틀_adv_50_rel" ].
+
+꿋꿋이-50 := ph-adv &
+  [ STEM < "꿋꿋이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿋꿋이_adv_50_rel" ].
+
+끄덕-50 := ph-adv &
+  [ STEM < "끄덕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끄덕_adv_50_rel" ].
+
+끄덕끄덕-50 := ph-adv &
+  [ STEM < "끄덕끄덕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끄덕끄덕_adv_50_rel" ].
+
+끄떡-50 := ph-adv &
+  [ STEM < "끄떡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끄떡_adv_50_rel" ].
+
+끈적끈적-50 := ph-adv &
+  [ STEM < "끈적끈적" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끈적끈적_adv_50_rel" ].
+
+끊임없이-50 := ph-adv &
+  [ STEM < "끊임없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끊임없이_adv_50_rel" ].
+
+끌끌-50 := ph-adv &
+  [ STEM < "끌끌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끌끌_adv_50_rel" ].
+
+끌끌끌-50 := ph-adv &
+  [ STEM < "끌끌끌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끌끌끌_adv_50_rel" ].
+
+끔찍이-50 := ph-adv &
+  [ STEM < "끔찍이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끔찍이_adv_50_rel" ].
+
+끔찍히-50 := ph-adv &
+  [ STEM < "끔찍히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끔찍히_adv_50_rel" ].
+
+끙끙-50 := ph-adv &
+  [ STEM < "끙끙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끙끙_adv_50_rel" ].
+
+끝끝내-50 := ph-adv &
+  [ STEM < "끝끝내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끝끝내_adv_50_rel" ].
+
+끝내-50 := ph-adv &
+  [ STEM < "끝내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끝내_adv_50_rel" ].
+
+끝없이-50 := ph-adv &
+  [ STEM < "끝없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끝없이_adv_50_rel" ].
+
+끼리끼리-50 := ph-adv &
+  [ STEM < "끼리끼리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끼리끼리_adv_50_rel" ].
+
+끽끽-50 := ph-adv &
+  [ STEM < "끽끽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끽끽_adv_50_rel" ].
+
+낄낄-50 := ph-adv &
+  [ STEM < "낄낄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낄낄_adv_50_rel" ].
+
+나긋나긋-50 := ph-adv &
+  [ STEM < "나긋나긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나긋나긋_adv_50_rel" ].
+
+나날이-50 := ph-adv &
+  [ STEM < "나날이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나날이_adv_50_rel" ].
+
+나란히-50 := ph-adv &
+  [ STEM < "나란히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나란히_adv_50_rel" ].
+
+나지막이-50 := ph-adv &
+  [ STEM < "나지막이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나지막이_adv_50_rel" ].
+
+나직나직-50 := ph-adv &
+  [ STEM < "나직나직" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나직나직_adv_50_rel" ].
+
+나직이-50 := ph-adv &
+  [ STEM < "나직이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나직이_adv_50_rel" ].
+
+난데없이-50 := ph-adv &
+  [ STEM < "난데없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_난데없이_adv_50_rel" ].
+
+난생-50 := ph-adv &
+  [ STEM < "난생" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_난생_adv_50_rel" ].
+
+날로-50 := ph-adv &
+  [ STEM < "날로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_날로_adv_50_rel" ].
+
+날름-50 := ph-adv &
+  [ STEM < "날름" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_날름_adv_50_rel" ].
+
+날마다-50 := ph-adv &
+  [ STEM < "날마다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_날마다_adv_50_rel" ].
+
+남김없이-50 := ph-adv &
+  [ STEM < "남김없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남김없이_adv_50_rel" ].
+
+남달리-50 := ph-adv &
+  [ STEM < "남달리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남달리_adv_50_rel" ].
+
+남몰래-50 := ph-adv &
+  [ STEM < "남몰래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남몰래_adv_50_rel" ].
+
+납작-50 := ph-adv &
+  [ STEM < "납작" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_납작_adv_50_rel" ].
+
+낱낱이-50 := ph-adv &
+  [ STEM < "낱낱이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낱낱이_adv_50_rel" ].
+
+내내-50 := ph-adv &
+  [ STEM < "내내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내내_adv_50_rel" ].
+
+내리-50 := ph-adv &
+  [ STEM < "내리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내리_adv_50_rel" ].
+
+내지-50 := ph-adv &
+  [ STEM < "내지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내지_adv_50_rel" ].
+
+내처-50 := ph-adv &
+  [ STEM < "내처" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내처_adv_50_rel" ].
+
+냅다-50 := ph-adv &
+  [ STEM < "냅다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_냅다_adv_50_rel" ].
+
+냉정히-50 := ph-adv &
+  [ STEM < "냉정히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_냉정히_adv_50_rel" ].
+
+냉큼-50 := ph-adv &
+  [ STEM < "냉큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_냉큼_adv_50_rel" ].
+
+너끈히-50 := ph-adv &
+  [ STEM < "너끈히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너끈히_adv_50_rel" ].
+
+너나없이-50 := ph-adv &
+  [ STEM < "너나없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너나없이_adv_50_rel" ].
+
+너덜너덜-50 := ph-adv &
+  [ STEM < "너덜너덜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너덜너덜_adv_50_rel" ].
+
+너도나도-50 := ph-adv &
+  [ STEM < "너도나도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너도나도_adv_50_rel" ].
+
+너무너무-50 := ph-adv &
+  [ STEM < "너무너무" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너무너무_adv_50_rel" ].
+
+너울너울-50 := ph-adv &
+  [ STEM < "너울너울" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너울너울_adv_50_rel" ].
+
+넉넉히-50 := ph-adv &
+  [ STEM < "넉넉히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넉넉히_adv_50_rel" ].
+
+넌지시-50 := ph-adv &
+  [ STEM < "넌지시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넌지시_adv_50_rel" ].
+
+널찍널찍-50 := ph-adv &
+  [ STEM < "널찍널찍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_널찍널찍_adv_50_rel" ].
+
+넙죽-50 := ph-adv &
+  [ STEM < "넙죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넙죽_adv_50_rel" ].
+
+노상-50 := ph-adv &
+  [ STEM < "노상" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_노상_adv_50_rel" ].
+
+높이-50 := ph-adv &
+  [ STEM < "높이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_높이_adv_50_rel" ].
+
+누누이-50 := ph-adv &
+  [ STEM < "누누이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_누누이_adv_50_rel" ].
+
+누차-50 := ph-adv &
+  [ STEM < "누차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_누차_adv_50_rel" ].
+
+눈치껏-50 := ph-adv &
+  [ STEM < "눈치껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈치껏_adv_50_rel" ].
+
+뉘엿뉘엿-50 := ph-adv &
+  [ STEM < "뉘엿뉘엿" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뉘엿뉘엿_adv_50_rel" ].
+
+느닷없이-50 := ph-adv &
+  [ STEM < "느닷없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_느닷없이_adv_50_rel" ].
+
+느릿느릿-50 := ph-adv &
+  [ STEM < "느릿느릿" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_느릿느릿_adv_50_rel" ].
+
+느지막이-50 := ph-adv &
+  [ STEM < "느지막이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_느지막이_adv_50_rel" ].
+
+늘-50 := ph-adv &
+  [ STEM < "늘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_늘_adv_50_rel" ].
+
+늘상-50 := ph-adv &
+  [ STEM < "늘상" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_늘상_adv_50_rel" ].
+
+능히-50 := ph-adv &
+  [ STEM < "능히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_능히_adv_50_rel" ].
+
+다급히-50 := ph-adv &
+  [ STEM < "다급히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다급히_adv_50_rel" ].
+
+다닥다닥-50 := ph-adv &
+  [ STEM < "다닥다닥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다닥다닥_adv_50_rel" ].
+
+다달이-50 := ph-adv &
+  [ STEM < "다달이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다달이_adv_50_rel" ].
+
+다름없이-50 := ph-adv &
+  [ STEM < "다름없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다름없이_adv_50_rel" ].
+
+다만-50 := ph-adv &
+  [ STEM < "다만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다만_adv_50_rel" ].
+
+다분히-50 := ph-adv &
+  [ STEM < "다분히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다분히_adv_50_rel" ].
+
+다소-50 := ph-adv &
+  [ STEM < "다소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다소_adv_50_rel" ].
+
+다소간-50 := ph-adv &
+  [ STEM < "다소간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다소간_adv_50_rel" ].
+
+다소곳이-50 := ph-adv &
+  [ STEM < "다소곳이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다소곳이_adv_50_rel" ].
+
+다시금-50 := ph-adv &
+  [ STEM < "다시금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다시금_adv_50_rel" ].
+
+다시는-50 := ph-adv &
+  [ STEM < "다시는" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다시는_adv_50_rel" ].
+
+다음날-50 := ph-adv &
+  [ STEM < "다음날" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다음날_adv_50_rel" ].
+
+다정히-50 := ph-adv &
+  [ STEM < "다정히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다정히_adv_50_rel" ].
+
+다짜고짜-50 := ph-adv &
+  [ STEM < "다짜고짜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다짜고짜_adv_50_rel" ].
+
+다짜고짜로-50 := ph-adv &
+  [ STEM < "다짜고짜로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다짜고짜로_adv_50_rel" ].
+
+다행히-50 := ph-adv &
+  [ STEM < "다행히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다행히_adv_50_rel" ].
+
+단-50 := ph-adv &
+  [ STEM < "단" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단_adv_50_rel" ].
+
+단번에-50 := ph-adv &
+  [ STEM < "단번에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단번에_adv_50_rel" ].
+
+단숨에-50 := ph-adv &
+  [ STEM < "단숨에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단숨에_adv_50_rel" ].
+
+단연-50 := ph-adv &
+  [ STEM < "단연" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단연_adv_50_rel" ].
+
+단연코-50 := ph-adv &
+  [ STEM < "단연코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단연코_adv_50_rel" ].
+
+단정히-50 := ph-adv &
+  [ STEM < "단정히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단정히_adv_50_rel" ].
+
+단지-50 := ph-adv &
+  [ STEM < "단지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단지_adv_50_rel" ].
+
+단호히-50 := ph-adv &
+  [ STEM < "단호히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단호히_adv_50_rel" ].
+
+달달-50 := ph-adv &
+  [ STEM < "달달" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달달_adv_50_rel" ].
+
+달랑-50 := ph-adv &
+  [ STEM < "달랑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달랑_adv_50_rel" ].
+
+담담히-50 := ph-adv &
+  [ STEM < "담담히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_담담히_adv_50_rel" ].
+
+담뿍-50 := ph-adv &
+  [ STEM < "담뿍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_담뿍_adv_50_rel" ].
+
+당당-50 := ph-adv &
+  [ STEM < "당당" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당당_adv_50_rel" ].
+
+당당히-50 := ph-adv &
+  [ STEM < "당당히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당당히_adv_50_rel" ].
+
+당분간-50 := ph-adv &
+  [ STEM < "당분간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당분간_adv_50_rel" ].
+
+당연히-50 := ph-adv &
+  [ STEM < "당연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당연히_adv_50_rel" ].
+
+당장-50 := ph-adv &
+  [ STEM < "당장" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당장_adv_50_rel" ].
+
+당장은-50 := ph-adv &
+  [ STEM < "당장은" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당장은_adv_50_rel" ].
+
+당최-50 := ph-adv &
+  [ STEM < "당최" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당최_adv_50_rel" ].
+
+당치-50 := ph-adv &
+  [ STEM < "당치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당치_adv_50_rel" ].
+
+대강-50 := ph-adv &
+  [ STEM < "대강" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대강_adv_50_rel" ].
+
+대개-50 := ph-adv &
+  [ STEM < "대개" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대개_adv_50_rel" ].
+
+대관절-50 := ph-adv &
+  [ STEM < "대관절" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대관절_adv_50_rel" ].
+
+대놓고-50 := ph-adv &
+  [ STEM < "대놓고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대놓고_adv_50_rel" ].
+
+대단히-50 := ph-adv &
+  [ STEM < "대단히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대단히_adv_50_rel" ].
+
+대대로-50 := ph-adv &
+  [ STEM < "대대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대대로_adv_50_rel" ].
+
+대뜸-50 := ph-adv &
+  [ STEM < "대뜸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대뜸_adv_50_rel" ].
+
+대략-50 := ph-adv &
+  [ STEM < "대략" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대략_adv_50_rel" ].
+
+대롱대롱-50 := ph-adv &
+  [ STEM < "대롱대롱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대롱대롱_adv_50_rel" ].
+
+대번에-50 := ph-adv &
+  [ STEM < "대번에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대번에_adv_50_rel" ].
+
+대부분-50 := ph-adv &
+  [ STEM < "대부분" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대부분_adv_50_rel" ].
+
+대저-50 := ph-adv &
+  [ STEM < "대저" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대저_adv_50_rel" ].
+
+대체-50 := ph-adv &
+  [ STEM < "대체" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대체_adv_50_rel" ].
+
+대체로-50 := ph-adv &
+  [ STEM < "대체로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대체로_adv_50_rel" ].
+
+대충-50 := ph-adv &
+  [ STEM < "대충" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대충_adv_50_rel" ].
+
+대충대충-50 := ph-adv &
+  [ STEM < "대충대충" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대충대충_adv_50_rel" ].
+
+대폭-50 := ph-adv &
+  [ STEM < "대폭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대폭_adv_50_rel" ].
+
+더구나-50 := ph-adv &
+  [ STEM < "더구나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더구나_adv_50_rel" ].
+
+더군다나-50 := ph-adv &
+  [ STEM < "더군다나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더군다나_adv_50_rel" ].
+
+더더구나-50 := ph-adv &
+  [ STEM < "더더구나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더더구나_adv_50_rel" ].
+
+더더욱-50 := ph-adv &
+  [ STEM < "더더욱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더더욱_adv_50_rel" ].
+
+더듬더듬-50 := ph-adv &
+  [ STEM < "더듬더듬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더듬더듬_adv_50_rel" ].
+
+더디-50 := ph-adv &
+  [ STEM < "더디" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더디_adv_50_rel" ].
+
+더러-50 := ph-adv &
+  [ STEM < "더러" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더러_adv_50_rel" ].
+
+더럭-50 := ph-adv &
+  [ STEM < "더럭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더럭_adv_50_rel" ].
+
+더없이-50 := ph-adv &
+  [ STEM < "더없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더없이_adv_50_rel" ].
+
+더우기-50 := ph-adv &
+  [ STEM < "더우기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더우기_adv_50_rel" ].
+
+더욱더-50 := ph-adv &
+  [ STEM < "더욱더" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더욱더_adv_50_rel" ].
+
+더욱이-50 := ph-adv &
+  [ STEM < "더욱이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더욱이_adv_50_rel" ].
+
+더한층-50 := ph-adv &
+  [ STEM < "더한층" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더한층_adv_50_rel" ].
+
+덕지덕지-50 := ph-adv &
+  [ STEM < "덕지덕지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덕지덕지_adv_50_rel" ].
+
+덜-50 := ph-adv &
+  [ STEM < "덜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덜_adv_50_rel" ].
+
+덜덜-50 := ph-adv &
+  [ STEM < "덜덜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덜덜_adv_50_rel" ].
+
+덜렁-50 := ph-adv &
+  [ STEM < "덜렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덜렁_adv_50_rel" ].
+
+덜컥-50 := ph-adv &
+  [ STEM < "덜컥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덜컥_adv_50_rel" ].
+
+덜컹-50 := ph-adv &
+  [ STEM < "덜컹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덜컹_adv_50_rel" ].
+
+덜컹덜컹-50 := ph-adv &
+  [ STEM < "덜컹덜컹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덜컹덜컹_adv_50_rel" ].
+
+덥석-50 := ph-adv &
+  [ STEM < "덥석" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덥석_adv_50_rel" ].
+
+덥썩-50 := ph-adv &
+  [ STEM < "덥썩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덥썩_adv_50_rel" ].
+
+덧없이-50 := ph-adv &
+  [ STEM < "덧없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덧없이_adv_50_rel" ].
+
+덩실덩실-50 := ph-adv &
+  [ STEM < "덩실덩실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덩실덩실_adv_50_rel" ].
+
+데굴데굴-50 := ph-adv &
+  [ STEM < "데굴데굴" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_데굴데굴_adv_50_rel" ].
+
+도대체-50 := ph-adv &
+  [ STEM < "도대체" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도대체_adv_50_rel" ].
+
+도란도란-50 := ph-adv &
+  [ STEM < "도란도란" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도란도란_adv_50_rel" ].
+
+도로-50 := ph-adv &
+  [ STEM < "도로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도로_adv_50_rel" ].
+
+도리어-50 := ph-adv &
+  [ STEM < "도리어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도리어_adv_50_rel" ].
+
+도무지-50 := ph-adv &
+  [ STEM < "도무지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도무지_adv_50_rel" ].
+
+도시-50 := ph-adv &
+  [ STEM < "도시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도시_adv_50_rel" ].
+
+도저히-50 := ph-adv &
+  [ STEM < "도저히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도저히_adv_50_rel" ].
+
+도중-50 := ph-adv &
+  [ STEM < "도중" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도중_adv_50_rel" ].
+
+도통-50 := ph-adv &
+  [ STEM < "도통" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도통_adv_50_rel" ].
+
+돈독히-50 := ph-adv &
+  [ STEM < "돈독히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돈독히_adv_50_rel" ].
+
+돌돌-50 := ph-adv &
+  [ STEM < "돌돌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌돌_adv_50_rel" ].
+
+돌연-50 := ph-adv &
+  [ STEM < "돌연" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌연_adv_50_rel" ].
+
+돌연히-50 := ph-adv &
+  [ STEM < "돌연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌연히_adv_50_rel" ].
+
+동동-50 := ph-adv &
+  [ STEM < "동동" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_동동_adv_50_rel" ].
+
+되게-50 := ph-adv &
+  [ STEM < "되게" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되게_adv_50_rel" ].
+
+되도록-50 := ph-adv &
+  [ STEM < "되도록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되도록_adv_50_rel" ].
+
+되레-50 := ph-adv &
+  [ STEM < "되레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되레_adv_50_rel" ].
+
+된통-50 := ph-adv &
+  [ STEM < "된통" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_된통_adv_50_rel" ].
+
+두고두고-50 := ph-adv &
+  [ STEM < "두고두고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두고두고_adv_50_rel" ].
+
+두근두근-50 := ph-adv &
+  [ STEM < "두근두근" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두근두근_adv_50_rel" ].
+
+두둑이-50 := ph-adv &
+  [ STEM < "두둑이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두둑이_adv_50_rel" ].
+
+두둥실-50 := ph-adv &
+  [ STEM < "두둥실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두둥실_adv_50_rel" ].
+
+두런두런-50 := ph-adv &
+  [ STEM < "두런두런" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두런두런_adv_50_rel" ].
+
+두루-50 := ph-adv &
+  [ STEM < "두루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두루_adv_50_rel" ].
+
+두루두루-50 := ph-adv &
+  [ STEM < "두루두루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두루두루_adv_50_rel" ].
+
+두말없이-50 := ph-adv &
+  [ STEM < "두말없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두말없이_adv_50_rel" ].
+
+두서없이-50 := ph-adv &
+  [ STEM < "두서없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두서없이_adv_50_rel" ].
+
+둘둘-50 := ph-adv &
+  [ STEM < "둘둘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘둘_adv_50_rel" ].
+
+둥글둥글-50 := ph-adv &
+  [ STEM < "둥글둥글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둥글둥글_adv_50_rel" ].
+
+둥둥-50 := ph-adv &
+  [ STEM < "둥둥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둥둥_adv_50_rel" ].
+
+둥실-50 := ph-adv &
+  [ STEM < "둥실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둥실_adv_50_rel" ].
+
+뒤뚱뒤뚱-50 := ph-adv &
+  [ STEM < "뒤뚱뒤뚱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤뚱뒤뚱_adv_50_rel" ].
+
+뒤미처-50 := ph-adv &
+  [ STEM < "뒤미처" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤미처_adv_50_rel" ].
+
+뒤숭숭-50 := ph-adv &
+  [ STEM < "뒤숭숭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤숭숭_adv_50_rel" ].
+
+드디어-50 := ph-adv &
+  [ STEM < "드디어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_드디어_adv_50_rel" ].
+
+드르렁드르렁-50 := ph-adv &
+  [ STEM < "드르렁드르렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_드르렁드르렁_adv_50_rel" ].
+
+드르륵-50 := ph-adv &
+  [ STEM < "드르륵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_드르륵_adv_50_rel" ].
+
+드문드문-50 := ph-adv &
+  [ STEM < "드문드문" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_드문드문_adv_50_rel" ].
+
+득-50 := ph-adv &
+  [ STEM < "득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_득_adv_50_rel" ].
+
+득달같이-50 := ph-adv &
+  [ STEM < "득달같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_득달같이_adv_50_rel" ].
+
+든든히-50 := ph-adv &
+  [ STEM < "든든히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_든든히_adv_50_rel" ].
+
+들락날락-50 := ph-adv &
+  [ STEM < "들락날락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들락날락_adv_50_rel" ].
+
+들입다-50 := ph-adv &
+  [ STEM < "들입다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들입다_adv_50_rel" ].
+
+들쭉날쭉-50 := ph-adv &
+  [ STEM < "들쭉날쭉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들쭉날쭉_adv_50_rel" ].
+
+듬뿍-50 := ph-adv &
+  [ STEM < "듬뿍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_듬뿍_adv_50_rel" ].
+
+듬성듬성-50 := ph-adv &
+  [ STEM < "듬성듬성" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_듬성듬성_adv_50_rel" ].
+
+등한히-50 := ph-adv &
+  [ STEM < "등한히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_등한히_adv_50_rel" ].
+
+딩동-50 := ph-adv &
+  [ STEM < "딩동" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_딩동_adv_50_rel" ].
+
+따끈따끈-50 := ph-adv &
+  [ STEM < "따끈따끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따끈따끈_adv_50_rel" ].
+
+따끔-50 := ph-adv &
+  [ STEM < "따끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따끔_adv_50_rel" ].
+
+따끔따끔-50 := ph-adv &
+  [ STEM < "따끔따끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따끔따끔_adv_50_rel" ].
+
+따뜻이-50 := ph-adv &
+  [ STEM < "따뜻이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따뜻이_adv_50_rel" ].
+
+따로-50 := ph-adv &
+  [ STEM < "따로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따로_adv_50_rel" ].
+
+따로따로-50 := ph-adv &
+  [ STEM < "따로따로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따로따로_adv_50_rel" ].
+
+따로이-50 := ph-adv &
+  [ STEM < "따로이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따로이_adv_50_rel" ].
+
+따루-50 := ph-adv &
+  [ STEM < "따루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따루_adv_50_rel" ].
+
+따르릉-50 := ph-adv &
+  [ STEM < "따르릉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따르릉_adv_50_rel" ].
+
+딱-50 := ph-adv &
+  [ STEM < "딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_딱_adv_50_rel" ].
+
+딱딱-50 := ph-adv &
+  [ STEM < "딱딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_딱딱_adv_50_rel" ].
+
+딱히-50 := ph-adv &
+  [ STEM < "딱히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_딱히_adv_50_rel" ].
+
+딴은-50 := ph-adv &
+  [ STEM < "딴은" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_딴은_adv_50_rel" ].
+
+딸꾹-50 := ph-adv &
+  [ STEM < "딸꾹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_딸꾹_adv_50_rel" ].
+
+때때로-50 := ph-adv &
+  [ STEM < "때때로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때때로_adv_50_rel" ].
+
+때로-50 := ph-adv &
+  [ STEM < "때로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때로_adv_50_rel" ].
+
+때마침-50 := ph-adv &
+  [ STEM < "때마침" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때마침_adv_50_rel" ].
+
+땜시-50 := ph-adv &
+  [ STEM < "땜시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_땜시_adv_50_rel" ].
+
+땡-50 := ph-adv &
+  [ STEM < "땡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_땡_adv_50_rel" ].
+
+떠듬떠듬-50 := ph-adv &
+  [ STEM < "떠듬떠듬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠듬떠듬_adv_50_rel" ].
+
+떡-50 := ph-adv &
+  [ STEM < "떡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떡_adv_50_rel" ].
+
+떳떳이-50 := ph-adv &
+  [ STEM < "떳떳이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떳떳이_adv_50_rel" ].
+
+또-50 := ph-adv &
+  [ STEM < "또" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_또_adv_50_rel" ].
+
+또는-50 := ph-adv &
+  [ STEM < "또는" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_또는_adv_50_rel" ].
+
+또다시-50 := ph-adv &
+  [ STEM < "또다시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_또다시_adv_50_rel" ].
+
+또랑또랑-50 := ph-adv &
+  [ STEM < "또랑또랑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_또랑또랑_adv_50_rel" ].
+
+또렷이-50 := ph-adv &
+  [ STEM < "또렷이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_또렷이_adv_50_rel" ].
+
+또르르-50 := ph-adv &
+  [ STEM < "또르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_또르르_adv_50_rel" ].
+
+또박또박-50 := ph-adv &
+  [ STEM < "또박또박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_또박또박_adv_50_rel" ].
+
+또한-50 := ph-adv &
+  [ STEM < "또한" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_또한_adv_50_rel" ].
+
+똑-50 := ph-adv &
+  [ STEM < "똑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_똑_adv_50_rel" ].
+
+똑같이-50 := ph-adv &
+  [ STEM < "똑같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_똑같이_adv_50_rel" ].
+
+똑똑-50 := ph-adv &
+  [ STEM < "똑똑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_똑똑_adv_50_rel" ].
+
+똑똑히-50 := ph-adv &
+  [ STEM < "똑똑히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_똑똑히_adv_50_rel" ].
+
+똑바로-50 := ph-adv &
+  [ STEM < "똑바로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_똑바로_adv_50_rel" ].
+
+똘똘-50 := ph-adv &
+  [ STEM < "똘똘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_똘똘_adv_50_rel" ].
+
+뚜-50 := ph-adv &
+  [ STEM < "뚜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뚜_adv_50_rel" ].
+
+뚜렷이-50 := ph-adv &
+  [ STEM < "뚜렷이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뚜렷이_adv_50_rel" ].
+
+뚜벅뚜벅-50 := ph-adv &
+  [ STEM < "뚜벅뚜벅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뚜벅뚜벅_adv_50_rel" ].
+
+뚝-50 := ph-adv &
+  [ STEM < "뚝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뚝_adv_50_rel" ].
+
+뚝딱-50 := ph-adv &
+  [ STEM < "뚝딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뚝딱_adv_50_rel" ].
+
+뚝뚝-50 := ph-adv &
+  [ STEM < "뚝뚝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뚝뚝_adv_50_rel" ].
+
+뚱뚱-50 := ph-adv &
+  [ STEM < "뚱뚱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뚱뚱_adv_50_rel" ].
+
+뜨끈뜨끈-50 := ph-adv &
+  [ STEM < "뜨끈뜨끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜨끈뜨끈_adv_50_rel" ].
+
+뜨끔-50 := ph-adv &
+  [ STEM < "뜨끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜨끔_adv_50_rel" ].
+
+뜬금없이-50 := ph-adv &
+  [ STEM < "뜬금없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜬금없이_adv_50_rel" ].
+
+뜻대로-50 := ph-adv &
+  [ STEM < "뜻대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜻대로_adv_50_rel" ].
+
+뜻밖에-50 := ph-adv &
+  [ STEM < "뜻밖에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜻밖에_adv_50_rel" ].
+
+띄엄띄엄-50 := ph-adv &
+  [ STEM < "띄엄띄엄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_띄엄띄엄_adv_50_rel" ].
+
+띠-50 := ph-adv &
+  [ STEM < "띠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_띠_adv_50_rel" ].
+
+띵-50 := ph-adv &
+  [ STEM < "띵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_띵_adv_50_rel" ].
+
+마구-50 := ph-adv &
+  [ STEM < "마구" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마구_adv_50_rel" ].
+
+마냥-50 := ph-adv &
+  [ STEM < "마냥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마냥_adv_50_rel" ].
+
+마악-50 := ph-adv &
+  [ STEM < "마악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마악_adv_50_rel" ].
+
+마음껏-50 := ph-adv &
+  [ STEM < "마음껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마음껏_adv_50_rel" ].
+
+마음대로-50 := ph-adv &
+  [ STEM < "마음대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마음대로_adv_50_rel" ].
+
+마저-50 := ph-adv &
+  [ STEM < "마저" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마저_adv_50_rel" ].
+
+마주-50 := ph-adv &
+  [ STEM < "마주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마주_adv_50_rel" ].
+
+마치-50 := ph-adv &
+  [ STEM < "마치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마치_adv_50_rel" ].
+
+마침-50 := ph-adv &
+  [ STEM < "마침" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마침_adv_50_rel" ].
+
+막-50 := ph-adv &
+  [ STEM < "막" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_막_adv_50_rel" ].
+
+막상-50 := ph-adv &
+  [ STEM < "막상" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_막상_adv_50_rel" ].
+
+막연히-50 := ph-adv &
+  [ STEM < "막연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_막연히_adv_50_rel" ].
+
+만날-50 := ph-adv &
+  [ STEM < "만날" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만날_adv_50_rel" ].
+
+만만히-50 := ph-adv &
+  [ STEM < "만만히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만만히_adv_50_rel" ].
+
+만약-50 := ph-adv &
+  [ STEM < "만약" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만약_adv_50_rel" ].
+
+만일-50 := ph-adv &
+  [ STEM < "만일" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만일_adv_50_rel" ].
+
+많이는-50 := ph-adv &
+  [ STEM < "많이는" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_많이는_adv_50_rel" ].
+
+말끄러미-50 := ph-adv &
+  [ STEM < "말끄러미" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말끄러미_adv_50_rel" ].
+
+말끔히-50 := ph-adv &
+  [ STEM < "말끔히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말끔히_adv_50_rel" ].
+
+말똥말똥-50 := ph-adv &
+  [ STEM < "말똥말똥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말똥말똥_adv_50_rel" ].
+
+말랑말랑-50 := ph-adv &
+  [ STEM < "말랑말랑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말랑말랑_adv_50_rel" ].
+
+말없이-50 := ph-adv &
+  [ STEM < "말없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말없이_adv_50_rel" ].
+
+말짱-50 := ph-adv &
+  [ STEM < "말짱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말짱_adv_50_rel" ].
+
+말하자면-50 := ph-adv &
+  [ STEM < "말하자면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말하자면_adv_50_rel" ].
+
+맘껏-50 := ph-adv &
+  [ STEM < "맘껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맘껏_adv_50_rel" ].
+
+맘대로-50 := ph-adv &
+  [ STEM < "맘대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맘대로_adv_50_rel" ].
+
+망연히-50 := ph-adv &
+  [ STEM < "망연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_망연히_adv_50_rel" ].
+
+매달-50 := ph-adv &
+  [ STEM < "매달" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매달_adv_50_rel" ].
+
+매번-50 := ph-adv &
+  [ STEM < "매번" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매번_adv_50_rel" ].
+
+매시-50 := ph-adv &
+  [ STEM < "매시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매시_adv_50_rel" ].
+
+매양-50 := ph-adv &
+  [ STEM < "매양" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매양_adv_50_rel" ].
+
+매주-50 := ph-adv &
+  [ STEM < "매주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매주_adv_50_rel" ].
+
+매해-50 := ph-adv &
+  [ STEM < "매해" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매해_adv_50_rel" ].
+
+매회-50 := ph-adv &
+  [ STEM < "매회" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매회_adv_50_rel" ].
+
+맥없이-50 := ph-adv &
+  [ STEM < "맥없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맥없이_adv_50_rel" ].
+
+맨날-50 := ph-adv &
+  [ STEM < "맨날" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맨날_adv_50_rel" ].
+
+맹렬히-50 := ph-adv &
+  [ STEM < "맹렬히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맹렬히_adv_50_rel" ].
+
+맹세코-50 := ph-adv &
+  [ STEM < "맹세코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맹세코_adv_50_rel" ].
+
+머뭇머뭇-50 := ph-adv &
+  [ STEM < "머뭇머뭇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_머뭇머뭇_adv_50_rel" ].
+
+머지않아-50 := ph-adv &
+  [ STEM < "머지않아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_머지않아_adv_50_rel" ].
+
+멀거니-50 := ph-adv &
+  [ STEM < "멀거니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멀거니_adv_50_rel" ].
+
+멀뚱멀뚱-50 := ph-adv &
+  [ STEM < "멀뚱멀뚱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멀뚱멀뚱_adv_50_rel" ].
+
+멀뚱히-50 := ph-adv &
+  [ STEM < "멀뚱히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멀뚱히_adv_50_rel" ].
+
+멀리멀리-50 := ph-adv &
+  [ STEM < "멀리멀리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멀리멀리_adv_50_rel" ].
+
+멀쩡히-50 := ph-adv &
+  [ STEM < "멀쩡히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멀쩡히_adv_50_rel" ].
+
+멀찌감치-50 := ph-adv &
+  [ STEM < "멀찌감치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멀찌감치_adv_50_rel" ].
+
+멀찍이-50 := ph-adv &
+  [ STEM < "멀찍이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멀찍이_adv_50_rel" ].
+
+멈칫-50 := ph-adv &
+  [ STEM < "멈칫" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멈칫_adv_50_rel" ].
+
+멋대로-50 := ph-adv &
+  [ STEM < "멋대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멋대로_adv_50_rel" ].
+
+멍청히-50 := ph-adv &
+  [ STEM < "멍청히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멍청히_adv_50_rel" ].
+
+메슥메슥-50 := ph-adv &
+  [ STEM < "메슥메슥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_메슥메슥_adv_50_rel" ].
+
+면면히-50 := ph-adv &
+  [ STEM < "면면히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_면면히_adv_50_rel" ].
+
+면밀히-50 := ph-adv &
+  [ STEM < "면밀히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_면밀히_adv_50_rel" ].
+
+명백히-50 := ph-adv &
+  [ STEM < "명백히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_명백히_adv_50_rel" ].
+
+명확히-50 := ph-adv &
+  [ STEM < "명확히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_명확히_adv_50_rel" ].
+
+모다-50 := ph-adv &
+  [ STEM < "모다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모다_adv_50_rel" ].
+
+모락모락-50 := ph-adv &
+  [ STEM < "모락모락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모락모락_adv_50_rel" ].
+
+모로-50 := ph-adv &
+  [ STEM < "모로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모로_adv_50_rel" ].
+
+모름지기-50 := ph-adv &
+  [ STEM < "모름지기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모름지기_adv_50_rel" ].
+
+모조리-50 := ph-adv &
+  [ STEM < "모조리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모조리_adv_50_rel" ].
+
+모쪼록-50 := ph-adv &
+  [ STEM < "모쪼록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모쪼록_adv_50_rel" ].
+
+모처럼-50 := ph-adv &
+  [ STEM < "모처럼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모처럼_adv_50_rel" ].
+
+목청껏-50 := ph-adv &
+  [ STEM < "목청껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_목청껏_adv_50_rel" ].
+
+몰래-50 := ph-adv &
+  [ STEM < "몰래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰래_adv_50_rel" ].
+
+몸소-50 := ph-adv &
+  [ STEM < "몸소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몸소_adv_50_rel" ].
+
+못내-50 := ph-adv &
+  [ STEM < "못내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_못내_adv_50_rel" ].
+
+못다-50 := ph-adv &
+  [ STEM < "못다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_못다_adv_50_rel" ].
+
+몽땅-50 := ph-adv &
+  [ STEM < "몽땅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몽땅_adv_50_rel" ].
+
+무궁무궁-50 := ph-adv &
+  [ STEM < "무궁무궁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무궁무궁_adv_50_rel" ].
+
+무난히-50 := ph-adv &
+  [ STEM < "무난히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무난히_adv_50_rel" ].
+
+무단히-50 := ph-adv &
+  [ STEM < "무단히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무단히_adv_50_rel" ].
+
+무던히-50 := ph-adv &
+  [ STEM < "무던히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무던히_adv_50_rel" ].
+
+무럭무럭-50 := ph-adv &
+  [ STEM < "무럭무럭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무럭무럭_adv_50_rel" ].
+
+무려-50 := ph-adv &
+  [ STEM < "무려" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무려_adv_50_rel" ].
+
+무릇-50 := ph-adv &
+  [ STEM < "무릇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무릇_adv_50_rel" ].
+
+무사히-50 := ph-adv &
+  [ STEM < "무사히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무사히_adv_50_rel" ].
+
+무수히-50 := ph-adv &
+  [ STEM < "무수히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무수히_adv_50_rel" ].
+
+무시로-50 := ph-adv &
+  [ STEM < "무시로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무시로_adv_50_rel" ].
+
+무심코-50 := ph-adv &
+  [ STEM < "무심코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무심코_adv_50_rel" ].
+
+무심히-50 := ph-adv &
+  [ STEM < "무심히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무심히_adv_50_rel" ].
+
+무연히-50 := ph-adv &
+  [ STEM < "무연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무연히_adv_50_rel" ].
+
+무제한-50 := ph-adv &
+  [ STEM < "무제한" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무제한_adv_50_rel" ].
+
+무조건-50 := ph-adv &
+  [ STEM < "무조건" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무조건_adv_50_rel" ].
+
+무지-50 := ph-adv &
+  [ STEM < "무지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무지_adv_50_rel" ].
+
+무지무지-50 := ph-adv &
+  [ STEM < "무지무지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무지무지_adv_50_rel" ].
+
+무진-50 := ph-adv &
+  [ STEM < "무진" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무진_adv_50_rel" ].
+
+무참히-50 := ph-adv &
+  [ STEM < "무참히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무참히_adv_50_rel" ].
+
+무척-50 := ph-adv &
+  [ STEM < "무척" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무척_adv_50_rel" ].
+
+무척이나-50 := ph-adv &
+  [ STEM < "무척이나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무척이나_adv_50_rel" ].
+
+무턱대고-50 := ph-adv &
+  [ STEM < "무턱대고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무턱대고_adv_50_rel" ].
+
+무한정-50 := ph-adv &
+  [ STEM < "무한정" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무한정_adv_50_rel" ].
+
+무한히-50 := ph-adv &
+  [ STEM < "무한히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무한히_adv_50_rel" ].
+
+묵묵히-50 := ph-adv &
+  [ STEM < "묵묵히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_묵묵히_adv_50_rel" ].
+
+문득문득-50 := ph-adv &
+  [ STEM < "문득문득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문득문득_adv_50_rel" ].
+
+문제없이-50 := ph-adv &
+  [ STEM < "문제없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문제없이_adv_50_rel" ].
+
+물끄러미-50 := ph-adv &
+  [ STEM < "물끄러미" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물끄러미_adv_50_rel" ].
+
+물론-50 := ph-adv &
+  [ STEM < "물론" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물론_adv_50_rel" ].
+
+물씬-50 := ph-adv &
+  [ STEM < "물씬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물씬_adv_50_rel" ].
+
+뭉게뭉게-50 := ph-adv &
+  [ STEM < "뭉게뭉게" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭉게뭉게_adv_50_rel" ].
+
+뭉뚝-50 := ph-adv &
+  [ STEM < "뭉뚝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭉뚝_adv_50_rel" ].
+
+뭉클-50 := ph-adv &
+  [ STEM < "뭉클" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭉클_adv_50_rel" ].
+
+뭉클뭉클-50 := ph-adv &
+  [ STEM < "뭉클뭉클" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭉클뭉클_adv_50_rel" ].
+
+뭉툭-50 := ph-adv &
+  [ STEM < "뭉툭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭉툭_adv_50_rel" ].
+
+뭐-50 := ph-adv &
+  [ STEM < "뭐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭐_adv_50_rel" ].
+
+미리-50 := ph-adv &
+  [ STEM < "미리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미리_adv_50_rel" ].
+
+미리미리-50 := ph-adv &
+  [ STEM < "미리미리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미리미리_adv_50_rel" ].
+
+미상불-50 := ph-adv &
+  [ STEM < "미상불" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미상불_adv_50_rel" ].
+
+미처-50 := ph-adv &
+  [ STEM < "미처" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미처_adv_50_rel" ].
+
+밀접히-50 := ph-adv &
+  [ STEM < "밀접히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밀접히_adv_50_rel" ].
+
+및-50 := ph-adv &
+  [ STEM < "및" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_및_adv_50_rel" ].
+
+바들바들-50 := ph-adv &
+  [ STEM < "바들바들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바들바들_adv_50_rel" ].
+
+바락-50 := ph-adv &
+  [ STEM < "바락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바락_adv_50_rel" ].
+
+바락바락-50 := ph-adv &
+  [ STEM < "바락바락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바락바락_adv_50_rel" ].
+
+바루-50 := ph-adv &
+  [ STEM < "바루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바루_adv_50_rel" ].
+
+바르르-50 := ph-adv &
+  [ STEM < "바르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바르르_adv_50_rel" ].
+
+바삐-50 := ph-adv &
+  [ STEM < "바삐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바삐_adv_50_rel" ].
+
+바삭-50 := ph-adv &
+  [ STEM < "바삭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바삭_adv_50_rel" ].
+
+바삭바삭-50 := ph-adv &
+  [ STEM < "바삭바삭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바삭바삭_adv_50_rel" ].
+
+바싹-50 := ph-adv &
+  [ STEM < "바싹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바싹_adv_50_rel" ].
+
+바야흐로-50 := ph-adv &
+  [ STEM < "바야흐로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바야흐로_adv_50_rel" ].
+
+바이-50 := ph-adv &
+  [ STEM < "바이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바이_adv_50_rel" ].
+
+바짝-50 := ph-adv &
+  [ STEM < "바짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바짝_adv_50_rel" ].
+
+바짝바짝-50 := ph-adv &
+  [ STEM < "바짝바짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바짝바짝_adv_50_rel" ].
+
+바투-50 := ph-adv &
+  [ STEM < "바투" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바투_adv_50_rel" ].
+
+박박-50 := ph-adv &
+  [ STEM < "박박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_박박_adv_50_rel" ].
+
+반가이-50 := ph-adv &
+  [ STEM < "반가이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반가이_adv_50_rel" ].
+
+반드시-50 := ph-adv &
+  [ STEM < "반드시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반드시_adv_50_rel" ].
+
+반들반들-50 := ph-adv &
+  [ STEM < "반들반들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반들반들_adv_50_rel" ].
+
+반듯이-50 := ph-adv &
+  [ STEM < "반듯이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반듯이_adv_50_rel" ].
+
+반면-50 := ph-adv &
+  [ STEM < "반면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반면_adv_50_rel" ].
+
+반질반질-50 := ph-adv &
+  [ STEM < "반질반질" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반질반질_adv_50_rel" ].
+
+반짝-50 := ph-adv &
+  [ STEM < "반짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반짝_adv_50_rel" ].
+
+반짝반짝-50 := ph-adv &
+  [ STEM < "반짝반짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반짝반짝_adv_50_rel" ].
+
+발그레-50 := ph-adv &
+  [ STEM < "발그레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발그레_adv_50_rel" ].
+
+발그스레-50 := ph-adv &
+  [ STEM < "발그스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발그스레_adv_50_rel" ].
+
+발끈-50 := ph-adv &
+  [ STEM < "발끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발끈_adv_50_rel" ].
+
+발딱-50 := ph-adv &
+  [ STEM < "발딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발딱_adv_50_rel" ].
+
+발칵-50 := ph-adv &
+  [ STEM < "발칵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발칵_adv_50_rel" ].
+
+밝히-50 := ph-adv &
+  [ STEM < "밝히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밝히_adv_50_rel" ].
+
+밤낮-50 := ph-adv &
+  [ STEM < "밤낮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밤낮_adv_50_rel" ].
+
+밤낮없이-50 := ph-adv &
+  [ STEM < "밤낮없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밤낮없이_adv_50_rel" ].
+
+밤새껏-50 := ph-adv &
+  [ STEM < "밤새껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밤새껏_adv_50_rel" ].
+
+방긋-50 := ph-adv &
+  [ STEM < "방긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_방긋_adv_50_rel" ].
+
+배배-50 := ph-adv &
+  [ STEM < "배배" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배배_adv_50_rel" ].
+
+배불리-50 := ph-adv &
+  [ STEM < "배불리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배불리_adv_50_rel" ].
+
+배시시-50 := ph-adv &
+  [ STEM < "배시시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배시시_adv_50_rel" ].
+
+뱅글뱅글-50 := ph-adv &
+  [ STEM < "뱅글뱅글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뱅글뱅글_adv_50_rel" ].
+
+뱅뱅-50 := ph-adv &
+  [ STEM < "뱅뱅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뱅뱅_adv_50_rel" ].
+
+버럭-50 := ph-adv &
+  [ STEM < "버럭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버럭_adv_50_rel" ].
+
+버젓이-50 := ph-adv &
+  [ STEM < "버젓이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버젓이_adv_50_rel" ].
+
+벅벅-50 := ph-adv &
+  [ STEM < "벅벅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벅벅_adv_50_rel" ].
+
+번드르르-50 := ph-adv &
+  [ STEM < "번드르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번드르르_adv_50_rel" ].
+
+번들번들-50 := ph-adv &
+  [ STEM < "번들번들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번들번들_adv_50_rel" ].
+
+번번이-50 := ph-adv &
+  [ STEM < "번번이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번번이_adv_50_rel" ].
+
+번번히-50 := ph-adv &
+  [ STEM < "번번히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번번히_adv_50_rel" ].
+
+번연히-50 := ph-adv &
+  [ STEM < "번연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번연히_adv_50_rel" ].
+
+번지르르-50 := ph-adv &
+  [ STEM < "번지르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번지르르_adv_50_rel" ].
+
+번쩍-50 := ph-adv &
+  [ STEM < "번쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번쩍_adv_50_rel" ].
+
+번쩍번쩍-50 := ph-adv &
+  [ STEM < "번쩍번쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번쩍번쩍_adv_50_rel" ].
+
+벌떡-50 := ph-adv &
+  [ STEM < "벌떡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌떡_adv_50_rel" ].
+
+벌렁-50 := ph-adv &
+  [ STEM < "벌렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌렁_adv_50_rel" ].
+
+벌벌-50 := ph-adv &
+  [ STEM < "벌벌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌벌_adv_50_rel" ].
+
+벌컥-50 := ph-adv &
+  [ STEM < "벌컥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌컥_adv_50_rel" ].
+
+벌컥벌컥-50 := ph-adv &
+  [ STEM < "벌컥벌컥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌컥벌컥_adv_50_rel" ].
+
+벙긋-50 := ph-adv &
+  [ STEM < "벙긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벙긋_adv_50_rel" ].
+
+변변히-50 := ph-adv &
+  [ STEM < "변변히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_변변히_adv_50_rel" ].
+
+변함없이-50 := ph-adv &
+  [ STEM < "변함없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_변함없이_adv_50_rel" ].
+
+별달리-50 := ph-adv &
+  [ STEM < "별달리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별달리_adv_50_rel" ].
+
+별로-50 := ph-adv &
+  [ STEM < "별로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별로_adv_50_rel" ].
+
+별반-50 := ph-adv &
+  [ STEM < "별반" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별반_adv_50_rel" ].
+
+별안간-50 := ph-adv &
+  [ STEM < "별안간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별안간_adv_50_rel" ].
+
+보들보들-50 := ph-adv &
+  [ STEM < "보들보들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보들보들_adv_50_rel" ].
+
+보송보송-50 := ph-adv &
+  [ STEM < "보송보송" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보송보송_adv_50_rel" ].
+
+보아하니-50 := ph-adv &
+  [ STEM < "보아하니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보아하니_adv_50_rel" ].
+
+볼록-50 := ph-adv &
+  [ STEM < "볼록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_볼록_adv_50_rel" ].
+
+봉긋-50 := ph-adv &
+  [ STEM < "봉긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_봉긋_adv_50_rel" ].
+
+부글부글-50 := ph-adv &
+  [ STEM < "부글부글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부글부글_adv_50_rel" ].
+
+부단히-50 := ph-adv &
+  [ STEM < "부단히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부단히_adv_50_rel" ].
+
+부득부득-50 := ph-adv &
+  [ STEM < "부득부득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부득부득_adv_50_rel" ].
+
+부득이-50 := ph-adv &
+  [ STEM < "부득이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부득이_adv_50_rel" ].
+
+부들부들-50 := ph-adv &
+  [ STEM < "부들부들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부들부들_adv_50_rel" ].
+
+부디-50 := ph-adv &
+  [ STEM < "부디" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부디_adv_50_rel" ].
+
+부랴부랴-50 := ph-adv &
+  [ STEM < "부랴부랴" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부랴부랴_adv_50_rel" ].
+
+부러-50 := ph-adv &
+  [ STEM < "부러" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부러_adv_50_rel" ].
+
+부르르-50 := ph-adv &
+  [ STEM < "부르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부르르_adv_50_rel" ].
+
+부리나케-50 := ph-adv &
+  [ STEM < "부리나케" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부리나케_adv_50_rel" ].
+
+부리부리-50 := ph-adv &
+  [ STEM < "부리부리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부리부리_adv_50_rel" ].
+
+부산히-50 := ph-adv &
+  [ STEM < "부산히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부산히_adv_50_rel" ].
+
+부스스-50 := ph-adv &
+  [ STEM < "부스스" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부스스_adv_50_rel" ].
+
+부슬부슬-50 := ph-adv &
+  [ STEM < "부슬부슬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부슬부슬_adv_50_rel" ].
+
+부시시-50 := ph-adv &
+  [ STEM < "부시시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부시시_adv_50_rel" ].
+
+부지런히-50 := ph-adv &
+  [ STEM < "부지런히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부지런히_adv_50_rel" ].
+
+부질없이-50 := ph-adv &
+  [ STEM < "부질없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부질없이_adv_50_rel" ].
+
+북북-50 := ph-adv &
+  [ STEM < "북북" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_북북_adv_50_rel" ].
+
+북적-50 := ph-adv &
+  [ STEM < "북적" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_북적_adv_50_rel" ].
+
+분명-50 := ph-adv &
+  [ STEM < "분명" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_분명_adv_50_rel" ].
+
+분연히-50 := ph-adv &
+  [ STEM < "분연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_분연히_adv_50_rel" ].
+
+분주히-50 := ph-adv &
+  [ STEM < "분주히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_분주히_adv_50_rel" ].
+
+불끈-50 := ph-adv &
+  [ STEM < "불끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불끈_adv_50_rel" ].
+
+불끈불끈-50 := ph-adv &
+  [ STEM < "불끈불끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불끈불끈_adv_50_rel" ].
+
+불룩-50 := ph-adv &
+  [ STEM < "불룩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불룩_adv_50_rel" ].
+
+불쌍히-50 := ph-adv &
+  [ STEM < "불쌍히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불쌍히_adv_50_rel" ].
+
+불쑥-50 := ph-adv &
+  [ STEM < "불쑥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불쑥_adv_50_rel" ].
+
+불쑥불쑥-50 := ph-adv &
+  [ STEM < "불쑥불쑥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불쑥불쑥_adv_50_rel" ].
+
+불행히-50 := ph-adv &
+  [ STEM < "불행히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불행히_adv_50_rel" ].
+
+불현듯-50 := ph-adv &
+  [ STEM < "불현듯" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불현듯_adv_50_rel" ].
+
+붉으락푸르락-50 := ph-adv &
+  [ STEM < "붉으락푸르락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_붉으락푸르락_adv_50_rel" ].
+
+붕-50 := ph-adv &
+  [ STEM < "붕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_붕_adv_50_rel" ].
+
+붕붕-50 := ph-adv &
+  [ STEM < "붕붕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_붕붕_adv_50_rel" ].
+
+비교적-50 := ph-adv &
+  [ STEM < "비교적" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비교적_adv_50_rel" ].
+
+비단-50 := ph-adv &
+  [ STEM < "비단" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비단_adv_50_rel" ].
+
+비로소-50 := ph-adv &
+  [ STEM < "비로소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비로소_adv_50_rel" ].
+
+비록-50 := ph-adv &
+  [ STEM < "비록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비록_adv_50_rel" ].
+
+비비-50 := ph-adv &
+  [ STEM < "비비" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비비_adv_50_rel" ].
+
+비스듬히-50 := ph-adv &
+  [ STEM < "비스듬히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비스듬히_adv_50_rel" ].
+
+비슷비슷-50 := ph-adv &
+  [ STEM < "비슷비슷" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비슷비슷_adv_50_rel" ].
+
+비슷이-50 := ph-adv &
+  [ STEM < "비슷이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비슷이_adv_50_rel" ].
+
+비실비실-50 := ph-adv &
+  [ STEM < "비실비실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비실비실_adv_50_rel" ].
+
+비쩍-50 := ph-adv &
+  [ STEM < "비쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비쩍_adv_50_rel" ].
+
+비척비척-50 := ph-adv &
+  [ STEM < "비척비척" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비척비척_adv_50_rel" ].
+
+비틀비틀-50 := ph-adv &
+  [ STEM < "비틀비틀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비틀비틀_adv_50_rel" ].
+
+빈둥빈둥-50 := ph-adv &
+  [ STEM < "빈둥빈둥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빈둥빈둥_adv_50_rel" ].
+
+빈번히-50 := ph-adv &
+  [ STEM < "빈번히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빈번히_adv_50_rel" ].
+
+빈틈없이-50 := ph-adv &
+  [ STEM < "빈틈없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빈틈없이_adv_50_rel" ].
+
+빙-50 := ph-adv &
+  [ STEM < "빙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빙_adv_50_rel" ].
+
+빙그레-50 := ph-adv &
+  [ STEM < "빙그레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빙그레_adv_50_rel" ].
+
+빙그르르-50 := ph-adv &
+  [ STEM < "빙그르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빙그르르_adv_50_rel" ].
+
+빙글빙글-50 := ph-adv &
+  [ STEM < "빙글빙글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빙글빙글_adv_50_rel" ].
+
+빙긋-50 := ph-adv &
+  [ STEM < "빙긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빙긋_adv_50_rel" ].
+
+빙긋이-50 := ph-adv &
+  [ STEM < "빙긋이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빙긋이_adv_50_rel" ].
+
+빙빙-50 := ph-adv &
+  [ STEM < "빙빙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빙빙_adv_50_rel" ].
+
+빠끔히-50 := ph-adv &
+  [ STEM < "빠끔히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빠끔히_adv_50_rel" ].
+
+빠짐없이-50 := ph-adv &
+  [ STEM < "빠짐없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빠짐없이_adv_50_rel" ].
+
+빡빡-50 := ph-adv &
+  [ STEM < "빡빡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빡빡_adv_50_rel" ].
+
+빤히-50 := ph-adv &
+  [ STEM < "빤히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빤히_adv_50_rel" ].
+
+빨리빨리-50 := ph-adv &
+  [ STEM < "빨리빨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빨리빨리_adv_50_rel" ].
+
+빳빳이-50 := ph-adv &
+  [ STEM < "빳빳이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빳빳이_adv_50_rel" ].
+
+빵빵-50 := ph-adv &
+  [ STEM < "빵빵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빵빵_adv_50_rel" ].
+
+빼곡-50 := ph-adv &
+  [ STEM < "빼곡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빼곡_adv_50_rel" ].
+
+빼곡히-50 := ph-adv &
+  [ STEM < "빼곡히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빼곡히_adv_50_rel" ].
+
+빽-50 := ph-adv &
+  [ STEM < "빽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빽_adv_50_rel" ].
+
+빽빽이-50 := ph-adv &
+  [ STEM < "빽빽이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빽빽이_adv_50_rel" ].
+
+빽빽히-50 := ph-adv &
+  [ STEM < "빽빽히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빽빽히_adv_50_rel" ].
+
+뻐꾹-50 := ph-adv &
+  [ STEM < "뻐꾹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뻐꾹_adv_50_rel" ].
+
+뻑뻑-50 := ph-adv &
+  [ STEM < "뻑뻑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뻑뻑_adv_50_rel" ].
+
+뻔히-50 := ph-adv &
+  [ STEM < "뻔히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뻔히_adv_50_rel" ].
+
+뻘뻘-50 := ph-adv &
+  [ STEM < "뻘뻘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뻘뻘_adv_50_rel" ].
+
+뻥-50 := ph-adv &
+  [ STEM < "뻥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뻥_adv_50_rel" ].
+
+뾰족-50 := ph-adv &
+  [ STEM < "뾰족" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뾰족_adv_50_rel" ].
+
+뿔뿔이-50 := ph-adv &
+  [ STEM < "뿔뿔이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿔뿔이_adv_50_rel" ].
+
+삐-50 := ph-adv &
+  [ STEM < "삐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐_adv_50_rel" ].
+
+삐끗-50 := ph-adv &
+  [ STEM < "삐끗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐끗_adv_50_rel" ].
+
+삐뚤삐뚤-50 := ph-adv &
+  [ STEM < "삐뚤삐뚤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐뚤삐뚤_adv_50_rel" ].
+
+삐삐-50 := ph-adv &
+  [ STEM < "삐삐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐삐_adv_50_rel" ].
+
+삐악-50 := ph-adv &
+  [ STEM < "삐악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐악_adv_50_rel" ].
+
+삐이-50 := ph-adv &
+  [ STEM < "삐이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐이_adv_50_rel" ].
+
+삐죽-50 := ph-adv &
+  [ STEM < "삐죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐죽_adv_50_rel" ].
+
+삐죽삐죽-50 := ph-adv &
+  [ STEM < "삐죽삐죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐죽삐죽_adv_50_rel" ].
+
+삐죽이-50 := ph-adv &
+  [ STEM < "삐죽이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐죽이_adv_50_rel" ].
+
+삑삑-50 := ph-adv &
+  [ STEM < "삑삑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삑삑_adv_50_rel" ].
+
+사각사각-50 := ph-adv &
+  [ STEM < "사각사각" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사각사각_adv_50_rel" ].
+
+사르르-50 := ph-adv &
+  [ STEM < "사르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사르르_adv_50_rel" ].
+
+사뭇-50 := ph-adv &
+  [ STEM < "사뭇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사뭇_adv_50_rel" ].
+
+사뿐사뿐-50 := ph-adv &
+  [ STEM < "사뿐사뿐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사뿐사뿐_adv_50_rel" ].
+
+사뿐히-50 := ph-adv &
+  [ STEM < "사뿐히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사뿐히_adv_50_rel" ].
+
+사사건건-50 := ph-adv &
+  [ STEM < "사사건건" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사사건건_adv_50_rel" ].
+
+사사로이-50 := ph-adv &
+  [ STEM < "사사로이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사사로이_adv_50_rel" ].
+
+사실-50 := ph-adv &
+  [ STEM < "사실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사실_adv_50_rel" ].
+
+사실은-50 := ph-adv &
+  [ STEM < "사실은" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사실은_adv_50_rel" ].
+
+사정없이-50 := ph-adv &
+  [ STEM < "사정없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사정없이_adv_50_rel" ].
+
+산산이-50 := ph-adv &
+  [ STEM < "산산이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_산산이_adv_50_rel" ].
+
+산정-50 := ph-adv &
+  [ STEM < "산정" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_산정_adv_50_rel" ].
+
+살그머니-50 := ph-adv &
+  [ STEM < "살그머니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살그머니_adv_50_rel" ].
+
+살금살금-50 := ph-adv &
+  [ STEM < "살금살금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살금살금_adv_50_rel" ].
+
+살랑살랑-50 := ph-adv &
+  [ STEM < "살랑살랑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살랑살랑_adv_50_rel" ].
+
+살래살래-50 := ph-adv &
+  [ STEM < "살래살래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살래살래_adv_50_rel" ].
+
+살며시-50 := ph-adv &
+  [ STEM < "살며시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살며시_adv_50_rel" ].
+
+살살-50 := ph-adv &
+  [ STEM < "살살" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살살_adv_50_rel" ].
+
+살짝-50 := ph-adv &
+  [ STEM < "살짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살짝_adv_50_rel" ].
+
+살짝살짝-50 := ph-adv &
+  [ STEM < "살짝살짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살짝살짝_adv_50_rel" ].
+
+살포시-50 := ph-adv &
+  [ STEM < "살포시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살포시_adv_50_rel" ].
+
+살풋-50 := ph-adv &
+  [ STEM < "살풋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살풋_adv_50_rel" ].
+
+삼가-50 := ph-adv &
+  [ STEM < "삼가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삼가_adv_50_rel" ].
+
+상관없이-50 := ph-adv &
+  [ STEM < "상관없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상관없이_adv_50_rel" ].
+
+상당수-50 := ph-adv &
+  [ STEM < "상당수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상당수_adv_50_rel" ].
+
+상세히-50 := ph-adv &
+  [ STEM < "상세히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상세히_adv_50_rel" ].
+
+상호-50 := ph-adv &
+  [ STEM < "상호" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상호_adv_50_rel" ].
+
+샅샅이-50 := ph-adv &
+  [ STEM < "샅샅이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_샅샅이_adv_50_rel" ].
+
+새로-50 := ph-adv &
+  [ STEM < "새로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새로_adv_50_rel" ].
+
+새로이-50 := ph-adv &
+  [ STEM < "새로이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새로이_adv_50_rel" ].
+
+새록새록-50 := ph-adv &
+  [ STEM < "새록새록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새록새록_adv_50_rel" ].
+
+새루-50 := ph-adv &
+  [ STEM < "새루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새루_adv_50_rel" ].
+
+새삼-50 := ph-adv &
+  [ STEM < "새삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새삼_adv_50_rel" ].
+
+새삼스레-50 := ph-adv &
+  [ STEM < "새삼스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새삼스레_adv_50_rel" ].
+
+새콤달콤-50 := ph-adv &
+  [ STEM < "새콤달콤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새콤달콤_adv_50_rel" ].
+
+샐쭉-50 := ph-adv &
+  [ STEM < "샐쭉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_샐쭉_adv_50_rel" ].
+
+생글생글-50 := ph-adv &
+  [ STEM < "생글생글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_생글생글_adv_50_rel" ].
+
+생긋-50 := ph-adv &
+  [ STEM < "생긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_생긋_adv_50_rel" ].
+
+생생히-50 := ph-adv &
+  [ STEM < "생생히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_생생히_adv_50_rel" ].
+
+생판-50 := ph-adv &
+  [ STEM < "생판" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_생판_adv_50_rel" ].
+
+서로서로-50 := ph-adv &
+  [ STEM < "서로서로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서로서로_adv_50_rel" ].
+
+서루-50 := ph-adv &
+  [ STEM < "서루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서루_adv_50_rel" ].
+
+서서히-50 := ph-adv &
+  [ STEM < "서서히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서서히_adv_50_rel" ].
+
+서슴없이-50 := ph-adv &
+  [ STEM < "서슴없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서슴없이_adv_50_rel" ].
+
+선득-50 := ph-adv &
+  [ STEM < "선득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선득_adv_50_rel" ].
+
+선뜩-50 := ph-adv &
+  [ STEM < "선뜩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선뜩_adv_50_rel" ].
+
+선뜻-50 := ph-adv &
+  [ STEM < "선뜻" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선뜻_adv_50_rel" ].
+
+선명히-50 := ph-adv &
+  [ STEM < "선명히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선명히_adv_50_rel" ].
+
+선선히-50 := ph-adv &
+  [ STEM < "선선히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선선히_adv_50_rel" ].
+
+섣불리-50 := ph-adv &
+  [ STEM < "섣불리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_섣불리_adv_50_rel" ].
+
+설레설레-50 := ph-adv &
+  [ STEM < "설레설레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설레설레_adv_50_rel" ].
+
+설령-50 := ph-adv &
+  [ STEM < "설령" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설령_adv_50_rel" ].
+
+설마-50 := ph-adv &
+  [ STEM < "설마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설마_adv_50_rel" ].
+
+설사-50 := ph-adv &
+  [ STEM < "설사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설사_adv_50_rel" ].
+
+설설-50 := ph-adv &
+  [ STEM < "설설" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설설_adv_50_rel" ].
+
+설핏-50 := ph-adv &
+  [ STEM < "설핏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설핏_adv_50_rel" ].
+
+설혹-50 := ph-adv &
+  [ STEM < "설혹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설혹_adv_50_rel" ].
+
+섬뜩-50 := ph-adv &
+  [ STEM < "섬뜩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_섬뜩_adv_50_rel" ].
+
+섬찟-50 := ph-adv &
+  [ STEM < "섬찟" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_섬찟_adv_50_rel" ].
+
+성급히-50 := ph-adv &
+  [ STEM < "성급히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성급히_adv_50_rel" ].
+
+성대히-50 := ph-adv &
+  [ STEM < "성대히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성대히_adv_50_rel" ].
+
+성실히-50 := ph-adv &
+  [ STEM < "성실히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성실히_adv_50_rel" ].
+
+성심껏-50 := ph-adv &
+  [ STEM < "성심껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성심껏_adv_50_rel" ].
+
+성의껏-50 := ph-adv &
+  [ STEM < "성의껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성의껏_adv_50_rel" ].
+
+성큼-50 := ph-adv &
+  [ STEM < "성큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성큼_adv_50_rel" ].
+
+성큼성큼-50 := ph-adv &
+  [ STEM < "성큼성큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성큼성큼_adv_50_rel" ].
+
+세밀히-50 := ph-adv &
+  [ STEM < "세밀히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세밀히_adv_50_rel" ].
+
+세세히-50 := ph-adv &
+  [ STEM < "세세히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세세히_adv_50_rel" ].
+
+세심히-50 := ph-adv &
+  [ STEM < "세심히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세심히_adv_50_rel" ].
+
+소곤소곤-50 := ph-adv &
+  [ STEM < "소곤소곤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소곤소곤_adv_50_rel" ].
+
+소리소리-50 := ph-adv &
+  [ STEM < "소리소리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소리소리_adv_50_rel" ].
+
+소상히-50 := ph-adv &
+  [ STEM < "소상히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소상히_adv_50_rel" ].
+
+소신껏-50 := ph-adv &
+  [ STEM < "소신껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소신껏_adv_50_rel" ].
+
+소위-50 := ph-adv &
+  [ STEM < "소위" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소위_adv_50_rel" ].
+
+소중히-50 := ph-adv &
+  [ STEM < "소중히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소중히_adv_50_rel" ].
+
+소쩍-50 := ph-adv &
+  [ STEM < "소쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소쩍_adv_50_rel" ].
+
+소쩍다-50 := ph-adv &
+  [ STEM < "소쩍다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소쩍다_adv_50_rel" ].
+
+소홀히-50 := ph-adv &
+  [ STEM < "소홀히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소홀히_adv_50_rel" ].
+
+속속-50 := ph-adv &
+  [ STEM < "속속" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_속속_adv_50_rel" ].
+
+속속들이-50 := ph-adv &
+  [ STEM < "속속들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_속속들이_adv_50_rel" ].
+
+속절없이-50 := ph-adv &
+  [ STEM < "속절없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_속절없이_adv_50_rel" ].
+
+속히-50 := ph-adv &
+  [ STEM < "속히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_속히_adv_50_rel" ].
+
+손수-50 := ph-adv &
+  [ STEM < "손수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_손수_adv_50_rel" ].
+
+솔솔-50 := ph-adv &
+  [ STEM < "솔솔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_솔솔_adv_50_rel" ].
+
+솔직이-50 := ph-adv &
+  [ STEM < "솔직이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_솔직이_adv_50_rel" ].
+
+송송-50 := ph-adv &
+  [ STEM < "송송" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_송송_adv_50_rel" ].
+
+수북이-50 := ph-adv &
+  [ STEM < "수북이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수북이_adv_50_rel" ].
+
+수북히-50 := ph-adv &
+  [ STEM < "수북히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수북히_adv_50_rel" ].
+
+수시로-50 := ph-adv &
+  [ STEM < "수시로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수시로_adv_50_rel" ].
+
+수없이-50 := ph-adv &
+  [ STEM < "수없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수없이_adv_50_rel" ].
+
+순-50 := ph-adv &
+  [ STEM < "순" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_순_adv_50_rel" ].
+
+순간순간-50 := ph-adv &
+  [ STEM < "순간순간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_순간순간_adv_50_rel" ].
+
+순순히-50 := ph-adv &
+  [ STEM < "순순히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_순순히_adv_50_rel" ].
+
+순전히-50 := ph-adv &
+  [ STEM < "순전히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_순전히_adv_50_rel" ].
+
+술술-50 := ph-adv &
+  [ STEM < "술술" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술술_adv_50_rel" ].
+
+술술술-50 := ph-adv &
+  [ STEM < "술술술" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술술술_adv_50_rel" ].
+
+숨김없이-50 := ph-adv &
+  [ STEM < "숨김없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숨김없이_adv_50_rel" ].
+
+숫제-50 := ph-adv &
+  [ STEM < "숫제" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숫제_adv_50_rel" ].
+
+숭숭-50 := ph-adv &
+  [ STEM < "숭숭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숭숭_adv_50_rel" ].
+
+쉬-50 := ph-adv &
+  [ STEM < "쉬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쉬_adv_50_rel" ].
+
+쉬엄쉬엄-50 := ph-adv &
+  [ STEM < "쉬엄쉬엄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쉬엄쉬엄_adv_50_rel" ].
+
+쉬이-50 := ph-adv &
+  [ STEM < "쉬이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쉬이_adv_50_rel" ].
+
+쉽사리-50 := ph-adv &
+  [ STEM < "쉽사리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쉽사리_adv_50_rel" ].
+
+스르르-50 := ph-adv &
+  [ STEM < "스르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_스르르_adv_50_rel" ].
+
+스멀스멀-50 := ph-adv &
+  [ STEM < "스멀스멀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_스멀스멀_adv_50_rel" ].
+
+스스럼없이-50 := ph-adv &
+  [ STEM < "스스럼없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_스스럼없이_adv_50_rel" ].
+
+슬그머니-50 := ph-adv &
+  [ STEM < "슬그머니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬그머니_adv_50_rel" ].
+
+슬금슬금-50 := ph-adv &
+  [ STEM < "슬금슬금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬금슬금_adv_50_rel" ].
+
+슬며시-50 := ph-adv &
+  [ STEM < "슬며시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬며시_adv_50_rel" ].
+
+슬몃-50 := ph-adv &
+  [ STEM < "슬몃" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬몃_adv_50_rel" ].
+
+슬슬-50 := ph-adv &
+  [ STEM < "슬슬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬슬_adv_50_rel" ].
+
+슬쩍-50 := ph-adv &
+  [ STEM < "슬쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬쩍_adv_50_rel" ].
+
+슬쩍슬쩍-50 := ph-adv &
+  [ STEM < "슬쩍슬쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬쩍슬쩍_adv_50_rel" ].
+
+슬피-50 := ph-adv &
+  [ STEM < "슬피" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬피_adv_50_rel" ].
+
+시급히-50 := ph-adv &
+  [ STEM < "시급히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시급히_adv_50_rel" ].
+
+시끌벅적-50 := ph-adv &
+  [ STEM < "시끌벅적" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시끌벅적_adv_50_rel" ].
+
+시나브로-50 := ph-adv &
+  [ STEM < "시나브로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시나브로_adv_50_rel" ].
+
+시름시름-50 := ph-adv &
+  [ STEM < "시름시름" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시름시름_adv_50_rel" ].
+
+시방-50 := ph-adv &
+  [ STEM < "시방" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시방_adv_50_rel" ].
+
+시시각각-50 := ph-adv &
+  [ STEM < "시시각각" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시시각각_adv_50_rel" ].
+
+시시때때로-50 := ph-adv &
+  [ STEM < "시시때때로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시시때때로_adv_50_rel" ].
+
+시시콜콜-50 := ph-adv &
+  [ STEM < "시시콜콜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시시콜콜_adv_50_rel" ].
+
+시원스레-50 := ph-adv &
+  [ STEM < "시원스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시원스레_adv_50_rel" ].
+
+시원시원-50 := ph-adv &
+  [ STEM < "시원시원" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시원시원_adv_50_rel" ].
+
+시원히-50 := ph-adv &
+  [ STEM < "시원히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시원히_adv_50_rel" ].
+
+시종-50 := ph-adv &
+  [ STEM < "시종" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시종_adv_50_rel" ].
+
+신속히-50 := ph-adv &
+  [ STEM < "신속히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신속히_adv_50_rel" ].
+
+신중히-50 := ph-adv &
+  [ STEM < "신중히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신중히_adv_50_rel" ].
+
+실로-50 := ph-adv &
+  [ STEM < "실로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실로_adv_50_rel" ].
+
+실상-50 := ph-adv &
+  [ STEM < "실상" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실상_adv_50_rel" ].
+
+실실-50 := ph-adv &
+  [ STEM < "실실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실실_adv_50_rel" ].
+
+실없이-50 := ph-adv &
+  [ STEM < "실없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실없이_adv_50_rel" ].
+
+실제-50 := ph-adv &
+  [ STEM < "실제" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실제_adv_50_rel" ].
+
+실제로-50 := ph-adv &
+  [ STEM < "실제로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실제로_adv_50_rel" ].
+
+실지로-50 := ph-adv &
+  [ STEM < "실지로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실지로_adv_50_rel" ].
+
+실쭉-50 := ph-adv &
+  [ STEM < "실쭉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실쭉_adv_50_rel" ].
+
+실컷-50 := ph-adv &
+  [ STEM < "실컷" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실컷_adv_50_rel" ].
+
+심각히-50 := ph-adv &
+  [ STEM < "심각히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_심각히_adv_50_rel" ].
+
+심지어-50 := ph-adv &
+  [ STEM < "심지어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_심지어_adv_50_rel" ].
+
+심히-50 := ph-adv &
+  [ STEM < "심히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_심히_adv_50_rel" ].
+
+십분-50 := ph-adv &
+  [ STEM < "십분" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_십분_adv_50_rel" ].
+
+싱글-50 := ph-adv &
+  [ STEM < "싱글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싱글_adv_50_rel" ].
+
+싱글벙글-50 := ph-adv &
+  [ STEM < "싱글벙글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싱글벙글_adv_50_rel" ].
+
+싱글싱글-50 := ph-adv &
+  [ STEM < "싱글싱글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싱글싱글_adv_50_rel" ].
+
+싱긋-50 := ph-adv &
+  [ STEM < "싱긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싱긋_adv_50_rel" ].
+
+싹-50 := ph-adv &
+  [ STEM < "싹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싹_adv_50_rel" ].
+
+싹둑-50 := ph-adv &
+  [ STEM < "싹둑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싹둑_adv_50_rel" ].
+
+싹싹-50 := ph-adv &
+  [ STEM < "싹싹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싹싹_adv_50_rel" ].
+
+쌩쌩-50 := ph-adv &
+  [ STEM < "쌩쌩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쌩쌩_adv_50_rel" ].
+
+썩-50 := ph-adv &
+  [ STEM < "썩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_썩_adv_50_rel" ].
+
+쏙-50 := ph-adv &
+  [ STEM < "쏙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쏙_adv_50_rel" ].
+
+쏙쏙-50 := ph-adv &
+  [ STEM < "쏙쏙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쏙쏙_adv_50_rel" ].
+
+쏜살같이-50 := ph-adv &
+  [ STEM < "쏜살같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쏜살같이_adv_50_rel" ].
+
+쏴아-50 := ph-adv &
+  [ STEM < "쏴아" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쏴아_adv_50_rel" ].
+
+쑤욱-50 := ph-adv &
+  [ STEM < "쑤욱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쑤욱_adv_50_rel" ].
+
+쑥-50 := ph-adv &
+  [ STEM < "쑥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쑥_adv_50_rel" ].
+
+쑥쑥-50 := ph-adv &
+  [ STEM < "쑥쑥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쑥쑥_adv_50_rel" ].
+
+쓰윽-50 := ph-adv &
+  [ STEM < "쓰윽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓰윽_adv_50_rel" ].
+
+쓱-50 := ph-adv &
+  [ STEM < "쓱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓱_adv_50_rel" ].
+
+쓱쓱-50 := ph-adv &
+  [ STEM < "쓱쓱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓱쓱_adv_50_rel" ].
+
+쓸데없이-50 := ph-adv &
+  [ STEM < "쓸데없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓸데없이_adv_50_rel" ].
+
+쓸쓸히-50 := ph-adv &
+  [ STEM < "쓸쓸히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓸쓸히_adv_50_rel" ].
+
+씨익-50 := ph-adv &
+  [ STEM < "씨익" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_씨익_adv_50_rel" ].
+
+씩-50 := ph-adv &
+  [ STEM < "씩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_씩_adv_50_rel" ].
+
+씽씽-50 := ph-adv &
+  [ STEM < "씽씽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_씽씽_adv_50_rel" ].
+
+아기자기-50 := ph-adv &
+  [ STEM < "아기자기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아기자기_adv_50_rel" ].
+
+아까-50 := ph-adv &
+  [ STEM < "아까" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아까_adv_50_rel" ].
+
+아낌없이-50 := ph-adv &
+  [ STEM < "아낌없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아낌없이_adv_50_rel" ].
+
+아니-50 := ph-adv &
+  [ STEM < "아니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니_adv_50_rel" ].
+
+아득-50 := ph-adv &
+  [ STEM < "아득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아득_adv_50_rel" ].
+
+아득히-50 := ph-adv &
+  [ STEM < "아득히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아득히_adv_50_rel" ].
+
+아랑곳없이-50 := ph-adv &
+  [ STEM < "아랑곳없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아랑곳없이_adv_50_rel" ].
+
+아련히-50 := ph-adv &
+  [ STEM < "아련히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아련히_adv_50_rel" ].
+
+아마-50 := ph-adv &
+  [ STEM < "아마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아마_adv_50_rel" ].
+
+아마도-50 := ph-adv &
+  [ STEM < "아마도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아마도_adv_50_rel" ].
+
+아무나-50 := ph-adv &
+  [ STEM < "아무나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아무나_adv_50_rel" ].
+
+아무래도-50 := ph-adv &
+  [ STEM < "아무래도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아무래도_adv_50_rel" ].
+
+아무쪼록-50 := ph-adv &
+  [ STEM < "아무쪼록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아무쪼록_adv_50_rel" ].
+
+아무튼-50 := ph-adv &
+  [ STEM < "아무튼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아무튼_adv_50_rel" ].
+
+아뭏든-50 := ph-adv &
+  [ STEM < "아뭏든" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아뭏든_adv_50_rel" ].
+
+아삭아삭-50 := ph-adv &
+  [ STEM < "아삭아삭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아삭아삭_adv_50_rel" ].
+
+아스라이-50 := ph-adv &
+  [ STEM < "아스라이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아스라이_adv_50_rel" ].
+
+아슬아슬-50 := ph-adv &
+  [ STEM < "아슬아슬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아슬아슬_adv_50_rel" ].
+
+아연-50 := ph-adv &
+  [ STEM < "아연" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아연_adv_50_rel" ].
+
+아예-50 := ph-adv &
+  [ STEM < "아예" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아예_adv_50_rel" ].
+
+아옹다옹-50 := ph-adv &
+  [ STEM < "아옹다옹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아옹다옹_adv_50_rel" ].
+
+아울러-50 := ph-adv &
+  [ STEM < "아울러" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아울러_adv_50_rel" ].
+
+아웅다웅-50 := ph-adv &
+  [ STEM < "아웅다웅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아웅다웅_adv_50_rel" ].
+
+아장아장-50 := ph-adv &
+  [ STEM < "아장아장" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아장아장_adv_50_rel" ].
+
+아직까지는-50 := ph-adv &
+  [ STEM < "아직까지는" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아직까지는_adv_50_rel" ].
+
+아직까지도-50 := ph-adv &
+  [ STEM < "아직까지도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아직까지도_adv_50_rel" ].
+
+아직껏-50 := ph-adv &
+  [ STEM < "아직껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아직껏_adv_50_rel" ].
+
+아직도-50 := ph-adv &
+  [ STEM < "아직도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아직도_adv_50_rel" ].
+
+아직은-50 := ph-adv &
+  [ STEM < "아직은" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아직은_adv_50_rel" ].
+
+악착같이-50 := ph-adv &
+  [ STEM < "악착같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_악착같이_adv_50_rel" ].
+
+안녕히-50 := ph-adv &
+  [ STEM < "안녕히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_안녕히_adv_50_rel" ].
+
+안절부절-50 := ph-adv &
+  [ STEM < "안절부절" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_안절부절_adv_50_rel" ].
+
+안타까이-50 := ph-adv &
+  [ STEM < "안타까이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_안타까이_adv_50_rel" ].
+
+알뜰살뜰-50 := ph-adv &
+  [ STEM < "알뜰살뜰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알뜰살뜰_adv_50_rel" ].
+
+알뜰히-50 := ph-adv &
+  [ STEM < "알뜰히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알뜰히_adv_50_rel" ].
+
+알록달록-50 := ph-adv &
+  [ STEM < "알록달록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알록달록_adv_50_rel" ].
+
+알쏭달쏭-50 := ph-adv &
+  [ STEM < "알쏭달쏭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알쏭달쏭_adv_50_rel" ].
+
+알알이-50 := ph-adv &
+  [ STEM < "알알이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알알이_adv_50_rel" ].
+
+암만-50 := ph-adv &
+  [ STEM < "암만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_암만_adv_50_rel" ].
+
+암튼-50 := ph-adv &
+  [ STEM < "암튼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_암튼_adv_50_rel" ].
+
+앞-50 := ph-adv &
+  [ STEM < "앞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앞_adv_50_rel" ].
+
+앞서-50 := ph-adv &
+  [ STEM < "앞서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앞서_adv_50_rel" ].
+
+애지중지-50 := ph-adv &
+  [ STEM < "애지중지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애지중지_adv_50_rel" ].
+
+야금야금-50 := ph-adv &
+  [ STEM < "야금야금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야금야금_adv_50_rel" ].
+
+약간-50 := ph-adv &
+  [ STEM < "약간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_약간_adv_50_rel" ].
+
+얌전히-50 := ph-adv &
+  [ STEM < "얌전히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얌전히_adv_50_rel" ].
+
+양장-50 := ph-adv &
+  [ STEM < "양장" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_양장_adv_50_rel" ].
+
+어김없이-50 := ph-adv &
+  [ STEM < "어김없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어김없이_adv_50_rel" ].
+
+어느덧-50 := ph-adv &
+  [ STEM < "어느덧" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어느덧_adv_50_rel" ].
+
+어느새-50 := ph-adv &
+  [ STEM < "어느새" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어느새_adv_50_rel" ].
+
+어둑어둑-50 := ph-adv &
+  [ STEM < "어둑어둑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어둑어둑_adv_50_rel" ].
+
+어디-50 := ph-adv &
+  [ STEM < "어디" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어디_adv_50_rel" ].
+
+어떻게든-50 := ph-adv &
+  [ STEM < "어떻게든" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어떻게든_adv_50_rel" ].
+
+어떻든-50 := ph-adv &
+  [ STEM < "어떻든" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어떻든_adv_50_rel" ].
+
+어련히-50 := ph-adv &
+  [ STEM < "어련히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어련히_adv_50_rel" ].
+
+어렴풋이-50 := ph-adv &
+  [ STEM < "어렴풋이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어렴풋이_adv_50_rel" ].
+
+어렵사리-50 := ph-adv &
+  [ STEM < "어렵사리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어렵사리_adv_50_rel" ].
+
+어물어물-50 := ph-adv &
+  [ STEM < "어물어물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어물어물_adv_50_rel" ].
+
+어물쩍-50 := ph-adv &
+  [ STEM < "어물쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어물쩍_adv_50_rel" ].
+
+어서-50 := ph-adv &
+  [ STEM < "어서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어서_adv_50_rel" ].
+
+어서어서-50 := ph-adv &
+  [ STEM < "어서어서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어서어서_adv_50_rel" ].
+
+어슬렁-50 := ph-adv &
+  [ STEM < "어슬렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어슬렁_adv_50_rel" ].
+
+어슬렁어슬렁-50 := ph-adv &
+  [ STEM < "어슬렁어슬렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어슬렁어슬렁_adv_50_rel" ].
+
+어슴푸레-50 := ph-adv &
+  [ STEM < "어슴푸레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어슴푸레_adv_50_rel" ].
+
+어언-50 := ph-adv &
+  [ STEM < "어언" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어언_adv_50_rel" ].
+
+어영부영-50 := ph-adv &
+  [ STEM < "어영부영" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어영부영_adv_50_rel" ].
+
+어이-50 := ph-adv &
+  [ STEM < "어이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어이_adv_50_rel" ].
+
+어이없이-50 := ph-adv &
+  [ STEM < "어이없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어이없이_adv_50_rel" ].
+
+어제는-50 := ph-adv &
+  [ STEM < "어제는" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어제는_adv_50_rel" ].
+
+어젯밤-50 := ph-adv &
+  [ STEM < "어젯밤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어젯밤_adv_50_rel" ].
+
+어지간히-50 := ph-adv &
+  [ STEM < "어지간히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어지간히_adv_50_rel" ].
+
+어지러이-50 := ph-adv &
+  [ STEM < "어지러이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어지러이_adv_50_rel" ].
+
+어질어질-50 := ph-adv &
+  [ STEM < "어질어질" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어질어질_adv_50_rel" ].
+
+어째-50 := ph-adv &
+  [ STEM < "어째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어째_adv_50_rel" ].
+
+어째서-50 := ph-adv &
+  [ STEM < "어째서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어째서_adv_50_rel" ].
+
+어쨌거나-50 := ph-adv &
+  [ STEM < "어쨌거나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쨌거나_adv_50_rel" ].
+
+어쨌든-50 := ph-adv &
+  [ STEM < "어쨌든" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쨌든_adv_50_rel" ].
+
+어쩌고저쩌고-50 := ph-adv &
+  [ STEM < "어쩌고저쩌고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쩌고저쩌고_adv_50_rel" ].
+
+어쩌다-50 := ph-adv &
+  [ STEM < "어쩌다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쩌다_adv_50_rel" ].
+
+어쩌다가-50 := ph-adv &
+  [ STEM < "어쩌다가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쩌다가_adv_50_rel" ].
+
+어쩌면-50 := ph-adv &
+  [ STEM < "어쩌면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쩌면_adv_50_rel" ].
+
+어쩐지-50 := ph-adv &
+  [ STEM < "어쩐지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쩐지_adv_50_rel" ].
+
+어쩜-50 := ph-adv &
+  [ STEM < "어쩜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쩜_adv_50_rel" ].
+
+어찌-50 := ph-adv &
+  [ STEM < "어찌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어찌_adv_50_rel" ].
+
+어찌나-50 := ph-adv &
+  [ STEM < "어찌나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어찌나_adv_50_rel" ].
+
+어찌어찌-50 := ph-adv &
+  [ STEM < "어찌어찌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어찌어찌_adv_50_rel" ].
+
+어찔어찔-50 := ph-adv &
+  [ STEM < "어찔어찔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어찔어찔_adv_50_rel" ].
+
+어차피-50 := ph-adv &
+  [ STEM < "어차피" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어차피_adv_50_rel" ].
+
+어처구니없이-50 := ph-adv &
+  [ STEM < "어처구니없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어처구니없이_adv_50_rel" ].
+
+억지로-50 := ph-adv &
+  [ STEM < "억지로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_억지로_adv_50_rel" ].
+
+언뜻-50 := ph-adv &
+  [ STEM < "언뜻" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_언뜻_adv_50_rel" ].
+
+언뜻언뜻-50 := ph-adv &
+  [ STEM < "언뜻언뜻" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_언뜻언뜻_adv_50_rel" ].
+
+언제든지-50 := ph-adv &
+  [ STEM < "언제든지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_언제든지_adv_50_rel" ].
+
+언젠가-50 := ph-adv &
+  [ STEM < "언젠가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_언젠가_adv_50_rel" ].
+
+얼기설기-50 := ph-adv &
+  [ STEM < "얼기설기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼기설기_adv_50_rel" ].
+
+얼런-50 := ph-adv &
+  [ STEM < "얼런" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼런_adv_50_rel" ].
+
+얼렁-50 := ph-adv &
+  [ STEM < "얼렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼렁_adv_50_rel" ].
+
+얼렁뚱땅-50 := ph-adv &
+  [ STEM < "얼렁뚱땅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼렁뚱땅_adv_50_rel" ].
+
+얼룩덜룩-50 := ph-adv &
+  [ STEM < "얼룩덜룩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼룩덜룩_adv_50_rel" ].
+
+얼른-50 := ph-adv &
+  [ STEM < "얼른" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼른_adv_50_rel" ].
+
+얼마-50 := ph-adv &
+  [ STEM < "얼마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼마_adv_50_rel" ].
+
+얼마간-50 := ph-adv &
+  [ STEM < "얼마간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼마간_adv_50_rel" ].
+
+얼마든지-50 := ph-adv &
+  [ STEM < "얼마든지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼마든지_adv_50_rel" ].
+
+얼마만큼-50 := ph-adv &
+  [ STEM < "얼마만큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼마만큼_adv_50_rel" ].
+
+얼만큼-50 := ph-adv &
+  [ STEM < "얼만큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼만큼_adv_50_rel" ].
+
+얼씬-50 := ph-adv &
+  [ STEM < "얼씬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼씬_adv_50_rel" ].
+
+얼추-50 := ph-adv &
+  [ STEM < "얼추" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼추_adv_50_rel" ].
+
+얼토당토-50 := ph-adv &
+  [ STEM < "얼토당토" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼토당토_adv_50_rel" ].
+
+얼핏-50 := ph-adv &
+  [ STEM < "얼핏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼핏_adv_50_rel" ].
+
+엄격히-50 := ph-adv &
+  [ STEM < "엄격히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄격히_adv_50_rel" ].
+
+엄밀히-50 := ph-adv &
+  [ STEM < "엄밀히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄밀히_adv_50_rel" ].
+
+엄숙히-50 := ph-adv &
+  [ STEM < "엄숙히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄숙히_adv_50_rel" ].
+
+엄연히-50 := ph-adv &
+  [ STEM < "엄연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄연히_adv_50_rel" ].
+
+엄중히-50 := ph-adv &
+  [ STEM < "엄중히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄중히_adv_50_rel" ].
+
+엄청-50 := ph-adv &
+  [ STEM < "엄청" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄청_adv_50_rel" ].
+
+엄히-50 := ph-adv &
+  [ STEM < "엄히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄히_adv_50_rel" ].
+
+없이-50 := ph-adv &
+  [ STEM < "없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_없이_adv_50_rel" ].
+
+엉거주춤-50 := ph-adv &
+  [ STEM < "엉거주춤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엉거주춤_adv_50_rel" ].
+
+엉겁결에-50 := ph-adv &
+  [ STEM < "엉겁결에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엉겁결에_adv_50_rel" ].
+
+엉금엉금-50 := ph-adv &
+  [ STEM < "엉금엉금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엉금엉금_adv_50_rel" ].
+
+엉엉-50 := ph-adv &
+  [ STEM < "엉엉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엉엉_adv_50_rel" ].
+
+엎치락뒤치락-50 := ph-adv &
+  [ STEM < "엎치락뒤치락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엎치락뒤치락_adv_50_rel" ].
+
+여간-50 := ph-adv &
+  [ STEM < "여간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여간_adv_50_rel" ].
+
+여기-50 := ph-adv &
+  [ STEM < "여기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여기_adv_50_rel" ].
+
+여기저기-50 := ph-adv &
+  [ STEM < "여기저기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여기저기_adv_50_rel" ].
+
+여러모로-50 := ph-adv &
+  [ STEM < "여러모로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여러모로_adv_50_rel" ].
+
+여름내-50 := ph-adv &
+  [ STEM < "여름내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여름내_adv_50_rel" ].
+
+여실히-50 := ph-adv &
+  [ STEM < "여실히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여실히_adv_50_rel" ].
+
+여전히-50 := ph-adv &
+  [ STEM < "여전히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여전히_adv_50_rel" ].
+
+여지껏-50 := ph-adv &
+  [ STEM < "여지껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여지껏_adv_50_rel" ].
+
+여지없이-50 := ph-adv &
+  [ STEM < "여지없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여지없이_adv_50_rel" ].
+
+여태-50 := ph-adv &
+  [ STEM < "여태" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여태_adv_50_rel" ].
+
+여태껏-50 := ph-adv &
+  [ STEM < "여태껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여태껏_adv_50_rel" ].
+
+여하간-50 := ph-adv &
+  [ STEM < "여하간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여하간_adv_50_rel" ].
+
+여하튼-50 := ph-adv &
+  [ STEM < "여하튼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여하튼_adv_50_rel" ].
+
+여흐-50 := ph-adv &
+  [ STEM < "여흐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여흐_adv_50_rel" ].
+
+역력히-50 := ph-adv &
+  [ STEM < "역력히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_역력히_adv_50_rel" ].
+
+연거푸-50 := ph-adv &
+  [ STEM < "연거푸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_연거푸_adv_50_rel" ].
+
+연방-50 := ph-adv &
+  [ STEM < "연방" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_연방_adv_50_rel" ].
+
+연신-50 := ph-adv &
+  [ STEM < "연신" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_연신_adv_50_rel" ].
+
+열렬히-50 := ph-adv &
+  [ STEM < "열렬히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_열렬히_adv_50_rel" ].
+
+영-50 := ph-adv &
+  [ STEM < "영" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영_adv_50_rel" ].
+
+영구히-50 := ph-adv &
+  [ STEM < "영구히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영구히_adv_50_rel" ].
+
+영락없이-50 := ph-adv &
+  [ STEM < "영락없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영락없이_adv_50_rel" ].
+
+영영-50 := ph-adv &
+  [ STEM < "영영" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영영_adv_50_rel" ].
+
+영원히-50 := ph-adv &
+  [ STEM < "영원히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영원히_adv_50_rel" ].
+
+예사로-50 := ph-adv &
+  [ STEM < "예사로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_예사로_adv_50_rel" ].
+
+예컨대-50 := ph-adv &
+  [ STEM < "예컨대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_예컨대_adv_50_rel" ].
+
+예컨데-50 := ph-adv &
+  [ STEM < "예컨데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_예컨데_adv_50_rel" ].
+
+오다가다-50 := ph-adv &
+  [ STEM < "오다가다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오다가다_adv_50_rel" ].
+
+오도카니-50 := ph-adv &
+  [ STEM < "오도카니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오도카니_adv_50_rel" ].
+
+오들오들-50 := ph-adv &
+  [ STEM < "오들오들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오들오들_adv_50_rel" ].
+
+오똑-50 := ph-adv &
+  [ STEM < "오똑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오똑_adv_50_rel" ].
+
+오뚝-50 := ph-adv &
+  [ STEM < "오뚝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오뚝_adv_50_rel" ].
+
+오락가락-50 := ph-adv &
+  [ STEM < "오락가락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오락가락_adv_50_rel" ].
+
+오래-50 := ph-adv &
+  [ STEM < "오래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오래_adv_50_rel" ].
+
+오래도록-50 := ph-adv &
+  [ STEM < "오래도록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오래도록_adv_50_rel" ].
+
+오래오래-50 := ph-adv &
+  [ STEM < "오래오래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오래오래_adv_50_rel" ].
+
+오랜만에-50 := ph-adv &
+  [ STEM < "오랜만에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랜만에_adv_50_rel" ].
+
+오로지-50 := ph-adv &
+  [ STEM < "오로지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오로지_adv_50_rel" ].
+
+오롯이-50 := ph-adv &
+  [ STEM < "오롯이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오롯이_adv_50_rel" ].
+
+오르락내리락-50 := ph-adv &
+  [ STEM < "오르락내리락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오르락내리락_adv_50_rel" ].
+
+오목-50 := ph-adv &
+  [ STEM < "오목" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오목_adv_50_rel" ].
+
+오밀조밀-50 := ph-adv &
+  [ STEM < "오밀조밀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오밀조밀_adv_50_rel" ].
+
+오손도손-50 := ph-adv &
+  [ STEM < "오손도손" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오손도손_adv_50_rel" ].
+
+오순도순-50 := ph-adv &
+  [ STEM < "오순도순" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오순도순_adv_50_rel" ].
+
+오싹-50 := ph-adv &
+  [ STEM < "오싹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오싹_adv_50_rel" ].
+
+오죽-50 := ph-adv &
+  [ STEM < "오죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오죽_adv_50_rel" ].
+
+오죽이나-50 := ph-adv &
+  [ STEM < "오죽이나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오죽이나_adv_50_rel" ].
+
+오직-50 := ph-adv &
+  [ STEM < "오직" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오직_adv_50_rel" ].
+
+오히려-50 := ph-adv &
+  [ STEM < "오히려" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오히려_adv_50_rel" ].
+
+온데간데없이-50 := ph-adv &
+  [ STEM < "온데간데없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_온데간데없이_adv_50_rel" ].
+
+온전히-50 := ph-adv &
+  [ STEM < "온전히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_온전히_adv_50_rel" ].
+
+올망졸망-50 := ph-adv &
+  [ STEM < "올망졸망" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_올망졸망_adv_50_rel" ].
+
+올바로-50 := ph-adv &
+  [ STEM < "올바로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_올바로_adv_50_rel" ].
+
+옴쭉달싹-50 := ph-adv &
+  [ STEM < "옴쭉달싹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옴쭉달싹_adv_50_rel" ].
+
+옹기종기-50 := ph-adv &
+  [ STEM < "옹기종기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옹기종기_adv_50_rel" ].
+
+와-50 := ph-adv &
+  [ STEM < "와" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와_adv_50_rel" ].
+
+와글와글-50 := ph-adv &
+  [ STEM < "와글와글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와글와글_adv_50_rel" ].
+
+와들와들-50 := ph-adv &
+  [ STEM < "와들와들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와들와들_adv_50_rel" ].
+
+와락-50 := ph-adv &
+  [ STEM < "와락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와락_adv_50_rel" ].
+
+와르르-50 := ph-adv &
+  [ STEM < "와르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와르르_adv_50_rel" ].
+
+와장창-50 := ph-adv &
+  [ STEM < "와장창" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와장창_adv_50_rel" ].
+
+왁자지껄-50 := ph-adv &
+  [ STEM < "왁자지껄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왁자지껄_adv_50_rel" ].
+
+완강히-50 := ph-adv &
+  [ STEM < "완강히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_완강히_adv_50_rel" ].
+
+완벽히-50 := ph-adv &
+  [ STEM < "완벽히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_완벽히_adv_50_rel" ].
+
+완연히-50 := ph-adv &
+  [ STEM < "완연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_완연히_adv_50_rel" ].
+
+왈-50 := ph-adv &
+  [ STEM < "왈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왈_adv_50_rel" ].
+
+왈칵-50 := ph-adv &
+  [ STEM < "왈칵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왈칵_adv_50_rel" ].
+
+왕왕-50 := ph-adv &
+  [ STEM < "왕왕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왕왕_adv_50_rel" ].
+
+왕창-50 := ph-adv &
+  [ STEM < "왕창" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왕창_adv_50_rel" ].
+
+왜냐면-50 := ph-adv &
+  [ STEM < "왜냐면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왜냐면_adv_50_rel" ].
+
+왜냐하면-50 := ph-adv &
+  [ STEM < "왜냐하면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왜냐하면_adv_50_rel" ].
+
+왠지-50 := ph-adv &
+  [ STEM < "왠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_왠지_adv_50_rel" ].
+
+외따로-50 := ph-adv &
+  [ STEM < "외따로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_외따로_adv_50_rel" ].
+
+외려-50 := ph-adv &
+  [ STEM < "외려" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_외려_adv_50_rel" ].
+
+외로-50 := ph-adv &
+  [ STEM < "외로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_외로_adv_50_rel" ].
+
+요란스레-50 := ph-adv &
+  [ STEM < "요란스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요란스레_adv_50_rel" ].
+
+요리조리-50 := ph-adv &
+  [ STEM < "요리조리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요리조리_adv_50_rel" ].
+
+요즈음-50 := ph-adv &
+  [ STEM < "요즈음" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요즈음_adv_50_rel" ].
+
+요컨대-50 := ph-adv &
+  [ STEM < "요컨대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요컨대_adv_50_rel" ].
+
+요행히-50 := ph-adv &
+  [ STEM < "요행히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요행히_adv_50_rel" ].
+
+우두커니-50 := ph-adv &
+  [ STEM < "우두커니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우두커니_adv_50_rel" ].
+
+우뚝-50 := ph-adv &
+  [ STEM < "우뚝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우뚝_adv_50_rel" ].
+
+우락부락-50 := ph-adv &
+  [ STEM < "우락부락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우락부락_adv_50_rel" ].
+
+우렁우렁-50 := ph-adv &
+  [ STEM < "우렁우렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우렁우렁_adv_50_rel" ].
+
+우루루-50 := ph-adv &
+  [ STEM < "우루루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우루루_adv_50_rel" ].
+
+우르르-50 := ph-adv &
+  [ STEM < "우르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우르르_adv_50_rel" ].
+
+우묵-50 := ph-adv &
+  [ STEM < "우묵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우묵_adv_50_rel" ].
+
+우물우물-50 := ph-adv &
+  [ STEM < "우물우물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우물우물_adv_50_rel" ].
+
+우물쭈물-50 := ph-adv &
+  [ STEM < "우물쭈물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우물쭈물_adv_50_rel" ].
+
+우수수-50 := ph-adv &
+  [ STEM < "우수수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우수수_adv_50_rel" ].
+
+우왕좌왕-50 := ph-adv &
+  [ STEM < "우왕좌왕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우왕좌왕_adv_50_rel" ].
+
+우우-50 := ph-adv &
+  [ STEM < "우우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우우_adv_50_rel" ].
+
+우적우적-50 := ph-adv &
+  [ STEM < "우적우적" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우적우적_adv_50_rel" ].
+
+우중충-50 := ph-adv &
+  [ STEM < "우중충" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우중충_adv_50_rel" ].
+
+우째-50 := ph-adv &
+  [ STEM < "우째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우째_adv_50_rel" ].
+
+우쭐-50 := ph-adv &
+  [ STEM < "우쭐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우쭐_adv_50_rel" ].
+
+우찌-50 := ph-adv &
+  [ STEM < "우찌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우찌_adv_50_rel" ].
+
+욱신욱신-50 := ph-adv &
+  [ STEM < "욱신욱신" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_욱신욱신_adv_50_rel" ].
+
+울고불고-50 := ph-adv &
+  [ STEM < "울고불고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울고불고_adv_50_rel" ].
+
+울긋불긋-50 := ph-adv &
+  [ STEM < "울긋불긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울긋불긋_adv_50_rel" ].
+
+울며불며-50 := ph-adv &
+  [ STEM < "울며불며" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울며불며_adv_50_rel" ].
+
+울컥-50 := ph-adv &
+  [ STEM < "울컥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울컥_adv_50_rel" ].
+
+울퉁불퉁-50 := ph-adv &
+  [ STEM < "울퉁불퉁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울퉁불퉁_adv_50_rel" ].
+
+움찔-50 := ph-adv &
+  [ STEM < "움찔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움찔_adv_50_rel" ].
+
+움푹-50 := ph-adv &
+  [ STEM < "움푹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움푹_adv_50_rel" ].
+
+워낙-50 := ph-adv &
+  [ STEM < "워낙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_워낙_adv_50_rel" ].
+
+워찌-50 := ph-adv &
+  [ STEM < "워찌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_워찌_adv_50_rel" ].
+
+원만히-50 := ph-adv &
+  [ STEM < "원만히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_원만히_adv_50_rel" ].
+
+원체-50 := ph-adv &
+  [ STEM < "원체" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_원체_adv_50_rel" ].
+
+원활히-50 := ph-adv &
+  [ STEM < "원활히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_원활히_adv_50_rel" ].
+
+월등-50 := ph-adv &
+  [ STEM < "월등" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_월등_adv_50_rel" ].
+
+월등히-50 := ph-adv &
+  [ STEM < "월등히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_월등히_adv_50_rel" ].
+
+월매나-50 := ph-adv &
+  [ STEM < "월매나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_월매나_adv_50_rel" ].
+
+웩-50 := ph-adv &
+  [ STEM < "웩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웩_adv_50_rel" ].
+
+웩웩-50 := ph-adv &
+  [ STEM < "웩웩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웩웩_adv_50_rel" ].
+
+웬-50 := ph-adv &
+  [ STEM < "웬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웬_adv_50_rel" ].
+
+웬만큼-50 := ph-adv &
+  [ STEM < "웬만큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웬만큼_adv_50_rel" ].
+
+웬지-50 := ph-adv &
+  [ STEM < "웬지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웬지_adv_50_rel" ].
+
+윙윙-50 := ph-adv &
+  [ STEM < "윙윙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_윙윙_adv_50_rel" ].
+
+유감없이-50 := ph-adv &
+  [ STEM < "유감없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유감없이_adv_50_rel" ].
+
+유난히-50 := ph-adv &
+  [ STEM < "유난히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유난히_adv_50_rel" ].
+
+유달리-50 := ph-adv &
+  [ STEM < "유달리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유달리_adv_50_rel" ].
+
+유독-50 := ph-adv &
+  [ STEM < "유독" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유독_adv_50_rel" ].
+
+유심히-50 := ph-adv &
+  [ STEM < "유심히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유심히_adv_50_rel" ].
+
+유유히-50 := ph-adv &
+  [ STEM < "유유히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유유히_adv_50_rel" ].
+
+으레-50 := ph-adv &
+  [ STEM < "으레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으레_adv_50_rel" ].
+
+으례-50 := ph-adv &
+  [ STEM < "으례" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으례_adv_50_rel" ].
+
+으스스-50 := ph-adv &
+  [ STEM < "으스스" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으스스_adv_50_rel" ].
+
+으슬으슬-50 := ph-adv &
+  [ STEM < "으슬으슬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으슬으슬_adv_50_rel" ].
+
+으쓱-50 := ph-adv &
+  [ STEM < "으쓱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으쓱_adv_50_rel" ].
+
+은근슬쩍-50 := ph-adv &
+  [ STEM < "은근슬쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_은근슬쩍_adv_50_rel" ].
+
+은근히-50 := ph-adv &
+  [ STEM < "은근히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_은근히_adv_50_rel" ].
+
+은밀히-50 := ph-adv &
+  [ STEM < "은밀히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_은밀히_adv_50_rel" ].
+
+은은히-50 := ph-adv &
+  [ STEM < "은은히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_은은히_adv_50_rel" ].
+
+응당-50 := ph-adv &
+  [ STEM < "응당" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_응당_adv_50_rel" ].
+
+의당-50 := ph-adv &
+  [ STEM < "의당" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의당_adv_50_rel" ].
+
+의연히-50 := ph-adv &
+  [ STEM < "의연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의연히_adv_50_rel" ].
+
+의외로-50 := ph-adv &
+  [ STEM < "의외로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의외로_adv_50_rel" ].
+
+이같이-50 := ph-adv &
+  [ STEM < "이같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이같이_adv_50_rel" ].
+
+이글이글-50 := ph-adv &
+  [ STEM < "이글이글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이글이글_adv_50_rel" ].
+
+이내-50 := ph-adv &
+  [ STEM < "이내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이내_adv_50_rel" ].
+
+이다지-50 := ph-adv &
+  [ STEM < "이다지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이다지_adv_50_rel" ].
+
+이대로-50 := ph-adv &
+  [ STEM < "이대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이대로_adv_50_rel" ].
+
+이따-50 := ph-adv &
+  [ STEM < "이따" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이따_adv_50_rel" ].
+
+이따가-50 := ph-adv &
+  [ STEM < "이따가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이따가_adv_50_rel" ].
+
+이따금-50 := ph-adv &
+  [ STEM < "이따금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이따금_adv_50_rel" ].
+
+이때껏-50 := ph-adv &
+  [ STEM < "이때껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이때껏_adv_50_rel" ].
+
+이래-50 := ph-adv &
+  [ STEM < "이래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이래_adv_50_rel" ].
+
+이래저래-50 := ph-adv &
+  [ STEM < "이래저래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이래저래_adv_50_rel" ].
+
+이랬다-50 := ph-adv &
+  [ STEM < "이랬다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이랬다_adv_50_rel" ].
+
+이러다-50 := ph-adv &
+  [ STEM < "이러다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이러다_adv_50_rel" ].
+
+이러쿵-50 := ph-adv &
+  [ STEM < "이러쿵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이러쿵_adv_50_rel" ].
+
+이러쿵저러쿵-50 := ph-adv &
+  [ STEM < "이러쿵저러쿵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이러쿵저러쿵_adv_50_rel" ].
+
+이럭저럭-50 := ph-adv &
+  [ STEM < "이럭저럭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이럭저럭_adv_50_rel" ].
+
+이루-50 := ph-adv &
+  [ STEM < "이루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이루_adv_50_rel" ].
+
+이를테면-50 := ph-adv &
+  [ STEM < "이를테면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이를테면_adv_50_rel" ].
+
+이리로-50 := ph-adv &
+  [ STEM < "이리로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이리로_adv_50_rel" ].
+
+이리루-50 := ph-adv &
+  [ STEM < "이리루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이리루_adv_50_rel" ].
+
+이리저리-50 := ph-adv &
+  [ STEM < "이리저리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이리저리_adv_50_rel" ].
+
+이만-50 := ph-adv &
+  [ STEM < "이만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이만_adv_50_rel" ].
+
+이만저만-50 := ph-adv &
+  [ STEM < "이만저만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이만저만_adv_50_rel" ].
+
+이만큼-50 := ph-adv &
+  [ STEM < "이만큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이만큼_adv_50_rel" ].
+
+이상스레-50 := ph-adv &
+  [ STEM < "이상스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이상스레_adv_50_rel" ].
+
+이상히-50 := ph-adv &
+  [ STEM < "이상히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이상히_adv_50_rel" ].
+
+이어-50 := ph-adv &
+  [ STEM < "이어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이어_adv_50_rel" ].
+
+이어서-50 := ph-adv &
+  [ STEM < "이어서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이어서_adv_50_rel" ].
+
+이왕-50 := ph-adv &
+  [ STEM < "이왕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이왕_adv_50_rel" ].
+
+이왕에-50 := ph-adv &
+  [ STEM < "이왕에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이왕에_adv_50_rel" ].
+
+이왕이면-50 := ph-adv &
+  [ STEM < "이왕이면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이왕이면_adv_50_rel" ].
+
+이윽고-50 := ph-adv &
+  [ STEM < "이윽고" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이윽고_adv_50_rel" ].
+
+이제껏-50 := ph-adv &
+  [ STEM < "이제껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이제껏_adv_50_rel" ].
+
+이제사-50 := ph-adv &
+  [ STEM < "이제사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이제사_adv_50_rel" ].
+
+이제야-50 := ph-adv &
+  [ STEM < "이제야" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이제야_adv_50_rel" ].
+
+이쯤-50 := ph-adv &
+  [ STEM < "이쯤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이쯤_adv_50_rel" ].
+
+이토-50 := ph-adv &
+  [ STEM < "이토" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이토_adv_50_rel" ].
+
+이토록-50 := ph-adv &
+  [ STEM < "이토록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이토록_adv_50_rel" ].
+
+익히-50 := ph-adv &
+  [ STEM < "익히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_익히_adv_50_rel" ].
+
+인자-50 := ph-adv &
+  [ STEM < "인자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_인자_adv_50_rel" ].
+
+인전-50 := ph-adv &
+  [ STEM < "인전" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_인전_adv_50_rel" ].
+
+인제-50 := ph-adv &
+  [ STEM < "인제" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_인제_adv_50_rel" ].
+
+일껏-50 := ph-adv &
+  [ STEM < "일껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일껏_adv_50_rel" ].
+
+일단-50 := ph-adv &
+  [ STEM < "일단" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일단_adv_50_rel" ].
+
+일부러-50 := ph-adv &
+  [ STEM < "일부러" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일부러_adv_50_rel" ].
+
+일시-50 := ph-adv &
+  [ STEM < "일시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일시_adv_50_rel" ].
+
+일약-50 := ph-adv &
+  [ STEM < "일약" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일약_adv_50_rel" ].
+
+일일이-50 := ph-adv &
+  [ STEM < "일일이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일일이_adv_50_rel" ].
+
+일절-50 := ph-adv &
+  [ STEM < "일절" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일절_adv_50_rel" ].
+
+일제히-50 := ph-adv &
+  [ STEM < "일제히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일제히_adv_50_rel" ].
+
+일찌감치-50 := ph-adv &
+  [ STEM < "일찌감치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일찌감치_adv_50_rel" ].
+
+일찌기-50 := ph-adv &
+  [ STEM < "일찌기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일찌기_adv_50_rel" ].
+
+일찍이-50 := ph-adv &
+  [ STEM < "일찍이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일찍이_adv_50_rel" ].
+
+일체-50 := ph-adv &
+  [ STEM < "일체" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일체_adv_50_rel" ].
+
+일층-50 := ph-adv &
+  [ STEM < "일층" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일층_adv_50_rel" ].
+
+일테면-50 := ph-adv &
+  [ STEM < "일테면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일테면_adv_50_rel" ].
+
+자고로-50 := ph-adv &
+  [ STEM < "자고로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자고로_adv_50_rel" ].
+
+자그마치-50 := ph-adv &
+  [ STEM < "자그마치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자그마치_adv_50_rel" ].
+
+자그만치-50 := ph-adv &
+  [ STEM < "자그만치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자그만치_adv_50_rel" ].
+
+자꾸-50 := ph-adv &
+  [ STEM < "자꾸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자꾸_adv_50_rel" ].
+
+자꾸만-50 := ph-adv &
+  [ STEM < "자꾸만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자꾸만_adv_50_rel" ].
+
+자꾸자꾸-50 := ph-adv &
+  [ STEM < "자꾸자꾸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자꾸자꾸_adv_50_rel" ].
+
+자랑스레-50 := ph-adv &
+  [ STEM < "자랑스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자랑스레_adv_50_rel" ].
+
+자못-50 := ph-adv &
+  [ STEM < "자못" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자못_adv_50_rel" ].
+
+자박자박-50 := ph-adv &
+  [ STEM < "자박자박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자박자박_adv_50_rel" ].
+
+자세히-50 := ph-adv &
+  [ STEM < "자세히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자세히_adv_50_rel" ].
+
+자연-50 := ph-adv &
+  [ STEM < "자연" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자연_adv_50_rel" ].
+
+자연스레-50 := ph-adv &
+  [ STEM < "자연스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자연스레_adv_50_rel" ].
+
+자연히-50 := ph-adv &
+  [ STEM < "자연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자연히_adv_50_rel" ].
+
+자욱이-50 := ph-adv &
+  [ STEM < "자욱이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자욱이_adv_50_rel" ].
+
+자유로이-50 := ph-adv &
+  [ STEM < "자유로이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자유로이_adv_50_rel" ].
+
+자칫-50 := ph-adv &
+  [ STEM < "자칫" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자칫_adv_50_rel" ].
+
+작작-50 := ph-adv &
+  [ STEM < "작작" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_작작_adv_50_rel" ].
+
+잔뜩-50 := ph-adv &
+  [ STEM < "잔뜩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잔뜩_adv_50_rel" ].
+
+잔잔히-50 := ph-adv &
+  [ STEM < "잔잔히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잔잔히_adv_50_rel" ].
+
+잘근잘근-50 := ph-adv &
+  [ STEM < "잘근잘근" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잘근잘근_adv_50_rel" ].
+
+잘록-50 := ph-adv &
+  [ STEM < "잘록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잘록_adv_50_rel" ].
+
+잘못-50 := ph-adv &
+  [ STEM < "잘못" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잘못_adv_50_rel" ].
+
+잠깐-50 := ph-adv &
+  [ STEM < "잠깐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠깐_adv_50_rel" ].
+
+잠시-50 := ph-adv &
+  [ STEM < "잠시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠시_adv_50_rel" ].
+
+잠자코-50 := ph-adv &
+  [ STEM < "잠자코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠자코_adv_50_rel" ].
+
+잠잠히-50 := ph-adv &
+  [ STEM < "잠잠히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠잠히_adv_50_rel" ].
+
+장난스레-50 := ph-adv &
+  [ STEM < "장난스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장난스레_adv_50_rel" ].
+
+장막-50 := ph-adv &
+  [ STEM < "장막" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장막_adv_50_rel" ].
+
+장차-50 := ph-adv &
+  [ STEM < "장차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장차_adv_50_rel" ].
+
+재빨리-50 := ph-adv &
+  [ STEM < "재빨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재빨리_adv_50_rel" ].
+
+재삼-50 := ph-adv &
+  [ STEM < "재삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재삼_adv_50_rel" ].
+
+재잘재잘-50 := ph-adv &
+  [ STEM < "재잘재잘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재잘재잘_adv_50_rel" ].
+
+재차-50 := ph-adv &
+  [ STEM < "재차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재차_adv_50_rel" ].
+
+저랬다-50 := ph-adv &
+  [ STEM < "저랬다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저랬다_adv_50_rel" ].
+
+저러쿵-50 := ph-adv &
+  [ STEM < "저러쿵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저러쿵_adv_50_rel" ].
+
+저렇게-50 := ph-adv &
+  [ STEM < "저렇게" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저렇게_adv_50_rel" ].
+
+저리-50 := ph-adv &
+  [ STEM < "저리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저리_adv_50_rel" ].
+
+저마다-50 := ph-adv &
+  [ STEM < "저마다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저마다_adv_50_rel" ].
+
+저만치-50 := ph-adv &
+  [ STEM < "저만치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저만치_adv_50_rel" ].
+
+저만큼-50 := ph-adv &
+  [ STEM < "저만큼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저만큼_adv_50_rel" ].
+
+저벅저벅-50 := ph-adv &
+  [ STEM < "저벅저벅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저벅저벅_adv_50_rel" ].
+
+저야말로-50 := ph-adv &
+  [ STEM < "저야말로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저야말로_adv_50_rel" ].
+
+저으기-50 := ph-adv &
+  [ STEM < "저으기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저으기_adv_50_rel" ].
+
+저처럼-50 := ph-adv &
+  [ STEM < "저처럼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저처럼_adv_50_rel" ].
+
+저토록-50 := ph-adv &
+  [ STEM < "저토록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저토록_adv_50_rel" ].
+
+적극-50 := ph-adv &
+  [ STEM < "적극" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적극_adv_50_rel" ].
+
+적당히-50 := ph-adv &
+  [ STEM < "적당히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적당히_adv_50_rel" ].
+
+적어도-50 := ph-adv &
+  [ STEM < "적어도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적어도_adv_50_rel" ].
+
+적이-50 := ph-adv &
+  [ STEM < "적이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적이_adv_50_rel" ].
+
+적잖이-50 := ph-adv &
+  [ STEM < "적잖이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적잖이_adv_50_rel" ].
+
+적절히-50 := ph-adv &
+  [ STEM < "적절히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적절히_adv_50_rel" ].
+
+적지않이-50 := ph-adv &
+  [ STEM < "적지않이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적지않이_adv_50_rel" ].
+
+전부-50 := ph-adv &
+  [ STEM < "전부" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전부_adv_50_rel" ].
+
+전연-50 := ph-adv &
+  [ STEM < "전연" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전연_adv_50_rel" ].
+
+전혀-50 := ph-adv &
+  [ STEM < "전혀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전혀_adv_50_rel" ].
+
+절대-50 := ph-adv &
+  [ STEM < "절대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절대_adv_50_rel" ].
+
+절대로-50 := ph-adv &
+  [ STEM < "절대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절대로_adv_50_rel" ].
+
+절레절레-50 := ph-adv &
+  [ STEM < "절레절레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절레절레_adv_50_rel" ].
+
+절로-50 := ph-adv &
+  [ STEM < "절로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절로_adv_50_rel" ].
+
+절실히-50 := ph-adv &
+  [ STEM < "절실히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절실히_adv_50_rel" ].
+
+점점-50 := ph-adv &
+  [ STEM < "점점" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_점점_adv_50_rel" ].
+
+점점이-50 := ph-adv &
+  [ STEM < "점점이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_점점이_adv_50_rel" ].
+
+정-50 := ph-adv &
+  [ STEM < "정" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정_adv_50_rel" ].
+
+정녕-50 := ph-adv &
+  [ STEM < "정녕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정녕_adv_50_rel" ].
+
+정말로-50 := ph-adv &
+  [ STEM < "정말로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정말로_adv_50_rel" ].
+
+정성껏-50 := ph-adv &
+  [ STEM < "정성껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정성껏_adv_50_rel" ].
+
+정성스레-50 := ph-adv &
+  [ STEM < "정성스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정성스레_adv_50_rel" ].
+
+정신없이-50 := ph-adv &
+  [ STEM < "정신없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정신없이_adv_50_rel" ].
+
+정작-50 := ph-adv &
+  [ STEM < "정작" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정작_adv_50_rel" ].
+
+정중히-50 := ph-adv &
+  [ STEM < "정중히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정중히_adv_50_rel" ].
+
+정확히-50 := ph-adv &
+  [ STEM < "정확히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정확히_adv_50_rel" ].
+
+정히-50 := ph-adv &
+  [ STEM < "정히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정히_adv_50_rel" ].
+
+제각각-50 := ph-adv &
+  [ STEM < "제각각" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제각각_adv_50_rel" ].
+
+제각기-50 := ph-adv &
+  [ STEM < "제각기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제각기_adv_50_rel" ].
+
+제대로-50 := ph-adv &
+  [ STEM < "제대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제대로_adv_50_rel" ].
+
+제멋대로-50 := ph-adv &
+  [ STEM < "제멋대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제멋대로_adv_50_rel" ].
+
+제발-50 := ph-adv &
+  [ STEM < "제발" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제발_adv_50_rel" ].
+
+제법-50 := ph-adv &
+  [ STEM < "제법" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제법_adv_50_rel" ].
+
+제아무리-50 := ph-adv &
+  [ STEM < "제아무리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제아무리_adv_50_rel" ].
+
+제풀에-50 := ph-adv &
+  [ STEM < "제풀에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제풀에_adv_50_rel" ].
+
+젤루-50 := ph-adv &
+  [ STEM < "젤루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_젤루_adv_50_rel" ].
+
+조각조각-50 := ph-adv &
+  [ STEM < "조각조각" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조각조각_adv_50_rel" ].
+
+조금만-50 := ph-adv &
+  [ STEM < "조금만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조금만_adv_50_rel" ].
+
+조금씩-50 := ph-adv &
+  [ STEM < "조금씩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조금씩_adv_50_rel" ].
+
+조금이라도-50 := ph-adv &
+  [ STEM < "조금이라도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조금이라도_adv_50_rel" ].
+
+조급히-50 := ph-adv &
+  [ STEM < "조급히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조급히_adv_50_rel" ].
+
+조롱조롱-50 := ph-adv &
+  [ STEM < "조롱조롱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조롱조롱_adv_50_rel" ].
+
+조마조마-50 := ph-adv &
+  [ STEM < "조마조마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조마조마_adv_50_rel" ].
+
+조만간-50 := ph-adv &
+  [ STEM < "조만간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조만간_adv_50_rel" ].
+
+조목조목-50 := ph-adv &
+  [ STEM < "조목조목" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조목조목_adv_50_rel" ].
+
+조속히-50 := ph-adv &
+  [ STEM < "조속히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조속히_adv_50_rel" ].
+
+조심스레-50 := ph-adv &
+  [ STEM < "조심스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조심스레_adv_50_rel" ].
+
+조심조심-50 := ph-adv &
+  [ STEM < "조심조심" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조심조심_adv_50_rel" ].
+
+조용조용-50 := ph-adv &
+  [ STEM < "조용조용" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조용조용_adv_50_rel" ].
+
+조용히-50 := ph-adv &
+  [ STEM < "조용히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조용히_adv_50_rel" ].
+
+족히-50 := ph-adv &
+  [ STEM < "족히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_족히_adv_50_rel" ].
+
+졸졸-50 := ph-adv &
+  [ STEM < "졸졸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_졸졸_adv_50_rel" ].
+
+졸졸졸-50 := ph-adv &
+  [ STEM < "졸졸졸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_졸졸졸_adv_50_rel" ].
+
+좀더-50 := ph-adv &
+  [ STEM < "좀더" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좀더_adv_50_rel" ].
+
+좀처럼-50 := ph-adv &
+  [ STEM < "좀처럼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좀처럼_adv_50_rel" ].
+
+좀체-50 := ph-adv &
+  [ STEM < "좀체" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좀체_adv_50_rel" ].
+
+좀체로-50 := ph-adv &
+  [ STEM < "좀체로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좀체로_adv_50_rel" ].
+
+종내-50 := ph-adv &
+  [ STEM < "종내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_종내_adv_50_rel" ].
+
+종일-50 := ph-adv &
+  [ STEM < "종일" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_종일_adv_50_rel" ].
+
+종종-50 := ph-adv &
+  [ STEM < "종종" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_종종_adv_50_rel" ].
+
+좌악-50 := ph-adv &
+  [ STEM < "좌악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좌악_adv_50_rel" ].
+
+죄-50 := ph-adv &
+  [ STEM < "죄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄_adv_50_rel" ].
+
+죄다-50 := ph-adv &
+  [ STEM < "죄다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄다_adv_50_rel" ].
+
+주렁주렁-50 := ph-adv &
+  [ STEM < "주렁주렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주렁주렁_adv_50_rel" ].
+
+주로-50 := ph-adv &
+  [ STEM < "주로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주로_adv_50_rel" ].
+
+주룩주룩-50 := ph-adv &
+  [ STEM < "주룩주룩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주룩주룩_adv_50_rel" ].
+
+주르르-50 := ph-adv &
+  [ STEM < "주르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주르르_adv_50_rel" ].
+
+주르륵-50 := ph-adv &
+  [ STEM < "주르륵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주르륵_adv_50_rel" ].
+
+주섬주섬-50 := ph-adv &
+  [ STEM < "주섬주섬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주섬주섬_adv_50_rel" ].
+
+주욱-50 := ph-adv &
+  [ STEM < "주욱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주욱_adv_50_rel" ].
+
+주저주저-50 := ph-adv &
+  [ STEM < "주저주저" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주저주저_adv_50_rel" ].
+
+주춤-50 := ph-adv &
+  [ STEM < "주춤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주춤_adv_50_rel" ].
+
+주춤주춤-50 := ph-adv &
+  [ STEM < "주춤주춤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주춤주춤_adv_50_rel" ].
+
+죽-50 := ph-adv &
+  [ STEM < "죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죽_adv_50_rel" ].
+
+죽죽-50 := ph-adv &
+  [ STEM < "죽죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죽죽_adv_50_rel" ].
+
+줄곧-50 := ph-adv &
+  [ STEM < "줄곧" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_줄곧_adv_50_rel" ].
+
+줄줄-50 := ph-adv &
+  [ STEM < "줄줄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_줄줄_adv_50_rel" ].
+
+줄줄이-50 := ph-adv &
+  [ STEM < "줄줄이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_줄줄이_adv_50_rel" ].
+
+줄창-50 := ph-adv &
+  [ STEM < "줄창" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_줄창_adv_50_rel" ].
+
+중얼중얼-50 := ph-adv &
+  [ STEM < "중얼중얼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_중얼중얼_adv_50_rel" ].
+
+중히-50 := ph-adv &
+  [ STEM < "중히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_중히_adv_50_rel" ].
+
+즉-50 := ph-adv &
+  [ STEM < "즉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_즉_adv_50_rel" ].
+
+즉각-50 := ph-adv &
+  [ STEM < "즉각" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_즉각_adv_50_rel" ].
+
+즉시-50 := ph-adv &
+  [ STEM < "즉시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_즉시_adv_50_rel" ].
+
+지그시-50 := ph-adv &
+  [ STEM < "지그시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지그시_adv_50_rel" ].
+
+지극히-50 := ph-adv &
+  [ STEM < "지극히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지극히_adv_50_rel" ].
+
+지글지글-50 := ph-adv &
+  [ STEM < "지글지글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지글지글_adv_50_rel" ].
+
+지금껏-50 := ph-adv &
+  [ STEM < "지금껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지금껏_adv_50_rel" ].
+
+지긋이-50 := ph-adv &
+  [ STEM < "지긋이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지긋이_adv_50_rel" ].
+
+지긋지긋-50 := ph-adv &
+  [ STEM < "지긋지긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지긋지긋_adv_50_rel" ].
+
+지끈지끈-50 := ph-adv &
+  [ STEM < "지끈지끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지끈지끈_adv_50_rel" ].
+
+지독히-50 := ph-adv &
+  [ STEM < "지독히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지독히_adv_50_rel" ].
+
+지레-50 := ph-adv &
+  [ STEM < "지레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지레_adv_50_rel" ].
+
+지지리-50 := ph-adv &
+  [ STEM < "지지리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지지리_adv_50_rel" ].
+
+진-50 := ph-adv &
+  [ STEM < "진" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진_adv_50_rel" ].
+
+진실로-50 := ph-adv &
+  [ STEM < "진실로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진실로_adv_50_rel" ].
+
+진작-50 := ph-adv &
+  [ STEM < "진작" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진작_adv_50_rel" ].
+
+진작에-50 := ph-adv &
+  [ STEM < "진작에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진작에_adv_50_rel" ].
+
+진정-50 := ph-adv &
+  [ STEM < "진정" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진정_adv_50_rel" ].
+
+진짜-50 := ph-adv &
+  [ STEM < "진짜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진짜_adv_50_rel" ].
+
+진탕-50 := ph-adv &
+  [ STEM < "진탕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진탕_adv_50_rel" ].
+
+질겅질겅-50 := ph-adv &
+  [ STEM < "질겅질겅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_질겅질겅_adv_50_rel" ].
+
+질끈-50 := ph-adv &
+  [ STEM < "질끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_질끈_adv_50_rel" ].
+
+질질-50 := ph-adv &
+  [ STEM < "질질" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_질질_adv_50_rel" ].
+
+질척질척-50 := ph-adv &
+  [ STEM < "질척질척" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_질척질척_adv_50_rel" ].
+
+짐짓-50 := ph-adv &
+  [ STEM < "짐짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짐짓_adv_50_rel" ].
+
+집안-50 := ph-adv &
+  [ STEM < "집안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집안_adv_50_rel" ].
+
+징징-50 := ph-adv &
+  [ STEM < "징징" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_징징_adv_50_rel" ].
+
+짜릿짜릿-50 := ph-adv &
+  [ STEM < "짜릿짜릿" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짜릿짜릿_adv_50_rel" ].
+
+짝-50 := ph-adv &
+  [ STEM < "짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짝_adv_50_rel" ].
+
+짝짝-50 := ph-adv &
+  [ STEM < "짝짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짝짝_adv_50_rel" ].
+
+짬짬이-50 := ph-adv &
+  [ STEM < "짬짬이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짬짬이_adv_50_rel" ].
+
+쨍-50 := ph-adv &
+  [ STEM < "쨍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쨍_adv_50_rel" ].
+
+쨍쨍-50 := ph-adv &
+  [ STEM < "쨍쨍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쨍쨍_adv_50_rel" ].
+
+쩌렁쩌렁-50 := ph-adv &
+  [ STEM < "쩌렁쩌렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쩌렁쩌렁_adv_50_rel" ].
+
+쩍-50 := ph-adv &
+  [ STEM < "쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쩍_adv_50_rel" ].
+
+쩍쩍-50 := ph-adv &
+  [ STEM < "쩍쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쩍쩍_adv_50_rel" ].
+
+쩝쩝-50 := ph-adv &
+  [ STEM < "쩝쩝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쩝쩝_adv_50_rel" ].
+
+쪼르르-50 := ph-adv &
+  [ STEM < "쪼르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쪼르르_adv_50_rel" ].
+
+쪽-50 := ph-adv &
+  [ STEM < "쪽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쪽_adv_50_rel" ].
+
+쪽쪽-50 := ph-adv &
+  [ STEM < "쪽쪽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쪽쪽_adv_50_rel" ].
+
+쫄깃쫄깃-50 := ph-adv &
+  [ STEM < "쫄깃쫄깃" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쫄깃쫄깃_adv_50_rel" ].
+
+쫄딱-50 := ph-adv &
+  [ STEM < "쫄딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쫄딱_adv_50_rel" ].
+
+쫑긋-50 := ph-adv &
+  [ STEM < "쫑긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쫑긋_adv_50_rel" ].
+
+쫘악-50 := ph-adv &
+  [ STEM < "쫘악" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쫘악_adv_50_rel" ].
+
+쫙-50 := ph-adv &
+  [ STEM < "쫙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쫙_adv_50_rel" ].
+
+쭈글쭈글-50 := ph-adv &
+  [ STEM < "쭈글쭈글" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭈글쭈글_adv_50_rel" ].
+
+쭈르르-50 := ph-adv &
+  [ STEM < "쭈르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭈르르_adv_50_rel" ].
+
+쭈뼛-50 := ph-adv &
+  [ STEM < "쭈뼛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭈뼛_adv_50_rel" ].
+
+쭈뼛쭈뼛-50 := ph-adv &
+  [ STEM < "쭈뼛쭈뼛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭈뼛쭈뼛_adv_50_rel" ].
+
+쭈욱-50 := ph-adv &
+  [ STEM < "쭈욱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭈욱_adv_50_rel" ].
+
+쭉-50 := ph-adv &
+  [ STEM < "쭉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭉_adv_50_rel" ].
+
+쭉쭉-50 := ph-adv &
+  [ STEM < "쭉쭉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭉쭉_adv_50_rel" ].
+
+쯧쯧-50 := ph-adv &
+  [ STEM < "쯧쯧" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쯧쯧_adv_50_rel" ].
+
+쯧쯧쯧-50 := ph-adv &
+  [ STEM < "쯧쯧쯧" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쯧쯧쯧_adv_50_rel" ].
+
+찌르르-50 := ph-adv &
+  [ STEM < "찌르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찌르르_adv_50_rel" ].
+
+찔끔-50 := ph-adv &
+  [ STEM < "찔끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찔끔_adv_50_rel" ].
+
+찔끔찔끔-50 := ph-adv &
+  [ STEM < "찔끔찔끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찔끔찔끔_adv_50_rel" ].
+
+찡-50 := ph-adv &
+  [ STEM < "찡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찡_adv_50_rel" ].
+
+찡긋-50 := ph-adv &
+  [ STEM < "찡긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찡긋_adv_50_rel" ].
+
+차곡차곡-50 := ph-adv &
+  [ STEM < "차곡차곡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차곡차곡_adv_50_rel" ].
+
+차근차근-50 := ph-adv &
+  [ STEM < "차근차근" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차근차근_adv_50_rel" ].
+
+차라리-50 := ph-adv &
+  [ STEM < "차라리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차라리_adv_50_rel" ].
+
+차례차례-50 := ph-adv &
+  [ STEM < "차례차례" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차례차례_adv_50_rel" ].
+
+차마-50 := ph-adv &
+  [ STEM < "차마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차마_adv_50_rel" ].
+
+차분히-50 := ph-adv &
+  [ STEM < "차분히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차분히_adv_50_rel" ].
+
+차일피일-50 := ph-adv &
+  [ STEM < "차일피일" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차일피일_adv_50_rel" ].
+
+차차-50 := ph-adv &
+  [ STEM < "차차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차차_adv_50_rel" ].
+
+차차로-50 := ph-adv &
+  [ STEM < "차차로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차차로_adv_50_rel" ].
+
+차츰-50 := ph-adv &
+  [ STEM < "차츰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차츰_adv_50_rel" ].
+
+차츰차츰-50 := ph-adv &
+  [ STEM < "차츰차츰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차츰차츰_adv_50_rel" ].
+
+착-50 := ph-adv &
+  [ STEM < "착" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_착_adv_50_rel" ].
+
+착실히-50 := ph-adv &
+  [ STEM < "착실히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_착실히_adv_50_rel" ].
+
+착착-50 := ph-adv &
+  [ STEM < "착착" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_착착_adv_50_rel" ].
+
+찬찬히-50 := ph-adv &
+  [ STEM < "찬찬히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찬찬히_adv_50_rel" ].
+
+찰싹-50 := ph-adv &
+  [ STEM < "찰싹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찰싹_adv_50_rel" ].
+
+찰칵-50 := ph-adv &
+  [ STEM < "찰칵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찰칵_adv_50_rel" ].
+
+참-50 := ph-adv &
+  [ STEM < "참" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_참_adv_50_rel" ].
+
+참말-50 := ph-adv &
+  [ STEM < "참말" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_참말_adv_50_rel" ].
+
+참말로-50 := ph-adv &
+  [ STEM < "참말로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_참말로_adv_50_rel" ].
+
+참으로-50 := ph-adv &
+  [ STEM < "참으로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_참으로_adv_50_rel" ].
+
+채-50 := ph-adv &
+  [ STEM < "채" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_채_adv_50_rel" ].
+
+책장-50 := ph-adv &
+  [ STEM < "책장" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_책장_adv_50_rel" ].
+
+처음-50 := ph-adv &
+  [ STEM < "처음" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_처음_adv_50_rel" ].
+
+척-50 := ph-adv &
+  [ STEM < "척" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_척_adv_50_rel" ].
+
+척척-50 := ph-adv &
+  [ STEM < "척척" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_척척_adv_50_rel" ].
+
+천만에-50 := ph-adv &
+  [ STEM < "천만에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천만에_adv_50_rel" ].
+
+천상-50 := ph-adv &
+  [ STEM < "천상" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천상_adv_50_rel" ].
+
+천생-50 := ph-adv &
+  [ STEM < "천생" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천생_adv_50_rel" ].
+
+철두철미-50 := ph-adv &
+  [ STEM < "철두철미" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철두철미_adv_50_rel" ].
+
+철렁-50 := ph-adv &
+  [ STEM < "철렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철렁_adv_50_rel" ].
+
+철썩-50 := ph-adv &
+  [ STEM < "철썩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철썩_adv_50_rel" ].
+
+철없이-50 := ph-adv &
+  [ STEM < "철없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철없이_adv_50_rel" ].
+
+철철-50 := ph-adv &
+  [ STEM < "철철" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철철_adv_50_rel" ].
+
+철커덕-50 := ph-adv &
+  [ STEM < "철커덕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철커덕_adv_50_rel" ].
+
+첨벙-50 := ph-adv &
+  [ STEM < "첨벙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_첨벙_adv_50_rel" ].
+
+첩첩-50 := ph-adv &
+  [ STEM < "첩첩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_첩첩_adv_50_rel" ].
+
+초롱초롱-50 := ph-adv &
+  [ STEM < "초롱초롱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_초롱초롱_adv_50_rel" ].
+
+초연히-50 := ph-adv &
+  [ STEM < "초연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_초연히_adv_50_rel" ].
+
+촉촉이-50 := ph-adv &
+  [ STEM < "촉촉이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_촉촉이_adv_50_rel" ].
+
+촉촉히-50 := ph-adv &
+  [ STEM < "촉촉히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_촉촉히_adv_50_rel" ].
+
+촘촘히-50 := ph-adv &
+  [ STEM < "촘촘히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_촘촘히_adv_50_rel" ].
+
+총총-50 := ph-adv &
+  [ STEM < "총총" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_총총_adv_50_rel" ].
+
+총총히-50 := ph-adv &
+  [ STEM < "총총히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_총총히_adv_50_rel" ].
+
+최근들어-50 := ph-adv &
+  [ STEM < "최근들어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_최근들어_adv_50_rel" ].
+
+추적추적-50 := ph-adv &
+  [ STEM < "추적추적" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_추적추적_adv_50_rel" ].
+
+축-50 := ph-adv &
+  [ STEM < "축" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_축_adv_50_rel" ].
+
+충실히-50 := ph-adv &
+  [ STEM < "충실히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_충실히_adv_50_rel" ].
+
+층층이-50 := ph-adv &
+  [ STEM < "층층이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_층층이_adv_50_rel" ].
+
+치렁치렁-50 := ph-adv &
+  [ STEM < "치렁치렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치렁치렁_adv_50_rel" ].
+
+친절히-50 := ph-adv &
+  [ STEM < "친절히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_친절히_adv_50_rel" ].
+
+친친-50 := ph-adv &
+  [ STEM < "친친" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_친친_adv_50_rel" ].
+
+친히-50 := ph-adv &
+  [ STEM < "친히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_친히_adv_50_rel" ].
+
+칭칭-50 := ph-adv &
+  [ STEM < "칭칭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_칭칭_adv_50_rel" ].
+
+카랑카랑-50 := ph-adv &
+  [ STEM < "카랑카랑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_카랑카랑_adv_50_rel" ].
+
+칵-50 := ph-adv &
+  [ STEM < "칵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_칵_adv_50_rel" ].
+
+캄캄-50 := ph-adv &
+  [ STEM < "캄캄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_캄캄_adv_50_rel" ].
+
+컹컹-50 := ph-adv &
+  [ STEM < "컹컹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_컹컹_adv_50_rel" ].
+
+켜켜이-50 := ph-adv &
+  [ STEM < "켜켜이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_켜켜이_adv_50_rel" ].
+
+콕-50 := ph-adv &
+  [ STEM < "콕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_콕_adv_50_rel" ].
+
+콕콕-50 := ph-adv &
+  [ STEM < "콕콕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_콕콕_adv_50_rel" ].
+
+콱-50 := ph-adv &
+  [ STEM < "콱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_콱_adv_50_rel" ].
+
+콸콸-50 := ph-adv &
+  [ STEM < "콸콸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_콸콸_adv_50_rel" ].
+
+쾅-50 := ph-adv &
+  [ STEM < "쾅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쾅_adv_50_rel" ].
+
+쾅쾅-50 := ph-adv &
+  [ STEM < "쾅쾅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쾅쾅_adv_50_rel" ].
+
+쾌히-50 := ph-adv &
+  [ STEM < "쾌히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쾌히_adv_50_rel" ].
+
+쿄-50 := ph-adv &
+  [ STEM < "쿄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿄_adv_50_rel" ].
+
+쿠-50 := ph-adv &
+  [ STEM < "쿠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿠_adv_50_rel" ].
+
+쿡-50 := ph-adv &
+  [ STEM < "쿡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿡_adv_50_rel" ].
+
+쿡쿡-50 := ph-adv &
+  [ STEM < "쿡쿡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿡쿡_adv_50_rel" ].
+
+쿵-50 := ph-adv &
+  [ STEM < "쿵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿵_adv_50_rel" ].
+
+쿵쿵-50 := ph-adv &
+  [ STEM < "쿵쿵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿵쿵_adv_50_rel" ].
+
+큐-50 := ph-adv &
+  [ STEM < "큐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_큐_adv_50_rel" ].
+
+크윽-50 := ph-adv &
+  [ STEM < "크윽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_크윽_adv_50_rel" ].
+
+클클-50 := ph-adv &
+  [ STEM < "클클" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_클클_adv_50_rel" ].
+
+큼직큼직-50 := ph-adv &
+  [ STEM < "큼직큼직" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_큼직큼직_adv_50_rel" ].
+
+키득-50 := ph-adv &
+  [ STEM < "키득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_키득_adv_50_rel" ].
+
+키득키득-50 := ph-adv &
+  [ STEM < "키득키득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_키득키득_adv_50_rel" ].
+
+키들키들-50 := ph-adv &
+  [ STEM < "키들키들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_키들키들_adv_50_rel" ].
+
+킥킥-50 := ph-adv &
+  [ STEM < "킥킥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_킥킥_adv_50_rel" ].
+
+킬킬-50 := ph-adv &
+  [ STEM < "킬킬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_킬킬_adv_50_rel" ].
+
+타박타박-50 := ph-adv &
+  [ STEM < "타박타박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_타박타박_adv_50_rel" ].
+
+탁-50 := ph-adv &
+  [ STEM < "탁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탁_adv_50_rel" ].
+
+탁탁-50 := ph-adv &
+  [ STEM < "탁탁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탁탁_adv_50_rel" ].
+
+탕-50 := ph-adv &
+  [ STEM < "탕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탕_adv_50_rel" ].
+
+탕탕-50 := ph-adv &
+  [ STEM < "탕탕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탕탕_adv_50_rel" ].
+
+태연히-50 := ph-adv &
+  [ STEM < "태연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_태연히_adv_50_rel" ].
+
+탱탱-50 := ph-adv &
+  [ STEM < "탱탱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탱탱_adv_50_rel" ].
+
+터덜터덜-50 := ph-adv &
+  [ STEM < "터덜터덜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_터덜터덜_adv_50_rel" ].
+
+터무니없이-50 := ph-adv &
+  [ STEM < "터무니없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_터무니없이_adv_50_rel" ].
+
+터벅터벅-50 := ph-adv &
+  [ STEM < "터벅터벅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_터벅터벅_adv_50_rel" ].
+
+턱-50 := ph-adv &
+  [ STEM < "턱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_턱_adv_50_rel" ].
+
+턱없이-50 := ph-adv &
+  [ STEM < "턱없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_턱없이_adv_50_rel" ].
+
+턱턱-50 := ph-adv &
+  [ STEM < "턱턱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_턱턱_adv_50_rel" ].
+
+털썩-50 := ph-adv &
+  [ STEM < "털썩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_털썩_adv_50_rel" ].
+
+텅-50 := ph-adv &
+  [ STEM < "텅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_텅_adv_50_rel" ].
+
+텅텅-50 := ph-adv &
+  [ STEM < "텅텅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_텅텅_adv_50_rel" ].
+
+토막토막-50 := ph-adv &
+  [ STEM < "토막토막" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_토막토막_adv_50_rel" ].
+
+토실토실-50 := ph-adv &
+  [ STEM < "토실토실" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_토실토실_adv_50_rel" ].
+
+톡-50 := ph-adv &
+  [ STEM < "톡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_톡_adv_50_rel" ].
+
+톡톡-50 := ph-adv &
+  [ STEM < "톡톡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_톡톡_adv_50_rel" ].
+
+톡톡히-50 := ph-adv &
+  [ STEM < "톡톡히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_톡톡히_adv_50_rel" ].
+
+통-50 := ph-adv &
+  [ STEM < "통" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_통_adv_50_rel" ].
+
+통상-50 := ph-adv &
+  [ STEM < "통상" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_통상_adv_50_rel" ].
+
+통째로-50 := ph-adv &
+  [ STEM < "통째로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_통째로_adv_50_rel" ].
+
+통통-50 := ph-adv &
+  [ STEM < "통통" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_통통_adv_50_rel" ].
+
+통틀어-50 := ph-adv &
+  [ STEM < "통틀어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_통틀어_adv_50_rel" ].
+
+투덜투덜-50 := ph-adv &
+  [ STEM < "투덜투덜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_투덜투덜_adv_50_rel" ].
+
+툭-50 := ph-adv &
+  [ STEM < "툭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_툭_adv_50_rel" ].
+
+툭툭-50 := ph-adv &
+  [ STEM < "툭툭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_툭툭_adv_50_rel" ].
+
+툭하면-50 := ph-adv &
+  [ STEM < "툭하면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_툭하면_adv_50_rel" ].
+
+퉁명스레-50 := ph-adv &
+  [ STEM < "퉁명스레" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퉁명스레_adv_50_rel" ].
+
+퉁퉁-50 := ph-adv &
+  [ STEM < "퉁퉁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퉁퉁_adv_50_rel" ].
+
+퉤-50 := ph-adv &
+  [ STEM < "퉤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퉤_adv_50_rel" ].
+
+특별히-50 := ph-adv &
+  [ STEM < "특별히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_특별히_adv_50_rel" ].
+
+튼튼히-50 := ph-adv &
+  [ STEM < "튼튼히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_튼튼히_adv_50_rel" ].
+
+틈틈이-50 := ph-adv &
+  [ STEM < "틈틈이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_틈틈이_adv_50_rel" ].
+
+티격태격-50 := ph-adv &
+  [ STEM < "티격태격" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_티격태격_adv_50_rel" ].
+
+파르르-50 := ph-adv &
+  [ STEM < "파르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파르르_adv_50_rel" ].
+
+파릇파릇-50 := ph-adv &
+  [ STEM < "파릇파릇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파릇파릇_adv_50_rel" ].
+
+팍-50 := ph-adv &
+  [ STEM < "팍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_팍_adv_50_rel" ].
+
+팍팍-50 := ph-adv &
+  [ STEM < "팍팍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_팍팍_adv_50_rel" ].
+
+팔팔-50 := ph-adv &
+  [ STEM < "팔팔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_팔팔_adv_50_rel" ].
+
+팩-50 := ph-adv &
+  [ STEM < "팩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_팩_adv_50_rel" ].
+
+팽팽히-50 := ph-adv &
+  [ STEM < "팽팽히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_팽팽히_adv_50_rel" ].
+
+퍼뜩-50 := ph-adv &
+  [ STEM < "퍼뜩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퍼뜩_adv_50_rel" ].
+
+퍽-50 := ph-adv &
+  [ STEM < "퍽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퍽_adv_50_rel" ].
+
+퍽퍽-50 := ph-adv &
+  [ STEM < "퍽퍽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퍽퍽_adv_50_rel" ].
+
+펄쩍-50 := ph-adv &
+  [ STEM < "펄쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_펄쩍_adv_50_rel" ].
+
+펄쩍펄쩍-50 := ph-adv &
+  [ STEM < "펄쩍펄쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_펄쩍펄쩍_adv_50_rel" ].
+
+펄펄-50 := ph-adv &
+  [ STEM < "펄펄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_펄펄_adv_50_rel" ].
+
+펑-50 := ph-adv &
+  [ STEM < "펑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_펑_adv_50_rel" ].
+
+펑펑-50 := ph-adv &
+  [ STEM < "펑펑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_펑펑_adv_50_rel" ].
+
+편안히-50 := ph-adv &
+  [ STEM < "편안히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_편안히_adv_50_rel" ].
+
+편히-50 := ph-adv &
+  [ STEM < "편히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_편히_adv_50_rel" ].
+
+평생-50 := ph-adv &
+  [ STEM < "평생" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_평생_adv_50_rel" ].
+
+평생토록-50 := ph-adv &
+  [ STEM < "평생토록" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_평생토록_adv_50_rel" ].
+
+평소-50 := ph-adv &
+  [ STEM < "평소" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_평소_adv_50_rel" ].
+
+평일-50 := ph-adv &
+  [ STEM < "평일" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_평일_adv_50_rel" ].
+
+포근히-50 := ph-adv &
+  [ STEM < "포근히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_포근히_adv_50_rel" ].
+
+포동포동-50 := ph-adv &
+  [ STEM < "포동포동" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_포동포동_adv_50_rel" ].
+
+폭-50 := ph-adv &
+  [ STEM < "폭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_폭_adv_50_rel" ].
+
+폭삭-50 := ph-adv &
+  [ STEM < "폭삭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_폭삭_adv_50_rel" ].
+
+푸드득-50 := ph-adv &
+  [ STEM < "푸드득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸드득_adv_50_rel" ].
+
+푸석푸석-50 := ph-adv &
+  [ STEM < "푸석푸석" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸석푸석_adv_50_rel" ].
+
+푸푸-50 := ph-adv &
+  [ STEM < "푸푸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸푸_adv_50_rel" ].
+
+푸하하하-50 := ph-adv &
+  [ STEM < "푸하하하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸하하하_adv_50_rel" ].
+
+푹-50 := ph-adv &
+  [ STEM < "푹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푹_adv_50_rel" ].
+
+푹신푹신-50 := ph-adv &
+  [ STEM < "푹신푹신" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푹신푹신_adv_50_rel" ].
+
+푹푹-50 := ph-adv &
+  [ STEM < "푹푹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푹푹_adv_50_rel" ].
+
+풀썩-50 := ph-adv &
+  [ STEM < "풀썩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풀썩_adv_50_rel" ].
+
+풀풀-50 := ph-adv &
+  [ STEM < "풀풀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풀풀_adv_50_rel" ].
+
+풍덩-50 := ph-adv &
+  [ STEM < "풍덩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풍덩_adv_50_rel" ].
+
+풍부히-50 := ph-adv &
+  [ STEM < "풍부히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풍부히_adv_50_rel" ].
+
+풍족히-50 := ph-adv &
+  [ STEM < "풍족히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풍족히_adv_50_rel" ].
+
+피둥피둥-50 := ph-adv &
+  [ STEM < "피둥피둥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피둥피둥_adv_50_rel" ].
+
+피식-50 := ph-adv &
+  [ STEM < "피식" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피식_adv_50_rel" ].
+
+픽-50 := ph-adv &
+  [ STEM < "픽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_픽_adv_50_rel" ].
+
+필경-50 := ph-adv &
+  [ STEM < "필경" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_필경_adv_50_rel" ].
+
+필시-50 := ph-adv &
+  [ STEM < "필시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_필시_adv_50_rel" ].
+
+필히-50 := ph-adv &
+  [ STEM < "필히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_필히_adv_50_rel" ].
+
+핑-50 := ph-adv &
+  [ STEM < "핑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_핑_adv_50_rel" ].
+
+핑그르르-50 := ph-adv &
+  [ STEM < "핑그르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_핑그르르_adv_50_rel" ].
+
+하-50 := ph-adv &
+  [ STEM < "하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하_adv_50_rel" ].
+
+하기사-50 := ph-adv &
+  [ STEM < "하기사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하기사_adv_50_rel" ].
+
+하긴-50 := ph-adv &
+  [ STEM < "하긴" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하긴_adv_50_rel" ].
+
+하나같이-50 := ph-adv &
+  [ STEM < "하나같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하나같이_adv_50_rel" ].
+
+하나하나-50 := ph-adv &
+  [ STEM < "하나하나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하나하나_adv_50_rel" ].
+
+하늘하늘-50 := ph-adv &
+  [ STEM < "하늘하늘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하늘하늘_adv_50_rel" ].
+
+하다못해-50 := ph-adv &
+  [ STEM < "하다못해" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하다못해_adv_50_rel" ].
+
+하도-50 := ph-adv &
+  [ STEM < "하도" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하도_adv_50_rel" ].
+
+하두-50 := ph-adv &
+  [ STEM < "하두" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하두_adv_50_rel" ].
+
+하루빨리-50 := ph-adv &
+  [ STEM < "하루빨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하루빨리_adv_50_rel" ].
+
+하루속히-50 := ph-adv &
+  [ STEM < "하루속히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하루속히_adv_50_rel" ].
+
+하루하루-50 := ph-adv &
+  [ STEM < "하루하루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하루하루_adv_50_rel" ].
+
+하릴없이-50 := ph-adv &
+  [ STEM < "하릴없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하릴없이_adv_50_rel" ].
+
+하마-50 := ph-adv &
+  [ STEM < "하마" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하마_adv_50_rel" ].
+
+하마터면-50 := ph-adv &
+  [ STEM < "하마터면" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하마터면_adv_50_rel" ].
+
+하여간-50 := ph-adv &
+  [ STEM < "하여간" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하여간_adv_50_rel" ].
+
+하여금-50 := ph-adv &
+  [ STEM < "하여금" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하여금_adv_50_rel" ].
+
+하여튼-50 := ph-adv &
+  [ STEM < "하여튼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하여튼_adv_50_rel" ].
+
+하염없이-50 := ph-adv &
+  [ STEM < "하염없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하염없이_adv_50_rel" ].
+
+하필-50 := ph-adv &
+  [ STEM < "하필" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하필_adv_50_rel" ].
+
+하하-50 := ph-adv &
+  [ STEM < "하하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하하_adv_50_rel" ].
+
+한가득-50 := ph-adv &
+  [ STEM < "한가득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한가득_adv_50_rel" ].
+
+한가로이-50 := ph-adv &
+  [ STEM < "한가로이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한가로이_adv_50_rel" ].
+
+한갓-50 := ph-adv &
+  [ STEM < "한갓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한갓_adv_50_rel" ].
+
+한결-50 := ph-adv &
+  [ STEM < "한결" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한결_adv_50_rel" ].
+
+한결같이-50 := ph-adv &
+  [ STEM < "한결같이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한결같이_adv_50_rel" ].
+
+한꺼번-50 := ph-adv &
+  [ STEM < "한꺼번" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한꺼번_adv_50_rel" ].
+
+한꺼번에-50 := ph-adv &
+  [ STEM < "한꺼번에" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한꺼번에_adv_50_rel" ].
+
+한껏-50 := ph-adv &
+  [ STEM < "한껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한껏_adv_50_rel" ].
+
+한낱-50 := ph-adv &
+  [ STEM < "한낱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한낱_adv_50_rel" ].
+
+한데-50 := ph-adv &
+  [ STEM < "한데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한데_adv_50_rel" ].
+
+한때-50 := ph-adv &
+  [ STEM < "한때" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한때_adv_50_rel" ].
+
+한바탕-50 := ph-adv &
+  [ STEM < "한바탕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한바탕_adv_50_rel" ].
+
+한발-50 := ph-adv &
+  [ STEM < "한발" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한발_adv_50_rel" ].
+
+한번-50 := ph-adv &
+  [ STEM < "한번" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한번_adv_50_rel" ].
+
+한사코-50 := ph-adv &
+  [ STEM < "한사코" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한사코_adv_50_rel" ].
+
+한시-50 := ph-adv &
+  [ STEM < "한시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한시_adv_50_rel" ].
+
+한시바삐-50 := ph-adv &
+  [ STEM < "한시바삐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한시바삐_adv_50_rel" ].
+
+한없이-50 := ph-adv &
+  [ STEM < "한없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한없이_adv_50_rel" ].
+
+한참-50 := ph-adv &
+  [ STEM < "한참" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한참_adv_50_rel" ].
+
+한창-50 := ph-adv &
+  [ STEM < "한창" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한창_adv_50_rel" ].
+
+한층-50 := ph-adv &
+  [ STEM < "한층" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한층_adv_50_rel" ].
+
+한편-50 := ph-adv &
+  [ STEM < "한편" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한편_adv_50_rel" ].
+
+한평생-50 := ph-adv &
+  [ STEM < "한평생" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한평생_adv_50_rel" ].
+
+함부로-50 := ph-adv &
+  [ STEM < "함부로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_함부로_adv_50_rel" ].
+
+함빡-50 := ph-adv &
+  [ STEM < "함빡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_함빡_adv_50_rel" ].
+
+항시-50 := ph-adv &
+  [ STEM < "항시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_항시_adv_50_rel" ].
+
+항용-50 := ph-adv &
+  [ STEM < "항용" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_항용_adv_50_rel" ].
+
+해마다-50 := ph-adv &
+  [ STEM < "해마다" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_해마다_adv_50_rel" ].
+
+행여-50 := ph-adv &
+  [ STEM < "행여" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_행여_adv_50_rel" ].
+
+행여나-50 := ph-adv &
+  [ STEM < "행여나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_행여나_adv_50_rel" ].
+
+허겁지겁-50 := ph-adv &
+  [ STEM < "허겁지겁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허겁지겁_adv_50_rel" ].
+
+허둥지둥-50 := ph-adv &
+  [ STEM < "허둥지둥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허둥지둥_adv_50_rel" ].
+
+허물없이-50 := ph-adv &
+  [ STEM < "허물없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허물없이_adv_50_rel" ].
+
+허위허위-50 := ph-adv &
+  [ STEM < "허위허위" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허위허위_adv_50_rel" ].
+
+허투루-50 := ph-adv &
+  [ STEM < "허투루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허투루_adv_50_rel" ].
+
+허허-50 := ph-adv &
+  [ STEM < "허허" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허허_adv_50_rel" ].
+
+헉-50 := ph-adv &
+  [ STEM < "헉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헉_adv_50_rel" ].
+
+헉헉-50 := ph-adv &
+  [ STEM < "헉헉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헉헉_adv_50_rel" ].
+
+헌데-50 := ph-adv &
+  [ STEM < "헌데" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헌데_adv_50_rel" ].
+
+헛되이-50 := ph-adv &
+  [ STEM < "헛되이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헛되이_adv_50_rel" ].
+
+헤벌쭉-50 := ph-adv &
+  [ STEM < "헤벌쭉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헤벌쭉_adv_50_rel" ].
+
+헤헤-50 := ph-adv &
+  [ STEM < "헤헤" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헤헤_adv_50_rel" ].
+
+현재-50 := ph-adv &
+  [ STEM < "현재" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_현재_adv_50_rel" ].
+
+현저히-50 := ph-adv &
+  [ STEM < "현저히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_현저히_adv_50_rel" ].
+
+형편없이-50 := ph-adv &
+  [ STEM < "형편없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_형편없이_adv_50_rel" ].
+
+호락호락-50 := ph-adv &
+  [ STEM < "호락호락" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호락호락_adv_50_rel" ].
+
+호리호리-50 := ph-adv &
+  [ STEM < "호리호리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호리호리_adv_50_rel" ].
+
+호젓이-50 := ph-adv &
+  [ STEM < "호젓이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호젓이_adv_50_rel" ].
+
+호호-50 := ph-adv &
+  [ STEM < "호호" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호호_adv_50_rel" ].
+
+혹-50 := ph-adv &
+  [ STEM < "혹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혹_adv_50_rel" ].
+
+혹시-50 := ph-adv &
+  [ STEM < "혹시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혹시_adv_50_rel" ].
+
+혹시나-50 := ph-adv &
+  [ STEM < "혹시나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혹시나_adv_50_rel" ].
+
+혹여-50 := ph-adv &
+  [ STEM < "혹여" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혹여_adv_50_rel" ].
+
+혹은-50 := ph-adv &
+  [ STEM < "혹은" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혹은_adv_50_rel" ].
+
+혼자-50 := ph-adv &
+  [ STEM < "혼자" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혼자_adv_50_rel" ].
+
+홀딱-50 := ph-adv &
+  [ STEM < "홀딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홀딱_adv_50_rel" ].
+
+홀랑-50 := ph-adv &
+  [ STEM < "홀랑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홀랑_adv_50_rel" ].
+
+홀로-50 := ph-adv &
+  [ STEM < "홀로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홀로_adv_50_rel" ].
+
+홀루-50 := ph-adv &
+  [ STEM < "홀루" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홀루_adv_50_rel" ].
+
+홀연-50 := ph-adv &
+  [ STEM < "홀연" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홀연_adv_50_rel" ].
+
+홀연히-50 := ph-adv &
+  [ STEM < "홀연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홀연히_adv_50_rel" ].
+
+화끈-50 := ph-adv &
+  [ STEM < "화끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_화끈_adv_50_rel" ].
+
+화닥닥-50 := ph-adv &
+  [ STEM < "화닥닥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_화닥닥_adv_50_rel" ].
+
+화들짝-50 := ph-adv &
+  [ STEM < "화들짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_화들짝_adv_50_rel" ].
+
+확고히-50 := ph-adv &
+  [ STEM < "확고히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_확고히_adv_50_rel" ].
+
+확실히-50 := ph-adv &
+  [ STEM < "확실히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_확실히_adv_50_rel" ].
+
+확연히-50 := ph-adv &
+  [ STEM < "확연히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_확연히_adv_50_rel" ].
+
+환히-50 := ph-adv &
+  [ STEM < "환히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_환히_adv_50_rel" ].
+
+활발히-50 := ph-adv &
+  [ STEM < "활발히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_활발히_adv_50_rel" ].
+
+활짝-50 := ph-adv &
+  [ STEM < "활짝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_활짝_adv_50_rel" ].
+
+활활-50 := ph-adv &
+  [ STEM < "활활" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_활활_adv_50_rel" ].
+
+황급히-50 := ph-adv &
+  [ STEM < "황급히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_황급히_adv_50_rel" ].
+
+황망히-50 := ph-adv &
+  [ STEM < "황망히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_황망히_adv_50_rel" ].
+
+홱-50 := ph-adv &
+  [ STEM < "홱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홱_adv_50_rel" ].
+
+획-50 := ph-adv &
+  [ STEM < "획" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_획_adv_50_rel" ].
+
+후끈-50 := ph-adv &
+  [ STEM < "후끈" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후끈_adv_50_rel" ].
+
+후다닥-50 := ph-adv &
+  [ STEM < "후다닥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후다닥_adv_50_rel" ].
+
+후닥닥-50 := ph-adv &
+  [ STEM < "후닥닥" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후닥닥_adv_50_rel" ].
+
+후두둑-50 := ph-adv &
+  [ STEM < "후두둑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후두둑_adv_50_rel" ].
+
+후둑후둑-50 := ph-adv &
+  [ STEM < "후둑후둑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후둑후둑_adv_50_rel" ].
+
+후드득-50 := ph-adv &
+  [ STEM < "후드득" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후드득_adv_50_rel" ].
+
+후들후들-50 := ph-adv &
+  [ STEM < "후들후들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후들후들_adv_50_rel" ].
+
+후딱-50 := ph-adv &
+  [ STEM < "후딱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후딱_adv_50_rel" ].
+
+후루룩-50 := ph-adv &
+  [ STEM < "후루룩" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후루룩_adv_50_rel" ].
+
+후후-50 := ph-adv &
+  [ STEM < "후후" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후후_adv_50_rel" ].
+
+후히-50 := ph-adv &
+  [ STEM < "후히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후히_adv_50_rel" ].
+
+훅-50 := ph-adv &
+  [ STEM < "훅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훅_adv_50_rel" ].
+
+훅훅-50 := ph-adv &
+  [ STEM < "훅훅" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훅훅_adv_50_rel" ].
+
+훌렁-50 := ph-adv &
+  [ STEM < "훌렁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훌렁_adv_50_rel" ].
+
+훌륭히-50 := ph-adv &
+  [ STEM < "훌륭히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훌륭히_adv_50_rel" ].
+
+훌쩍-50 := ph-adv &
+  [ STEM < "훌쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훌쩍_adv_50_rel" ].
+
+훌쩍훌쩍-50 := ph-adv &
+  [ STEM < "훌쩍훌쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훌쩍훌쩍_adv_50_rel" ].
+
+훌훌-50 := ph-adv &
+  [ STEM < "훌훌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훌훌_adv_50_rel" ].
+
+훤히-50 := ph-adv &
+  [ STEM < "훤히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훤히_adv_50_rel" ].
+
+훨씬-50 := ph-adv &
+  [ STEM < "훨씬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훨씬_adv_50_rel" ].
+
+훨훨-50 := ph-adv &
+  [ STEM < "훨훨" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훨훨_adv_50_rel" ].
+
+휘-50 := ph-adv &
+  [ STEM < "휘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘_adv_50_rel" ].
+
+휘영청-50 := ph-adv &
+  [ STEM < "휘영청" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘영청_adv_50_rel" ].
+
+휘익-50 := ph-adv &
+  [ STEM < "휘익" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘익_adv_50_rel" ].
+
+휘적휘적-50 := ph-adv &
+  [ STEM < "휘적휘적" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘적휘적_adv_50_rel" ].
+
+휘청-50 := ph-adv &
+  [ STEM < "휘청" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘청_adv_50_rel" ].
+
+휘청휘청-50 := ph-adv &
+  [ STEM < "휘청휘청" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘청휘청_adv_50_rel" ].
+
+휘휘-50 := ph-adv &
+  [ STEM < "휘휘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘휘_adv_50_rel" ].
+
+휙-50 := ph-adv &
+  [ STEM < "휙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휙_adv_50_rel" ].
+
+휙휙-50 := ph-adv &
+  [ STEM < "휙휙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휙휙_adv_50_rel" ].
+
+휠씬-50 := ph-adv &
+  [ STEM < "휠씬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휠씬_adv_50_rel" ].
+
+휭-50 := ph-adv &
+  [ STEM < "휭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휭_adv_50_rel" ].
+
+흐물흐물-50 := ph-adv &
+  [ STEM < "흐물흐물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흐물흐물_adv_50_rel" ].
+
+흐지부지-50 := ph-adv &
+  [ STEM < "흐지부지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흐지부지_adv_50_rel" ].
+
+흑흑-50 := ph-adv &
+  [ STEM < "흑흑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흑흑_adv_50_rel" ].
+
+흔들흔들-50 := ph-adv &
+  [ STEM < "흔들흔들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흔들흔들_adv_50_rel" ].
+
+흔히-50 := ph-adv &
+  [ STEM < "흔히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흔히_adv_50_rel" ].
+
+흘긋-50 := ph-adv &
+  [ STEM < "흘긋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘긋_adv_50_rel" ].
+
+흘깃-50 := ph-adv &
+  [ STEM < "흘깃" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘깃_adv_50_rel" ].
+
+흘끔-50 := ph-adv &
+  [ STEM < "흘끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘끔_adv_50_rel" ].
+
+흘끗-50 := ph-adv &
+  [ STEM < "흘끗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘끗_adv_50_rel" ].
+
+흘낏-50 := ph-adv &
+  [ STEM < "흘낏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘낏_adv_50_rel" ].
+
+흠뻑-50 := ph-adv &
+  [ STEM < "흠뻑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흠뻑_adv_50_rel" ].
+
+흠씬-50 := ph-adv &
+  [ STEM < "흠씬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흠씬_adv_50_rel" ].
+
+흠칫-50 := ph-adv &
+  [ STEM < "흠칫" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흠칫_adv_50_rel" ].
+
+흡사-50 := ph-adv &
+  [ STEM < "흡사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흡사_adv_50_rel" ].
+
+흥건히-50 := ph-adv &
+  [ STEM < "흥건히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흥건히_adv_50_rel" ].
+
+흥청망청-50 := ph-adv &
+  [ STEM < "흥청망청" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흥청망청_adv_50_rel" ].
+
+희끗-50 := ph-adv &
+  [ STEM < "희끗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_희끗_adv_50_rel" ].
+
+희끗희끗-50 := ph-adv &
+  [ STEM < "희끗희끗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_희끗희끗_adv_50_rel" ].
+
+히-50 := ph-adv &
+  [ STEM < "히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히_adv_50_rel" ].
+
+히죽-50 := ph-adv &
+  [ STEM < "히죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히죽_adv_50_rel" ].
+
+히죽히죽-50 := ph-adv &
+  [ STEM < "히죽히죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히죽히죽_adv_50_rel" ].
+
+힐끔-50 := ph-adv &
+  [ STEM < "힐끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힐끔_adv_50_rel" ].
+
+힐끔힐끔-50 := ph-adv &
+  [ STEM < "힐끔힐끔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힐끔힐끔_adv_50_rel" ].
+
+힐끗-50 := ph-adv &
+  [ STEM < "힐끗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힐끗_adv_50_rel" ].
+
+힘껏-50 := ph-adv &
+  [ STEM < "힘껏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힘껏_adv_50_rel" ].
+
+힘없이-50 := ph-adv &
+  [ STEM < "힘없이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힘없이_adv_50_rel" ].
+
+힝-50 := ph-adv &
+  [ STEM < "힝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힝_adv_50_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-14 / SSH)
+;; 세종 영한 병렬 추가
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+나름대로-50 := ph-adv &
+  [ STEM < "나름대로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나름대로_adv_50_rel" ].
+
+더불어-50 := ph-adv &
+  [ STEM < "더불어" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더불어_adv_50_rel" ].
+
+때로는-50 := ph-adv &
+  [ STEM < "때로는" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때로는_adv_50_rel" ].
+
+본래-50 := ph-adv &
+  [ STEM < "본래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_본래_adv_50_rel" ].
+
+아침-50 := ph-adv &
+  [ STEM < "아침" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아침_adv_50_rel" ].
+
+어떻게-50 := ph-adv &
+  [ STEM < "어떻게" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어떻게_adv_50_rel" ].
+
+오늘날-50 := ph-adv &
+  [ STEM < "오늘날" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오늘날_adv_50_rel" ].
+
+오랫동안-50 := ph-adv &
+  [ STEM < "오랫동안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오랫동안_adv_50_rel" ].
+
+이렇듯-50 := ph-adv &
+  [ STEM < "이렇듯" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이렇듯_adv_50_rel" ].
+
+일부-50 := ph-adv &
+  [ STEM < "일부" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일부_adv_50_rel" ].
+
+잠깐만-50 := ph-adv &
+  [ STEM < "잠깐만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠깐만_adv_50_rel" ].
+
+지난해-50 := ph-adv &
+  [ STEM < "지난해" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지난해_adv_50_rel" ].
+
+진짜로-50 := ph-adv &
+  [ STEM < "진짜로" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진짜로_adv_50_rel" ].
+
+최대한-50 := ph-adv &
+  [ STEM < "최대한" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_최대한_adv_50_rel" ].
+
+최소한-50 := ph-adv &
+  [ STEM < "최소한" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_최소한_adv_50_rel" ].
+
+한동안-50 := ph-adv &
+  [ STEM < "한동안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한동안_adv_50_rel" ].
+
+
+

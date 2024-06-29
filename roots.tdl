@@ -1,0 +1,156 @@
+;;; -*- Mode: tdl; Coding: utf-8; -*-
+; A sample start symbol: Accept fully-saturated verbal
+; projections only; if a grammar makes use of the head-subject and
+; head-complement types as provided by the Matrix, this should be a
+; good starting point.  Note that it is legal to have multiple start
+; symbols, but they all need to be listed as the value of
+; `*start-symbol' (see `lkb/user-fns.lsp').
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH) 
+;; Recommended for generation
+;; generation을 하기 전에 *start-symbol*을 바꾼다.
+;; :pa :lkb
+;; (setq *start-symbol* '(root_strict))
+;; (setf *fragment-start-symbols* '(root_strict root_frag))
+;; :pa :tsdb
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+root_strict := phrase &
+  [ SYNSEM.LOCAL [ COORD -,
+                   CAT [ VAL [ SUBJ < >,
+                               COMPS < >,
+			  				   SPR < >,
+							   GAP.LIST < > ],
+                         MC +,
+                         HEAD [ POS verb, IC + ] ] ],
+	STYLE strict ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Recommended for parsing
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+root_robust := phrase &
+  [ SYNSEM.LOCAL [ COORD -,
+                   CAT [ VAL [ SUBJ < >,
+                               COMPS < >,
+			  				   SPR < >,
+							   GAP.LIST < > ],
+                         MC +,
+                         HEAD [ POS verb, IC + ] ] ] ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-07 / SSH) 
+;; 서술성 명사가 단독으로 나오는 경우
+;;  e.g. 자동차를 일본에 성공적으로 수출
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+root_vn := phrase &
+  [ SYNSEM.LOCAL [ COORD -,
+                   CAT [ VAL [ SPR < >,
+							   GAP.LIST < > ],
+                         MC +,
+                         HEAD [ POS noun, VERBAL + ] ] ] ].
+; root_vn_strict := phrase &
+;   [ SYNSEM.LOCAL [ COORD -,
+;                    CAT [ HEAD.CASE [ GCASE no_gcase, SCASE no_scase ],
+; 						 VAL [ SPR < >,
+; 							   GAP.LIST < > ],
+;                          MC +,
+;                          HEAD [ POS noun, VERBAL + ] ] ],
+; 	STYLE strict ].
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-28 / SSH) 
+;; 명사구가 단독으로 사용되는 경우 
+;;    e.g. 한국과 일본의 원형
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+root_np := phrase &
+  [ SYNSEM.LOCAL [ COORD -,
+				   CAT [ LEX -,
+						 VAL [ SUBJ < >,
+                               COMPS < >,
+							   GAP.LIST < > ],
+                         MC +,
+                         HEAD [ POS noun, NOMINAL + ] ] ] ].
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH) 
+;; 공손체가 쓰여야 하는 문서의 번역에는 이것을 쓴다.
+;;   e.g. 편지 등 ...
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+root_formal := phrase &
+  [ SYNSEM.LOCAL [ COORD -,
+                   CAT [ VAL [ SUBJ < >,
+                               COMPS < >,
+			  				   SPR < >,
+							   GAP.LIST < > ],
+                         MC +,
+                         HEAD [ POS verb, IC + ] ] ],
+	STYLE formal ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH) 
+;; 건조체의 문서 번역에는 이것을 쓴다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+root_informal := phrase &
+  [ SYNSEM.LOCAL [ COORD -,
+                   CAT [ VAL [ SUBJ < >,
+                               COMPS < >,
+			  				   SPR < >,
+							   GAP.LIST < > ],
+                         MC +,
+                         HEAD [ POS verb, IC + ] ] ],
+	STYLE informal ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-13 / SSH) 
+;;   e.g. 신문기사, Wikipedia
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+root_written := phrase &
+  [ SYNSEM.LOCAL [ COORD -,
+                   CAT [ VAL [ SUBJ < >,
+                               COMPS < >,
+			  				   SPR < >,
+							   GAP.LIST < > ],
+                         MC +,
+                         HEAD [ POS verb, IC + ] ] ],
+	STYLE written ].
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-06-29 / SSH) 
+;;  관용어
+;;   e.g. 고맙어요
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+root_idiom := word-or-lexrule &
+  [ IDIOM +,
+    SYNSEM.LOCAL [ COORD -,
+                   CAT [ VAL [ SUBJ < >,
+                               COMPS < >,
+			  				   SPR < >,
+							   GAP.LIST < > ],
+                         HEAD [ POS verb ] ] ] ].
+
+
+
+; For well-formed fragments of all kinds
+root_frag := sign &
+  [ SYNSEM.LOCAL [ CAT [ VAL.COMPS onull,
+						 MC na-or-+ ] ],
+	STYLE strict ].
+
+root_lex := sign &
+  [ SYNSEM.LOCAL [ CAT [ LEX +,
+						 VAL.COMPS < > ] ],
+	STYLE strict ].
+
+; This start symbol allows you to parse single words as stand-alone
+; utterances.  This can be useful for grammar debugging purposes.
+
+lex-root := word-or-lexrule.

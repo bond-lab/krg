@@ -1,0 +1,4697 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Numeral Expressions obtained from corpora
+;;	 These lexicons are taken from the Sejong corpus and the BTEC corpus
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: June. 3, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+네째-n := n-obj-cn &
+  [ STEM < "네째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_네째_num_rel" ].
+
+여덟째-n := n-obj-cn &
+  [ STEM < "여덟째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여덟째_num_rel" ].
+
+둘째-n := n-obj-cn &
+  [ STEM < "둘째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘째_num_rel" ].
+
+첫째-n := n-obj-cn &
+  [ STEM < "첫째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_첫째_num_rel" ].
+
+넷째-n := n-obj-cn &
+  [ STEM < "넷째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넷째_num_rel" ].
+
+여섯째-n := n-obj-cn &
+  [ STEM < "여섯째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여섯째_num_rel" ].
+
+두째-n := n-obj-cn &
+  [ STEM < "두째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두째_num_rel" ].
+
+셋째-n := n-obj-cn &
+  [ STEM < "셋째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_셋째_num_rel" ].
+
+세째-n := n-obj-cn &
+  [ STEM < "세째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세째_num_rel" ].
+
+다섯째-n := n-obj-cn &
+  [ STEM < "다섯째" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다섯째_num_rel" ].
+
+수천만-n := n-cn &
+  [ STEM < "수천만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수천만_num_rel" ].
+
+칠팔-n := n-cn &
+  [ STEM < "칠팔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_칠팔_num_rel" ].
+
+여남은-n := n-cn &
+  [ STEM < "여남은" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여남은_num_rel" ].
+
+서넛-n := n-cn &
+  [ STEM < "서넛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서넛_num_rel" ].
+
+육칠-n := n-cn &
+  [ STEM < "육칠" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_육칠_num_rel" ].
+
+예닐곱-n := n-cn &
+  [ STEM < "예닐곱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_예닐곱_num_rel" ].
+
+십수-n := n-cn &
+  [ STEM < "십수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_십수_num_rel" ].
+
+수천억-n := n-cn &
+  [ STEM < "수천억" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수천억_num_rel" ].
+
+두셋-n := n-cn &
+  [ STEM < "두셋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두셋_num_rel" ].
+
+두엇-n := n-cn &
+  [ STEM < "두엇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두엇_num_rel" ].
+
+둘-n := n-cn &
+  [ STEM < "둘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘_num_rel" ].
+
+억만-n := n-cn &
+  [ STEM < "억만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_억만_num_rel" ].
+
+대여섯-n := n-cn &
+  [ STEM < "대여섯" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대여섯_num_rel" ].
+
+사오십-n := n-cn &
+  [ STEM < "사오십" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사오십_num_rel" ].
+
+삼사-n := n-cn &
+  [ STEM < "삼사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삼사_num_rel" ].
+
+수천-n := n-cn &
+  [ STEM < "수천" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수천_num_rel" ].
+
+수억-n := n-cn &
+  [ STEM < "수억" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수억_num_rel" ].
+
+수십억-n := n-cn &
+  [ STEM < "수십억" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수십억_num_rel" ].
+
+수만-n := n-cn &
+  [ STEM < "수만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수만_num_rel" ].
+
+수십만-n := n-cn &
+  [ STEM < "수십만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수십만_num_rel" ].
+
+열흘-n := n-cn &
+  [ STEM < "열흘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_열흘_num_rel" ].
+
+수조-n := n-cn &
+  [ STEM < "수조" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수조_num_rel" ].
+
+하나둘-n := n-cn &
+  [ STEM < "하나둘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하나둘_num_rel" ].
+
+오륙-n := n-cn &
+  [ STEM < "오륙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오륙_num_rel" ].
+
+수백만-n := n-cn &
+  [ STEM < "수백만" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수백만_num_rel" ].
+
+수십-n := n-cn &
+  [ STEM < "수십" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수십_num_rel" ].
+
+한둘-n := n-cn &
+  [ STEM < "한둘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한둘_num_rel" ].
+
+이삼-n := n-cn &
+  [ STEM < "이삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이삼_num_rel" ].
+
+열댓-n := n-cn &
+  [ STEM < "열댓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_열댓_num_rel" ].
+
+수백-n := n-cn &
+  [ STEM < "수백" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수백_num_rel" ].
+
+네댓-n := n-cn &
+  [ STEM < "네댓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_네댓_num_rel" ].
+
+사오-n := n-cn &
+  [ STEM < "사오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사오_num_rel" ].
+
+댓-n := n-cn &
+  [ STEM < "댓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_댓_num_rel" ].
+
+
+0-n := n-num &
+  [ STEM < "0" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0" ].
+
+00-n := n-num &
+  [ STEM < "00" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "00" ].
+
+000-n := n-num &
+  [ STEM < "000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "000" ].
+
+0000-n := n-num &
+  [ STEM < "0000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0000" ].
+
+0000000000-n := n-num &
+  [ STEM < "0000000000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0000000000" ].
+
+001-n := n-num &
+  [ STEM < "001" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "001" ].
+
+0012-n := n-num &
+  [ STEM < "0012" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0012" ].
+
+002-n := n-num &
+  [ STEM < "002" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "002" ].
+
+003-n := n-num &
+  [ STEM < "003" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "003" ].
+
+004-n := n-num &
+  [ STEM < "004" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "004" ].
+
+005-n := n-num &
+  [ STEM < "005" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "005" ].
+
+006-n := n-num &
+  [ STEM < "006" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "006" ].
+
+007-n := n-num &
+  [ STEM < "007" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "007" ].
+
+008-n := n-num &
+  [ STEM < "008" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "008" ].
+
+0081-n := n-num &
+  [ STEM < "0081" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0081" ].
+
+009-n := n-num &
+  [ STEM < "009" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "009" ].
+
+01-n := n-num &
+  [ STEM < "01" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "01" ].
+
+010-n := n-num &
+  [ STEM < "010" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "010" ].
+
+01015832-n := n-num &
+  [ STEM < "01015832" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "01015832" ].
+
+011-n := n-num &
+  [ STEM < "011" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "011" ].
+
+012-n := n-num &
+  [ STEM < "012" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "012" ].
+
+0123210-n := n-num &
+  [ STEM < "0123210" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0123210" ].
+
+012345-n := n-num &
+  [ STEM < "012345" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "012345" ].
+
+013-n := n-num &
+  [ STEM < "013" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "013" ].
+
+0132-n := n-num &
+  [ STEM < "0132" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0132" ].
+
+0161-n := n-num &
+  [ STEM < "0161" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0161" ].
+
+017-n := n-num &
+  [ STEM < "017" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "017" ].
+
+02-n := n-num &
+  [ STEM < "02" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "02" ].
+
+020-n := n-num &
+  [ STEM < "020" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "020" ].
+
+021-n := n-num &
+  [ STEM < "021" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "021" ].
+
+0211-n := n-num &
+  [ STEM < "0211" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0211" ].
+
+023-n := n-num &
+  [ STEM < "023" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "023" ].
+
+024-n := n-num &
+  [ STEM < "024" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "024" ].
+
+025-n := n-num &
+  [ STEM < "025" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "025" ].
+
+026-n := n-num &
+  [ STEM < "026" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "026" ].
+
+0263-n := n-num &
+  [ STEM < "0263" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0263" ].
+
+027-n := n-num &
+  [ STEM < "027" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "027" ].
+
+028-n := n-num &
+  [ STEM < "028" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "028" ].
+
+03-n := n-num &
+  [ STEM < "03" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "03" ].
+
+030-n := n-num &
+  [ STEM < "030" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "030" ].
+
+031-n := n-num &
+  [ STEM < "031" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "031" ].
+
+032-n := n-num &
+  [ STEM < "032" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "032" ].
+
+0323456789-n := n-num &
+  [ STEM < "0323456789" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0323456789" ].
+
+033-n := n-num &
+  [ STEM < "033" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "033" ].
+
+033351691-n := n-num &
+  [ STEM < "033351691" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "033351691" ].
+
+038-n := n-num &
+  [ STEM < "038" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "038" ].
+
+04-n := n-num &
+  [ STEM < "04" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "04" ].
+
+040-n := n-num &
+  [ STEM < "040" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "040" ].
+
+041-n := n-num &
+  [ STEM < "041" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "041" ].
+
+042-n := n-num &
+  [ STEM < "042" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "042" ].
+
+0426750755-n := n-num &
+  [ STEM < "0426750755" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0426750755" ].
+
+043-n := n-num &
+  [ STEM < "043" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "043" ].
+
+05-n := n-num &
+  [ STEM < "05" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "05" ].
+
+051-n := n-num &
+  [ STEM < "051" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "051" ].
+
+052-n := n-num &
+  [ STEM < "052" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "052" ].
+
+053-n := n-num &
+  [ STEM < "053" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "053" ].
+
+055-n := n-num &
+  [ STEM < "055" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "055" ].
+
+0579-n := n-num &
+  [ STEM < "0579" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "0579" ].
+
+06-n := n-num &
+  [ STEM < "06" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "06" ].
+
+061-n := n-num &
+  [ STEM < "061" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "061" ].
+
+062-n := n-num &
+  [ STEM < "062" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "062" ].
+
+063-n := n-num &
+  [ STEM < "063" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "063" ].
+
+07-n := n-num &
+  [ STEM < "07" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "07" ].
+
+072-n := n-num &
+  [ STEM < "072" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "072" ].
+
+08-n := n-num &
+  [ STEM < "08" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "08" ].
+
+082-n := n-num &
+  [ STEM < "082" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "082" ].
+
+086-n := n-num &
+  [ STEM < "086" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "086" ].
+
+09-n := n-num &
+  [ STEM < "09" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "09" ].
+
+098765432109-n := n-num &
+  [ STEM < "098765432109" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "098765432109" ].
+
+1000-n := n-num &
+  [ STEM < "1000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1000" ].
+
+10000-n := n-num &
+  [ STEM < "10000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "10000" ].
+
+100000-n := n-num &
+  [ STEM < "100000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "100000" ].
+
+1001-n := n-num &
+  [ STEM < "1001" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1001" ].
+
+101-n := n-num &
+  [ STEM < "101" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "101" ].
+
+1012-n := n-num &
+  [ STEM < "1012" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1012" ].
+
+1014-n := n-num &
+  [ STEM < "1014" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1014" ].
+
+1015-n := n-num &
+  [ STEM < "1015" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1015" ].
+
+102-n := n-num &
+  [ STEM < "102" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "102" ].
+
+103-n := n-num &
+  [ STEM < "103" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "103" ].
+
+1031-n := n-num &
+  [ STEM < "1031" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1031" ].
+
+1035-n := n-num &
+  [ STEM < "1035" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1035" ].
+
+104-n := n-num &
+  [ STEM < "104" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "104" ].
+
+105-n := n-num &
+  [ STEM < "105" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "105" ].
+
+1050-n := n-num &
+  [ STEM < "1050" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1050" ].
+
+1051-n := n-num &
+  [ STEM < "1051" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1051" ].
+
+106-n := n-num &
+  [ STEM < "106" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "106" ].
+
+107-n := n-num &
+  [ STEM < "107" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "107" ].
+
+108-n := n-num &
+  [ STEM < "108" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "108" ].
+
+109-n := n-num &
+  [ STEM < "109" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "109" ].
+
+11-n := n-num &
+  [ STEM < "11" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "11" ].
+
+110-n := n-num &
+  [ STEM < "110" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "110" ].
+
+1100-n := n-num &
+  [ STEM < "1100" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1100" ].
+
+1102-n := n-num &
+  [ STEM < "1102" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1102" ].
+
+1106-n := n-num &
+  [ STEM < "1106" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1106" ].
+
+1107-n := n-num &
+  [ STEM < "1107" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1107" ].
+
+1109-n := n-num &
+  [ STEM < "1109" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1109" ].
+
+111-n := n-num &
+  [ STEM < "111" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "111" ].
+
+1111-n := n-num &
+  [ STEM < "1111" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1111" ].
+
+1114-n := n-num &
+  [ STEM < "1114" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1114" ].
+
+112-n := n-num &
+  [ STEM < "112" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "112" ].
+
+1122-n := n-num &
+  [ STEM < "1122" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1122" ].
+
+1122334-n := n-num &
+  [ STEM < "1122334" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1122334" ].
+
+1124-n := n-num &
+  [ STEM < "1124" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1124" ].
+
+1126-n := n-num &
+  [ STEM < "1126" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1126" ].
+
+113-n := n-num &
+  [ STEM < "113" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "113" ].
+
+1131-n := n-num &
+  [ STEM < "1131" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1131" ].
+
+114-n := n-num &
+  [ STEM < "114" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "114" ].
+
+1145-n := n-num &
+  [ STEM < "1145" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1145" ].
+
+115-n := n-num &
+  [ STEM < "115" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "115" ].
+
+116-n := n-num &
+  [ STEM < "116" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "116" ].
+
+117-n := n-num &
+  [ STEM < "117" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "117" ].
+
+1170-n := n-num &
+  [ STEM < "1170" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1170" ].
+
+118-n := n-num &
+  [ STEM < "118" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "118" ].
+
+1182-n := n-num &
+  [ STEM < "1182" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1182" ].
+
+1189-n := n-num &
+  [ STEM < "1189" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1189" ].
+
+119-n := n-num &
+  [ STEM < "119" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "119" ].
+
+120-n := n-num &
+  [ STEM < "120" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "120" ].
+
+1200-n := n-num &
+  [ STEM < "1200" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1200" ].
+
+1201-n := n-num &
+  [ STEM < "1201" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1201" ].
+
+1203-n := n-num &
+  [ STEM < "1203" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1203" ].
+
+1205-n := n-num &
+  [ STEM < "1205" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1205" ].
+
+1207-n := n-num &
+  [ STEM < "1207" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1207" ].
+
+1208-n := n-num &
+  [ STEM < "1208" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1208" ].
+
+1209-n := n-num &
+  [ STEM < "1209" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1209" ].
+
+121-n := n-num &
+  [ STEM < "121" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "121" ].
+
+1211-n := n-num &
+  [ STEM < "1211" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1211" ].
+
+1213-n := n-num &
+  [ STEM < "1213" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1213" ].
+
+1215-n := n-num &
+  [ STEM < "1215" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1215" ].
+
+1216-n := n-num &
+  [ STEM < "1216" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1216" ].
+
+122-n := n-num &
+  [ STEM < "122" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "122" ].
+
+1220-n := n-num &
+  [ STEM < "1220" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1220" ].
+
+1223-n := n-num &
+  [ STEM < "1223" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1223" ].
+
+1225-n := n-num &
+  [ STEM < "1225" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1225" ].
+
+123-n := n-num &
+  [ STEM < "123" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "123" ].
+
+1233-n := n-num &
+  [ STEM < "1233" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1233" ].
+
+1234-n := n-num &
+  [ STEM < "1234" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1234" ].
+
+12345-n := n-num &
+  [ STEM < "12345" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "12345" ].
+
+123456-n := n-num &
+  [ STEM < "123456" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "123456" ].
+
+1234567-n := n-num &
+  [ STEM < "1234567" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1234567" ].
+
+12345678-n := n-num &
+  [ STEM < "12345678" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "12345678" ].
+
+1234567890-n := n-num &
+  [ STEM < "1234567890" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1234567890" ].
+
+1234567890123456-n := n-num &
+  [ STEM < "1234567890123456" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1234567890123456" ].
+
+124-n := n-num &
+  [ STEM < "124" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "124" ].
+
+1243-n := n-num &
+  [ STEM < "1243" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1243" ].
+
+125-n := n-num &
+  [ STEM < "125" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "125" ].
+
+1250-n := n-num &
+  [ STEM < "1250" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1250" ].
+
+126-n := n-num &
+  [ STEM < "126" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "126" ].
+
+127-n := n-num &
+  [ STEM < "127" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "127" ].
+
+128-n := n-num &
+  [ STEM < "128" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "128" ].
+
+129-n := n-num &
+  [ STEM < "129" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "129" ].
+
+12억5500-n := n-num &
+  [ STEM < "12억5500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "12억5500" ].
+
+13-n := n-num &
+  [ STEM < "13" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "13" ].
+
+130-n := n-num &
+  [ STEM < "130" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "130" ].
+
+1300-n := n-num &
+  [ STEM < "1300" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1300" ].
+
+131-n := n-num &
+  [ STEM < "131" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "131" ].
+
+1316-n := n-num &
+  [ STEM < "1316" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1316" ].
+
+132-n := n-num &
+  [ STEM < "132" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "132" ].
+
+133-n := n-num &
+  [ STEM < "133" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "133" ].
+
+134-n := n-num &
+  [ STEM < "134" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "134" ].
+
+135-n := n-num &
+  [ STEM < "135" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "135" ].
+
+136-n := n-num &
+  [ STEM < "136" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "136" ].
+
+137-n := n-num &
+  [ STEM < "137" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "137" ].
+
+138-n := n-num &
+  [ STEM < "138" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "138" ].
+
+139-n := n-num &
+  [ STEM < "139" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "139" ].
+
+1394-n := n-num &
+  [ STEM < "1394" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1394" ].
+
+14-n := n-num &
+  [ STEM < "14" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "14" ].
+
+140-n := n-num &
+  [ STEM < "140" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "140" ].
+
+1400-n := n-num &
+  [ STEM < "1400" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1400" ].
+
+141-n := n-num &
+  [ STEM < "141" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "141" ].
+
+142-n := n-num &
+  [ STEM < "142" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "142" ].
+
+1420-n := n-num &
+  [ STEM < "1420" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1420" ].
+
+1422-n := n-num &
+  [ STEM < "1422" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1422" ].
+
+1426-n := n-num &
+  [ STEM < "1426" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1426" ].
+
+143-n := n-num &
+  [ STEM < "143" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "143" ].
+
+1431-n := n-num &
+  [ STEM < "1431" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1431" ].
+
+144-n := n-num &
+  [ STEM < "144" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "144" ].
+
+145-n := n-num &
+  [ STEM < "145" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "145" ].
+
+146-n := n-num &
+  [ STEM < "146" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "146" ].
+
+147-n := n-num &
+  [ STEM < "147" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "147" ].
+
+148-n := n-num &
+  [ STEM < "148" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "148" ].
+
+149-n := n-num &
+  [ STEM < "149" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "149" ].
+
+15-n := n-num &
+  [ STEM < "15" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "15" ].
+
+150-n := n-num &
+  [ STEM < "150" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "150" ].
+
+1500-n := n-num &
+  [ STEM < "1500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1500" ].
+
+1501-n := n-num &
+  [ STEM < "1501" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1501" ].
+
+1506-n := n-num &
+  [ STEM < "1506" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1506" ].
+
+1509-n := n-num &
+  [ STEM < "1509" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1509" ].
+
+151-n := n-num &
+  [ STEM < "151" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "151" ].
+
+152-n := n-num &
+  [ STEM < "152" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "152" ].
+
+153-n := n-num &
+  [ STEM < "153" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "153" ].
+
+154-n := n-num &
+  [ STEM < "154" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "154" ].
+
+155-n := n-num &
+  [ STEM < "155" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "155" ].
+
+156-n := n-num &
+  [ STEM < "156" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "156" ].
+
+157-n := n-num &
+  [ STEM < "157" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "157" ].
+
+158-n := n-num &
+  [ STEM < "158" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "158" ].
+
+1588-n := n-num &
+  [ STEM < "1588" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1588" ].
+
+159-n := n-num &
+  [ STEM < "159" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "159" ].
+
+1592-n := n-num &
+  [ STEM < "1592" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1592" ].
+
+1595-n := n-num &
+  [ STEM < "1595" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1595" ].
+
+16-n := n-num &
+  [ STEM < "16" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "16" ].
+
+160-n := n-num &
+  [ STEM < "160" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "160" ].
+
+1600-n := n-num &
+  [ STEM < "1600" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1600" ].
+
+161-n := n-num &
+  [ STEM < "161" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "161" ].
+
+1610-n := n-num &
+  [ STEM < "1610" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1610" ].
+
+1611-n := n-num &
+  [ STEM < "1611" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1611" ].
+
+162-n := n-num &
+  [ STEM < "162" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "162" ].
+
+1635-n := n-num &
+  [ STEM < "1635" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1635" ].
+
+165-n := n-num &
+  [ STEM < "165" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "165" ].
+
+1652-n := n-num &
+  [ STEM < "1652" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1652" ].
+
+166-n := n-num &
+  [ STEM < "166" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "166" ].
+
+167-n := n-num &
+  [ STEM < "167" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "167" ].
+
+1678-n := n-num &
+  [ STEM < "1678" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1678" ].
+
+168-n := n-num &
+  [ STEM < "168" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "168" ].
+
+17-n := n-num &
+  [ STEM < "17" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "17" ].
+
+170-n := n-num &
+  [ STEM < "170" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "170" ].
+
+1700-n := n-num &
+  [ STEM < "1700" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1700" ].
+
+1709-n := n-num &
+  [ STEM < "1709" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1709" ].
+
+171-n := n-num &
+  [ STEM < "171" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "171" ].
+
+172-n := n-num &
+  [ STEM < "172" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "172" ].
+
+173-n := n-num &
+  [ STEM < "173" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "173" ].
+
+174-n := n-num &
+  [ STEM < "174" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "174" ].
+
+1747-n := n-num &
+  [ STEM < "1747" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1747" ].
+
+175-n := n-num &
+  [ STEM < "175" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "175" ].
+
+1753-n := n-num &
+  [ STEM < "1753" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1753" ].
+
+176-n := n-num &
+  [ STEM < "176" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "176" ].
+
+178-n := n-num &
+  [ STEM < "178" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "178" ].
+
+1781-n := n-num &
+  [ STEM < "1781" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1781" ].
+
+1789-n := n-num &
+  [ STEM < "1789" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1789" ].
+
+179-n := n-num &
+  [ STEM < "179" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "179" ].
+
+1794-n := n-num &
+  [ STEM < "1794" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1794" ].
+
+18-n := n-num &
+  [ STEM < "18" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "18" ].
+
+180-n := n-num &
+  [ STEM < "180" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "180" ].
+
+1800-n := n-num &
+  [ STEM < "1800" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1800" ].
+
+1801-n := n-num &
+  [ STEM < "1801" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1801" ].
+
+1803-n := n-num &
+  [ STEM < "1803" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1803" ].
+
+181-n := n-num &
+  [ STEM < "181" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "181" ].
+
+1812-n := n-num &
+  [ STEM < "1812" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1812" ].
+
+182-n := n-num &
+  [ STEM < "182" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "182" ].
+
+1820-n := n-num &
+  [ STEM < "1820" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1820" ].
+
+1828-n := n-num &
+  [ STEM < "1828" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1828" ].
+
+183-n := n-num &
+  [ STEM < "183" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "183" ].
+
+1830-n := n-num &
+  [ STEM < "1830" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1830" ].
+
+184-n := n-num &
+  [ STEM < "184" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "184" ].
+
+1840-n := n-num &
+  [ STEM < "1840" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1840" ].
+
+1844-n := n-num &
+  [ STEM < "1844" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1844" ].
+
+1845-n := n-num &
+  [ STEM < "1845" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1845" ].
+
+1848-n := n-num &
+  [ STEM < "1848" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1848" ].
+
+185-n := n-num &
+  [ STEM < "185" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "185" ].
+
+1850-n := n-num &
+  [ STEM < "1850" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1850" ].
+
+1852-n := n-num &
+  [ STEM < "1852" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1852" ].
+
+1853-n := n-num &
+  [ STEM < "1853" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1853" ].
+
+1854-n := n-num &
+  [ STEM < "1854" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1854" ].
+
+1857-n := n-num &
+  [ STEM < "1857" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1857" ].
+
+1858-n := n-num &
+  [ STEM < "1858" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1858" ].
+
+1859-n := n-num &
+  [ STEM < "1859" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1859" ].
+
+186-n := n-num &
+  [ STEM < "186" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "186" ].
+
+1860-n := n-num &
+  [ STEM < "1860" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1860" ].
+
+1861-n := n-num &
+  [ STEM < "1861" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1861" ].
+
+1862-n := n-num &
+  [ STEM < "1862" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1862" ].
+
+1863-n := n-num &
+  [ STEM < "1863" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1863" ].
+
+1864-n := n-num &
+  [ STEM < "1864" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1864" ].
+
+1865-n := n-num &
+  [ STEM < "1865" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1865" ].
+
+1866-n := n-num &
+  [ STEM < "1866" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1866" ].
+
+1867-n := n-num &
+  [ STEM < "1867" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1867" ].
+
+1868-n := n-num &
+  [ STEM < "1868" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1868" ].
+
+1869-n := n-num &
+  [ STEM < "1869" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1869" ].
+
+187-n := n-num &
+  [ STEM < "187" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "187" ].
+
+1870-n := n-num &
+  [ STEM < "1870" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1870" ].
+
+1871-n := n-num &
+  [ STEM < "1871" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1871" ].
+
+1872-n := n-num &
+  [ STEM < "1872" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1872" ].
+
+1873-n := n-num &
+  [ STEM < "1873" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1873" ].
+
+1874-n := n-num &
+  [ STEM < "1874" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1874" ].
+
+1875-n := n-num &
+  [ STEM < "1875" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1875" ].
+
+1876-n := n-num &
+  [ STEM < "1876" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1876" ].
+
+1877-n := n-num &
+  [ STEM < "1877" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1877" ].
+
+1878-n := n-num &
+  [ STEM < "1878" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1878" ].
+
+1879-n := n-num &
+  [ STEM < "1879" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1879" ].
+
+188-n := n-num &
+  [ STEM < "188" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "188" ].
+
+1880-n := n-num &
+  [ STEM < "1880" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1880" ].
+
+1881-n := n-num &
+  [ STEM < "1881" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1881" ].
+
+1882-n := n-num &
+  [ STEM < "1882" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1882" ].
+
+1883-n := n-num &
+  [ STEM < "1883" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1883" ].
+
+1884-n := n-num &
+  [ STEM < "1884" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1884" ].
+
+1885-n := n-num &
+  [ STEM < "1885" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1885" ].
+
+1886-n := n-num &
+  [ STEM < "1886" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1886" ].
+
+1887-n := n-num &
+  [ STEM < "1887" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1887" ].
+
+1888-n := n-num &
+  [ STEM < "1888" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1888" ].
+
+1889-n := n-num &
+  [ STEM < "1889" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1889" ].
+
+1890-n := n-num &
+  [ STEM < "1890" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1890" ].
+
+1891-n := n-num &
+  [ STEM < "1891" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1891" ].
+
+1892-n := n-num &
+  [ STEM < "1892" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1892" ].
+
+1893-n := n-num &
+  [ STEM < "1893" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1893" ].
+
+1894-n := n-num &
+  [ STEM < "1894" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1894" ].
+
+1895-n := n-num &
+  [ STEM < "1895" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1895" ].
+
+1896-n := n-num &
+  [ STEM < "1896" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1896" ].
+
+1897-n := n-num &
+  [ STEM < "1897" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1897" ].
+
+1898-n := n-num &
+  [ STEM < "1898" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1898" ].
+
+1899-n := n-num &
+  [ STEM < "1899" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1899" ].
+
+19-n := n-num &
+  [ STEM < "19" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "19" ].
+
+190-n := n-num &
+  [ STEM < "190" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "190" ].
+
+1900-n := n-num &
+  [ STEM < "1900" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1900" ].
+
+1901-n := n-num &
+  [ STEM < "1901" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1901" ].
+
+1902-n := n-num &
+  [ STEM < "1902" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1902" ].
+
+1903-n := n-num &
+  [ STEM < "1903" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1903" ].
+
+1904-n := n-num &
+  [ STEM < "1904" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1904" ].
+
+1905-n := n-num &
+  [ STEM < "1905" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1905" ].
+
+1906-n := n-num &
+  [ STEM < "1906" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1906" ].
+
+1907-n := n-num &
+  [ STEM < "1907" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1907" ].
+
+1908-n := n-num &
+  [ STEM < "1908" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1908" ].
+
+1909-n := n-num &
+  [ STEM < "1909" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1909" ].
+
+191-n := n-num &
+  [ STEM < "191" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "191" ].
+
+1910-n := n-num &
+  [ STEM < "1910" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1910" ].
+
+1911-n := n-num &
+  [ STEM < "1911" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1911" ].
+
+1912-n := n-num &
+  [ STEM < "1912" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1912" ].
+
+1913-n := n-num &
+  [ STEM < "1913" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1913" ].
+
+1914-n := n-num &
+  [ STEM < "1914" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1914" ].
+
+1915-n := n-num &
+  [ STEM < "1915" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1915" ].
+
+1916-n := n-num &
+  [ STEM < "1916" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1916" ].
+
+1917-n := n-num &
+  [ STEM < "1917" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1917" ].
+
+1918-n := n-num &
+  [ STEM < "1918" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1918" ].
+
+1919-n := n-num &
+  [ STEM < "1919" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1919" ].
+
+192-n := n-num &
+  [ STEM < "192" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "192" ].
+
+1920-n := n-num &
+  [ STEM < "1920" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1920" ].
+
+1921-n := n-num &
+  [ STEM < "1921" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1921" ].
+
+1922-n := n-num &
+  [ STEM < "1922" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1922" ].
+
+1923-n := n-num &
+  [ STEM < "1923" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1923" ].
+
+1924-n := n-num &
+  [ STEM < "1924" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1924" ].
+
+1925-n := n-num &
+  [ STEM < "1925" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1925" ].
+
+1926-n := n-num &
+  [ STEM < "1926" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1926" ].
+
+1927-n := n-num &
+  [ STEM < "1927" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1927" ].
+
+1928-n := n-num &
+  [ STEM < "1928" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1928" ].
+
+1929-n := n-num &
+  [ STEM < "1929" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1929" ].
+
+193-n := n-num &
+  [ STEM < "193" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "193" ].
+
+1930-n := n-num &
+  [ STEM < "1930" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1930" ].
+
+1931-n := n-num &
+  [ STEM < "1931" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1931" ].
+
+1932-n := n-num &
+  [ STEM < "1932" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1932" ].
+
+1933-n := n-num &
+  [ STEM < "1933" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1933" ].
+
+1934-n := n-num &
+  [ STEM < "1934" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1934" ].
+
+1935-n := n-num &
+  [ STEM < "1935" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1935" ].
+
+1936-n := n-num &
+  [ STEM < "1936" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1936" ].
+
+1937-n := n-num &
+  [ STEM < "1937" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1937" ].
+
+1938-n := n-num &
+  [ STEM < "1938" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1938" ].
+
+1939-n := n-num &
+  [ STEM < "1939" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1939" ].
+
+1940-n := n-num &
+  [ STEM < "1940" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1940" ].
+
+1941-n := n-num &
+  [ STEM < "1941" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1941" ].
+
+1942-n := n-num &
+  [ STEM < "1942" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1942" ].
+
+1943-n := n-num &
+  [ STEM < "1943" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1943" ].
+
+1944-n := n-num &
+  [ STEM < "1944" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1944" ].
+
+1944101-n := n-num &
+  [ STEM < "1944101" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1944101" ].
+
+1945-n := n-num &
+  [ STEM < "1945" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1945" ].
+
+1946-n := n-num &
+  [ STEM < "1946" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1946" ].
+
+1947-n := n-num &
+  [ STEM < "1947" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1947" ].
+
+1948-n := n-num &
+  [ STEM < "1948" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1948" ].
+
+1949-n := n-num &
+  [ STEM < "1949" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1949" ].
+
+195-n := n-num &
+  [ STEM < "195" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "195" ].
+
+1950-n := n-num &
+  [ STEM < "1950" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1950" ].
+
+1951-n := n-num &
+  [ STEM < "1951" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1951" ].
+
+1952-n := n-num &
+  [ STEM < "1952" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1952" ].
+
+1953-n := n-num &
+  [ STEM < "1953" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1953" ].
+
+1954-n := n-num &
+  [ STEM < "1954" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1954" ].
+
+1955-n := n-num &
+  [ STEM < "1955" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1955" ].
+
+1956-n := n-num &
+  [ STEM < "1956" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1956" ].
+
+1957-n := n-num &
+  [ STEM < "1957" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1957" ].
+
+1958-n := n-num &
+  [ STEM < "1958" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1958" ].
+
+1959-n := n-num &
+  [ STEM < "1959" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1959" ].
+
+196-n := n-num &
+  [ STEM < "196" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "196" ].
+
+1960-n := n-num &
+  [ STEM < "1960" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1960" ].
+
+1961-n := n-num &
+  [ STEM < "1961" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1961" ].
+
+1962-n := n-num &
+  [ STEM < "1962" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1962" ].
+
+1963-n := n-num &
+  [ STEM < "1963" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1963" ].
+
+1964-n := n-num &
+  [ STEM < "1964" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1964" ].
+
+1965-n := n-num &
+  [ STEM < "1965" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1965" ].
+
+1966-n := n-num &
+  [ STEM < "1966" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1966" ].
+
+1967-n := n-num &
+  [ STEM < "1967" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1967" ].
+
+1968-n := n-num &
+  [ STEM < "1968" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1968" ].
+
+1969-n := n-num &
+  [ STEM < "1969" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1969" ].
+
+197-n := n-num &
+  [ STEM < "197" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "197" ].
+
+1970-n := n-num &
+  [ STEM < "1970" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1970" ].
+
+1971-n := n-num &
+  [ STEM < "1971" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1971" ].
+
+1972-n := n-num &
+  [ STEM < "1972" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1972" ].
+
+1973-n := n-num &
+  [ STEM < "1973" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1973" ].
+
+1974-n := n-num &
+  [ STEM < "1974" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1974" ].
+
+1975-n := n-num &
+  [ STEM < "1975" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1975" ].
+
+1976-n := n-num &
+  [ STEM < "1976" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1976" ].
+
+1977-n := n-num &
+  [ STEM < "1977" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1977" ].
+
+1978-n := n-num &
+  [ STEM < "1978" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1978" ].
+
+1979-n := n-num &
+  [ STEM < "1979" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1979" ].
+
+198-n := n-num &
+  [ STEM < "198" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "198" ].
+
+1980-n := n-num &
+  [ STEM < "1980" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1980" ].
+
+1981-n := n-num &
+  [ STEM < "1981" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1981" ].
+
+1982-n := n-num &
+  [ STEM < "1982" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1982" ].
+
+1983-n := n-num &
+  [ STEM < "1983" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1983" ].
+
+1984-n := n-num &
+  [ STEM < "1984" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1984" ].
+
+1985-n := n-num &
+  [ STEM < "1985" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1985" ].
+
+1986-n := n-num &
+  [ STEM < "1986" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1986" ].
+
+1988-n := n-num &
+  [ STEM < "1988" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1988" ].
+
+1989-n := n-num &
+  [ STEM < "1989" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1989" ].
+
+199-n := n-num &
+  [ STEM < "199" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "199" ].
+
+1990-n := n-num &
+  [ STEM < "1990" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1990" ].
+
+1991-n := n-num &
+  [ STEM < "1991" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1991" ].
+
+1992-n := n-num &
+  [ STEM < "1992" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1992" ].
+
+1993-n := n-num &
+  [ STEM < "1993" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1993" ].
+
+1994-n := n-num &
+  [ STEM < "1994" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1994" ].
+
+1995-n := n-num &
+  [ STEM < "1995" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1995" ].
+
+1996-n := n-num &
+  [ STEM < "1996" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1996" ].
+
+1997-n := n-num &
+  [ STEM < "1997" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1997" ].
+
+1998-n := n-num &
+  [ STEM < "1998" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1998" ].
+
+1999-n := n-num &
+  [ STEM < "1999" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1999" ].
+
+20-n := n-num &
+  [ STEM < "20" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20" ].
+
+2000-n := n-num &
+  [ STEM < "2000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2000" ].
+
+20000-n := n-num &
+  [ STEM < "20000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20000" ].
+
+200000-n := n-num &
+  [ STEM < "200000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "200000" ].
+
+2001-n := n-num &
+  [ STEM < "2001" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2001" ].
+
+2002-n := n-num &
+  [ STEM < "2002" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2002" ].
+
+200200-n := n-num &
+  [ STEM < "200200" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "200200" ].
+
+2003-n := n-num &
+  [ STEM < "2003" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2003" ].
+
+20030107-n := n-num &
+  [ STEM < "20030107" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030107" ].
+
+20030110-n := n-num &
+  [ STEM < "20030110" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030110" ].
+
+20030115-n := n-num &
+  [ STEM < "20030115" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030115" ].
+
+20030117-n := n-num &
+  [ STEM < "20030117" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030117" ].
+
+20030120-n := n-num &
+  [ STEM < "20030120" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030120" ].
+
+20030125-n := n-num &
+  [ STEM < "20030125" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030125" ].
+
+20030127-n := n-num &
+  [ STEM < "20030127" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030127" ].
+
+20030130-n := n-num &
+  [ STEM < "20030130" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030130" ].
+
+20030207-n := n-num &
+  [ STEM < "20030207" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030207" ].
+
+20030210-n := n-num &
+  [ STEM < "20030210" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030210" ].
+
+20030215-n := n-num &
+  [ STEM < "20030215" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030215" ].
+
+20030217-n := n-num &
+  [ STEM < "20030217" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030217" ].
+
+20030220-n := n-num &
+  [ STEM < "20030220" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030220" ].
+
+20030225-n := n-num &
+  [ STEM < "20030225" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030225" ].
+
+20030227-n := n-num &
+  [ STEM < "20030227" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030227" ].
+
+20030307-n := n-num &
+  [ STEM < "20030307" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030307" ].
+
+20030310-n := n-num &
+  [ STEM < "20030310" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030310" ].
+
+20030315-n := n-num &
+  [ STEM < "20030315" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030315" ].
+
+20030317-n := n-num &
+  [ STEM < "20030317" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030317" ].
+
+20030320-n := n-num &
+  [ STEM < "20030320" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030320" ].
+
+20030325-n := n-num &
+  [ STEM < "20030325" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030325" ].
+
+20030327-n := n-num &
+  [ STEM < "20030327" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030327" ].
+
+20030407-n := n-num &
+  [ STEM < "20030407" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030407" ].
+
+20030415-n := n-num &
+  [ STEM < "20030415" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030415" ].
+
+20030417-n := n-num &
+  [ STEM < "20030417" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030417" ].
+
+20030430-n := n-num &
+  [ STEM < "20030430" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030430" ].
+
+20030507-n := n-num &
+  [ STEM < "20030507" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030507" ].
+
+20030510-n := n-num &
+  [ STEM < "20030510" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030510" ].
+
+20030517-n := n-num &
+  [ STEM < "20030517" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030517" ].
+
+20030520-n := n-num &
+  [ STEM < "20030520" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030520" ].
+
+20030527-n := n-num &
+  [ STEM < "20030527" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030527" ].
+
+20030530-n := n-num &
+  [ STEM < "20030530" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030530" ].
+
+20030607-n := n-num &
+  [ STEM < "20030607" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030607" ].
+
+20030610-n := n-num &
+  [ STEM < "20030610" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030610" ].
+
+20030617-n := n-num &
+  [ STEM < "20030617" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030617" ].
+
+20030620-n := n-num &
+  [ STEM < "20030620" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030620" ].
+
+20030625-n := n-num &
+  [ STEM < "20030625" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030625" ].
+
+20030627-n := n-num &
+  [ STEM < "20030627" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030627" ].
+
+20030630-n := n-num &
+  [ STEM < "20030630" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030630" ].
+
+20030707-n := n-num &
+  [ STEM < "20030707" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030707" ].
+
+20030710-n := n-num &
+  [ STEM < "20030710" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030710" ].
+
+20030715-n := n-num &
+  [ STEM < "20030715" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030715" ].
+
+20030717-n := n-num &
+  [ STEM < "20030717" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030717" ].
+
+20030730-n := n-num &
+  [ STEM < "20030730" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030730" ].
+
+20030807-n := n-num &
+  [ STEM < "20030807" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030807" ].
+
+20030820-n := n-num &
+  [ STEM < "20030820" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030820" ].
+
+20030825-n := n-num &
+  [ STEM < "20030825" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030825" ].
+
+20030827-n := n-num &
+  [ STEM < "20030827" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030827" ].
+
+20030830-n := n-num &
+  [ STEM < "20030830" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030830" ].
+
+20030910-n := n-num &
+  [ STEM < "20030910" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030910" ].
+
+20030915-n := n-num &
+  [ STEM < "20030915" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030915" ].
+
+20030917-n := n-num &
+  [ STEM < "20030917" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030917" ].
+
+20030920-n := n-num &
+  [ STEM < "20030920" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030920" ].
+
+20030925-n := n-num &
+  [ STEM < "20030925" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030925" ].
+
+20030927-n := n-num &
+  [ STEM < "20030927" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030927" ].
+
+20030930-n := n-num &
+  [ STEM < "20030930" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20030930" ].
+
+20031007-n := n-num &
+  [ STEM < "20031007" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031007" ].
+
+20031010-n := n-num &
+  [ STEM < "20031010" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031010" ].
+
+20031015-n := n-num &
+  [ STEM < "20031015" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031015" ].
+
+20031017-n := n-num &
+  [ STEM < "20031017" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031017" ].
+
+20031020-n := n-num &
+  [ STEM < "20031020" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031020" ].
+
+20031027-n := n-num &
+  [ STEM < "20031027" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031027" ].
+
+20031030-n := n-num &
+  [ STEM < "20031030" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031030" ].
+
+20031107-n := n-num &
+  [ STEM < "20031107" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031107" ].
+
+20031110-n := n-num &
+  [ STEM < "20031110" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031110" ].
+
+20031117-n := n-num &
+  [ STEM < "20031117" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031117" ].
+
+20031120-n := n-num &
+  [ STEM < "20031120" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031120" ].
+
+20031125-n := n-num &
+  [ STEM < "20031125" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031125" ].
+
+20031127-n := n-num &
+  [ STEM < "20031127" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031127" ].
+
+20031210-n := n-num &
+  [ STEM < "20031210" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031210" ].
+
+20031215-n := n-num &
+  [ STEM < "20031215" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031215" ].
+
+20031217-n := n-num &
+  [ STEM < "20031217" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031217" ].
+
+20031220-n := n-num &
+  [ STEM < "20031220" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031220" ].
+
+20031227-n := n-num &
+  [ STEM < "20031227" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031227" ].
+
+20031230-n := n-num &
+  [ STEM < "20031230" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20031230" ].
+
+2004-n := n-num &
+  [ STEM < "2004" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2004" ].
+
+2005-n := n-num &
+  [ STEM < "2005" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2005" ].
+
+2006-n := n-num &
+  [ STEM < "2006" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2006" ].
+
+2007-n := n-num &
+  [ STEM < "2007" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2007" ].
+
+2008-n := n-num &
+  [ STEM < "2008" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2008" ].
+
+2009-n := n-num &
+  [ STEM < "2009" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2009" ].
+
+201-n := n-num &
+  [ STEM < "201" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "201" ].
+
+2010-n := n-num &
+  [ STEM < "2010" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2010" ].
+
+2011-n := n-num &
+  [ STEM < "2011" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2011" ].
+
+2015-n := n-num &
+  [ STEM < "2015" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2015" ].
+
+2017-n := n-num &
+  [ STEM < "2017" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2017" ].
+
+202-n := n-num &
+  [ STEM < "202" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "202" ].
+
+2020-n := n-num &
+  [ STEM < "2020" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2020" ].
+
+2023-n := n-num &
+  [ STEM < "2023" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2023" ].
+
+2025-n := n-num &
+  [ STEM < "2025" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2025" ].
+
+203-n := n-num &
+  [ STEM < "203" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "203" ].
+
+204-n := n-num &
+  [ STEM < "204" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "204" ].
+
+205-n := n-num &
+  [ STEM < "205" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "205" ].
+
+206-n := n-num &
+  [ STEM < "206" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "206" ].
+
+207-n := n-num &
+  [ STEM < "207" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "207" ].
+
+2076-n := n-num &
+  [ STEM < "2076" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2076" ].
+
+208-n := n-num &
+  [ STEM < "208" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "208" ].
+
+209-n := n-num &
+  [ STEM < "209" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "209" ].
+
+21-n := n-num &
+  [ STEM < "21" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "21" ].
+
+210-n := n-num &
+  [ STEM < "210" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "210" ].
+
+2100-n := n-num &
+  [ STEM < "2100" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2100" ].
+
+211-n := n-num &
+  [ STEM < "211" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "211" ].
+
+2111-n := n-num &
+  [ STEM < "2111" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2111" ].
+
+212-n := n-num &
+  [ STEM < "212" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "212" ].
+
+2121-n := n-num &
+  [ STEM < "2121" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2121" ].
+
+2124-n := n-num &
+  [ STEM < "2124" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2124" ].
+
+213-n := n-num &
+  [ STEM < "213" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "213" ].
+
+214-n := n-num &
+  [ STEM < "214" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "214" ].
+
+2145-n := n-num &
+  [ STEM < "2145" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2145" ].
+
+215-n := n-num &
+  [ STEM < "215" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "215" ].
+
+216-n := n-num &
+  [ STEM < "216" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "216" ].
+
+217-n := n-num &
+  [ STEM < "217" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "217" ].
+
+218-n := n-num &
+  [ STEM < "218" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "218" ].
+
+219-n := n-num &
+  [ STEM < "219" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "219" ].
+
+22-n := n-num &
+  [ STEM < "22" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "22" ].
+
+220-n := n-num &
+  [ STEM < "220" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "220" ].
+
+221-n := n-num &
+  [ STEM < "221" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "221" ].
+
+2211-n := n-num &
+  [ STEM < "2211" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2211" ].
+
+222-n := n-num &
+  [ STEM < "222" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "222" ].
+
+223-n := n-num &
+  [ STEM < "223" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "223" ].
+
+2231111-n := n-num &
+  [ STEM < "2231111" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2231111" ].
+
+225-n := n-num &
+  [ STEM < "225" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "225" ].
+
+23-n := n-num &
+  [ STEM < "23" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "23" ].
+
+230-n := n-num &
+  [ STEM < "230" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "230" ].
+
+2300-n := n-num &
+  [ STEM < "2300" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2300" ].
+
+231-n := n-num &
+  [ STEM < "231" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "231" ].
+
+233-n := n-num &
+  [ STEM < "233" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "233" ].
+
+234-n := n-num &
+  [ STEM < "234" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "234" ].
+
+2345-n := n-num &
+  [ STEM < "2345" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2345" ].
+
+235-n := n-num &
+  [ STEM < "235" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "235" ].
+
+2359-n := n-num &
+  [ STEM < "2359" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2359" ].
+
+236-n := n-num &
+  [ STEM < "236" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "236" ].
+
+237-n := n-num &
+  [ STEM < "237" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "237" ].
+
+2377-n := n-num &
+  [ STEM < "2377" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2377" ].
+
+239-n := n-num &
+  [ STEM < "239" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "239" ].
+
+24-n := n-num &
+  [ STEM < "24" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "24" ].
+
+240-n := n-num &
+  [ STEM < "240" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "240" ].
+
+2400-n := n-num &
+  [ STEM < "2400" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2400" ].
+
+2410-n := n-num &
+  [ STEM < "2410" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2410" ].
+
+242-n := n-num &
+  [ STEM < "242" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "242" ].
+
+243-n := n-num &
+  [ STEM < "243" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "243" ].
+
+245-n := n-num &
+  [ STEM < "245" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "245" ].
+
+246-n := n-num &
+  [ STEM < "246" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "246" ].
+
+247-n := n-num &
+  [ STEM < "247" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "247" ].
+
+25-n := n-num &
+  [ STEM < "25" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "25" ].
+
+250-n := n-num &
+  [ STEM < "250" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "250" ].
+
+2500-n := n-num &
+  [ STEM < "2500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2500" ].
+
+250000-n := n-num &
+  [ STEM < "250000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "250000" ].
+
+252-n := n-num &
+  [ STEM < "252" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "252" ].
+
+2520-n := n-num &
+  [ STEM < "2520" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2520" ].
+
+2544-n := n-num &
+  [ STEM < "2544" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2544" ].
+
+2546-n := n-num &
+  [ STEM < "2546" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2546" ].
+
+255-n := n-num &
+  [ STEM < "255" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "255" ].
+
+2558-n := n-num &
+  [ STEM < "2558" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2558" ].
+
+256-n := n-num &
+  [ STEM < "256" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "256" ].
+
+26-n := n-num &
+  [ STEM < "26" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "26" ].
+
+260-n := n-num &
+  [ STEM < "260" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "260" ].
+
+261-n := n-num &
+  [ STEM < "261" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "261" ].
+
+263-n := n-num &
+  [ STEM < "263" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "263" ].
+
+2632894-n := n-num &
+  [ STEM < "2632894" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2632894" ].
+
+264-n := n-num &
+  [ STEM < "264" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "264" ].
+
+2648-n := n-num &
+  [ STEM < "2648" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2648" ].
+
+265-n := n-num &
+  [ STEM < "265" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "265" ].
+
+2679-n := n-num &
+  [ STEM < "2679" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2679" ].
+
+268-n := n-num &
+  [ STEM < "268" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "268" ].
+
+269-n := n-num &
+  [ STEM < "269" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "269" ].
+
+27-n := n-num &
+  [ STEM < "27" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "27" ].
+
+270-n := n-num &
+  [ STEM < "270" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "270" ].
+
+2700-n := n-num &
+  [ STEM < "2700" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2700" ].
+
+273-n := n-num &
+  [ STEM < "273" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "273" ].
+
+275-n := n-num &
+  [ STEM < "275" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "275" ].
+
+277-n := n-num &
+  [ STEM < "277" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "277" ].
+
+28-n := n-num &
+  [ STEM < "28" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "28" ].
+
+280-n := n-num &
+  [ STEM < "280" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "280" ].
+
+285-n := n-num &
+  [ STEM < "285" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "285" ].
+
+286-n := n-num &
+  [ STEM < "286" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "286" ].
+
+287-n := n-num &
+  [ STEM < "287" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "287" ].
+
+288-n := n-num &
+  [ STEM < "288" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "288" ].
+
+29-n := n-num &
+  [ STEM < "29" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "29" ].
+
+2900-n := n-num &
+  [ STEM < "2900" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2900" ].
+
+2918-n := n-num &
+  [ STEM < "2918" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2918" ].
+
+2933-n := n-num &
+  [ STEM < "2933" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2933" ].
+
+294-n := n-num &
+  [ STEM < "294" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "294" ].
+
+2991-n := n-num &
+  [ STEM < "2991" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2991" ].
+
+2만5000-n := n-num &
+  [ STEM < "2만5000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2만5000" ].
+
+300-n := n-num &
+  [ STEM < "300" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "300" ].
+
+3000-n := n-num &
+  [ STEM < "3000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3000" ].
+
+30000-n := n-num &
+  [ STEM < "30000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "30000" ].
+
+3002-n := n-num &
+  [ STEM < "3002" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3002" ].
+
+301-n := n-num &
+  [ STEM < "301" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "301" ].
+
+302-n := n-num &
+  [ STEM < "302" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "302" ].
+
+3026-n := n-num &
+  [ STEM < "3026" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3026" ].
+
+303-n := n-num &
+  [ STEM < "303" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "303" ].
+
+304-n := n-num &
+  [ STEM < "304" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "304" ].
+
+304000-n := n-num &
+  [ STEM < "304000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "304000" ].
+
+305-n := n-num &
+  [ STEM < "305" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "305" ].
+
+306-n := n-num &
+  [ STEM < "306" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "306" ].
+
+307-n := n-num &
+  [ STEM < "307" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "307" ].
+
+3070-n := n-num &
+  [ STEM < "3070" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3070" ].
+
+3085-n := n-num &
+  [ STEM < "3085" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3085" ].
+
+31-n := n-num &
+  [ STEM < "31" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "31" ].
+
+310-n := n-num &
+  [ STEM < "310" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "310" ].
+
+311-n := n-num &
+  [ STEM < "311" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "311" ].
+
+312-n := n-num &
+  [ STEM < "312" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "312" ].
+
+3123-n := n-num &
+  [ STEM < "3123" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3123" ].
+
+3125-n := n-num &
+  [ STEM < "3125" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3125" ].
+
+3129-n := n-num &
+  [ STEM < "3129" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3129" ].
+
+314-n := n-num &
+  [ STEM < "314" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "314" ].
+
+315-n := n-num &
+  [ STEM < "315" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "315" ].
+
+3150-n := n-num &
+  [ STEM < "3150" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3150" ].
+
+3168-n := n-num &
+  [ STEM < "3168" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3168" ].
+
+317-n := n-num &
+  [ STEM < "317" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "317" ].
+
+3170-n := n-num &
+  [ STEM < "3170" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3170" ].
+
+3177-n := n-num &
+  [ STEM < "3177" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3177" ].
+
+319-n := n-num &
+  [ STEM < "319" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "319" ].
+
+32-n := n-num &
+  [ STEM < "32" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "32" ].
+
+320-n := n-num &
+  [ STEM < "320" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "320" ].
+
+3200-n := n-num &
+  [ STEM < "3200" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3200" ].
+
+321-n := n-num &
+  [ STEM < "321" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "321" ].
+
+3210-n := n-num &
+  [ STEM < "3210" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3210" ].
+
+3212-n := n-num &
+  [ STEM < "3212" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3212" ].
+
+322-n := n-num &
+  [ STEM < "322" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "322" ].
+
+323-n := n-num &
+  [ STEM < "323" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "323" ].
+
+3233-n := n-num &
+  [ STEM < "3233" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3233" ].
+
+3234-n := n-num &
+  [ STEM < "3234" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3234" ].
+
+325-n := n-num &
+  [ STEM < "325" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "325" ].
+
+3257-n := n-num &
+  [ STEM < "3257" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3257" ].
+
+326-n := n-num &
+  [ STEM < "326" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "326" ].
+
+32600-n := n-num &
+  [ STEM < "32600" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "32600" ].
+
+3262-n := n-num &
+  [ STEM < "3262" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3262" ].
+
+3263-n := n-num &
+  [ STEM < "3263" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3263" ].
+
+3266-n := n-num &
+  [ STEM < "3266" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3266" ].
+
+3295-n := n-num &
+  [ STEM < "3295" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3295" ].
+
+33-n := n-num &
+  [ STEM < "33" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "33" ].
+
+330-n := n-num &
+  [ STEM < "330" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "330" ].
+
+332-n := n-num &
+  [ STEM < "332" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "332" ].
+
+332005166-n := n-num &
+  [ STEM < "332005166" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "332005166" ].
+
+3326-n := n-num &
+  [ STEM < "3326" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3326" ].
+
+337-n := n-num &
+  [ STEM < "337" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "337" ].
+
+34-n := n-num &
+  [ STEM < "34" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "34" ].
+
+340-n := n-num &
+  [ STEM < "340" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "340" ].
+
+3445-n := n-num &
+  [ STEM < "3445" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3445" ].
+
+345-n := n-num &
+  [ STEM < "345" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "345" ].
+
+3456-n := n-num &
+  [ STEM < "3456" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3456" ].
+
+3456789-n := n-num &
+  [ STEM < "3456789" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3456789" ].
+
+34569871-n := n-num &
+  [ STEM < "34569871" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "34569871" ].
+
+3458-n := n-num &
+  [ STEM < "3458" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3458" ].
+
+3474-n := n-num &
+  [ STEM < "3474" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3474" ].
+
+3483-n := n-num &
+  [ STEM < "3483" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3483" ].
+
+35-n := n-num &
+  [ STEM < "35" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "35" ].
+
+350-n := n-num &
+  [ STEM < "350" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "350" ].
+
+3500-n := n-num &
+  [ STEM < "3500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3500" ].
+
+35000-n := n-num &
+  [ STEM < "35000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "35000" ].
+
+352-n := n-num &
+  [ STEM < "352" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "352" ].
+
+353-n := n-num &
+  [ STEM < "353" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "353" ].
+
+3545-n := n-num &
+  [ STEM < "3545" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3545" ].
+
+355-n := n-num &
+  [ STEM < "355" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "355" ].
+
+357-n := n-num &
+  [ STEM < "357" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "357" ].
+
+358-n := n-num &
+  [ STEM < "358" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "358" ].
+
+36-n := n-num &
+  [ STEM < "36" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "36" ].
+
+360-n := n-num &
+  [ STEM < "360" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "360" ].
+
+3600-n := n-num &
+  [ STEM < "3600" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3600" ].
+
+3613-n := n-num &
+  [ STEM < "3613" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3613" ].
+
+365-n := n-num &
+  [ STEM < "365" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "365" ].
+
+3664871-n := n-num &
+  [ STEM < "3664871" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3664871" ].
+
+367-n := n-num &
+  [ STEM < "367" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "367" ].
+
+368-n := n-num &
+  [ STEM < "368" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "368" ].
+
+37-n := n-num &
+  [ STEM < "37" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "37" ].
+
+370-n := n-num &
+  [ STEM < "370" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "370" ].
+
+3700-n := n-num &
+  [ STEM < "3700" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3700" ].
+
+371-n := n-num &
+  [ STEM < "371" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "371" ].
+
+372-n := n-num &
+  [ STEM < "372" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "372" ].
+
+373-n := n-num &
+  [ STEM < "373" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "373" ].
+
+375-n := n-num &
+  [ STEM < "375" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "375" ].
+
+376-n := n-num &
+  [ STEM < "376" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "376" ].
+
+376101234598765-n := n-num &
+  [ STEM < "376101234598765" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "376101234598765" ].
+
+3765-n := n-num &
+  [ STEM < "3765" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3765" ].
+
+3767-n := n-num &
+  [ STEM < "3767" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3767" ].
+
+3779-n := n-num &
+  [ STEM < "3779" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3779" ].
+
+3793-n := n-num &
+  [ STEM < "3793" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3793" ].
+
+38-n := n-num &
+  [ STEM < "38" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "38" ].
+
+380-n := n-num &
+  [ STEM < "380" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "380" ].
+
+381-n := n-num &
+  [ STEM < "381" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "381" ].
+
+383-n := n-num &
+  [ STEM < "383" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "383" ].
+
+384-n := n-num &
+  [ STEM < "384" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "384" ].
+
+386-n := n-num &
+  [ STEM < "386" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "386" ].
+
+388-n := n-num &
+  [ STEM < "388" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "388" ].
+
+389-n := n-num &
+  [ STEM < "389" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "389" ].
+
+39-n := n-num &
+  [ STEM < "39" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "39" ].
+
+390-n := n-num &
+  [ STEM < "390" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "390" ].
+
+392-n := n-num &
+  [ STEM < "392" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "392" ].
+
+3921-n := n-num &
+  [ STEM < "3921" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3921" ].
+
+3941-n := n-num &
+  [ STEM < "3941" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3941" ].
+
+396-n := n-num &
+  [ STEM < "396" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "396" ].
+
+3988-n := n-num &
+  [ STEM < "3988" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3988" ].
+
+399-n := n-num &
+  [ STEM < "399" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "399" ].
+
+40-n := n-num &
+  [ STEM < "40" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "40" ].
+
+400-n := n-num &
+  [ STEM < "400" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "400" ].
+
+4000-n := n-num &
+  [ STEM < "4000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4000" ].
+
+40000-n := n-num &
+  [ STEM < "40000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "40000" ].
+
+4001-n := n-num &
+  [ STEM < "4001" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4001" ].
+
+4002-n := n-num &
+  [ STEM < "4002" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4002" ].
+
+401-n := n-num &
+  [ STEM < "401" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "401" ].
+
+402-n := n-num &
+  [ STEM < "402" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "402" ].
+
+404-n := n-num &
+  [ STEM < "404" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "404" ].
+
+4041234567-n := n-num &
+  [ STEM < "4041234567" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4041234567" ].
+
+405-n := n-num &
+  [ STEM < "405" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "405" ].
+
+41-n := n-num &
+  [ STEM < "41" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "41" ].
+
+4100-n := n-num &
+  [ STEM < "4100" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4100" ].
+
+413-n := n-num &
+  [ STEM < "413" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "413" ].
+
+42-n := n-num &
+  [ STEM < "42" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "42" ].
+
+420-n := n-num &
+  [ STEM < "420" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "420" ].
+
+421-n := n-num &
+  [ STEM < "421" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "421" ].
+
+422-n := n-num &
+  [ STEM < "422" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "422" ].
+
+425-n := n-num &
+  [ STEM < "425" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "425" ].
+
+428-n := n-num &
+  [ STEM < "428" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "428" ].
+
+43-n := n-num &
+  [ STEM < "43" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "43" ].
+
+430-n := n-num &
+  [ STEM < "430" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "430" ].
+
+4321-n := n-num &
+  [ STEM < "4321" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4321" ].
+
+434-n := n-num &
+  [ STEM < "434" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "434" ].
+
+44-n := n-num &
+  [ STEM < "44" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "44" ].
+
+440-n := n-num &
+  [ STEM < "440" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "440" ].
+
+4494-n := n-num &
+  [ STEM < "4494" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4494" ].
+
+45-n := n-num &
+  [ STEM < "45" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "45" ].
+
+450-n := n-num &
+  [ STEM < "450" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "450" ].
+
+4500-n := n-num &
+  [ STEM < "4500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4500" ].
+
+451-n := n-num &
+  [ STEM < "451" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "451" ].
+
+456-n := n-num &
+  [ STEM < "456" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "456" ].
+
+4567-n := n-num &
+  [ STEM < "4567" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4567" ].
+
+458-n := n-num &
+  [ STEM < "458" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "458" ].
+
+46-n := n-num &
+  [ STEM < "46" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "46" ].
+
+47-n := n-num &
+  [ STEM < "47" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "47" ].
+
+4700-n := n-num &
+  [ STEM < "4700" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4700" ].
+
+471-n := n-num &
+  [ STEM < "471" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "471" ].
+
+472-n := n-num &
+  [ STEM < "472" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "472" ].
+
+473-n := n-num &
+  [ STEM < "473" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "473" ].
+
+475-n := n-num &
+  [ STEM < "475" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "475" ].
+
+48-n := n-num &
+  [ STEM < "48" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "48" ].
+
+4800-n := n-num &
+  [ STEM < "4800" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4800" ].
+
+482-n := n-num &
+  [ STEM < "482" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "482" ].
+
+4825-n := n-num &
+  [ STEM < "4825" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4825" ].
+
+4856-n := n-num &
+  [ STEM < "4856" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4856" ].
+
+486-n := n-num &
+  [ STEM < "486" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "486" ].
+
+489-n := n-num &
+  [ STEM < "489" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "489" ].
+
+4891-n := n-num &
+  [ STEM < "4891" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4891" ].
+
+49-n := n-num &
+  [ STEM < "49" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "49" ].
+
+490-n := n-num &
+  [ STEM < "490" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "490" ].
+
+4908151236776004-n := n-num &
+  [ STEM < "4908151236776004" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4908151236776004" ].
+
+498-n := n-num &
+  [ STEM < "498" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "498" ].
+
+5000-n := n-num &
+  [ STEM < "5000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5000" ].
+
+50000-n := n-num &
+  [ STEM < "50000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "50000" ].
+
+501-n := n-num &
+  [ STEM < "501" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "501" ].
+
+503-n := n-num &
+  [ STEM < "503" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "503" ].
+
+505-n := n-num &
+  [ STEM < "505" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "505" ].
+
+506-n := n-num &
+  [ STEM < "506" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "506" ].
+
+507-n := n-num &
+  [ STEM < "507" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "507" ].
+
+51-n := n-num &
+  [ STEM < "51" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "51" ].
+
+510-n := n-num &
+  [ STEM < "510" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "510" ].
+
+5100-n := n-num &
+  [ STEM < "5100" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5100" ].
+
+511-n := n-num &
+  [ STEM < "511" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "511" ].
+
+514-n := n-num &
+  [ STEM < "514" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "514" ].
+
+515-n := n-num &
+  [ STEM < "515" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "515" ].
+
+5154-n := n-num &
+  [ STEM < "5154" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5154" ].
+
+52-n := n-num &
+  [ STEM < "52" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "52" ].
+
+520-n := n-num &
+  [ STEM < "520" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "520" ].
+
+5221-n := n-num &
+  [ STEM < "5221" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5221" ].
+
+523-n := n-num &
+  [ STEM < "523" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "523" ].
+
+525-n := n-num &
+  [ STEM < "525" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "525" ].
+
+526-n := n-num &
+  [ STEM < "526" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "526" ].
+
+527-n := n-num &
+  [ STEM < "527" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "527" ].
+
+53-n := n-num &
+  [ STEM < "53" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "53" ].
+
+530-n := n-num &
+  [ STEM < "530" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "530" ].
+
+535-n := n-num &
+  [ STEM < "535" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "535" ].
+
+54-n := n-num &
+  [ STEM < "54" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "54" ].
+
+540-n := n-num &
+  [ STEM < "540" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "540" ].
+
+54000-n := n-num &
+  [ STEM < "54000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "54000" ].
+
+543-n := n-num &
+  [ STEM < "543" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "543" ].
+
+544-n := n-num &
+  [ STEM < "544" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "544" ].
+
+5448-n := n-num &
+  [ STEM < "5448" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5448" ].
+
+545-n := n-num &
+  [ STEM < "545" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "545" ].
+
+546-n := n-num &
+  [ STEM < "546" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "546" ].
+
+549-n := n-num &
+  [ STEM < "549" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "549" ].
+
+55-n := n-num &
+  [ STEM < "55" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "55" ].
+
+550-n := n-num &
+  [ STEM < "550" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "550" ].
+
+551-n := n-num &
+  [ STEM < "551" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "551" ].
+
+555-n := n-num &
+  [ STEM < "555" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "555" ].
+
+56-n := n-num &
+  [ STEM < "56" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "56" ].
+
+560-n := n-num &
+  [ STEM < "560" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "560" ].
+
+5606-n := n-num &
+  [ STEM < "5606" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5606" ].
+
+562-n := n-num &
+  [ STEM < "562" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "562" ].
+
+567-n := n-num &
+  [ STEM < "567" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "567" ].
+
+5678-n := n-num &
+  [ STEM < "5678" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5678" ].
+
+56781234-n := n-num &
+  [ STEM < "56781234" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "56781234" ].
+
+57-n := n-num &
+  [ STEM < "57" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "57" ].
+
+572-n := n-num &
+  [ STEM < "572" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "572" ].
+
+576-n := n-num &
+  [ STEM < "576" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "576" ].
+
+578-n := n-num &
+  [ STEM < "578" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "578" ].
+
+58-n := n-num &
+  [ STEM < "58" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "58" ].
+
+580-n := n-num &
+  [ STEM < "580" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "580" ].
+
+5815-n := n-num &
+  [ STEM < "5815" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5815" ].
+
+59-n := n-num &
+  [ STEM < "59" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "59" ].
+
+60-n := n-num &
+  [ STEM < "60" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "60" ].
+
+600-n := n-num &
+  [ STEM < "600" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "600" ].
+
+6000-n := n-num &
+  [ STEM < "6000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6000" ].
+
+601-n := n-num &
+  [ STEM < "601" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "601" ].
+
+605-n := n-num &
+  [ STEM < "605" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "605" ].
+
+6053-n := n-num &
+  [ STEM < "6053" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6053" ].
+
+607-n := n-num &
+  [ STEM < "607" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "607" ].
+
+6093-n := n-num &
+  [ STEM < "6093" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6093" ].
+
+61-n := n-num &
+  [ STEM < "61" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "61" ].
+
+610-n := n-num &
+  [ STEM < "610" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "610" ].
+
+612-n := n-num &
+  [ STEM < "612" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "612" ].
+
+6141-n := n-num &
+  [ STEM < "6141" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6141" ].
+
+6181-n := n-num &
+  [ STEM < "6181" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6181" ].
+
+62-n := n-num &
+  [ STEM < "62" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "62" ].
+
+625-n := n-num &
+  [ STEM < "625" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "625" ].
+
+627-n := n-num &
+  [ STEM < "627" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "627" ].
+
+628-n := n-num &
+  [ STEM < "628" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "628" ].
+
+629-n := n-num &
+  [ STEM < "629" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "629" ].
+
+6291-n := n-num &
+  [ STEM < "6291" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6291" ].
+
+63-n := n-num &
+  [ STEM < "63" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "63" ].
+
+6300-n := n-num &
+  [ STEM < "6300" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6300" ].
+
+634-n := n-num &
+  [ STEM < "634" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "634" ].
+
+64-n := n-num &
+  [ STEM < "64" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "64" ].
+
+643-n := n-num &
+  [ STEM < "643" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "643" ].
+
+65-n := n-num &
+  [ STEM < "65" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "65" ].
+
+650-n := n-num &
+  [ STEM < "650" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "650" ].
+
+6500-n := n-num &
+  [ STEM < "6500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6500" ].
+
+6543-n := n-num &
+  [ STEM < "6543" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6543" ].
+
+6570-n := n-num &
+  [ STEM < "6570" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6570" ].
+
+66-n := n-num &
+  [ STEM < "66" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "66" ].
+
+6600-n := n-num &
+  [ STEM < "6600" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6600" ].
+
+663-n := n-num &
+  [ STEM < "663" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "663" ].
+
+666-n := n-num &
+  [ STEM < "666" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "666" ].
+
+67-n := n-num &
+  [ STEM < "67" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "67" ].
+
+6700-n := n-num &
+  [ STEM < "6700" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6700" ].
+
+674-n := n-num &
+  [ STEM < "674" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "674" ].
+
+6775-n := n-num &
+  [ STEM < "6775" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6775" ].
+
+6789-n := n-num &
+  [ STEM < "6789" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6789" ].
+
+6789123-n := n-num &
+  [ STEM < "6789123" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6789123" ].
+
+68-n := n-num &
+  [ STEM < "68" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "68" ].
+
+680-n := n-num &
+  [ STEM < "680" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "680" ].
+
+683-n := n-num &
+  [ STEM < "683" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "683" ].
+
+685-n := n-num &
+  [ STEM < "685" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "685" ].
+
+69-n := n-num &
+  [ STEM < "69" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "69" ].
+
+691-n := n-num &
+  [ STEM < "691" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "691" ].
+
+6974-n := n-num &
+  [ STEM < "6974" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6974" ].
+
+70-n := n-num &
+  [ STEM < "70" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "70" ].
+
+700-n := n-num &
+  [ STEM < "700" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "700" ].
+
+7000-n := n-num &
+  [ STEM < "7000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7000" ].
+
+70000-n := n-num &
+  [ STEM < "70000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "70000" ].
+
+7007-n := n-num &
+  [ STEM < "7007" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7007" ].
+
+701-n := n-num &
+  [ STEM < "701" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "701" ].
+
+702-n := n-num &
+  [ STEM < "702" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "702" ].
+
+703-n := n-num &
+  [ STEM < "703" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "703" ].
+
+707-n := n-num &
+  [ STEM < "707" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "707" ].
+
+708-n := n-num &
+  [ STEM < "708" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "708" ].
+
+71-n := n-num &
+  [ STEM < "71" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "71" ].
+
+711-n := n-num &
+  [ STEM < "711" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "711" ].
+
+714-n := n-num &
+  [ STEM < "714" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "714" ].
+
+715-n := n-num &
+  [ STEM < "715" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "715" ].
+
+718-n := n-num &
+  [ STEM < "718" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "718" ].
+
+7182-n := n-num &
+  [ STEM < "7182" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7182" ].
+
+72-n := n-num &
+  [ STEM < "72" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "72" ].
+
+720-n := n-num &
+  [ STEM < "720" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "720" ].
+
+721-n := n-num &
+  [ STEM < "721" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "721" ].
+
+7222586-n := n-num &
+  [ STEM < "7222586" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7222586" ].
+
+723-n := n-num &
+  [ STEM < "723" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "723" ].
+
+724-n := n-num &
+  [ STEM < "724" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "724" ].
+
+7273-n := n-num &
+  [ STEM < "7273" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7273" ].
+
+73-n := n-num &
+  [ STEM < "73" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "73" ].
+
+730-n := n-num &
+  [ STEM < "730" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "730" ].
+
+733-n := n-num &
+  [ STEM < "733" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "733" ].
+
+734-n := n-num &
+  [ STEM < "734" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "734" ].
+
+735-n := n-num &
+  [ STEM < "735" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "735" ].
+
+736-n := n-num &
+  [ STEM < "736" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "736" ].
+
+737-n := n-num &
+  [ STEM < "737" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "737" ].
+
+739-n := n-num &
+  [ STEM < "739" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "739" ].
+
+74-n := n-num &
+  [ STEM < "74" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "74" ].
+
+747-n := n-num &
+  [ STEM < "747" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "747" ].
+
+75-n := n-num &
+  [ STEM < "75" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "75" ].
+
+750-n := n-num &
+  [ STEM < "750" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "750" ].
+
+7500-n := n-num &
+  [ STEM < "7500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7500" ].
+
+751-n := n-num &
+  [ STEM < "751" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "751" ].
+
+76-n := n-num &
+  [ STEM < "76" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "76" ].
+
+760-n := n-num &
+  [ STEM < "760" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "760" ].
+
+762-n := n-num &
+  [ STEM < "762" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "762" ].
+
+766-n := n-num &
+  [ STEM < "766" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "766" ].
+
+77-n := n-num &
+  [ STEM < "77" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "77" ].
+
+770-n := n-num &
+  [ STEM < "770" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "770" ].
+
+771-n := n-num &
+  [ STEM < "771" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "771" ].
+
+7735-n := n-num &
+  [ STEM < "7735" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7735" ].
+
+7758-n := n-num &
+  [ STEM < "7758" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7758" ].
+
+777-n := n-num &
+  [ STEM < "777" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "777" ].
+
+778-n := n-num &
+  [ STEM < "778" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "778" ].
+
+78-n := n-num &
+  [ STEM < "78" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "78" ].
+
+780-n := n-num &
+  [ STEM < "780" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "780" ].
+
+7802-n := n-num &
+  [ STEM < "7802" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7802" ].
+
+783-n := n-num &
+  [ STEM < "783" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "783" ].
+
+784-n := n-num &
+  [ STEM < "784" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "784" ].
+
+788-n := n-num &
+  [ STEM < "788" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "788" ].
+
+7885-n := n-num &
+  [ STEM < "7885" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7885" ].
+
+7890-n := n-num &
+  [ STEM < "7890" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7890" ].
+
+79-n := n-num &
+  [ STEM < "79" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "79" ].
+
+80-n := n-num &
+  [ STEM < "80" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "80" ].
+
+800-n := n-num &
+  [ STEM < "800" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "800" ].
+
+8000-n := n-num &
+  [ STEM < "8000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8000" ].
+
+80000-n := n-num &
+  [ STEM < "80000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "80000" ].
+
+801-n := n-num &
+  [ STEM < "801" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "801" ].
+
+802-n := n-num &
+  [ STEM < "802" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "802" ].
+
+805-n := n-num &
+  [ STEM < "805" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "805" ].
+
+81-n := n-num &
+  [ STEM < "81" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "81" ].
+
+810-n := n-num &
+  [ STEM < "810" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "810" ].
+
+812-n := n-num &
+  [ STEM < "812" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "812" ].
+
+815-n := n-num &
+  [ STEM < "815" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "815" ].
+
+818-n := n-num &
+  [ STEM < "818" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "818" ].
+
+819-n := n-num &
+  [ STEM < "819" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "819" ].
+
+82-n := n-num &
+  [ STEM < "82" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "82" ].
+
+820-n := n-num &
+  [ STEM < "820" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "820" ].
+
+8200-n := n-num &
+  [ STEM < "8200" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8200" ].
+
+823-n := n-num &
+  [ STEM < "823" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "823" ].
+
+827-n := n-num &
+  [ STEM < "827" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "827" ].
+
+828-n := n-num &
+  [ STEM < "828" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "828" ].
+
+83-n := n-num &
+  [ STEM < "83" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "83" ].
+
+832-n := n-num &
+  [ STEM < "832" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "832" ].
+
+83620-n := n-num &
+  [ STEM < "83620" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "83620" ].
+
+8391-n := n-num &
+  [ STEM < "8391" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8391" ].
+
+84-n := n-num &
+  [ STEM < "84" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "84" ].
+
+840-n := n-num &
+  [ STEM < "840" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "840" ].
+
+8471-n := n-num &
+  [ STEM < "8471" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8471" ].
+
+85-n := n-num &
+  [ STEM < "85" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "85" ].
+
+850-n := n-num &
+  [ STEM < "850" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "850" ].
+
+8500-n := n-num &
+  [ STEM < "8500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8500" ].
+
+851-n := n-num &
+  [ STEM < "851" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "851" ].
+
+853-n := n-num &
+  [ STEM < "853" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "853" ].
+
+86-n := n-num &
+  [ STEM < "86" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "86" ].
+
+87-n := n-num &
+  [ STEM < "87" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "87" ].
+
+87651234-n := n-num &
+  [ STEM < "87651234" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "87651234" ].
+
+877-n := n-num &
+  [ STEM < "877" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "877" ].
+
+8771-n := n-num &
+  [ STEM < "8771" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8771" ].
+
+88-n := n-num &
+  [ STEM < "88" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "88" ].
+
+880-n := n-num &
+  [ STEM < "880" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "880" ].
+
+88000-n := n-num &
+  [ STEM < "88000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "88000" ].
+
+881-n := n-num &
+  [ STEM < "881" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "881" ].
+
+89-n := n-num &
+  [ STEM < "89" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "89" ].
+
+890-n := n-num &
+  [ STEM < "890" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "890" ].
+
+90-n := n-num &
+  [ STEM < "90" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "90" ].
+
+900-n := n-num &
+  [ STEM < "900" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "900" ].
+
+9000-n := n-num &
+  [ STEM < "9000" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9000" ].
+
+901-n := n-num &
+  [ STEM < "901" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "901" ].
+
+902-n := n-num &
+  [ STEM < "902" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "902" ].
+
+903-n := n-num &
+  [ STEM < "903" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "903" ].
+
+907-n := n-num &
+  [ STEM < "907" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "907" ].
+
+908-n := n-num &
+  [ STEM < "908" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "908" ].
+
+91-n := n-num &
+  [ STEM < "91" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "91" ].
+
+910-n := n-num &
+  [ STEM < "910" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "910" ].
+
+911-n := n-num &
+  [ STEM < "911" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "911" ].
+
+912-n := n-num &
+  [ STEM < "912" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "912" ].
+
+914-n := n-num &
+  [ STEM < "914" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "914" ].
+
+915-n := n-num &
+  [ STEM < "915" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "915" ].
+
+92-n := n-num &
+  [ STEM < "92" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "92" ].
+
+922-n := n-num &
+  [ STEM < "922" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "922" ].
+
+926-n := n-num &
+  [ STEM < "926" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "926" ].
+
+93-n := n-num &
+  [ STEM < "93" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "93" ].
+
+939-n := n-num &
+  [ STEM < "939" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "939" ].
+
+94-n := n-num &
+  [ STEM < "94" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "94" ].
+
+9403-n := n-num &
+  [ STEM < "9403" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9403" ].
+
+9447-n := n-num &
+  [ STEM < "9447" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9447" ].
+
+95-n := n-num &
+  [ STEM < "95" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "95" ].
+
+950-n := n-num &
+  [ STEM < "950" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "950" ].
+
+9500-n := n-num &
+  [ STEM < "9500" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9500" ].
+
+95930-n := n-num &
+  [ STEM < "95930" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "95930" ].
+
+96-n := n-num &
+  [ STEM < "96" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "96" ].
+
+960-n := n-num &
+  [ STEM < "960" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "960" ].
+
+9651964-n := n-num &
+  [ STEM < "9651964" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9651964" ].
+
+97-n := n-num &
+  [ STEM < "97" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "97" ].
+
+976-n := n-num &
+  [ STEM < "976" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "976" ].
+
+98-n := n-num &
+  [ STEM < "98" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "98" ].
+
+980-n := n-num &
+  [ STEM < "980" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "980" ].
+
+982-n := n-num &
+  [ STEM < "982" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "982" ].
+
+9842-n := n-num &
+  [ STEM < "9842" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9842" ].
+
+987-n := n-num &
+  [ STEM < "987" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "987" ].
+
+9876-n := n-num &
+  [ STEM < "9876" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9876" ].
+
+9876543210987654-n := n-num &
+  [ STEM < "9876543210987654" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9876543210987654" ].
+
+99-n := n-num &
+  [ STEM < "99" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "99" ].
+
+9905-n := n-num &
+  [ STEM < "9905" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9905" ].
+
+9949-n := n-num &
+  [ STEM < "9949" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9949" ].
+
+9986-n := n-num &
+  [ STEM < "9986" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9986" ].
+
+9999-n := n-num &
+  [ STEM < "9999" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9999" ].
+
+999999-n := n-num &
+  [ STEM < "999999" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "999999" ].
+
+9999999-n := n-num &
+  [ STEM < "9999999" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9999999" ].
+
+Ⅰ-n := n-num &
+  [ STEM < "Ⅰ" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1" ].
+
+Ⅱ-n := n-num &
+  [ STEM < "Ⅱ" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2" ].
+
+Ⅲ-n := n-num &
+  [ STEM < "Ⅲ" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3" ].
+
+아흔아홉-n := n-num &
+  [ STEM < "아흔아홉" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "99" ].
+
+아흔-n := adn-num &
+  [ STEM < "아흔" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "90" ].
+
+아홉-n := n-num &
+  [ STEM < "아홉" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9" ].
+
+팔천-n := n-num &
+  [ STEM < "팔천" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8000" ].
+
+팔백-n := n-num &
+  [ STEM < "팔백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "800" ].
+
+여든-n := adn-num &
+  [ STEM < "여든" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "80" ].
+
+팔십-n := n-num &
+  [ STEM < "팔십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "80" ].
+
+여덟-n := n-num &
+  [ STEM < "여덟" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8" ].
+
+팔-n := n-num &
+  [ STEM < "팔" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "8" ].
+
+일흔-n := adn-num &
+  [ STEM < "일흔" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "70" ].
+
+칠십-n := n-num &
+  [ STEM < "칠십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "70" ].
+
+일곱-n := n-num &
+  [ STEM < "일곱" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7" ].
+
+칠-n := n-num &
+  [ STEM < "칠" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "7" ].
+
+육십오-n := n-num &
+  [ STEM < "육십오" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "65" ].
+
+육만-n := n-num &
+  [ STEM < "육만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "60000" ].
+
+예순-n := adn-num &
+  [ STEM < "예순" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "60" ].
+
+육십-n := n-num &
+  [ STEM < "육십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "60" ].
+
+여섯-n := n-num &
+  [ STEM < "여섯" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "6" ].
+
+오십오-n := n-num &
+  [ STEM < "오십오" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "55" ].
+
+오백만-n := n-num &
+  [ STEM < "오백만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5000000" ].
+
+오십만-n := n-num &
+  [ STEM < "오십만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "500000" ].
+
+오만-n := n-num &
+  [ STEM < "오만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "50000" ].
+
+오천-n := n-num &
+  [ STEM < "오천" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5000" ].
+
+오백-n := n-num &
+  [ STEM < "오백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "500" ].
+
+쉰-n := adn-num &
+  [ STEM < "쉰" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "50" ].
+
+오-n := n-num &
+  [ STEM < "오" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5" ].
+
+사십구-n := n-num &
+  [ STEM < "사십구" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "49" ].
+
+사십오-n := n-num &
+  [ STEM < "사십오" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "45" ].
+
+사십삼-n := n-num &
+  [ STEM < "사십삼" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "43" ].
+
+사만-n := n-num &
+  [ STEM < "사만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "40000" ].
+
+사천-n := n-num &
+  [ STEM < "사천" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4000" ].
+
+사백-n := n-num &
+  [ STEM < "사백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "400" ].
+
+사십-n := n-num &
+  [ STEM < "사십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "40" ].
+
+마흔-n := adn-num &
+  [ STEM < "마흔" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "40" ].
+
+사-n := n-num &
+  [ STEM < "사" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4" ].
+
+삼십구-n := n-num &
+  [ STEM < "삼십구" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "39" ].
+
+삼십육-n := n-num &
+  [ STEM < "삼십육" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "36" ].
+
+서른여섯-n := adn-num &
+  [ STEM < "서른여섯" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "36" ].
+
+서른다섯-n := adn-num &
+  [ STEM < "서른다섯" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "35" ].
+
+삼십일-n := n-num &
+  [ STEM < "삼십일" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "31" ].
+
+삼억-n := n-num &
+  [ STEM < "삼억" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "300000000" ].
+
+삼천만-n := n-num &
+  [ STEM < "삼천만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "30000000" ].
+
+삼십만-n := n-num &
+  [ STEM < "삼십만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "300000" ].
+
+삼만-n := n-num &
+  [ STEM < "삼만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "30000" ].
+
+삼천-n := n-num &
+  [ STEM < "삼천" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3000" ].
+
+삼백-n := n-num &
+  [ STEM < "삼백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "300" ].
+
+삼십-n := n-num &
+  [ STEM < "삼십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "30" ].
+
+서른-n := adn-num &
+  [ STEM < "서른" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "30" ].
+
+삼-n := n-num &
+  [ STEM < "삼" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3" ].
+
+셋-n := n-num &
+  [ STEM < "셋" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3" ].
+
+석-n := adn-num &
+  [ STEM < "석" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "3" ].
+
+스물아홉-n := n-num &
+  [ STEM < "스물아홉" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "29" ].
+
+이십팔-n := n-num &
+  [ STEM < "이십팔" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "28" ].
+
+스물여덟-n := adn-num &
+  [ STEM < "스물여덟" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "28" ].
+
+스물일곱-n := adn-num &
+  [ STEM < "스물일곱" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "27" ].
+
+이십육-n := n-num &
+  [ STEM < "이십육" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "26" ].
+
+스물여섯-n := adn-num &
+  [ STEM < "스물여섯" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "26" ].
+
+이십오-n := n-num &
+  [ STEM < "이십오" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "25" ].
+
+스물다섯-n := adn-num &
+  [ STEM < "스물다섯" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "25" ].
+
+스물네-n := adn-num &
+  [ STEM < "스물네" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "24" ].
+
+이십사-n := n-num &
+  [ STEM < "이십사" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "24" ].
+
+스물세-n := adn-num &
+  [ STEM < "스물세" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "23" ].
+
+스물두-n := adn-num &
+  [ STEM < "스물두" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "22" ].
+
+스물둘-n := adn-num &
+  [ STEM < "스물둘" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "22" ].
+
+스물한-n := adn-num &
+  [ STEM < "스물한" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "21" ].
+
+이천만-n := n-num &
+  [ STEM < "이천만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20000000" ].
+
+이백만-n := n-num &
+  [ STEM < "이백만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2000000" ].
+
+이십만-n := n-num &
+  [ STEM < "이십만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "200000" ].
+
+이만-n := n-num &
+  [ STEM < "이만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20000" ].
+
+이천-n := n-num &
+  [ STEM < "이천" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2000" ].
+
+이백-n := n-num &
+  [ STEM < "이백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "200" ].
+
+스물-n := adn-num &
+  [ STEM < "스물" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20" ].
+
+이십-n := n-num &
+  [ STEM < "이십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "20" ].
+
+이-n := n-num &
+  [ STEM < "이" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "2" ].
+
+천구백구십-n := n-num &
+  [ STEM < "천구백구십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1990" ].
+
+천구백-n := n-num &
+  [ STEM < "천구백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1900" ].
+
+열아홉-n := adn-num &
+  [ STEM < "열아홉" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "19" ].
+
+십구-n := n-num &
+  [ STEM < "십구" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "19" ].
+
+백팔십-n := n-num &
+  [ STEM < "백팔십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "180" ].
+
+열여덟-n := adn-num &
+  [ STEM < "열여덟" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "18" ].
+
+천칠백-n := n-num &
+  [ STEM < "천칠백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1700" ].
+
+백칠십-n := n-num &
+  [ STEM < "백칠십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "170" ].
+
+십칠-n := n-num &
+  [ STEM < "십칠" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "17" ].
+
+열일곱-n := adn-num &
+  [ STEM < "열일곱" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "17" ].
+
+열여섯-n := adn-num &
+  [ STEM < "열여섯" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "16" ].
+
+백오십만-n := n-num &
+  [ STEM < "백오십만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1500000" ].
+
+천오백-n := n-num &
+  [ STEM < "천오백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1500" ].
+
+백오십-n := n-num &
+  [ STEM < "백오십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "150" ].
+
+십오-n := n-num &
+  [ STEM < "십오" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "15" ].
+
+열다섯-n := adn-num &
+  [ STEM < "열다섯" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "15" ].
+
+십사-n := n-num &
+  [ STEM < "십사" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "14" ].
+
+백이십-n := n-num &
+  [ STEM < "백이십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "120" ].
+
+십이-n := n-num &
+  [ STEM < "십이" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "12" ].
+
+열두-n := adn-num &
+  [ STEM < "열두" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "12" ].
+
+열한-n := adn-num &
+  [ STEM < "열한" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "11" ].
+
+백오-n := n-num &
+  [ STEM < "백오" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "105" ].
+
+조-n := n-num &
+  [ STEM < "조" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1000000000000" ].
+
+천억-n := n-num &
+  [ STEM < "천억" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "100000000000" ].
+
+백억-n := n-num &
+  [ STEM < "백억" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "10000000000" ].
+
+일억-n := n-num &
+  [ STEM < "일억" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "100000000" ].
+
+십억-n := n-num &
+  [ STEM < "십억" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "100000000" ].
+
+천만-n := n-num &
+  [ STEM < "천만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "10000000" ].
+
+백만-n := n-num &
+  [ STEM < "백만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1000000" ].
+
+십만-n := n-num &
+  [ STEM < "십만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1000000" ].
+
+일만-n := n-num &
+  [ STEM < "일만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "10000" ].
+
+만-n := n-num &
+  [ STEM < "만" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "10000" ].
+
+일천-n := n-num &
+  [ STEM < "일천" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1000" ].
+
+천-n := n-num &
+  [ STEM < "천" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1000" ].
+
+열-n := adn-num &
+  [ STEM < "열" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "100" ].
+
+십-n := n-num &
+  [ STEM < "십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "100" ].
+
+백-n := n-num &
+  [ STEM < "백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "100" ].
+
+일-n := n-num &
+  [ STEM < "일" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1" ].
+
+하나-n := adn-num &
+  [ STEM < "하나" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "1" ].
+
+구백-n := n-num &
+  [ STEM < "구백" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "900" ].
+
+구십-n := n-num &
+  [ STEM < "구십" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "90" ].
+
+구-n := n-num &
+  [ STEM < "구" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "9" ].
+
+다섯-n := adn-num &
+  [ STEM < "다섯" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "5" ].
+
+넷-n := adn-num &
+  [ STEM < "넷" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4" ].
+
+네-n := adn-num &
+  [ STEM < "네" >,
+    SYNSEM.LKEYS.ALTKEYREL.CARG "4" ].
+

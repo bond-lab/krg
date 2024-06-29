@@ -1,0 +1,2635 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files (types-ph, type-lex) aim to classify large types into separate files, according to its level, such as phrasal or lexical types.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;  Original File Created by Jong-Bok Kim and Jaehyung Yang (2004-2008)
+;;	File Created and Revised by Sanghoun Song (from Mar. 17, 2009)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH)
+;; generation에서 대부분의 병목 현상은
+;; 이 파일의 제약을 어떻게 구성하는가가 결정한다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+;;; Lexical types
+
+
+lex-item :+
+ [ SYNSEM.LOCAL.CAT.LEX + ].
+
+;;; Lexical Features
+
+
+;;VERBAL or NOMINAL
+lex-verbal := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.VERBAL + ].
+lex-not-verbal := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.VERBAL - ].
+lex-nominal := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.NOMINAL + ].
+lex-not-nominal := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.NOMINAL - ].
+
+
+;;PERSON
+lxm-animacy := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.PER animacy ].
+lxm-human := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.PER human ].
+lxm-1st := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.PER 1st ].
+lxm-2nd := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.PER 2nd ].
+lxm-3rd := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.PER 3rd ].
+lxm-non-human := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.PER non-human ].
+lxm-obj := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.PER obj ].
+
+lex-human :=  lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER human ].
+lex-animacy :=  lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER animacy ].
+lex-non-human :=  lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER non-human ].
+lex-obj :=  lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER obj ].
+
+
+;;NUMBER
+lxm-non-plural := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.NUM non-pl ].
+lxm-plural := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.NUM pl ].
+lxm-marked-plural := lex-item &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.PNG.NUM marked-pl ].
+
+lex-non-plural := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM non-pl ].
+lex-plural := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+lex-marked-plural := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM marked-pl ].
+
+
+
+;;CLTYPE
+lex-cltype := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.CLTYPE + ].
+lex-non-cltype := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.CLTYPE - ].
+
+;;NUMERAL
+lex-numeral := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.NUMERAL + ].
+lex-non-numeral := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.NUMERAL - ].
+
+;;STATIVE, AGENTIVITY
+lex-stative := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD [ STATIVE +, AGT - ] ].
+lex-non-stative := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD [ STATIVE - ] ].
+; [ SYNSEM.LOCAL.CAT.HEAD [ STATIVE -, AGT + ] ].
+lex-agt := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD [ AGT + ] ].
+lex-non-agt := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD [ AGT - ] ].
+
+
+;;VERBAL TYPE
+;;lex-stative-verb := basic-adjective-lex & lex-stative.
+lex-stative-verb := basic-verb-lex & lex-stative.
+lex-non-stative-verb := basic-verb-lex & lex-non-stative.
+
+
+;;POSITIVE COPULA : -이-
+lex-non-vcp := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD [ VCP - ] ].
+
+;;MODIFICATION TYPE
+lex-mod-non := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.MOD <> ].
+lex-mod-lex := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.LEX + ] > ].
+lex-mod-ph := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.LEX - ] > ].
+lex-mod-nominal := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.NOMINAL + ] > ].
+lex-mod-verbal := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.VERBAL + ] > ].
+lex-mod-noun := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.POS noun ] > ].
+lex-mod-verb := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.POS verb ] > ].
+lex-mod-adv := lex-item &
+[ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.POS adv ] > ].
+lex-same-mod := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.MOD #mod,
+   ARGS < [ SYNSEM.LOCAL.CAT.HEAD.MOD #mod ] > ].
+
+;;HONORIFICATION
+lex-honorific := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.HON + ].
+lex-non-honorific := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.HON - ].
+
+;;TENSE
+lex-present := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.TENSE present ].
+lex-past := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.TENSE past ].
+lex-future := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.TENSE future ].
+lex-non-tense := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.TENSE nontense ].
+
+;;ASPECT
+lex-retro := lex-past &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT retro ].
+lex-intend := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT intend ].
+lex-prog := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT prog ].
+
+;;FORM
+lex-noform := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.FORM no_form ].
+lex-comp-form := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.FORM comp_form ].
+lex-um := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.FORM um ].
+lex-ki := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.FORM ki ].
+
+;;STYLE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH)
+;; infm : 비격식체, 생산적임
+;;    e.g. (밥을) 먹다
+;; unproductive : 비생산적임, 생성의 대상이 되지 않음
+;;    e.g. (밥을) 먹소
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+lex-strict := lex-item &
+ [ STYLE strict ].
+lex-fm := lex-item &
+ [ STYLE formal ].
+lex-infm := lex-item &
+ [ STYLE informal ].
+lex-unproductive := lex-item &
+ [ STYLE unproductive ].
+lex-online := lex-item &
+ [ STYLE online ].
+lex-robust := lex-item &
+ [ STYLE robust ].
+lex-spoken := lex-item &
+ [ STYLE.WRITTEN - ].
+lex-same-style := lex-item &
+ [ STYLE #style, ARGS < [ STYLE #style ] > ].
+
+
+
+;;DISCOURSE MARKERS
+lex-top := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.DMKR top-mkr ].
+lex-foc := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD.DMKR foc-mkr ].
+
+
+;;INDEPENDENCY
+lex-ind := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD [ IC +, CASE [ GCASE no_gcase, SCASE no_scase ] ] ].
+lex-dep := lex-item &
+ [ SYNSEM.LOCAL.CAT.HEAD [ IC -, CASE [ GCASE gcase, SCASE no_scase ] ] ].
+
+;;MOOD
+lex-decl := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX [ E.MOOD decl, SF prop-or-ques ] ].
+lex-inter := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX [ E.MOOD inter, SF ques ] ].
+lex-suggest := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX [ E.MOOD suggest, SF prop ] ].
+
+lex-imp := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX [ E.MOOD imper, SF comm ] ].
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH)
+;;    명령문 ending에 따른 구분
+;; 상대높임법 반영
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+lex-hapsyo := lex-imp &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD hapsyo ].
+lex-hao := lex-imp &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD hao ].
+lex-hakey := lex-imp &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD hakey ].
+lex-hayra := lex-imp &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD hayra ].
+lex-hayyo := lex-imp &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD hayyo ].
+lex-hay := lex-imp &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD hay ].
+
+lex-imp-sug := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD imp-sug ].
+lex-no-imp-sug := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD no-impsug ].
+lex-exclam := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD exclam ].
+lex-non-mood := lex-item &
+ [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD no-mood ].
+
+;;RELATIVE
+lex-rel := lex-non-mood & lex-mod-ph &
+ [ SYNSEM.LOCAL [ CAT #cat & [ HEAD.MOD < [ LOCAL.CAT.HEAD.POS noun ] > ],
+				  CONT #sem ],
+   ARGS < [ SYNSEM.LOCAL [ CAT #cat, CONT #sem ] ] > ].
+
+;;TRANSITIVITY
+lex-intransitive := intransitive-lex-item &
+ [ SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
+
+lex-transitive := transitive-lex-item &
+ [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
+   ARG-ST < [ ],
+			#comps &
+			[ LOCAL.CAT [ VAL [ SPR < >,
+								COMPS < > ] ] ] > ].
+
+lex-ditransitive := ditransitive-lex-item &
+ [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comp1, #comp2 >,
+   ARG-ST < [ LOCAL.CAT.HEAD.POS noun ],
+			#comp1 &
+			[ LOCAL.CAT [ VAL [ SPR < >,
+								COMPS < > ] ] ],
+			#comp2 &
+			 [ LOCAL.CAT [ VAL [ SPR < >,
+								 COMPS < > ] ] ] > ].
+
+;; PASSIVIZATION
+lex-passive := lex-item &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.PASS + ].
+lex-non-passive := lex-item &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.PASS - ].
+
+;;LIGHT or HEAVY
+lex-light := lex-item &
+  [ SYNSEM.LOCAL.CAT.HC-LIGHT + ].
+lex-heavy := lex-item &
+  [ SYNSEM.LOCAL.CAT.HC-LIGHT - ].
+
+
+;;SPECIFIER POSSIBILITY
+lex-spr := lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.SPR < #spr & [ LOCAL.CAT.HEAD.POS det ] >,
+	ARG-ST < #spr > ].
+lex-spr-non := lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.SPR <> ].
+
+
+;;GRAMATICAL CASES
+lex-gcase := word-or-lexrule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE gcase ].
+lex-voc := word-or-lexrule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE voc ].
+lex-nom := word-or-lexrule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom ].
+lex-acc := word-or-lexrule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc ].
+lex-gen := word-or-lexrule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE gen ].
+lex-nogcase := word-or-lexrule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE no_gcase ].
+
+;;SEMANTIC (OBLIQUE) CASES
+lex-noscase := word-or-lexrule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE no_scase ].
+
+;;CASE TYPE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH)
+;; lex-mod-verb로 하지 않으면 생성시
+;; 연산량이 폭증한다.
+;; 이유가 무엇일까?
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+lex-p-dual := lex-mod-verb &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE no_gcase,
+   ARGS < [] > ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;ARGUMENT REALIZATION
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;ANIMATE HIERARCHY
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH)
+;; 학생들/개 빵도 먹었다
+;; 아래와 같이 분석되는 것을 막기 위해 ANIMACY를 도입
+;;   *[학생들/개(comps) [[빵(subj)도 먹었다]]
+;; '먹다', '짖다' 의 경우에는 주어가 유정성을 지녀야 함
+;; '가다', '오다', '주다'는 그렇지 않음
+;;    (1) 여름[ANIMACY -]이 가고 가을[ANIMACY -]이 온다
+;;    (2) 고려대학교[ANIMACY -]는 김연아에게 공로상을 주었다
+;; 따라서, '먹다' 등은 이 제약을 지니지만, '가다' 등은 그렇지 않다
+;; 그외 관련되는 현상 :
+;;  피동형 경동사 구문 (see Song 2007)
+;;    (1) 그 분야[ANIMACY -]가 연구되었다.
+;;        *그 분야가 연구당했다.
+;;    (2) 그 선생님[ANIMACY +]이 존경을 받는다
+;;        ??그 선생님이 존경이 된다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-07 / SSH)
+;; Levin & Rapapport 2005 를 참조하여 고칠 것
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+lex-argst-animate-subj := lex-item &
+ [ ARG-ST < [ LOCAL.CONT.HOOK.INDEX.PNG.PER animacy ], ... > ].
+lex-argst-human-subj := lex-item &
+ [ ARG-ST < [ LOCAL.CONT.HOOK.INDEX.PNG.PER human ], ... > ].
+lex-argst-anidat :=  lex-item &
+ [ ARG-ST < [], [], [ LOCAL.CONT.HOOK.INDEX.PNG.PER animacy ] > ].
+lex-argst-nonanidat := lex-item &
+ [ ARG-ST < [], [], [ LOCAL.CONT.HOOK.INDEX.PNG.PER non-animacy ] > ].
+
+
+;;CATEGORY of ARGUMENT
+lex-argst-vp-intr := lex-item &
+ [ ARG-ST < [ LOCAL.CAT [ HEAD.POS verb,
+						  VAL [ SUBJ < [ ] >  ] ] ] > ].
+
+lex-argst-s-intr := lex-item &
+ [ ARG-ST < [ LOCAL.CAT [ HEAD.POS verb,
+						  VAL [ SUBJ <>,
+								COMPS <> ] ] ] > ].
+
+lex-argst-np-tr := lex-item &
+ [ ARG-ST < [],
+			[ LOCAL.CAT.HEAD [ NOMINAL + ] ] > ].
+
+lex-argst-adv-tr := lex-item &
+ [ ARG-ST < [],
+			[ LOCAL.CAT.HEAD [ POS adv ] ] > ].
+
+lex-argst-vp-tr := lex-item &
+ [ ARG-ST < [],
+			[ LOCAL.CAT [ HEAD.POS verb,
+						  VAL [ SUBJ < [] > ] ] ] > ].
+
+lex-argst-s-tr := lex-item &
+ [ ARG-ST < [],
+			[ LOCAL.CAT [ HEAD.POS verb,
+						  VAL [ SUBJ <>,
+								COMPS <> ] ] ] > ].
+
+lex-argst-np-ditr := lex-item &
+ [ ARG-ST < [],
+            [ LOCAL.CAT.HEAD [ NOMINAL + ] ],
+            [ LOCAL.CAT.HEAD [ NOMINAL + ] ] > ].
+
+lex-argst-acc-ditr := lex-item &
+ [ ARG-ST < [],
+            [ LOCAL.CAT.HEAD [ CASE.GCASE acc ] ],
+            [] > ].
+
+lex-argst-dat-ditr := lex-item &
+ [ ARG-ST < [],
+            [ LOCAL.CAT.HEAD [ CASE.SCASE dat ] ],
+            [] > ].
+
+lex-argst-goal-ditr := lex-item &
+ [ ARG-ST < [],
+            [ LOCAL.CAT.HEAD [ CASE.SCASE goal ] ],
+            [] > ].
+
+lex-argst-vp-ditr := lex-item &
+ [ ARG-ST < [],
+            [ LOCAL.CAT.HEAD [ NOMINAL + ] ],
+            [ LOCAL.CAT [ HEAD [ POS verb ],
+						  VAL.SUBJ < [] > ] ] > ].
+
+lex-argst-vnp-ditr := lex-item &
+ [ ARG-ST < [],
+            [ LOCAL.CAT.HEAD [ NOMINAL + ] ],
+            [ LOCAL.CAT [ HEAD [ POS noun, VERBAL + ] ] ] > ].
+
+lex-argst-s-ditr := lex-item &
+ [ ARG-ST < [],
+            [ LOCAL.CAT.HEAD [ NOMINAL + ] ],
+            [ LOCAL.CAT [ HEAD [ POS verb,
+								 FORM ko4 ],
+						  VAL [ SUBJ <>, COMPS <> ] ] ] > ].
+
+;;CASE FRAME
+lex-argst-tr-nom := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD [ CASE [ GCASE vcase,
+										   SCASE no_scase ],
+									PRD + ] ] > ].
+
+lex-argst-tr-acc := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE.SCASE no_scase ] > ].
+
+lex-argst-tr-dat := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD [ CASE.SCASE dat,
+									PRD - ] ] > ].
+
+lex-argst-tr-src := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE.SCASE src ] > ].
+
+lex-argst-tr-com := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE.SCASE comit ] > ].
+
+lex-argst-tr-dir := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE.SCASE dir ] > ].
+
+lex-argst-tr-sts := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE.SCASE sts ] > ].
+
+lex-argst-tr-loc := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE.SCASE loc ] > ].
+
+lex-argst-tr-goal := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE.SCASE goal ] > ].
+
+lex-argst-tr-inst := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE.SCASE inst ] > ].
+
+lex-argst-ditr-3rd-dat := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.SCASE dat ] > ].
+
+lex-argst-ditr-3rd-dat_goal_loc := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.SCASE dat_goal_loc ] > ].
+
+lex-argst-ditr-3rd-acc := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.GCASE acc ] > ].
+
+lex-argst-ditr-3rd-com := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.SCASE comit ] > ].
+
+lex-argst-ditr-3rd-goal := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.SCASE goal ] > ].
+
+lex-argst-ditr-3rd-inst := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.SCASE inst ] > ].
+
+lex-argst-ditr-3rd-loc := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.SCASE loc ] > ].
+
+lex-argst-ditr-3rd-src := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.SCASE src ] > ].
+
+lex-argst-ditr-3rd-sts := lex-item &
+  [ ARG-ST < [], [], [ LOCAL.CAT.HEAD.CASE.SCASE sts ] > ].
+
+lex-argst-tr-nocase := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.CASE [ GCASE no_gcase,
+										 SCASE no_scase ] ] > ].
+
+lex-argst-non :=  lex-item &
+  [ ARG-ST < > ].
+
+
+;;; COMPLEMENTIZER TYPE
+lex-ae := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.FORM ae ] > ].
+lex-ci := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.FORM ci ] > ].
+lex-key := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.FORM key ] > ].
+lex-ko2 := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.FORM ko2 ] > ].
+lex-kon := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.FORM kon ] > ].
+lex-eya := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.FORM eya ] > ].
+lex-na2 := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.FORM na2 ] > ].
+lex-ko4 := lex-item &
+  [ ARG-ST < [], [ LOCAL.CAT.HEAD.FORM ko4 ] > ].
+
+;;; COORDINATION
+lex-coord := lex-rule &
+ [ SYNSEM.LOCAL.COORD + ].
+
+;;DTR TYPE 
+lex-default-dtr := lex-rule &
+  [ DTR v-default ].
+lex-hon-tns-dtr := lex-rule &
+  [ DTR v-hon-tns ].
+
+
+;;;VALENCE MIN
+lex-val-intr := lex-rule &
+ [ SYNSEM [ LOCAL.CAT.VAL [ SUBJ < #subj >, COMPS < > ] ],
+   ARG-ST < #subj & [ ] > ].
+lex-val-tr := lex-rule &
+ [ SYNSEM [ LOCAL.CAT.VAL [ SUBJ < #subj >, COMPS < #comps > ] ],
+   ARG-ST < #subj & [ ], #comps & [ ] > ].
+lex-val-ditr := lex-rule &
+ [ SYNSEM [ LOCAL.CAT.VAL [ SUBJ < #subj >, COMPS < #comps1 , #comps2 > ] ],
+   ARG-ST < #subj & [ ], #comps1 & [ ], #comps2 & [ ] > ].
+
+;;; MORPHOLOGICAL RULES
+infl-add-only-no-ccont-ltow-rule := infl-ltow-rule & add-only-no-ccont-rule.
+const-add-only-no-ccont-ltow-rule := const-ltow-rule & add-only-no-ccont-rule.
+
+
+;;; Nouns
+;; [basic-noun-lex] might be changed to another type.
+
+n-del-lex := lex-rule &
+  [ DTR n-p-lex ].
+;   [ STYLE #style,
+; 	DTR n-p-lex & [ STYLE #style ] ].
+
+const-n-del-lex := n-del-lex & const-add-only-no-ccont-ltol-rule.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH)
+;; 철수가 빵[도] 먹다
+;; '도'가 의미를 지니므로 (also_rel)
+;; infl에서는 no-ccont를 빼야한다.
+;; 즉, 어휘형성 단계에서 의미가 더해지는 것이 있으면
+;;     no-ccont 가 아니다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+infl-n-del-lex := n-del-lex & infl-add-only-ltol-rule &
+ [ DTR.SYNSEM.LOCAL.CONT.HOOK.INDEX #index,
+   C-CONT [ RELS <! [ ARG0 #index ] !>, HCONS <! !> ] ].
+infl-n-del-lex-no-ccont := n-del-lex & infl-add-only-no-ccont-ltol-rule & lex-same-style.
+
+coord-infl-n-del-lex := n-del-lex & lexeme-to-lexeme-rule & inflecting-lex-rule & lex-coord.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-09 / SSH)
+;; 아무 것도 없는 경우
+;;  nom : 소희 오다
+;;  acc : 빵 먹다
+;;  voc : 소희
+;;  gen : 소희 빵
+;; 이상에서 gcase로 하기로 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;친구 (친구-nil-nil)
+n-bare := const-n-del-lex &
+  [ STYLE unproductive,
+	ARGS < const-n-p-lex & [ SYNSEM.LOCAL.CAT.VAL.COMPS <> ] >,
+	SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE gcase ] ].
+
+;;먹을 수(가) 있다
+n-bare-bn := const-n-del-lex &
+ [ STYLE strict,
+   ARGS < const-n-p-lex & [ SYNSEM.LOCAL.CAT [ HEAD.NFORM bn-form,
+											   VAL.COMPS < [] > ] ] > ].
+
+
+;;n-non-del := const-n-del-lex & lex-same-style &
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-06-08 / SSH)
+;; 개들 짖다 => robust
+;; 개한테 주다 => strict
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-non-del := const-n-del-lex &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE gcase ],
+   ARGS < infl-n-p-lex > ].
+
+n-voc := infl-n-del-lex-no-ccont & lex-voc & lex-mod-non.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-06-08 / SSH)
+;; 교수님이, 선생님이
+;;  => non-honorific 뺀다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;n-nom := infl-n-del-lex-no-ccont & lex-nom & lex-same-mod.
+;n-nom := infl-n-del-lex-no-ccont & lex-nom & lex-same-mod & lex-non-honorific.
+n-nom := infl-n-del-lex-no-ccont & lex-nom & lex-same-mod.
+
+n-acc := infl-n-del-lex-no-ccont & lex-acc & lex-same-mod.
+;n-acc := infl-n-del-lex-no-ccont & lex-acc & lex-mod-verbal.
+;n-acc := infl-n-del-lex & lex-acc & lex-mod-non.
+
+;n-gen := infl-n-del-lex & lex-gen & lex-mod-ph & lex-mod-nominal.
+n-gen := infl-n-del-lex-no-ccont & lex-gen & lex-mod-ph & lex-mod-noun.
+
+; [ SYNSEM.LOCAL.CAT.HEAD [ MOD < [ LOCAL [ CAT.HEAD.NOMINAL +,
+;												  CONT.HOOK.INDEX #2 ] ] > ],
+;  C-CONT.RELS [ LIST [ FIRST  [ PRED part-of_rel,
+;								 ARG0 #1,
+;								 ARG1 #2 ] ] ],
+;  ARGS < [ SYNSEM.LOCAL.CONT.HOOK.INDEX #1 ] > ].
+
+
+n-xdel-only := infl-n-del-lex & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only" ].
+n-xdel-only-nom := n-xdel-only & lex-nom & lex-noscase & lex-mod-non.
+n-xdel-only-acc := n-xdel-only & lex-acc & lex-noscase & lex-mod-non.
+n-xdel-only-gen := n-xdel-only & lex-gen & lex-noscase.
+
+n-xdel-even := infl-n-del-lex & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "even" ].
+n-xdel-even-nom := n-xdel-even & lex-nom & lex-mod-non.
+n-xdel-even-acc := n-xdel-only & lex-acc & lex-mod-non.
+
+n-top := infl-n-del-lex & lex-top & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "as.for_rel" ].
+n-only-top := infl-n-del-lex & lex-top & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only_as.for_rel" ].
+n-even-top := infl-n-del-lex & lex-top & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "even_as.for_rel" ].
+
+n-foc-even := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "even_rel" ].
+n-only-foc-even := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only_even_rel" ].
+n-even-foc-even := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "even_even_rel" ].
+
+;;만으로
+n-only-inst := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only_inst_rel" ].
+;;만으로는
+n-only-inst-foc := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only_inst-foc_rel" ].
+
+n-foc-also := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "also_rel" ].
+n-only-foc-also := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only_also_rel" ].
+n-even-foc-also := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "even_also_rel" ].
+
+n-foc-contra := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "exclusive_rel" ].
+n-only-foc-contra := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only_exclusive_rel" ].
+n-even-foc-contra := infl-n-del-lex & lex-foc & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "even_exclusive_rel" ].
+
+n-dist-each := infl-n-del-lex & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "each_rel" ].
+n-dist-per := infl-n-del-lex & lex-same-style &
+ [ C-CONT.RELS.LIST.FIRST.PRED "per_rel" ].
+
+n-dir := infl-n-del-lex & lex-same-style & lex-non-honorific & lxm-non-plural &
+ [ SYNSEM.LOCAL [ CAT.HEAD.CASE.GCASE gen,
+				  CONT.RELS.LIST.REST.FIRST.PRED "direction_rel" ] ].
+n-src := infl-n-del-lex & lex-same-style & lex-non-honorific & lxm-non-plural &
+ [ SYNSEM.LOCAL [ CAT.HEAD.CASE.GCASE gen,
+				  CONT.RELS.LIST.REST.FIRST.PRED "from_rel" ] ].
+n-inter := infl-n-del-lex & lex-same-style &
+ [ SYNSEM.LOCAL [ CAT.HEAD.CASE.GCASE gen,
+				  CONT.RELS.LIST.REST.FIRST.PRED "inter_rel" ] ].
+n-inner := infl-n-del-lex & lex-same-style &
+ [ SYNSEM.LOCAL [ CAT.HEAD.CASE.GCASE gen,
+				  CONT.RELS.LIST.REST.FIRST.PRED "inner_rel" ] ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-20 / SSH)
+;; 역시 과잉 생성의 문제가 있어, comment-out 한다.
+;; 즉, RELS 에서 구분이 안되므로
+;; 소희가 => 소희보다도 와 같이 처리되는 문제가 있다.
+;; 이후 coornination문제가 해결이 되면 살펴보고 고쳐야 한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; n-and := coord-infl-n-del-lex & lex-nogcase &
+;  [ SYNSEM.LOCAL.COORD-REL.PRED "_and_coord_rel" ].
+;; [ SYN.HEAD.COORD and ].
+; n-ilang-hako := coord-infl-n-del-lex & lex-nogcase &
+;  [ SYNSEM.LOCAL.COORD-REL.PRED "_and-none_coord_rel" ].
+; n-or := coord-infl-n-del-lex & lex-nogcase &
+;  [ SYNSEM.LOCAL.COORD-REL.PRED "_or_coord_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-09 / SSH)
+;; 의미가 더해지는 기능보다는 단순히 접사의 기능이 아닐까?
+;; 하나만 쓰자.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-29 / SSH)
+;; 영어가 한국어보다 어렵다
+;; 위 문장을 단순 modification으로 처리하기 위해 일단 살림 
+;; 이때 lex-mod-verb가 문제가 되어 일반명사[lex-mod-non] 쪽은 문제가 됨 
+;; 이전 문법에서는 MOD를 제외하고 다시 기술하는 방식을 택하였었음
+;; 추후 '보다'의 위치가 확정적이지 않아, 일단 그 부분 수정은 보류
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-than := infl-n-del-lex & lex-mod-verb & lex-nogcase & lex-noscase &
+ [ C-CONT.RELS.LIST.FIRST.PRED "than" ].
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-29 / SSH)
+;;보다도, 보다는
+;;    그의 진정성을 의심했다기보다는 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-rather-than := infl-n-del-lex & lex-mod-verb & lex-nogcase & lex-noscase &
+ [ C-CONT.RELS.LIST.FIRST.PRED "rather_than" ].
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-29 / SSH)
+;; 아래의 구분이 추후 추가되어야 함
+;; 수영이가 윤아보다도 크다
+;; 서현이가 태연이보다는 크다
+;;일단은 확실하지 않으므로 보류한다 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+n-from := infl-n-del-lex & lex-mod-verb &
+ [ C-CONT.RELS.LIST.FIRST.PRED "start" ].
+n-from-nom := n-from & lex-nom.
+n-from-acc := n-from & lex-acc.
+n-from-gen := n-from & lex-gen.
+; [ SYNSEM.LOCAL.COORD-REL.PRED "_start_coord_rel" ].
+
+n-like := infl-n-del-lex & lex-nogcase & lex-noscase &
+ [ C-CONT.RELS.LIST.FIRST.PRED "like" ].
+; [ SYNSEM.LOCAL.COORD-REL.PRED "_like_rel" ].
+
+
+
+n-p-lex := lex-rule &
+  [ DTR n-lxm ].
+
+;n-stem-lex-rule := infl-add-only-no-ccont-ltol-rule &
+;  [ DTR noun-lex ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH)
+;;*빵님들께서, 선생님들께서 (HON, NUM)
+;;  한국어에서 복수성과 높임법은
+;;   person 자질과 밀접한 관련이 있다.
+;;  이후 가능한 한 person 으로 통일한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+infl-n-p-lex := n-p-lex & infl-add-only-no-ccont-ltol-rule &
+ [ SYNSEM.LOCAL [ CAT.HEAD.HON #hon,
+				  CONT.HOOK.INDEX.PNG [ PER #per,
+										NUM #num ] ],
+   DTR.SYNSEM.LOCAL [ CAT.HEAD.HON #hon,
+					  CONT.HOOK.INDEX.PNG [ PER #per,
+											NUM #num ] ] ].
+infl-n-p-no-scase-mkr-lex := infl-n-p-lex.
+infl-n-p-scase-mkr-lex := infl-n-p-lex.
+
+const-n-p-lex := n-p-lex & const-add-only-no-ccont-ltol-rule.
+
+
+;n-pl-nom-lex-rule := n-stem-lex-rule.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-09 / SSH)
+;; 아무 것도 없는 경우 (e.g. 철수가) 와 같은 경우
+;; scase 는 무엇이 되는가??
+;;   e.g. 연아가 고려대학교 오다
+;; 고려대학교 에 case marking이 없어도 loc이므로
+;; scase로 봐야 한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-non-p := const-n-p-lex &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE [ SCASE scase ] ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-09 / SSH)
+;;   (1) 학생들(이) 오다
+;;   (2) ??철수가 학생들 잡히다.
+;;   (3) 철수가 학생들에게 잡히다.
+;;   (4) ??철수가 학생들 싸우다.
+;;   (5) 철수가 학생들과 싸우다.
+;; 이상에서 격은 no_scase로 한다.
+;; 위 n-non-p와 불일치가 있음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-p-hon := infl-n-p-no-scase-mkr-lex & lex-honorific &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE [ SCASE no_scase ] ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-10 / SSH)
+;; 유빈이, 상헌이
+;;   (1) 유빈이가 상헌이를 만나다
+;;   (2) 유빈이가 상헌이 만나다 (not com, but acc)
+;;   (3) ??유빈이들
+;;   (4) ??상헌이께서
+;;   (5) ??소희가 짝을 상헌이 삼다
+;;   (6) *책상이에게 *고려대학교이에에게 : proper noun, person 3rd,
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-p-person := infl-n-p-no-scase-mkr-lex & lex-non-plural & lex-non-honorific &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE [ SCASE no_scase ],
+	ARGS < n-3rd-prop > ].
+
+n-p-person-hon := infl-n-p-no-scase-mkr-lex & lex-non-plural &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE [ SCASE no_scase ],
+	ARGS < n-3rd-prop > ].
+
+n-p-pl := infl-n-p-no-scase-mkr-lex & lex-marked-plural &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE [ SCASE no_scase ] ].
+n-p-hon-pl := n-p-pl & lex-honorific.
+
+
+n-p-dat := infl-n-p-scase-mkr-lex & lex-mod-non & lex-nogcase &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE dat ].
+
+n-p-hon-dat := n-p-dat & lex-honorific.
+n-p-pl-dat := n-p-dat & lex-marked-plural.
+n-p-hon-pl-dat := n-p-pl-dat & lex-honorific.
+n-p-hondat := n-p-dat & lex-honorific.
+n-p-pl-hondat := n-p-hondat & lex-marked-plural.
+
+n-p-loc := infl-n-p-scase-mkr-lex & lex-mod-non & lex-nogcase &
+  [ SYNSEM.LOCAL [ CAT.HEAD.CASE.SCASE loc,
+				   CONT.HOOK.INDEX.PNG.PER non-animacy ] ].
+
+n-p-goal := infl-n-p-scase-mkr-lex & lex-mod-non & lex-nogcase &
+  [ SYNSEM.LOCAL [ CAT.HEAD.CASE.SCASE goal,
+				   CONT.HOOK.INDEX.PNG.PER non-animacy ] ].
+
+n-p-sts := infl-n-p-scase-mkr-lex & lex-p-dual &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE sts ].
+
+
+n-p-hon-sts := n-p-sts & lex-honorific.
+;; e,g. 학생들처럼, 학부모님들로부터
+n-p-pl-sts := n-p-sts & lex-marked-plural.
+n-p-hon-pl-sts := n-p-pl-sts & lex-honorific.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-25 / SSH)
+;; coordination의 과잉 생성을 막기 위해
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;n-p-com := infl-n-p-scase-mkr-lex & lex-p-dual &
+n-p-com := infl-n-p-scase-mkr-lex & lex-mod-non &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE no_gcase, SCASE comit ] ].
+n-p-hon-com := n-p-com & lex-honorific.
+;; e,g. 학생들이랑, 학생들하고, 학생들과
+n-p-pl-com := n-p-com & lex-marked-plural.
+n-p-hon-pl-com := n-p-pl-com & lex-honorific.
+
+
+n-p-honsub := infl-n-p-scase-mkr-lex & lex-mod-non & lex-honorific &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE nom, SCASE #scase ],
+	ARGS < [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE #scase ] > ].
+n-p-pl-honsub := n-p-honsub & lex-marked-plural.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-09 / SSH)
+;; 이하의 노드는 hon, pl을 붙이지 않는다.
+;;   (1) ??철수가 학교들로 가다
+;;   (2) ??철수가 학교들에서 오다
+;;   (3) ??철수가 학생들까지 가다
+;; 한국어에서 hon, pl은 유정성(ANIMACY)와 상관됨
+;; 이 논항들은 기본적으로 [ANIMACY -]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+n-p-dual :=  infl-n-p-scase-mkr-lex & lex-p-dual &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER non-animacy ].
+
+n-p-dat_goal_loc := n-p-dual &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE dat_goal_loc ].
+
+n-p-dir_goal_sts_inst := n-p-dual &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE dir_goal_sts_inst ].
+
+n-p-goal-ajt := n-p-dual &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE goal ].
+
+n-p-unk := n-p-dual &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE scase ].
+
+n-p-loc_src := infl-n-p-scase-mkr-lex & lex-p-dual &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.SCASE loc_src ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-03-29 / SSH)
+;; pronouns have their own png features.
+;; and, some nouns have also their own png inherently.
+;;    e.g. 둘 (two) / *둘-들 (two-pl)
+;;    둘이 간다 / *둘들이 간다
+;; I believe Korean png feature structure need to be studied separately.
+;; the below type might expand, reflecting on honorifications.
+;;    e.g. 집 : 댁 = home(neutral form) : home(honorific form)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;=== nominal : NOMINAL +
+;nominal := basic-noun-lex & no-hcons-lex-item &
+
+n-lxm := norm-sem-lex-item &
+ [ SYNSEM.LOCAL [ CAT.HEAD [ POS noun,
+							 NOMINAL + ] ] ].
+;; [ SYNSEM.LOCAL [ CAT.HEAD.NOMINAL +,
+;;             	  CONT.HOOK.INDEX.E.MOOD no_mood ] ].
+
+
+noun-lex := n-lxm & basic-one-arg & lex-not-verbal &
+  [ SYNSEM [ LOCAL.CAT [ HEAD.POS noun,
+  					   VAL [ COMPS < >,
+							 SUBJ < >,
+							 SPEC < > ] ],
+			 LKEYS.KEYREL noun-relation ] ].
+
+;noun :+ [ CASE case ].
+
+;;이
+;n-prop := noun-lex & lex-spr-non & lex-mod-non &
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH)
+;; '[항상 소희가] 오다'구문이 HEAD-SPEC으로 해석되는 것을 막기 위해
+;; POS det 추가
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-20 / SSH)
+;; 이게 왜 mod-non이 필요한지??
+;; 있으면 복합명사 등을 처리하지 못함
+;; 고려대학교(의) 병원(의) 입구(의) 현관
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;n-prop := noun-lex & lex-mod-non & lex-non-cltype &
+n-prop := noun-lex & lex-non-cltype & no-hcons-lex-item &
+ [ SYNSEM [ MODIFIED notmod,
+   		    LOCAL [ CAT [ HEAD.KEYS.KEY #pred,
+						  VAL.SPR.FIRST #spr & [ LOCAL.CAT.HEAD [ POS det, KEYS.KEY def_rel ] ] ],
+   		  		  	CONT [ HOOK.INDEX #index,
+        				   RELS <! #key !> ] ],
+   	        LKEYS.KEYREL named-relation & #key & [ ARG0 #index, PRED #pred ] ],
+   ARG-ST < #spr > ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-15 / SSH)
+;; ??철수들이 온다
+;; ??철수님께서 오시다
+;; ?철수가 오시다 => 허용??
+;; 허용하지 않는 것을 기본으로 한다.
+;;   (see Choe. 2004, Obligatory Honorification)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;n-3rd-prop := n-prop & lxm-3rd.
+n-3rd-prop := n-prop & lxm-3rd & lxm-non-plural & lex-non-honorific.
+
+n-group-prop := n-prop & lxm-3rd & lxm-plural.
+
+;n-loc-prop := n-prop & lxm-obj & lxm-non-plural.
+n-loc-prop := n-prop & lex-non-honorific & lxm-non-plural & lxm-obj.
+
+;;대명사
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-17 / SSH)
+;; 이런 나를 용서해 줄 수 있겠니
+;; 그 너를 만나고 나면,
+;; 한국어에서는 위와 같은 표현이 충분히 가능하다 
+;; 실제로 코퍼스에서도 솔찮게 출현하고 있음
+;; 따라서 SPR <>을 주석 처리한다. 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; PRED NAME은 문자열로 써야 한다. 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+n-pn := noun-lex & no-hcons-lex-item & lex-non-cltype &
+ [ SYNSEM [ MODIFIED notmod,
+   		    LOCAL [ CONT [ RELS.LIST [ FIRST #key ],
+				   HOOK.INDEX #index ] ],
+   	        LKEYS.KEYREL pron-relation & #key & [ ARG0 #index ] ] ].
+;  [ SYNSEM [ MODIFIED notmod,
+;    		    LOCAL [ CAT.VAL.SPR <>,
+;    		  		  	CONT [ RELS.LIST [ FIRST #key ],
+; 						   HOOK.INDEX #index ] ],
+;    	        LKEYS.KEYREL pron-relation & #key & [ PRED pron_rel,
+; 												  ARG0 #index ] ] ].
+
+n-person-pn := n-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "person_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-20 / SSH)
+;; 제
+;; *저께서
+;; 아래 문장은 어떻게 할 것인가?
+;;   제가 하겠습니다.
+;;   ??제가 할께.
+;; 이후에 변경을 해야 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;나
+n-pn-1st-non-pl := n-person-pn & lxm-1st & lxm-non-plural.
+;;저
+n-pn-1st-non-pl-non-hon := n-pn-1st-non-pl & lex-non-honorific.
+
+;;우리
+n-pn-1st-pl := n-person-pn & lxm-1st & lxm-marked-plural.
+;;저희, 위와 같은 문제가 있음
+n-pn-1st-pl-non-hon := n-pn-1st-pl & lex-non-honorific.
+
+;;너, 니
+n-pn-2nd-non-pl := n-person-pn & lxm-2nd & lxm-non-plural.
+;;너희
+n-pn-2nd-pl := n-person-pn & lxm-2nd & lxm-marked-plural.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-20 / SSH)
+;; 그(들), 그녀(들)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-17 / SSH)
+;; '그께서 오시었다'
+;; 이런 표현은 북한에서나 쓰는 이상한 형태이다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-pn-3rd-non-pl := n-person-pn & lxm-3rd & lex-non-honorific & lxm-non-plural.
+n-pn-3rd-pl := n-pn & lxm-3rd  & lex-non-honorific & lxm-plural.
+
+;;지시대명사 
+n-demon-pn := n-pn.
+n-this-pn :=  n-demon-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "this_rel" ].
+n-that-pn :=  n-demon-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "that_rel" ].
+n-the-pn :=  n-demon-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "the_rel" ].
+n-there-pn :=  n-demon-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "there_rel" ].
+n-here-pn :=  n-demon-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "here_rel" ].
+n-the-place-pn :=  n-demon-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "the-place_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-20 / SSH)
+;; 양화사 및 부정극어의 MRS는 이후에 수정을 가해야 함
+;; 이들 어휘는 복수표지 '들'이 붙으면 상당히 어색해 진다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;특칭양화사 
+n-some-pn := n-pn & lxm-non-plural.
+n-someone-pn :=  n-some-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "someone_rel" ].
+n-something-pn :=  n-some-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "something_rel" ].
+n-somewhere-pn :=  n-some-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "somewhere_rel" ].
+n-sometime-pn :=  n-some-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "sometime_rel" ].
+n-some-amount-pn :=  n-some-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "some-amount_rel" ].
+n-anyhow-pn :=  n-some-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "anyhow_rel" ].
+
+;;전칭양화사
+n-every-pn := n-pn & lxm-non-plural.
+n-everyone-pn :=  n-every-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "everyone_rel" ].
+n-everything-pn :=  n-every-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "everything_rel" ].
+n-everywhere-pn :=  n-every-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "everywhere_rel" ].
+n-everytime-pn :=  n-every-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "everytime_rel" ].
+
+;;부정대명사
+n-neg_pron-pn := n-pn & lxm-non-plural.
+n-no-one-pn :=  n-neg_pron-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "no-one_rel" ].
+n-nothing-pn :=  n-neg_pron-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "nothing_rel" ].
+
+n-refl-pn := n-pn &
+ [ SYNSEM.LKEYS.KEYREL.PRED "refl_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-17 / SSH)
+;; WH 단어들의 양화사 쓰임과 의문사 쓰임
+;; 구분은 이후에 하도록 하자...
+;; 의문문  모듈이 도입되기 전에는  크게 의미가 없다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH)
+;; 사람의 아들
+;; ?사람의 사랑하기
+;; *사람을 가다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH)
+;; '세 친구' 가 가능한데 [NUMERAL -]를 빼야하지 않을까?
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;n-cn := noun-lex & lex-spr & no-hcons-lex-item & lex-non-cltype &
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2010-02-12 / SSH)
+;; 친구의 책, 등을 위해 다시 복원 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;n-cn := noun-lex & lex-spr & no-hcons-lex-item & lex-non-cltype & lex-mod-non &
+n-cn := noun-lex & lex-spr & no-hcons-lex-item & lex-non-cltype &
+ [ SYNSEM [ MODIFIED notmod,
+   		    LOCAL [ CAT [ VAL.SPR.FIRST [ LOCAL.CAT.HEAD [ NUMERAL -,
+														   KEYS.KEY def_rel ] ] ] ] ] ].
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH)
+;; 명사의 의미속성을 기술
+;; 생성시의 부담을 경감하는 차원에서도 필요함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; *빵[PER obj] 님께서
+;; 선생[PER human]님께서
+;; 공원에 개들이 많다.
+;; 공원에 개가 많다.
+;; ?교실에 책상들이 쌓여있다.
+;; 교실에 책상이 쌓여있다.
+;; 님 => human
+;; 들 => animacy [strict], person [robust]
+;;      일본어 등에서는 그렇지 않다.
+;;          일본어 : 学生たち / ??猫たち (anthropomorphic case only） / *椅子たち　
+;;          중국어 : pengyuo-men / *yizu-men
+;;          이들 언어에서는 복수표지가  human [strict], animacy [robust]
+;;      영어에서는 students, dogs, chairs 모두 가능하므로 person [formality]
+;;          즉, 제약이 없는 것이다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+n-human-cn := n-cn & lxm-3rd.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH)
+;; 집합명사
+;; 본래 복수의 성격을 지니며, 따라서 복수의 중첩이 잘 되지 않음
+;; ?가족들 (피해자 가족들)
+;; 내/우리 가족은 아빠, 엄마, 오빠, 그리고 나이다.
+;; 가족 = {아빠, 엄마, 오빠, 나}
+;; #내 가족들은 아빠, 엄마, 오빠, 그리고 나이다.
+;; 위 문장은 생성시에 제외 해야 함
+;; 동시에 분석은 가능해야 함
+;; 동시에 honorific도 이상하다
+;; 선생님께서는 기족이 어떻게 되십니까?
+;; 선생님께서는 가족님이 어떻게 되십니까?
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; n-col-cn := n-human-cn & lxm-non-plural & lex-non-honorific.
+
+n-human-np-cn := n-human-cn & lxm-non-plural.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH)
+;;호랑이님, 바위님 등은 특정 장르의 문제이다.
+;;이는 후에 robust문제로 해결해야 한다.
+;; 추후, 명사군의 의미적 위계를 PNG와 관련하여 정리할 필요 있음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-non-human-cn := n-cn & lxm-non-human & lex-non-honorific.
+
+n-obj-cn := n-cn & lxm-obj & lex-non-honorific.
+n-obj-np-cn := n-obj-cn & lxm-non-plural.
+
+;n-edible-cn := n-obj-cn.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH)
+;;그의 그림들은, 이야기들을 나누었다
+;;?가능성들, 성공들을 거두다
+;;추상명사에 붙는 -들 은 사건의 복사라고 할 수 있다
+;; 영어에서도 추상명사의 보통명상화가 가능한 것이 있고
+;; 그렇지 않은 것이 있다.
+;; abs-non-pl 은 보통명사화가 가능하지 않은 것 (e.g. information, literature 등)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;n-abstract-cn := n-obj-cn & lex-non-plural.
+; n-abs-cn := n-obj-cn.
+; n-abs-non-pl-cn := n-abs-cn & lex-non-plural.
+; n-disease-cn := n-abs-non-pl-cn.
+
+;;가게들
+; n-loc-cn := n-obj-cn.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH)
+;; 유일 무이한 개체는 영어와 같이 복수가 되지 않는다
+;; *해들 *바다들
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; n-unique-cn := n-obj-cn & lex-non-plural.
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH)
+;;물질명사 : ??물들, *물님
+;; 물들 마셔라 : 여기서 '들'은 사건(event)의 복수로 봐야한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-13 / SSH)
+;; Sag & Wasow (1999)를 따라 mass 항목을 추가
+;; 한국어에도 물질 명사는 있다.
+;; 물질명사는 복수화될 수 없고, 수량화할 경우 classifier를 동반해야 함
+;; *물들 / 물 두 잔 / 두 잔의 물
+;; 일반 non-pl 과의 차이점 (고유명사 계열)
+;;     *소희들, *고려대학교들
+;;     *소희 두 명, *고려대학교 열 개
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-mass-cn:= n-obj-cn & lxm-non-plural.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH)
+;; ADVERSITY PASSIVE(피해 피동)를 처리하기 위해 상정
+;; 소희(human)가 다리(part_of_body)가 길다
+;; 소희가 발을 밟히었다.
+;;   소희가 철수에게 발을 밝히었다.
+;;   <= 철수가 소희의 발을 밟았다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n-part_of_body-cn := n-obj-cn.
+
+
+n-appos := n-obj-cn & lex-non-agt &
+ [ SYNSEM.LOCAL [ CAT [ HEAD.NFORM norm ] ],
+   ARG-ST < [ LOCAL.CAT.VAL.SUBJ <> ] > ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-01 / SSH)
+;;num & classifier should be re-described.
+;;I think it is more essential to build up the whole picture, though it contains some problems.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+;;classifier, eg.'명'
+
+
+;;classifier, eg.'명'
+;;유동양화사는 다시 점검 하자
+;; intersective-mod-lex 가 no-hcons를 포함하고 있음
+
+n-cl := noun-lex & intersective-mod-lex & lex-cltype &
+ [ SYNSEM.LOCAL.CAT [ VAL.SPR < [ LOCAL.CAT.HEAD [ NUMERAL +, VERBAL - ] ] > ] ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-13 / SSH)
+;; spr 자질이 추가 되어야 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+n-num := noun-lex & no-hcons-lex-item & lex-non-cltype & lex-mod-non & lex-numeral & lex-spr-non &
+ [ SYNSEM.LKEYS.KEYREL card-relation ].
+
+
+
+
+;; n-advl:동사를 수식(mod)
+;; it modifies verbals, but does not have any arguements
+;;    e.g. 여름
+;;              MOD < [ SYN.HEAD.POS verb, SYN.VAL [ SUBJ <>, COMPS <> ] ] >
+
+;n-advl := noun-lex & no-hcons-lex-item &
+n-advl := noun-lex & lex-mod-verb & lex-non-cltype &
+ [ SYNSEM [ MODIFIED notmod-or-rmod,
+   		    LOCAL.CAT [ HEAD.MOD < [ LOCAL.CAT.VAL [ SUBJ <>, COMPS <> ] ] >,
+						VAL.SPR <> ] ] ].
+
+
+;; it modifies verbals as well as have a certain of arguements
+;;    e.g. 시간, 번, 동안
+;;동사를 수식(mod), 동시에 논항을 가짐???
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH)
+;; 세 시간을 가다 , 그 동안을 갔다
+;; [[세 시간을] 가다] , [[그 동안을] 갔다]
+;; '세' , '그'가 논항이라 볼 이유가 있는가??
+;; 일단 그 부분을 뺀다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;n-adv :=  noun-lex & lex-mod-verbal & lex-non-cltype &
+n-adv :=  noun-lex & lex-mod-verbal & lex-non-cltype & intersective-mod-lex &
+ [ SYNSEM.MODIFIED notmod-or-rmod ].
+
+;n-adv :=  noun-lex & lex-mod-verbal & lex-non-cltype & intersective-mod-lex &
+; [ SYNSEM [ MODIFIED notmod-or-rmod,
+;   		    LOCAL.CAT.VAL.SPR <> ],
+;   ARG-ST < [ LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.POS noun ] > ] > ].
+
+
+;;bound nouns
+;; NOTE 06/02/24 :
+;;    Added [AGT -] to suppress multiple applications of hd-comp rules
+n-bn := n-lxm & basic-one-arg & lex-non-cltype & lex-non-agt & lex-mod-non & lex-spr-non & no-hcons-lex-item &
+ [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comp >,
+   ARG-ST < #comp &[ LOCAL.CAT [ HEAD [ POS verb,
+										MOD < [ SYNSEM.LOCAL.CAT.HEAD.POS noun ] > ],
+						  VAL [ SUBJ <>, COMPS <> ] ] ] > ].
+
+; ;;것 in ihrc
+bn-rc := n-bn &
+  [ SYNSEM.LOCAL [ CAT.VAL.SPR <>,
+				   CONT.HOOK.INDEX individual ] ].
+
+; ;; 것, 듯 : 것같다, 듯하다
+bn-lex := n-bn &
+ [ SYNSEM.LOCAL.CONT [ HOOK.INDEX #1 ],
+   ARG-ST < [ LOCAL.CONT.HOOK.INDEX #1 ] > ].
+
+;; 수 : 수 있다/없다
+bn-nonlex := n-bn &
+ [ SYNSEM.LOCAL.CONT [ HOOK.INDEX #1,
+					   RELS [ LIST.REST #last,
+							  LAST #last ] ],
+   ARG-ST < [ LOCAL.CONT.HOOK.INDEX #1 ] > ].
+
+
+;;; Verbs
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-06 / SSH)
+;;v-stem := v-prefinal := v-lxm
+;;3단계로 끝낸다.
+;;논항 교체 현상을 어떻게 처리할지는 고민해 보자.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;v-final-lex := infl-ltow-rule &
+v-final-lex := lex-rule &
+  [ DTR v-prefinal-lex ].
+
+;;COORDINATION
+infl-v-final-no-ccont-lex := v-final-lex & infl-ltow-rule.
+infl-v-final-lex := v-final-lex &
+						   same-local-lex-rule &
+						   same-modified-lex-rule &
+						   same-light-lex-rule &
+						   same-non-local-lex-rule &
+						   inflecting-lex-rule &
+						   nocoord &
+  [ INFLECTED +,
+    DTR [ INFLECTED -,
+		  SYNSEM.LOCAL.CONT.HOOK.INDEX #index ],
+	C-CONT.RELS <! [ ARG0 #index ] !> ].
+
+coord-infl-v-final-lex := v-final-lex & lexeme-to-word-rule & inflecting-lex-rule & lex-coord.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; v-ind
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-decl := infl-v-final-no-ccont-lex & lex-noform & lex-ind & lex-decl & lex-not-nominal.
+v-decl-fm := v-decl & lex-fm.
+v-decl-infm := v-decl & lex-infm.
+v-decl-infm-ney := v-decl-infm & lex-spoken.
+v-decl-infm-nun := v-decl-infm & lex-spoken.
+v-decl-infm-nunteyyo := v-decl-infm & lex-spoken & lex-prog.
+
+v-decl-infm-key := v-decl-infm & lex-spoken & lex-intend & lex-future.
+v-decl-infm-leykoyo := v-decl-infm & lex-spoken & lex-intend & lex-future.
+
+v-decl-infm-yo := v-decl-infm & lex-spoken.
+;v-decl-infm-yo := v-decl-infm & lex-spoken &
+;  [ DTR v-st-pres ].
+
+v-decl-infm-cyo1 := v-decl-infm & lex-spoken &
+ [ DTR v-pst ].
+v-decl-infm-cyo2 := v-decl-infm & lex-spoken &
+ [ DTR v-fut ].
+v-decl-infm-cyo3 := v-decl-infm & lex-spoken &
+ [ DTR v-hon-pst ].
+v-decl-infm-cyo4 := v-decl-infm & lex-spoken &
+ [ DTR v-hon-fut ].
+v-decl-infm-yaciyo := v-decl-infm & lex-spoken.
+v-decl-infm-nikkayo := v-decl-infm & lex-spoken. 
+
+;v-decl-infm-ketunyo := v-decl-infm & lex-spoken & lex-retro.
+v-decl-infm-ketunyo := v-decl-infm & lex-spoken.
+v-decl-infm-kwunyo := v-decl-infm & lex-spoken.
+
+v-decl-infm-leyo := v-decl-infm & lex-spoken & lex-intend.
+
+v-decl-infm-cop-variant := v-decl-infm & lex-spoken &
+  [ DTR v-cop-variant ].
+
+v-decl-tanta := v-decl-infm & lex-spoken & lex-retro.
+v-decl-tentey := v-decl-infm & lex-spoken & lex-retro.
+
+v-decl-unp := v-decl & lex-unproductive.
+v-decl-online := v-decl & lex-online.
+v-decl-robust := v-decl & lex-robust.
+;;고쳐야할 필요성 있음
+;; 너 [ 어제 ] 전화 안 받더라
+v-decl-retro := v-decl & lex-retro & lex-strict &
+ [ DTR v-retro ].
+
+v-inter := infl-v-final-no-ccont-lex & lex-noform & lex-ind & lex-inter.
+v-inter-fm := v-inter & lex-fm.
+
+v-inter-infm := v-inter & lex-infm.
+v-inter-infm-yo1 := v-inter-infm & lex-non-stative & lex-spoken.
+;v-inter-infm-yo1 := v-inter-infm & lex-non-stative &
+; [ DTR v-st-pres ].
+v-inter-infm-yo2 := v-inter-infm & lex-stative & lex-spoken.
+v-inter-infm-layyo := v-inter-infm & lex-non-stative & lex-future & lex-intend.
+
+v-inter-infm-kka := v-inter-infm &  lex-future.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-18 / SSH)
+;;부가의문문 종류
+;; 소희가 예쁘잖아
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-inter-tag := v-inter-infm & lex-spoken.
+
+v-inter-unp := v-inter & lex-unproductive.
+v-inter-robust := v-inter & lex-robust.
+
+;;갑시다, 가자, *가았자, *가겠자 
+v-sug := infl-v-final-no-ccont-lex & lex-noform & lex-ind & lex-suggest & lex-default-dtr.
+v-sug-fm := v-sug & lex-fm.
+v-sug-infm := v-sug & lex-infm.
+v-sug-unp := v-sug & lex-unproductive.
+v-sug-robust := v-sug & lex-robust.
+
+;;가라, 가게, 가거라, *가았라. *가겠게 
+v-imp := infl-v-final-no-ccont-lex & lex-noform & lex-ind & lex-default-dtr.
+
+v-hapsyo := v-imp & lex-hapsyo & lex-fm.
+v-hao := v-imp & lex-hao & lex-fm.
+
+v-hakey := v-imp & lex-hakey.
+v-hakey-fm := v-hakey & lex-fm.
+v-hakey-infm := v-hakey & lex-infm.
+
+v-hayra := v-imp & lex-hayra & lex-fm.
+
+v-hayyo := v-imp & lex-hayyo.
+v-hayyo-fm := v-hayyo & lex-fm.
+v-hayyo-infm := v-hayyo & lex-infm.
+
+v-hay := v-imp & lex-hay & lex-infm.
+
+v-imp-unp := v-imp & lex-imp & lex-unproductive.
+
+;;먹다니, 먹겠다니, 먹었다니
+v-exclam-infm := infl-v-final-no-ccont-lex & lex-noform & lex-ind & lex-exclam & lex-infm & lex-hon-tns-dtr.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; v-sub
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+v-sub := infl-v-final-lex & lex-hon-tns-dtr.
+
+;;endings with undefined relation  -자, -어, ..
+v-sub-udef := v-sub & lex-noform & lex-dep & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "udef_sub_rel" ].
+
+;;고서, 면서
+v-sub-time := v-sub & lex-noform & lex-dep & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "after_rel" ].
+
+;;니까, 어서
+v-sub-reason := v-sub & lex-noform & lex-dep & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "since_rel" ].
+
+;;으면, 거든, 려면
+v-sub-cond := v-sub & lex-noform & lex-dep & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "if_rel" ].
+
+;;지만, 더라도
+v-sub-conces := v-sub & lex-noform & lex-dep & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "although_rel" ].
+
+;;게, 도록
+v-sub-result := v-sub & lex-noform & lex-dep & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "cause_rel" ].
+
+;;려,려고
+v-sub-pur := v-sub & lex-noform & lex-dep & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "in_order_to_rel" ].
+
+;;고
+v-sub-andthen := v-sub & lex-noform & lex-dep & lex-mod-ph & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "and_then_rel" ].
+
+;;거나 (as sub)
+v-sub-or := v-sub & lex-noform & lex-dep & lex-mod-ph & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "or_rel" ].
+
+;;게 (예쁘게)
+v-sub-adv := v-sub & lex-noform & lex-dep & lex-mod-ph & lex-mod-verbal &
+ [ C-CONT.RELS.LIST.FIRST.PRED "adv_rel",
+	DTR v-st-pres & [ SYNSEM.LOCAL.CAT.HEAD [ STATIVE +, AGT - ] ] ].
+
+;;시ㅂ사 (오십사)
+v-sub-request := v-sub & lex-noform & lex-dep & lex-mod-ph & lex-mod-verbal & lex-honorific &
+ [ C-CONT.RELS.LIST.FIRST.PRED "request_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;;v-xdel  : 만
+;;    e.g. 먹고만 있다, 먹기만 해라
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;반갑습니다만
+v-xdel-decl-only := v-sub & lex-dep & lex-noform & lex-decl &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only" ].
+
+v-xdel-sub-udef-only := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "udef_sub_only_rel" ].
+
+v-xdel-sub-reason-only := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "since_only_rel" ].
+
+v-xdel-sub-pur-only := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "in_order_to_only_rel" ].
+
+v-xdel-comp1-only := v-sub & lex-mod-non & lex-dep & lex-non-mood &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only",
+   ARGS < [ SYNSEM.LOCAL [ CAT.HEAD.STATIVE +,
+						   CONT.HOOK.INDEX.E.TENSE present ] ] > ].
+
+v-xdel-comp2-only := v-sub & lex-mod-non & lex-dep & lex-non-mood &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only",
+   ARGS < [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE present ] ] > ].
+
+v-xdel-comp3-only := v-sub & lex-mod-non & lex-dep & lex-non-mood &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only" ].
+
+v-xdel-comp4-only := v-sub & lex-mod-non & lex-dep &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;;v-zdel  : 만
+;;    e.g. 먹어도 보았다. 먹어는 보았다. 먹고가 싶다. 먹고를 싶다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+v-zdel-inter-also := v-sub & lex-dep & lex-noform & lex-inter &
+ [ C-CONT.RELS.LIST.FIRST.PRED "also" ].
+
+v-zdel-sub-udef-also := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "udef_sub_also_rel" ].
+
+v-zdel-sub-time-also := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "after_also_rel" ].
+
+v-zdel-sub-reason-also := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "since_also_rel" ].
+
+v-zdel-sub-pur-also := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "in_order_to_also_rel" ].
+
+
+v-zdel-comp1-also := v-sub & lex-mod-non & lex-dep & lex-non-mood &
+ [ C-CONT.RELS.LIST.FIRST.PRED "also",
+   ARGS < [ SYNSEM.LOCAL [ CAT.HEAD.STATIVE +,
+						   CONT.HOOK.INDEX.E.TENSE present ] ] > ].
+
+v-zdel-comp2-also := v-sub & lex-mod-non & lex-dep & lex-non-mood &
+ [ C-CONT.RELS.LIST.FIRST.PRED "also",
+   ARGS < [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE present ] ] > ].
+
+v-zdel-comp4-also := v-sub & lex-mod-non & lex-dep &
+ [ C-CONT.RELS.LIST.FIRST.PRED "also" ].
+
+v-zdel-inter-but := v-sub & lex-dep & lex-noform & lex-inter &
+ [ C-CONT.RELS.LIST.FIRST.PRED "but" ].
+
+v-zdel-sub-udef-but := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "udef_sub_but_rel" ].
+
+v-zdel-sub-time-but := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "after_but_rel" ].
+
+v-zdel-sub-reason-but := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "since_but_rel" ].
+
+v-zdel-sub-pur-but := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "in_order_to_but_rel" ].
+
+v-zdel-sub-conces-but := v-sub & lex-dep & lex-noform &
+ [ C-CONT.RELS.LIST.FIRST.PRED "although_but_rel" ].
+
+v-zdel-comp1-but := v-sub & lex-mod-non & lex-dep & lex-non-mood &
+ [ C-CONT.RELS.LIST.FIRST.PRED "but",
+   ARGS < [ SYNSEM.LOCAL [ CAT.HEAD.STATIVE +,
+						   CONT.HOOK.INDEX.E.TENSE present ] ] > ].
+
+v-zdel-comp2-but := v-sub & lex-mod-non & lex-dep & lex-non-mood &
+ [ C-CONT.RELS.LIST.FIRST.PRED "but",
+   ARGS < [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE present ] ] > ].
+
+v-zdel-comp2-und := v-sub & lex-mod-non & lex-dep & lex-non-mood &
+ [ C-CONT.RELS.LIST.FIRST.PRED "but_undef",
+   ARGS < [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE present ] ] > ].
+
+v-zdel-comp4-but := v-sub & lex-mod-non & lex-dep &
+ [ C-CONT.RELS.LIST.FIRST.PRED "but" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;;v-cmkr
+;;    e.g. ;;먹고가 (싶다), 도와를 (주다)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+v-nom-comp1 := v-comp1 &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom ].
+
+v-nom-comp2 := v-comp2 & 
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom ].
+
+v-acc-comp1 := v-comp1 & 
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc ].
+
+v-acc-comp2 := v-comp2 &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;;v-gerundive: under both v-final(v-free) and nominal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH)
+;; 소희가 예쁘다 => 소희가 예쁨
+;; 위와 같이 generation되는 것을 막기 위해
+;; v-ger-um에 lex-unproductive 추가
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;v-ger-um := infl-v-final-lex & lex-mod-non & lex-ind & lex-um & lex-nominal.
+v-ger-um := infl-v-final-no-ccont-lex & lex-mod-non & lex-ind & lex-um & lex-nominal & lex-unproductive & lex-hon-tns-dtr.
+v-ger-ki := infl-v-final-no-ccont-lex & lex-mod-non & lex-dep & lex-ki & lex-nominal & lex-default-dtr &
+ [ STYLE robust ].
+
+;;먹었음이
+v-ger-um-nom := infl-v-final-no-ccont-lex & lex-mod-non & lex-dep & lex-um & lex-nominal & lex-strict & lex-hon-tns-dtr &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom ].
+;;먹었음을
+v-ger-um-acc := infl-v-final-no-ccont-lex & lex-mod-non & lex-dep & lex-um & lex-nominal & lex-strict & lex-hon-tns-dtr &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc ].
+;;먹었음의
+v-ger-um-gen := infl-v-final-no-ccont-lex & lex-mod-non & lex-dep & lex-ki & lex-nominal & lex-strict & lex-hon-tns-dtr &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE gen ].
+;;먹기가
+v-ger-ki-nom := v-ger-ki &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom ].
+;;먹기를
+v-ger-ki-acc := v-ger-ki &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc ].
+;;먹기의
+v-ger-ki-gen := v-ger-ki &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE gen ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH)
+;; 먹었'음만' => 이 형태는 코퍼스에서 나타나지 않았음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;먹기만
+v-ger-only := infl-v-final-lex & lex-mod-non & lex-dep & lex-ki & lex-nominal & lex-default-dtr &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only" ].
+
+;;먹기도, 먹었음도
+v-ger-um-foc := infl-v-final-lex & lex-mod-non & lex-dep & lex-um & lex-nominal & lex-hon-tns-dtr &
+ [ C-CONT.RELS.LIST.FIRST.PRED "even_rel" ].
+v-ger-ki-foc := infl-v-final-lex & lex-mod-non & lex-dep & lex-ki & lex-nominal & lex-default-dtr &
+ [ C-CONT.RELS.LIST.FIRST.PRED "even_rel" ].
+
+;;먹었음은, 먹기는
+v-ger-um-top := infl-v-final-lex & lex-mod-non & lex-dep & lex-um & lex-nominal & lex-hon-tns-dtr &
+ [ C-CONT.RELS.LIST.FIRST.PRED "as.for_rel" ].
+v-ger-ki-top := infl-v-final-lex & lex-mod-non & lex-dep & lex-ki & lex-nominal & lex-default-dtr &
+ [ C-CONT.RELS.LIST.FIRST.PRED "as.for_rel" ].
+v-ger-um-contra := infl-v-final-lex & lex-mod-non & lex-dep & lex-um & lex-nominal & lex-hon-tns-dtr &
+ [ C-CONT.RELS.LIST.FIRST.PRED "exclusive_rel" ].
+v-ger-ki-contra := infl-v-final-lex & lex-mod-non & lex-dep & lex-ki & lex-nominal & lex-default-dtr &
+ [ C-CONT.RELS.LIST.FIRST.PRED "exclusive_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; v-coord
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;v-and-coord := lexeme-to-word-rule & inflecting-lex-rule & v-final-lex &
+v-and-coord := coord-infl-v-final-lex & lex-hon-tns-dtr &
+ [ SYNSEM.LOCAL [ CAT.HEAD [ FORM no_form,
+							 IC -,
+							 MOD <> ],
+				  COORD-REL.PRED "_and_coord_rel" ] ].
+
+v-or-coord := coord-infl-v-final-lex & lex-hon-tns-dtr &
+ [ SYNSEM.LOCAL [ CAT.HEAD [ FORM no_form,
+							 IC -,
+							 MOD <> ],
+				  COORD-REL.PRED "_or_coord_rel" ] ].
+
+;v-or-coord :=  coord-infl-v-final-lex & lex-noform & lex-dep & lex-mod-non &
+; [ SYNSEM.LOCAL.COORD-REL.PRED "_or_coord_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; v-mod
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;나중에 다시 만들어야 한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-21 / SSH)
+;; 효리가 밥을 먹었을 수 있다
+;;    그 이전에는 tense가 없어야 한다.
+;; 효리가 그 책을 읽을 수 있다. (가능이지 미래가 아님)
+;;   따라서 v-mod-fut는 present로 일단 설정
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-mod := infl-v-final-no-ccont-lex & lex-noform & lex-dep.
+v-rel := v-mod & lex-rel.
+v-mod-pst := v-rel & lex-past.
+v-mod-fut := v-rel & lex-present.
+v-mod-pres := v-rel & lex-present.
+v-mod-prog := v-rel & lex-present & lex-prog.
+v-app-mod := v-mod & lex-mod-noun.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2010-02-15 / SSH)
+;; MRS 부분은 추후에 다시 수정하는 것으로 한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; v-app-mod := v-mod & lex-mod-noun &
+; [ SYNSEM.LOCAL [ CAT [ HEAD [ MOD < [ LOCAL.CONT.HOOK.INDEX #u ] > ],
+; 					   VAL #val ],
+; 				 CONT.RELS.LIST.REST.FIRST [ PRED equal_rel, ARG0 #s, ARG1 #u ] ],
+;   ARGS < [ SYNSEM.LOCAL [ CAT [ VAL #val ],
+; 						  CONT.HOOK.INDEX #s ] ] > ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;;complimentazier suffix
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;v-comp := v-del-stem1 &
+; [ SYN.HEAD [ FORM comp_form, MOD <>, COORD none ] ].
+
+;;target of v-comp-??_irules
+;;잡아 *잡았어 ?잡으시어 보셨다
+v-comp1 := infl-v-final-no-ccont-lex & lex-mod-non & lex-dep & lex-non-mood & lex-default-dtr &
+ [ ARGS < [ SYNSEM.LOCAL [ CAT.HEAD.STATIVE + ] ] > ].
+
+;; 잡으시곤 *잡으시었곤
+v-comp2 := infl-v-final-no-ccont-lex & lex-mod-non & lex-dep & lex-non-mood & lex-default-dtr.
+
+;;잡았어야 잡으시었어야 잡겠나
+v-comp3 := infl-v-final-no-ccont-lex & lex-mod-non & lex-dep & lex-non-mood & lex-hon-tns-dtr.
+
+;; 잡았다고 말했다
+v-comp4 := infl-v-final-no-ccont-lex & lex-mod-non & lex-dep & lex-hon-tns-dtr.
+;v-comp4 := infl-v-final-lex & lex-mod-non & lex-dep & lex-mood &
+; [ ARGS < [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD _mood ] > ].
+
+;v-decl-lex-rule := infl-v-final-lex-rule &
+;  [ SYNSEM.LOCAL.CAT.HEAD.FORM finite ].
+;v-inter-lex-rule := infl-v-final-lex-rule &
+;  [ SYNSEM.LOCAL.CAT.HEAD.FORM finite ].
+;;form에 대한 제약을 추가해야 한다.
+;v-decl-lex-rule := infl-v-final-lex.
+;v-inter-lex-rule := infl-v-final-lex.
+;v-comp-lex-rule := infl-v-final-lex &
+;  [ SYNSEM.LOCAL.CAT.HEAD.FORM ko2 ].
+
+
+
+;v-prefinal-lex := infl-ltol-rule &
+
+
+v-prefinal-lex := lex-rule &
+   [ C-CONT [ RELS <! !>, HCONS <! !> ],
+	 DTR v-lxm & [ SYNSEM.LOCAL.CAT.HEAD.POS verb ] ].
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2010-06-23 / SSH) 
+;; v-arg-alt 를 도입
+;; serial-v / pass / cause 등은 
+;; 이 형태로 처리할 수 있다
+;; 그러나 현재 이 구조가 처리 효율을 떨어뜨리고
+;; 생성의 효율성을 방해하는 관계로
+;; 우선 주석 처리후 다시 판단하기로 하자
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;  [ C-CONT [ RELS <! !>, HCONS <! !> ],
+;	DTR v-arg-alt ].
+
+
+infl-v-prefinal-lex := v-prefinal-lex & infl-add-only-ltol-rule.
+const-v-prefinal-lex := v-prefinal-lex & const-add-only-ltol-rule.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-09-03 / SSH) 
+;; 시제가 명시되지 않은 기본형
+;; 먹기 / *먹었기 등과 같은 구분은 이 형태로 간다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-default := const-v-prefinal-lex.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-09-03 / SSH) 
+;; 기본형이 아닌 것은 이 구조를 상속 받는다
+;; 이 형태가 유의미하거나 강력한지에 대해서는 현재로서
+;; 증거는 없다.
+;; 다만, 처리의 효율과 문법 수정을 방대함을 피하기 위해
+;; 임시로 아래 구조를 도입한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-hon-tns := v-prefinal-lex.
+
+v-st-pres := v-hon-tns & const-v-prefinal-lex & lex-present.
+v-nonst-pres := v-hon-tns & infl-v-prefinal-lex & lex-present & lex-non-stative.
+v-hon-pres := v-hon-tns & infl-v-prefinal-lex & lex-honorific & lex-present.
+
+v-pst := v-hon-tns & infl-v-prefinal-lex & lex-past & lex-non-honorific.
+v-hon-pst := v-hon-tns & infl-v-prefinal-lex & lex-honorific & lex-past.
+v-retro := v-hon-tns & infl-v-prefinal-lex & lex-retro & lex-non-honorific.
+
+v-fut := v-hon-tns & infl-v-prefinal-lex & lex-future & lex-non-honorific.
+v-hon-fut := v-hon-tns & infl-v-prefinal-lex & lex-honorific & lex-future.
+v-fut-intend := v-fut & lex-intend.
+
+v-nontense := v-hon-tns & infl-v-prefinal-lex & lex-non-tense & lex-non-honorific.
+v-hon-nontense := v-hon-tns & infl-v-prefinal-lex & lex-honorific & lex-non-tense.
+
+v-cop-variant := v-hon-tns & infl-v-prefinal-lex & lex-present &
+ [ DRT pos-cop-v ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2010-06-23 / SSH)
+;; 논항 교체
+;; argument alternation
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+v-arg-alt := lex-rule &
+  [ C-CONT [ RELS <! !>, HCONS <! !> ],
+	DTR v-lxm ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2010-06-23 / SSH)
+;; 접미 피동 / 접미 사동
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+infl-v-arg-alt-lex := v-arg-alt & infl-add-only-ltol-rule.
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2010-06-23 / SSH)
+;; Serial Verb Construction
+;; See the PACLIC 24 paper (Kim, Yang, and Song 2010)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-serial := v-arg-alt & lex-heavy & lex-non-vcp & lex-non-passive & const-val-change-only-ltol-rule &
+  [ SYNSEM [ VERB-CL +,
+             LOCAL [ CAT [ HEAD.AUX -,
+						   VAL [ SPR < >,
+								 SPEC < >,
+								 COMPS.FIRST.LOCAL.CAT [ HEAD [ POS verb,
+																FORM ae ],
+														 LEX + ],
+								 COMPS.REST #rest,
+								 SUBJ #subj ] ] ] ],
+	ARGS < lex-non-stative-verb & [ SYNSEM.LOCAL.CAT.VAL [ SUBJ #subj,
+														   COMPS #rest ] ] > ].
+
+v-no-alt := v-arg-alt & const-add-only-ltol-rule.
+
+
+;;=== verbal : VERBAL +
+v-lxm := lex-non-cltype & lex-verbal.
+; [ SYN [ HEAD [ VERBAL +,
+;                CLTYPE - ] ],
+;   SEM [ HOOK.XARG #xarg ],
+;   ARG-ST.FIRST.SEM.HOOK.INDEX #xarg ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-03 / SSH)
+;; STATIVE 자질은 우선 luk로 바꾸었는데, 동사 가운데 '닯다'와 같은 것은 STATIVE 속성을 지니기도 한다.
+;; 추후에 다시 고민하도록 하자.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+verb-lex := v-lxm &
+  [ INFLECTED -,
+    SYNSEM.LOCAL.CAT [ HEAD.POS verb ] ].
+
+cop-verb-lex := main-verb-lex & lex-stative-verb & lex-transitive &
+ [ SYNSEM.LOCAL [ CAT [ HEAD [ AUX - ],
+						VAL.SPR < > ],
+				  CONT [ RELS [ LIST.REST #last,
+								LAST #last ] ] ],
+   ARG-ST < [ LOCAL [ CAT.HEAD [ NOMINAL +, PRD - ] ] ],
+            [ LOCAL [ CAT.HEAD.NOMINAL + ] ] > ].
+
+pos-cop-v := cop-verb-lex &
+ [ SYNSEM.LOCAL.CAT.HEAD.VCP + ].
+
+
+;; the contraints "[GCASE no_gcase, SCASE no_scase]"
+;; for pred- and iden-cop-v types are problematic (grule should assign "nom")
+
+;;predicational copula -ita
+;;   IsA : A is a B. (A belongs to B)
+;;   e.g. 철수는 학생이다.
+pred-cop-v := pos-cop-v &
+ [ ARG-ST < [ ], [ LOCAL.CAT.HEAD.PRD + ] > ].
+
+;;identificational copula -ita
+;;   eqaul : A = B. (A is equivalent to B)
+;;   e.g. 철수가 그 책을 쓴 사람이다.
+iden-cop-v := pos-cop-v &
+ [ ARG-ST < [ ], [ LOCAL.CAT.HEAD.PRD - ] > ].
+
+neg-cop-v := cop-verb-lex &
+ [ ARG-ST < [ ], [ LOCAL.CAT.HEAD.PRD - ] > ].
+
+; cop-verb-lex := main-verb-lex &
+;  [ SYNSEM.LOCAL [ CAT [ HEAD [ AUX - ],
+; 						VAL.SPR < > ],
+; 				  CONT [ RELS [ LIST.REST #last,
+; 								LAST #last ] ] ] ].
+
+; pos-cop-v := cop-verb-lex & infl-ltol-rule & no-hcons-lex-item &
+;   [ DTR n-cn ].
+
+;  [ C-CONT.RELS.LIST.FIRST.PRED "_predication_rel",
+;    DTR.SYNSEM.LOCAL.CAT.HEAD.PRD + ].
+
+; iden-cop-v := pos-cop-v &
+;  [ C-CONT.RELS.LIST.FIRST.PRED "_identity_rel",
+;    DTR.SYNSEM.LOCAL.CAT.HEAD.PRD - ].
+
+; neg-cop-v := cop-verb-lex & lex-transitive & lex-stative-verb &
+;  [ ARG-ST < [ LOCAL [ CAT.HEAD [ NOMINAL +, PRD - ] ] ],
+;             [ LOCAL [ CAT.HEAD [ NOMINAL +, PRD - ] ] ] > ].
+
+main-verb-lex := verb-lex &
+  [ SYNSEM [ VERB-CL +,
+             LOCAL [ CAT [ HEAD.AUX -,
+                           VAL [ SPR < >,
+                                 SPEC < >,
+                                 SUBJ < #subj > ] ],
+                     CONT.HOOK.XARG #xarg ] ],
+    ARG-ST.FIRST #subj &
+                 [ LOCAL [ CAT.VAL [ SPR < >,
+                                     COMPS < > ],
+                           CONT.HOOK.INDEX #xarg ] ] ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-08 / SSH)
+;; 아래 구조로 변경하면 연산량이 폭증한다.
+;; 모두 unary hierarchy로만 구현한다.
+;; 아래와 같은 형태로 형태소 분석 단계에서 전처리 하는 방식을 도입해야 함
+;;    안가다 => 안 가다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;target of short-form-neg_irule
+;pos-main-verb-lex := main-verb-lex.
+;neg-main-v := main-verb-lex &
+;  [ ARGS < pos-main-verb-lex > ].
+
+;;  e.g. 공부를 하다
+light-v := main-verb-lex & lex-light & lex-non-vcp &
+ [ SYNSEM [ LOCAL [ CAT.VAL [ SUBJ.FIRST #subj,
+							  COMPS.FIRST #comp,
+							  SPR <> ],
+					CONT [ RELS [ LIST.REST #last,
+								  LAST #last ] ] ],
+			LKEYS.KEYREL [ ARG1 #arg1, ARG2 #arg2 ] ],
+   ARG-ST < #subj & [ LOCAL [ CAT [ LEX -,
+							HEAD [ NOMINAL +,
+								   CASE.GCASE vcase,
+								   CASE.SCASE no_scase,
+								   PRD -] ],
+					  CONT.HOOK.INDEX #arg1 ] ],
+			#comp & [ LOCAL [ CAT [ LEX +,
+									HEAD [ POS noun,
+								   PRD -] ],
+					  CONT.HOOK.INDEX #arg2 ] ] > ].
+
+;;					  CONT.HOOK.INDEX #arg2 ],
+;;			  ARG-ST 1-plus-list ] > ].
+
+;;			  ARG-ST ne-list ] > ].
+
+st-light-v := light-v & lex-stative-verb & lex-non-passive & lex-argst-tr-nocase &
+ [ ARG-ST < [], [ LOCAL.CAT.HEAD.STATIVE + ] > ].
+nonst-light-v := light-v & lex-non-stative-verb & lex-non-passive &
+ [ ARG-ST < [], [ LOCAL.CAT.HEAD [ STATIVE -, AGT + ] ] > ].
+
+pass-light-v := light-v & basic-verb-lex & lex-passive &
+ [ ARG-ST.REST.FIRST.LOCAL.CAT.HEAD.CASE [ GCASE vcase, SCASE no_scase ] ].
+
+;;각기 다른 자질 구조를 명시하자
+;;되다
+pass-light-noagt := pass-light-v &
+ [ SYNSEM.LOCAL.CAT.HEAD.AGT - ].
+
+;;당하다, 받다
+pass-light-agt := pass-light-v &
+ [ SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+
+vn-light-lex := main-verb-lex & infl-ltol-rule &
+  [ DTR vn ].
+
+;;vn+하: eg) '공부하'
+;;vn-light-v_irule
+;vn-light-v := main-verb-lex & lex-light &
+vn-light-v := vn-light-lex &
+ [ SYNSEM.LOCAL [ CAT [ HEAD [ STATIVE #stative, AGT #agt ],
+						VAL [ SUBJ #subj, COMPS #comps, SPR <> ] ],
+				  CONT #sem ],
+   ARG-ST #argst,
+   ARGS < [ SYNSEM.LOCAL [ CAT [ HEAD [ STATIVE #stative,  AGT #agt ],
+								 VAL [ SUBJ #subj, COMPS #comps ] ],
+						   CONT #sem ],
+			ARG-ST #argst ] > ].
+
+;;vn+당하/되/받: eg) 모욕당하(다)
+;;의미부의 KEY relation에 arg1/2 index를 바꿔놓지 않으면 모두 같아짐.
+;;vn-passlight-v_irule
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-12 / SSH)
+;; 연구되다 / *연구당하다 와 같은 제약을 처리하기 위해
+;; PER 자질의 unification을 점검함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-13 / SSH)
+;; 피동문에서 agent 는 논항이 아닌 것으로 간주한다.
+;; 이는 모든 한국어 피동 구문에 일관되게 적용하는 것으로 한다.
+;; 상세 설명은 rules.tdl의 주석 참조
+;;  (Keenan 1985, 남승호 2007, 김영희 2003, 송상헌 2007)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 간접 목적어는 일단 논항으로 간주
+;;  왕이 장군에게 상을 수여
+;;   상이 장군에게 수여
+;;   상이 수여된 이는 장군이다.
+;; 수여동사의 경우 남승호(2007)의 논항 판별이 잘 적용되지 않음을
+;; 남승호 교수님께서 스스로 언급하신 바 있음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+vn-passlight-v := vn-light-lex & lex-passive &
+ [ SYNSEM [ LOCAL [ CAT.VAL [ SUBJ.FIRST #obj & [ LOCAL.CAT.HEAD.CASE [ GCASE vcase, SCASE no_scase ] ],
+							  COMPS #rest,
+							  SPR <> ],
+					CONT #sem ],
+			LKEYS.KEYREL #keyrel ],
+   ARGS < [ SYNSEM [ LOCAL [ CAT [ HEAD.AGT +,
+								   VAL [ COMPS [ FIRST #obj, REST #rest ],
+										 SPR <> ] ],
+							 CONT #sem ],
+					 LKEYS.KEYREL #keyrel ] ] > ].
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-11 / SSH)
+;; ADVERSITY자질은 추후에 다시 고려하자.
+;; 받다 / 당하다는 구분하는 기준이 됨
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+vn-passlignt-v-1 := vn-passlight-v &
+ [ SYNSEM.LOCAL.CAT [ HEAD.AGT -,
+					  VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER non-animacy ] ].
+vn-passlignt-v-2 := vn-passlight-v &
+ [ SYNSEM.LOCAL.CAT [ HEAD.AGT +,
+					  VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER animacy ] ].
+
+
+;; 이 부분 처리를 하지 않았음
+;;                       REST #list ],
+;;                LAST #last
+;; 철수가 결혼하다 => 소희가 철수를 결혼시키다
+;; 철수가 시를 연구하다 => 소희가 철수에게 시를 연구시키다
+
+vn-causlight-v := vn-light-lex & lex-argst-human-subj &
+ [ SYNSEM [ LOCAL [ CAT [ HEAD [ STATIVE #stative, AGT #agt ],
+						  VAL [ COMPS.FIRST.LOCAL.CONT.HOOK.INDEX #arg2,
+								SPR <> ] ],
+					CONT.RELS.LIST.REST.FIRST event-relation & [ PRED "_cause_rel",
+																 ARG0 #index,
+																 ARG1 #arg1,
+																 ARG2 #arg2 ] ],
+			LKEYS.KEYREL #keyrel ],
+   C-CONT.HOOK.INDEX #index,
+   ARG-ST [ FIRST [ LOCAL [ CAT [ HEAD [ NOMINAL +,
+										 CASE [ GCASE nom, SCASE no_scase ],
+										 PRD - ] ],
+									CONT.HOOK.INDEX #arg1 ] ],
+			REST [ FIRST [ LOCAL [ CAT [ HEAD [ NOMINAL +,
+												CASE [ GCASE gcase, SCASE scase ],
+												PRD - ] ],
+								   CONT.HOOK.INDEX #arg2 ] ],
+				   REST #rest ] ],
+   ARGS < [ SYNSEM [ LOCAL [ CAT [ HEAD [ STATIVE #stative, AGT #agt ],
+								   VAL.COMPS #rest ],
+							 CONT.RELS.LIST.FIRST.ARG1 #arg2 ],
+					 LKEYS.KEYREL #keyrel ] ] > ].
+
+
+
+heavy-v := main-verb-lex & lex-heavy & lex-non-vcp.
+
+
+;;이름을 기존 KRG에서 일단 그대로 따온다.
+;;추후에 수정할 수 있다.
+non-stative-v := heavy-v & lex-non-stative-verb &
+  [ ARG-ST.FIRST.LOCAL.CAT.HEAD.CASE.SCASE no_scase ].
+
+
+intransitive-verb-lex := non-stative-v & lex-intransitive.
+
+v-intr := intransitive-verb-lex &
+  [ ARG-ST.FIRST.LOCAL.CAT.HEAD.NFORM norm ].
+v-anisubj-intr := v-intr & lex-argst-animate-subj.
+v-intr-uagt := v-intr.
+v-intr-bn := intransitive-verb-lex &
+  [ SYNSEM.LKEYS.KEYREL.ARG1 #arg,
+	ARG-ST.FIRST.LOCAL [ CAT.HEAD.NFORM swu,
+						 CONT.HOOK.INDEX #arg ]	].
+
+transitive-verb-lex := non-stative-v & lex-transitive.
+
+v-np-tr := transitive-verb-lex & lex-argst-np-tr.
+
+v-nom-tr := v-np-tr & lex-argst-tr-nom & lex-non-agt.
+;빵을 먹다
+v-acc-tr := v-np-tr & lex-argst-tr-acc & lex-agt.
+v-anisubj-acc-tr := v-acc-tr & lex-argst-animate-subj.
+v-dat-tr := v-np-tr & lex-argst-tr-dat.
+v-dat-tr-uagt := v-dat-tr.
+v-src-tr := v-np-tr & lex-argst-tr-src.
+v-com-tr := v-np-tr & lex-argst-tr-com.
+v-dir-tr := v-np-tr & lex-argst-tr-dir.
+v-sts-tr := v-np-tr & lex-argst-tr-sts.
+v-loc-tr := v-np-tr & lex-argst-tr-loc.
+v-goal-tr := v-np-tr & lex-argst-tr-goal.
+v-inst-tr := v-np-tr & lex-argst-tr-inst.
+
+v-adv-tr :=  transitive-verb-lex & lex-argst-adv-tr.
+
+v-vp-tr := non-stative-v & lex-argst-vp-tr & trans-first-arg-control-lex-item & lex-agt & lex-val-tr.
+v-vp-ko4-tr := v-vp-tr & lex-ko4.
+v-s-tr := non-stative-v & lex-argst-s-tr & clausal-second-arg-trans-lex-item & lex-agt & lex-val-tr.
+
+;  [ SYNSEM [ LKEYS.KEYREL [ ARG1 #ind1, ARG2 #ind2 ],
+; 			LOCAL.CAT.VAL.COMPS < #comps > ],
+;    ARG-ST < [ LOCAL.CONT.HOOK.INDEX ref-ind & #ind1 ],
+; 			#comps &
+; 			[ LOCAL.CONT.HOOK.INDEX #ind2 ] > ].
+v-s-ko4-tr := v-s-tr & lex-ko4.
+
+v-ohon-tr := v-anisubj-acc-tr &
+ [ ARG-ST < [ ],
+            [ LOCAL.CAT.HEAD [ HON + ] ] > ].
+
+
+ditransitive-verb-lex := non-stative-v & lex-ditransitive.
+
+v-np-ditr := ditransitive-verb-lex & lex-argst-np-ditr.
+
+;(존)에게/를 (책)을 주다
+;(술)에/*을 (물)을 타다
+v-np-dat-ditr := v-np-ditr & lex-argst-ditr-3rd-dat.
+v-np-anidat-ditr := v-np-dat-ditr & lex-argst-anidat.
+v-iohon-ditr := v-np-anidat-ditr &
+ [ ARG-ST < [], [],
+            [ LOCAL.CAT.HEAD [ HON + ] ] > ].
+
+
+
+v-dat-vp-ditr := non-stative-v & lex-argst-dat-ditr & lex-argst-vp-ditr & ditrans-first-arg-control-lex-item & lex-val-ditr.
+; v-dat-vnp-ditr := non-stative-v & lex-argst-dat-ditr & lex-argst-vnp-ditr & ditrans-first-arg-control-lex-item & lex-val-ditr.
+v-dat-s-ditr := non-stative-v & lex-argst-dat-ditr & lex-argst-s-ditr & clausal-third-arg-ditrans-lex-item & lex-val-ditr.
+
+v-acc-vp-ditr := non-stative-v & lex-argst-acc-ditr & lex-argst-vp-ditr & ditrans-first-arg-control-lex-item & lex-val-ditr.
+; v-acc-vnp-ditr := non-stative-v & lex-argst-acc-ditr & lex-argst-vnp-ditr & ditrans-first-arg-control-lex-item & lex-val-ditr.
+v-acc-s-ditr := non-stative-v & lex-argst-acc-ditr & lex-argst-s-ditr & clausal-third-arg-ditrans-lex-item & lex-val-ditr.
+
+v-np-acc-ditr := v-np-ditr & lex-argst-acc-ditr & lex-argst-ditr-3rd-acc.
+v-np-com-ditr := v-np-ditr & lex-argst-acc-ditr & lex-argst-ditr-3rd-com.
+v-np-goal-ditr := v-np-ditr & lex-argst-acc-ditr & lex-argst-ditr-3rd-goal.
+v-np-inst-ditr := v-np-ditr & lex-argst-acc-ditr & lex-argst-ditr-3rd-inst.
+v-np-loc-ditr := v-np-ditr & lex-argst-acc-ditr & lex-argst-ditr-3rd-loc.
+v-np-src-ditr := v-np-ditr & lex-argst-acc-ditr & lex-argst-ditr-3rd-src.
+v-np-sts-ditr := v-np-ditr & lex-argst-acc-ditr & lex-argst-ditr-3rd-sts.
+
+;;SUFFIXAL CAUSATIVES
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-18 / SSH)
+;;사동의 논항 구조는 v-tr / v-ditr 둘 중의 하나
+;; 철수가 아이에게 빵을 먹이다. (ditr)
+;; 철수가 소희에게 아이를 안기다. (ditr)
+;; 철수가 길을 넓히다. (tr)
+;; 철수가 소희를 울리다. (tr)
+;; 다시 말해, 사동은 논항이 하나 증대하는 과정이고
+;; 피동은 논항이 하나 감소하는 과정이다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 철수가 소희에게 아이를 안기다
+;;  = 철수가 소희에게 아이를 안게 하다.
+;;  = 철수가 소희에게 아이를 안게 시키다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-suf-caus := main-verb-lex & norm-hook-lex-item & lex-heavy & lex-non-stative &
+ [ SYNSEM [ LOCAL.CONT.RELS.LIST.REST.FIRST.PRED "_cause_rel",
+			LKEYS.KEYREL event-relation ] ].
+
+v-caus-tr := v-suf-caus & lex-argst-np-tr & lex-argst-tr-acc & lex-agt & lex-argst-animate-subj.
+v-caus-ditr := v-suf-caus & lex-argst-np-ditr & lex-argst-ditr-3rd-dat & lex-argst-anidat & lex-agt & lex-argst-animate-subj.
+
+;;장형사동
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-19 / SSH)
+;; 게|도록 + 하다 / 시키다 / 만들다
+;; VN+를 시키다
+;; Sells(1998), 채명희(1999), 김종복(2004)에 따라
+;; 일반 동사로서 보문구조를 취하는 것으로 분석 한다.
+;; 즉, 한국어의 장형 사동은 보조동사군이 아니라 일반동사이다.
+;; 철수가 영희(가/를) 가게 하다 / 시키다 / 만들다
+;; 철수가 영희(를/에게) 공부를 시키다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-caus := non-stative-v & lex-non-passive & ditrans-second-arg-control-lex-item &
+ [ SYNSEM.LKEYS.KEYREL.PRED "_cause_rel" ].
+
+
+v-caus-vp := v-caus & lex-argst-vp-ditr &
+ [ SYNSEM [ LOCAL.CAT.VAL.COMPS < #comp1, #comp2 > ],
+   ARG-ST < [ ],
+			#comp1 & [ ],
+			#comp2 & [ LOCAL [ CAT.HEAD [ FORM key, IC - ] ] ] > ].
+
+; v-caus-vp := v-caus & lex-argst-vp-ditr &
+;  [ SYNSEM [ LKEYS.KEYREL [ ARG1 #ind1, ARG2 #ind2, ARG3 #ind3 ],
+; 			LOCAL.CAT.VAL.COMPS < #comp1, #comp2 > ],
+;    ARG-ST < [ LOCAL.CONT.HOOK.INDEX ref-ind & #ind1 ],
+; 			#comp1 &
+; 			[ LOCAL [ CAT.VAL [ SPR < >,
+; 								COMPS < > ],
+; 					  CONT.HOOK.INDEX ref-ind & #ind2 ] ],
+; 			#comp2 &
+; 			[ LOCAL [ CAT.HEAD [ FORM key, IC - ],
+; 					  CONT.HOOK.INDEX #ind3 ] ] > ].
+
+v-caus-vnp := v-caus & lex-argst-vnp-ditr &
+ [ SYNSEM [ LOCAL.CAT.VAL.COMPS < #comp1, #comp2 > ],
+   ARG-ST < [ ],
+			#comp1 & [ ],
+			#comp2 & [ ] > ].
+
+; v-caus-vnp := v-caus & lex-argst-vnp-ditr &
+;  [ SYNSEM [ LKEYS.KEYREL [ PRED cause_rel,
+; 						   ARG1 #ind1, ARG2 #ind2, ARG3 #ind3 ],
+; 			LOCAL.CAT.VAL.COMPS < #comp1, #comp2 > ],
+;    ARG-ST < [ LOCAL.CONT.HOOK.INDEX ref-ind & #ind1 ],
+; 			#comp1 &
+; 			[ LOCAL [ CAT.VAL [ SPR < >,
+; 								COMPS < > ],
+; 					  CONT.HOOK.INDEX ref-ind & #ind2 ] ],
+; 			#comp2 &
+; 			[ LOCAL [ CAT.LEX -,
+; 					  CONT.HOOK.INDEX #ind3 ] ] > ].
+
+
+;;SUFFIXAL PASSIVES
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-24 / SSH)
+;;범인이 잡히다.
+;; 접사 피동은 자동사의 하나로 간주
+;; 접사 피동의 유형은 2개로 설정한다.
+;;장식진(1995) : 행동주를 인지할 수 있으면 피동사 / 없으면 자동사
+;; a. 글자가 잘 보인다 (자동사)
+;; b. 말소리가 잘 들린다 (자동사)
+;; c. 문이 열렸다 (자동사/피동사)
+;; d. 애가 모기에 물렸다 (피동사)
+;; 위에서 c는 anti-causative에 해당함
+;; 즉, 접사 피동의 하위 분류가 있음
+;; 송상헌 (2007) : neutral, middle, spontaneous
+;; e. 범인이 경찰에 잡혔다 (neutral)
+;; f. 이 차는 잘 팔린다 (middle)1
+;; g. 문이 스스르 열렸다 (spontaneous)
+;; 따라서 행동주가 거의 출현하는 위 d와 같은 예문은 별도로 설정하고
+;; pass의 기본형은 논항이 주어 하나뿐인 것으로 한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+v-pass := heavy-v & lex-passive.
+
+;;이 차가 잘 팔린다 (일반피동 / middle)
+v-basic-pass := v-pass & lex-intransitive & non-stative-v.
+;;문이 저절로 열렸다
+v-spon-pass := v-basic-pass.
+
+;;이 책은 잘 읽힌다.
+v-mdl-pass := v-pass & lex-intransitive & stative-v & lex-present.
+
+;;옷이 못에 걸렸다
+v-dat-pass := v-pass & v-np-tr & lex-argst-tr-dat.
+
+
+stative-v := heavy-v & lex-stative-verb.
+a-intr := stative-v & lex-intransitive.
+;;공부하기가 어렵다
+a-vp-intr := stative-v & lex-argst-vp-intr & clausal-arg-intrans-lex-item & lex-val-intr.
+;;소희가 이 빵을 먹었음이 놀랍다
+a-s-intr := stative-v & lex-argst-s-intr & clausal-arg-intrans-lex-item & lex-val-intr.
+
+
+transitive-adj-lex := stative-v & lex-transitive  & lex-argst-np-tr.
+
+;;multiple nominative constructions
+;;추후에 개선을 해야 함
+;;'철수가 호랑이가 무섭다'가 어떤 것을 주어로 잡느냐에 따라 두 가지로 해석이 됨
+;;유정성 자질 [ANIMACY luk]이 필요할 듯
+a-nom-tr := transitive-adj-lex & lex-argst-tr-nom.
+a-acc-tr := transitive-adj-lex & lex-argst-tr-acc.
+a-loc-tr := transitive-adj-lex & lex-argst-tr-loc.
+a-com-tr := transitive-adj-lex & lex-argst-tr-com.
+a-src-tr := transitive-adj-lex & lex-argst-tr-src.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH)
+;; 심라동사의 제약 : 주어 자리에 사람이 와야 함
+;; (1) 호랑이[HUMAN bool]가 동생[HUMAN +]은 무섭다.
+;;     *호랑이[subj, exp]가 동생[obj,target]은 무섭다.
+;;     호랑이[obj,target]가 동생[subj,exp]은 무섭다.
+;; 즉, 경험주는 [HUMAN +]자질을 가지고 있어야 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+psycho-v := a-nom-tr & lex-argst-human-subj.
+
+a-dat-tr := transitive-adj-lex & lex-argst-tr-dat.
+
+;;; verbal nouns
+
+;vn := norm-sem-lex-item & no-hcons-lex-item & v-lxm &
+vn := n-lxm & v-lxm &
+ [ SYNSEM [ LOCAL [ CAT [ HEAD [ POS noun,
+								 NOMINAL +,
+								 NFORM norm,
+								 MOD <> ],
+						VAL.SPR <> ],
+				  CONT [ RELS [ LIST.REST #last,
+								LAST #last ] ] ],
+			LKEYS.KEYREL event-relation ],
+   ARG-ST.FIRST [ LOCAL.CAT.HEAD.CASE.SCASE no_scase ] ].
+
+vn-intr := vn & lex-intransitive.
+vn-st-intr := vn-intr & lex-stative.
+vn-nonst-intr := vn-intr & lex-non-stative.
+vn-tr := vn & lex-transitive & lex-non-stative.
+
+; [ SYN.HEAD [ STATIVE -, AGT + ],
+;   ARG-ST < [], [ SYN.HEAD.PRD - ] > ].
+;돈을 저금하다
+vn-acc-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-acc & lex-agt.
+; [ ARG-ST < [],
+ ;           [ SYN.HEAD [ NOMINAL +,
+  ;                       CASE [ GCASE gcase, SCASE no_scase ] ] ] > ].
+vn-acc-tr-pat := vn-acc-tr &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.SENSE.ADVERSITY - ].
+vn-acc-tr-tangha := vn-acc-tr &
+ [ SYNSEM.LKEYS.KEYREL.ARG0.SENSE.ADVERSITY + ].
+
+vn-dat-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-dat.
+vn-src-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-src.
+vn-com-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-com.
+vn-dir-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-dir.
+vn-sts-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-sts.
+vn-loc-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-loc.
+vn-goal-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-goal.
+vn-inst-tr := vn-tr & lex-argst-np-tr & lex-argst-tr-inst.
+
+;영희가 예쁘다고 생각하다
+; vn-s-tr := vn-tr & lex-argst-s-tr.
+vn-s-tr := vn & clausal-second-arg-trans-lex-item & lex-argst-s-tr & lex-agt & lex-val-tr.
+vn-s-ko4-tr := vn-s-tr & lex-ko4.
+
+
+vn-ditr := vn & lex-ditransitive & lex-non-stative & lex-agt.
+vn-np-ditr := vn-ditr & lex-argst-np-ditr.
+;철수가 자동차를 일본에/으로/에다/NIL 수출
+;철수가 자동차를 *일본에서 수출
+;철수가 자동차를 *일본께/한테 수출
+vn-np-dat_goal_loc-ditr := vn-np-ditr & lex-argst-ditr-3rd-dat_goal_loc & lex-argst-nonanidat.
+vn-np-dat-ditr := vn-np-dat_goal_loc-ditr & lex-argst-ditr-3rd-dat.
+
+vn-acc-vp-ditr := vn & ditrans-first-arg-control-lex-item & lex-argst-acc-ditr & lex-argst-vp-ditr & lex-agt & lex-val-ditr.
+; vn-acc-vnp-ditr := vn & ditrans-first-arg-control-lex-item & lex-argst-acc-ditr & lex-argst-vnp-ditr & lex-agt & lex-val-ditr.
+
+vn-dat-vp-ditr := vn & ditrans-first-arg-control-lex-item & lex-argst-dat-ditr & lex-argst-vp-ditr & lex-agt & lex-val-ditr.
+; vn-dat-vnp-ditr := vn & ditrans-first-arg-control-lex-item & lex-argst-dat-ditr & lex-argst-vnp-ditr & lex-agt & lex-val-ditr.
+vn-dat-s-ditr := vn & clausal-third-arg-ditrans-lex-item & lex-argst-dat-ditr & lex-argst-s-ditr & lex-agt & lex-agt & lex-val-ditr.
+
+vn-goal-vp-ditr := vn & ditrans-first-arg-control-lex-item & lex-argst-goal-ditr & lex-argst-vp-ditr & lex-agt & lex-val-ditr.
+; vn-goal-vnp-ditr := vn & ditrans-first-arg-control-lex-item & lex-argst-goal-ditr & lex-argst-vnp-ditr & lex-agt & lex-val-ditr.
+vn-goal-s-ditr := vn & clausal-third-arg-ditrans-lex-item & lex-argst-goal-ditr & lex-argst-s-ditr & lex-agt & lex-val-ditr.
+
+vn-np-com-ditr := vn-np-ditr & lex-argst-ditr-3rd-com.
+vn-np-goal-ditr := vn-np-ditr & lex-argst-ditr-3rd-goal.
+vn-np-sts-ditr := vn-np-ditr & lex-argst-ditr-3rd-sts.
+
+
+
+
+;;; Auxiliaries
+
+; Somewhat surprisingly, this inherits from basic-two-arg, so
+; that the non-local features are amalgamated from subj, the
+; lexical verb complement, but not the other complements, if any.
+
+aux-lex := verb-lex &
+  [ SYNSEM [ LOCAL.CAT.HEAD [ AUX + ],
+             VERB-CL - ] ].
+
+arg-comp-aux := aux-lex & basic-two-arg &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < #subj >,
+                             COMPS < #comps . #vcomps >,
+                             SPR < >,
+                             SPEC < > ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST < #subj &
+             [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                       CAT [ VAL [ SPR < >,
+                                   COMPS < > ],
+                             HEAD [ POS noun, CASE #case ] ] ] ],
+             #comps &
+             [ LIGHT +,
+               LOCAL [ CONT.HOOK.XARG #xarg,
+                       CAT [ HEAD.POS verb,
+                             VAL [ COMPS #vcomps,
+                                   SUBJ < [ LOCAL.CAT.HEAD.CASE #case ] > ] ] ] ] > ].
+
+; Not inheriting from basic-verb-lex, so need to put in
+; event-relation by hand here.
+
+arg-comp-aux-with-pred := arg-comp-aux & hcons-lex-item &
+  [ SYNSEM [ LOCAL.CONT.HCONS <! qeq &
+                                 [ HARG #harg,
+                                   LARG #larg ] !>,
+             LKEYS.KEYREL event-relation &
+                          [ ARG1 #harg ] ],
+    ARG-ST < [  ],
+             [ LOCAL [ CONT.HOOK.LTOP #larg,
+                       CAT.HEAD.FORM comp_form ] ] > ].
+
+aux-ae := arg-comp-aux-with-pred & lex-ae & lex-non-passive.
+aux-ae-agt := aux-ae & lex-agt.
+aux-pass := arg-comp-aux-with-pred & lex-ae & lex-passive & lex-agt.
+aux-incho := arg-comp-aux-with-pred & lex-ae & lex-non-passive & lex-agt.
+
+
+aux-qnt := arg-comp-aux-with-pred & lex-ci & lex-non-passive &
+ [ SYNSEM.LOCAL.CAT.HEAD.AGT #agt,
+   ARG-ST < [], [ LOCAL.CAT.HEAD.AGT #agt ] > ].
+;aux-qnt := arg-comp-aux-with-pred & lex-ci & lex-non-passive &
+; [ C-CONT.RELS.LIST.FIRST.PRED "not_rel" ].
+
+aux-ci := arg-comp-aux-with-pred & lex-ci.
+aux-ci-agt := aux-ci & lex-agt.
+aux-key := arg-comp-aux-with-pred & lex-key & lex-non-passive & lex-agt.
+aux-ko2 := arg-comp-aux-with-pred & lex-ko2 & lex-non-passive.
+aux-ko2-agt := aux-ko2 & lex-agt.
+aux-kon := arg-comp-aux-with-pred & lex-kon & lex-non-passive.
+aux-eya := arg-comp-aux-with-pred & lex-eya & lex-non-passive.
+aux-na2 := arg-comp-aux-with-pred & lex-na2 & lex-non-passive.
+
+
+; Somewhat surprisingly, this inherits from basic-two-arg, so
+; that the non-local features are amalgamated from subj, the
+; lexical verb complement, but not the other complements, if any.
+
+; Not inheriting from basic-verb-lex, so need to put in
+; event-relation by hand here.
+
+bn-aux-lex := arg-comp-aux-with-pred &
+  [ ARG-ST < [  ],
+             [ LOCAL.CAT.HEAD.NFORM kes ] > ].
+
+
+
+;;; Detrminers
+;;; SPEC is non-empty, and already specified by basic-determiner-lex.
+;;plural
+
+determiner-lex := norm-hook-lex-item & basic-zero-arg & lxm-non-plural & 
+ [ SYNSEM.LOCAL [ CAT [ HEAD [ POS det,
+							   NOMINAL -,
+							   VERBAL -,
+							   FORM no_form,
+							   STATIVE -,
+							   AGT -,
+							   HON -,
+							   CASE [ GCASE gcase, SCASE no_scase ],
+							   DMKR no_mkr,
+							   IC -,
+							   AUX - ],
+						VAL [ SPR < >,
+							  COMPS < >,
+							  SUBJ < > ] ],
+				  CONT [ HOOK.INDEX ref-ind ] ] ].
+
+q-adnominal-determiner-lex := determiner-lex & basic-determiner-lex &
+ [ SYNSEM.LOCAL.CAT.HEAD [ MOD <>, NUMERAL - ] ].
+
+
+;; e.g. 이, 그, 저
+det-ind := q-adnominal-determiner-lex.
+
+;; e.g. 모든, 어떤, 몇몇, 무슨
+det-qnt := q-adnominal-determiner-lex.
+
+;;양화사로의 쓰임이 없다.
+;;super node를 바꾸도록 해야 한다.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-20 / SSH)
+;; 아래와 같이 
+;; intersective-mod-lex &
+;; 을 설정할 시에 qeq가 생성이 되지 않는다
+;; 문생성이 되지 않음
+;; 따라서 일단 basic-determiner-lex 로 설정 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 수식을 하는 것이 아니기 때문에 MOD관련도
+;; 모두 제외 한다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;nq-adnominal-determiner-lex := determiner-lex & intersective-mod-lex &
+;; [ SYNSEM.LOCAL.CAT.HEAD [ MOD < [ LOCAL.CAT.HEAD.POS noun ] > ] ].
+nq-adnominal-determiner-lex := determiner-lex & basic-determiner-lex &
+ [ SYNSEM.LOCAL.CAT.HEAD [ MOD <> ] ].
+
+;;numeric determiners
+;; e.g. 세
+;adn-num := nq-adnominal-determiner-lex & lex-numeral & lex-mod-lex.
+adn-num := nq-adnominal-determiner-lex & lex-numeral.
+
+
+;;interrogative determiners
+;; e.g. 어느
+;adn-int := nq-adnominal-determiner-lex & lex-non-numeral & lex-mod-lex.
+adn-int := nq-adnominal-determiner-lex & lex-non-numeral.
+
+;;characteristic determiners specifying lexical elements
+;; e.g. 새
+;adn-char := nq-adnominal-determiner-lex & lex-non-numeral & lex-mod-lex.
+adn-char := nq-adnominal-determiner-lex & lex-non-numeral.
+
+;; e.g. 모든, 어떤, 몇몇, 무슨
+adn-qnt := nq-adnominal-determiner-lex & lex-non-numeral.
+
+
+;;; Adverbs
+;;scopal / intersective 의 구분은 우선 무시한다.
+;;lex-adv (잘) 구분이 빠져있다.
+
+;;lex-non-plural 이 맞는가???
+;;빨리들 가라... 와 같은 구문이 가능하다.
+
+;;scopal-mod-lex
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;01/26/2004 advs can have aux-postpositions
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH)
+;; 부사의 굴절
+;;   (1) 항상은 먹는다
+;;   (2) 잘은 먹는다
+;;   (3) *못은 먹는다
+;;   (4) *아주는 잘 먹는다
+;; 부사 + 만도 => 나타나지 않음
+;; 따라서 부사의 굴절은 우선 단층이라고 가정함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+adv-del-lex := lex-rule &
+  [ DTR adv-del-stem ].
+
+;adv-non-del := adv-del-lex & const-add-only-no-ccont-ltol-rule.
+
+infl-adv-del-lex := adv-del-lex & infl-cont-change-only-ltol-rule.
+adv-xdel-only := infl-adv-del-lex &
+ [ C-CONT.RELS.LIST.FIRST.PRED "only" ].
+adv-zdel-but := infl-adv-del-lex &
+ [ C-CONT.RELS.LIST.FIRST.PRED "but" ].
+adv-zdel-also := infl-adv-del-lex &
+ [ C-CONT.RELS.LIST.FIRST.PRED "also" ].
+adv-zdel-or := infl-adv-del-lex &
+ [ C-CONT.RELS.LIST.FIRST.PRED "or" ].
+
+;const-adv-del-lex := adv-del-lex & const-add-only-ltol-rule.
+;adv-non-del := const-adv-del-lex.
+
+adverbial-lex := basic-adverb-lex & lex-noform & lex-non-honorific & lex-gcase & lex-noscase & lex-non-cltype &
+ [ SYNSEM.LOCAL [ CAT [ HEAD [ NOMINAL -,
+							   VERBAL -,
+							   STATIVE -,
+							   AGT -,
+							   IC -,
+							   AUX - ],
+						VAL [ SPR < >,
+							  COMPS < >,
+							  SUBJ < > ] ] ] ].
+
+
+vmod-adv := adverbial-lex & lex-mod-verbal.
+
+adv-del-stem := vmod-adv.
+
+;;sentential adverbs / predicate adverbs 구분???
+;; 대개, 항상
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-13 / SSH)
+;;  '거침없이 하이킥'이 가능하기 때문에 lex-mod-verb는 하면 안된다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;항상
+;;ph-adv := adv-del-stem & lex-mod-ph & scopal-mod-lex.
+;; 철수가 항상 오다[LEX +]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH)
+;; 이 구문이 numeral로 해석되는 경우를 막기 위해
+;; NUMERAL - 도입
+;; 추후 전체 부사에 확대할 수 있음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+basic-ph-adv := adv-del-stem & scopal-mod-lex &
+ [ SYNSEM.LOCAL.CAT.HEAD.NUMERAL - ].
+
+ph-adv := basic-ph-adv & lex-strict.
+ph-adv-robust := basic-ph-adv & lex-robust.
+ph-adv-online := basic-ph-adv & lex-online.
+
+
+;;잘
+;; 동사 바로 앞에서 동사를 수식함
+int-adv := adv-del-stem & lex-mod-lex & intersective-mod-lex.
+
+
+;;안, 못
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-14 / SSH)
+;; 사랑 안 해
+;; ??안 사랑 해
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+neg-adv := vmod-adv & lex-mod-lex & scopal-mod-lex.
+
+;;아주
+advmod-adv := adverbial-lex & lex-mod-lex & lex-mod-adv & intersective-mod-lex.
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-06-24 / SSH)
+;; IDIOMATIC EXPRESSION
+;; 단일 처리하여 정문처리 한다.
+;; 반갑어요 / 고맙어요 / 별말씀을요
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+idiom := basic-verb-lex & lex-argst-non & lexeme-to-word-rule &
+ [ STYLE strict,
+   SYNSEM.LOCAL.CAT.VAL [ SUBJ <>, COMPS <>, SPR <> ] ].
+

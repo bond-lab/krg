@@ -1,0 +1,45 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; These files are test items.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Jul. 12. 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-12 / SSH) 
+;;  After revision, all sentences has not yet tested perfectly. 
+;;  So, there are some cases that are not handled with the new version.  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+test  
+	This is a sample file for batch processing.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+kpsg
+
+	Title : Test Items in Korean Phrase Structure Grammar 
+	Author(s) : Jong-Bok Kim and Jaehyung Yang
+	Year : 2003-2008
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+ibkg
+
+	Title : Information-based Korean Grammar
+	Author(s) : Suk-Jin Chang
+	Year : 1993 / 1995
+	Comments : Do not redistribute without permission.	
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+seri
+
+	Title : SERI Test Suites `95. In Proceedings of the Conference on Hanguel and Korean Language Information Processing.
+	Author(s) : Sung, Won-Kyung and Myung-Gil Jang
+	Year : 1997
+	Comments : Do not redistribute without permission.	
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+

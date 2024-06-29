@@ -1,0 +1,799 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files (types-ph, type-lex) aim to classify large types into separate files, according to its level, such as phrasal or lexical types.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 17, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; PHRASAL TYPES
+
+;Constraint on MC used to be part of matrix.tdl
+;;it applies to all wo implementations, except for v2
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-12 / SSH) 
+;; STYLE checking 은 경
+;; 각 rule에서 세분화하여 하는 것으로 변경
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; headed-phrase :+
+;  [ STYLE #style,
+;    HEAD-DTR.STYLE #style ].
+
+non-lex := phrase &
+ [ SYNSEM.LOCAL.CAT.LEX - ].
+
+
+;;************************************************************
+;;binary phrase types
+;;************************************************************
+
+
+;;STYLE
+ph-same-style := binary-headed-phrase &
+ [ STYLE #style,
+   NON-HEAD-DTR.STYLE #style,
+   HEAD-DTR.STYLE #style ].
+
+ph-rs-style := binary-headed-phrase &
+ [ STYLE robust & #style,
+   NON-HEAD-DTR.STYLE robust & #style,
+   HEAD-DTR.STYLE strict ].
+
+ph-sr-style := binary-headed-phrase &
+ [ STYLE #style,
+   NON-HEAD-DTR.STYLE strict,
+   HEAD-DTR.STYLE robust & #style ].
+
+ph-head-style := binary-headed-phrase &
+ [ STYLE #style,
+   HEAD-DTR.STYLE #style ].
+
+
+
+
+
+;;HONORIFIC
+ph-same-hon :=  binary-headed-phrase &
+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.HON #hon,
+   HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.HON #hon ].
+
+
+ph-unary-style := unary-phrase &
+ [ STYLE #style,
+   ARGS < [ STYLE #style ] > ].
+
+;;unary (NP-BOTTOM)
+ph-unary-hon := unary-phrase &
+ [ SYNSEM.LOCAL.CAT.HEAD.HON #hon,
+   ARGS < [ SYNSEM.LOCAL.CAT.HEAD.HON #hon ] > ].
+
+ph-unary-case := unary-phrase &
+ [ SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+   ARGS < [ SYNSEM.LOCAL.CAT.HEAD.CASE #case ] > ].
+
+ph-unary-nv := unary-phrase &
+ [ SYNSEM.LOCAL.CAT.HEAD [ NOMINAL #1, VERBAL #2 ],
+   ARGS < [ SYNSEM.LOCAL.CAT.HEAD  [ NOMINAL #1, VERBAL #2 ] ] > ].
+
+
+ph-unary-avm := ph-unary-style & ph-unary-hon & ph-unary-case & ph-unary-nv.
+
+
+
+;;hd-only-ph: unary with gap-passing
+;hd-only-ph := headed-ph & unary-pg &
+; [ SYN.VAL #val,
+;   C-CONT [ RELS <! !>, HCONS <! !> ],
+;   ARGS < lex-ex & [ SYN.VAL #val & [ SPR <> ] ] > ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-25 / SSH) 
+;;철수가 오고 소희가 가다 => COORD #coord로 수정 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; headed-phrase :+
+;   [ SYNSEM.LOCAL [ COORD -,
+;                    COORD-REL #crel ],
+;     HEAD-DTR.SYNSEM.LOCAL [ COORD -,
+;                             COORD-REL #crel ]].
+headed-phrase :+
+  [ SYNSEM.LOCAL [ COORD #coord,
+                   COORD-REL #crel ],
+    HEAD-DTR.SYNSEM.LOCAL [ COORD #coord,
+                            COORD-REL #crel ]].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-12 / SSH) 
+;; debugging test code
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; basic-head-subj-test := head-valence-phrase & binary-headed-phrase &
+; 			  head-compositional &
+;   [ SYNSEM phr-synsem & 
+; 	   [ LOCAL.CAT [ POSTHEAD +,
+; 			 VAL [ SUBJ < >,
+; 			       COMPS #comps,
+; 			       SPR #spr ] ] ],
+;     C-CONT [ RELS <! !>,
+; 	     HCONS <! !> ],
+;     HEAD-DTR.SYNSEM.LOCAL.CAT.VAL [ SUBJ < #synsem >,
+; 				      COMPS #comps,	
+;                                       SPR #spr ],
+;     NON-HEAD-DTR.SYNSEM #synsem & canonical-synsem &
+; 		 [ LOCAL [ CAT [ VAL [ SUBJ olist,
+; 				       COMPS olist,
+; 				       SPR olist ] ] ],
+; 		   NON-LOCAL [ SLASH 0-dlist & [ LIST < > ],
+; 			       REL 0-dlist,
+; 			       QUE 0-dlist ] ]].
+;subj-test := basic-head-subj-test & head-final & non-lex.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-17 / SSH) 
+;; 주어도 논항의 하나이므로 당연히 [LEX -]가 되는 것으로 가정한다
+;; 대명사가 lex 단계에서 주어가 되는 것을 방지하기 위함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+basic-subj-head-phrase := decl-head-subj-phrase & head-final & non-lex &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ POS noun, NOMINAL +, CASE.GCASE nom ] ],
+	HEAD-DTR.SYNSEM [ VERB-CL +, LOCAL.CAT.HEAD [ POS verb ] ] ].
+;  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD [ POS noun, NOMINAL +, CASE.GCASE nom ],
+;	HEAD-DTR.SYNSEM [ VERB-CL +, LOCAL.CAT.HEAD [ POS verb ] ] ].
+
+
+;;개가 짖나요???
+subj-head-phrase := basic-subj-head-phrase & ph-same-style.
+subj-head-phrase-robust-rs := basic-subj-head-phrase & ph-rs-style.
+subj-head-phrase-robust-sr := basic-subj-head-phrase & ph-sr-style.
+; subj-head-phrase := basic-subj-head-phrase & ph-same-hon & ph-same-style.
+; subj-head-phrase-robust-rs := basic-subj-head-phrase & ph-same-hon & ph-rs-style.
+; subj-head-phrase-robust-sr := basic-subj-head-phrase & ph-same-hon & ph-sr-style.
+
+basic-subj-head-phrase-vn := decl-head-subj-phrase & head-final & non-lex &
+  [ STYLE robust,
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ NOMINAL +, CASE.GCASE nom ] ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ POS noun, VERBAL + ] ] ].
+;;공부하기가 어렵다.
+basic-subj-head-phrase-vp := decl-head-subj-phrase & head-final & non-lex &
+  [	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD [ POS verb, NOMINAL +, VERBAL +, CASE.GCASE nom ],
+									VAL.SUBJ < [ ] > ],
+	HEAD-DTR.SYNSEM [ VERB-CL +, LOCAL.CAT.HEAD.POS verb ] ].
+;;소희가 빵을 먹었음이 놀랍다.
+basic-subj-head-phrase-s := decl-head-subj-phrase & head-final & non-lex &
+  [	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -,
+									HEAD [ POS verb, NOMINAL +, CASE.GCASE nom ],
+									VAL [ SUBJ <>, COMPS <> ] ],
+	HEAD-DTR.SYNSEM [ VERB-CL +, LOCAL.CAT.HEAD.POS verb ] ].
+
+
+;;일본에 수
+;;?일본에 수출을
+basic-head-comp-phrase :+
+ [ HEAD-DTR.SYNSEM.LOCAL.CAT [ MC #mc, HEAD.VCP - ],
+   SYNSEM [ LOCAL.CAT.MC #mc,
+			VERB-CL #vc ],
+   NON-HEAD-DTR.SYNSEM [ VERB-CL #vc ] ].
+
+basic-comp-1st-head-phrase := basic-head-1st-comp-phrase & head-final & non-lex &
+ [ NON-HEAD-DTR.SYNSEM [ LOCAL.CAT.LEX - ],
+   HEAD-DTR.SYNSEM [ VERB-CL +, LOCAL.CAT.HEAD [ POS verb ] ] ].
+comp-1st-head-phrase := basic-comp-1st-head-phrase & ph-same-style.
+comp-1st-head-phrase-robust-rs := basic-comp-1st-head-phrase & ph-rs-style.
+comp-1st-head-phrase-robust-sr := basic-comp-1st-head-phrase & ph-sr-style.
+comp-1st-head-v := basic-head-1st-comp-phrase & head-final & non-lex & ph-same-style &
+ [ NON-HEAD-DTR.SYNSEM [ LOCAL.CAT.HEAD [ POS verb, CASE.GCASE vcase ] ],
+   HEAD-DTR.SYNSEM [ VERB-CL +, LOCAL.CAT.HEAD [ POS verb ] ] ].
+comp-1st-head-phrase-vnp := basic-head-1st-comp-phrase & head-final & non-lex &
+ [ STYLE robust,
+   HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ POS noun, VERBAL + ] ] ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-21 / SSH) 
+;;의존 명사 구문에서 HON은 NON-HEAD-DTR에서 승계된다.
+;; (1) 오실 수 있으세요? 
+;; (2) 올 수 있으세요? 
+;; (2)보다는 (1)이 정확한 표현 임 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+basic-comp-1st-head-phrase-bn := basic-head-comp-phrase & head-final & non-lex &
+ [ SYNSEM.LOCAL.CAT [ HEAD.HON #hon,
+					  VAL [ SUBJ <>, COMPS <>, SPR <> ] ],
+   NON-HEAD-DTR.SYNSEM [ LOCAL.CAT [ LEX -, 
+									 HEAD [ POS verb, HON #hon ],
+									 VAL [ SUBJ <>, COMPS <> ] ] ],
+   HEAD-DTR n-del-lex & [ SYNSEM.LOCAL.CAT [ HEAD [ POS noun, NFORM bn-form ] ] ] ].
+;;예쁜 것 같다 / 이쁜 거 같다 
+comp-1st-head-phrase-bn := basic-comp-1st-head-phrase-bn & ph-same-style.
+;;이쁜 것 같다 
+comp-1st-head-phrase-bn-robust-rs := basic-comp-1st-head-phrase-bn & ph-rs-style.
+;; 예쁜 거 같다. 
+comp-1st-head-phrase-bn-robust-sr := basic-comp-1st-head-phrase-bn & ph-sr-style.
+
+
+
+basic-comp-2nd-head-phrase := basic-head-2nd-comp-phrase & head-final & non-lex &
+ [ NON-HEAD-DTR.SYNSEM [ LOCAL.CAT.LEX - ],
+   HEAD-DTR.SYNSEM [ VERB-CL +, LOCAL.CAT.HEAD.POS verb ] ].
+comp-2nd-head-phrase := basic-comp-2nd-head-phrase & ph-same-style.
+comp-2nd-head-phrase-robust-rs := basic-comp-2nd-head-phrase & ph-rs-style.
+comp-2nd-head-phrase-robust-sr := basic-comp-2nd-head-phrase & ph-sr-style.
+comp-2nd-head-phrase-vnp := basic-head-2nd-comp-phrase & head-final & non-lex &
+ [ STYLE robust,
+   HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ POS noun, VERBAL + ] ] ].
+
+comp-2nd-head-phrase-v := basic-head-2nd-comp-phrase & head-final & non-lex & ph-same-style.
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH) 
+;; matrix 의 기본 type을 그대로 활용하기 위해
+;; 우선 phrase 로 둔다.
+;; 추후 다시 만들어야 할 수도 있음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH) 
+;; '철수가 빵을 먹어 보고 싶다'
+;;  아래처럼 분석되는 것을 막기 위해
+;;  CASE를 명세하였음
+;;    *[[빵을 [먹어 보고]] 싶다]
+;; 그렇지 않으면 head-comp-phrase로 처리됨
+;; 아래가 유일하게 적합한 구조임
+;;    [빵을 [[먹어 보고] 싶다]]
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-17 / SSH) 
+;; '한 시간을 가다'가 hd-lex-ex로 처리 되는 것을 
+;;    막기 위해 VERBAL 제약 추가
+;; 위 구조는 수식어로 보아야 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-14 / SSH) 
+;; 공부(를) 하다 => strict
+;; 추격(을) 당하다 => strict
+;; 먹고 싶다 => strict
+;; 먹고가 싶다 => unproductive
+;; 먹고 싶소이다 => unproductive
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+basic-comp-phrase-min := binary-headed-phrase &
+  [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST #synsem,
+    NON-HEAD-DTR.SYNSEM #synsem ].
+
+;hd-lex-ex := basic-head-1st-comp-phrase & head-final &
+basic-hd-lex-ex := head-valence-phrase & head-compositional & basic-comp-phrase-min & head-final & 
+ [ SYNSEM.LOCAL.CAT [ LEX +, 
+					  HEAD.CASE [ GCASE no_gcase, 
+								  SCASE no_scase ],
+					  POSTHEAD #ph,
+					  HC-LIGHT #light ],
+   C-CONT [ RELS <! !>, HCONS <! !> ],
+   HEAD-DTR lex-item & [ SYNSEM.LOCAL.CAT [ HC-LIGHT #light,
+											POSTHEAD #ph ] ],
+   NON-HEAD-DTR [ SYNSEM.LOCAL.CAT [ LEX +, HEAD.VERBAL + ] ] ].
+hd-lex-ex := basic-hd-lex-ex & ph-same-style.
+hd-lex-ex-rs := basic-hd-lex-ex & ph-rs-style.
+hd-lex-ex-sr := basic-hd-lex-ex & ph-sr-style.
+
+hd-lex-light := basic-hd-lex-ex & ph-head-style.
+;;피동형 경동사 
+head-lex-pass-light := hd-lex-light &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.PASS +,
+				   CAT.VAL [ SUBJ.FIRST #object & [ LOCAL.CONT.HOOK.INDEX #arg ],
+							 COMPS #rest ] ],
+	NON-HEAD-DTR n-del-lex & [ SYNSEM.LOCAL [ CAT [ HEAD [ POS noun, 
+														 VERBAL +, 
+														 AGT + ],
+													VAL.COMPS [ FIRST #object,
+																REST #rest ] ],
+											  CONT.HOOK.INDEX.SENSE #sense ] ],
+	HEAD-DTR.SYNSEM.LOCAL [ CAT.HC-LIGHT +,
+							CONT.HOOK.INDEX [ E.PASS +, SENSE #sense ],
+							CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX #arg ] ]. 
+
+head-lex-pass-noagt := head-lex-pass-light & 
+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom,
+   HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT - ].
+head-lex-pass-agt := head-lex-pass-light & 
+ [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER animacy,
+   NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE acc,
+   HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.AGT + ].
+
+
+;;긍정형 지시사
+head-lex-vcp :=  head-valence-phrase & head-compositional & head-final & ph-head-style &
+ [ SYNSEM.LOCAL.CAT [ LEX +, 
+					  HEAD [ CASE [ GCASE no_gcase, 
+									SCASE no_scase ] ],
+					  VAL [ SUBJ #subj, COMPS <> ],
+					  POSTHEAD #ph,
+					  HC-LIGHT #light ],
+   C-CONT [ RELS <! !>, HCONS <! !> ],
+   HEAD-DTR lex-item & [ SYNSEM.LOCAL.CAT [ HEAD.VCP +,
+											VAL [ SUBJ #subj, 
+												  COMPS.FIRST.LOCAL.CAT.HEAD.PRD #prd ],
+											HC-LIGHT #light,
+											POSTHEAD #ph ] ],
+   NON-HEAD-DTR n-lxm & [ SYNSEM.LOCAL.CAT.HEAD.PRD #prd ] ].
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-13 / SSH) 
+;; *철수가 안 빵을 먹는다 
+;; *잘 철수가 오다
+;; 기존의 제약으로는 막지 못하는 부분이 있다.
+;; 왜 그런지는 현재로서 모르겠다.
+;; bool이 이전과 달라 저셔 그런 것이 아닐까?
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+basic-head-mod-phrase-simple :+
+ [ SYNSEM.LOCAL.CAT.MC #mc,
+   HEAD-DTR.SYNSEM.LOCAL.CAT.LEX #lex,
+   NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ MC #mc,
+								   HEAD.MOD < [ LOCAL.CAT.LEX #lex ] > ] ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH) 
+;; 생성에서 과잉을 막기 위해 
+;; hd-mod-noncl-ph는 verbal을 수식하는 것으로 한정한다.
+;; 이는 기존 KRG와 차이가 나는 것으로 추후 수정할 수 있다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-22 / SSH) 
+;; 빵을 먹게 하다 가 이 구조로 분석되는 것을 막기 위해
+;; no_form 추가한다
+;; 즉, FORM이 있는 것은 당연히 수식 구조가 아니다. 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-21 / SSH) 
+;; 부사가 직접 수식하는 경우를 고려하여 
+;; NON-HEAD-DTR에서 [ LEX - ]를 빼었음 (아래 빈 자리)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-25 / SSH) 
+;; 철수와 소희가 오다에서 
+;; 철수와 가 이 구조로 분석되는 것을 막을 필요가 있음
+;; 부산에서 철수가 오다
+;; 철수가 부산에서 오다
+;; 철수가 소희와 (함께) 오다 
+;; 소희와 (함께) 철수가 오다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+basic-hd-mod-noncl-ph := adj-head-scop-phrase & non-lex &
+  [ C-CONT [ RELS <! !>, HCONS <! !> ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.VERBAL +,
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ 
+									HEAD [ FORM no_form,
+										   CASE [ GCASE no_gcase ],
+										   IC -,
+										   CLTYPE -,										  
+										   MOD < [] > ],
+									VAL.GAP <! !> ] ].
+
+
+
+;;nominal이 부사구가 되어 수식하는 경우
+basic-hd-mod-adverbial-ph := basic-hd-mod-noncl-ph &
+  [	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -,
+									HEAD [ NOMINAL +,
+										   CASE.SCASE ye_scase ] ] ].
+
+hd-mod-adverbial-ph := basic-hd-mod-adverbial-ph & ph-same-style.
+hd-mod-adverbial-ph-robust-rs := basic-hd-mod-adverbial-ph & ph-rs-style.
+hd-mod-adverbial-ph-robust-sr := basic-hd-mod-adverbial-ph & ph-sr-style.
+
+;;adverbs가 직접 수식하는 경우
+basic-hd-mod-adv-ph := basic-hd-mod-noncl-ph &
+  [	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX +,
+									HEAD [ POS adv ] ] ].
+hd-mod-adv-ph := basic-hd-mod-adv-ph & ph-same-style.
+hd-mod-adv-ph-robust-rs := basic-hd-mod-adv-ph & ph-rs-style.
+hd-mod-adv-ph-robust-sr := basic-hd-mod-adv-ph & ph-sr-style.
+
+; hd-mod-noncl-ph := adj-head-scop-phrase & non-lex &
+;   [ C-CONT [ RELS <! !>, HCONS <! !> ],
+; 	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD [ CLTYPE -, MOD < [] > ],
+; 									VAL.GAP <! !> ] ].
+
+hd-mod-cl-ph := adj-head-scop-phrase & non-lex &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CLTYPE + ].
+
+
+adj-head-int-phrase :+ non-lex &
+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE gcase,
+											 SCASE no_scase ] ].
+
+
+
+;; 세 명의 학생
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH) 
+;; basic-head-mod-phrase-simple 에
+;; 이미 아래가 명세됨
+;;      RELS <! !>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;hd-mod-gen-cl-ph := hd-mod-cl-ph &
+hd-mod-gen-cl-ph := adj-head-int-phrase & ph-head-style &
+ [ C-CONT [ HCONS <! !> ],
+   NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ CLTYPE +, POS noun, CASE.GCASE gen ] ],
+   HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.POS noun ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-20 / SSH) 
+;;철수의 책 / 소희의 다리 / 그놈 목소리 / 남자 이야기 / 미국의 오바마
+;; 이 구조가 int 인지 아닌지는 추후에 검토해 보아야 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-25 / SSH) 
+;; 속격은 NP를 수식하는 것으로 가정
+;; 따라서 HEAD에 LEX - 추가 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+hd-mod-gen-noncl-ph := adj-head-int-phrase & ph-head-style &
+ [ C-CONT [ HCONS <! !> ],
+   NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ CLTYPE -, POS noun, CASE.GCASE gen ] ],
+   HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ POS noun ] ] ].
+
+basic-hd-mod-noncl-int-nominal-ph := adj-head-int-phrase &
+  [ C-CONT [ RELS <! !>, HCONS <! !> ],
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ CLTYPE -, POS noun, CASE.GCASE no_gcase, MOD < #synsem > ] ],
+	HEAD-DTR.SYNSEM #synsem & [ LOCAL.CAT [ HEAD.POS verb,
+											VAL.GAP <! !> ] ] ].
+
+;   [ C-CONT [ RELS <! !>, HCONS <! !> ],
+; 	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX -, HEAD [ CLTYPE -, POS noun, CASE.GCASE gcase ] ],
+; 	HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POS verb,
+; 								VAL.GAP <! !> ] ].
+
+hd-mod-noncl-int-nominal-ph := basic-hd-mod-noncl-int-nominal-ph & ph-same-style.
+hd-mod-noncl-int-nominal-ph-rs := basic-hd-mod-noncl-int-nominal-ph & ph-rs-style.
+hd-mod-noncl-int-nominal-ph-sr := basic-hd-mod-noncl-int-nominal-ph & ph-sr-style.
+
+
+basic-hd-mod-noncl-int-adv-ph := adj-head-int-phrase &
+  [ C-CONT [ RELS <! !>, HCONS <! !> ],
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ LEX +, HEAD [ CLTYPE -, POS adv ] ],
+	HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POS verb,
+								VAL.GAP <! !> ] ].
+
+hd-mod-noncl-int-adv-ph := basic-hd-mod-noncl-int-adv-ph & ph-same-style.
+hd-mod-noncl-int-adv-ph-rs := basic-hd-mod-noncl-int-adv-ph & ph-rs-style.
+hd-mod-noncl-int-adv-ph-sr := basic-hd-mod-noncl-int-adv-ph & ph-sr-style.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-16 / SSH) 
+;; 유동 양사화 구문이 MATRIX와 충돌함
+;;   세 명이 + 오다
+;;   세 병을 + 먹다
+;;   2층에 가게를 열었다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; hd-mod-vcase-cl-ph := hd-mod-cl-ph &
+;  [ C-CONT [ RELS.FIRST [ PRED "part-of_rel",
+; 						 ARG0 #index ],
+;             HCONS <! !> ],
+;    NON-HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK.INDEX #index,
+;    HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.POS verb ].
+
+;hd-mod-nom-cl-ph := hd-mod-vcase-cl-ph &
+; [ C-CONT.RELS <! [ ARG1 #index ] !>,
+;   NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE nom,
+;   HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.SUBJ < [ LOCAL.CONT.HOOK.INDEX #index ] > ].
+
+
+;;;관계절    RELATIVE CLAUSES
+; hd-mod-rel-ph := adj-head-phrase & isect-mod-phrase & non-lex &
+; [ SYNSEM.LOCAL.CONT [ HOOK [ LTOP #top,
+; 							 INDEX #ind ] ],
+;   NON-HEAD-DTR.SYNSEM.LOCAL [ CAT.HEAD [ POS verb,
+; 										 MOD < [  ] > ] ],
+;   HEAD-DTR.SYNSEM.LOCAL [CONT [ HOOK [ LTOP #top,
+; 									   INDEX #ind ] ],
+; 						 CAT.HEAD.POS noun ] ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-21 / SSH) 
+;; COVERAGE를 높이기 위해 매우 naive하게 풀었음
+;; 위 부분은 JACY에서 따온 것이며
+;; 아래 부분은 matrix를 약간만 손을 본 것임
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+hd-mod-rel-ph := isect-mod-phrase & head-final & non-lex &
+[ SYNSEM.LOCAL.CONT [ HOOK [ LTOP #top,
+							 INDEX #ind ] ],
+  HEAD-DTR.SYNSEM.LOCAL [CONT [ HOOK [ LTOP #top,
+									   INDEX #ind ] ],
+						 CAT.HEAD.POS noun ],
+  SYNSEM [ LOCAL.CAT.POSTHEAD #ph,
+		   MODIFIED lmod & [ PERIPH #periph ],
+		   LIGHT #light ],
+  HEAD-DTR.SYNSEM [ LOCAL.CAT [ POSTHEAD #ph,
+								LEX -],
+					LIGHT #light ],
+  NON-HEAD-DTR.SYNSEM [ LOCAL.CAT.HEAD [ IC -,
+										 POS verb,
+										 MOD < [] > ],
+						NON-LOCAL [ SLASH 0-dlist,
+									REL 0-dlist ],
+						MODIFIED.PERIPH #periph ] ].
+
+
+;;동격절
+hd-mod-app-ph := adj-head-phrase & isect-mod-phrase & non-lex & 
+ [ C-CONT [ RELS <! !>, HCONS <! !> ],
+   NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD [ POS verb,
+										  MOD < [] >,
+										  CASE [ GCASE gcase, SCASE no_scase ],
+										  PRD - ],
+								   VAL [ SUBJ <>, COMPS <> ] ],
+   HEAD-DTR.SYNSEM.LOCAL [ CAT [ LEX -,
+								 HEAD [ POS noun ] ] ] ].
+
+;  [ SYNSEM.LOCAL.BAR +,
+;                        C-CONT [RELS <! !>,
+;                                HCONS <! !>],
+;                        ARGS <[SYNSEM.LOCAL [CAT [HEAD [J-POSTHEAD left,
+;                                                        ADJ -,
+;                                                        MAIN-PRD -],
+;                                                  VAL saturated],
+;                                             BAR +]],
+;                              [ SYNSEM synsem & [LOCAL.BAR +]]> ].
+
+
+
+; Rules for building NPs.  Note that the Matrix uses SPR for
+; the specifier of nouns and SUBJ for the subject (specifier) of verbs.
+
+head-spec-phrase := basic-head-spec-phrase & head-final & non-lex &
+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.NUMERAL - ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-20 / SSH) 
+;; 이 존의 책
+;; 위 구문을 처리하기 위해 임시로 도입
+;; det + N 으로만 head-spec이 성립
+;; 즉, spec은 phrase와 결합하지 않는다. 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+head-spec-phrase-2 := head-valence-phrase & phrasal & head-final & non-lex &
+  [ C-CONT [ RELS <! !>, HCONS <! !> ],
+	NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD [ POS det, NUMERAL - ],
+	HEAD-DTR adj-head-int-phrase,
+	HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POS noun,
+								VAL.GAP <! !> ],
+	INFLECTED +,
+    SYNSEM [ LOCAL.CAT [ VAL [ SUBJ #subj,
+                               COMPS #spcomps,
+                               SPEC #spec ],
+                         POSTHEAD #ph ],
+             MODIFIED #modif ],
+    HEAD-DTR [ INFLECTED +,
+               SYNSEM [ LOCAL [ CAT [ HEAD #head,
+                                      VAL [ SUBJ #subj,
+                                            COMPS olist & #comps,
+                                            SPR < >,
+                                            SPEC #spec ],
+                                      POSTHEAD #ph ],
+                                CONT.HOOK #hdhook ],
+                        MODIFIED #hmodif ] ],
+    NON-HEAD-DTR.SYNSEM 
+	 [ LOCAL [ CAT [ VAL [ SPEC < [ LOCAL [ CAT [ HEAD #head,
+                                                      VAL.COMPS #comps ],
+                                                CONT.HOOK #hdhook ],
+                                        MODIFIED #hmodif ] >,
+                               COMPS #spcomps ] ],
+                   CONT.HOOK #hook ],
+           MODIFIED #modif ],
+    C-CONT [ HOOK #hook,
+             RELS <! !>,
+	     HCONS <! !> ] ].
+
+
+num-cl-phrase := basic-head-spec-phrase & head-final & non-lex &
+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.NUMERAL + ].
+
+; Bare NP phrase.  Consider modifying the PRED value of the quantifier relation
+; introduced to match the semantic effect of bare NPs in your language.
+
+
+bare-np-phrase := basic-bare-np-phrase & non-lex & ph-unary-style &
+  [ C-CONT.RELS <! [ PRED "exist_q_rel" ] !>,
+	HEAD-DTR n-del-lex & [ SYNSEM.LOCAL.CAT.HEAD.CLTYPE - ] ].
+
+bare-vnp-phrase := head-only & non-lex &
+   [ SYNSEM.LOCAL.CAT [ HEAD [ POS noun,
+							   VERBAL +,
+							   FORM nocomp_form ],
+ 					   VAL #val ],
+     HEAD-DTR vn & [ SYNSEM.LOCAL [ CAT.VAL #val & [ SPR <> ] ] ],
+     C-CONT [ RELS <! !>, HCONS <! !>  ] ].
+
+; Introducing VERB-CL keeps track whether main-verb is present in cluster
+
+lex-or-phrase-synsem :+ [ VERB-CL luk ].
+
+lex-rule :+ [ SYNSEM.VERB-CL #vc,
+    DTR.SYNSEM.VERB-CL #vc ].
+
+; This lexical rule adds the neg_r_rel to the verb's
+; 	RELS list.  It is instantiated by a spelling-changing
+; 	rule as specified in irules.tdl.
+
+neg-infl-lex-rule := cont-change-only-lex-rule & inflecting-lex-rule &
+  [ C-CONT [ HOOK [ XARG #xarg,
+                    LTOP #ltop,
+                    INDEX #ind ],
+             RELS <! event-relation &
+                     [ PRED "_neg_r_rel",
+                       LBL #ltop,
+                       ARG1 #harg ] !>,
+             HCONS <! qeq &
+                      [ HARG #harg,
+                        LARG #larg ] !> ],
+    SYNSEM.LKEYS #lkeys,
+    DTR lex-item &
+        [ SYNSEM [ LKEYS #lkeys,
+                   LOCAL [ CONT.HOOK [ XARG #xarg,
+                                       INDEX #ind,
+                                       LTOP #larg ],
+                           CAT.HEAD.POS verb ] ] ] ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; COORDINATION 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;바부와 천재 , 바보 천재가 
+;;이뿌고 착하다
+coord-phrase :+ 
+ [ STYLE #style,
+   SYNSEM.LOCAL.CAT.HEAD #head, 
+   RCOORD-DTR [ STYLE #style, 
+				SYNSEM.LOCAL.CAT.HEAD #head  ] ].
+
+;  [ STYLE #style,
+;    LCOORD-DTR.STYLE #style,
+;    RCOORD-DTR.STYLE #style ].
+
+
+;;; Coordination Strategy 1
+
+np1-top-coord-rule := basic-np-top-coord-rule & monopoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+np1-mid-coord-rule := basic-np-mid-coord-rule & monopoly-mid-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+np1-bottom-coord-rule := conj-first-bottom-coord-rule & np-bottom-coord-phrase &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+;;; Coordination Strategy 1
+
+vp1-top-coord-rule := basic-vp-top-coord-rule & monopoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+vp1-mid-coord-rule := basic-vp-mid-coord-rule & monopoly-mid-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+vp1-bottom-coord-rule := conj-first-bottom-coord-rule & vp-bottom-coord-phrase &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+;;; Coordination Strategy 1
+
+s1-top-coord-rule := basic-s-top-coord-rule & monopoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+s1-mid-coord-rule := basic-s-mid-coord-rule & monopoly-mid-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+s1-bottom-coord-rule := conj-first-bottom-coord-rule & s-bottom-coord-phrase &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+;;; Coordination Strategy 2
+
+n2-top-coord-rule := basic-np-top-coord-rule & monopoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "2" ].
+
+n2-mid-coord-rule := basic-np-mid-coord-rule & monopoly-mid-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "2" ].
+
+n2-bottom-coord-rule := infl-bottom-coord-rule & 
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE no_gcase,
+	SYNSEM.LOCAL.CAT.VAL [ SPR < >,
+						   SUBJ < >,
+						   COMPS < >,
+						   SPEC < > ],
+	SYNSEM.LOCAL.COORD-STRAT "2",
+    DTR n-p-lex & [ SYNSEM.LOCAL.CAT.HEAD.POS noun ] ].
+
+n2-bottom-coord-and-rule := n2-bottom-coord-rule &
+ [ SYNSEM.LOCAL.COORD-REL.PRED "_and_coord_rel" ].
+n2-bottom-coord-or-rule := n2-bottom-coord-rule &
+ [ SYNSEM.LOCAL.COORD-REL.PRED "_or_coord_rel" ].
+
+;;철수와 소희
+n2-bottom-coord-rule-1 := n2-bottom-coord-and-rule & 
+ [ DTR const-n-p-lex ].
+
+;;학생들과 선생님 
+n2-bottom-coord-rule-2 := n2-bottom-coord-and-rule & 
+ [ DTR infl-n-p-no-scase-mkr-lex  ].
+
+;;학생에게와 선생님께
+n2-bottom-coord-rule-3 := n2-bottom-coord-and-rule & 
+ [ DTR infl-n-p-scase-mkr-lex ].
+
+;;철수나 소희
+n2-bottom-coord-rule-4 := n2-bottom-coord-or-rule & 
+ [ DTR const-n-p-lex ].
+
+;;학생들이나 선생님 
+n2-bottom-coord-rule-5 := n2-bottom-coord-or-rule & 
+ [ DTR infl-n-p-no-scase-mkr-lex  ].
+
+;;학생에게나 선생님께
+n2-bottom-coord-rule-6 := n2-bottom-coord-or-rule & 
+ [ DTR infl-n-p-scase-mkr-lex ].
+
+ 
+n-than-coord := infl-bottom-coord-rule & 
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE.GCASE no_gcase,
+	SYNSEM.LOCAL.CAT.VAL [ SPR < >,
+						   SUBJ < >,
+						   COMPS < >,
+						   SPEC < > ],
+	SYNSEM.LOCAL.COORD-STRAT "2",
+    SYNSEM.LOCAL.COORD-REL.PRED "_than_coord_rel",
+    DTR n-p-lex & [ SYNSEM.LOCAL.CAT.HEAD.POS noun ] ].
+
+;;; Coordination Strategy 3
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-25 / SSH) 
+;; 소희 선예 유빈이랑 예은
+;; 위에서 -랑 은 stratergy 2의 일종으로 보고 아래는 rule에서 일단 제외한다.
+;; commnet out한 부분 : rules, irules
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+n3-top-coord-rule := basic-n-top-coord-rule & apoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "3" ].
+
+n3-bottom-coord-rule := infl-bottom-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "3",
+    SYNSEM.LOCAL.COORD-REL.PRED "_and_coord_rel",
+    DTR.SYNSEM.LOCAL.CAT.HEAD.POS noun ].
+
+;;; Coordination Strategy 4
+
+n4-top-coord-rule := basic-n-top-coord-rule & omni-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "4" ].
+
+n4-mid-coord-rule := basic-n-mid-coord-rule & omni-mid-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "4" ].
+
+n4-bottom-coord-rule := infl-bottom-coord-rule &
+  [ SYNSEM.LOCAL.CAT.VAL [ SPR < >,
+						   SUBJ < >,
+						   COMPS < >,
+						   SPEC < > ],
+	SYNSEM.LOCAL.COORD-STRAT "4",
+    SYNSEM.LOCAL.COORD-REL.PRED "_and_coord_rel",
+    DTR n-p-lex & [ SYNSEM.LOCAL.CAT.HEAD.POS noun ] ].
+
+n4-left-coord-rule := infl-left-coord-rule &
+  [ SYNSEM.LOCAL.CAT.VAL [ SPR < >,
+						   SUBJ < >,
+						   COMPS < >,
+						   SPEC < > ],
+	SYNSEM.LOCAL.COORD-STRAT "4",
+	SYNSEM.LOCAL.CAT [ HEAD [ POS noun, CASE [ GCASE no_gcase,
+											   SCASE no_scase ] ] ],
+    DTR n-p-lex & [ SYNSEM.LOCAL.CAT.HEAD.POS noun ],
+	SYNSEM.LOCAL.COORD-REL.PRED "_and_coord_rel" ].
+
+;;; Coordination Strategy 5
+
+np5-top-coord-rule := basic-np-top-coord-rule & apoly-top-coord-rule & ph-head-style &
+  [ SYNSEM.LOCAL.COORD-STRAT "5",
+	sYNSEM.LOCAL.CAT.LEX #lex,
+	LCOORD-DTR.SYNSEM.LOCAL.CAT [ LEX #lex, HEAD [ CASE [ GCASE #gcase, SCASE no_scase ] ] ],
+	RCOORD-DTR.SYNSEM.LOCAL.CAT [ LEX #lex, HEAD.CASE.GCASE #gcase ] ].
+
+np5-bottom-coord-rule := unary-bottom-coord-rule & np-bottom-coord-phrase & ph-unary-avm & non-lex &
+  [ SYNSEM.LOCAL [ COORD-STRAT "5",
+                   COORD-REL.PRED "_and_coord_rel" ] ].
+
+; Constrains SF to ques. Instantiated by a verbal affix.
+
+ques-infl-lex-rule := add-only-no-ccont-rule & inflecting-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF ques,
+    DTR lex-item &
+        [ SYNSEM.LOCAL.CAT.HEAD.POS verb ] ].

@@ -1,0 +1,697 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 17, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Proper Nouns
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-06 / SSH) 
+;; ALTKEYREL 로 변경하여야 함
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-10 / SSH) 
+;; 고유명사 : 사람, 개인(단수)
+;; honorific - ?
+;; plural - X
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+존 := n-3rd-prop &
+ [ STEM < "존" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_존_n_1_rel" ].
+메리 := n-3rd-prop &
+  [ STEM < "메리" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_메리_n_rel" ].
+철수 := n-3rd-prop &
+  [ STEM < "철수" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_철수_n_rel" ].
+빌-2 := n-3rd-prop &
+[ STEM < "빌" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_빌_n_rel" ].
+
+
+소희 := n-3rd-prop &
+  [ STEM < "소희" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_소희_n_rel" ].
+유빈 := n-3rd-prop &
+  [ STEM < "유빈" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_유빈_n_rel" ].
+예은 := n-3rd-prop &
+  [ STEM < "예은" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_예은_n_rel" ].
+선예 := n-3rd-prop &
+  [ STEM < "선예" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_선예_n_rel" ].
+선미2 := n-3rd-prop &
+  [ STEM < "선미" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_선미2_n_rel" ].
+
+동백 := n-3rd-prop &
+  [ STEM < "동백" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_동백_n_rel" ].
+
+지수 := n-3rd-prop &
+  [ STEM < "지수" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_지수_n_rel" ].
+
+
+민수 := n-3rd-prop &
+[ STEM < "민수" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_민수_n_rel" ].
+
+미아-2 := n-3rd-prop &
+[ STEM < "미아" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_미아_n_2_rel" ].
+
+
+순이 := n-3rd-prop &
+[ STEM < "순이" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_순이_n_rel" ].
+
+
+
+영희 := n-3rd-prop &
+[ STEM < "영희" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_영희_n_rel" ].
+
+영미 := n-3rd-prop &
+[ STEM < "영미" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_영미_n_rel" ].
+
+
+기무라군 := n-3rd-prop &
+[ STEM < "기무라군" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_기무라군_n_rel" ].
+
+김선생 := n-3rd-prop &
+[ STEM < "김선생" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_김선생_n_rel" ].
+
+
+닛코 := n-3rd-prop &
+[ STEM < "닛코" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_닛코_n_rel" ]. 
+
+다나카씨 := n-3rd-prop &
+[ STEM < "다나카씨" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_다나카씨_n_rel" ].
+
+
+다케야마 := n-3rd-prop &
+[ STEM < "다케야마" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_다케야마_n_rel" ].
+
+다코 := n-3rd-prop &
+[ STEM < "다코" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_다코_n_rel" ].
+
+
+모리오카 := n-3rd-prop &
+[ STEM < "모리오카" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_모리오카_n_rel" ].
+
+
+
+사사키 := n-3rd-prop &
+[ STEM < "사사키" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_사사키_n_rel" ].
+
+
+
+사이토 := n-3rd-prop &
+[ STEM < "사이토" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_사이토_n_rel" ].
+
+
+야마다군 := n-3rd-prop &
+[ STEM < "야마다군" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_야마다군_n_rel" ]. 
+
+
+영수-1 := n-3rd-prop &
+[ STEM < "영수" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_영수_n_1_rel" ].
+
+
+
+
+콜롬부스 := n-3rd-prop &
+[ STEM < "콜롬부스" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Columbus_n_rel" ].
+
+
+
+톰 := n-3rd-prop &
+[ STEM < "톰" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_톰_n_rel" ].
+
+
+하나코 := n-3rd-prop &
+[ STEM < "하나코" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_하나코_n_1_rel" ].
+
+
+
+
+헨리8세 := n-3rd-prop &
+[ STEM < "헨리8세" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_헨리8세_n_rel" ].
+
+
+히데요시 := n-3rd-prop &
+[ STEM < "히데요시" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Hideyoshi_n_rel" ].
+
+박의원 := n-3rd-prop & 
+[ STEM < "박의원" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_박의원_n_rel" ].
+
+흥부 := n-3rd-prop & 
+[ STEM < "흥부" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_흥부_n_rel" ].
+
+용남 := n-3rd-prop & 
+[ STEM < "용남" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_용남_n_rel" ].
+
+미자 := n-3rd-prop & 
+[ STEM < "미자" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_미자_n_rel" ].
+
+벡토르 := n-3rd-prop & 
+[ STEM < "벡토르" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_벡토르_n_rel" ].
+
+
+hilamassuichilo := n-prop &
+[ STEM < "히라마쓰 이치로" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Mr-Ichiro-Hiramatsu_n_rel" ].
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-10 / SSH) 
+;; 고유명사 : 사람, 그룹(단수/복수)
+;; honorific - ??
+;; plural - ??
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+원더걸스 := n-group-prop &
+  [ STEM < "원더걸스" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_원더걸스_n_rel" ].
+
+도요토미군 := n-group-prop &
+[ STEM < "도요토미군" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_도요토미군_n_rel" ].
+
+
+
+일본정부 := n-group-prop &
+[ STEM < "일본정부" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_일본정부_n_rel" ].
+
+
+
+
+한국어학회 := n-group-prop &
+[ STEM < "한국어학회" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_한국어학회_n_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-10 / SSH) 
+;; 고유명사 : 지역명, 기관명 
+;; honorific - X
+;; plural - X
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+고려대학교 := n-loc-prop &
+  [ STEM < "고려대학교" >, 
+    SYNSEM.LKEYS.KEYREL.CARG "_고려대학교_n_rel" ].
+
+대한민국 := n-loc-prop &
+[ STEM < "대한민국" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_대한민국_n_rel" ].
+
+한국 := n-loc-prop &
+[ STEM < "한국" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_한국_n_rel" ].
+
+
+서울 := n-loc-prop &
+[ STEM < "서울" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_서울_n_rel" ].
+
+
+
+일본 := n-loc-prop &
+  [ STEM < "일본" >, 
+    SYNSEM.LKEYS.KEYREL.CARG "_일본_n_1_rel" ].
+
+W호텔 := n-loc-prop &
+  [ STEM < "W호텔" >, 
+    SYNSEM.LKEYS.KEYREL.CARG "_W호텔_n_1_rel" ].
+
+
+미국 := n-loc-prop &
+[ STEM < "미국" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_미국_n_rel" ].
+
+
+도쿄 := n-loc-prop &
+[ STEM < "도쿄" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Tokyo_n_rel" ].
+
+동경 := n-loc-prop &
+[ STEM < "동경" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Tokyo_n_rel" ].
+
+도쿄도 := n-loc-prop &
+[ STEM < "도쿄도" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Tokyo-to_n_rel" ].
+
+대전 := n-loc-prop &
+[ STEM < "대전" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_대전_n_rel" ].
+
+
+교토 := n-loc-prop &
+[ STEM < "교토" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Kyoto_n_rel" ].
+
+교토군 := n-loc-prop &
+[ STEM < "교토군" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Kyoto-gun_n_rel" ].
+
+교토시 := n-loc-prop &
+[ STEM < "교토시" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Kyoto-shi_n_rel" ].
+
+
+오사카 := n-loc-prop &
+[ STEM < "오사카" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Osaka_n_rel" ].
+
+독일 := n-loc-prop &
+[ STEM < "독일" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_독일_n_rel" ].
+
+
+로마 := n-loc-prop &
+[ STEM < "로마" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_로마_n_rel" ].
+
+
+밀라노 := n-loc-prop &
+[ STEM < "밀라노" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_밀라노_n_rel" ].
+
+
+마닐라시 := n-loc-prop &
+[ STEM < "마닐라시" >,
+  SYNSEM.LKEYS.KEYREL.CARG "Manila-City_rel" ].
+
+백제 := n-loc-prop &
+[ STEM < "백제" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_백제_n_rel" ].
+
+
+신쥬쿠 := n-loc-prop &
+[ STEM < "신쥬쿠" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_ShinJuKu_n_rel" ].
+
+
+소련 := n-loc-prop &
+[ STEM < "소련" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_the-Sovient-Union_n_rel" ].
+
+
+아프리카 := n-loc-prop &
+[ STEM < "아프리카" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_아프리카_n_rel" ].
+
+
+사우디아라비아정부 := n-loc-prop &
+[ STEM < "사우디아라비아정부" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_사우디아라비아정부_n_rel" ].
+
+중국 := n-loc-prop &
+[ STEM < "중국" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_China_n_rel" ].
+
+
+쥬고쿠 := n-loc-prop &
+[ STEM < "쥬고쿠" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Chugoku_n_rel" ].
+
+
+
+
+IBM:= n-loc-prop &
+[ STEM < "IBM" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_IBM_n_rel" ].
+
+jrkaksa-10 := n-loc-prop &
+[ STEM < "JR 각사" >,
+  SYNSEM.LKEYS.KEYREL.CARG "JR_Companies_n_rel" ].
+
+jrtokhai-10 := n-loc-prop &
+[ STEM < "JR 도카이" >,
+  SYNSEM.LKEYS.KEYREL.CARG "JR_Tokai_n_rel" ].
+
+enenssisophutuweye-10 := n-loc-prop &
+[ STEM < "N&C소프트웨어" >,
+  SYNSEM.LKEYS.KEYREL.CARG "N&C_Software_n_rel" ].
+
+
+
+시코쿠 := n-loc-prop &
+[ STEM < "시코쿠" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Shikoku_n_rel" ].
+
+
+유럽 := n-loc-prop &
+[ STEM < "유럽" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Europe_n_rel" ].
+
+
+제주도 := n-loc-prop &
+[ STEM < "제주도" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_제주도_n_rel" ].
+
+
+지바현 := n-loc-prop &
+[ STEM < "지바현" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Chiba-ken_n_rel" ].
+
+
+치바현 := n-loc-prop &
+[ STEM < "치바현" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Chiba-ken_n_rel" ].
+
+
+큐슈 := n-loc-prop &
+[ STEM < "큐슈" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Kyushu_n_rel" ].
+
+
+태평양 := n-loc-prop &
+[ STEM < "태평양" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_태평양_n_rel" ].
+
+후지산 := n-loc-prop &
+[ STEM < "후지산" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Mount-Fuji_n_rel" ].
+
+히말라야 := n-loc-prop &
+[ STEM < "히말라야" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Himalaya_n_rel" ].
+
+LA := n-loc-prop & 
+[ STEM < "LA" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_LA_n_rel" ].
+
+강원도 := n-loc-prop & 
+[ STEM < "강원도" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_강원도_n_rel" ].
+
+광주 := n-loc-prop & 
+[ STEM < "광주" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_광주_n_rel" ].
+
+부산 := n-loc-prop & 
+[ STEM < "부산" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_부산_n_rel" ].
+
+영국 := n-loc-prop & 
+[ STEM < "영국" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_영국_n_rel" ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-26 / SSH) 
+;; 범주를 정확히 정의하기가 어려움
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+가마쿠라 := n-prop &
+[ STEM < "가마쿠라" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_kamakhwula_n_rel" ].
+
+
+간파쿠 := n-prop &
+[ STEM < "간파쿠" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Kanpaku_n_rel" ].
+
+건설성 := n-prop &
+[ STEM < "건설성" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_건설성_n_rel" ].
+
+고르바초프 := n-prop &
+[ STEM < "고르바초프" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Gorvachev_n_rel" ].
+
+
+도호쿠신칸센 := n-prop &
+[ STEM < "도호쿠신칸센" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_TohokuShinkansen_n_rel" ].
+
+미크로네시아 := n-prop &
+[ STEM < "미크로네시아" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Micronesia_n_rel" ].
+
+벨-2 := n-prop &
+[ STEM < "벨" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Bell_n_rel" ].
+
+
+부닌씨 := n-prop &
+[ STEM < "부닌씨" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Mr-Boonin_n_rel" ].
+
+
+불교 := n-prop &
+[ STEM < "불교" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_불교_n_rel" ].
+
+
+블루트레인 := n-prop &
+[ STEM < "블루트레인" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_The-Blue-Train_n_rel" ].
+
+
+
+사회당 := n-prop &
+[ STEM < "사회당" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Socialist_Party_n_rel" ].
+
+
+
+쇼와 := n-prop &
+[ STEM < "쇼와" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Showa_Era_n_rel" ].
+
+
+
+스미모토상사 := n-prop &
+[ STEM < "스미모토상사" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Sumimoto-Company_n_rel" ].
+
+
+아사마야마 := n-prop &
+[ STEM < "아사마야마" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Mount-Asama_n_rel" ].
+
+아사히통신사 := n-prop &
+[ STEM < "아사히통신사" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Asahi-News-Agency_n_rel" ].
+
+
+
+에도 := n-prop &
+[ STEM < "에도" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Edo_n_rel" ].
+
+
+
+오쿠스산 := n-prop &
+[ STEM < "오쿠스산" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Mount-Okusu_n_rel" ].
+
+
+외무성 := n-prop &
+[ STEM < "외무성" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_외무성_n_rel" ].
+
+
+
+유니버셜문법 := n-prop &
+[ STEM < "유니버셜문법" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Universal-Grammar_n_rel" ].
+
+유니콤오토메이션 := n-prop &
+[ STEM < "유니콤 오토메이션" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Unicom-Automation_n_rel" ].
+
+
+자민당 := n-prop &
+[ STEM < "자민당" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_자민당_n_rel" ].
+
+
+지로 := n-prop &
+[ STEM < "지로" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Jiro_n_rel" ].
+
+
+코끼리표 := n-prop &
+[ STEM < "코끼리표" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_코끼리표_n_rel" ].
+
+
+
+크리스마스 := n-prop &
+[ STEM < "크리스마스" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Christmas_n_rel" ].
+
+
+타로 := n-prop &
+[ STEM < "타로" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Taro_n_rel" ].
+
+
+하치노헤 := n-prop &
+[ STEM < "하치노헤" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Hachinohe_n_rel" ].
+
+후지쓰 := n-prop &
+[ STEM < "후지쓰" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_Fujitsu-Ltd._n_rel" ].
+
+對北정책 := n-prop &
+[ STEM < "對北정책" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_對北정책_n_rel" ].
+
+북미관계 := n-prop &
+[ STEM < "북미관계" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_북미관계_n_rel" ].
+
+911테러 := n-prop &
+[ STEM < "9·11테러" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_911테러_n_rel" ].
+
+imf경제 := n-prop &
+[ STEM < "IMF경제" >,
+  SYNSEM.LKEYS.KEYREL.CARG "_IMF경제_n_rel" ].
+
+서울시장 := n-prop &
+ [ STEM < "서울시장" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_서울시장_n_1_rel" ].
+
+국방부장관 := n-prop &
+ [ STEM < "국방부장관" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_국방부장관_n_1_rel" ].
+
+한국팀 := n-group-prop &
+  [ STEM < "한국팀" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_한국팀_n_rel" ].
+
+일본팀 := n-group-prop &
+  [ STEM < "일본팀" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_일본팀_n_rel" ].
+
+맹호부대 := n-group-prop &
+  [ STEM < "맹호부대" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_맹호부대_n_rel" ].
+
+기영 := n-3rd-prop &
+ [ STEM < "기영" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_기영_n_1_rel" ].
+
+은아 := n-3rd-prop &
+ [ STEM < "은아" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_은아_n_1_rel" ].
+
+성산대교 := n-loc-prop &
+ [ STEM < "성산대교" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_성산대교_n_1_rel" ].
+
+동남아인 := n-prop &
+ [ STEM < "동남아인" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_동남아인_n_rel" ].
+
+플레이스테이션3 := n-prop &
+ [ STEM < "플레이스테이션3" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_플레이스테이션3_n_rel" ].
+
+서울대회 := n-prop &
+ [ STEM < "서울대회" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_서울대회_n_rel" ].
+
+KAIST := n-loc-prop &
+ [ STEM < "KAIST" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_KAIST_n_1_rel" ].
+
+국제연맹 := n-prop &
+ [ STEM < "국제연맹" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_국제연맹_n_rel" ].
+
+태경 := n-3rd-prop &
+ [ STEM < "태경" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_태경_n_rel" ].
+
+수진 := n-3rd-prop &
+ [ STEM < "수진" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_수진_n_rel" ].
+
+칠갑산 := n-loc-prop &
+ [ STEM < "칠갑산" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_칠갑산_n_1_rel" ].
+
+대학수능시험 := n-prop &
+ [ STEM < "대학수능시험" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_대학수능시험_n_1_rel" ].
+
+추산 := n-3rd-prop &
+ [ STEM < "추산" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_추산_n_1_rel" ].
+
+정인홍 := n-3rd-prop &
+ [ STEM < "정인홍" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_정인홍_n_1_rel" ].
+
+김부장 := n-3rd-prop &
+ [ STEM < "김부장" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_김부장_n_1_rel" ].
+
+영철 := n-3rd-prop &
+ [ STEM < "영철" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_영철_n_1_rel" ].
+
+유랑극단 := n-group-prop &
+  [ STEM < "유랑극단" >,
+    SYNSEM.LKEYS.KEYREL.CARG "_유랑극단_n_rel" ].
+
+콘솔 := n-prop &
+ [ STEM < "콘솔" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_콘솔_n_1_rel" ].
+
+하이든 := n-3rd-prop &
+ [ STEM < "하이든" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_하이든_n_1_rel" ].
+
+장령 := n-prop &
+ [ STEM < "장령" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_장령_n_1_rel" ].
+
+동학농민 := n-prop &
+ [ STEM < "동학농민" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_동학농민_n_1_rel" ].
+
+농민혁명운동 := n-prop &
+ [ STEM < "농민혁명운동" >,
+   SYNSEM.LKEYS.KEYREL.CARG "_농민혁명운동_n_1_rel" ].
+

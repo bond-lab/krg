@@ -1,0 +1,18 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;; It a lexicon does not belong to any other lexicon types, please insert the lexicon to this file.
+;; e.g. symbols ([,],@ ...)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 17, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+;;; Symbols
+
+
+percent := n-cl &
+ [ STEM < "%" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_percent_cl_rel" ].

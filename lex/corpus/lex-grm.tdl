@@ -1,0 +1,6669 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; These files aim to classify large lexcions into separate files, according to its POS or function
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;	Grammarticalized Forms
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;	File Created: July. 16, 2009 by Sanghoun Song
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+곤혹스럽-80 := a-intr &
+  [ STEM < "곤혹스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곤혹스럽_v_80_rel" ].
+
+근거없-80 := a-intr &
+  [ STEM < "근거없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근거없_v_80_rel" ].
+
+끄집어내-80 := v-acc-tr &
+  [ STEM < "끄집어내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끄집어내_v_80_rel" ].
+
+남모르-80 := a-intr &
+  [ STEM < "남모르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남모르_v_80_rel" ].
+
+내뱉-80 := v-acc-tr &
+  [ STEM < "내뱉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내뱉_v_80_rel" ].
+
+내어다팔-80 := v-acc-tr &
+  [ STEM < "내어다팔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내어다팔_v_80_rel" ].
+
+눈부시-80 := a-intr &
+  [ STEM < "눈부시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈부시_v_80_rel" ].
+
+눈치채-80 := v-intr &
+  [ STEM < "눈치채" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈치채_v_80_rel" ].
+
+다급해지-80 := a-intr &
+  [ STEM < "다급해지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다급해지_v_80_rel" ].
+
+단조롭-80 := a-intr &
+  [ STEM < "단조롭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단조롭_v_80_rel" ].
+
+덜컹거리-80 := a-intr &
+  [ STEM < "덜컹거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덜컹거리_v_80_rel" ].
+
+돌아다보-80 := v-intr &
+  [ STEM < "돌아다보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌아다보_v_80_rel" ].
+
+되어가-80 := v-intr &
+  [ STEM < "되어가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되어가_v_80_rel" ].
+
+뒤잇-80 := v-intr &
+  [ STEM < "뒤잇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤잇_v_80_rel" ].
+
+뒤집어쓰-80 := v-acc-tr &
+  [ STEM < "뒤집어쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤집어쓰_v_80_rel" ].
+
+뒤척이-80 := v-intr &
+  [ STEM < "뒤척이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤척이_v_80_rel" ].
+
+때늦-80 := a-intr &
+  [ STEM < "때늦" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때늦_v_80_rel" ].
+
+때타-80 := v-intr &
+  [ STEM < "때타" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때타_v_80_rel" ].
+
+뜻깊-80 := a-intr &
+  [ STEM < "뜻깊" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜻깊_v_80_rel" ].
+
+마음가-80 := v-dat-tr &
+  [ STEM < "마음가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마음가_v_80_rel" ].
+
+말씀드리-80 := v-dat-tr &
+  [ STEM < "말씀드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말씀드리_v_80_rel" ].
+
+망가뜨리-80 := v-acc-tr &
+  [ STEM < "망가뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_망가뜨리_v_80_rel" ].
+
+맞이하-80 := v-acc-tr &
+  [ STEM < "맞이하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞이하_v_80_rel" ].
+
+먹음직스럽-80 := a-intr &
+  [ STEM < "먹음직스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_먹음직스럽_v_80_rel" ].
+
+받쳐들-80 := v-acc-tr &
+  [ STEM < "받쳐들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_받쳐들_v_80_rel" ].
+
+밝혀지-80 := v-basic-pass &
+  [ STEM < "밝혀지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밝혀지_v_80_rel" ].
+
+별다르-80 := a-intr &
+  [ STEM < "별다르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별다르_v_80_rel" ].
+
+부러지-80 := v-intr &
+  [ STEM < "부러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부러지_v_80_rel" ].
+
+부자유스럽-80 := a-intr &
+  [ STEM < "부자유스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부자유스럽_v_80_rel" ].
+
+불타-80 := v-intr &
+  [ STEM < "불타" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불타_v_80_rel" ].
+
+빈둥거리-80 := v-intr &
+  [ STEM < "빈둥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빈둥거리_v_80_rel" ].
+
+뺨치-80 := v-acc-tr &
+  [ STEM < "뺨치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뺨치_v_80_rel" ].
+
+술취하-80 := v-intr &
+  [ STEM < "술취하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술취하_v_80_rel" ].
+
+슬퍼지-80 := v-intr &
+  [ STEM < "슬퍼지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬퍼지_v_80_rel" ].
+
+신경쓰-80 := v-acc-tr &
+  [ STEM < "신경쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신경쓰_v_80_rel" ].
+
+쑤군덕대-80 := v-intr &
+  [ STEM < "쑤군덕대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쑤군덕대_v_80_rel" ].
+
+알려드리-80 := v-dat-tr &
+  [ STEM < "알려드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알려드리_v_80_rel" ].
+
+애먹-80 := v-intr &
+  [ STEM < "애먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애먹_v_80_rel" ].
+
+애먹이-80 := v-caus-tr &
+  [ STEM < "애먹이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애먹이_v_80_rel" ].
+
+약먹-80 := v-intr &
+  [ STEM < "약먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_약먹_v_80_rel" ].
+
+여닫-80 := v-acc-tr &
+  [ STEM < "여닫" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여닫_v_80_rel" ].
+
+연락드리-80 := v-dat-tr &
+  [ STEM < "연락드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_연락드리_v_80_rel" ].
+
+옷사-80 := v-intr &
+  [ STEM < "옷사" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옷사_v_80_rel" ].
+
+위로받-80 := v-dat-pass &
+  [ STEM < "위로받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_위로받_v_80_rel" ].
+
+이롭-80 := a-dat-tr &
+  [ STEM < "이롭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이롭_v_80_rel" ].
+
+잊어먹-80 := v-acc-tr &
+  [ STEM < "잊어먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잊어먹_v_80_rel" ].
+
+잡아타-80 := v-acc-tr &
+  [ STEM < "잡아타" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡아타_v_80_rel" ].
+
+잦아들-80 := v-intr &
+  [ STEM < "잦아들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잦아들_v_80_rel" ].
+
+쪼그라들-80 := v-intr &
+  [ STEM < "쪼그라들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쪼그라들_v_80_rel" ].
+
+쳐박-80 := v-acc-tr &
+  [ STEM < "쳐박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쳐박_v_80_rel" ].
+
+크나크-80 := a-intr &
+  [ STEM < "크나크" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_크나크_v_80_rel" ].
+
+큰일나-80 := v-intr &
+  [ STEM < "큰일나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_큰일나_v_80_rel" ].
+
+터져나-80 := v-intr &
+  [ STEM < "터져나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_터져나_v_80_rel" ].
+
+털어내-80 := v-acc-tr &
+  [ STEM < "털어내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_털어내_v_80_rel" ].
+
+호통치-80 := v-dat-tr &
+  [ STEM < "호통치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호통치_v_80_rel" ].
+
+화나-80 := v-intr &
+  [ STEM < "화나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_화나_v_80_rel" ].
+
+후미지-80 := a-intr &
+  [ STEM < "후미지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후미지_v_80_rel" ].
+
+휑하-80 := a-intr &
+  [ STEM < "휑하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휑하_v_80_rel" ].
+
+휘젓-80 := v-acc-tr &
+  [ STEM < "휘젓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘젓_v_80_rel" ].
+
+어설프-80 := a-intr &
+  [ STEM < "어설프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어설프_v_80_rel" ].
+
+까맣-80 := a-intr &
+  [ STEM < "까맣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까맣_v_80_rel" ].
+
+얹히-80 := v-dat-tr &
+  [ STEM < "얹히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얹히_v_80_rel" ].
+
+여리-80 := a-intr &
+  [ STEM < "여리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여리_v_80_rel" ].
+
+불가능-80 := vn-st-intr &
+  [ STEM < "불가능" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불가능_v_80_rel" ].
+
+불안전-80 := vn-st-intr &
+  [ STEM < "불안전" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불안전_v_80_rel" ].
+
+중수-80 := vn-acc-tr &
+  [ STEM < "중수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_중수_v_80_rel" ].
+
+정당화-80 := vn-acc-tr &
+  [ STEM < "정당화" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정당화_v_80_rel" ].
+
+취하-80 := v-dat-tr &
+  [ STEM < "취하" >,
+     SYNSEM.LKEYS.KEYREL.PRED "_취하_v_80_rel" ].
+
+드리-80 := aux-ae &
+  [ STEM < "드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_드리_aux_80_rel" ].
+
+걸터앉-80 := v-loc-tr &
+  [ STEM < "걸터앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걸터앉_v_80_rel" ].
+
+기대서-80 := v-loc-tr &
+  [ STEM < "기대서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기대서_v_80_rel" ].
+
+기대앉-80 := v-loc-tr &
+  [ STEM < "기대앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기대앉_v_80_rel" ].
+
+기어오르-80 := v-loc-tr &
+  [ STEM < "기어오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기어오르_v_80_rel" ].
+
+기웃거리-80 := v-loc-tr &
+  [ STEM < "기웃거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기웃거리_v_80_rel" ].
+
+깃들이-80 := v-loc-tr &
+  [ STEM < "깃들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깃들이_v_80_rel" ].
+
+끌려오-80 := v-loc-tr &
+  [ STEM < "끌려오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끌려오_v_80_rel" ].
+
+끌어가-80 := v-loc-tr &
+  [ STEM < "끌어가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끌어가_v_80_rel" ].
+
+끼여들-80 := v-loc-tr &
+  [ STEM < "끼여들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끼여들_v_80_rel" ].
+
+나다니-80 := v-loc-tr &
+  [ STEM < "나다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나다니_v_80_rel" ].
+
+나뒹굴-80 := v-loc-tr &
+  [ STEM < "나뒹굴" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나뒹굴_v_80_rel" ].
+
+내걸리-80 := v-loc-tr &
+  [ STEM < "내걸리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내걸리_v_80_rel" ].
+
+내몰리-80 := v-loc-tr &
+  [ STEM < "내몰리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내몰리_v_80_rel" ].
+
+녹아들-80 := v-loc-tr &
+  [ STEM < "녹아들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_녹아들_v_80_rel" ].
+
+놓아두-80 := v-loc-tr &
+  [ STEM < "놓아두" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_놓아두_v_80_rel" ].
+
+눌러앉-80 := v-loc-tr &
+  [ STEM < "눌러앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눌러앉_v_80_rel" ].
+
+늘어붙-80 := v-loc-tr &
+  [ STEM < "늘어붙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_늘어붙_v_80_rel" ].
+
+다가서-80 := v-loc-tr &
+  [ STEM < "다가서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다가서_v_80_rel" ].
+
+다가앉-80 := v-loc-tr &
+  [ STEM < "다가앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다가앉_v_80_rel" ].
+
+다다르-80 := v-loc-tr &
+  [ STEM < "다다르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다다르_v_80_rel" ].
+
+담아내-80 := v-acc-tr &
+  [ STEM < "담아내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_담아내_v_80_rel" ].
+
+대우받-80 := v-sts-tr &
+  [ STEM < "대우받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대우받_v_80_rel" ].
+
+대접받-80 := v-sts-tr &
+  [ STEM < "대접받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대접받_v_80_rel" ].
+
+들러붙-80 := v-loc-tr &
+  [ STEM < "들러붙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들러붙_v_80_rel" ].
+
+들어차-80 := v-loc-tr &
+  [ STEM < "들어차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들어차_v_80_rel" ].
+
+몰려가-80 := v-loc-tr &
+  [ STEM < "몰려가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰려가_v_80_rel" ].
+
+몸두-80 := v-loc-tr &
+  [ STEM < "몸두" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몸두_v_80_rel" ].
+
+못박-80 := v-loc-tr &
+  [ STEM < "못박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_못박_v_80_rel" ].
+
+발붙이-80 := v-loc-tr &
+  [ STEM < "발붙이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발붙이_v_80_rel" ].
+
+부닥치-80 := v-acc-tr &
+  [ STEM < "부닥치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부닥치_v_80_rel" ].
+
+뿌리내리-80 := v-loc-tr &
+  [ STEM < "뿌리내리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿌리내리_v_80_rel" ].
+
+뿌리박-80 := v-loc-tr &
+  [ STEM < "뿌리박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿌리박_v_80_rel" ].
+
+사무치-80 := v-loc-tr &
+  [ STEM < "사무치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사무치_v_80_rel" ].
+
+세들-80 := v-loc-tr &
+  [ STEM < "세들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세들_v_80_rel" ].
+
+숨어들-80 := v-loc-tr &
+  [ STEM < "숨어들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숨어들_v_80_rel" ].
+
+아로새기-80 := v-loc-tr &
+  [ STEM < "아로새기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아로새기_v_80_rel" ].
+
+올라앉-80 := v-loc-tr &
+  [ STEM < "올라앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_올라앉_v_80_rel" ].
+
+올라타-80 := v-loc-tr &
+  [ STEM < "올라타" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_올라타_v_80_rel" ].
+
+이르르-80 := v-loc-tr &
+  [ STEM < "이르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이르르_v_80_rel" ].
+
+이름붙이-80 := v-sts-tr &
+  [ STEM < "이름붙이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이름붙이_v_80_rel" ].
+
+이름짓-80 := v-sts-tr &
+  [ STEM < "이름짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이름짓_v_80_rel" ].
+
+자리잡히-80 := v-loc-tr &
+  [ STEM < "자리잡히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자리잡히_v_80_rel" ].
+
+접어들-80 := v-loc-tr &
+  [ STEM < "접어들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_접어들_v_80_rel" ].
+
+정성들이-80 := v-loc-tr &
+  [ STEM < "정성들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정성들이_v_80_rel" ].
+
+지내보-80 := v-loc-tr &
+  [ STEM < "지내보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지내보_v_80_rel" ].
+
+처박히-80 := v-loc-tr &
+  [ STEM < "처박히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_처박히_v_80_rel" ].
+
+초대받-80 := v-loc-tr &
+  [ STEM < "초대받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_초대받_v_80_rel" ].
+
+초청받-80 := v-loc-tr &
+  [ STEM < "초청받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_초청받_v_80_rel" ].
+
+터잡-80 := v-loc-tr &
+  [ STEM < "터잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_터잡_v_80_rel" ].
+
+틀어박히-80 := v-loc-tr &
+  [ STEM < "틀어박히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_틀어박히_v_80_rel" ].
+
+파묻히-80 := v-loc-tr &
+  [ STEM < "파묻히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파묻히_v_80_rel" ].
+
+피묻-80 := v-loc-tr &
+  [ STEM < "피묻" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피묻_v_80_rel" ].
+
+힘들이-80 := v-loc-tr &
+  [ STEM < "힘들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힘들이_v_80_rel" ].
+
+불리우-80 := v-sts-tr &
+  [ STEM < "불리우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불리우_v_80_rel" ].
+
+영향받-80 := v-sts-tr &
+  [ STEM < "영향받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영향받_v_80_rel" ].
+
+취급받-80 := v-sts-tr &
+  [ STEM < "취급받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_취급받_v_80_rel" ].
+
+가냘프-80 := a-intr &
+  [ STEM < "가냘프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가냘프_v_80_rel" ].
+
+가녀리-80 := a-intr &
+  [ STEM < "가녀리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가녀리_v_80_rel" ].
+
+가느다랗-80 := a-intr &
+  [ STEM < "가느다랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가느다랗_v_80_rel" ].
+
+가당찮-80 := a-intr &
+  [ STEM < "가당찮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가당찮_v_80_rel" ].
+
+가물거리-80 := a-intr &
+  [ STEM < "가물거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가물거리_v_80_rel" ].
+
+가빠지-80 := a-intr &
+  [ STEM < "가빠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가빠지_v_80_rel" ].
+
+가슴아프-80 := a-intr &
+  [ STEM < "가슴아프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가슴아프_v_80_rel" ].
+
+가차없-80 := a-intr &
+  [ STEM < "가차없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가차없_v_80_rel" ].
+
+가치있-80 := a-intr &
+  [ STEM < "가치있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가치있_v_80_rel" ].
+
+가파르-80 := a-intr &
+  [ STEM < "가파르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가파르_v_80_rel" ].
+
+간드러지-80 := a-intr &
+  [ STEM < "간드러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간드러지_v_80_rel" ].
+
+간지럽-80 := a-intr &
+  [ STEM < "간지럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간지럽_v_80_rel" ].
+
+감격스럽-80 := a-intr &
+  [ STEM < "감격스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감격스럽_v_80_rel" ].
+
+감동스럽-80 := a-intr &
+  [ STEM < "감동스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감동스럽_v_80_rel" ].
+
+감질나-80 := a-intr &
+  [ STEM < "감질나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감질나_v_80_rel" ].
+
+감탄스럽-80 := a-intr &
+  [ STEM < "감탄스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감탄스럽_v_80_rel" ].
+
+갑작스럽-80 := a-intr &
+  [ STEM < "갑작스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갑작스럽_v_80_rel" ].
+
+값나가-80 := a-intr &
+  [ STEM < "값나가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_값나가_v_80_rel" ].
+
+값비싸-80 := a-intr &
+  [ STEM < "값비싸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_값비싸_v_80_rel" ].
+
+강도높-80 := a-intr &
+  [ STEM < "강도높" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_강도높_v_80_rel" ].
+
+개성있-80 := a-intr &
+  [ STEM < "개성있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개성있_v_80_rel" ].
+
+개탄스럽-80 := a-intr &
+  [ STEM < "개탄스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_개탄스럽_v_80_rel" ].
+
+거추장스럽-80 := a-intr &
+  [ STEM < "거추장스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거추장스럽_v_80_rel" ].
+
+거침없-80 := a-intr &
+  [ STEM < "거침없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거침없_v_80_rel" ].
+
+건방지-80 := a-intr &
+  [ STEM < "건방지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_건방지_v_80_rel" ].
+
+걸판지-80 := a-intr &
+  [ STEM < "걸판지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걸판지_v_80_rel" ].
+
+검푸르-80 := a-intr &
+  [ STEM < "검푸르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_검푸르_v_80_rel" ].
+
+게걸스럽-80 := a-intr &
+  [ STEM < "게걸스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_게걸스럽_v_80_rel" ].
+
+게으르-80 := a-intr &
+  [ STEM < "게으르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_게으르_v_80_rel" ].
+
+겸연쩍-80 := a-intr &
+  [ STEM < "겸연쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겸연쩍_v_80_rel" ].
+
+경망스럽-80 := a-intr &
+  [ STEM < "경망스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_경망스럽_v_80_rel" ].
+
+경사스럽-80 := a-intr &
+  [ STEM < "경사스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_경사스럽_v_80_rel" ].
+
+경사지-80 := a-intr &
+  [ STEM < "경사지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_경사지_v_80_rel" ].
+
+계면쩍-80 := a-intr &
+  [ STEM < "계면쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_계면쩍_v_80_rel" ].
+
+고급스럽-80 := a-intr &
+  [ STEM < "고급스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고급스럽_v_80_rel" ].
+
+고달프-80 := a-intr &
+  [ STEM < "고달프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고달프_v_80_rel" ].
+
+고마워하-80 := a-intr &
+  [ STEM < "고마워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고마워하_v_80_rel" ].
+
+고민스럽-80 := a-intr &
+  [ STEM < "고민스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고민스럽_v_80_rel" ].
+
+고생스럽-80 := a-intr &
+  [ STEM < "고생스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고생스럽_v_80_rel" ].
+
+고집세-80 := a-intr &
+  [ STEM < "고집세" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고집세_v_80_rel" ].
+
+고집스럽-80 := a-intr &
+  [ STEM < "고집스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고집스럽_v_80_rel" ].
+
+고풍스럽-80 := a-intr &
+  [ STEM < "고풍스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고풍스럽_v_80_rel" ].
+
+골치아프-80 := a-intr &
+  [ STEM < "골치아프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_골치아프_v_80_rel" ].
+
+관계없-80 := a-intr &
+  [ STEM < "관계없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_관계없_v_80_rel" ].
+
+관련없-80 := a-intr &
+  [ STEM < "관련없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_관련없_v_80_rel" ].
+
+관심없-80 := a-intr &
+  [ STEM < "관심없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_관심없_v_80_rel" ].
+
+관심있-80 := a-intr &
+  [ STEM < "관심있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_관심있_v_80_rel" ].
+
+괴기스럽-80 := a-intr &
+  [ STEM < "괴기스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괴기스럽_v_80_rel" ].
+
+괴이쩍-80 := a-intr &
+  [ STEM < "괴이쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괴이쩍_v_80_rel" ].
+
+교양있-80 := a-intr &
+  [ STEM < "교양있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_교양있_v_80_rel" ].
+
+구석지-80 := a-intr &
+  [ STEM < "구석지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구석지_v_80_rel" ].
+
+구성지-80 := a-intr &
+  [ STEM < "구성지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구성지_v_80_rel" ].
+
+구슬프-80 := a-intr &
+  [ STEM < "구슬프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구슬프_v_80_rel" ].
+
+구시렁거리-80 := a-intr &
+  [ STEM < "구시렁거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구시렁거리_v_80_rel" ].
+
+구차스럽-80 := a-intr &
+  [ STEM < "구차스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구차스럽_v_80_rel" ].
+
+국경없-80 := a-intr &
+  [ STEM < "국경없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_국경없_v_80_rel" ].
+
+굴욕스럽-80 := a-intr &
+  [ STEM < "굴욕스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굴욕스럽_v_80_rel" ].
+
+굶주리-80 := a-intr &
+  [ STEM < "굶주리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굶주리_v_80_rel" ].
+
+궁상맞-80 := a-intr &
+  [ STEM < "궁상맞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_궁상맞_v_80_rel" ].
+
+권위있-80 := a-intr &
+  [ STEM < "권위있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_권위있_v_80_rel" ].
+
+균형있-80 := a-intr &
+  [ STEM < "균형있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_균형있_v_80_rel" ].
+
+균형잡히-80 := a-intr &
+  [ STEM < "균형잡히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_균형잡히_v_80_rel" ].
+
+그늘지-80 := a-intr &
+  [ STEM < "그늘지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그늘지_v_80_rel" ].
+
+그럴듯하-80 := a-intr &
+  [ STEM < "그럴듯하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그럴듯하_v_80_rel" ].
+
+그럴싸하-80 := a-intr &
+  [ STEM < "그럴싸하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그럴싸하_v_80_rel" ].
+
+그을리-80 := a-intr &
+  [ STEM < "그을리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그을리_v_80_rel" ].
+
+극성스럽-80 := a-intr &
+  [ STEM < "극성스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_극성스럽_v_80_rel" ].
+
+근심스럽-80 := a-intr &
+  [ STEM < "근심스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근심스럽_v_80_rel" ].
+
+근질거리-80 := a-intr &
+  [ STEM < "근질거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근질거리_v_80_rel" ].
+
+글썽거리-80 := a-intr &
+  [ STEM < "글썽거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글썽거리_v_80_rel" ].
+
+글썽이-80 := a-intr &
+  [ STEM < "글썽이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글썽이_v_80_rel" ].
+
+긁적거리-80 := a-intr &
+  [ STEM < "긁적거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_긁적거리_v_80_rel" ].
+
+급작스럽-80 := a-intr &
+  [ STEM < "급작스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_급작스럽_v_80_rel" ].
+
+기나길-80 := a-intr &
+  [ STEM < "기나길" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기나길_v_80_rel" ].
+
+기다랗-80 := a-intr &
+  [ STEM < "기다랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기다랗_v_80_rel" ].
+
+기름지-80 := a-intr &
+  [ STEM < "기름지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기름지_v_80_rel" ].
+
+기분나쁘-80 := a-intr &
+  [ STEM < "기분나쁘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기분나쁘_v_80_rel" ].
+
+기분좋-80 := a-intr &
+  [ STEM < "기분좋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기분좋_v_80_rel" ].
+
+기운차-80 := a-intr &
+  [ STEM < "기운차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기운차_v_80_rel" ].
+
+길다랗-80 := a-intr &
+  [ STEM < "길다랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_길다랗_v_80_rel" ].
+
+깊이있-80 := a-intr &
+  [ STEM < "깊이있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깊이있_v_80_rel" ].
+
+까다롭-80 := a-intr &
+  [ STEM < "까다롭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까다롭_v_80_rel" ].
+
+깡마르-80 := a-intr &
+  [ STEM < "깡마르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깡마르_v_80_rel" ].
+
+껄끄럽-80 := a-intr &
+  [ STEM < "껄끄럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_껄끄럽_v_80_rel" ].
+
+꾸밈없-80 := a-intr &
+  [ STEM < "꾸밈없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸밈없_v_80_rel" ].
+
+끄떡없-80 := a-intr &
+  [ STEM < "끄떡없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끄떡없_v_80_rel" ].
+
+끈덕지-80 := a-intr &
+  [ STEM < "끈덕지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끈덕지_v_80_rel" ].
+
+끈적거리-80 := a-intr &
+  [ STEM < "끈적거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끈적거리_v_80_rel" ].
+
+끈질기-80 := a-intr &
+  [ STEM < "끈질기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끈질기_v_80_rel" ].
+
+끊임없-80 := a-intr &
+  [ STEM < "끊임없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끊임없_v_80_rel" ].
+
+난데없-80 := a-intr &
+  [ STEM < "난데없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_난데없_v_80_rel" ].
+
+남다르-80 := a-intr &
+  [ STEM < "남다르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남다르_v_80_rel" ].
+
+낯뜨겁-80 := a-intr &
+  [ STEM < "낯뜨겁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낯뜨겁_v_80_rel" ].
+
+너그럽-80 := a-intr &
+  [ STEM < "너그럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너그럽_v_80_rel" ].
+
+너덜거리-80 := a-intr &
+  [ STEM < "너덜거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너덜거리_v_80_rel" ].
+
+널따랗-80 := a-intr &
+  [ STEM < "널따랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_널따랗_v_80_rel" ].
+
+네모나-80 := a-intr &
+  [ STEM < "네모나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_네모나_v_80_rel" ].
+
+네모지-80 := a-intr &
+  [ STEM < "네모지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_네모지_v_80_rel" ].
+
+노오랗-80 := a-intr &
+  [ STEM < "노오랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_노오랗_v_80_rel" ].
+
+높다랗-80 := a-intr &
+  [ STEM < "높다랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_높다랗_v_80_rel" ].
+
+눈물겹-80 := a-intr &
+  [ STEM < "눈물겹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈물겹_v_80_rel" ].
+
+눈치빠르-80 := a-intr &
+  [ STEM < "눈치빠르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈치빠르_v_80_rel" ].
+
+느닷없-80 := a-intr &
+  [ STEM < "느닷없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_느닷없_v_80_rel" ].
+
+능글맞-80 := a-intr &
+  [ STEM < "능글맞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_능글맞_v_80_rel" ].
+
+능력있-80 := a-intr &
+  [ STEM < "능력있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_능력있_v_80_rel" ].
+
+능청스럽-80 := a-intr &
+  [ STEM < "능청스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_능청스럽_v_80_rel" ].
+
+다부지-80 := a-intr &
+  [ STEM < "다부지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다부지_v_80_rel" ].
+
+다시없-80 := a-intr &
+  [ STEM < "다시없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다시없_v_80_rel" ].
+
+다정스럽-80 := a-intr &
+  [ STEM < "다정스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다정스럽_v_80_rel" ].
+
+달갑잖-80 := a-intr &
+  [ STEM < "달갑잖" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달갑잖_v_80_rel" ].
+
+달디달-80 := a-intr &
+  [ STEM < "달디달" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달디달_v_80_rel" ].
+
+당혹스럽-80 := a-intr &
+  [ STEM < "당혹스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당혹스럽_v_80_rel" ].
+
+당황스럽-80 := a-intr &
+  [ STEM < "당황스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_당황스럽_v_80_rel" ].
+
+덩그렇-80 := a-intr &
+  [ STEM < "덩그렇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덩그렇_v_80_rel" ].
+
+돈많-80 := a-intr &
+  [ STEM < "돈많" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돈많_v_80_rel" ].
+
+동그랗-80 := a-intr &
+  [ STEM < "동그랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_동그랗_v_80_rel" ].
+
+둥그렇-80 := a-intr &
+  [ STEM < "둥그렇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둥그렇_v_80_rel" ].
+
+똥그랗-80 := a-intr &
+  [ STEM < "똥그랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_똥그랗_v_80_rel" ].
+
+뜨거워지-80 := a-intr &
+  [ STEM < "뜨거워지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜨거워지_v_80_rel" ].
+
+뜬금없-80 := a-intr &
+  [ STEM < "뜬금없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜬금없_v_80_rel" ].
+
+뜻있-80 := a-intr &
+  [ STEM < "뜻있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜻있_v_80_rel" ].
+
+마땅찮-80 := a-intr &
+  [ STEM < "마땅찮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마땅찮_v_80_rel" ].
+
+막다르-80 := a-intr &
+  [ STEM < "막다르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_막다르_v_80_rel" ].
+
+만만찮-80 := a-intr &
+  [ STEM < "만만찮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만만찮_v_80_rel" ].
+
+만족스럽-80 := a-intr &
+  [ STEM < "만족스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만족스럽_v_80_rel" ].
+
+말없-80 := a-intr &
+  [ STEM < "말없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말없_v_80_rel" ].
+
+맛깔스럽-80 := a-intr &
+  [ STEM < "맛깔스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맛깔스럽_v_80_rel" ].
+
+맛좋-80 := a-intr &
+  [ STEM < "맛좋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맛좋_v_80_rel" ].
+
+매끄럽-80 := a-intr &
+  [ STEM < "매끄럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매끄럽_v_80_rel" ].
+
+매력있-80 := a-intr &
+  [ STEM < "매력있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매력있_v_80_rel" ].
+
+매몰차-80 := a-intr &
+  [ STEM < "매몰차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매몰차_v_80_rel" ].
+
+머나멀-80 := a-intr &
+  [ STEM < "머나멀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_머나멀_v_80_rel" ].
+
+머지않-80 := a-intr &
+  [ STEM < "머지않" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_머지않_v_80_rel" ].
+
+멋들어지-80 := a-intr &
+  [ STEM < "멋들어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멋들어지_v_80_rel" ].
+
+멋스럽-80 := a-intr &
+  [ STEM < "멋스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멋스럽_v_80_rel" ].
+
+멋있-80 := a-intr &
+  [ STEM < "멋있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멋있_v_80_rel" ].
+
+메마르-80 := a-intr &
+  [ STEM < "메마르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_메마르_v_80_rel" ].
+
+문제없-80 := a-intr &
+  [ STEM < "문제없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문제없_v_80_rel" ].
+
+미끄럽-80 := a-intr &
+  [ STEM < "미끄럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미끄럽_v_80_rel" ].
+
+미심쩍-80 := a-intr &
+  [ STEM < "미심쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미심쩍_v_80_rel" ].
+
+밉살스럽-80 := a-intr &
+  [ STEM < "밉살스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밉살스럽_v_80_rel" ].
+
+바보같-80 := a-intr &
+  [ STEM < "바보같" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바보같_v_80_rel" ].
+
+바보스럽-80 := a-intr &
+  [ STEM < "바보스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바보스럽_v_80_rel" ].
+
+방정맞-80 := a-intr &
+  [ STEM < "방정맞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_방정맞_v_80_rel" ].
+
+버릇없-80 := a-intr &
+  [ STEM < "버릇없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버릇없_v_80_rel" ].
+
+번거롭-80 := a-intr &
+  [ STEM < "번거롭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번거롭_v_80_rel" ].
+
+번득이-80 := a-intr &
+  [ STEM < "번득이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번득이_v_80_rel" ].
+
+번들거리-80 := a-intr &
+  [ STEM < "번들거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번들거리_v_80_rel" ].
+
+변함없-80 := a-intr &
+  [ STEM < "변함없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_변함없_v_80_rel" ].
+
+별수없-80 := a-intr &
+  [ STEM < "별수없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별수없_v_80_rel" ].
+
+별스럽-80 := a-intr &
+  [ STEM < "별스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별스럽_v_80_rel" ].
+
+보드랍-80 := a-intr &
+  [ STEM < "보드랍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보드랍_v_80_rel" ].
+
+보람있-80 := a-intr &
+  [ STEM < "보람있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보람있_v_80_rel" ].
+
+보람차-80 := a-intr &
+  [ STEM < "보람차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보람차_v_80_rel" ].
+
+보잘것없-80 := a-intr &
+  [ STEM < "보잘것없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보잘것없_v_80_rel" ].
+
+볼썽사납-80 := a-intr &
+  [ STEM < "볼썽사납" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_볼썽사납_v_80_rel" ].
+
+볼품없-80 := a-intr &
+  [ STEM < "볼품없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_볼품없_v_80_rel" ].
+
+부담스럽-80 := a-intr &
+  [ STEM < "부담스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부담스럽_v_80_rel" ].
+
+부산스럽-80 := a-intr &
+  [ STEM < "부산스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부산스럽_v_80_rel" ].
+
+부질없-80 := a-intr &
+  [ STEM < "부질없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부질없_v_80_rel" ].
+
+분별없-80 := a-intr &
+  [ STEM < "분별없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_분별없_v_80_rel" ].
+
+불같-80 := a-intr &
+  [ STEM < "불같" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불같_v_80_rel" ].
+
+불경스럽-80 := a-intr &
+  [ STEM < "불경스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불경스럽_v_80_rel" ].
+
+불만스럽-80 := a-intr &
+  [ STEM < "불만스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불만스럽_v_80_rel" ].
+
+불안스럽-80 := a-intr &
+  [ STEM < "불안스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불안스럽_v_80_rel" ].
+
+불티나-80 := a-intr &
+  [ STEM < "불티나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불티나_v_80_rel" ].
+
+비밀스럽-80 := a-intr &
+  [ STEM < "비밀스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비밀스럽_v_80_rel" ].
+
+비중있-80 := a-intr &
+  [ STEM < "비중있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비중있_v_80_rel" ].
+
+빛바래-80 := a-intr &
+  [ STEM < "빛바래" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빛바래_v_80_rel" ].
+
+빠알갛-80 := a-intr &
+  [ STEM < "빠알갛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빠알갛_v_80_rel" ].
+
+빨개지-80 := a-intr &
+  [ STEM < "빨개지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빨개지_v_80_rel" ].
+
+빼어나-80 := a-intr &
+  [ STEM < "빼어나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빼어나_v_80_rel" ].
+
+뻔질나-80 := a-intr &
+  [ STEM < "뻔질나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뻔질나_v_80_rel" ].
+
+뿌리깊-80 := a-intr &
+  [ STEM < "뿌리깊" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿌리깊_v_80_rel" ].
+
+사랑스럽-80 := a-intr &
+  [ STEM < "사랑스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사랑스럽_v_80_rel" ].
+
+사려깊-80 := a-intr &
+  [ STEM < "사려깊" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사려깊_v_80_rel" ].
+
+사사롭-80 := a-intr &
+  [ STEM < "사사롭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사사롭_v_80_rel" ].
+
+사치스럽-80 := a-intr &
+  [ STEM < "사치스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사치스럽_v_80_rel" ].
+
+상관없-80 := a-intr &
+  [ STEM < "상관없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상관없_v_80_rel" ].
+
+상스럽-80 := a-intr &
+  [ STEM < "상스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상스럽_v_80_rel" ].
+
+새까맣-80 := a-intr &
+  [ STEM < "새까맣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새까맣_v_80_rel" ].
+
+새빨갛-80 := a-intr &
+  [ STEM < "새빨갛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새빨갛_v_80_rel" ].
+
+새카맣-80 := a-intr &
+  [ STEM < "새카맣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새카맣_v_80_rel" ].
+
+새파랗-80 := a-intr &
+  [ STEM < "새파랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새파랗_v_80_rel" ].
+
+새하얗-80 := a-intr &
+  [ STEM < "새하얗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새하얗_v_80_rel" ].
+
+색다르-80 := a-intr &
+  [ STEM < "색다르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_색다르_v_80_rel" ].
+
+샛노랗-80 := a-intr &
+  [ STEM < "샛노랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_샛노랗_v_80_rel" ].
+
+생기있-80 := a-intr &
+  [ STEM < "생기있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_생기있_v_80_rel" ].
+
+서글프-80 := a-intr &
+  [ STEM < "서글프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서글프_v_80_rel" ].
+
+서투르-80 := a-intr &
+  [ STEM < "서투르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서투르_v_80_rel" ].
+
+섣부르-80 := a-intr &
+  [ STEM < "섣부르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_섣부르_v_80_rel" ].
+
+설득력있-80 := a-intr &
+  [ STEM < "설득력있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설득력있_v_80_rel" ].
+
+설레이-80 := a-intr &
+  [ STEM < "설레이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설레이_v_80_rel" ].
+
+성가시-80 := a-intr &
+  [ STEM < "성가시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성가시_v_80_rel" ].
+
+성스럽-80 := a-intr &
+  [ STEM < "성스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성스럽_v_80_rel" ].
+
+성의있-80 := a-intr &
+  [ STEM < "성의있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_성의있_v_80_rel" ].
+
+소란스럽-80 := a-intr &
+  [ STEM < "소란스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소란스럽_v_80_rel" ].
+
+소름끼치-80 := a-intr &
+  [ STEM < "소름끼치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소름끼치_v_80_rel" ].
+
+소리나-80 := a-intr &
+  [ STEM < "소리나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소리나_v_80_rel" ].
+
+소리없-80 := a-intr &
+  [ STEM < "소리없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소리없_v_80_rel" ].
+
+소망스럽-80 := a-intr &
+  [ STEM < "소망스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소망스럽_v_80_rel" ].
+
+소스라치-80 := a-intr &
+  [ STEM < "소스라치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소스라치_v_80_rel" ].
+
+소신있-80 := a-intr &
+  [ STEM < "소신있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소신있_v_80_rel" ].
+
+소용없-80 := a-intr &
+  [ STEM < "소용없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소용없_v_80_rel" ].
+
+속절없-80 := a-intr &
+  [ STEM < "속절없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_속절없_v_80_rel" ].
+
+수다스럽-80 := a-intr &
+  [ STEM < "수다스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수다스럽_v_80_rel" ].
+
+수상쩍-80 := a-intr &
+  [ STEM < "수상쩍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수상쩍_v_80_rel" ].
+
+수월찮-80 := a-intr &
+  [ STEM < "수월찮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수월찮_v_80_rel" ].
+
+수준높-80 := a-intr &
+  [ STEM < "수준높" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수준높_v_80_rel" ].
+
+수치스럽-80 := a-intr &
+  [ STEM < "수치스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수치스럽_v_80_rel" ].
+
+숨가쁘-80 := a-intr &
+  [ STEM < "숨가쁘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숨가쁘_v_80_rel" ].
+
+스스럼없-80 := a-intr &
+  [ STEM < "스스럼없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_스스럼없_v_80_rel" ].
+
+습기차-80 := a-intr &
+  [ STEM < "습기차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_습기차_v_80_rel" ].
+
+시꺼멓-80 := a-intr &
+  [ STEM < "시꺼멓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시꺼멓_v_80_rel" ].
+
+시끄럽-80 := a-intr &
+  [ STEM < "시끄럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시끄럽_v_80_rel" ].
+
+시뻘겋-80 := a-intr &
+  [ STEM < "시뻘겋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시뻘겋_v_80_rel" ].
+
+시원찮-80 := a-intr &
+  [ STEM < "시원찮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시원찮_v_80_rel" ].
+
+시커멓-80 := a-intr &
+  [ STEM < "시커멓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시커멓_v_80_rel" ].
+
+시퍼렇-80 := a-intr &
+  [ STEM < "시퍼렇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시퍼렇_v_80_rel" ].
+
+신나-80 := a-intr &
+  [ STEM < "신나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신나_v_80_rel" ].
+
+신들리-80 := a-intr &
+  [ STEM < "신들리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신들리_v_80_rel" ].
+
+신명나-80 := a-intr &
+  [ STEM < "신명나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신명나_v_80_rel" ].
+
+신비스럽-80 := a-intr &
+  [ STEM < "신비스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신비스럽_v_80_rel" ].
+
+실력있-80 := a-intr &
+  [ STEM < "실력있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실력있_v_80_rel" ].
+
+실망스럽-80 := a-intr &
+  [ STEM < "실망스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실망스럽_v_80_rel" ].
+
+심도있-80 := a-intr &
+  [ STEM < "심도있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_심도있_v_80_rel" ].
+
+심술궂-80 := a-intr &
+  [ STEM < "심술궂" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_심술궂_v_80_rel" ].
+
+심심찮-80 := a-intr &
+  [ STEM < "심심찮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_심심찮_v_80_rel" ].
+
+싱그럽-80 := a-intr &
+  [ STEM < "싱그럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싱그럽_v_80_rel" ].
+
+쑥스럽-80 := a-intr &
+  [ STEM < "쑥스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쑥스럽_v_80_rel" ].
+
+쓰디쓰-80 := a-intr &
+  [ STEM < "쓰디쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓰디쓰_v_80_rel" ].
+
+쓰라리-80 := a-intr &
+  [ STEM < "쓰라리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓰라리_v_80_rel" ].
+
+쓸데없-80 := a-intr &
+  [ STEM < "쓸데없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓸데없_v_80_rel" ].
+
+쓸모없-80 := a-intr &
+  [ STEM < "쓸모없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓸모없_v_80_rel" ].
+
+쓸모있-80 := a-intr &
+  [ STEM < "쓸모있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓸모있_v_80_rel" ].
+
+아낌없-80 := a-intr &
+  [ STEM < "아낌없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아낌없_v_80_rel" ].
+
+아니꼽-80 := a-intr &
+  [ STEM < "아니꼽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니꼽_v_80_rel" ].
+
+아랑곳없-80 := a-intr &
+  [ STEM < "아랑곳없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아랑곳없_v_80_rel" ].
+
+아리땁-80 := a-intr &
+  [ STEM < "아리땁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아리땁_v_80_rel" ].
+
+아무렇-80 := a-intr &
+  [ STEM < "아무렇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아무렇_v_80_rel" ].
+
+악명높-80 := a-intr &
+  [ STEM < "악명높" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_악명높_v_80_rel" ].
+
+악착같-80 := a-intr &
+  [ STEM < "악착같" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_악착같_v_80_rel" ].
+
+악착스럽-80 := a-intr &
+  [ STEM < "악착스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_악착스럽_v_80_rel" ].
+
+안스럽-80 := a-intr &
+  [ STEM < "안스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_안스럽_v_80_rel" ].
+
+안쓰럽-80 := a-intr &
+  [ STEM < "안쓰럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_안쓰럽_v_80_rel" ].
+
+앙증맞-80 := a-intr &
+  [ STEM < "앙증맞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앙증맞_v_80_rel" ].
+
+앙칼지-80 := a-intr &
+  [ STEM < "앙칼지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앙칼지_v_80_rel" ].
+
+애교스럽-80 := a-intr &
+  [ STEM < "애교스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애교스럽_v_80_rel" ].
+
+애달프-80 := a-intr &
+  [ STEM < "애달프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애달프_v_80_rel" ].
+
+애처롭-80 := a-intr &
+  [ STEM < "애처롭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애처롭_v_80_rel" ].
+
+야단스럽-80 := a-intr &
+  [ STEM < "야단스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야단스럽_v_80_rel" ].
+
+야무지-80 := a-intr &
+  [ STEM < "야무지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야무지_v_80_rel" ].
+
+야심차-80 := a-intr &
+  [ STEM < "야심차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야심차_v_80_rel" ].
+
+약삭빠르-80 := a-intr &
+  [ STEM < "약삭빠르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_약삭빠르_v_80_rel" ].
+
+양지바르-80 := a-intr &
+  [ STEM < "양지바르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_양지바르_v_80_rel" ].
+
+어그러지-80 := a-intr &
+  [ STEM < "어그러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어그러지_v_80_rel" ].
+
+어떡하-80 := a-intr &
+  [ STEM < "어떡하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어떡하_v_80_rel" ].
+
+어른스럽-80 := a-intr &
+  [ STEM < "어른스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어른스럽_v_80_rel" ].
+
+어리석-80 := a-intr &
+  [ STEM < "어리석" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어리석_v_80_rel" ].
+
+어리숙하-80 := a-intr &
+  [ STEM < "어리숙하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어리숙하_v_80_rel" ].
+
+어림없-80 := a-intr &
+  [ STEM < "어림없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어림없_v_80_rel" ].
+
+어여쁘-80 := a-intr &
+  [ STEM < "어여쁘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어여쁘_v_80_rel" ].
+
+어이없-80 := a-intr &
+  [ STEM < "어이없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어이없_v_80_rel" ].
+
+어줍잖-80 := a-intr &
+  [ STEM < "어줍잖" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어줍잖_v_80_rel" ].
+
+어쭙잖-80 := a-intr &
+  [ STEM < "어쭙잖" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어쭙잖_v_80_rel" ].
+
+어처구니없-80 := a-intr &
+  [ STEM < "어처구니없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어처구니없_v_80_rel" ].
+
+억지스럽-80 := a-intr &
+  [ STEM < "억지스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_억지스럽_v_80_rel" ].
+
+억척스럽-80 := a-intr &
+  [ STEM < "억척스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_억척스럽_v_80_rel" ].
+
+얼빠지-80 := a-intr &
+  [ STEM < "얼빠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼빠지_v_80_rel" ].
+
+얼토당토않-80 := a-intr &
+  [ STEM < "얼토당토않" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼토당토않_v_80_rel" ].
+
+여성스럽-80 := a-intr &
+  [ STEM < "여성스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여성스럽_v_80_rel" ].
+
+여유있-80 := a-intr &
+  [ STEM < "여유있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여유있_v_80_rel" ].
+
+염려스럽-80 := a-intr &
+  [ STEM < "염려스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_염려스럽_v_80_rel" ].
+
+영광스럽-80 := a-intr &
+  [ STEM < "영광스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영광스럽_v_80_rel" ].
+
+영락없-80 := a-intr &
+  [ STEM < "영락없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영락없_v_80_rel" ].
+
+예의바르-80 := a-intr &
+  [ STEM < "예의바르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_예의바르_v_80_rel" ].
+
+온데간데없-80 := a-intr &
+  [ STEM < "온데간데없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_온데간데없_v_80_rel" ].
+
+올바르-80 := a-intr &
+  [ STEM < "올바르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_올바르_v_80_rel" ].
+
+요란스럽-80 := a-intr &
+  [ STEM < "요란스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요란스럽_v_80_rel" ].
+
+요사스럽-80 := a-intr &
+  [ STEM < "요사스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요사스럽_v_80_rel" ].
+
+요상하-80 := a-intr &
+  [ STEM < "요상하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요상하_v_80_rel" ].
+
+용기있-80 := a-intr &
+  [ STEM < "용기있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_용기있_v_80_rel" ].
+
+용맹스럽-80 := a-intr &
+  [ STEM < "용맹스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_용맹스럽_v_80_rel" ].
+
+우거지-80 := a-intr &
+  [ STEM < "우거지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우거지_v_80_rel" ].
+
+우렁차-80 := a-intr &
+  [ STEM < "우렁차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우렁차_v_80_rel" ].
+
+우려스럽-80 := a-intr &
+  [ STEM < "우려스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우려스럽_v_80_rel" ].
+
+우스꽝스럽-80 := a-intr &
+  [ STEM < "우스꽝스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우스꽝스럽_v_80_rel" ].
+
+우연찮-80 := a-intr &
+  [ STEM < "우연찮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우연찮_v_80_rel" ].
+
+운좋-80 := a-intr &
+  [ STEM < "운좋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_운좋_v_80_rel" ].
+
+원망스럽-80 := a-intr &
+  [ STEM < "원망스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_원망스럽_v_80_rel" ].
+
+위엄있-80 := a-intr &
+  [ STEM < "위엄있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_위엄있_v_80_rel" ].
+
+위험스럽-80 := a-intr &
+  [ STEM < "위험스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_위험스럽_v_80_rel" ].
+
+유감스럽-80 := a-intr &
+  [ STEM < "유감스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유감스럽_v_80_rel" ].
+
+유난스럽-80 := a-intr &
+  [ STEM < "유난스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유난스럽_v_80_rel" ].
+
+유례없-80 := a-intr &
+  [ STEM < "유례없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유례없_v_80_rel" ].
+
+유별나-80 := a-intr &
+  [ STEM < "유별나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유별나_v_80_rel" ].
+
+유서깊-80 := a-intr &
+  [ STEM < "유서깊" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유서깊_v_80_rel" ].
+
+을씨년스럽-80 := a-intr &
+  [ STEM < "을씨년스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_을씨년스럽_v_80_rel" ].
+
+의문스럽-80 := a-intr &
+  [ STEM < "의문스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의문스럽_v_80_rel" ].
+
+의뭉스럽-80 := a-intr &
+  [ STEM < "의뭉스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의뭉스럽_v_80_rel" ].
+
+의미없-80 := a-intr &
+  [ STEM < "의미없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의미없_v_80_rel" ].
+
+의미있-80 := a-intr &
+  [ STEM < "의미있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의미있_v_80_rel" ].
+
+의심스럽-80 := a-intr &
+  [ STEM < "의심스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의심스럽_v_80_rel" ].
+
+의아스럽-80 := a-intr &
+  [ STEM < "의아스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의아스럽_v_80_rel" ].
+
+이름나-80 := a-intr &
+  [ STEM < "이름나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이름나_v_80_rel" ].
+
+이름없-80 := a-intr &
+  [ STEM < "이름없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이름없_v_80_rel" ].
+
+이름있-80 := a-intr &
+  [ STEM < "이름있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이름있_v_80_rel" ].
+
+이상스럽-80 := a-intr &
+  [ STEM < "이상스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이상스럽_v_80_rel" ].
+
+이유없-80 := a-intr &
+  [ STEM < "이유없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이유없_v_80_rel" ].
+
+익살스럽-80 := a-intr &
+  [ STEM < "익살스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_익살스럽_v_80_rel" ].
+
+인기있-80 := a-intr &
+  [ STEM < "인기있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_인기있_v_80_rel" ].
+
+인상깊-80 := a-intr &
+  [ STEM < "인상깊" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_인상깊_v_80_rel" ].
+
+입바르-80 := a-intr &
+  [ STEM < "입바르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_입바르_v_80_rel" ].
+
+자그맣-80 := a-intr &
+  [ STEM < "자그맣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자그맣_v_80_rel" ].
+
+자랑스럽-80 := a-intr &
+  [ STEM < "자랑스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자랑스럽_v_80_rel" ].
+
+자신있-80 := a-intr &
+  [ STEM < "자신있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자신있_v_80_rel" ].
+
+자유스럽-80 := a-intr &
+  [ STEM < "자유스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자유스럽_v_80_rel" ].
+
+잘생기-80 := a-intr &
+  [ STEM < "잘생기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잘생기_v_80_rel" ].
+
+잡스럽-80 := a-intr &
+  [ STEM < "잡스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡스럽_v_80_rel" ].
+
+장난스럽-80 := a-intr &
+  [ STEM < "장난스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장난스럽_v_80_rel" ].
+
+재미나-80 := a-intr &
+  [ STEM < "재미나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재미나_v_80_rel" ].
+
+재밌-80 := a-intr &
+  [ STEM < "재밌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재밌_v_80_rel" ].
+
+재미없-80 := a-intr &
+  [ STEM < "재미없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재미없_v_80_rel" ].
+
+재빠르-80 := a-intr &
+  [ STEM < "재빠르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재빠르_v_80_rel" ].
+
+재수없-80 := a-intr &
+  [ STEM < "재수없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재수없_v_80_rel" ].
+
+재치있-80 := a-intr &
+  [ STEM < "재치있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재치있_v_80_rel" ].
+
+저주스럽-80 := a-intr &
+  [ STEM < "저주스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저주스럽_v_80_rel" ].
+
+절망스럽-80 := a-intr &
+  [ STEM < "절망스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절망스럽_v_80_rel" ].
+
+정성스럽-80 := a-intr &
+  [ STEM < "정성스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정성스럽_v_80_rel" ].
+
+정성어리-80 := a-intr &
+  [ STEM < "정성어리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정성어리_v_80_rel" ].
+
+정신없-80 := a-intr &
+  [ STEM < "정신없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정신없_v_80_rel" ].
+
+조그맣-80 := a-intr &
+  [ STEM < "조그맣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조그맣_v_80_rel" ].
+
+조리있-80 := a-intr &
+  [ STEM < "조리있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조리있_v_80_rel" ].
+
+조화있-80 := a-intr &
+  [ STEM < "조화있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조화있_v_80_rel" ].
+
+존경스럽-80 := a-intr &
+  [ STEM < "존경스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_존경스럽_v_80_rel" ].
+
+좁다랗-80 := a-intr &
+  [ STEM < "좁다랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_좁다랗_v_80_rel" ].
+
+죄스럽-80 := a-intr &
+  [ STEM < "죄스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄스럽_v_80_rel" ].
+
+죄없-80 := a-intr &
+  [ STEM < "죄없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄없_v_80_rel" ].
+
+주의깊-80 := a-intr &
+  [ STEM < "주의깊" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주의깊_v_80_rel" ].
+
+주제넘-80 := a-intr &
+  [ STEM < "주제넘" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주제넘_v_80_rel" ].
+
+줄기차-80 := a-intr &
+  [ STEM < "줄기차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_줄기차_v_80_rel" ].
+
+지겹-80 := a-intr &
+  [ STEM < "지겹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지겹_v_80_rel" ].
+
+진배없-80 := a-intr &
+  [ STEM < "진배없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진배없_v_80_rel" ].
+
+질서있-80 := a-intr &
+  [ STEM < "질서있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_질서있_v_80_rel" ].
+
+질좋-80 := a-intr &
+  [ STEM < "질좋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_질좋_v_80_rel" ].
+
+징그럽-80 := a-intr &
+  [ STEM < "징그럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_징그럽_v_80_rel" ].
+
+짙푸르-80 := a-intr &
+  [ STEM < "짙푸르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짙푸르_v_80_rel" ].
+
+짜증스럽-80 := a-intr &
+  [ STEM < "짜증스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짜증스럽_v_80_rel" ].
+
+차디차-80 := a-intr &
+  [ STEM < "차디차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차디차_v_80_rel" ].
+
+창피스럽-80 := a-intr &
+  [ STEM < "창피스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_창피스럽_v_80_rel" ].
+
+책임있-80 := a-intr &
+  [ STEM < "책임있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_책임있_v_80_rel" ].
+
+천연덕스럽-80 := a-intr &
+  [ STEM < "천연덕스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천연덕스럽_v_80_rel" ].
+
+천연스럽-80 := a-intr &
+  [ STEM < "천연스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천연스럽_v_80_rel" ].
+
+천진스럽-80 := a-intr &
+  [ STEM < "천진스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천진스럽_v_80_rel" ].
+
+철모르-80 := a-intr &
+  [ STEM < "철모르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_철모르_v_80_rel" ].
+
+청승맞-80 := a-intr &
+  [ STEM < "청승맞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_청승맞_v_80_rel" ].
+
+촌스럽-80 := a-intr &
+  [ STEM < "촌스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_촌스럽_v_80_rel" ].
+
+충성스럽-80 := a-intr &
+  [ STEM < "충성스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_충성스럽_v_80_rel" ].
+
+치욕스럽-80 := a-intr &
+  [ STEM < "치욕스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치욕스럽_v_80_rel" ].
+
+커다랗-80 := a-intr &
+  [ STEM < "커다랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_커다랗_v_80_rel" ].
+
+케케묵-80 := a-intr &
+  [ STEM < "케케묵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_케케묵_v_80_rel" ].
+
+탄력있-80 := a-intr &
+  [ STEM < "탄력있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탄력있_v_80_rel" ].
+
+탐스럽-80 := a-intr &
+  [ STEM < "탐스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탐스럽_v_80_rel" ].
+
+탐욕스럽-80 := a-intr &
+  [ STEM < "탐욕스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탐욕스럽_v_80_rel" ].
+
+터무니없-80 := a-intr &
+  [ STEM < "터무니없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_터무니없_v_80_rel" ].
+
+퉁명스럽-80 := a-intr &
+  [ STEM < "퉁명스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퉁명스럽_v_80_rel" ].
+
+특색있-80 := a-intr &
+  [ STEM < "특색있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_특색있_v_80_rel" ].
+
+파아랗-80 := a-intr &
+  [ STEM < "파아랗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파아랗_v_80_rel" ].
+
+패기있-80 := a-intr &
+  [ STEM < "패기있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_패기있_v_80_rel" ].
+
+평화스럽-80 := a-intr &
+  [ STEM < "평화스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_평화스럽_v_80_rel" ].
+
+폼나-80 := a-intr &
+  [ STEM < "폼나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_폼나_v_80_rel" ].
+
+표독스럽-80 := a-intr &
+  [ STEM < "표독스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_표독스럽_v_80_rel" ].
+
+푸르르-80 := a-intr &
+  [ STEM < "푸르르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_푸르르_v_80_rel" ].
+
+품위있-80 := a-intr &
+  [ STEM < "품위있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_품위있_v_80_rel" ].
+
+필요없-80 := a-intr &
+  [ STEM < "필요없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_필요없_v_80_rel" ].
+
+하염없-80 := a-intr &
+  [ STEM < "하염없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하염없_v_80_rel" ].
+
+하잘것없-80 := a-intr &
+  [ STEM < "하잘것없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하잘것없_v_80_rel" ].
+
+한갓지-80 := a-intr &
+  [ STEM < "한갓지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한갓지_v_80_rel" ].
+
+한결같-80 := a-intr &
+  [ STEM < "한결같" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한결같_v_80_rel" ].
+
+한스럽-80 := a-intr &
+  [ STEM < "한스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한스럽_v_80_rel" ].
+
+행복스럽-80 := a-intr &
+  [ STEM < "행복스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_행복스럽_v_80_rel" ].
+
+허울좋-80 := a-intr &
+  [ STEM < "허울좋" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허울좋_v_80_rel" ].
+
+험상궂-80 := a-intr &
+  [ STEM < "험상궂" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_험상궂_v_80_rel" ].
+
+혐오스럽-80 := a-intr &
+  [ STEM < "혐오스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혐오스럽_v_80_rel" ].
+
+형편없-80 := a-intr &
+  [ STEM < "형편없" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_형편없_v_80_rel" ].
+
+호기심어리-80 := a-intr &
+  [ STEM < "호기심어리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호기심어리_v_80_rel" ].
+
+호들갑스럽-80 := a-intr &
+  [ STEM < "호들갑스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호들갑스럽_v_80_rel" ].
+
+호사스럽-80 := a-intr &
+  [ STEM < "호사스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호사스럽_v_80_rel" ].
+
+호화스럽-80 := a-intr &
+  [ STEM < "호화스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호화스럽_v_80_rel" ].
+
+혼돈스럽-80 := a-intr &
+  [ STEM < "혼돈스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혼돈스럽_v_80_rel" ].
+
+혼란스럽-80 := a-intr &
+  [ STEM < "혼란스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_혼란스럽_v_80_rel" ].
+
+활기차-80 := a-intr &
+  [ STEM < "활기차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_활기차_v_80_rel" ].
+
+후회스럽-80 := a-intr &
+  [ STEM < "후회스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후회스럽_v_80_rel" ].
+
+휘둥그렇-80 := a-intr &
+  [ STEM < "휘둥그렇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘둥그렇_v_80_rel" ].
+
+흉물스럽-80 := a-intr &
+  [ STEM < "흉물스럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흉물스럽_v_80_rel" ].
+
+흥미롭-80 := a-intr &
+  [ STEM < "흥미롭" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흥미롭_v_80_rel" ].
+
+흥미있-80 := a-intr &
+  [ STEM < "흥미있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흥미있_v_80_rel" ].
+
+희디희-80 := a-intr &
+  [ STEM < "희디희" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_희디희_v_80_rel" ].
+
+희망차-80 := a-intr &
+  [ STEM < "희망차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_희망차_v_80_rel" ].
+
+희부옇-80 := a-intr &
+  [ STEM < "희부옇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_희부옇_v_80_rel" ].
+
+희뿌옇-80 := a-intr &
+  [ STEM < "희뿌옇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_희뿌옇_v_80_rel" ].
+
+힘있-80 := a-intr &
+  [ STEM < "힘있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힘있_v_80_rel" ].
+
+가라앉히-80 := v-acc-tr &
+  [ STEM < "가라앉히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가라앉히_v_80_rel" ].
+
+가려내-80 := v-acc-tr &
+  [ STEM < "가려내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가려내_v_80_rel" ].
+
+가로젓-80 := v-acc-tr &
+  [ STEM < "가로젓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가로젓_v_80_rel" ].
+
+가로지르-80 := v-acc-tr &
+  [ STEM < "가로지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가로지르_v_80_rel" ].
+
+가로채-80 := v-acc-tr &
+  [ STEM < "가로채" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가로채_v_80_rel" ].
+
+가리우-80 := v-acc-tr &
+  [ STEM < "가리우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가리우_v_80_rel" ].
+
+가만두-80 := v-acc-tr &
+  [ STEM < "가만두" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가만두_v_80_rel" ].
+
+간지럽히-80 := v-acc-tr &
+  [ STEM < "간지럽히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간지럽히_v_80_rel" ].
+
+간질이-80 := v-acc-tr &
+  [ STEM < "간질이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간질이_v_80_rel" ].
+
+간추리-80 := v-acc-tr &
+  [ STEM < "간추리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_간추리_v_80_rel" ].
+
+갈라놓-80 := v-acc-tr &
+  [ STEM < "갈라놓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈라놓_v_80_rel" ].
+
+갈아엎-80 := v-acc-tr &
+  [ STEM < "갈아엎" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈아엎_v_80_rel" ].
+
+갈아입히-80 := v-acc-tr &
+  [ STEM < "갈아입히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈아입히_v_80_rel" ].
+
+갉아먹-80 := v-acc-tr &
+  [ STEM < "갉아먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갉아먹_v_80_rel" ].
+
+감아쥐-80 := v-acc-tr &
+  [ STEM < "감아쥐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감아쥐_v_80_rel" ].
+
+갸우뚱거리-80 := v-acc-tr &
+  [ STEM < "갸우뚱거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갸우뚱거리_v_80_rel" ].
+
+거두어들이-80 := v-acc-tr &
+  [ STEM < "거두어들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거두어들이_v_80_rel" ].
+
+거둬들이-80 := v-acc-tr &
+  [ STEM < "거둬들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거둬들이_v_80_rel" ].
+
+거들떠보-80 := v-acc-tr &
+  [ STEM < "거들떠보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거들떠보_v_80_rel" ].
+
+거머쥐-80 := v-acc-tr &
+  [ STEM < "거머쥐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거머쥐_v_80_rel" ].
+
+거스르-80 := v-acc-tr &
+  [ STEM < "거스르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거스르_v_80_rel" ].
+
+거울삼-80 := v-acc-tr &
+  [ STEM < "거울삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거울삼_v_80_rel" ].
+
+건너뛰-80 := v-acc-tr &
+  [ STEM < "건너뛰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_건너뛰_v_80_rel" ].
+
+건네받-80 := v-acc-tr &
+  [ STEM < "건네받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_건네받_v_80_rel" ].
+
+걷어붙이-80 := v-acc-tr &
+  [ STEM < "걷어붙이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걷어붙이_v_80_rel" ].
+
+걷어올리-80 := v-acc-tr &
+  [ STEM < "걷어올리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걷어올리_v_80_rel" ].
+
+걷어차-80 := v-acc-tr &
+  [ STEM < "걷어차" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걷어차_v_80_rel" ].
+
+걷어치우-80 := v-acc-tr &
+  [ STEM < "걷어치우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걷어치우_v_80_rel" ].
+
+걸머지-80 := v-acc-tr &
+  [ STEM < "걸머지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걸머지_v_80_rel" ].
+
+고쳐먹-80 := v-acc-tr &
+  [ STEM < "고쳐먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고쳐먹_v_80_rel" ].
+
+곤두세우-80 := v-acc-tr &
+  [ STEM < "곤두세우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곤두세우_v_80_rel" ].
+
+곧추세우-80 := v-acc-tr &
+  [ STEM < "곧추세우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곧추세우_v_80_rel" ].
+
+골라내-80 := v-acc-tr &
+  [ STEM < "골라내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_골라내_v_80_rel" ].
+
+골탕먹이-80 := v-acc-tr &
+  [ STEM < "골탕먹이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_골탕먹이_v_80_rel" ].
+
+공급받-80 := v-acc-tr &
+  [ STEM < "공급받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공급받_v_80_rel" ].
+
+교육받-80 := v-acc-tr &
+  [ STEM < "교육받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_교육받_v_80_rel" ].
+
+굽어보-80 := v-acc-tr &
+  [ STEM < "굽어보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굽어보_v_80_rel" ].
+
+귀담아듣-80 := v-acc-tr &
+  [ STEM < "귀담아듣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_귀담아듣_v_80_rel" ].
+
+귀여워하-80 := v-acc-tr &
+  [ STEM < "귀여워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_귀여워하_v_80_rel" ].
+
+규정짓-80 := v-acc-tr &
+  [ STEM < "규정짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_규정짓_v_80_rel" ].
+
+그르치-80 := v-acc-tr &
+  [ STEM < "그르치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그르치_v_80_rel" ].
+
+그리워하-80 := v-acc-tr &
+  [ STEM < "그리워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_그리워하_v_80_rel" ].
+
+근거짓-80 := v-acc-tr &
+  [ STEM < "근거짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_근거짓_v_80_rel" ].
+
+긁어내-80 := v-acc-tr &
+  [ STEM < "긁어내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_긁어내_v_80_rel" ].
+
+긁어모으-80 := v-acc-tr &
+  [ STEM < "긁어모으" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_긁어모으_v_80_rel" ].
+
+길들이-80 := v-acc-tr &
+  [ STEM < "길들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_길들이_v_80_rel" ].
+
+까딱거리-80 := v-acc-tr &
+  [ STEM < "까딱거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까딱거리_v_80_rel" ].
+
+까발리-80 := v-acc-tr &
+  [ STEM < "까발리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까발리_v_80_rel" ].
+
+까불리-80 := v-acc-tr &
+  [ STEM < "까불리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까불리_v_80_rel" ].
+
+깎아내리-80 := v-acc-tr &
+  [ STEM < "깎아내리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깎아내리_v_80_rel" ].
+
+깔아뭉개-80 := v-acc-tr &
+  [ STEM < "깔아뭉개" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깔아뭉개_v_80_rel" ].
+
+깜박거리-80 := v-acc-tr &
+  [ STEM < "깜박거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜박거리_v_80_rel" ].
+
+깜빡거리-80 := v-acc-tr &
+  [ STEM < "깜빡거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜빡거리_v_80_rel" ].
+
+깨부수-80 := v-acc-tr &
+  [ STEM < "깨부수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깨부수_v_80_rel" ].
+
+꺼뜨리-80 := v-acc-tr &
+  [ STEM < "꺼뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꺼뜨리_v_80_rel" ].
+
+껌벅거리-80 := v-acc-tr &
+  [ STEM < "껌벅거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_껌벅거리_v_80_rel" ].
+
+껌벅이-80 := v-acc-tr &
+  [ STEM < "껌벅이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_껌벅이_v_80_rel" ].
+
+꼬드기-80 := v-acc-tr &
+  [ STEM < "꼬드기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬드기_v_80_rel" ].
+
+꼬부리-80 := v-acc-tr &
+  [ STEM < "꼬부리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬부리_v_80_rel" ].
+
+끄덕거리-80 := v-acc-tr &
+  [ STEM < "끄덕거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끄덕거리_v_80_rel" ].
+
+끌어내리-80 := v-acc-tr &
+  [ STEM < "끌어내리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끌어내리_v_80_rel" ].
+
+끝마치-80 := v-acc-tr &
+  [ STEM < "끝마치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끝마치_v_80_rel" ].
+
+끝장내-80 := v-acc-tr &
+  [ STEM < "끝장내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끝장내_v_80_rel" ].
+
+낚아채-80 := v-acc-tr &
+  [ STEM < "낚아채" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낚아채_v_80_rel" ].
+
+낯모르-80 := v-acc-tr &
+  [ STEM < "낯모르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낯모르_v_80_rel" ].
+
+내동댕이치-80 := v-acc-tr &
+  [ STEM < "내동댕이치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내동댕이치_v_80_rel" ].
+
+내두르-80 := v-acc-tr &
+  [ STEM < "내두르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내두르_v_80_rel" ].
+
+내디디-80 := v-acc-tr &
+  [ STEM < "내디디" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내디디_v_80_rel" ].
+
+내려뜨리-80 := v-acc-tr &
+  [ STEM < "내려뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내려뜨리_v_80_rel" ].
+
+내려치-80 := v-acc-tr &
+  [ STEM < "내려치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내려치_v_80_rel" ].
+
+내리깔-80 := v-acc-tr &
+  [ STEM < "내리깔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내리깔_v_80_rel" ].
+
+내리누르-80 := v-acc-tr &
+  [ STEM < "내리누르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내리누르_v_80_rel" ].
+
+내리쉬-80 := v-acc-tr &
+  [ STEM < "내리쉬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내리쉬_v_80_rel" ].
+
+내리치-80 := v-acc-tr &
+  [ STEM < "내리치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내리치_v_80_rel" ].
+
+내지르-80 := v-acc-tr &
+  [ STEM < "내지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내지르_v_80_rel" ].
+
+내팽개치-80 := v-acc-tr &
+  [ STEM < "내팽개치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내팽개치_v_80_rel" ].
+
+널어놓-80 := v-acc-tr &
+  [ STEM < "널어놓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_널어놓_v_80_rel" ].
+
+넘겨다보-80 := v-acc-tr &
+  [ STEM < "넘겨다보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘겨다보_v_80_rel" ].
+
+넘겨받-80 := v-acc-tr &
+  [ STEM < "넘겨받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘겨받_v_80_rel" ].
+
+넘겨짚-80 := v-acc-tr &
+  [ STEM < "넘겨짚" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘겨짚_v_80_rel" ].
+
+넘나들-80 := v-acc-tr &
+  [ STEM < "넘나들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘나들_v_80_rel" ].
+
+넘어뜨리-80 := v-acc-tr &
+  [ STEM < "넘어뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘어뜨리_v_80_rel" ].
+
+누그러뜨리-80 := v-acc-tr &
+  [ STEM < "누그러뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_누그러뜨리_v_80_rel" ].
+
+눈여기-80 := v-acc-tr &
+  [ STEM < "눈여기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈여기_v_80_rel" ].
+
+눌러쓰-80 := v-acc-tr &
+  [ STEM < "눌러쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눌러쓰_v_80_rel" ].
+
+늘어뜨리-80 := v-acc-tr &
+  [ STEM < "늘어뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_늘어뜨리_v_80_rel" ].
+
+다그치-80 := v-acc-tr &
+  [ STEM < "다그치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다그치_v_80_rel" ].
+
+다독거리-80 := v-acc-tr &
+  [ STEM < "다독거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다독거리_v_80_rel" ].
+
+다독이-80 := v-acc-tr &
+  [ STEM < "다독이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다독이_v_80_rel" ].
+
+다운받-80 := v-acc-tr &
+  [ STEM < "다운받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다운받_v_80_rel" ].
+
+단정짓-80 := v-acc-tr &
+  [ STEM < "단정짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_단정짓_v_80_rel" ].
+
+닫아걸-80 := v-acc-tr &
+  [ STEM < "닫아걸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_닫아걸_v_80_rel" ].
+
+달가워하-80 := v-acc-tr &
+  [ STEM < "달가워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달가워하_v_80_rel" ].
+
+달아매-80 := v-acc-tr &
+  [ STEM < "달아매" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달아매_v_80_rel" ].
+
+대출받-80 := v-acc-tr &
+  [ STEM < "대출받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_대출받_v_80_rel" ].
+
+더렵히-80 := v-acc-tr &
+  [ STEM < "더렵히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더렵히_v_80_rel" ].
+
+던져두-80 := v-acc-tr &
+  [ STEM < "던져두" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_던져두_v_80_rel" ].
+
+덧보태-80 := v-acc-tr &
+  [ STEM < "덧보태" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덧보태_v_80_rel" ].
+
+덧씌우-80 := v-acc-tr &
+  [ STEM < "덧씌우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덧씌우_v_80_rel" ].
+
+덮어놓-80 := v-acc-tr &
+  [ STEM < "덮어놓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덮어놓_v_80_rel" ].
+
+덮어쓰-80 := v-acc-tr &
+  [ STEM < "덮어쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덮어쓰_v_80_rel" ].
+
+덮어씌우-80 := v-acc-tr &
+  [ STEM < "덮어씌우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덮어씌우_v_80_rel" ].
+
+도둑맞-80 := v-acc-tr &
+  [ STEM < "도둑맞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도둑맞_v_80_rel" ].
+
+도려내-80 := v-acc-tr &
+  [ STEM < "도려내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도려내_v_80_rel" ].
+
+돌려놓-80 := v-acc-tr &
+  [ STEM < "돌려놓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌려놓_v_80_rel" ].
+
+돌려보내-80 := v-acc-tr &
+  [ STEM < "돌려보내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌려보내_v_80_rel" ].
+
+돌려세우-80 := v-acc-tr &
+  [ STEM < "돌려세우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌려세우_v_80_rel" ].
+
+동여매-80 := v-acc-tr &
+  [ STEM < "동여매" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_동여매_v_80_rel" ].
+
+되뇌이-80 := v-acc-tr &
+  [ STEM < "되뇌이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되뇌이_v_80_rel" ].
+
+되돌아보-80 := v-acc-tr &
+  [ STEM < "되돌아보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되돌아보_v_80_rel" ].
+
+되돌려받-80 := v-acc-tr &
+  [ STEM < "되돌려받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되돌려받_v_80_rel" ].
+
+둘러대-80 := v-acc-tr &
+  [ STEM < "둘러대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘러대_v_80_rel" ].
+
+둘러메-80 := v-acc-tr &
+  [ STEM < "둘러메" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘러메_v_80_rel" ].
+
+둘러쓰-80 := v-acc-tr &
+  [ STEM < "둘러쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘러쓰_v_80_rel" ].
+
+둘러치-80 := v-acc-tr &
+  [ STEM < "둘러치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘러치_v_80_rel" ].
+
+뒤돌아보-80 := v-acc-tr &
+  [ STEM < "뒤돌아보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤돌아보_v_80_rel" ].
+
+뒤따라가-80 := v-acc-tr &
+  [ STEM < "뒤따라가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤따라가_v_80_rel" ].
+
+뒤따라오-80 := v-acc-tr &
+  [ STEM < "뒤따라오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤따라오_v_80_rel" ].
+
+뒤로하-80 := v-acc-tr &
+  [ STEM < "뒤로하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤로하_v_80_rel" ].
+
+뒤바꾸-80 := v-acc-tr &
+  [ STEM < "뒤바꾸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤바꾸_v_80_rel" ].
+
+뒤적이-80 := v-acc-tr &
+  [ STEM < "뒤적이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤적이_v_80_rel" ].
+
+뒤집어씌우-80 := v-acc-tr &
+  [ STEM < "뒤집어씌우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤집어씌우_v_80_rel" ].
+
+뒤집어엎-80 := v-acc-tr &
+  [ STEM < "뒤집어엎" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤집어엎_v_80_rel" ].
+
+드높이-80 := v-acc-tr &
+  [ STEM < "드높이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_드높이_v_80_rel" ].
+
+득시글거리-80 := v-acc-tr &
+  [ STEM < "득시글거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_득시글거리_v_80_rel" ].
+
+득실거리-80 := v-acc-tr &
+  [ STEM < "득실거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_득실거리_v_80_rel" ].
+
+들먹거리-80 := v-acc-tr &
+  [ STEM < "들먹거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들먹거리_v_80_rel" ].
+
+들먹이-80 := v-acc-tr &
+  [ STEM < "들먹이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들먹이_v_80_rel" ].
+
+들쑤시-80 := v-acc-tr &
+  [ STEM < "들쑤시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들쑤시_v_80_rel" ].
+
+들씌우-80 := v-acc-tr &
+  [ STEM < "들씌우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들씌우_v_80_rel" ].
+
+들어내-80 := v-acc-tr &
+  [ STEM < "들어내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들어내_v_80_rel" ].
+
+들어먹-80 := v-acc-tr &
+  [ STEM < "들어먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들어먹_v_80_rel" ].
+
+들어주-80 := v-acc-tr &
+  [ STEM < "들어주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들어주_v_80_rel" ].
+
+들여보내-80 := v-acc-tr &
+  [ STEM < "들여보내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들여보내_v_80_rel" ].
+
+들이마시-80 := v-acc-tr &
+  [ STEM < "들이마시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이마시_v_80_rel" ].
+
+들이밀-80 := v-acc-tr &
+  [ STEM < "들이밀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이밀_v_80_rel" ].
+
+들이박-80 := v-acc-tr &
+  [ STEM < "들이박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이박_v_80_rel" ].
+
+들이받-80 := v-acc-tr &
+  [ STEM < "들이받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이받_v_80_rel" ].
+
+들이붓-80 := v-acc-tr &
+  [ STEM < "들이붓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이붓_v_80_rel" ].
+
+들이쉬-80 := v-acc-tr &
+  [ STEM < "들이쉬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이쉬_v_80_rel" ].
+
+들이치-80 := v-acc-tr &
+  [ STEM < "들이치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이치_v_80_rel" ].
+
+들이켜-80 := v-acc-tr &
+  [ STEM < "들이켜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이켜_v_80_rel" ].
+
+들추어내-80 := v-acc-tr &
+  [ STEM < "들추어내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들추어내_v_80_rel" ].
+
+들춰내-80 := v-acc-tr &
+  [ STEM < "들춰내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들춰내_v_80_rel" ].
+
+따돌리-80 := v-acc-tr &
+  [ STEM < "따돌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따돌리_v_80_rel" ].
+
+따라나서-80 := v-acc-tr &
+  [ STEM < "따라나서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따라나서_v_80_rel" ].
+
+때려잡-80 := v-acc-tr &
+  [ STEM < "때려잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때려잡_v_80_rel" ].
+
+때려치우-80 := v-acc-tr &
+  [ STEM < "때려치우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때려치우_v_80_rel" ].
+
+떠나보내-80 := v-acc-tr &
+  [ STEM < "떠나보내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠나보내_v_80_rel" ].
+
+떠나오-80 := v-acc-tr &
+  [ STEM < "떠나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠나오_v_80_rel" ].
+
+떠다밀-80 := v-acc-tr &
+  [ STEM < "떠다밀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠다밀_v_80_rel" ].
+
+떠맡기-80 := v-acc-tr &
+  [ STEM < "떠맡기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠맡기_v_80_rel" ].
+
+떠먹이-80 := v-acc-tr &
+  [ STEM < "떠먹이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠먹이_v_80_rel" ].
+
+떠받들-80 := v-acc-tr &
+  [ STEM < "떠받들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠받들_v_80_rel" ].
+
+떠받치-80 := v-acc-tr &
+  [ STEM < "떠받치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠받치_v_80_rel" ].
+
+떠벌리-80 := v-acc-tr &
+  [ STEM < "떠벌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠벌리_v_80_rel" ].
+
+떠벌이-80 := v-acc-tr &
+  [ STEM < "떠벌이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠벌이_v_80_rel" ].
+
+떼어먹-80 := v-acc-tr &
+  [ STEM < "떼어먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떼어먹_v_80_rel" ].
+
+뜯어고치-80 := v-acc-tr &
+  [ STEM < "뜯어고치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜯어고치_v_80_rel" ].
+
+뜯어말리-80 := v-acc-tr &
+  [ STEM < "뜯어말리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜯어말리_v_80_rel" ].
+
+뜯어먹-80 := v-acc-tr &
+  [ STEM < "뜯어먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜯어먹_v_80_rel" ].
+
+뜯어보-80 := v-acc-tr &
+  [ STEM < "뜯어보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜯어보_v_80_rel" ].
+
+마무리짓-80 := v-acc-tr &
+  [ STEM < "마무리짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마무리짓_v_80_rel" ].
+
+마중나오-80 := v-acc-tr &
+  [ STEM < "마중나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마중나오_v_80_rel" ].
+
+마지못하-80 := v-acc-tr &
+  [ STEM < "마지못하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마지못하_v_80_rel" ].
+
+막아서-80 := v-acc-tr &
+  [ STEM < "막아서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_막아서_v_80_rel" ].
+
+만지작거리-80 := v-acc-tr &
+  [ STEM < "만지작거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_만지작거리_v_80_rel" ].
+
+말아먹-80 := v-acc-tr &
+  [ STEM < "말아먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말아먹_v_80_rel" ].
+
+맞닥뜨리-80 := v-acc-tr &
+  [ STEM < "맞닥뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞닥뜨리_v_80_rel" ].
+
+맞받아치-80 := v-acc-tr &
+  [ STEM < "맞받아치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞받아치_v_80_rel" ].
+
+맞부딪치-80 := v-acc-tr &
+  [ STEM < "맞부딪치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞부딪치_v_80_rel" ].
+
+맞아들이-80 := v-acc-tr &
+  [ STEM < "맞아들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞아들이_v_80_rel" ].
+
+맡아보-80 := v-acc-tr &
+  [ STEM < "맡아보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맡아보_v_80_rel" ].
+
+매듭짓-80 := v-acc-tr &
+  [ STEM < "매듭짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매듭짓_v_80_rel" ].
+
+매만지-80 := v-acc-tr &
+  [ STEM < "매만지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_매만지_v_80_rel" ].
+
+먹고살-80 := v-acc-tr &
+  [ STEM < "먹고살" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_먹고살_v_80_rel" ].
+
+면제받-80 := v-acc-tr &
+  [ STEM < "면제받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_면제받_v_80_rel" ].
+
+모아들이-80 := v-acc-tr &
+  [ STEM < "모아들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_모아들이_v_80_rel" ].
+
+목조르-80 := v-acc-tr &
+  [ STEM < "목조르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_목조르_v_80_rel" ].
+
+몰라보-80 := v-acc-tr &
+  [ STEM < "몰라보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰라보_v_80_rel" ].
+
+몰라주-80 := v-acc-tr &
+  [ STEM < "몰라주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰라주_v_80_rel" ].
+
+몰아가-80 := v-acc-tr &
+  [ STEM < "몰아가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아가_v_80_rel" ].
+
+몰아붙이-80 := v-acc-tr &
+  [ STEM < "몰아붙이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아붙이_v_80_rel" ].
+
+몰아세우-80 := v-acc-tr &
+  [ STEM < "몰아세우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아세우_v_80_rel" ].
+
+몰아쉬-80 := v-acc-tr &
+  [ STEM < "몰아쉬" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아쉬_v_80_rel" ].
+
+무너뜨리-80 := v-acc-tr &
+  [ STEM < "무너뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무너뜨리_v_80_rel" ].
+
+무서워하-80 := v-acc-tr &
+  [ STEM < "무서워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무서워하_v_80_rel" ].
+
+무찌르-80 := v-acc-tr &
+  [ STEM < "무찌르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무찌르_v_80_rel" ].
+
+물어뜯-80 := v-acc-tr &
+  [ STEM < "물어뜯" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물어뜯_v_80_rel" ].
+
+뭉뚱그리-80 := v-acc-tr &
+  [ STEM < "뭉뚱그리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭉뚱그리_v_80_rel" ].
+
+밀어붙이-80 := v-acc-tr &
+  [ STEM < "밀어붙이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밀어붙이_v_80_rel" ].
+
+바라다보-80 := v-acc-tr &
+  [ STEM < "바라다보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바라다보_v_80_rel" ].
+
+바래다주-80 := v-acc-tr &
+  [ STEM < "바래다주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바래다주_v_80_rel" ].
+
+박살내-80 := v-acc-tr &
+  [ STEM < "박살내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_박살내_v_80_rel" ].
+
+반가워하-80 := v-acc-tr &
+  [ STEM < "반가워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반가워하_v_80_rel" ].
+
+받아넘기-80 := v-acc-tr &
+  [ STEM < "받아넘기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_받아넘기_v_80_rel" ].
+
+받아먹-80 := v-acc-tr &
+  [ STEM < "받아먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_받아먹_v_80_rel" ].
+
+받아쓰-80 := v-acc-tr &
+  [ STEM < "받아쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_받아쓰_v_80_rel" ].
+
+받아치-80 := v-acc-tr &
+  [ STEM < "받아치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_받아치_v_80_rel" ].
+
+발가벗기-80 := v-acc-tr &
+  [ STEM < "발가벗기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발가벗기_v_80_rel" ].
+
+발급받-80 := v-acc-tr &
+  [ STEM < "발급받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발급받_v_80_rel" ].
+
+발라내-80 := v-acc-tr &
+  [ STEM < "발라내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발라내_v_80_rel" ].
+
+발령받-80 := v-acc-tr &
+  [ STEM < "발령받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발령받_v_80_rel" ].
+
+발부받-80 := v-acc-tr &
+  [ STEM < "발부받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발부받_v_80_rel" ].
+
+배정받-80 := v-acc-tr &
+  [ STEM < "배정받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배정받_v_80_rel" ].
+
+버려두-80 := v-acc-tr &
+  [ STEM < "버려두" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버려두_v_80_rel" ].
+
+버무리-80 := v-acc-tr &
+  [ STEM < "버무리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버무리_v_80_rel" ].
+
+벗삼-80 := v-acc-tr &
+  [ STEM < "벗삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벗삼_v_80_rel" ].
+
+벗어던지-80 := v-acc-tr &
+  [ STEM < "벗어던지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벗어던지_v_80_rel" ].
+
+벗어젖히-80 := v-acc-tr &
+  [ STEM < "벗어젖히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벗어젖히_v_80_rel" ].
+
+보고받-80 := v-acc-tr &
+  [ STEM < "보고받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보고받_v_80_rel" ].
+
+보상받-80 := v-acc-tr &
+  [ STEM < "보상받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보상받_v_80_rel" ].
+
+보아주-80 := v-acc-tr &
+  [ STEM < "보아주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보아주_v_80_rel" ].
+
+보장받-80 := v-acc-tr &
+  [ STEM < "보장받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보장받_v_80_rel" ].
+
+부둥켜안-80 := v-acc-tr &
+  [ STEM < "부둥켜안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부둥켜안_v_80_rel" ].
+
+부라리-80 := v-acc-tr &
+  [ STEM < "부라리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부라리_v_80_rel" ].
+
+부러뜨리-80 := v-acc-tr &
+  [ STEM < "부러뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부러뜨리_v_80_rel" ].
+
+부러워하-80 := v-acc-tr &
+  [ STEM < "부러워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부러워하_v_80_rel" ].
+
+부릅뜨-80 := v-acc-tr &
+  [ STEM < "부릅뜨" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부릅뜨_v_80_rel" ].
+
+부여받-80 := v-acc-tr &
+  [ STEM < "부여받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부여받_v_80_rel" ].
+
+부여안-80 := v-acc-tr &
+  [ STEM < "부여안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부여안_v_80_rel" ].
+
+부여잡-80 := v-acc-tr &
+  [ STEM < "부여잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부여잡_v_80_rel" ].
+
+부탁받-80 := v-acc-tr &
+  [ STEM < "부탁받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부탁받_v_80_rel" ].
+
+부풀리-80 := v-acc-tr &
+  [ STEM < "부풀리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부풀리_v_80_rel" ].
+
+북돋우-80 := v-acc-tr &
+  [ STEM < "북돋우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_북돋우_v_80_rel" ].
+
+분배받-80 := v-acc-tr &
+  [ STEM < "분배받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_분배받_v_80_rel" ].
+
+분양받-80 := v-acc-tr &
+  [ STEM < "분양받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_분양받_v_80_rel" ].
+
+분지르-80 := v-acc-tr &
+  [ STEM < "분지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_분지르_v_80_rel" ].
+
+불러들이-80 := v-acc-tr &
+  [ STEM < "불러들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불러들이_v_80_rel" ].
+
+불사르-80 := v-acc-tr &
+  [ STEM < "불사르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불사르_v_80_rel" ].
+
+불태우-80 := v-acc-tr &
+  [ STEM < "불태우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불태우_v_80_rel" ].
+
+비껴가-80 := v-acc-tr &
+  [ STEM < "비껴가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비껴가_v_80_rel" ].
+
+비틀리-80 := v-acc-tr &
+  [ STEM < "비틀리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비틀리_v_80_rel" ].
+
+빗나가-80 := v-acc-tr &
+  [ STEM < "빗나가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빗나가_v_80_rel" ].
+
+빠트리-80 := v-acc-tr &
+  [ STEM < "빠트리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빠트리_v_80_rel" ].
+
+빨아내-80 := v-acc-tr &
+  [ STEM < "빨아내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빨아내_v_80_rel" ].
+
+빨아들이-80 := v-acc-tr &
+  [ STEM < "빨아들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빨아들이_v_80_rel" ].
+
+빨아먹-80 := v-acc-tr &
+  [ STEM < "빨아먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빨아먹_v_80_rel" ].
+
+빼돌리-80 := v-acc-tr &
+  [ STEM < "빼돌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빼돌리_v_80_rel" ].
+
+뽑아내-80 := v-acc-tr &
+  [ STEM < "뽑아내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뽑아내_v_80_rel" ].
+
+뿌리뽑-80 := v-acc-tr &
+  [ STEM < "뿌리뽑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿌리뽑_v_80_rel" ].
+
+뿌리치-80 := v-acc-tr &
+  [ STEM < "뿌리치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿌리치_v_80_rel" ].
+
+뿜어내-80 := v-acc-tr &
+  [ STEM < "뿜어내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿜어내_v_80_rel" ].
+
+사고팔-80 := v-acc-tr &
+  [ STEM < "사고팔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사고팔_v_80_rel" ].
+
+삼가하-80 := v-acc-tr &
+  [ STEM < "삼가하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삼가하_v_80_rel" ].
+
+상속받-80 := v-acc-tr &
+  [ STEM < "상속받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상속받_v_80_rel" ].
+
+새겨듣-80 := v-acc-tr &
+  [ STEM < "새겨듣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새겨듣_v_80_rel" ].
+
+선고받-80 := v-acc-tr &
+  [ STEM < "선고받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선고받_v_80_rel" ].
+
+선물받-80 := v-acc-tr &
+  [ STEM < "선물받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선물받_v_80_rel" ].
+
+소개받-80 := v-acc-tr &
+  [ STEM < "소개받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소개받_v_80_rel" ].
+
+수그리-80 := v-acc-tr &
+  [ STEM < "수그리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수그리_v_80_rel" ].
+
+수놓이-80 := v-acc-tr &
+  [ STEM < "수놓이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수놓이_v_80_rel" ].
+
+승인받-80 := v-acc-tr &
+  [ STEM < "승인받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_승인받_v_80_rel" ].
+
+시집보내-80 := v-acc-tr &
+  [ STEM < "시집보내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시집보내_v_80_rel" ].
+
+쏘아보-80 := v-acc-tr &
+  [ STEM < "쏘아보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쏘아보_v_80_rel" ].
+
+쏘아붙이-80 := v-acc-tr &
+  [ STEM < "쏘아붙이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쏘아붙이_v_80_rel" ].
+
+쓸어내리-80 := v-acc-tr &
+  [ STEM < "쓸어내리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓸어내리_v_80_rel" ].
+
+쓸어버리-80 := v-acc-tr &
+  [ STEM < "쓸어버리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓸어버리_v_80_rel" ].
+
+아쉬워하-80 := v-acc-tr &
+  [ STEM < "아쉬워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아쉬워하_v_80_rel" ].
+
+아우르-80 := v-acc-tr &
+  [ STEM < "아우르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아우르_v_80_rel" ].
+
+안타까워하-80 := v-acc-tr &
+  [ STEM < "안타까워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_안타까워하_v_80_rel" ].
+
+알아맞히-80 := v-acc-tr &
+  [ STEM < "알아맞히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알아맞히_v_80_rel" ].
+
+알아주-80 := v-acc-tr &
+  [ STEM < "알아주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알아주_v_80_rel" ].
+
+알아채-80 := v-acc-tr &
+  [ STEM < "알아채" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_알아채_v_80_rel" ].
+
+앞장세우-80 := v-acc-tr &
+  [ STEM < "앞장세우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앞장세우_v_80_rel" ].
+
+애태우-80 := v-acc-tr &
+  [ STEM < "애태우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_애태우_v_80_rel" ].
+
+야단치-80 := v-acc-tr &
+  [ STEM < "야단치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야단치_v_80_rel" ].
+
+약속받-80 := v-acc-tr &
+  [ STEM < "약속받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_약속받_v_80_rel" ].
+
+약올리-80 := v-acc-tr &
+  [ STEM < "약올리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_약올리_v_80_rel" ].
+
+어림잡-80 := v-acc-tr &
+  [ STEM < "어림잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어림잡_v_80_rel" ].
+
+어우르-80 := v-acc-tr &
+  [ STEM < "어우르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어우르_v_80_rel" ].
+
+어지럽히-80 := v-acc-tr &
+  [ STEM < "어지럽히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어지럽히_v_80_rel" ].
+
+어지르-80 := v-acc-tr &
+  [ STEM < "어지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어지르_v_80_rel" ].
+
+얻어듣-80 := v-acc-tr &
+  [ STEM < "얻어듣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얻어듣_v_80_rel" ].
+
+얼버무리-80 := v-acc-tr &
+  [ STEM < "얼버무리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼버무리_v_80_rel" ].
+
+얽어매-80 := v-acc-tr &
+  [ STEM < "얽어매" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얽어매_v_80_rel" ].
+
+업신여기-80 := v-acc-tr &
+  [ STEM < "업신여기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_업신여기_v_80_rel" ].
+
+엎지르-80 := v-acc-tr &
+  [ STEM < "엎지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엎지르_v_80_rel" ].
+
+에두르-80 := v-acc-tr &
+  [ STEM < "에두르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에두르_v_80_rel" ].
+
+에워싸-80 := v-acc-tr &
+  [ STEM < "에워싸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_에워싸_v_80_rel" ].
+
+열어젖히-80 := v-acc-tr &
+  [ STEM < "열어젖히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_열어젖히_v_80_rel" ].
+
+오그리-80 := v-acc-tr &
+  [ STEM < "오그리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오그리_v_80_rel" ].
+
+오물거리-80 := v-acc-tr &
+  [ STEM < "오물거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오물거리_v_80_rel" ].
+
+오므리-80 := v-acc-tr &
+  [ STEM < "오므리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오므리_v_80_rel" ].
+
+옥죄-80 := v-acc-tr &
+  [ STEM < "옥죄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옥죄_v_80_rel" ].
+
+올려붙이-80 := v-acc-tr &
+  [ STEM < "올려붙이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_올려붙이_v_80_rel" ].
+
+옭아매-80 := v-acc-tr &
+  [ STEM < "옭아매" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옭아매_v_80_rel" ].
+
+요구받-80 := v-acc-tr &
+  [ STEM < "요구받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요구받_v_80_rel" ].
+
+욕보이-80 := v-acc-tr &
+  [ STEM < "욕보이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_욕보이_v_80_rel" ].
+
+욕심내-80 := v-acc-tr &
+  [ STEM < "욕심내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_욕심내_v_80_rel" ].
+
+우러러보-80 := v-acc-tr &
+  [ STEM < "우러러보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우러러보_v_80_rel" ].
+
+우러르-80 := v-acc-tr &
+  [ STEM < "우러르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우러르_v_80_rel" ].
+
+우려내-80 := v-acc-tr &
+  [ STEM < "우려내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우려내_v_80_rel" ].
+
+우려먹-80 := v-acc-tr &
+  [ STEM < "우려먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우려먹_v_80_rel" ].
+
+운명짓-80 := v-acc-tr &
+  [ STEM < "운명짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_운명짓_v_80_rel" ].
+
+움츠리-80 := v-acc-tr &
+  [ STEM < "움츠리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움츠리_v_80_rel" ].
+
+움켜잡-80 := v-acc-tr &
+  [ STEM < "움켜잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움켜잡_v_80_rel" ].
+
+움켜쥐-80 := v-acc-tr &
+  [ STEM < "움켜쥐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움켜쥐_v_80_rel" ].
+
+웃어넘기-80 := v-acc-tr &
+  [ STEM < "웃어넘기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웃어넘기_v_80_rel" ].
+
+웅크리-80 := v-acc-tr &
+  [ STEM < "웅크리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웅크리_v_80_rel" ].
+
+위임받-80 := v-acc-tr &
+  [ STEM < "위임받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_위임받_v_80_rel" ].
+
+윽박지르-80 := v-acc-tr &
+  [ STEM < "윽박지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_윽박지르_v_80_rel" ].
+
+읊조리-80 := v-acc-tr &
+  [ STEM < "읊조리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_읊조리_v_80_rel" ].
+
+의뢰받-80 := v-acc-tr &
+  [ STEM < "의뢰받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의뢰받_v_80_rel" ].
+
+의심받-80 := v-acc-tr &
+  [ STEM < "의심받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_의심받_v_80_rel" ].
+
+이식받-80 := v-acc-tr &
+  [ STEM < "이식받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이식받_v_80_rel" ].
+
+일그러뜨리-80 := v-acc-tr &
+  [ STEM < "일그러뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일그러뜨리_v_80_rel" ].
+
+자랑삼-80 := v-acc-tr &
+  [ STEM < "자랑삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자랑삼_v_80_rel" ].
+
+자리매기-80 := v-acc-tr &
+  [ STEM < "자리매기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자리매기_v_80_rel" ].
+
+잠재우-80 := v-acc-tr &
+  [ STEM < "잠재우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잠재우_v_80_rel" ].
+
+잡수시-80 := v-acc-tr &
+  [ STEM < "잡수시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡수시_v_80_rel" ].
+
+잡아가-80 := v-acc-tr &
+  [ STEM < "잡아가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡아가_v_80_rel" ].
+
+잡아끌-80 := v-acc-tr &
+  [ STEM < "잡아끌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡아끌_v_80_rel" ].
+
+잡아내-80 := v-acc-tr &
+  [ STEM < "잡아내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡아내_v_80_rel" ].
+
+잡아들이-80 := v-acc-tr &
+  [ STEM < "잡아들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡아들이_v_80_rel" ].
+
+잡아떼-80 := v-acc-tr &
+  [ STEM < "잡아떼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡아떼_v_80_rel" ].
+
+잡아채-80 := v-acc-tr &
+  [ STEM < "잡아채" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡아채_v_80_rel" ].
+
+장가보내-80 := v-acc-tr &
+  [ STEM < "장가보내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장가보내_v_80_rel" ].
+
+장난삼-80 := v-acc-tr &
+  [ STEM < "장난삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장난삼_v_80_rel" ].
+
+적용받-80 := v-acc-tr &
+  [ STEM < "적용받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적용받_v_80_rel" ].
+
+전달받-80 := v-acc-tr &
+  [ STEM < "전달받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전달받_v_80_rel" ].
+
+전수받-80 := v-acc-tr &
+  [ STEM < "전수받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_전수받_v_80_rel" ].
+
+제공받-80 := v-acc-tr &
+  [ STEM < "제공받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제공받_v_80_rel" ].
+
+제출받-80 := v-acc-tr &
+  [ STEM < "제출받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제출받_v_80_rel" ].
+
+제한받-80 := v-acc-tr &
+  [ STEM < "제한받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제한받_v_80_rel" ].
+
+조건짓-80 := v-acc-tr &
+  [ STEM < "조건짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조건짓_v_80_rel" ].
+
+조사받-80 := v-acc-tr &
+  [ STEM < "조사받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조사받_v_80_rel" ].
+
+조아리-80 := v-acc-tr &
+  [ STEM < "조아리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조아리_v_80_rel" ].
+
+졸라매-80 := v-acc-tr &
+  [ STEM < "졸라매" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_졸라매_v_80_rel" ].
+
+종결짓-80 := v-acc-tr &
+  [ STEM < "종결짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_종결짓_v_80_rel" ].
+
+주름지-80 := v-acc-tr &
+  [ STEM < "주름지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주름지_v_80_rel" ].
+
+주무르-80 := v-acc-tr &
+  [ STEM < "주무르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주무르_v_80_rel" ].
+
+주물럭거리-80 := v-acc-tr &
+  [ STEM < "주물럭거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주물럭거리_v_80_rel" ].
+
+주워듣-80 := v-acc-tr &
+  [ STEM < "주워듣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주워듣_v_80_rel" ].
+
+주입받-80 := v-acc-tr &
+  [ STEM < "주입받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주입받_v_80_rel" ].
+
+주저앉히-80 := v-acc-tr &
+  [ STEM < "주저앉히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주저앉히_v_80_rel" ].
+
+쥐어뜯-80 := v-acc-tr &
+  [ STEM < "쥐어뜯" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쥐어뜯_v_80_rel" ].
+
+쥐어박-80 := v-acc-tr &
+  [ STEM < "쥐어박" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쥐어박_v_80_rel" ].
+
+쥐어짜-80 := v-acc-tr &
+  [ STEM < "쥐어짜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쥐어짜_v_80_rel" ].
+
+지급받-80 := v-acc-tr &
+  [ STEM < "지급받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지급받_v_80_rel" ].
+
+지새우-80 := v-acc-tr &
+  [ STEM < "지새우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지새우_v_80_rel" ].
+
+지어내-80 := v-acc-tr &
+  [ STEM < "지어내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지어내_v_80_rel" ].
+
+지원받-80 := v-acc-tr &
+  [ STEM < "지원받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지원받_v_80_rel" ].
+
+지적받-80 := v-acc-tr &
+  [ STEM < "지적받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지적받_v_80_rel" ].
+
+지탄받-80 := v-acc-tr &
+  [ STEM < "지탄받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지탄받_v_80_rel" ].
+
+짊어지-80 := v-acc-tr &
+  [ STEM < "짊어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짊어지_v_80_rel" ].
+
+집어내-80 := v-acc-tr &
+  [ STEM < "집어내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집어내_v_80_rel" ].
+
+집어던지-80 := v-acc-tr &
+  [ STEM < "집어던지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집어던지_v_80_rel" ].
+
+집어먹-80 := v-acc-tr &
+  [ STEM < "집어먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집어먹_v_80_rel" ].
+
+집어삼키-80 := v-acc-tr &
+  [ STEM < "집어삼키" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집어삼키_v_80_rel" ].
+
+집어치우-80 := v-acc-tr &
+  [ STEM < "집어치우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집어치우_v_80_rel" ].
+
+집적거리-80 := v-acc-tr &
+  [ STEM < "집적거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집적거리_v_80_rel" ].
+
+짓누르-80 := v-acc-tr &
+  [ STEM < "짓누르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짓누르_v_80_rel" ].
+
+짓이기-80 := v-acc-tr &
+  [ STEM < "짓이기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짓이기_v_80_rel" ].
+
+째려보-80 := v-acc-tr &
+  [ STEM < "째려보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_째려보_v_80_rel" ].
+
+쪼그리-80 := v-acc-tr &
+  [ STEM < "쪼그리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쪼그리_v_80_rel" ].
+
+쫓아내-80 := v-acc-tr &
+  [ STEM < "쫓아내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쫓아내_v_80_rel" ].
+
+쫓아오-80 := v-acc-tr &
+  [ STEM < "쫓아오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쫓아오_v_80_rel" ].
+
+쭈그리-80 := v-acc-tr &
+  [ STEM < "쭈그리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭈그리_v_80_rel" ].
+
+찔러주-80 := v-acc-tr &
+  [ STEM < "찔러주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찔러주_v_80_rel" ].
+
+찡그리-80 := v-acc-tr &
+  [ STEM < "찡그리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찡그리_v_80_rel" ].
+
+찢어발기-80 := v-acc-tr &
+  [ STEM < "찢어발기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찢어발기_v_80_rel" ].
+
+차려입-80 := v-acc-tr &
+  [ STEM < "차려입" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차려입_v_80_rel" ].
+
+찾아다니-80 := v-acc-tr &
+  [ STEM < "찾아다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찾아다니_v_80_rel" ].
+
+쳐부수-80 := v-acc-tr &
+  [ STEM < "쳐부수" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쳐부수_v_80_rel" ].
+
+추스르-80 := v-acc-tr &
+  [ STEM < "추스르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_추스르_v_80_rel" ].
+
+추스리-80 := v-acc-tr &
+  [ STEM < "추스리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_추스리_v_80_rel" ].
+
+추켜세우-80 := v-acc-tr &
+  [ STEM < "추켜세우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_추켜세우_v_80_rel" ].
+
+치어다보-80 := v-acc-tr &
+  [ STEM < "치어다보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치어다보_v_80_rel" ].
+
+치켜들-80 := v-acc-tr &
+  [ STEM < "치켜들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치켜들_v_80_rel" ].
+
+치켜뜨-80 := v-acc-tr &
+  [ STEM < "치켜뜨" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치켜뜨_v_80_rel" ].
+
+치켜세우-80 := v-acc-tr &
+  [ STEM < "치켜세우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치켜세우_v_80_rel" ].
+
+치켜올리-80 := v-acc-tr &
+  [ STEM < "치켜올리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치켜올리_v_80_rel" ].
+
+침해받-80 := v-acc-tr &
+  [ STEM < "침해받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_침해받_v_80_rel" ].
+
+타결짓-80 := v-acc-tr &
+  [ STEM < "타결짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_타결짓_v_80_rel" ].
+
+타고나-80 := v-acc-tr &
+  [ STEM < "타고나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_타고나_v_80_rel" ].
+
+타이르-80 := v-acc-tr &
+  [ STEM < "타이르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_타이르_v_80_rel" ].
+
+터트리-80 := v-acc-tr &
+  [ STEM < "터트리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_터트리_v_80_rel" ].
+
+토닥거리-80 := v-acc-tr &
+  [ STEM < "토닥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_토닥거리_v_80_rel" ].
+
+토닥이-80 := v-acc-tr &
+  [ STEM < "토닥이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_토닥이_v_80_rel" ].
+
+토막내-80 := v-acc-tr &
+  [ STEM < "토막내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_토막내_v_80_rel" ].
+
+통보받-80 := v-acc-tr &
+  [ STEM < "통보받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_통보받_v_80_rel" ].
+
+트집잡-80 := v-acc-tr &
+  [ STEM < "트집잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_트집잡_v_80_rel" ].
+
+특징짓-80 := v-acc-tr &
+  [ STEM < "특징짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_특징짓_v_80_rel" ].
+
+틀어막-80 := v-acc-tr &
+  [ STEM < "틀어막" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_틀어막_v_80_rel" ].
+
+틀어쥐-80 := v-acc-tr &
+  [ STEM < "틀어쥐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_틀어쥐_v_80_rel" ].
+
+패대기치-80 := v-acc-tr &
+  [ STEM < "패대기치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_패대기치_v_80_rel" ].
+
+팽개치-80 := v-acc-tr &
+  [ STEM < "팽개치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_팽개치_v_80_rel" ].
+
+퍼마시-80 := v-acc-tr &
+  [ STEM < "퍼마시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퍼마시_v_80_rel" ].
+
+퍼지르-80 := v-acc-tr &
+  [ STEM < "퍼지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퍼지르_v_80_rel" ].
+
+풀어쓰-80 := v-acc-tr &
+  [ STEM < "풀어쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풀어쓰_v_80_rel" ].
+
+풀어헤치-80 := v-acc-tr &
+  [ STEM < "풀어헤치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풀어헤치_v_80_rel" ].
+
+핑계삼-80 := v-acc-tr &
+  [ STEM < "핑계삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_핑계삼_v_80_rel" ].
+
+해치우-80 := v-acc-tr &
+  [ STEM < "해치우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_해치우_v_80_rel" ].
+
+허락받-80 := v-acc-tr &
+  [ STEM < "허락받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허락받_v_80_rel" ].
+
+허물어뜨리-80 := v-acc-tr &
+  [ STEM < "허물어뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허물어뜨리_v_80_rel" ].
+
+헛디디-80 := v-acc-tr &
+  [ STEM < "헛디디" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헛디디_v_80_rel" ].
+
+헤매이-80 := v-acc-tr &
+  [ STEM < "헤매이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헤매이_v_80_rel" ].
+
+헤치-80 := v-acc-tr &
+  [ STEM < "헤치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헤치_v_80_rel" ].
+
+후려갈기-80 := v-acc-tr &
+  [ STEM < "후려갈기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후려갈기_v_80_rel" ].
+
+후려치-80 := v-acc-tr &
+  [ STEM < "후려치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후려치_v_80_rel" ].
+
+휘갈기-80 := v-acc-tr &
+  [ STEM < "휘갈기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘갈기_v_80_rel" ].
+
+휘둘러보-80 := v-acc-tr &
+  [ STEM < "휘둘러보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘둘러보_v_80_rel" ].
+
+휘어잡-80 := v-acc-tr &
+  [ STEM < "휘어잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘어잡_v_80_rel" ].
+
+흉내내-80 := v-acc-tr &
+  [ STEM < "흉내내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흉내내_v_80_rel" ].
+
+흐트리-80 := v-acc-tr &
+  [ STEM < "흐트리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흐트리_v_80_rel" ].
+
+흘겨보-80 := v-acc-tr &
+  [ STEM < "흘겨보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘겨보_v_80_rel" ].
+
+흘려듣-80 := v-acc-tr &
+  [ STEM < "흘려듣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘려듣_v_80_rel" ].
+
+흘려버리-80 := v-acc-tr &
+  [ STEM < "흘려버리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘려버리_v_80_rel" ].
+
+흠집내-80 := v-acc-tr &
+  [ STEM < "흠집내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흠집내_v_80_rel" ].
+
+흩뜨리-80 := v-acc-tr &
+  [ STEM < "흩뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흩뜨리_v_80_rel" ].
+
+흩뿌리-80 := v-acc-tr &
+  [ STEM < "흩뿌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흩뿌리_v_80_rel" ].
+
+흩트리-80 := v-acc-tr &
+  [ STEM < "흩트리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흩트리_v_80_rel" ].
+
+힐끔거리-80 := v-acc-tr &
+  [ STEM < "힐끔거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_힐끔거리_v_80_rel" ].
+
+가져다주-80 := v-np-dat-ditr &
+  [ STEM < "가져다주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가져다주_v_80_rel" ].
+
+갈아주-80 := v-np-dat-ditr &
+  [ STEM < "갈아주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈아주_v_80_rel" ].
+
+감사드리-80 := v-np-dat-ditr &
+  [ STEM < "감사드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감사드리_v_80_rel" ].
+
+강요받-80 := v-np-dat-ditr &
+  [ STEM < "강요받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_강요받_v_80_rel" ].
+
+건네주-80 := v-np-dat-ditr &
+  [ STEM < "건네주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_건네주_v_80_rel" ].
+
+내맡기-80 := v-np-dat-ditr &
+  [ STEM < "내맡기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내맡기_v_80_rel" ].
+
+넘겨주-80 := v-np-dat-ditr &
+  [ STEM < "넘겨주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘겨주_v_80_rel" ].
+
+돌려주-80 := v-np-dat-ditr &
+  [ STEM < "돌려주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌려주_v_80_rel" ].
+
+떠넘기-80 := v-np-dat-ditr &
+  [ STEM < "떠넘기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠넘기_v_80_rel" ].
+
+몰아주-80 := v-np-dat-ditr &
+  [ STEM < "몰아주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아주_v_80_rel" ].
+
+밀어주-80 := v-np-dat-ditr &
+  [ STEM < "밀어주" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밀어주_v_80_rel" ].
+
+방해받-80 := v-np-dat-ditr &
+  [ STEM < "방해받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_방해받_v_80_rel" ].
+
+부탁드리-80 := v-np-dat-ditr &
+  [ STEM < "부탁드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부탁드리_v_80_rel" ].
+
+설명드리-80 := v-np-dat-ditr &
+  [ STEM < "설명드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_설명드리_v_80_rel" ].
+
+일러바치-80 := v-np-dat-ditr &
+  [ STEM < "일러바치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일러바치_v_80_rel" ].
+
+축하드리-80 := v-np-dat-ditr &
+  [ STEM < "축하드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_축하드리_v_80_rel" ].
+
+팔아넘기-80 := v-np-dat-ditr &
+  [ STEM < "팔아넘기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_팔아넘기_v_80_rel" ].
+
+팔아먹-80 := v-np-dat-ditr &
+  [ STEM < "팔아먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_팔아먹_v_80_rel" ].
+
+가로놓이-80 := v-intr &
+  [ STEM < "가로놓이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가로놓이_v_80_rel" ].
+
+가로막히-80 := v-intr &
+  [ STEM < "가로막히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가로막히_v_80_rel" ].
+
+가만있-80 := v-intr &
+  [ STEM < "가만있" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가만있_v_80_rel" ].
+
+가위눌리-80 := v-intr &
+  [ STEM < "가위눌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_가위눌리_v_80_rel" ].
+
+각광받-80 := v-intr &
+  [ STEM < "각광받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_각광받_v_80_rel" ].
+
+갈라서-80 := v-intr &
+  [ STEM < "갈라서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_갈라서_v_80_rel" ].
+
+감동받-80 := v-intr &
+  [ STEM < "감동받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감동받_v_80_rel" ].
+
+감명받-80 := v-intr &
+  [ STEM < "감명받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감명받_v_80_rel" ].
+
+거꾸러지-80 := v-intr &
+  [ STEM < "거꾸러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거꾸러지_v_80_rel" ].
+
+거덜나-80 := v-intr &
+  [ STEM < "거덜나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거덜나_v_80_rel" ].
+
+거들먹거리-80 := v-intr &
+  [ STEM < "거들먹거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거들먹거리_v_80_rel" ].
+
+거듭나-80 := v-intr &
+  [ STEM < "거듭나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거듭나_v_80_rel" ].
+
+걱정말-80 := v-intr &
+  [ STEM < "걱정말" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걱정말_v_80_rel" ].
+
+건너오-80 := v-intr &
+  [ STEM < "건너오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_건너오_v_80_rel" ].
+
+건들거리-80 := v-intr &
+  [ STEM < "건들거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_건들거리_v_80_rel" ].
+
+고기잡-80 := v-intr &
+  [ STEM < "고기잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고기잡_v_80_rel" ].
+
+고꾸라지-80 := v-intr &
+  [ STEM < "고꾸라지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고꾸라지_v_80_rel" ].
+
+고통받-80 := v-intr &
+  [ STEM < "고통받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고통받_v_80_rel" ].
+
+고함치-80 := v-intr &
+  [ STEM < "고함치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_고함치_v_80_rel" ].
+
+곤두박질치-80 := v-intr &
+  [ STEM < "곤두박질치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곤두박질치_v_80_rel" ].
+
+곧이듣-80 := v-intr &
+  [ STEM < "곧이듣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곧이듣_v_80_rel" ].
+
+곯아떨어지-80 := v-intr &
+  [ STEM < "곯아떨어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곯아떨어지_v_80_rel" ].
+
+공인받-80 := v-intr &
+  [ STEM < "공인받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공인받_v_80_rel" ].
+
+괴로워하-80 := v-intr &
+  [ STEM < "괴로워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_괴로워하_v_80_rel" ].
+
+구겨지-80 := v-intr &
+  [ STEM < "구겨지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구겨지_v_80_rel" ].
+
+구멍나-80 := v-intr &
+  [ STEM < "구멍나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구멍나_v_80_rel" ].
+
+구박받-80 := v-intr &
+  [ STEM < "구박받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구박받_v_80_rel" ].
+
+구부러지-80 := v-intr &
+  [ STEM < "구부러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구부러지_v_80_rel" ].
+
+구애받-80 := v-intr &
+  [ STEM < "구애받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구애받_v_80_rel" ].
+
+구원받-80 := v-intr &
+  [ STEM < "구원받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구원받_v_80_rel" ].
+
+구제받-80 := v-intr &
+  [ STEM < "구제받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구제받_v_80_rel" ].
+
+굴러가-80 := v-intr &
+  [ STEM < "굴러가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굴러가_v_80_rel" ].
+
+굴러다니-80 := v-intr &
+  [ STEM < "굴러다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굴러다니_v_80_rel" ].
+
+굽신거리-80 := v-intr &
+  [ STEM < "굽신거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굽신거리_v_80_rel" ].
+
+굽실거리-80 := v-intr &
+  [ STEM < "굽실거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굽실거리_v_80_rel" ].
+
+굽이지-80 := v-intr &
+  [ STEM < "굽이지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굽이지_v_80_rel" ].
+
+굽이치-80 := v-intr &
+  [ STEM < "굽이치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굽이치_v_80_rel" ].
+
+글쓰-80 := v-intr &
+  [ STEM < "글쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글쓰_v_80_rel" ].
+
+글읽-80 := v-intr &
+  [ STEM < "글읽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글읽_v_80_rel" ].
+
+글짓-80 := v-intr &
+  [ STEM < "글짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_글짓_v_80_rel" ].
+
+금가-80 := v-intr &
+  [ STEM < "금가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_금가_v_80_rel" ].
+
+기류타-80 := v-intr &
+  [ STEM < "기류타" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기류타_v_80_rel" ].
+
+기어가-80 := v-intr &
+  [ STEM < "기어가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기어가_v_80_rel" ].
+
+기어들-80 := v-intr &
+  [ STEM < "기어들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기어들_v_80_rel" ].
+
+기억나-80 := v-intr &
+  [ STEM < "기억나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기억나_v_80_rel" ].
+
+기우뚱거리-80 := v-intr &
+  [ STEM < "기우뚱거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기우뚱거리_v_80_rel" ].
+
+기울어지-80 := v-intr &
+  [ STEM < "기울어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_기울어지_v_80_rel" ].
+
+길가-80 := v-intr &
+  [ STEM < "길가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_길가_v_80_rel" ].
+
+김빠지-80 := v-intr &
+  [ STEM < "김빠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_김빠지_v_80_rel" ].
+
+까닭모르-80 := v-intr &
+  [ STEM < "까닭모르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까닭모르_v_80_rel" ].
+
+까무라치-80 := v-intr &
+  [ STEM < "까무라치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까무라치_v_80_rel" ].
+
+까무러치-80 := v-intr &
+  [ STEM < "까무러치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_까무러치_v_80_rel" ].
+
+깍지끼-80 := v-intr &
+  [ STEM < "깍지끼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깍지끼_v_80_rel" ].
+
+깎아지르-80 := v-intr &
+  [ STEM < "깎아지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깎아지르_v_80_rel" ].
+
+깔깔거리-80 := v-intr &
+  [ STEM < "깔깔거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깔깔거리_v_80_rel" ].
+
+깔깔대-80 := v-intr &
+  [ STEM < "깔깔대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깔깔대_v_80_rel" ].
+
+깜빡이-80 := v-intr &
+  [ STEM < "깜빡이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깜빡이_v_80_rel" ].
+
+깨어지-80 := v-intr &
+  [ STEM < "깨어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_깨어지_v_80_rel" ].
+
+꺾어지-80 := v-intr &
+  [ STEM < "꺾어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꺾어지_v_80_rel" ].
+
+꼬꾸라지-80 := v-intr &
+  [ STEM < "꼬꾸라지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬꾸라지_v_80_rel" ].
+
+꼬물거리-80 := v-intr &
+  [ STEM < "꼬물거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬물거리_v_80_rel" ].
+
+꼬부라지-80 := v-intr &
+  [ STEM < "꼬부라지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼬부라지_v_80_rel" ].
+
+꼼지락거리-80 := v-intr &
+  [ STEM < "꼼지락거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꼼지락거리_v_80_rel" ].
+
+꽃팔-80 := v-intr &
+  [ STEM < "꽃팔" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽃팔_v_80_rel" ].
+
+꽃피-80 := v-intr &
+  [ STEM < "꽃피" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽃피_v_80_rel" ].
+
+꽃피우-80 := v-intr &
+  [ STEM < "꽃피우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꽃피우_v_80_rel" ].
+
+꾸물거리-80 := v-intr &
+  [ STEM < "꾸물거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꾸물거리_v_80_rel" ].
+
+꿇어앉-80 := v-intr &
+  [ STEM < "꿇어앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿇어앉_v_80_rel" ].
+
+꿈틀거리-80 := v-intr &
+  [ STEM < "꿈틀거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿈틀거리_v_80_rel" ].
+
+꿈틀대-80 := v-intr &
+  [ STEM < "꿈틀대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_꿈틀대_v_80_rel" ].
+
+끓어오르-80 := v-intr &
+  [ STEM < "끓어오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끓어오르_v_80_rel" ].
+
+끙끙거리-80 := v-intr &
+  [ STEM < "끙끙거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끙끙거리_v_80_rel" ].
+
+끙끙대-80 := v-intr &
+  [ STEM < "끙끙대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끙끙대_v_80_rel" ].
+
+끝장나-80 := v-intr &
+  [ STEM < "끝장나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_끝장나_v_80_rel" ].
+
+낄낄거리-80 := v-intr &
+  [ STEM < "낄낄거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낄낄거리_v_80_rel" ].
+
+낄낄대-80 := v-intr &
+  [ STEM < "낄낄대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낄낄대_v_80_rel" ].
+
+낑낑거리-80 := v-intr &
+  [ STEM < "낑낑거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낑낑거리_v_80_rel" ].
+
+나가떨어지-80 := v-intr &
+  [ STEM < "나가떨어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나가떨어지_v_80_rel" ].
+
+나동그라지-80 := v-intr &
+  [ STEM < "나동그라지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나동그라지_v_80_rel" ].
+
+나무심-80 := v-intr &
+  [ STEM < "나무심" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나무심_v_80_rel" ].
+
+나빠지-80 := v-intr &
+  [ STEM < "나빠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나빠지_v_80_rel" ].
+
+나이들-80 := v-intr &
+  [ STEM < "나이들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나이들_v_80_rel" ].
+
+나이먹-80 := v-intr &
+  [ STEM < "나이먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나이먹_v_80_rel" ].
+
+나자빠지-80 := v-intr &
+  [ STEM < "나자빠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나자빠지_v_80_rel" ].
+
+나풀거리-80 := v-intr &
+  [ STEM < "나풀거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_나풀거리_v_80_rel" ].
+
+날름거리-80 := v-intr &
+  [ STEM < "날름거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_날름거리_v_80_rel" ].
+
+날아다니-80 := v-intr &
+  [ STEM < "날아다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_날아다니_v_80_rel" ].
+
+날아들-80 := v-intr &
+  [ STEM < "날아들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_날아들_v_80_rel" ].
+
+날아오-80 := v-intr &
+  [ STEM < "날아오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_날아오_v_80_rel" ].
+
+날아오르-80 := v-intr &
+  [ STEM < "날아오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_날아오르_v_80_rel" ].
+
+남부럽-80 := v-intr &
+  [ STEM < "남부럽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남부럽_v_80_rel" ].
+
+남아나-80 := v-intr &
+  [ STEM < "남아나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남아나_v_80_rel" ].
+
+남아돌-80 := v-intr &
+  [ STEM < "남아돌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_남아돌_v_80_rel" ].
+
+내다보이-80 := v-intr &
+  [ STEM < "내다보이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내다보이_v_80_rel" ].
+
+내달리-80 := v-intr &
+  [ STEM < "내달리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내달리_v_80_rel" ].
+
+내려서-80 := v-intr &
+  [ STEM < "내려서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내려서_v_80_rel" ].
+
+내리꽂히-80 := v-intr &
+  [ STEM < "내리꽂히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내리꽂히_v_80_rel" ].
+
+내리쬐-80 := v-intr &
+  [ STEM < "내리쬐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내리쬐_v_80_rel" ].
+
+내보이-80 := v-intr &
+  [ STEM < "내보이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내보이_v_80_rel" ].
+
+내비치-80 := v-intr &
+  [ STEM < "내비치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내비치_v_80_rel" ].
+
+내쫓기-80 := v-intr &
+  [ STEM < "내쫓기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_내쫓기_v_80_rel" ].
+
+냄새나-80 := v-intr &
+  [ STEM < "냄새나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_냄새나_v_80_rel" ].
+
+너울거리-80 := v-intr &
+  [ STEM < "너울거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너울거리_v_80_rel" ].
+
+너울대-80 := v-intr &
+  [ STEM < "너울대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_너울대_v_80_rel" ].
+
+넋나가-80 := v-intr &
+  [ STEM < "넋나가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넋나가_v_80_rel" ].
+
+널브러지-80 := v-intr &
+  [ STEM < "널브러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_널브러지_v_80_rel" ].
+
+넘실거리-80 := v-intr &
+  [ STEM < "넘실거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘실거리_v_80_rel" ].
+
+넘실대-80 := v-intr &
+  [ STEM < "넘실대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘실대_v_80_rel" ].
+
+넘어오-80 := v-intr &
+  [ STEM < "넘어오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘어오_v_80_rel" ].
+
+넘쳐흐르-80 := v-intr &
+  [ STEM < "넘쳐흐르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_넘쳐흐르_v_80_rel" ].
+
+노닥거리-80 := v-intr &
+  [ STEM < "노닥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_노닥거리_v_80_rel" ].
+
+노래부르-80 := v-intr &
+  [ STEM < "노래부르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_노래부르_v_80_rel" ].
+
+노여워하-80 := v-intr &
+  [ STEM < "노여워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_노여워하_v_80_rel" ].
+
+녹아내리-80 := v-intr &
+  [ STEM < "녹아내리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_녹아내리_v_80_rel" ].
+
+놀라워하-80 := v-intr &
+  [ STEM < "놀라워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_놀라워하_v_80_rel" ].
+
+농사짓-80 := v-intr &
+  [ STEM < "농사짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_농사짓_v_80_rel" ].
+
+뇌까리-80 := v-intr &
+  [ STEM < "뇌까리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뇌까리_v_80_rel" ].
+
+눈덮이-80 := v-intr &
+  [ STEM < "눈덮이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈덮이_v_80_rel" ].
+
+눈물나-80 := v-intr &
+  [ STEM < "눈물나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈물나_v_80_rel" ].
+
+눈물짓-80 := v-intr &
+  [ STEM < "눈물짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈물짓_v_80_rel" ].
+
+눈치보-80 := v-intr &
+  [ STEM < "눈치보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_눈치보_v_80_rel" ].
+
+늘어서-80 := v-intr &
+  [ STEM < "늘어서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_늘어서_v_80_rel" ].
+
+다가들-80 := v-intr &
+  [ STEM < "다가들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_다가들_v_80_rel" ].
+
+닥쳐오-80 := v-intr &
+  [ STEM < "닥쳐오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_닥쳐오_v_80_rel" ].
+
+달그락거리-80 := v-intr &
+  [ STEM < "달그락거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달그락거리_v_80_rel" ].
+
+달랑거리-80 := v-intr &
+  [ STEM < "달랑거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달랑거리_v_80_rel" ].
+
+달싹이-80 := v-intr &
+  [ STEM < "달싹이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달싹이_v_80_rel" ].
+
+달음질치-80 := v-intr &
+  [ STEM < "달음질치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_달음질치_v_80_rel" ].
+
+더듬거리-80 := v-intr &
+  [ STEM < "더듬거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더듬거리_v_80_rel" ].
+
+더러워지-80 := v-intr &
+  [ STEM < "더러워지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_더러워지_v_80_rel" ].
+
+도드라지-80 := v-intr &
+  [ STEM < "도드라지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도드라지_v_80_rel" ].
+
+도망다니-80 := v-intr &
+  [ STEM < "도망다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도망다니_v_80_rel" ].
+
+도사리-80 := v-intr &
+  [ STEM < "도사리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_도사리_v_80_rel" ].
+
+돈벌-80 := v-intr &
+  [ STEM < "돈벌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돈벌_v_80_rel" ].
+
+돋아나-80 := v-intr &
+  [ STEM < "돋아나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돋아나_v_80_rel" ].
+
+돌아눕-80 := v-intr &
+  [ STEM < "돌아눕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌아눕_v_80_rel" ].
+
+돌아들-80 := v-intr &
+  [ STEM < "돌아들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌아들_v_80_rel" ].
+
+돌아앉-80 := v-intr &
+  [ STEM < "돌아앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_돌아앉_v_80_rel" ].
+
+동강나-80 := v-intr &
+  [ STEM < "동강나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_동강나_v_80_rel" ].
+
+동그래지-80 := v-intr &
+  [ STEM < "동그래지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_동그래지_v_80_rel" ].
+
+동떨어지-80 := v-intr &
+  [ STEM < "동떨어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_동떨어지_v_80_rel" ].
+
+되돌아서-80 := v-intr &
+  [ STEM < "되돌아서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_되돌아서_v_80_rel" ].
+
+두런거리-80 := v-intr &
+  [ STEM < "두런거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_두런거리_v_80_rel" ].
+
+둘러서-80 := v-intr &
+  [ STEM < "둘러서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘러서_v_80_rel" ].
+
+둘러앉-80 := v-intr &
+  [ STEM < "둘러앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘러앉_v_80_rel" ].
+
+둘째가-80 := v-intr &
+  [ STEM < "둘째가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘째가_v_80_rel" ].
+
+뒤덮이-80 := v-intr &
+  [ STEM < "뒤덮이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤덮이_v_80_rel" ].
+
+뒤돌아서-80 := v-intr &
+  [ STEM < "뒤돌아서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤돌아서_v_80_rel" ].
+
+뒤뚱거리-80 := v-intr &
+  [ STEM < "뒤뚱거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤뚱거리_v_80_rel" ].
+
+뒤바뀌-80 := v-intr &
+  [ STEM < "뒤바뀌" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤바뀌_v_80_rel" ].
+
+뒤얽히-80 := v-intr &
+  [ STEM < "뒤얽히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤얽히_v_80_rel" ].
+
+뒤엉키-80 := v-intr &
+  [ STEM < "뒤엉키" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤엉키_v_80_rel" ].
+
+뒤집히-80 := v-intr &
+  [ STEM < "뒤집히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤집히_v_80_rel" ].
+
+뒤처지-80 := v-intr &
+  [ STEM < "뒤처지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤처지_v_80_rel" ].
+
+뒤척거리-80 := v-intr &
+  [ STEM < "뒤척거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤척거리_v_80_rel" ].
+
+뒤쳐지-80 := v-intr &
+  [ STEM < "뒤쳐지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤쳐지_v_80_rel" ].
+
+뒤틀리-80 := v-intr &
+  [ STEM < "뒤틀리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤틀리_v_80_rel" ].
+
+뒤흔들리-80 := v-intr &
+  [ STEM < "뒤흔들리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒤흔들리_v_80_rel" ].
+
+뒷짐지-80 := v-intr &
+  [ STEM < "뒷짐지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뒷짐지_v_80_rel" ].
+
+들고일어나-80 := v-intr &
+  [ STEM < "들고일어나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들고일어나_v_80_rel" ].
+
+들락날락거리-80 := v-intr &
+  [ STEM < "들락날락거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들락날락거리_v_80_rel" ].
+
+들썩거리-80 := v-intr &
+  [ STEM < "들썩거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들썩거리_v_80_rel" ].
+
+들썩이-80 := v-intr &
+  [ STEM < "들썩이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들썩이_v_80_rel" ].
+
+들어앉-80 := v-intr &
+  [ STEM < "들어앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들어앉_v_80_rel" ].
+
+들여다보이-80 := v-intr &
+  [ STEM < "들여다보이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들여다보이_v_80_rel" ].
+
+들이닥치-80 := v-intr &
+  [ STEM < "들이닥치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들이닥치_v_80_rel" ].
+
+들통나-80 := v-intr &
+  [ STEM < "들통나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_들통나_v_80_rel" ].
+
+땀흘리-80 := v-intr &
+  [ STEM < "땀흘리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_땀흘리_v_80_rel" ].
+
+때맞추-80 := v-intr &
+  [ STEM < "때맞추" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때맞추_v_80_rel" ].
+
+때묻-80 := v-intr &
+  [ STEM < "때묻" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_때묻_v_80_rel" ].
+
+떠내려가-80 := v-intr &
+  [ STEM < "떠내려가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠내려가_v_80_rel" ].
+
+떠다니-80 := v-intr &
+  [ STEM < "떠다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠다니_v_80_rel" ].
+
+떠돌아다니-80 := v-intr &
+  [ STEM < "떠돌아다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠돌아다니_v_80_rel" ].
+
+떠듬거리-80 := v-intr &
+  [ STEM < "떠듬거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠듬거리_v_80_rel" ].
+
+떠밀리-80 := v-intr &
+  [ STEM < "떠밀리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떠밀리_v_80_rel" ].
+
+떵떵거리-80 := v-intr &
+  [ STEM < "떵떵거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떵떵거리_v_80_rel" ].
+
+떼밀리-80 := v-intr &
+  [ STEM < "떼밀리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떼밀리_v_80_rel" ].
+
+떼짓-80 := v-intr &
+  [ STEM < "떼짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_떼짓_v_80_rel" ].
+
+똥누-80 := v-intr &
+  [ STEM < "똥누" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_똥누_v_80_rel" ].
+
+뚫어지-80 := v-intr &
+  [ STEM < "뚫어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뚫어지_v_80_rel" ].
+
+뛰어나가-80 := v-intr &
+  [ STEM < "뛰어나가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뛰어나가_v_80_rel" ].
+
+뛰어나오-80 := v-intr &
+  [ STEM < "뛰어나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뛰어나오_v_80_rel" ].
+
+뛰어놀-80 := v-intr &
+  [ STEM < "뛰어놀" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뛰어놀_v_80_rel" ].
+
+뛰어다니-80 := v-intr &
+  [ STEM < "뛰어다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뛰어다니_v_80_rel" ].
+
+뛰어오-80 := v-intr &
+  [ STEM < "뛰어오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뛰어오_v_80_rel" ].
+
+뛰어오르-80 := v-intr &
+  [ STEM < "뛰어오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뛰어오르_v_80_rel" ].
+
+뛰쳐나가-80 := v-intr &
+  [ STEM < "뛰쳐나가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뛰쳐나가_v_80_rel" ].
+
+뛰쳐나오-80 := v-intr &
+  [ STEM < "뛰쳐나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뛰쳐나오_v_80_rel" ].
+
+뜸들이-80 := v-intr &
+  [ STEM < "뜸들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뜸들이_v_80_rel" ].
+
+마음놓-80 := v-intr &
+  [ STEM < "마음놓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마음놓_v_80_rel" ].
+
+말라붙-80 := v-intr &
+  [ STEM < "말라붙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말라붙_v_80_rel" ].
+
+말라비틀어지-80 := v-intr &
+  [ STEM < "말라비틀어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말라비틀어지_v_80_rel" ].
+
+말라죽-80 := v-intr &
+  [ STEM < "말라죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말라죽_v_80_rel" ].
+
+말타-80 := v-intr &
+  [ STEM < "말타" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말타_v_80_rel" ].
+
+맘놓-80 := v-intr &
+  [ STEM < "맘놓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맘놓_v_80_rel" ].
+
+맞장구치-80 := v-intr &
+  [ STEM < "맞장구치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞장구치_v_80_rel" ].
+
+맥빠지-80 := v-intr &
+  [ STEM < "맥빠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맥빠지_v_80_rel" ].
+
+먹혀들-80 := v-intr &
+  [ STEM < "먹혀들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_먹혀들_v_80_rel" ].
+
+멈칫거리-80 := v-intr &
+  [ STEM < "멈칫거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멈칫거리_v_80_rel" ].
+
+멋모르-80 := v-intr &
+  [ STEM < "멋모르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멋모르_v_80_rel" ].
+
+메스껍-80 := v-intr &
+  [ STEM < "메스껍" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_메스껍_v_80_rel" ].
+
+메슥거리-80 := v-intr &
+  [ STEM < "메슥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_메슥거리_v_80_rel" ].
+
+메아리치-80 := v-intr &
+  [ STEM < "메아리치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_메아리치_v_80_rel" ].
+
+멱감-80 := v-intr &
+  [ STEM < "멱감" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_멱감_v_80_rel" ].
+
+목놓-80 := v-intr &
+  [ STEM < "목놓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_목놓_v_80_rel" ].
+
+목마르-80 := v-intr &
+  [ STEM < "목마르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_목마르_v_80_rel" ].
+
+몰려나오-80 := v-intr &
+  [ STEM < "몰려나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰려나오_v_80_rel" ].
+
+몰려다니-80 := v-intr &
+  [ STEM < "몰려다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰려다니_v_80_rel" ].
+
+몰려들-80 := v-loc-tr &
+  [ STEM < "몰려들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰려들_v_80_rel" ].
+
+몰아닥치-80 := v-intr &
+  [ STEM < "몰아닥치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아닥치_v_80_rel" ].
+
+몰아대-80 := v-intr &
+  [ STEM < "몰아대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아대_v_80_rel" ].
+
+몰아오-80 := v-intr &
+  [ STEM < "몰아오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아오_v_80_rel" ].
+
+몰아치-80 := v-intr &
+  [ STEM < "몰아치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몰아치_v_80_rel" ].
+
+몸바치-80 := v-intr &
+  [ STEM < "몸바치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몸바치_v_80_rel" ].
+
+몸부림치-80 := v-intr &
+  [ STEM < "몸부림치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몸부림치_v_80_rel" ].
+
+몸서리치-80 := v-intr &
+  [ STEM < "몸서리치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몸서리치_v_80_rel" ].
+
+몸져눕-80 := v-intr &
+  [ STEM < "몸져눕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_몸져눕_v_80_rel" ].
+
+못박히-80 := v-intr &
+  [ STEM < "못박히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_못박히_v_80_rel" ].
+
+무르익-80 := v-intr &
+  [ STEM < "무르익" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무르익_v_80_rel" ].
+
+무릅쓰-80 := v-intr &
+  [ STEM < "무릅쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무릅쓰_v_80_rel" ].
+
+무릎꿇-80 := v-intr &
+  [ STEM < "무릎꿇" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무릎꿇_v_80_rel" ].
+
+무리짓-80 := v-intr &
+  [ STEM < "무리짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_무리짓_v_80_rel" ].
+
+문닫-80 := v-intr &
+  [ STEM < "문닫" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문닫_v_80_rel" ].
+
+문드러지-80 := v-intr &
+  [ STEM < "문드러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문드러지_v_80_rel" ].
+
+문열-80 := v-intr &
+  [ STEM < "문열" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문열_v_80_rel" ].
+
+문제삼-80 := v-acc-tr &
+  [ STEM < "문제삼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_문제삼_v_80_rel" ].
+
+묻어나-80 := v-intr &
+  [ STEM < "묻어나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_묻어나_v_80_rel" ].
+
+물결치-80 := v-intr &
+  [ STEM < "물결치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물결치_v_80_rel" ].
+
+물러가-80 := v-intr &
+  [ STEM < "물러가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물러가_v_80_rel" ].
+
+물러서-80 := v-intr &
+  [ STEM < "물러서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물러서_v_80_rel" ].
+
+물러앉-80 := v-intr &
+  [ STEM < "물러앉" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_물러앉_v_80_rel" ].
+
+뭉개지-80 := v-intr &
+  [ STEM < "뭉개지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭉개지_v_80_rel" ].
+
+뭉그러지-80 := v-intr &
+  [ STEM < "뭉그러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뭉그러지_v_80_rel" ].
+
+미끌어지-80 := v-intr &
+  [ STEM < "미끌어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미끌어지_v_80_rel" ].
+
+미소짓-80 := v-intr &
+  [ STEM < "미소짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미소짓_v_80_rel" ].
+
+밀려가-80 := v-intr &
+  [ STEM < "밀려가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밀려가_v_80_rel" ].
+
+밀려들-80 := v-intr &
+  [ STEM < "밀려들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밀려들_v_80_rel" ].
+
+바닥나-80 := v-intr &
+  [ STEM < "바닥나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바닥나_v_80_rel" ].
+
+바라보이-80 := v-intr &
+  [ STEM < "바라보이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바라보이_v_80_rel" ].
+
+바람나-80 := v-intr &
+  [ STEM < "바람나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바람나_v_80_rel" ].
+
+바스락거리-80 := v-intr &
+  [ STEM < "바스락거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바스락거리_v_80_rel" ].
+
+바스러지-80 := v-intr &
+  [ STEM < "바스러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_바스러지_v_80_rel" ].
+
+박살나-80 := v-intr &
+  [ STEM < "박살나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_박살나_v_80_rel" ].
+
+박해받-80 := v-intr &
+  [ STEM < "박해받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_박해받_v_80_rel" ].
+
+반짝거리-80 := v-intr &
+  [ STEM < "반짝거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_반짝거리_v_80_rel" ].
+
+발가벗-80 := v-intr &
+  [ STEM < "발가벗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발가벗_v_80_rel" ].
+
+발버둥치-80 := v-intr &
+  [ STEM < "발버둥치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발버둥치_v_80_rel" ].
+
+발벗-80 := v-intr &
+  [ STEM < "발벗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발벗_v_80_rel" ].
+
+발빠르-80 := v-intr &
+  [ STEM < "발빠르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발빠르_v_80_rel" ].
+
+밤새우-80 := v-intr &
+  [ STEM < "밤새우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밤새우_v_80_rel" ].
+
+밥먹-80 := v-intr &
+  [ STEM < "밥먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밥먹_v_80_rel" ].
+
+밥짓-80 := v-intr &
+  [ STEM < "밥짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_밥짓_v_80_rel" ].
+
+배고프-80 := v-intr &
+  [ STEM < "배고프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배고프_v_80_rel" ].
+
+배부르-80 := v-intr &
+  [ STEM < "배부르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배부르_v_80_rel" ].
+
+배어나-80 := v-intr &
+  [ STEM < "배어나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_배어나_v_80_rel" ].
+
+버둥거리-80 := v-intr &
+  [ STEM < "버둥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버둥거리_v_80_rel" ].
+
+버림받-80 := v-intr &
+  [ STEM < "버림받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버림받_v_80_rel" ].
+
+버석거리-80 := v-intr &
+  [ STEM < "버석거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버석거리_v_80_rel" ].
+
+벅차오르-80 := v-intr &
+  [ STEM < "벅차오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벅차오르_v_80_rel" ].
+
+번뜩이-80 := v-intr &
+  [ STEM < "번뜩이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번뜩이_v_80_rel" ].
+
+번쩍거리-80 := v-intr &
+  [ STEM < "번쩍거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번쩍거리_v_80_rel" ].
+
+번쩍이-80 := v-intr &
+  [ STEM < "번쩍이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_번쩍이_v_80_rel" ].
+
+벌거벗-80 := v-intr &
+  [ STEM < "벌거벗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌거벗_v_80_rel" ].
+
+벌받-80 := v-intr &
+  [ STEM < "벌받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벌받_v_80_rel" ].
+
+벗어지-80 := v-intr &
+  [ STEM < "벗어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벗어지_v_80_rel" ].
+
+벼락치-80 := v-intr &
+  [ STEM < "벼락치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_벼락치_v_80_rel" ].
+
+별따-80 := v-intr &
+  [ STEM < "별따" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_별따_v_80_rel" ].
+
+보호받-80 := v-intr &
+  [ STEM < "보호받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_보호받_v_80_rel" ].
+
+복받치-80 := v-intr &
+  [ STEM < "복받치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_복받치_v_80_rel" ].
+
+부끄러워하-80 := v-intr &
+  [ STEM < "부끄러워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부끄러워하_v_80_rel" ].
+
+부도나-80 := v-intr &
+  [ STEM < "부도나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부도나_v_80_rel" ].
+
+부도내-80 := v-intr &
+  [ STEM < "부도내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부도내_v_80_rel" ].
+
+부둥키-80 := v-intr &
+  [ STEM < "부둥키" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부둥키_v_80_rel" ].
+
+부르트-80 := v-intr &
+  [ STEM < "부르트" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부르트_v_80_rel" ].
+
+부서지-80 := v-intr &
+  [ STEM < "부서지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부서지_v_80_rel" ].
+
+부숴지-80 := v-intr &
+  [ STEM < "부숴지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부숴지_v_80_rel" ].
+
+부스러지-80 := v-intr &
+  [ STEM < "부스러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부스러지_v_80_rel" ].
+
+부스럭거리-80 := v-intr &
+  [ STEM < "부스럭거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부스럭거리_v_80_rel" ].
+
+부어오르-80 := v-intr &
+  [ STEM < "부어오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부어오르_v_80_rel" ].
+
+북받치-80 := v-intr &
+  [ STEM < "북받치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_북받치_v_80_rel" ].
+
+북적거리-80 := v-intr &
+  [ STEM < "북적거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_북적거리_v_80_rel" ].
+
+북적이-80 := v-intr &
+  [ STEM < "북적이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_북적이_v_80_rel" ].
+
+불거지-80 := v-intr &
+  [ STEM < "불거지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불거지_v_80_rel" ].
+
+불어오-80 := v-intr &
+  [ STEM < "불어오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불어오_v_80_rel" ].
+
+불지르-80 := v-intr &
+  [ STEM < "불지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불지르_v_80_rel" ].
+
+불켜-80 := v-intr &
+  [ STEM < "불켜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불켜_v_80_rel" ].
+
+불타오르-80 := v-intr &
+  [ STEM < "불타오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불타오르_v_80_rel" ].
+
+비난받-80 := v-intr &
+  [ STEM < "비난받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비난받_v_80_rel" ].
+
+비뚤어지-80 := v-intr &
+  [ STEM < "비뚤어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비뚤어지_v_80_rel" ].
+
+비아냥거리-80 := v-intr &
+  [ STEM < "비아냥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비아냥거리_v_80_rel" ].
+
+비오-80 := v-intr &
+  [ STEM < "비오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비오_v_80_rel" ].
+
+비죽거리-80 := v-intr &
+  [ STEM < "비죽거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비죽거리_v_80_rel" ].
+
+비척거리-80 := v-intr &
+  [ STEM < "비척거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비척거리_v_80_rel" ].
+
+비켜나-80 := v-intr &
+  [ STEM < "비켜나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비켜나_v_80_rel" ].
+
+비켜서-80 := v-intr &
+  [ STEM < "비켜서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비켜서_v_80_rel" ].
+
+비탈지-80 := v-intr &
+  [ STEM < "비탈지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비탈지_v_80_rel" ].
+
+비틀거리-80 := v-intr &
+  [ STEM < "비틀거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비틀거리_v_80_rel" ].
+
+비틀어지-80 := v-intr &
+  [ STEM < "비틀어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비틀어지_v_80_rel" ].
+
+비판받-80 := v-intr &
+  [ STEM < "비판받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_비판받_v_80_rel" ].
+
+빈정거리-80 := v-intr &
+  [ STEM < "빈정거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빈정거리_v_80_rel" ].
+
+빈정대-80 := v-intr &
+  [ STEM < "빈정대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빈정대_v_80_rel" ].
+
+빌어먹-80 := v-intr &
+  [ STEM < "빌어먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빌어먹_v_80_rel" ].
+
+빌붙-80 := v-dat-tr &
+  [ STEM < "빌붙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빌붙_v_80_rel" ].
+
+빗발치-80 := v-intr &
+  [ STEM < "빗발치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빗발치_v_80_rel" ].
+
+빚어지-80 := v-intr &
+  [ STEM < "빚어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_빚어지_v_80_rel" ].
+
+뼈빠지-80 := v-intr &
+  [ STEM < "뼈빠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뼈빠지_v_80_rel" ].
+
+뼈아프-80 := v-intr &
+  [ STEM < "뼈아프" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뼈아프_v_80_rel" ].
+
+뼈저리-80 := v-intr &
+  [ STEM < "뼈저리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뼈저리_v_80_rel" ].
+
+뿌리뽑히-80 := v-intr &
+  [ STEM < "뿌리뽑히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_뿌리뽑히_v_80_rel" ].
+
+삐걱거리-80 := v-intr &
+  [ STEM < "삐걱거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐걱거리_v_80_rel" ].
+
+삐걱이-80 := v-intr &
+  [ STEM < "삐걱이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐걱이_v_80_rel" ].
+
+삐뚤어지-80 := v-intr &
+  [ STEM < "삐뚤어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐뚤어지_v_80_rel" ].
+
+삐져나오-80 := v-intr &
+  [ STEM < "삐져나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐져나오_v_80_rel" ].
+
+삐죽거리-80 := v-intr &
+  [ STEM < "삐죽거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_삐죽거리_v_80_rel" ].
+
+사그라들-80 := v-intr &
+  [ STEM < "사그라들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사그라들_v_80_rel" ].
+
+사그라지-80 := v-intr &
+  [ STEM < "사그라지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사그라지_v_80_rel" ].
+
+사람되-80 := v-intr &
+  [ STEM < "사람되" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사람되_v_80_rel" ].
+
+사랑받-80 := v-intr &
+  [ STEM < "사랑받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_사랑받_v_80_rel" ].
+
+산산조각나-80 := v-intr &
+  [ STEM < "산산조각나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_산산조각나_v_80_rel" ].
+
+살랑거리-80 := v-intr &
+  [ STEM < "살랑거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살랑거리_v_80_rel" ].
+
+살빼-80 := v-intr &
+  [ STEM < "살빼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살빼_v_80_rel" ].
+
+살찌우-80 := v-intr &
+  [ STEM < "살찌우" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_살찌우_v_80_rel" ].
+
+상처나-80 := v-intr &
+  [ STEM < "상처나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상처나_v_80_rel" ].
+
+상처받-80 := v-intr &
+  [ STEM < "상처받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상처받_v_80_rel" ].
+
+상처입-80 := v-intr &
+  [ STEM < "상처입" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_상처입_v_80_rel" ].
+
+새빨개지-80 := v-intr &
+  [ STEM < "새빨개지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_새빨개지_v_80_rel" ].
+
+생글거리-80 := v-intr &
+  [ STEM < "생글거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_생글거리_v_80_rel" ].
+
+생색내-80 := v-intr &
+  [ STEM < "생색내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_생색내_v_80_rel" ].
+
+서러워하-80 := v-intr &
+  [ STEM < "서러워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서러워하_v_80_rel" ].
+
+서성거리-80 := v-intr &
+  [ STEM < "서성거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서성거리_v_80_rel" ].
+
+서성대-80 := v-intr &
+  [ STEM < "서성대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서성대_v_80_rel" ].
+
+서성이-80 := v-intr &
+  [ STEM < "서성이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_서성이_v_80_rel" ].
+
+선택받-80 := v-intr &
+  [ STEM < "선택받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_선택받_v_80_rel" ].
+
+세상읽-80 := v-intr &
+  [ STEM < "세상읽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_세상읽_v_80_rel" ].
+
+소곤거리-80 := v-intr &
+  [ STEM < "소곤거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소곤거리_v_80_rel" ].
+
+소곤대-80 := v-intr &
+  [ STEM < "소곤대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소곤대_v_80_rel" ].
+
+소리내-80 := v-intr &
+  [ STEM < "소리내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소리내_v_80_rel" ].
+
+소리지르-80 := v-intr &
+  [ STEM < "소리지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소리지르_v_80_rel" ].
+
+소문나-80 := v-intr &
+  [ STEM < "소문나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소문나_v_80_rel" ].
+
+소설쓰-80 := v-intr &
+  [ STEM < "소설쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소설쓰_v_80_rel" ].
+
+소외받-80 := v-intr &
+  [ STEM < "소외받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소외받_v_80_rel" ].
+
+소용돌이치-80 := v-intr &
+  [ STEM < "소용돌이치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소용돌이치_v_80_rel" ].
+
+소풍가-80 := v-intr &
+  [ STEM < "소풍가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_소풍가_v_80_rel" ].
+
+속상하-80 := v-intr &
+  [ STEM < "속상하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_속상하_v_80_rel" ].
+
+손꼽히-80 := v-intr &
+  [ STEM < "손꼽히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_손꼽히_v_80_rel" ].
+
+손해보-80 := v-intr &
+  [ STEM < "손해보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_손해보_v_80_rel" ].
+
+솟아나-80 := v-intr &
+  [ STEM < "솟아나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_솟아나_v_80_rel" ].
+
+솟아오르-80 := v-intr &
+  [ STEM < "솟아오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_솟아오르_v_80_rel" ].
+
+수군거리-80 := v-intr &
+  [ STEM < "수군거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수군거리_v_80_rel" ].
+
+수군대-80 := v-intr &
+  [ STEM < "수군대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수군대_v_80_rel" ].
+
+수그러들-80 := v-intr &
+  [ STEM < "수그러들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수그러들_v_80_rel" ].
+
+수그러지-80 := v-intr &
+  [ STEM < "수그러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수그러지_v_80_rel" ].
+
+수줍어하-80 := v-intr &
+  [ STEM < "수줍어하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수줍어하_v_80_rel" ].
+
+술렁거리-80 := v-intr &
+  [ STEM < "술렁거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술렁거리_v_80_rel" ].
+
+술렁대-80 := v-intr &
+  [ STEM < "술렁대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술렁대_v_80_rel" ].
+
+술렁이-80 := v-intr &
+  [ STEM < "술렁이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술렁이_v_80_rel" ].
+
+술마시-80 := v-intr &
+  [ STEM < "술마시" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_술마시_v_80_rel" ].
+
+숨넘어가-80 := v-intr &
+  [ STEM < "숨넘어가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숨넘어가_v_80_rel" ].
+
+숨돌리-80 := v-intr &
+  [ STEM < "숨돌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숨돌리_v_80_rel" ].
+
+숨막히-80 := v-intr &
+  [ STEM < "숨막히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숨막히_v_80_rel" ].
+
+숨죽이-80 := v-intr &
+  [ STEM < "숨죽이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_숨죽이_v_80_rel" ].
+
+슬퍼하-80 := v-intr &
+  [ STEM < "슬퍼하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_슬퍼하_v_80_rel" ].
+
+시간가-80 := v-intr &
+  [ STEM < "시간가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시간가_v_80_rel" ].
+
+시시덕거리-80 := v-intr &
+  [ STEM < "시시덕거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시시덕거리_v_80_rel" ].
+
+시집오-80 := v-intr &
+  [ STEM < "시집오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_시집오_v_80_rel" ].
+
+실감나-80 := v-intr &
+  [ STEM < "실감나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실감나_v_80_rel" ].
+
+실룩거리-80 := v-intr &
+  [ STEM < "실룩거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_실룩거리_v_80_rel" ].
+
+싫증나-80 := v-intr &
+  [ STEM < "싫증나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싫증나_v_80_rel" ].
+
+싱글거리-80 := v-intr &
+  [ STEM < "싱글거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싱글거리_v_80_rel" ].
+
+싸돌아다니-80 := v-intr &
+  [ STEM < "싸돌아다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싸돌아다니_v_80_rel" ].
+
+싸지르-80 := v-intr &
+  [ STEM < "싸지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_싸지르_v_80_rel" ].
+
+쌀쌀맞-80 := v-intr &
+  [ STEM < "쌀쌀맞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쌀쌀맞_v_80_rel" ].
+
+쏘다니-80 := v-intr &
+  [ STEM < "쏘다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쏘다니_v_80_rel" ].
+
+쑥덕거리-80 := v-intr &
+  [ STEM < "쑥덕거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쑥덕거리_v_80_rel" ].
+
+쓰러뜨리-80 := v-intr &
+  [ STEM < "쓰러뜨리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쓰러뜨리_v_80_rel" ].
+
+씨뿌리-80 := v-intr &
+  [ STEM < "씨뿌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_씨뿌리_v_80_rel" ].
+
+씩씩거리-80 := v-intr &
+  [ STEM < "씩씩거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_씩씩거리_v_80_rel" ].
+
+씰룩거리-80 := v-intr &
+  [ STEM < "씰룩거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_씰룩거리_v_80_rel" ].
+
+아니하-80 := v-intr &
+  [ STEM < "아니하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아니하_v_80_rel" ].
+
+아른거리-80 := v-intr &
+  [ STEM < "아른거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아른거리_v_80_rel" ].
+
+아우성치-80 := v-intr &
+  [ STEM < "아우성치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아우성치_v_80_rel" ].
+
+아파하-80 := v-intr &
+  [ STEM < "아파하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_아파하_v_80_rel" ].
+
+안절부절못하-80 := v-intr &
+  [ STEM < "안절부절못하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_안절부절못하_v_80_rel" ].
+
+앓아눕-80 := v-intr &
+  [ STEM < "앓아눕" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앓아눕_v_80_rel" ].
+
+앙다물-80 := v-intr &
+  [ STEM < "앙다물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앙다물_v_80_rel" ].
+
+앞장서-80 := v-intr &
+  [ STEM < "앞장서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앞장서_v_80_rel" ].
+
+앞지르-80 := v-intr &
+  [ STEM < "앞지르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앞지르_v_80_rel" ].
+
+어려워하-80 := v-intr &
+  [ STEM < "어려워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어려워하_v_80_rel" ].
+
+어른거리-80 := v-intr &
+  [ STEM < "어른거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어른거리_v_80_rel" ].
+
+어슬렁거리-80 := v-intr &
+  [ STEM < "어슬렁거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어슬렁거리_v_80_rel" ].
+
+어정거리-80 := v-intr &
+  [ STEM < "어정거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_어정거리_v_80_rel" ].
+
+억눌리-80 := v-intr &
+  [ STEM < "억눌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_억눌리_v_80_rel" ].
+
+억압받-80 := v-intr &
+  [ STEM < "억압받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_억압받_v_80_rel" ].
+
+얼싸안-80 := v-intr &
+  [ STEM < "얼싸안" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼싸안_v_80_rel" ].
+
+얼씬거리-80 := v-intr &
+  [ STEM < "얼씬거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼씬거리_v_80_rel" ].
+
+얼쩡거리-80 := v-intr &
+  [ STEM < "얼쩡거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼쩡거리_v_80_rel" ].
+
+얼크러지-80 := v-intr &
+  [ STEM < "얼크러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_얼크러지_v_80_rel" ].
+
+엄청나-80 := v-intr &
+  [ STEM < "엄청나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엄청나_v_80_rel" ].
+
+엉클어지-80 := v-intr &
+  [ STEM < "엉클어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엉클어지_v_80_rel" ].
+
+엎어지-80 := v-intr &
+  [ STEM < "엎어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엎어지_v_80_rel" ].
+
+엎질러지-80 := v-intr &
+  [ STEM < "엎질러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엎질러지_v_80_rel" ].
+
+여행가-80 := v-intr &
+  [ STEM < "여행가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_여행가_v_80_rel" ].
+
+열받-80 := v-intr &
+  [ STEM < "열받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_열받_v_80_rel" ].
+
+엿보이-80 := v-intr &
+  [ STEM < "엿보이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_엿보이_v_80_rel" ].
+
+영화보-80 := v-intr &
+  [ STEM < "영화보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_영화보_v_80_rel" ].
+
+오그라들-80 := v-intr &
+  [ STEM < "오그라들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오그라들_v_80_rel" ].
+
+오래가-80 := v-intr &
+  [ STEM < "오래가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오래가_v_80_rel" ].
+
+오르내리-80 := v-intr &
+  [ STEM < "오르내리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오르내리_v_80_rel" ].
+
+오므라들-80 := v-intr &
+  [ STEM < "오므라들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오므라들_v_80_rel" ].
+
+오해받-80 := v-intr &
+  [ STEM < "오해받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_오해받_v_80_rel" ].
+
+옷입-80 := v-intr &
+  [ STEM < "옷입" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옷입_v_80_rel" ].
+
+와글거리-80 := v-intr &
+  [ STEM < "와글거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_와글거리_v_80_rel" ].
+
+요동치-80 := v-intr &
+  [ STEM < "요동치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_요동치_v_80_rel" ].
+
+용서받-80 := v-intr &
+  [ STEM < "용서받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_용서받_v_80_rel" ].
+
+용솟음치-80 := v-intr &
+  [ STEM < "용솟음치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_용솟음치_v_80_rel" ].
+
+우겨넣-80 := v-intr &
+  [ STEM < "우겨넣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우겨넣_v_80_rel" ].
+
+우글거리-80 := v-intr &
+  [ STEM < "우글거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우글거리_v_80_rel" ].
+
+우러나-80 := v-intr &
+  [ STEM < "우러나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우러나_v_80_rel" ].
+
+우러나오-80 := v-intr &
+  [ STEM < "우러나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우러나오_v_80_rel" ].
+
+우물거리-80 := v-intr &
+  [ STEM < "우물거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우물거리_v_80_rel" ].
+
+우쭐거리-80 := v-intr &
+  [ STEM < "우쭐거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우쭐거리_v_80_rel" ].
+
+우쭐대-80 := v-intr &
+  [ STEM < "우쭐대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_우쭐대_v_80_rel" ].
+
+울렁거리-80 := v-intr &
+  [ STEM < "울렁거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울렁거리_v_80_rel" ].
+
+울려오-80 := v-intr &
+  [ STEM < "울려오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울려오_v_80_rel" ].
+
+울먹이-80 := v-intr &
+  [ STEM < "울먹이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울먹이_v_80_rel" ].
+
+울부짖-80 := v-intr &
+  [ STEM < "울부짖" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_울부짖_v_80_rel" ].
+
+움직거리-80 := v-intr &
+  [ STEM < "움직거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움직거리_v_80_rel" ].
+
+움찔거리-80 := v-intr &
+  [ STEM < "움찔거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움찔거리_v_80_rel" ].
+
+움츠러들-80 := v-intr &
+  [ STEM < "움츠러들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_움츠러들_v_80_rel" ].
+
+웅성거리-80 := v-intr &
+  [ STEM < "웅성거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웅성거리_v_80_rel" ].
+
+웅성대-80 := v-intr &
+  [ STEM < "웅성대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웅성대_v_80_rel" ].
+
+웅얼거리-80 := v-intr &
+  [ STEM < "웅얼거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웅얼거리_v_80_rel" ].
+
+웅웅거리-80 := v-intr &
+  [ STEM < "웅웅거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_웅웅거리_v_80_rel" ].
+
+위협받-80 := v-intr &
+  [ STEM < "위협받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_위협받_v_80_rel" ].
+
+윙윙거리-80 := v-intr &
+  [ STEM < "윙윙거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_윙윙거리_v_80_rel" ].
+
+유학가-80 := v-intr &
+  [ STEM < "유학가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_유학가_v_80_rel" ].
+
+으뜸가-80 := v-intr &
+  [ STEM < "으뜸가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으뜸가_v_80_rel" ].
+
+으르렁거리-80 := v-intr &
+  [ STEM < "으르렁거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으르렁거리_v_80_rel" ].
+
+으르렁대-80 := v-intr &
+  [ STEM < "으르렁대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으르렁대_v_80_rel" ].
+
+으스대-80 := v-intr &
+  [ STEM < "으스대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으스대_v_80_rel" ].
+
+으스러지-80 := v-intr &
+  [ STEM < "으스러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_으스러지_v_80_rel" ].
+
+응어리지-80 := v-intr &
+  [ STEM < "응어리지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_응어리지_v_80_rel" ].
+
+이글거리-80 := v-intr &
+  [ STEM < "이글거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이글거리_v_80_rel" ].
+
+이민가-80 := v-intr &
+  [ STEM < "이민가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이민가_v_80_rel" ].
+
+이사가-80 := v-intr &
+  [ STEM < "이사가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이사가_v_80_rel" ].
+
+이사오-80 := v-intr &
+  [ STEM < "이사오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이사오_v_80_rel" ].
+
+이죽거리-80 := v-intr &
+  [ STEM < "이죽거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이죽거리_v_80_rel" ].
+
+이지러지-80 := v-intr &
+  [ STEM < "이지러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_이지러지_v_80_rel" ].
+
+일그러지-80 := v-intr &
+  [ STEM < "일그러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일그러지_v_80_rel" ].
+
+일렁거리-80 := v-intr &
+  [ STEM < "일렁거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일렁거리_v_80_rel" ].
+
+일렁이-80 := v-intr &
+  [ STEM < "일렁이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일렁이_v_80_rel" ].
+
+일보-80 := v-intr &
+  [ STEM < "일보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_일보_v_80_rel" ].
+
+입다물-80 := v-intr &
+  [ STEM < "입다물" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_입다물_v_80_rel" ].
+
+잇따르-80 := v-intr &
+  [ STEM < "잇따르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잇따르_v_80_rel" ].
+
+자극받-80 := v-intr &
+  [ STEM < "자극받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자극받_v_80_rel" ].
+
+자리잡-80 := v-intr &
+  [ STEM < "자리잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자리잡_v_80_rel" ].
+
+자빠지-80 := v-intr &
+  [ STEM < "자빠지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자빠지_v_80_rel" ].
+
+자지러지-80 := v-intr &
+  [ STEM < "자지러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_자지러지_v_80_rel" ].
+
+작아지-80 := v-intr &
+  [ STEM < "작아지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_작아지_v_80_rel" ].
+
+잘나가-80 := v-intr &
+  [ STEM < "잘나가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잘나가_v_80_rel" ].
+
+장가가-80 := v-intr &
+  [ STEM < "장가가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장가가_v_80_rel" ].
+
+장가들-80 := v-intr &
+  [ STEM < "장가들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장가들_v_80_rel" ].
+
+장난치-80 := v-intr &
+  [ STEM < "장난치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장난치_v_80_rel" ].
+
+장보-80 := v-intr &
+  [ STEM < "장보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장보_v_80_rel" ].
+
+장사지내-80 := v-intr &
+  [ STEM < "장사지내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_장사지내_v_80_rel" ].
+
+잦아지-80 := v-intr &
+  [ STEM < "잦아지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잦아지_v_80_rel" ].
+
+재잘거리-80 := v-intr &
+  [ STEM < "재잘거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재잘거리_v_80_rel" ].
+
+재잘대-80 := v-intr &
+  [ STEM < "재잘대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_재잘대_v_80_rel" ].
+
+저주받-80 := v-intr &
+  [ STEM < "저주받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_저주받_v_80_rel" ].
+
+적어지-80 := v-intr &
+  [ STEM < "적어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_적어지_v_80_rel" ].
+
+절단나-80 := v-intr &
+  [ STEM < "절단나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절단나_v_80_rel" ].
+
+절뚝거리-80 := v-intr &
+  [ STEM < "절뚝거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절뚝거리_v_80_rel" ].
+
+절룩거리-80 := v-intr &
+  [ STEM < "절룩거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절룩거리_v_80_rel" ].
+
+절룩이-80 := v-intr &
+  [ STEM < "절룩이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_절룩이_v_80_rel" ].
+
+정신나가-80 := v-intr &
+  [ STEM < "정신나가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정신나가_v_80_rel" ].
+
+정신차리-80 := v-intr &
+  [ STEM < "정신차리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_정신차리_v_80_rel" ].
+
+제사지내-80 := v-intr &
+  [ STEM < "제사지내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_제사지내_v_80_rel" ].
+
+조각나-80 := v-intr &
+  [ STEM < "조각나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_조각나_v_80_rel" ].
+
+존경받-80 := v-intr &
+  [ STEM < "존경받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_존경받_v_80_rel" ].
+
+존중받-80 := v-intr &
+  [ STEM < "존중받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_존중받_v_80_rel" ].
+
+졸아들-80 := v-intr &
+  [ STEM < "졸아들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_졸아들_v_80_rel" ].
+
+종알거리-80 := v-intr &
+  [ STEM < "종알거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_종알거리_v_80_rel" ].
+
+죄어들-80 := v-intr &
+  [ STEM < "죄어들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_죄어들_v_80_rel" ].
+
+주눅들-80 := v-intr &
+  [ STEM < "주눅들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주눅들_v_80_rel" ].
+
+주름잡-80 := v-intr &
+  [ STEM < "주름잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주름잡_v_80_rel" ].
+
+주목받-80 := v-intr &
+  [ STEM < "주목받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주목받_v_80_rel" ].
+
+주문받-80 := v-intr &
+  [ STEM < "주문받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주문받_v_80_rel" ].
+
+주절거리-80 := v-intr &
+  [ STEM < "주절거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주절거리_v_80_rel" ].
+
+주춤거리-80 := v-intr &
+  [ STEM < "주춤거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_주춤거리_v_80_rel" ].
+
+줄달음치-80 := v-intr &
+  [ STEM < "줄달음치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_줄달음치_v_80_rel" ].
+
+줄서-80 := v-intr &
+  [ STEM < "줄서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_줄서_v_80_rel" ].
+
+즐거워하-80 := v-intr &
+  [ STEM < "즐거워하" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_즐거워하_v_80_rel" ].
+
+지끈거리-80 := v-intr &
+  [ STEM < "지끈거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지끈거리_v_80_rel" ].
+
+지나다니-80 := v-intr &
+  [ STEM < "지나다니" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지나다니_v_80_rel" ].
+
+지나오-80 := v-intr &
+  [ STEM < "지나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지나오_v_80_rel" ].
+
+지켜보-80 := v-acc-tr &
+  [ STEM < "지켜보" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지켜보_v_80_rel" ].
+
+진저리치-80 := v-intr &
+  [ STEM < "진저리치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_진저리치_v_80_rel" ].
+
+질척거리-80 := v-intr &
+  [ STEM < "질척거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_질척거리_v_80_rel" ].
+
+집나가-80 := v-intr &
+  [ STEM < "집나가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집나가_v_80_rel" ].
+
+집짓-80 := v-intr &
+  [ STEM < "집짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_집짓_v_80_rel" ].
+
+짓눌리-80 := v-intr &
+  [ STEM < "짓눌리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짓눌리_v_80_rel" ].
+
+짓무르-80 := v-intr &
+  [ STEM < "짓무르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짓무르_v_80_rel" ].
+
+짓밟히-80 := v-intr &
+  [ STEM < "짓밟히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짓밟히_v_80_rel" ].
+
+징징거리-80 := v-intr &
+  [ STEM < "징징거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_징징거리_v_80_rel" ].
+
+짜증나-80 := v-intr &
+  [ STEM < "짜증나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짜증나_v_80_rel" ].
+
+짜증내-80 := v-intr &
+  [ STEM < "짜증내" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짜증내_v_80_rel" ].
+
+짧아지-80 := v-intr &
+  [ STEM < "짧아지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짧아지_v_80_rel" ].
+
+쩔쩔매-80 := v-intr &
+  [ STEM < "쩔쩔매" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쩔쩔매_v_80_rel" ].
+
+쫑알거리-80 := v-intr &
+  [ STEM < "쫑알거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쫑알거리_v_80_rel" ].
+
+쭈뼛거리-80 := v-intr &
+  [ STEM < "쭈뼛거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쭈뼛거리_v_80_rel" ].
+
+찌그러지-80 := v-intr &
+  [ STEM < "찌그러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찌그러지_v_80_rel" ].
+
+찔끔거리-80 := v-intr &
+  [ STEM < "찔끔거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찔끔거리_v_80_rel" ].
+
+차오르-80 := v-intr &
+  [ STEM < "차오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차오르_v_80_rel" ].
+
+찰랑거리-80 := v-intr &
+  [ STEM < "찰랑거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찰랑거리_v_80_rel" ].
+
+찰랑이-80 := v-intr &
+  [ STEM < "찰랑이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_찰랑이_v_80_rel" ].
+
+책읽-80 := v-intr &
+  [ STEM < "책읽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_책읽_v_80_rel" ].
+
+처벌받-80 := v-intr &
+  [ STEM < "처벌받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_처벌받_v_80_rel" ].
+
+천대받-80 := v-intr &
+  [ STEM < "천대받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_천대받_v_80_rel" ].
+
+쳐들어가-80 := v-intr &
+  [ STEM < "쳐들어가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쳐들어가_v_80_rel" ].
+
+쳐들어오-80 := v-intr &
+  [ STEM < "쳐들어오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쳐들어오_v_80_rel" ].
+
+촉망받-80 := v-intr &
+  [ STEM < "촉망받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_촉망받_v_80_rel" ].
+
+축복받-80 := v-intr &
+  [ STEM < "축복받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_축복받_v_80_rel" ].
+
+출렁거리-80 := v-intr &
+  [ STEM < "출렁거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_출렁거리_v_80_rel" ].
+
+출렁이-80 := v-intr &
+  [ STEM < "출렁이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_출렁이_v_80_rel" ].
+
+치달리-80 := v-intr &
+  [ STEM < "치달리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치달리_v_80_rel" ].
+
+치료받-80 := v-intr &
+  [ STEM < "치료받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치료받_v_80_rel" ].
+
+치받치-80 := v-intr &
+  [ STEM < "치받치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치받치_v_80_rel" ].
+
+칭송받-80 := v-intr &
+  [ STEM < "칭송받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_칭송받_v_80_rel" ].
+
+칭얼거리-80 := v-intr &
+  [ STEM < "칭얼거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_칭얼거리_v_80_rel" ].
+
+칭얼대-80 := v-intr &
+  [ STEM < "칭얼대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_칭얼대_v_80_rel" ].
+
+칭찬받-80 := v-intr &
+  [ STEM < "칭찬받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_칭찬받_v_80_rel" ].
+
+코골-80 := v-intr &
+  [ STEM < "코골" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_코골_v_80_rel" ].
+
+쿵쾅거리-80 := v-intr &
+  [ STEM < "쿵쾅거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿵쾅거리_v_80_rel" ].
+
+쿵쿵거리-80 := v-intr &
+  [ STEM < "쿵쿵거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쿵쿵거리_v_80_rel" ].
+
+킁킁거리-80 := v-intr &
+  [ STEM < "킁킁거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_킁킁거리_v_80_rel" ].
+
+키득거리-80 := v-intr &
+  [ STEM < "키득거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_키득거리_v_80_rel" ].
+
+킥킥거리-80 := v-intr &
+  [ STEM < "킥킥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_킥킥거리_v_80_rel" ].
+
+킬킬거리-80 := v-intr &
+  [ STEM < "킬킬거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_킬킬거리_v_80_rel" ].
+
+킬킬대-80 := v-intr &
+  [ STEM < "킬킬대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_킬킬대_v_80_rel" ].
+
+탄로나-80 := v-intr &
+  [ STEM < "탄로나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_탄로나_v_80_rel" ].
+
+털털거리-80 := v-intr &
+  [ STEM < "털털거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_털털거리_v_80_rel" ].
+
+토라지-80 := v-intr &
+  [ STEM < "토라지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_토라지_v_80_rel" ].
+
+토막나-80 := v-intr &
+  [ STEM < "토막나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_토막나_v_80_rel" ].
+
+투덜대-80 := v-intr &
+  [ STEM < "투덜대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_투덜대_v_80_rel" ].
+
+툴툴거리-80 := v-intr &
+  [ STEM < "툴툴거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_툴툴거리_v_80_rel" ].
+
+틀어지-80 := v-intr &
+  [ STEM < "틀어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_틀어지_v_80_rel" ].
+
+파닥거리-80 := v-intr &
+  [ STEM < "파닥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파닥거리_v_80_rel" ].
+
+파닥이-80 := v-intr &
+  [ STEM < "파닥이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_파닥이_v_80_rel" ].
+
+판가름나-80 := v-intr &
+  [ STEM < "판가름나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_판가름나_v_80_rel" ].
+
+퍼덕거리-80 := v-intr &
+  [ STEM < "퍼덕거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퍼덕거리_v_80_rel" ].
+
+퍼덕이-80 := v-intr &
+  [ STEM < "퍼덕이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_퍼덕이_v_80_rel" ].
+
+펄럭거리-80 := v-intr &
+  [ STEM < "펄럭거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_펄럭거리_v_80_rel" ].
+
+편가르-80 := v-intr &
+  [ STEM < "편가르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_편가르_v_80_rel" ].
+
+평가받-80 := v-intr &
+  [ STEM < "평가받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_평가받_v_80_rel" ].
+
+포개지-80 := v-intr &
+  [ STEM < "포개지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_포개지_v_80_rel" ].
+
+폼잡-80 := v-intr &
+  [ STEM < "폼잡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_폼잡_v_80_rel" ].
+
+표나-80 := v-intr &
+  [ STEM < "표나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_표나_v_80_rel" ].
+
+풀려나오-80 := v-intr &
+  [ STEM < "풀려나오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풀려나오_v_80_rel" ].
+
+풀어지-80 := v-intr &
+  [ STEM < "풀어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풀어지_v_80_rel" ].
+
+풀죽-80 := v-intr &
+  [ STEM < "풀죽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_풀죽_v_80_rel" ].
+
+피맺히-80 := v-intr &
+  [ STEM < "피맺히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피맺히_v_80_rel" ].
+
+피어나-80 := v-intr &
+  [ STEM < "피어나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피어나_v_80_rel" ].
+
+피어오르-80 := v-intr &
+  [ STEM < "피어오르" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피어오르_v_80_rel" ].
+
+피흘리-80 := v-intr &
+  [ STEM < "피흘리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피흘리_v_80_rel" ].
+
+핑계대-80 := v-intr &
+  [ STEM < "핑계대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_핑계대_v_80_rel" ].
+
+하고많-80 := v-intr &
+  [ STEM < "하고많" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하고많_v_80_rel" ].
+
+하늘거리-80 := v-intr &
+  [ STEM < "하늘거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_하늘거리_v_80_rel" ].
+
+한물가-80 := v-intr &
+  [ STEM < "한물가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한물가_v_80_rel" ].
+
+한숨짓-80 := v-intr &
+  [ STEM < "한숨짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_한숨짓_v_80_rel" ].
+
+해뜨-80 := v-intr &
+  [ STEM < "해뜨" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_해뜨_v_80_rel" ].
+
+허기지-80 := v-intr &
+  [ STEM < "허기지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허기지_v_80_rel" ].
+
+허덕이-80 := v-intr &
+  [ STEM < "허덕이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허덕이_v_80_rel" ].
+
+허둥거리-80 := v-intr &
+  [ STEM < "허둥거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허둥거리_v_80_rel" ].
+
+허둥대-80 := v-intr &
+  [ STEM < "허둥대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허둥대_v_80_rel" ].
+
+허물어지-80 := v-intr &
+  [ STEM < "허물어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허물어지_v_80_rel" ].
+
+허우적거리-80 := v-intr &
+  [ STEM < "허우적거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허우적거리_v_80_rel" ].
+
+허우적대-80 := v-intr &
+  [ STEM < "허우적대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_허우적대_v_80_rel" ].
+
+헉헉거리-80 := v-intr &
+  [ STEM < "헉헉거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헉헉거리_v_80_rel" ].
+
+헉헉대-80 := v-intr &
+  [ STEM < "헉헉대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헉헉대_v_80_rel" ].
+
+헐떡거리-80 := v-intr &
+  [ STEM < "헐떡거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헐떡거리_v_80_rel" ].
+
+헐떡이-80 := v-intr &
+  [ STEM < "헐떡이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헐떡이_v_80_rel" ].
+
+헝클어지-80 := v-intr &
+  [ STEM < "헝클어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헝클어지_v_80_rel" ].
+
+호평받-80 := v-intr &
+  [ STEM < "호평받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_호평받_v_80_rel" ].
+
+홀짝거리-80 := v-intr &
+  [ STEM < "홀짝거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_홀짝거리_v_80_rel" ].
+
+화끈거리-80 := v-intr &
+  [ STEM < "화끈거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_화끈거리_v_80_rel" ].
+
+확인받-80 := v-intr &
+  [ STEM < "확인받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_확인받_v_80_rel" ].
+
+확정짓-80 := v-intr &
+  [ STEM < "확정짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_확정짓_v_80_rel" ].
+
+활개치-80 := v-intr &
+  [ STEM < "활개치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_활개치_v_80_rel" ].
+
+후끈거리-80 := v-intr &
+  [ STEM < "후끈거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후끈거리_v_80_rel" ].
+
+후들거리-80 := v-intr &
+  [ STEM < "후들거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_후들거리_v_80_rel" ].
+
+훈련받-80 := v-intr &
+  [ STEM < "훈련받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훈련받_v_80_rel" ].
+
+훌쩍거리-80 := v-intr &
+  [ STEM < "훌쩍거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훌쩍거리_v_80_rel" ].
+
+훌쩍이-80 := v-intr &
+  [ STEM < "훌쩍이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_훌쩍이_v_80_rel" ].
+
+휘날리-80 := v-intr &
+  [ STEM < "휘날리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘날리_v_80_rel" ].
+
+휘둥그래지-80 := v-intr &
+  [ STEM < "휘둥그래지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘둥그래지_v_80_rel" ].
+
+휘둥그레지-80 := v-intr &
+  [ STEM < "휘둥그레지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘둥그레지_v_80_rel" ].
+
+휘몰리-80 := v-intr &
+  [ STEM < "휘몰리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘몰리_v_80_rel" ].
+
+휘몰아치-80 := v-intr &
+  [ STEM < "휘몰아치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘몰아치_v_80_rel" ].
+
+휘어지-80 := v-intr &
+  [ STEM < "휘어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘어지_v_80_rel" ].
+
+휘청거리-80 := v-intr &
+  [ STEM < "휘청거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘청거리_v_80_rel" ].
+
+휩싸이-80 := v-intr &
+  [ STEM < "휩싸이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휩싸이_v_80_rel" ].
+
+휩쓸리-80 := v-intr &
+  [ STEM < "휩쓸리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휩쓸리_v_80_rel" ].
+
+흐느끼-80 := v-intr &
+  [ STEM < "흐느끼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흐느끼_v_80_rel" ].
+
+흐느적거리-80 := v-intr &
+  [ STEM < "흐느적거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흐느적거리_v_80_rel" ].
+
+흐드러지-80 := v-intr &
+  [ STEM < "흐드러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흐드러지_v_80_rel" ].
+
+흔들거리-80 := v-intr &
+  [ STEM < "흔들거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흔들거리_v_80_rel" ].
+
+흘러넘치-80 := v-intr &
+  [ STEM < "흘러넘치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘러넘치_v_80_rel" ].
+
+흘러오-80 := v-intr &
+  [ STEM < "흘러오" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흘러오_v_80_rel" ].
+
+흥얼거리-80 := v-intr &
+  [ STEM < "흥얼거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흥얼거리_v_80_rel" ].
+
+흥청거리-80 := v-intr &
+  [ STEM < "흥청거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흥청거리_v_80_rel" ].
+
+흥청대-80 := v-intr &
+  [ STEM < "흥청대" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흥청대_v_80_rel" ].
+
+흩날리-80 := v-intr &
+  [ STEM < "흩날리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_흩날리_v_80_rel" ].
+
+히죽거리-80 := v-intr &
+  [ STEM < "히죽거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히죽거리_v_80_rel" ].
+
+히히덕거리-80 := v-intr &
+  [ STEM < "히히덕거리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_히히덕거리_v_80_rel" ].
+
+결론내리-80 := v-s-ko4-tr &
+  [ STEM < "결론내리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_결론내리_v_80_rel" ].
+
+결론짓-80 := v-s-ko4-tr &
+  [ STEM < "결론짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_결론짓_v_80_rel" ].
+
+결정짓-80 := v-s-ko4-tr &
+  [ STEM < "결정짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_결정짓_v_80_rel" ].
+
+마음먹-80 := v-s-ko4-tr &
+  [ STEM < "마음먹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마음먹_v_80_rel" ].
+
+같아지-80 := v-com-tr &
+  [ STEM < "같아지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_같아지_v_80_rel" ].
+
+겹쳐지-80 := v-com-tr &
+  [ STEM < "겹쳐지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_겹쳐지_v_80_rel" ].
+
+관련짓-80 := v-com-tr &
+  [ STEM < "관련짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_관련짓_v_80_rel" ].
+
+구별짓-80 := v-com-tr &
+  [ STEM < "구별짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구별짓_v_80_rel" ].
+
+구분짓-80 := v-com-tr &
+  [ STEM < "구분짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_구분짓_v_80_rel" ].
+
+맞바꾸-80 := v-com-tr &
+  [ STEM < "맞바꾸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_맞바꾸_v_80_rel" ].
+
+발맞추-80 := v-com-tr &
+  [ STEM < "발맞추" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_발맞추_v_80_rel" ].
+
+부대끼-80 := v-com-tr &
+  [ STEM < "부대끼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_부대끼_v_80_rel" ].
+
+앞다투-80 := v-com-tr &
+  [ STEM < "앞다투" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_앞다투_v_80_rel" ].
+
+연관짓-80 := v-com-tr &
+  [ STEM < "연관짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_연관짓_v_80_rel" ].
+
+짝짓-80 := v-com-tr &
+  [ STEM < "짝짓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_짝짓_v_80_rel" ].
+
+차이나-80 := v-com-tr &
+  [ STEM < "차이나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_차이나_v_80_rel" ].
+
+치고받-80 := v-com-tr &
+  [ STEM < "치고받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_치고받_v_80_rel" ].
+
+해어지-80 := v-com-tr &
+  [ STEM < "해어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_해어지_v_80_rel" ].
+
+헛갈리-80 := v-com-tr &
+  [ STEM < "헛갈리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헛갈리_v_80_rel" ].
+
+헷갈리-80 := v-com-tr &
+  [ STEM < "헷갈리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_헷갈리_v_80_rel" ].
+
+거리끼-80 := v-nom-tr &
+  [ STEM < "거리끼" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_거리끼_v_80_rel" ].
+
+곤두서-80 := v-nom-tr &
+  [ STEM < "곤두서" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곤두서_v_80_rel" ].
+
+곱디곱-80 := a-intr &
+  [ STEM < "곱디곱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_곱디곱_v_80_rel" ].
+
+긁적이-80 := v-nom-tr &
+  [ STEM < "긁적이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_긁적이_v_80_rel" ].
+
+누그러지-80 := v-nom-tr &
+  [ STEM < "누그러지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_누그러지_v_80_rel" ].
+
+미어지-80 := v-nom-tr &
+  [ STEM < "미어지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미어지_v_80_rel" ].
+
+불어나-80 := v-nom-tr &
+  [ STEM < "불어나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_불어나_v_80_rel" ].
+
+솟구치-80 := v-nom-tr &
+  [ STEM < "솟구치" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_솟구치_v_80_rel" ].
+
+신경쓰이-80 := v-nom-tr &
+  [ STEM < "신경쓰이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신경쓰이_v_80_rel" ].
+
+쪼들리-80 := v-nom-tr &
+  [ STEM < "쪼들리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_쪼들리_v_80_rel" ].
+
+감싸이-80 := v-dat-tr &
+  [ STEM < "감싸이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_감싸이_v_80_rel" ].
+
+걸려들-80 := v-dat-tr &
+  [ STEM < "걸려들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_걸려들_v_80_rel" ].
+
+공들이-80 := v-dat-tr &
+  [ STEM < "공들이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_공들이_v_80_rel" ].
+
+굴러들-80 := v-dat-tr &
+  [ STEM < "굴러들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_굴러들_v_80_rel" ].
+
+귀기울이-80 := v-dat-tr &
+  [ STEM < "귀기울이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_귀기울이_v_80_rel" ].
+
+낙인찍히-80 := v-dat-tr &
+  [ STEM < "낙인찍히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_낙인찍히_v_80_rel" ].
+
+놀아나-80 := v-dat-tr &
+  [ STEM < "놀아나" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_놀아나_v_80_rel" ].
+
+덤벼들-80 := v-dat-tr &
+  [ STEM < "덤벼들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_덤벼들_v_80_rel" ].
+
+둘러싸이-80 := v-dat-tr &
+  [ STEM < "둘러싸이" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_둘러싸이_v_80_rel" ].
+
+따라붙-80 := v-dat-tr &
+  [ STEM < "따라붙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_따라붙_v_80_rel" ].
+
+마음쓰-80 := v-dat-tr &
+  [ STEM < "마음쓰" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_마음쓰_v_80_rel" ].
+
+말려들-80 := v-dat-tr &
+  [ STEM < "말려들" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_말려들_v_80_rel" ].
+
+못지않-80 := v-dat-tr &
+  [ STEM < "못지않" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_못지않_v_80_rel" ].
+
+미움받-80 := v-dat-tr &
+  [ STEM < "미움받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_미움받_v_80_rel" ].
+
+버금가-80 := v-dat-tr &
+  [ STEM < "버금가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_버금가_v_80_rel" ].
+
+붙들리-80 := v-dat-tr &
+  [ STEM < "붙들리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_붙들리_v_80_rel" ].
+
+붙잡히-80 := v-dat-tr &
+  [ STEM < "붙잡히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_붙잡히_v_80_rel" ].
+
+신뢰받-80 := v-dat-tr &
+  [ STEM < "신뢰받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신뢰받_v_80_rel" ].
+
+신세지-80 := v-dat-tr &
+  [ STEM < "신세지" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_신세지_v_80_rel" ].
+
+야단맞-80 := v-dat-tr &
+  [ STEM < "야단맞" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_야단맞_v_80_rel" ].
+
+옮아가-80 := v-dat-tr &
+  [ STEM < "옮아가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_옮아가_v_80_rel" ].
+
+인사드리-80 := v-dat-tr &
+  [ STEM < "인사드리" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_인사드리_v_80_rel" ].
+
+입맞추-80 := v-dat-tr &
+  [ STEM < "입맞추" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_입맞추_v_80_rel" ].
+
+잡아먹히-80 := v-dat-tr &
+  [ STEM < "잡아먹히" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡아먹히_v_80_rel" ].
+
+잡혀가-80 := v-dat-tr &
+  [ STEM < "잡혀가" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_잡혀가_v_80_rel" ].
+
+지배받-80 := v-dat-tr &
+  [ STEM < "지배받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_지배받_v_80_rel" ].
+
+추앙받-80 := v-dat-tr &
+  [ STEM < "추앙받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_추앙받_v_80_rel" ].
+
+환영받-80 := v-dat-tr &
+  [ STEM < "환영받" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_환영받_v_80_rel" ].
+
+휘감기-80 := v-dat-tr &
+  [ STEM < "휘감기" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_휘감기_v_80_rel" ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-16 / SSH)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 이들 어휘는 피동으로만 쓰인다
+;; 더구나 -되다 하고만 호응한다
+;; 따라서 통째로 하나의 어휘 취급하는 것이 바람직
+;; 일종의 문법화된 파생어
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+피선되-80 := v-dat-pass &
+  [ STEM < "피선되" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_피선되_v_80_rel" ].
+
+수몰되-80 := v-dat-pass &
+  [ STEM < "수몰되" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_수몰되_v_80_rel" ].
+
+
+
+
+
+잠시전-80 := n-advl &
+[ STEM < "잠시전" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_잠시전_n_80_rel" ].
+
+매일매일-80 := ph-adv &
+ [ STEM < "매일매일" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_매일매일_n_80_rel" ].
+
+가로세로-80 := ph-adv &
+ [ STEM < "가로세로" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_가로세로_adv_80_rel" ].
+
+큰대자로-80 := ph-adv &
+ [ STEM < "크ㄴ대자로" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_큰대자로_adv_80_rel" ].
+
+이러나저러나-80 := ph-adv &
+ [ STEM < "이러나저러나" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_이러나저러나_adv_80_rel" ].
+
+생각없이-80 := ph-adv &
+ [ STEM < "생각없이" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_생각없이_adv_80_rel" ].
+
+단둘이-80 := ph-adv &
+ [ STEM < "단둘이" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_단둘이_adv_80_rel" ].
+
+그렇다면-80 := ph-adv &
+ [ STEM < "그렇다면" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_그렇다면_adv_80_rel" ].
+
+그리하여-80 := ph-adv &
+ [ STEM < "그리하여" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_그리하여_adv_80_rel" ].
+
+그러한즉-80 := ph-adv &
+ [ STEM < "그러한즉" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_그러한즉_adv_80_rel" ].
+
+더하여-80 := ph-adv &
+ [ STEM < "더하여" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_더하여_adv_80_rel" ].
+
+예외없이-80 := ph-adv &
+ [ STEM < "예외없이" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_예외없이_adv_80_rel" ].
+
+겸사겸사-80 := ph-adv &
+ [ STEM < "겸사겸사" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_겸사겸사_adv_80_rel" ].
+
+겨우겨우-80 := ph-adv &
+ [ STEM < "겨우겨우" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_겨우겨우_adv_80_rel" ].
+
+꼭같이-80 := ph-adv &
+ [ STEM < "꼭같이" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_꼭같이_adv_80_rel" ].
+
+다같이-80 := ph-adv &
+ [ STEM < "다같이" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_다같이_adv_80_rel" ].
+
+다함께-80 := ph-adv &
+ [ STEM < "다함께" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_다함께_adv_80_rel" ].
+
+아주아주-80 := ph-adv &
+ [ STEM < "아주아주" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_아주아주_adv_80_rel" ].
+
+억수같이-80 := ph-adv &
+ [ STEM < "억수같이" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_억수같이_adv_80_rel" ].
+
+쌍쌍이-80 := ph-adv &
+ [ STEM < "쌍쌍이" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_쌍쌍이_adv_80_rel" ].
+
+
+
+이런저런-80 := det-ind &
+[ STEM < "이런저런" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_이런저런_q_80_rel" ].
+
+아무런-80 := det-ind &
+[ STEM < "아무런" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_아무런_q_80_rel" ].
+
+외적-80 := adn-char &
+[ STEM < "외적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_외적_nq_80_rel" ].
+
+내적-80 := adn-char &
+[ STEM < "내적" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_내적_nq_80_rel" ].
+
+
+

@@ -1,0 +1,545 @@
+;;; -*- Mode: TDL; Package: LKB -*-
+
+;;; Grammar of Korean
+;;; created at:
+;;;     Mon Mar 16 06:34:01 UTC 2009
+;;; based on Matrix customization system version of:
+;;;     Sat Mar 14 00:47:38 UTC 2009
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	This file includes core parameters of Korean.
+;;  such as, head, features, mrs, ctxt, and so forth.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Modified: Mar. 16, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+sign :+
+ [ STYLE style,
+   IDIOM bool ].
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-20 / SSH) 
+;; STYLE에 robust 자질을 평가하는 용도를 추가한다.
+;; 아래 구조는 ERG의 GENRE에서 가져옴 
+;; 종래엔 HEAD 자질이었음
+;; V+ㅂ니다 => formal / strict (먹습니다)
+;; V+다 => informal / strict (먹다)
+;; V+소 => non-formal (먹소)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Formality (STYLE)
+style := avm &
+ [ WRITTEN luk ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-21 / SSH) 
+;;Parsing should be done robustly (+strict),
+;;Generation should be done strictly
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-13 / SSH)  
+;; 아래 내용은 2009년 하반기에 송상헌에 의해
+;; 논문 형태로 발표될 예정임
+;;  가제 : 장르 특성과 한국어 HPSG 분석 및 생성
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ROBUST
+;; 구어전사자료 : unproductive (먹고가 싶다. 먹고를 싶다, 너부터만, 바보처럼도...) 
+;;              가능은 하나 생산성이 극히 떨어짐,
+;;              생성을 할 때 굳이 이런 표현까지 쓸 필요는 없다. (생성에 불필요한 부담)
+;;			    이에 비해 아래의 둘은 생산성이 떨어지는 것은 아님,
+;; 소설(e.g. 황석영의 개밥바리기별) : dialect
+;; 전자우편등의 온라인 텍스트 : online (이모티콘 포함 e.g. ㅋㅋ, ^^;  --);)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; STRICT
+;; 연설문, 방송대본, 아나운서 보도 : formal
+;; 편지글, 잡지 등 (인터뷰) : informal (한테)
+;; 학술서적, 신문기다, 외교문서 : written
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 필요성
+;;  (1) 생성에 주는 부담을 경과
+;;  (2) 적확인 기계번역
+;;  (3) 트리뱅크 등의 구축 과정에서 세세한 annotation
+;;  (4) 장르 특성에 따른 비교 연구가 가능
+;;      이 구분을 명확히 하기 위해 strict / robust로 이분화
+;;      그렇지 않으면 jacy 처럼 strict를 robust의 하종으로 두던가
+;;      ERG처럼 genre라는 단일 타입의 하종으로 구분하여도 됨
+;;      또한 통합되지 않아야 한다.
+;;         철수[robust] 가다[strict] => robust
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 방식
+;;  (1) 분석 : 기본적으로 STYLE style로 두고 한다.
+;;            문법을 recognizer (문법 검사기)로 활용하고자 할 경우 STYLE strict로 한다.
+;;  (2) 생성 : 기본은 strict이지만
+;;            기계번역시에 대상이 되는 텍스트의 성격에 따라 세분화 한다.
+;;            예컨대, 오바마 연설문을 기계번역할 경우 formal로 설정해야 하고
+;;            (그러지 않으면 반말로 연설하는 꼴이 됨)
+;;            영자 신문이나 Wikipedia를 번역하는 경우에는 written으로 설정
+;;            (안 그러면, '일본한테' 등의 구어체가 나오거나, '오바마 대통령은 하와이에서 출생했습니다' 등과 같은
+;;             객관적 기술이라 보기 어려운 문장을 생성하게 된다.)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 한테
+;;  (1) 우리한테 미래가 주어져 있습니다
+;;  (2) 철수한테 읽어 주었다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;for analyzing
+;;비생산적인 구문
+robust := style.
+unproductive := robust.
+dialect := robust. 
+online := robust.
+
+;;for generation
+strict := style.
+;;격식체
+formal := strict.
+;;비격식체
+informal := strict.
+written := informal &
+ [ WRITTEN + ].
+
+
+;;; Head for Korean
+
+head :+ [ POS pos,
+	NOMINAL bool,
+	VERBAL  bool,    
+	FORM form,
+    NFORM nform,
+	STATIVE luk,
+	AGT     bool,
+	PRD     luk,
+	HON     luk,
+	CASE case,
+    DMKR dmkr,
+	NUMERAL bool,
+	AUX bool,
+	VCP bool,
+	CLTYPE  bool,
+	IC bool ].
+
+;;; CAT
+cat :+ [ LEX bool ].
+valence :+ [ GAP diff-list ].
+
+;;; Case
+case := avm &
+ [ GCASE gcase,
+   SCASE scase ].
+
+;; vcase: grammatical cases
+gcase := value.
+no_gcase := gcase.
+gen-nom := gcase.
+vcase := gcase.
+no_vcase := vcase.
+nom := vcase & gen-nom.
+acc := vcase.
+voc := vcase.
+ncase := gcase.
+gen := ncase & gen-nom.
+
+;; scase: cases by postpositions
+scase := value.
+no_scase := scase.
+ye_scase := scase.
+comit := ye_scase.
+dat_goal_loc := ye_scase.
+dir_goal_sts_inst := ye_scase.
+loc_src := ye_scase.
+dat := dat_goal_loc.
+dir := dir_goal_sts_inst.
+goal := dat_goal_loc & dir_goal_sts_inst.
+inst := dir_goal_sts_inst.
+loc := dat_goal_loc & loc_src.
+src := loc_src.
+sts := dir_goal_sts_inst.
+
+
+;;; TAM
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-08 / SSH) 
+;; PASSIVE를 mrs에서 담당하는 것으로 한다.
+;; 이전 문법에서는 SYN자질이었음
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+tam :+ 
+  [ PASS bool ]. 
+
+;;; PNG
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-20 / SSH) 
+;; ??소희가 예쁘시다 와 같은 구문이
+;; 과잉 생성되는 것을 막기 위해
+;; HON을 mrs에서 처리할 필요성이 있다. 
+;; 이후 ROBUST 자질을 통해 위 구문이 분석은
+;; 될수 있도록 한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+png :+ [ PER person,
+	 NUM number,
+	 GEN gender ].
+;		 HON bool ].
+
+;;; Person
+
+person := *top*.
+animacy := person.
+human := animacy.
+1st := human.
+2nd := human.
+3rd := human.
+non-human := animacy.
+non-animacy := person.
+obj := non-animacy.
+
+;;; Number
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-20 / SSH) 
+;; 한국어의 numbering 체계는 
+;; plural 과 non-plural로 한다.
+;; 즉, plural은 luk값이다. (3원구조)
+;; non-pl (단수, 총칭성),
+;; pl (단수, 혹은 복수)
+;;    학생(non-plural [NUM -] : 단수)
+;;    학생(plural [NUM +or-] : 무표복수)
+;;    학생들(plural [NUM +] : 유표복수)
+;;  (1) (학생[non-pl/pl]들[marked-pl])[marked-pl]이 오다 
+;;  (2) *소희[non-pl]들[marked-pl]이 오다
+;;  (3) 원더걸스[pl]들[marked-pl]이 오다
+;;  (4) 너희네들 : 너[pl]희[marked-pl]네[marked-pl]들[marked-pl]
+;;  (5) *나[non-pl]들[marked-pl]
+;;  (6) 우리[marked-pl]들[marked-pl] 
+;; For more information, see the followings
+;;   (1) Corbett, William (2000), Nunmber. Cambridge University Press.
+;;   (2) 강범모 (2007), 복수성과 복수 표지: "들"을 중심으로. 언어학 47권
+;;   (3) 송상헌 (2006), 한국어 복수 표지에 대한 유형론적 고찰. Manuscript
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+number := luk.
+non-pl := number & -.
+pl := number & +-or--.
+marked-pl := pl & +.
+;number := *top*.
+;sg := number.
+;pl := number.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-17/ SSH) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 한국어에서는 성이 없지만, 그/그녀의 구분과
+;; 이후 binding  theory로의 발전을 생각하여
+;; 도입한다. 
+;; 이것이 없으면 그-그녀의 구분을 생성에서 막기 위해
+;; person에 gender를 넣어야 하는 데 이는
+;; 언어이론 일반적으로 올바른 방법이 아니다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+gender :=  *top*.
+male := gender.
+female := gender.
+neutral := gender.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-14 / SSH) 
+;; 명사군의 의미 부류를 하기 위한 장치이다.
+;; 이는 WordNet의 synset의 각 값과 같은 것으로
+;; 각 명사의 의미적 특질을 세분화하는 역할을 한다.
+;; 이는 selectional preference/restriction 을 정교화하기 위함
+;; 예컨대, 피동형 경동사의 받다/당하다는 (괄호는 실제 신문기사 예문)
+;; A를 존경했다
+;;   a. A가 존경받았다 (존 F 케네디가 존경받는 이유)
+;;   b. *A가 존경당했다
+;; A를 체포했다
+;;   a. *A가 체포받았다
+;;   b. A가 체포당했다 (헌병에 체포당할 당시)
+;; A를 탄압하다
+;;   a. A가 탄압받았다 (정부로부터 탄압받는 노동자들과 부안주민들)
+;;   b. A가 탄압당했다 (그때 유태인들이 탄압당할 때)
+;; 와 같은 선택 선호도 또는 제약이 있는바 이는 명사의 의미적 속성이 기인한다.
+;; ADVERSITY 자질 [존경 -, 체포 +, 탄압 luk]
+;; 따라서 각 명사의 sense 를 세분화 하여여 한다.
+;; 그렇지 않으면 생성시에 '체포받았다'와 같은 문을 생성할 우려가 있다.
+;; 다시 말해, 선택제약은 분석의 관점 보다는 생성의 관점에서 주효하다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+event-or-ref-index :+
+ [ SENSE sence ].
+
+sence := avm &
+ [ ADVERSITY luk ].
+
+;;; Form
+
+form := value.
+
+nocomp_form := form.
+no_form := nocomp_form.
+
+um  := form.
+ki  := form.
+
+comp_form := form.
+ae  := comp_form.
+ci  := comp_form.
+ko2 := comp_form.
+ko4 := comp_form.
+eya := comp_form.
+na2 := comp_form.
+key := comp_form.
+kon := comp_form.
+
+;;; POS
+
+pos := value.
+noun := pos.
+verb := pos.
+adv := pos.
+det := pos.
+conj := pos.
+
+;;; COORDINATION
+
+coord-val := value.
+and-none := coord-val.
+or-none := coord-val.
+and := and-none.
+or := or-none.
+none := and-none & or-none.
+
+;;; Nform
+
+nform := value.
+norm := nform.
+bn-form := nform.
+swu := bn-form.
+kes := bn-form.
+
+;;; Dmkr
+
+dmkr := value.
+no_mkr := dmkr.
+top-mkr := dmkr.
+foc-mkr := dmkr.
+
+;;; Tense
+
+past := tense.
+present := tense.
+;st-pres := present.
+;nonst-pres := present.
+future := tense.
+nontense := tense.
+
+;;; ASPECT 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-06-04 / SSH) 
+;; -더라 구문의 과잉 생성을 막기 위해 필요함 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+retro := aspect.
+intend := aspect.
+prog := aspect.
+
+;;; MRS
+
+;;predsort
+;udef_rel := norm_rel.
+def_rel := norm_rel.
+;
+;coord_rel := predosort.
+;and_rel := coord_rel.
+;or_rel := coord_rel.
+;
+quant_rel := predsort.
+;udef_q_rel := quant_rel.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-05-14 / SSH) 
+;; 대명사의 타입을 세분화 한다
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+pron_rel := quant_rel.
+
+;;인칭대명사
+person_rel := pron_rel.
+
+;;지시대명사
+demon_rel := pron_rel.
+this_rel := demon_rel.
+that_rel := demon_rel.
+the_rel := demon_rel.
+there_rel := demon_rel.
+here_rel := demon_rel.
+the-place_rel := demon_rel.
+
+;;특칭양화사
+;; e.g. 누군가
+some_rel := pron_rel.
+someone_rel := some_rel.
+something_rel := some_rel.
+somewhere_rel := some_rel.
+sometime_rel := some_rel.
+some-amount_rel := some_rel.
+anyhow_rel := some_rel.
+
+;;전칭양화사
+;; e.g. 누구나 
+every_rel := pron_rel.
+everyone_rel := every_rel.
+everything_rel := every_rel.
+everywhere_rel := every_rel.
+everytime_rel := every_rel.
+
+;;부정대명사 : 이후에 이름을 바꾸아야 함 
+;;아직은 부정극어 모듈이 없어서 그냥 두도록 한다.
+;;  e.g. 아무도
+neg_pron_rel := pron_rel.
+no-one_rel := neg_pron_rel.
+nothing_rel := neg_pron_rel.
+
+;;재귀대명사 
+;; e.g. 자기, 자신  
+refl_rel := pron_rel.
+
+
+
+proper_q_rel := quant_rel.
+card_rel := quant_rel.
+;
+;pro_rel := predsort.
+;
+mod_rel := predsort.
+part-of_rel := mod_rel.
+perceptive-result := mod_rel.
+;
+;characterized-by := predsort.
+;
+;;;추후 TAM으로.
+;mood_rel := predsort.
+;prpstn_m_rel := mood_rel.
+;question_m_rel := mood_rel.
+;propose_m_rel := mood_rel.
+;command_m_rel := mood_rel.
+;
+equal_rel := predsort.
+;
+;subordinate := predsort.
+;
+sub_rel := predsort.
+udef_sub_rel := sub_rel.
+after_rel := sub_rel.
+since_rel := sub_rel.
+if_rel := sub_rel.
+although_rel := sub_rel.
+cause_rel := sub_rel.
+in_order_to_rel := sub_rel.
+or_rel := sub_rel.
+and_then_rel := sub_rel.
+
+
+
+;;; index
+;; taken from Jacy
+full := event-or-ref-index.
+full-or-zpro-ref-ind := full & index.
+full_ref-ind := full-or-zpro-ref-ind & ref-ind & [ PNG png ].
+zpro_ref-ind := full-or-zpro-ref-ind.
+
+
+;; relation
+pron-relation := noun-relation & [ ARG0 full_ref-ind ].
+
+const-value-relation := relation.
+integer-relation := arg1-ev-relation &
+ [ ARG1 individual ].
+const-relation := integer-relation & const-value-relation & 
+		  [ PRED "card_rel" ].
+
+quantity-relation := noun-relation & [ AMOUNT handle ].
+card-relation := quantity-relation.
+
+
+;;mood
+imp-sug := mood.
+no-impsug := mood.
+
+no-mood := no-impsug.
+decl := no-impsug.
+inter := no-impsug.
+exclam := no-impsug.
+
+suggest := imp-sug.
+imper := imp-sug.
+
+
+;;합쇼체 (아주높임)
+;; 상대사람을 아주 높여 부르는 말
+;; e.g. 선배님들, 자리에 앉으십시오
+hapsyo := imper.
+
+;;하오체 (예사높임)
+;; 손 아랫사람에게 예삿법으로 높여 부르는 말
+;; e.g. 이 장군, 적진을 찾으시오
+hao := imper.
+
+;;하게체 (예사낮춤)
+;; 상대편을 예삿법으로 낮춰서 부르는 말
+;; e.g. 영의정대감, 상소를 올리시게
+hakey := imper.
+
+;;해라체 (아주낮춤)
+;; 손아랫사람을 아주 낮춰서 부를 때 쓰는 말
+;; e.g. 돌쇠야, 마당쓸어라
+hayra := imper.
+
+;;해요체 (두루높임)
+;; 비격식체
+;; e.g. 이 책을 읽어요
+hayyo := imper.
+
+;;해요체 (두루낮춤)
+;; 비격식체
+;; e.g. 밥 먹어
+hay := imper.
+
+;;; CTXT
+
+ctxt :+ [ C-INDICES c-indices ].
+
+c-indices := avm &
+ [ SPEAKER individual,
+   ADDRESSEE individual ].
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-04-20 / SSH) 
+;; Honorification 정보를 PRAG와 병행 처리
+;; http://wiki.delph-in.net/moin/JacyPragmatics
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+prag_d_rel := arg0-relation.
+
+speaker_d_rel := prag_d_rel &
+ [ARG0 index].
+
+hearer_d_rel := prag_d_rel &
+ [ARG0 index]. 
+
+honor_d_rel := prag_d_rel & arg123-relation &
+ [ POLARITY luk,
+   ARG0 index,
+   ARG1 index, 
+   ARG2 index, 
+   ARG3 individual].
+
+; ;;ARG1 index,  ;Honorer
+; ;;ARG2 index,  ;Honored
+; ;;ARG3 individual]. ;Bearer
+
+subj-honor_d_rel := honor_d_rel.
+obj-honor_d_rel := honor_d_rel.
+addr-honor_d_rel := honor_d_rel.
+empathy_d_rel := prag_d_rel & arg12-relation &
+   [ARG0 index, 
+    ARG1 index, 
+    ARG2 index].
+
+; ARG1 index,    ;Empathizer
+; ARG2 index].   ;Empathized

@@ -1,0 +1,227 @@
+; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	These files aim to classify large lexcions into separate files, according to its POS or function.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	File Created: Mar. 26, 2009 by Sanghoun Song
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Pronouns
+
+나-1 := n-pn-1st-non-pl &
+  [ STEM < "나" > ].
+
+내-1 := n-pn-1st-non-pl &
+  [ STEM < "내" > ].
+
+저-1 := n-pn-1st-non-pl-non-hon &
+  [ STEM < "저" > ].
+
+제-1 := n-pn-1st-non-pl-non-hon &
+  [ STEM < "제" > ].
+
+우리 := n-pn-1st-pl &
+  [ STEM < "우리" > ].
+
+저희 := n-pn-1st-pl-non-hon &
+  [ STEM < "저희" > ].
+
+
+
+너 := n-pn-2nd-non-pl &
+  [ STEM < "너" > ].
+
+니 := n-pn-2nd-non-pl &
+  [ STEM < "니" >,
+	STYLE dialect ].
+
+네 := n-pn-2nd-non-pl &
+  [ STEM < "네" > ].
+
+자네 := n-pn-2nd-non-pl &
+  [ STEM < "자네" > ].
+
+당신 := n-pn-2nd-non-pl &
+  [ STEM < "당신" > ].
+
+너희 := n-pn-2nd-pl &
+  [ STEM < "너희" > ].
+
+당신네 := n-pn-2nd-pl &
+  [ STEM < "당신네" > ].
+
+
+
+
+
+그-2 := n-pn-3rd-non-pl &
+  [ STEM < "그" >,
+    SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEN male ].
+
+그녀 := n-pn-3rd-non-pl &
+  [ STEM < "그녀" >,
+    SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEN female ].
+
+그애 := n-pn-3rd-non-pl &
+ [ STEM < "그애" > ].
+
+그분 := n-pn-3rd-non-pl &
+[ STEM < "그분" > ].
+
+그이 := n-pn-3rd-non-pl &
+[ STEM < "그분" > ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-17 / SSH)
+;; '그들'은 중성이다 (남녀포괄) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+그들 := n-pn-3rd-pl &
+  [ STEM < "그들" > ].
+그녀들 := n-pn-3rd-pl &
+  [ STEM < "그녀들" >,
+    SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEN female ].
+
+
+
+이것 := n-this-pn &
+ [ STEM < "이것" > ].
+
+저것 := n-that-pn &
+ [ STEM < "저것" > ].
+
+그것 := n-the-pn &
+ [ STEM < "그것" > ].
+
+이거 := n-this-pn &
+ [ STEM < "이거" >,
+	STYLE dialect ].
+
+저거 := n-that-pn &
+ [ STEM < "저거" >,
+	STYLE dialect ].
+
+그거 := n-the-pn &
+ [ STEM < "그거" >,
+	STYLE dialect ].
+
+이-2 := n-this-pn &
+[ STEM < "이" > ].
+;;  SYNSEM.LKEYS.KEYREL.PRED "this_rel" ].
+
+
+저기 := n-there-pn &
+ [ STEM < "저기" > ].
+여기 := n-here-pn &
+[ STEM < "여기" > ].
+거기 := n-the-place-pn &
+ [ STEM < "거기" > ].
+
+이곳 := n-here-pn &
+[ STEM < "이곳" > ].
+저곳 := n-there-pn &
+[ STEM < "그곳" > ].
+그곳 := n-the-place-pn &
+[ STEM < "그곳" > ].
+
+
+
+
+누구 := n-someone-pn &
+[ STEM < "누구" > ].
+
+누가 := n-someone-pn &
+[ STEM < "누가" > ].
+
+누군가 := n-someone-pn &
+[ STEM < "누군가" > ].
+
+무엇 := n-something-pn &
+[ STEM < "무엇" > ].
+
+무언가 := n-something-pn &
+[ STEM < "무언가" > ].
+
+뭣 := n-something-pn &
+[ STEM < "뭣" > ].
+
+뭣가 := n-something-pn &
+[ STEM < "뭣가" > ].
+
+어디 := n-somewhere-pn &
+[ STEM < "어디" > ].
+
+어디서 := n-somewhere-pn &
+[ STEM < "어디서" > ].
+
+언제 := n-sometime-pn &
+[ STEM < "어디" > ].
+
+얼마 := n-some-amount-pn &
+[ STEM < "얼마" > ].
+;;  SYNSEM.LKEYS.KEYREL.PRED "some-amount_rel" ].
+
+얼마나 := n-anyhow-pn &
+[ STEM < "얼마나" > ].
+
+
+
+누구든 := n-everyone-pn &
+[ STEM < "누구든" > ].
+
+누구나 := n-everyone-pn &
+[ STEM < "누구나" > ].
+
+무엇이든 := n-everything-pn &
+[ STEM < "무엇이든" > ].
+
+무엇이나 := n-everything-pn &
+[ STEM < "무엇이나" > ].
+
+어디든 := n-everywhere-pn &
+[ STEM < "어디든" > ].
+
+어디나 := n-everywhere-pn &
+[ STEM < "어디나" > ].
+
+어디서나 := n-everywhere-pn &
+[ STEM < "어디서나" > ].
+
+언제나 := n-everytime-pn &
+[ STEM < "언제나" > ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-17 / SSH)
+;; 이 단어는 일단 부사로 처리한다.
+;; 논항으로 사용되는 경우가 많지 않기 때문이다. 
+;; 기존 부사에 있기 때문에 따라서 여기선 주석 처리
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; 스스로-2 := ph-adv &
+;  [ STEM < "스스로" > ].
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (2009-07-17 / SSH)
+;; 부정극어는 나중에 다시 처리한다.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+아무도 := n-no-one-pn &
+[ STEM < "아무도" > ].
+
+아무것 := n-nothing-pn &
+[ STEM < "아무것" > ].
+
+
+
+
+
+자신-1 := n-refl-pn &
+[ STEM < "자신" > ].
+;;  SYNSEM.LKEYS.KEYREL.PRED "oneself_rel" ].
+
+자기-2 := n-refl-pn &
+[ STEM < "자신" > ].
+
+
+
+;그말 := n-pn &
+;[ STEM < "그말" > ].
+;그일 := n-pn &
+;[ STEM < "그일" > ].
+

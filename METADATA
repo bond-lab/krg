@@ -76,3 +76,4 @@ ISO_CODE="kor"
 
 LKB_SCRIPT_FILE="lkb/script"
 CHEAP_GRM_FILE_NAME="pet.grm"
+ACE_CONFIG_FILE="ace/config.tdl"

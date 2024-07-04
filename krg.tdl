@@ -12,6 +12,7 @@
 :include "korean".
 :include "types-ph".
 :include "types-lex".
+:include "mtr".
 :end :type.
 
 ;;

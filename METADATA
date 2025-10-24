@@ -36,6 +36,7 @@ SHORT_GRAMMAR_NAME="KRG"
 WEBSITE="http://krg.khu.ac.kr"
 DEMO_WEBSITE="http://krg.khu.ac.kr:8106/logon"
 DOCUMENTATION_URL="http://krg.khu.ac.kr"
+LICENSE="MIT"
 
 ## Semi-colon separated list of required external resources 
 ## e.g.

@@ -394,7 +394,7 @@ hd-mod-cl-ph := adj-head-scop-phrase & non-lex &
 
 adj-head-int-phrase :+ non-lex &
  [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE [ GCASE gcase,
-											 SCASE no_scase ] ].
+					     SCASE no_scase ] ].
 
 
 
@@ -548,9 +548,9 @@ head-spec-phrase := basic-head-spec-phrase & head-final & non-lex &
 head-spec-phrase-2 := head-valence-phrase & phrasal & head-final & non-lex &
   [ C-CONT [ RELS <! !>, HCONS <! !> ],
 	NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD [ POS det, NUMERAL - ],
-	HEAD-DTR adj-head-int-phrase,
-	HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POS noun,
-								VAL.GAP <! !> ],
+	HEAD-DTR adj-head-int-phrase & 
+	[ SYNSEM.LOCAL.CAT [ HEAD.POS noun,
+				    VAL.GAP <! !> ] ],
 	INFLECTED +,
     SYNSEM [ LOCAL.CAT [ VAL [ SUBJ #subj,
                                COMPS #spcomps,

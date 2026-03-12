@@ -77,3 +77,9 @@ ISO_CODE="kor"
 LKB_SCRIPT_FILE="lkb/script"
 CHEAP_GRM_FILE_NAME="pet.grm"
 ACE_CONFIG_FILE="ace/config.tdl"
+EXAMPLES = ["개 가 짖는다",
+    "지수 가 빵 을 먹는다",
+    "지수 가 어디 에 간다",
+    "고양이 세 마리 가 있다",
+    "지수 가 밥 을 먹었다",
+    "지수 가 민 에게 책 을 준다"]  

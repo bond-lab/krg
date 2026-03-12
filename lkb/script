@@ -149,5 +149,6 @@
 ;;;
 
 (if (eq (length *last-parses*) 1)
-   (setf *last-parses* '("개가 짖다" "개가 이 빵을 먹다")))
+   (setf *last-parses* '("빵을 가 짖다" "개가 이 빵을 먹다" "빵을 빵을 개가 먹다")))
 
+;; 빵을 개가 먹다"
